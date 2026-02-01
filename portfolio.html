@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="iSN.BiZ Inc Portfolio - Real-world AI solutions, enterprise automation, and innovative software projects delivering measurable business results.">
+    <meta name="keywords" content="AI portfolio, software development projects, enterprise automation, RAG systems, credit automation, business intelligence">
+    <title>Portfolio - iSN.BiZ Inc | Proven AI & Enterprise Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/logo-pallete/ISS white long 500(1).png" alt="iSN.BiZ Inc Logo" class="logo-img">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="index.html#investors">Investors</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero portfolio-hero">
+        <div class="hero-background"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Our Portfolio</h1>
+                <p class="hero-subtitle">Real Projects. Real Results. Real Innovation.</p>
+                <div class="portfolio-hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">6+</div>
+                        <div class="stat-label">Major Projects</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">700+</div>
+                        <div class="stat-label">Hours of AI Development</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">10x</div>
+                        <div class="stat-label">Efficiency Gains</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 1: Opportunity Research Bot -->
+    <section id="opportunity-bot" class="section project-detail">
+        <div class="container">
+            <div class="project-content">
+                <div class="project-header">
+                    <span class="project-number">01</span>
+                    <div class="project-tags">
+                        <span class="tag">AI/ML</span>
+                        <span class="tag">RAG System</span>
+                        <span class="tag">Automation</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+                <h2 class="project-title">AI-Powered Opportunity Research Bot</h2>
+                <p class="project-subtitle">Intelligent business opportunity discovery with FICO-based personalization</p>
+
+                <div class="project-grid">
+                    <div class="project-description">
+                        <h3>The Challenge</h3>
+                        <p>Businesses waste countless hours manually searching for relevant opportunities across multiple platforms. Traditional keyword searches miss context and fail to match opportunities to actual business capabilities and financial profiles.</p>
+
+                        <h3>Our Solution</h3>
+                        <p>Built a production-ready AI system that automatically discovers, analyzes, and ranks business opportunities from Reddit, Indie Hackers, and other sources using local AI models and RAG (Retrieval-Augmented Generation) technology.</p>
+
+                        <h3>Key Features</h3>
+                        <ul class="feature-list">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>FICO Integration:</strong> Matches opportunities to business credit profiles (ISNBIZ, HROC entities)
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Local AI Analysis:</strong> Qwen 2.5 7B model running on-premise for data privacy
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Multi-Source Scraping:</strong> Reddit API (PRAW), Indie Hackers, Google dorking
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>ChromaDB RAG:</strong> Vector database for semantic search and relevance ranking
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Automated Daily Runs:</strong> Cron-scheduled pipeline discovers opportunities 24/7
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="project-metrics">
+                        <div class="metric-card">
+                            <h3>Technology Stack</h3>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Python 3.11</span>
+                                <span class="tech-badge">Qwen 2.5 7B</span>
+                                <span class="tech-badge">ChromaDB</span>
+                                <span class="tech-badge">PRAW</span>
+                                <span class="tech-badge">Playwright</span>
+                                <span class="tech-badge">RAG Pipeline</span>
+                                <span class="tech-badge">Git</span>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <h3>Measurable Results</h3>
+                            <div class="metrics-grid">
+                                <div class="metric">
+                                    <div class="metric-value">700+</div>
+                                    <div class="metric-label">Lines of Production Code</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">95%</div>
+                                    <div class="metric-label">Time Savings vs Manual</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">24/7</div>
+                                    <div class="metric-label">Automated Discovery</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">100%</div>
+                                    <div class="metric-label">Data Privacy (Local AI)</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <h3>Business Impact</h3>
+                            <ul class="impact-list">
+                                <li>Eliminates 20+ hours/week of manual research</li>
+                                <li>Personalized recommendations based on actual financial capacity</li>
+                                <li>Never miss relevant opportunities with 24/7 monitoring</li>
+                                <li>Actionable insights with FICO-matched risk assessment</li>
+                            </ul>
+                        </div>
+
+                        <div class="metric-card highlight-card">
+                            <h3>Innovation Highlight</h3>
+                            <p><strong>First-of-its-kind integration:</strong> Combines credit profile analysis with opportunity discovery, matching business capabilities to real-world projects based on financial capacity and risk tolerance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 2: Credit Report Automation -->
+    <section id="credit-automation" class="section project-detail alt-bg">
+        <div class="container">
+            <div class="project-content">
+                <div class="project-header">
+                    <span class="project-number">02</span>
+                    <div class="project-tags">
+                        <span class="tag">Automation</span>
+                        <span class="tag">Security</span>
+                        <span class="tag">Browser Automation</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+                <h2 class="project-title">Enterprise Credit Report Automation System</h2>
+                <p class="project-subtitle">Secure, zero-credential browser automation for multi-bureau credit monitoring</p>
+
+                <div class="project-grid">
+                    <div class="project-description">
+                        <h3>The Challenge</h3>
+                        <p>Manual credit report retrieval from multiple bureaus (Equifax, Nav, myFICO) required 45+ minutes monthly, with credentials stored insecurely and 2FA creating bottlenecks in automation attempts.</p>
+
+                        <h3>Our Solution</h3>
+                        <p>Engineered a production-ready automation system using Playwright browser automation and 1Password CLI integration, achieving complete automation with zero hardcoded credentials and intelligent 2FA handling.</p>
+
+                        <h3>Key Features</h3>
+                        <ul class="feature-list">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Zero Hardcoded Credentials:</strong> 100% 1Password CLI integration for enterprise security
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Multi-Bureau Support:</strong> Equifax Business, Nav, myFICO (3 bureaus) automated
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>2FA Detection:</strong> Intelligent handling with user notifications and screenshots
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Structured Output:</strong> Timestamped PDFs + JSON data for integration
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Error Recovery:</strong> Comprehensive logging and screenshot capture for debugging
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="project-metrics">
+                        <div class="metric-card">
+                            <h3>Technology Stack</h3>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Python 3.8+</span>
+                                <span class="tech-badge">Playwright</span>
+                                <span class="tech-badge">1Password CLI</span>
+                                <span class="tech-badge">JSON</span>
+                                <span class="tech-badge">Bash</span>
+                                <span class="tech-badge">Git</span>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <h3>Measurable Results</h3>
+                            <div class="metrics-grid">
+                                <div class="metric">
+                                    <div class="metric-value">620</div>
+                                    <div class="metric-label">Lines of Production Code</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">45 min</div>
+                                    <div class="metric-label">Time Saved Per Month</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">3</div>
+                                    <div class="metric-label">Credit Bureaus Automated</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">0</div>
+                                    <div class="metric-label">Hardcoded Credentials</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <h3>Business Impact</h3>
+                            <ul class="impact-list">
+                                <li>Reduces monthly credit monitoring from 45 min to 5 min</li>
+                                <li>Eliminates security risk of stored credentials</li>
+                                <li>Provides structured data for financial analysis</li>
+                                <li>Enables integration with opportunity matching system</li>
+                            </ul>
+                        </div>
+
+                        <div class="metric-card highlight-card">
+                            <h3>Security First</h3>
+                            <p><strong>Enterprise-grade security:</strong> First automation solution to achieve zero hardcoded credentials through 1Password CLI integration, setting new standard for secure automation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 3: HROC Non-Profit Website -->
+    <section id="hroc-website" class="section project-detail">
+        <div class="container">
+            <div class="project-content">
+                <div class="project-header">
+                    <span class="project-number">03</span>
+                    <div class="project-tags">
+                        <span class="tag">Web Development</span>
+                        <span class="tag">Non-Profit</span>
+                        <span class="tag">AI Image Generation</span>
+                        <span class="tag">Cloud Deployment</span>
+                    </div>
+                </div>
+                <h2 class="project-title">HROC Non-Profit Community Website</h2>
+                <p class="project-subtitle">Professional web presence with AI-generated imagery and cloud deployment</p>
+
+                <div class="project-grid">
+                    <div class="project-description">
+                        <h3>The Challenge</h3>
+                        <p>HROC needed a professional, modern website to establish credibility and attract donors, volunteers, and community partners, but lacked budget for professional photography and custom design.</p>
+
+                        <h3>Our Solution</h3>
+                        <p>Developed a complete website featuring AI-generated founder portraits and imagery, professional service pages, integrated documentation, and automated S3 deployment pipeline for scalable hosting.</p>
+
+                        <h3>Key Features</h3>
+                        <ul class="feature-list">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>AI-Generated Imagery:</strong> Professional founder photos using ComfyUI and LoRA training
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Complete Service Pages:</strong> 10 dedicated HTML pages for programs and services
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Cloud Deployment:</strong> S3 sync scripts for automated deployment and updates
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Documentation Library:</strong> 42 integrated PDF resources for community
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Mobile Responsive:</strong> Professional design across all devices
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="project-metrics">
+                        <div class="metric-card">
+                            <h3>Technology Stack</h3>
+                            <div class="tech-stack">
+                                <span class="tech-badge">HTML5/CSS3</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">ComfyUI</span>
+                                <span class="tech-badge">Stable Diffusion</span>
+                                <span class="tech-badge">LoRA Training</span>
+                                <span class="tech-badge">AWS S3</span>
+                                <span class="tech-badge">Python</span>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <h3>Project Scale</h3>
+                            <div class="metrics-grid">
+                                <div class="metric">
+                                    <div class="metric-value">417</div>
+                                    <div class="metric-label">Total Files</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">193 MB</div>
+                                    <div class="metric-label">Project Size</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">10</div>
+                                    <div class="metric-label">Service Pages</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">13</div>
+                                    <div class="metric-label">AI-Generated Portraits</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <h3>Business Impact</h3>
+                            <ul class="impact-list">
+                                <li>Professional online presence for non-profit credibility</li>
+                                <li>$5,000+ savings vs traditional photography</li>
+                                <li>Scalable cloud infrastructure for growth</li>
+                                <li>Comprehensive resource library for community</li>
+                            </ul>
+                        </div>
+
+                        <div class="metric-card highlight-card">
+                            <h3>AI Innovation</h3>
+                            <p><strong>Cutting-edge imagery:</strong> Utilized Stable Diffusion with custom LoRA training (14MB model data) to generate professional-quality founder portraits, demonstrating practical AI application in cost-effective branding.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 4: RAG Business Intelligence System -->
+    <section id="rag-system" class="section project-detail alt-bg">
+        <div class="container">
+            <div class="project-content">
+                <div class="project-header">
+                    <span class="project-number">04</span>
+                    <div class="project-tags">
+                        <span class="tag">RAG</span>
+                        <span class="tag">AI Infrastructure</span>
+                        <span class="tag">Vector Database</span>
+                        <span class="tag">LLM</span>
+                    </div>
+                </div>
+                <h2 class="project-title">Enterprise RAG Business Intelligence Platform</h2>
+                <p class="project-subtitle">Local LLM deployment with vector search for intelligent document analysis</p>
+
+                <div class="project-grid">
+                    <div class="project-description">
+                        <h3>The Challenge</h3>
+                        <p>Organizations need to query vast document libraries and knowledge bases using natural language, but cloud AI services create data privacy concerns and ongoing costs for enterprise use.</p>
+
+                        <h3>Our Solution</h3>
+                        <p>Built a complete RAG (Retrieval-Augmented Generation) system using local LLM deployment (llama.cpp), ChromaDB vector database, and custom document processing pipeline - 100% on-premise for complete data control.</p>
+
+                        <h3>Key Features</h3>
+                        <ul class="feature-list">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Local LLM Deployment:</strong> llama.cpp with Docker for on-premise AI inference
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Vector Database:</strong> ChromaDB for semantic search and document retrieval
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Document Crawler:</strong> Automated ingestion from multiple sources
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Natural Language Queries:</strong> Ask questions, get context-aware answers
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Zero Cloud Dependencies:</strong> Complete data privacy and control
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="project-metrics">
+                        <div class="metric-card">
+                            <h3>Technology Stack</h3>
+                            <div class="tech-stack">
+                                <span class="tech-badge">llama.cpp</span>
+                                <span class="tech-badge">ChromaDB</span>
+                                <span class="tech-badge">Docker</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Vector Embeddings</span>
+                                <span class="tech-badge">Bash</span>
+                                <span class="tech-badge">LLM</span>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <h3>System Capabilities</h3>
+                            <div class="metrics-grid">
+                                <div class="metric">
+                                    <div class="metric-value">100%</div>
+                                    <div class="metric-label">On-Premise Deployment</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">∞</div>
+                                    <div class="metric-label">Documents Supported</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">&lt;2s</div>
+                                    <div class="metric-label">Avg Query Response</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">$0</div>
+                                    <div class="metric-label">Ongoing API Costs</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <h3>Business Impact</h3>
+                            <ul class="impact-list">
+                                <li>Eliminates cloud AI costs (save $500+/month)</li>
+                                <li>Complete data privacy for sensitive documents</li>
+                                <li>Instant knowledge base queries across entire corpus</li>
+                                <li>Scalable to millions of documents</li>
+                            </ul>
+                        </div>
+
+                        <div class="metric-card highlight-card">
+                            <h3>Enterprise Infrastructure</h3>
+                            <p><strong>Production-grade RAG:</strong> Built containerized deployment with llama.cpp and ChromaDB, demonstrating expertise in modern AI infrastructure and enterprise-ready vector search systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 5: Android Healthcare Application -->
+    <section id="android-app" class="section project-detail">
+        <div class="container">
+            <div class="project-content">
+                <div class="project-header">
+                    <span class="project-number">05</span>
+                    <div class="project-tags">
+                        <span class="tag">Android</span>
+                        <span class="tag">Healthcare</span>
+                        <span class="tag">Mobile Development</span>
+                        <span class="tag">Kotlin</span>
+                    </div>
+                </div>
+                <h2 class="project-title">AndroidAPS Healthcare Platform</h2>
+                <p class="project-subtitle">Contributing to open-source diabetes management mobile application</p>
+
+                <div class="project-grid">
+                    <div class="project-description">
+                        <h3>The Project</h3>
+                        <p>AndroidAPS is an open-source artificial pancreas system that helps people with diabetes manage their condition using smartphone technology and continuous glucose monitoring.</p>
+
+                        <h3>Our Contribution</h3>
+                        <p>Active development and optimization of AndroidAPS platform, working with complex medical device integration, real-time data processing, and life-critical safety systems.</p>
+
+                        <h3>Technical Scope</h3>
+                        <ul class="feature-list">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Mobile Development:</strong> Native Android development in Kotlin
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Medical Device Integration:</strong> Bluetooth communication with insulin pumps
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Real-Time Processing:</strong> Continuous glucose monitoring and algorithm execution
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Safety-Critical Systems:</strong> Life-critical medical application standards
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Open Source:</strong> Contributing to global healthcare innovation
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="project-metrics">
+                        <div class="metric-card">
+                            <h3>Technology Stack</h3>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Kotlin</span>
+                                <span class="tech-badge">Android SDK</span>
+                                <span class="tech-badge">Bluetooth LE</span>
+                                <span class="tech-badge">Gradle</span>
+                                <span class="tech-badge">Git</span>
+                                <span class="tech-badge">CI/CD</span>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <h3>Development Scale</h3>
+                            <div class="metrics-grid">
+                                <div class="metric">
+                                    <div class="metric-value">Complex</div>
+                                    <div class="metric-label">Multi-Module Architecture</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">Critical</div>
+                                    <div class="metric-label">Safety Requirements</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">Real-Time</div>
+                                    <div class="metric-label">Data Processing</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">Global</div>
+                                    <div class="metric-label">User Base</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <h3>Business Impact</h3>
+                            <ul class="impact-list">
+                                <li>Demonstrates healthcare software expertise</li>
+                                <li>Proven ability to work with safety-critical systems</li>
+                                <li>Experience with medical device integration</li>
+                                <li>Open-source community collaboration skills</li>
+                            </ul>
+                        </div>
+
+                        <div class="metric-card highlight-card">
+                            <h3>Medical Technology</h3>
+                            <p><strong>Life-critical systems:</strong> Experience developing and optimizing healthcare applications with real-time data processing and medical device integration, demonstrating commitment to quality and safety.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 6: Infrastructure & AI Platform -->
+    <section id="infrastructure" class="section project-detail alt-bg">
+        <div class="container">
+            <div class="project-content">
+                <div class="project-header">
+                    <span class="project-number">06</span>
+                    <div class="project-tags">
+                        <span class="tag">Infrastructure</span>
+                        <span class="tag">AI Platform</span>
+                        <span class="tag">DevOps</span>
+                        <span class="tag">Self-Hosted</span>
+                    </div>
+                </div>
+                <h2 class="project-title">Enterprise AI Infrastructure Platform</h2>
+                <p class="project-subtitle">Self-hosted AI ecosystem with ComfyUI, SillyTavern, and TrueNAS integration</p>
+
+                <div class="project-grid">
+                    <div class="project-description">
+                        <h3>The Challenge</h3>
+                        <p>Cloud AI services are expensive, create vendor lock-in, and raise data privacy concerns. Enterprises need powerful AI capabilities without sacrificing control or paying perpetual API fees.</p>
+
+                        <h3>Our Solution</h3>
+                        <p>Built a comprehensive self-hosted AI infrastructure combining ComfyUI for image generation, SillyTavern for LLM interaction, TrueNAS for storage, and custom AI routing - all optimized for production workloads.</p>
+
+                        <h3>Platform Components</h3>
+                        <ul class="feature-list">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>ComfyUI Optimized:</strong> Production-ready image generation with custom workflows
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>SillyTavern Integration:</strong> Local LLM frontend with character/persona management
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>TrueNAS Storage:</strong> Enterprise-grade file system with AI router integration
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>WSL Optimization:</strong> Windows Subsystem for Linux configuration for performance
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <strong>Model Management:</strong> Centralized model repository with version control
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="project-metrics">
+                        <div class="metric-card">
+                            <h3>Technology Stack</h3>
+                            <div class="tech-stack">
+                                <span class="tech-badge">ComfyUI</span>
+                                <span class="tech-badge">SillyTavern</span>
+                                <span class="tech-badge">TrueNAS</span>
+                                <span class="tech-badge">Docker</span>
+                                <span class="tech-badge">WSL2</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Node.js</span>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <h3>Infrastructure Scale</h3>
+                            <div class="metrics-grid">
+                                <div class="metric">
+                                    <div class="metric-value">4</div>
+                                    <div class="metric-label">Integrated Platforms</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">100%</div>
+                                    <div class="metric-label">Self-Hosted</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">TB+</div>
+                                    <div class="metric-label">Storage Capacity</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">24/7</div>
+                                    <div class="metric-label">Availability</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <h3>Business Impact</h3>
+                            <ul class="impact-list">
+                                <li>Zero ongoing cloud AI costs (save $1,000+/month)</li>
+                                <li>Complete data sovereignty and privacy</li>
+                                <li>Unlimited inference with owned hardware</li>
+                                <li>Custom model integration and fine-tuning</li>
+                            </ul>
+                        </div>
+
+                        <div class="metric-card highlight-card">
+                            <h3>Infrastructure Excellence</h3>
+                            <p><strong>Production DevOps:</strong> Demonstrates advanced infrastructure skills with self-hosted AI ecosystem, proving ability to deploy and maintain enterprise-grade systems with multiple integrated platforms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Expertise Section -->
+    <section id="technology-stack" class="section tech-expertise">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Technology Expertise</span>
+                <h2 class="section-title">Comprehensive Technical Capabilities</h2>
+                <p class="section-description">Deep expertise across the modern technology stack</p>
+            </div>
+
+            <div class="tech-expertise-grid">
+                <div class="tech-category">
+                    <h3>AI & Machine Learning</h3>
+                    <div class="tech-list">
+                        <span>Qwen 2.5 7B</span>
+                        <span>Llama.cpp</span>
+                        <span>Stable Diffusion</span>
+                        <span>ComfyUI</span>
+                        <span>LoRA Training</span>
+                        <span>ChromaDB</span>
+                        <span>RAG Systems</span>
+                        <span>Vector Embeddings</span>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>Programming Languages</h3>
+                    <div class="tech-list">
+                        <span>Python 3.8+</span>
+                        <span>Kotlin</span>
+                        <span>JavaScript/Node.js</span>
+                        <span>Bash/Shell</span>
+                        <span>HTML5/CSS3</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>Infrastructure & DevOps</h3>
+                    <div class="tech-list">
+                        <span>Docker</span>
+                        <span>AWS S3</span>
+                        <span>TrueNAS</span>
+                        <span>WSL2</span>
+                        <span>Git/GitHub</span>
+                        <span>CI/CD</span>
+                        <span>Linux</span>
+                        <span>Nginx</span>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>Automation & Integration</h3>
+                    <div class="tech-list">
+                        <span>Playwright</span>
+                        <span>1Password CLI</span>
+                        <span>PRAW (Reddit)</span>
+                        <span>Cron Jobs</span>
+                        <span>REST APIs</span>
+                        <span>Webhooks</span>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>Databases & Storage</h3>
+                    <div class="tech-list">
+                        <span>ChromaDB</span>
+                        <span>Vector Databases</span>
+                        <span>JSON</span>
+                        <span>File Systems</span>
+                        <span>Cloud Storage</span>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>Mobile Development</h3>
+                    <div class="tech-list">
+                        <span>Android SDK</span>
+                        <span>Kotlin</span>
+                        <span>Gradle</span>
+                        <span>Bluetooth LE</span>
+                        <span>Mobile UI/UX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Methodology -->
+    <section id="methodology" class="section methodology">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Our Approach</span>
+                <h2 class="section-title">Proven Development Methodology</h2>
+            </div>
+
+            <div class="methodology-grid">
+                <div class="methodology-step">
+                    <div class="step-number">1</div>
+                    <h3>Discovery & Analysis</h3>
+                    <p>Deep dive into business requirements, technical constraints, and success metrics. We identify opportunities for AI integration and automation from day one.</p>
+                </div>
+
+                <div class="methodology-step">
+                    <div class="step-number">2</div>
+                    <h3>Architecture Design</h3>
+                    <p>Design scalable, maintainable systems with security as a priority. We favor self-hosted solutions when appropriate for data sovereignty and cost control.</p>
+                </div>
+
+                <div class="methodology-step">
+                    <div class="step-number">3</div>
+                    <h3>Iterative Development</h3>
+                    <p>Build in sprints with continuous integration. Every component is tested, documented, and deployed to production standards from the start.</p>
+                </div>
+
+                <div class="methodology-step">
+                    <div class="step-number">4</div>
+                    <h3>Deployment & Support</h3>
+                    <p>Automated deployment pipelines, comprehensive documentation, and ongoing optimization. We build systems that teams can maintain and extend.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Summary -->
+    <section id="results-summary" class="section results-summary">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Measurable Impact</span>
+                <h2 class="section-title">Results That Matter</h2>
+            </div>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                        </svg>
+                    </div>
+                    <div class="result-value">95%</div>
+                    <div class="result-label">Average Time Savings</div>
+                    <p>Automation eliminates manual work</p>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <div class="result-value">24/7</div>
+                    <div class="result-label">Automated Operations</div>
+                    <p>Systems that work around the clock</p>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <div class="result-value">100%</div>
+                    <div class="result-label">Data Sovereignty</div>
+                    <p>Self-hosted AI for complete control</p>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <div class="result-value">$1,500+</div>
+                    <div class="result-label">Monthly Savings</div>
+                    <p>Reduced cloud and manual labor costs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="portfolio-cta" class="section portfolio-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Build Something Exceptional?</h2>
+                <p>Let's discuss how our proven expertise can accelerate your next project</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="btn btn-primary">Schedule a Consultation</a>
+                    <a href="index.html#investors" class="btn btn-secondary">Investment Opportunities</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/logo-pallete/ISS white long 500(1).png" alt="iSN.BiZ Inc Logo" class="footer-logo">
+                    <p class="footer-description">Building the future of enterprise software with innovative, AI-powered solutions since 2015.</p>
+                    <div class="footer-credentials">
+                        <p><strong>DUNS:</strong> 080513772</p>
+                        <p><strong>UBI:</strong> 603-522-339</p>
+                        <p><strong>EIN:</strong> 47-4530188</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#solutions">Solutions</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="index.html#investors">Investors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="index.html#contact">Request Demo</a></li>
+                        <li><a href="index.html#contact">Pitch Deck</a></li>
+                        <li><a href="index.html#contact">Investor Relations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#security">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved.</p>
+                <p>Founded July 8, 2015 | Seattle, Washington</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    navToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+
+        // Sticky Navigation
+        const nav = document.querySelector('.nav');
+        const navHeight = nav.offsetHeight;
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > navHeight) {
+                nav.classList.add('nav-sticky');
+            } else {
+                nav.classList.remove('nav-sticky');
+            }
+        });
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Project detail expand/collapse on mobile
+        document.querySelectorAll('.project-detail').forEach(project => {
+            const header = project.querySelector('.project-header');
+            if (window.innerWidth < 768) {
+                header.style.cursor = 'pointer';
+                header.addEventListener('click', () => {
+                    project.classList.toggle('expanded');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║         HROC FOUNDER PHOTO ENHANCEMENT - QUICK START                 ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+STEP 1: Get API Key
+-------------------
+→ Open 1Password
+→ Find: "FAL API Key"
+→ Copy the key value
+
+STEP 2: Set Environment Variable
+---------------------------------
+export FAL_KEY="paste-your-key-here"
+
+STEP 3: Run the Script
+----------------------
+cd /mnt/d/workspace/ISNBIZ_Files/scripts
+python3 enhance_founder_photos.py
+
+WHAT IT DOES:
+-------------
+✓ Enhances 12 REAL founder photos (3 per founder)
+✓ Uses fal.ai Portrait Enhance API
+✓ Saves to: /mnt/d/workspace/ISNBIZ_Files/assets/team/
+✓ Cost: $4.80 total ($0.40 per image)
+✓ Time: ~4 minutes
+
+FOUNDERS:
+---------
+→ Alicia (using *_real.webp high-quality photos)
+→ Bri
+→ Jonathan  
+→ Lilly
+
+OUTPUT FILES:
+-------------
+alicia_enhanced_01.webp through alicia_enhanced_03.webp
+bri_enhanced_01.webp through bri_enhanced_03.webp
+jonathan_enhanced_01.webp through jonathan_enhanced_03.webp
+lilly_enhanced_01.webp through lilly_enhanced_03.webp
+
+IMPORTANT:
+----------
+This uses ACTUAL founder photos from HROC, NOT random AI-generated people!
+
+For full instructions, see: FOUNDER_PHOTO_ENHANCEMENT_INSTRUCTIONS.md
