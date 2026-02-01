@@ -39,3 +39,16 @@ temp/
 *.key
 *.pem
 secrets/
+
+# Python
+venv/
+venv_fal/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Temporary generated files
+b64data.txt
+1/

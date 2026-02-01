@@ -6,24 +6,37 @@
     <meta name="description" content="iSN.BiZ Inc - Innovative Software Solutions. Founded 2015. Delivering cutting-edge software design and development with AI-powered capabilities for enterprise clients.">
     <meta name="keywords" content="software development, enterprise software, AI solutions, iSN.BiZ, custom software, technology consulting">
     <title>iSN.BiZ Inc - Innovative Software Solutions</title>
+    <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
+    <link rel="apple-touch-icon" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/apple_touch_icon.webp">
+    <meta property="og:title" content="iSN.BiZ Inc - Innovative Software Solutions">
+    <meta property="og:description" content="Founded 2015. Delivering cutting-edge software design and development with AI-powered capabilities for enterprise clients.">
+    <meta property="og:image" content="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/og/og_default.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/og/og_default.webp">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- WCAG FIX: Skip navigation link for keyboard users -->
+    <a href="#about" class="skip-link">Skip to main content</a>
+
     <!-- Navigation -->
     <nav class="nav">
         <div class="container nav-container">
             <div class="logo">
-                <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/logo-pallete/ISS white long 500(1).png" alt="iSN.BiZ Inc Logo" class="logo-img">
+                <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
             </div>
-            <button class="nav-toggle" aria-label="Toggle navigation">
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation" type="button">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="primary-navigation">
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
@@ -39,7 +52,7 @@
         <div class="container hero-container">
             <div class="hero-content">
                 <div class="hero-logo">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/logo-pallete/ISS2500.png" alt="iSN.BiZ Inc - Innovation Solutions Systems" class="hero-logo-img">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/hero_logo.webp" alt="iSN.BiZ Inc - Innovation Solutions Systems" class="hero-logo-img">
                 </div>
                 <h1 class="hero-title">Building the Future of Enterprise Software</h1>
                 <p class="hero-subtitle">AI-Powered Solutions. Proven Results. Strategic Innovation.</p>
@@ -58,8 +71,11 @@
                     </div>
                 </div>
                 <div class="hero-cta">
-                    <a href="#investors" class="btn btn-primary">Investment Opportunities</a>
-                    <a href="#contact" class="btn btn-secondary">Schedule a Demo</a>
+                    <a href="#investors" class="btn btn-primary"><span>Investment Opportunities</span></a>
+                    <a href="#contact" class="btn btn-secondary"><span>Schedule a Demo</span></a>
+                </div>
+                <div class="hero-visual">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/services/ai_research.webp" alt="AI opportunity analytics dashboard mockup" loading="eager">
                 </div>
             </div>
         </div>
@@ -230,43 +246,96 @@
             <div class="section-header centered">
                 <span class="section-label">Portfolio</span>
                 <h2 class="section-title">Delivering Excellence Across Industries</h2>
-                <p class="section-description">Our diverse portfolio demonstrates our ability to solve complex challenges across multiple sectors</p>
+                <p class="section-description">Real projects built with real technology -- from AI pipelines and fraud detection to mobile apps and enterprise infrastructure</p>
             </div>
             <div class="portfolio-grid">
                 <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/opportunity_bot.webp" alt="AI opportunity research bot dashboard" loading="lazy">
+                    </div>
                     <div class="portfolio-number">01</div>
-                    <h3>Financial Services Transformation</h3>
-                    <p>Developed AI-powered risk assessment platform processing millions of transactions daily with 99.9% accuracy, reducing processing time by 75%.</p>
+                    <h3>AI Market Intelligence Engine</h3>
+                    <p>Proprietary AI pipeline that autonomously discovers and scores revenue opportunities across multiple data sources using local LLM inference and RAG-based semantic search — delivering institutional-grade market intelligence at zero marginal cost per query.</p>
                     <div class="portfolio-tags">
-                        <span class="tag">AI/ML</span>
-                        <span class="tag">Cloud Infrastructure</span>
-                        <span class="tag">Real-Time Processing</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">ChromaDB</span>
+                        <span class="tag">Local LLM</span>
+                        <span class="tag">RAG</span>
                     </div>
                 </div>
                 <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/infrastructure.webp" alt="TrueNAS infrastructure platform monitoring dashboard" loading="lazy">
+                    </div>
                     <div class="portfolio-number">02</div>
-                    <h3>Healthcare Analytics Platform</h3>
-                    <p>Built comprehensive patient data analytics system serving 500,000+ patients, improving diagnostic accuracy and reducing administrative overhead by 60%.</p>
+                    <h3>Enterprise AI/ML Infrastructure Platform</h3>
+                    <p>Production-grade on-premise computing platform powering 50+ containerized services across AI inference, multi-database orchestration, and full observability — eliminating six-figure annual cloud dependency while maintaining enterprise SLA standards.</p>
                     <div class="portfolio-tags">
-                        <span class="tag">Data Analytics</span>
-                        <span class="tag">HIPAA Compliance</span>
-                        <span class="tag">Integration</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">TrueNAS Scale</span>
+                        <span class="tag">ZFS</span>
+                        <span class="tag">Ollama</span>
                     </div>
                 </div>
                 <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/credit_automation.webp" alt="Enterprise credit report automation interface" loading="lazy">
+                    </div>
                     <div class="portfolio-number">03</div>
-                    <h3>Supply Chain Optimization</h3>
-                    <p>Created intelligent logistics management system leveraging machine learning to optimize routes and inventory, saving $2M+ annually in operational costs.</p>
+                    <h3>Automated Compliance & Credit Intelligence</h3>
+                    <p>Zero-trust credential management system automating multi-bureau credit data aggregation through Playwright browser orchestration and 1Password vault integration — reducing compliance processing time by 95% with auditable, enterprise-grade security.</p>
                     <div class="portfolio-tags">
-                        <span class="tag">Machine Learning</span>
-                        <span class="tag">IoT Integration</span>
-                        <span class="tag">Optimization</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Playwright</span>
+                        <span class="tag">1Password CLI</span>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/rag_bi.webp" alt="BIN intelligence fraud analysis dashboard" loading="lazy">
+                    </div>
+                    <div class="portfolio-number">04</div>
+                    <h3>Payment Fraud Intelligence Platform</h3>
+                    <p>Real-time BIN enrichment and fraud analytics engine serving the $32B payment fraud prevention market — combining automated feed ingestion, Neutrino API enrichment, and live risk scoring dashboards for e-commerce transaction security.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Chart.js</span>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/androidaps_health.webp" alt="SpiritAtlas Android application screens" loading="lazy">
+                    </div>
+                    <div class="portfolio-number">05</div>
+                    <h3>Privacy-First Consumer Mobile Platform</h3>
+                    <p>Enterprise-architected Android application showcasing Clean Architecture mastery with encrypted local storage, consent-gated AI routing, and 100+ custom density-optimized assets — demonstrating production mobile engineering at the highest standard.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">Kotlin</span>
+                        <span class="tag">Jetpack Compose</span>
+                        <span class="tag">Hilt</span>
+                        <span class="tag">Android SDK 34</span>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/infrastructure.webp" alt="Enterprise AI infrastructure architecture diagram" loading="lazy">
+                    </div>
+                    <div class="portfolio-number">06</div>
+                    <h3>AI Content Production Pipeline</h3>
+                    <p>End-to-end automated content factory converting raw sources into production-ready video assets using multi-provider AI orchestration (fal.ai, ElevenLabs, Runway) — targeting the $12B creator economy with 10x content velocity at fractional production costs.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">fal.ai</span>
+                        <span class="tag">ElevenLabs</span>
+                        <span class="tag">AWS S3</span>
                     </div>
                 </div>
             </div>
             <div class="portfolio-cta">
-                <p class="cta-text">Want to see detailed case studies and results?</p>
-                <a href="#contact" class="btn btn-outline">Request Full Portfolio</a>
+                <p class="cta-text">Want to see all 9 projects with detailed case studies and results?</p>
+                <a href="portfolio.html" class="btn btn-outline"><span>View Full Portfolio</span></a>
             </div>
         </div>
     </section>
@@ -328,8 +397,8 @@
                     <h3>Ready to Learn More?</h3>
                     <p>Access our investor data room to review detailed financials, product roadmap, and market analysis.</p>
                     <div class="investor-buttons">
-                        <a href="#contact" class="btn btn-primary">Schedule Investor Meeting</a>
-                        <a href="#contact" class="btn btn-secondary">Request Pitch Deck</a>
+                        <a href="#contact" class="btn btn-primary"><span>Schedule Investor Meeting</span></a>
+                        <a href="#contact" class="btn btn-secondary"><span>Request Pitch Deck</span></a>
                     </div>
                 </div>
             </div>
@@ -431,7 +500,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-column">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/logo-pallete/ISS white long 500(1).png" alt="iSN.BiZ Inc Logo" class="footer-logo">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/footer_logo.webp" alt="iSN.BiZ Inc Logo" class="footer-logo">
                     <p class="footer-description">Building the future of enterprise software with innovative, AI-powered solutions since 2015.</p>
                     <div class="footer-credentials">
                         <p><strong>DUNS:</strong> 080513772</p>
@@ -477,10 +546,15 @@
         // Mobile Navigation Toggle
         const navToggle = document.querySelector('.nav-toggle');
         const navMenu = document.querySelector('.nav-menu');
+        const syncNavState = () => {
+            const isOpen = navMenu.classList.contains('active');
+            navToggle.setAttribute('aria-expanded', isOpen.toString());
+        };
 
         navToggle.addEventListener('click', () => {
             navToggle.classList.toggle('active');
             navMenu.classList.toggle('active');
+            syncNavState();
         });
 
         // Smooth Scrolling
@@ -496,6 +570,7 @@
                     // Close mobile menu if open
                     navToggle.classList.remove('active');
                     navMenu.classList.remove('active');
+                    syncNavState();
                 }
             });
         });

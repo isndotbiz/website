@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="iSN.BiZ Inc - Interactive slider and gallery showcase featuring portfolio projects, technology stack, and cutting-edge UI components.">
+    <meta name="keywords" content="iSN.BiZ portfolio, slider gallery, project showcase, AI software, enterprise solutions, interactive UI">
     <title>Slider & Gallery Showcase - iSN.BiZ Inc</title>
+    <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
+    <link rel="apple-touch-icon" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/apple_touch_icon.webp">
     <link rel="stylesheet" href="styles.css">
 
     <!-- Swiper 11 CSS -->
@@ -14,28 +18,31 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- WCAG FIX: Skip navigation link for keyboard users -->
+    <a href="#portfolio-slider" class="skip-link">Skip to main content</a>
+
     <!-- Navigation -->
     <nav class="nav">
         <div class="container nav-container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/logo-pallete/ISS white long 500(1).png" alt="iSN.BiZ Inc Logo" class="logo-img">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
                 </a>
             </div>
-            <button class="nav-toggle" aria-label="Toggle navigation">
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation" type="button">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-menu">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#solutions">Solutions</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="index.html#investors">Investors</a></li>
-                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+            <ul class="nav-menu" id="primary-navigation" role="menubar">
+                <li role="none"><a href="about.html" role="menuitem">About</a></li>
+                <li role="none"><a href="services.html" role="menuitem">Services</a></li>
+                <li role="none"><a href="portfolio.html" role="menuitem">Portfolio</a></li>
+                <li role="none"><a href="investors.html" role="menuitem">Investors</a></li>
+                <li role="none"><a href="contact.html" class="nav-cta" role="menuitem">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -66,7 +73,7 @@
                     <!-- Slide 1: Opportunity Bot -->
                     <div class="swiper-slide">
                         <div class="slide-content">
-                            <div class="slide-background" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <div class="slide-background" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/gallery/slide_circuit_macro.webp') center/cover no-repeat;">
                                 <div class="slide-pattern"></div>
                             </div>
                             <div class="slide-info">
@@ -92,7 +99,7 @@
                                         <span class="metric-label">Automated</span>
                                     </div>
                                 </div>
-                                <a href="portfolio.html#opportunity-bot" class="btn btn-primary">View Details</a>
+                                <a href="portfolio.html#opportunity-bot" class="btn btn-primary"><span>View Details</span></a>
                             </div>
                         </div>
                     </div>
@@ -100,7 +107,7 @@
                     <!-- Slide 2: Credit Automation -->
                     <div class="swiper-slide">
                         <div class="slide-content">
-                            <div class="slide-background" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <div class="slide-background" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/gallery/slide_city_network.webp') center/cover no-repeat;">
                                 <div class="slide-pattern"></div>
                             </div>
                             <div class="slide-info">
@@ -126,7 +133,7 @@
                                         <span class="metric-label">Hardcoded Creds</span>
                                     </div>
                                 </div>
-                                <a href="portfolio.html#credit-automation" class="btn btn-primary">View Details</a>
+                                <a href="portfolio.html#credit-automation" class="btn btn-primary"><span>View Details</span></a>
                             </div>
                         </div>
                     </div>
@@ -134,7 +141,7 @@
                     <!-- Slide 3: HROC Website -->
                     <div class="swiper-slide">
                         <div class="slide-content">
-                            <div class="slide-background" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <div class="slide-background" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/gallery/slide_data_horizon.webp') center/cover no-repeat;">
                                 <div class="slide-pattern"></div>
                             </div>
                             <div class="slide-info">
@@ -160,7 +167,7 @@
                                         <span class="metric-label">Cost Savings</span>
                                     </div>
                                 </div>
-                                <a href="portfolio.html#hroc-website" class="btn btn-primary">View Details</a>
+                                <a href="portfolio.html#hroc-website" class="btn btn-primary"><span>View Details</span></a>
                             </div>
                         </div>
                     </div>
@@ -168,7 +175,7 @@
                     <!-- Slide 4: RAG System -->
                     <div class="swiper-slide">
                         <div class="slide-content">
-                            <div class="slide-background" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <div class="slide-background" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/gallery/slide_energy_bloom.webp') center/cover no-repeat;">
                                 <div class="slide-pattern"></div>
                             </div>
                             <div class="slide-info">
@@ -194,7 +201,7 @@
                                         <span class="metric-label">API Costs</span>
                                     </div>
                                 </div>
-                                <a href="portfolio.html#rag-system" class="btn btn-primary">View Details</a>
+                                <a href="portfolio.html#rag-system" class="btn btn-primary"><span>View Details</span></a>
                             </div>
                         </div>
                     </div>
@@ -228,7 +235,7 @@
                                         <span class="metric-label">Monthly Savings</span>
                                     </div>
                                 </div>
-                                <a href="portfolio.html#infrastructure" class="btn btn-primary">View Details</a>
+                                <a href="portfolio.html#infrastructure" class="btn btn-primary"><span>View Details</span></a>
                             </div>
                         </div>
                     </div>
@@ -381,33 +388,33 @@
             <div class="swiper gallery-main">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="gallery-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 60px; text-align: center;">
-                            <h3 style="color: white; font-size: 2rem;">Project Screenshot 1</h3>
-                            <p style="color: rgba(255,255,255,0.9);">AI Dashboard Interface</p>
+                        <div class="gallery-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/gallery/slide_circuit_macro.webp') center/cover no-repeat; padding: 60px; text-align: center;">
+                            <h3 style="color: white; font-size: 2rem;">Circuit Architecture</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Precision Engineering at Scale</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="gallery-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 60px; text-align: center;">
-                            <h3 style="color: white; font-size: 2rem;">Project Screenshot 2</h3>
-                            <p style="color: rgba(255,255,255,0.9);">Automation Pipeline</p>
+                        <div class="gallery-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/gallery/slide_city_network.webp') center/cover no-repeat; padding: 60px; text-align: center;">
+                            <h3 style="color: white; font-size: 2rem;">Connected Infrastructure</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Urban-Scale Network Intelligence</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="gallery-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 60px; text-align: center;">
-                            <h3 style="color: white; font-size: 2rem;">Project Screenshot 3</h3>
-                            <p style="color: rgba(255,255,255,0.9);">Website Design</p>
+                        <div class="gallery-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/gallery/slide_data_horizon.webp') center/cover no-repeat; padding: 60px; text-align: center;">
+                            <h3 style="color: white; font-size: 2rem;">Data Horizons</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Visualizing the Future of Analytics</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="gallery-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); padding: 60px; text-align: center;">
-                            <h3 style="color: white; font-size: 2rem;">Project Screenshot 4</h3>
-                            <p style="color: rgba(255,255,255,0.9);">RAG System</p>
+                        <div class="gallery-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/gallery/slide_energy_bloom.webp') center/cover no-repeat; padding: 60px; text-align: center;">
+                            <h3 style="color: white; font-size: 2rem;">Energy Systems</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Powering Intelligent Solutions</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="gallery-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); padding: 60px; text-align: center;">
-                            <h3 style="color: white; font-size: 2rem;">Project Screenshot 5</h3>
-                            <p style="color: rgba(255,255,255,0.9);">Infrastructure Stack</p>
+                        <div class="gallery-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/gallery/slide_glass_panels.webp') center/cover no-repeat; padding: 60px; text-align: center;">
+                            <h3 style="color: white; font-size: 2rem;">Glass Architecture</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Transparent Technology Design</p>
                         </div>
                     </div>
                 </div>
@@ -419,19 +426,19 @@
             <div class="swiper gallery-thumbs">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="thumb-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                        <div class="thumb-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/gallery/slide_circuit_macro.webp') center/cover no-repeat;"></div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="thumb-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                        <div class="thumb-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/gallery/slide_city_network.webp') center/cover no-repeat;"></div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="thumb-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                        <div class="thumb-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/gallery/slide_data_horizon.webp') center/cover no-repeat;"></div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="thumb-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                        <div class="thumb-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/gallery/slide_energy_bloom.webp') center/cover no-repeat;"></div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="thumb-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                        <div class="thumb-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/gallery/slide_glass_panels.webp') center/cover no-repeat;"></div>
                     </div>
                 </div>
             </div>
@@ -513,21 +520,44 @@ const galleryMain = new Swiper('.gallery-main', {
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-column">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/logo-pallete/ISS white long 500(1).png" alt="iSN.BiZ Inc Logo" class="footer-logo">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/footer_logo.webp" alt="iSN.BiZ Inc Logo" class="footer-logo">
                     <p class="footer-description">Building the future of enterprise software with innovative, AI-powered solutions since 2015.</p>
+                    <div class="footer-credentials">
+                        <p><strong>DUNS:</strong> 080513772</p>
+                        <p><strong>UBI:</strong> 603-522-339</p>
+                        <p><strong>EIN:</strong> 47-4530188</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="investors.html">Investors</a></li>
+                    </ul>
                 </div>
                 <div class="footer-column">
                     <h4>Resources</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">Request Demo</a></li>
+                        <li><a href="investors.html">Pitch Deck</a></li>
+                        <li><a href="investors.html">Investor Relations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#security">Security</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 iSN.BiZ Inc. All rights reserved.</p>
-                <p>Powered by Swiper 11</p>
+                <p>Founded July 8, 2015 | Seattle, Washington</p>
             </div>
         </div>
     </footer>
@@ -538,14 +568,69 @@ const galleryMain = new Swiper('.gallery-main', {
     <!-- Custom Slider Initialization -->
     <script src="slider-init.js"></script>
 
-    <!-- Navigation Toggle -->
+    <!-- Navigation & Page Scripts -->
     <script>
+        // Mobile Navigation Toggle
         const navToggle = document.querySelector('.nav-toggle');
         const navMenu = document.querySelector('.nav-menu');
+        const syncNavState = () => {
+            const isOpen = navMenu.classList.contains('active');
+            navToggle.setAttribute('aria-expanded', isOpen.toString());
+        };
 
         navToggle.addEventListener('click', () => {
             navToggle.classList.toggle('active');
             navMenu.classList.toggle('active');
+            syncNavState();
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    navToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    syncNavState();
+                }
+            });
+        });
+
+        // Sticky Navigation
+        const nav = document.querySelector('.nav');
+        const navHeight = nav.offsetHeight;
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > navHeight) {
+                nav.classList.add('nav-sticky');
+            } else {
+                nav.classList.remove('nav-sticky');
+            }
+        });
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
         });
     </script>
 </body>
