@@ -1,0 +1,17 @@
+# Requirements for AI Asset Generation
+# Install with: pip install -r requirements-assets.txt
+
+# Flux 2 API client
+fal-client>=0.4.1
+
+# Image processing
+Pillow>=10.0.0
+
+# HTTP requests
+requests>=2.31.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# Optional: For web optimization
+# Wand>=0.6.11  # ImageMagick wrapper for WebP conversion
