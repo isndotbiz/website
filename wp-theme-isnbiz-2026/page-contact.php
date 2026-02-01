@@ -1,0 +1,343 @@
+<?php
+/*
+Template Name: Contact Page
+*/
+get_header();
+?>
+
+    <!-- Page Hero -->
+    <section class="hero portfolio-hero">
+        <div class="hero-background"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/hero_logo.webp" alt="iSN.BiZ Inc - Innovation Solutions Systems" class="hero-logo-img">
+                </div>
+                <h1 class="hero-title">Let's Start a Conversation</h1>
+                <p class="hero-subtitle">Whether you're interested in our solutions or investment opportunities, we'd love to hear from you</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <div class="section-header">
+                        <span class="section-label">Get in Touch</span>
+                        <h2 class="section-title">Send Us a Message</h2>
+                        <p class="section-description">Fill out the form below and we'll respond within 24 business hours</p>
+                    </div>
+
+                    <form class="contact-form" id="contactForm" method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
+                        <input type="hidden" name="action" value="isnbiz_contact_form">
+                        <?php wp_nonce_field('isnbiz_contact_form', 'isnbiz_contact_nonce'); ?>
+
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@company.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" placeholder="Your Company Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interest">I'm interested in:</label>
+                            <select id="interest" name="interest">
+                                <option value="consultation">Software Development Consultation</option>
+                                <option value="demo">Product Demo</option>
+                                <option value="investment">Investment Opportunities</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="ai-solutions">AI & Machine Learning Solutions</option>
+                                <option value="cloud">Cloud Architecture & DevOps</option>
+                                <option value="mobile">Mobile Development</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us about your project or inquiry..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Project Budget (Optional)</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-50k">Under $50,000</option>
+                                <option value="50k-100k">$50,000 - $100,000</option>
+                                <option value="100k-250k">$100,000 - $250,000</option>
+                                <option value="250k-500k">$250,000 - $500,000</option>
+                                <option value="over-500k">Over $500,000</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline">Timeline (Optional)</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select timeline</option>
+                                <option value="immediate">Immediate (within 1 month)</option>
+                                <option value="1-3-months">1-3 months</option>
+                                <option value="3-6-months">3-6 months</option>
+                                <option value="6-months-plus">6+ months</option>
+                                <option value="exploring">Just exploring options</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full"><span>Send Message</span></button>
+                        <p class="form-privacy">We respect your privacy. Your information will be kept confidential and will never be shared with third parties.</p>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Company Information</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <div>
+                                    <strong>Headquarters</strong>
+                                    <p>Seattle, Washington<br>United States</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p><a href="mailto:info@isn.biz">info@isn.biz</a></p>
+                                    <p class="contact-note">For general inquiries</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <div>
+                                    <strong>Investor Relations</strong>
+                                    <p><a href="mailto:investors@isn.biz">investors@isn.biz</a></p>
+                                    <p class="contact-note">For investment inquiries</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                </svg>
+                                <div>
+                                    <strong>Website</strong>
+                                    <p><a href="<?php echo esc_url(home_url('/')); ?>">www.isn.biz</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>Business Hours</h3>
+                        <ul class="credential-list">
+                            <li><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM PST</li>
+                            <li><strong>Saturday - Sunday:</strong> Closed</li>
+                            <li><strong>Response Time:</strong> Within 24 business hours</li>
+                            <li><strong>Emergency Support:</strong> Available for clients</li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>For Investors</h3>
+                        <p>Qualified investors can request access to our secure data room for detailed financial information, product roadmap, and due diligence materials.</p>
+                        <ul class="competency-list">
+                            <li>Pitch deck available on request</li>
+                            <li>Financial projections and metrics</li>
+                            <li>Market analysis and competitive landscape</li>
+                            <li>Team credentials and backgrounds</li>
+                        </ul>
+                        <a href="<?php echo esc_url(home_url('/investors')); ?>" class="btn btn-outline btn-small"><span>Learn More About Investment</span></a>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>Schedule a Demo</h3>
+                        <p>See our AI-powered solutions in action. Schedule a personalized demo to learn how we can help transform your business.</p>
+                        <ul class="competency-list">
+                            <li>30-minute discovery call</li>
+                            <li>Live product demonstration</li>
+                            <li>Custom use case discussion</li>
+                            <li>Q&A with technical team</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Locations / Additional Info -->
+    <section class="section solutions">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Why Contact Us</span>
+                <h2 class="section-title">How We Can Help You</h2>
+            </div>
+
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        </svg>
+                    </div>
+                    <h3>Software Development Projects</h3>
+                    <p>Looking to build custom software, modernize legacy systems, or integrate AI into your operations? We'd love to discuss your requirements.</p>
+                    <ul class="solution-features">
+                        <li>Free initial consultation</li>
+                        <li>Technical feasibility assessment</li>
+                        <li>Detailed project proposal</li>
+                        <li>Transparent pricing</li>
+                    </ul>
+                </div>
+
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3>Investment Inquiries</h3>
+                    <p>Interested in learning more about investment opportunities? We welcome conversations with qualified investors who share our vision.</p>
+                    <ul class="solution-features">
+                        <li>Pitch deck available</li>
+                        <li>Financial projections</li>
+                        <li>Market opportunity analysis</li>
+                        <li>Due diligence materials</li>
+                    </ul>
+                </div>
+
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Partnership Opportunities</h3>
+                    <p>Exploring strategic partnerships, technology integrations, or reseller relationships? Let's explore how we can work together.</p>
+                    <ul class="solution-features">
+                        <li>Technology partnerships</li>
+                        <li>Reseller programs</li>
+                        <li>Co-development opportunities</li>
+                        <li>Integration partnerships</li>
+                    </ul>
+                </div>
+
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3>Product Demonstrations</h3>
+                    <p>Want to see our solutions in action? Schedule a personalized demo to learn how our technology can address your specific challenges.</p>
+                    <ul class="solution-features">
+                        <li>Live demonstrations</li>
+                        <li>Custom use cases</li>
+                        <li>Technical Q&A</li>
+                        <li>Implementation planning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section about">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Frequently Asked Questions</span>
+                <h2 class="section-title">Common Questions</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="credential-card">
+                        <h3>How quickly can you start a project?</h3>
+                        <p>We can typically begin discovery and planning within 1-2 weeks of initial contact, depending on our current capacity. Development can start within 2-4 weeks after project kickoff.</p>
+                    </div>
+
+                    <div class="credential-card">
+                        <h3>What industries do you specialize in?</h3>
+                        <p>We have deep experience in financial services, healthcare, supply chain, manufacturing, and professional services. However, our technical expertise allows us to serve clients across any industry.</p>
+                    </div>
+
+                    <div class="credential-card">
+                        <h3>Do you work with startups or only enterprises?</h3>
+                        <p>While we focus on enterprise clients, we also work with well-funded startups that have clear product-market fit and growth trajectories.</p>
+                    </div>
+
+                    <div class="credential-card">
+                        <h3>What is your typical project size?</h3>
+                        <p>Our projects typically range from $50,000 to $500,000+, with engagement durations from 3 months to ongoing partnerships spanning years.</p>
+                    </div>
+                </div>
+
+                <div class="about-credentials">
+                    <div class="credential-card">
+                        <h3>Do you provide ongoing support?</h3>
+                        <p>Yes, we offer comprehensive support and maintenance packages for all our solutions. Many clients maintain long-term partnerships with us for continuous improvement and enhancement.</p>
+                    </div>
+
+                    <div class="credential-card">
+                        <h3>Where are you located?</h3>
+                        <p>We're headquartered in Seattle, Washington, but we work with clients across the United States and internationally. We're comfortable with remote collaboration and can travel for in-person meetings as needed.</p>
+                    </div>
+
+                    <div class="credential-card">
+                        <h3>How do you ensure data security?</h3>
+                        <p>We implement enterprise-grade security measures including encryption at rest and in transit, zero-trust architecture, secure credential management, and compliance with industry standards like HIPAA, SOC 2, and GDPR.</p>
+                    </div>
+
+                    <div class="credential-card">
+                        <h3>Can you work with our existing team?</h3>
+                        <p>Absolutely. We excel at collaborating with in-house development teams, whether as a supplementary resource, technical advisors, or integration partners.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section portfolio-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Fill out the form above or email us directly at <a href="mailto:info@isn.biz" style="color: white; text-decoration: underline;">info@isn.biz</a></p>
+                <div class="cta-buttons">
+                    <a href="#contactForm" class="btn btn-secondary"><span>Send Message</span></a>
+                    <a href="<?php echo esc_url(home_url('/portfolio')); ?>" class="btn btn-outline"><span>View Our Work</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<?php get_footer(); ?>
