@@ -1,0 +1,21 @@
+/*
+Theme Name: ISN.BIZ 2026
+Theme URI: https://isn.biz
+Author: ISN.BIZ Inc
+Author URI: https://isn.biz
+Description: Investor-ready portfolio website with Neo-Technical Brutalism design, WCAG 2.1 AA compliant. Enterprise-grade AI/ML software company showcasing production systems and investor opportunities.
+Version: 3.0.0
+License: Proprietary
+Text Domain: isnbiz-2026
+Tags: business, portfolio, accessibility-ready, custom-menu, enterprise, ai, investor-relations
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 8.0
+
+This theme was created for ISN.BIZ Inc - an enterprise software development company
+founded in 2015, specializing in AI-powered solutions and cloud infrastructure.
+*/
+
+/* Import main styles */
+@import url('assets/css/main.css');
+@import url('assets/css/slider.css');

@@ -1,0 +1,16 @@
+PLACEHOLDER: Create a 1200x900px PNG screenshot of the theme homepage.
+
+WordPress recommends 1200x900px for theme screenshots (displays at 400x300px in admin).
+
+To create:
+1. Load index.html in browser
+2. Take full-page screenshot
+3. Crop/resize to 1200x900px
+4. Save as screenshot.png in theme root
+5. Delete this file
+
+Or use an image editor to create a branded placeholder with:
+- ISN.BIZ logo
+- Theme name: "ISN.BIZ 2026"
+- Tagline: "Investor-Grade Portfolio Theme"
+- Background: Metallic or brand colors (#1E9FF2, #5FDFDF, #3F4447)
