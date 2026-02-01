@@ -6,31 +6,43 @@
     <meta name="description" content="Contact iSN.BiZ Inc - Get in touch for business inquiries, investor relations, or schedule a consultation about our software solutions.">
     <meta name="keywords" content="contact iSN.BiZ, software development contact, business inquiry, investor contact, consultation">
     <title>Contact Us - iSN.BiZ Inc</title>
+    <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
+    <link rel="apple-touch-icon" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/apple_touch_icon.webp">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .contact-note {
+            font-size: 1rem;
+            color: var(--color-muted);
+            margin-top: 0.25rem;
+        }
+    </style>
 </head>
 <body>
+    <!-- WCAG FIX: Skip navigation link for keyboard users -->
+    <a href="#contactForm" class="skip-link">Skip to main content</a>
+
     <!-- Navigation -->
     <nav class="nav">
         <div class="container nav-container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/logo-pallete/ISS white long 500(1).png" alt="iSN.BiZ Inc Logo" class="logo-img">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
                 </a>
             </div>
-            <button class="nav-toggle" aria-label="Toggle navigation">
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation" type="button">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-menu">
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="investors.html">Investors</a></li>
-                <li><a href="contact.html" class="active nav-cta">Contact</a></li>
+            <ul class="nav-menu" id="primary-navigation" role="menubar">
+                <li role="none"><a href="about.html" role="menuitem">About</a></li>
+                <li role="none"><a href="services.html" role="menuitem">Services</a></li>
+                <li role="none"><a href="portfolio.html" role="menuitem">Portfolio</a></li>
+                <li role="none"><a href="investors.html" role="menuitem">Investors</a></li>
+                <li role="none"><a href="contact.html" class="active nav-cta" role="menuitem" aria-current="page">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -41,7 +53,7 @@
         <div class="container hero-container">
             <div class="hero-content">
                 <div class="hero-logo">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/logo-pallete/ISS2500.png" alt="iSN.BiZ Inc" class="hero-logo-img">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/hero_logo.webp" alt="iSN.BiZ Inc - Innovation Solutions Systems" class="hero-logo-img">
                 </div>
                 <h1 class="hero-title">Let's Start a Conversation</h1>
                 <p class="hero-subtitle">Whether you're interested in our solutions or investment opportunities, we'd love to hear from you</p>
@@ -124,7 +136,7 @@
                             </select>
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        <button type="submit" class="btn btn-primary btn-full"><span>Send Message</span></button>
                         <p class="form-privacy">We respect your privacy. Your information will be kept confidential and will never be shared with third parties.</p>
                     </form>
                 </div>
@@ -198,7 +210,7 @@
                             <li>Market analysis and competitive landscape</li>
                             <li>Team credentials and backgrounds</li>
                         </ul>
-                        <a href="investors.html" class="btn btn-outline btn-small">Learn More About Investment</a>
+                        <a href="investors.html" class="btn btn-outline btn-small"><span>Learn More About Investment</span></a>
                     </div>
 
                     <div class="contact-card">
@@ -360,8 +372,8 @@
                 <h2>Ready to Get Started?</h2>
                 <p>Fill out the form above or email us directly at <a href="mailto:info@isn.biz" style="color: white; text-decoration: underline;">info@isn.biz</a></p>
                 <div class="cta-buttons">
-                    <a href="#contactForm" class="btn btn-secondary">Send Message</a>
-                    <a href="portfolio.html" class="btn btn-outline">View Our Work</a>
+                    <a href="#contactForm" class="btn btn-secondary"><span>Send Message</span></a>
+                    <a href="portfolio.html" class="btn btn-outline"><span>View Our Work</span></a>
                 </div>
             </div>
         </div>
@@ -372,7 +384,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-column">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/logo-pallete/ISS white long 500(1).png" alt="iSN.BiZ Inc Logo" class="footer-logo">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/footer_logo.webp" alt="iSN.BiZ Inc Logo" class="footer-logo">
                     <p class="footer-description">Building the future of enterprise software with innovative, AI-powered solutions since 2015.</p>
                     <div class="footer-credentials">
                         <p><strong>DUNS:</strong> 080513772</p>
@@ -418,10 +430,15 @@
         // Mobile Navigation Toggle
         const navToggle = document.querySelector('.nav-toggle');
         const navMenu = document.querySelector('.nav-menu');
+        const syncNavState = () => {
+            const isOpen = navMenu.classList.contains('active');
+            navToggle.setAttribute('aria-expanded', isOpen.toString());
+        };
 
         navToggle.addEventListener('click', () => {
             navToggle.classList.toggle('active');
             navMenu.classList.toggle('active');
+            syncNavState();
         });
 
         // Smooth Scrolling
@@ -436,6 +453,7 @@
                     });
                     navToggle.classList.remove('active');
                     navMenu.classList.remove('active');
+                    syncNavState();
                 }
             });
         });
@@ -488,12 +506,5 @@
         });
     </script>
 
-    <style>
-        .contact-note {
-            font-size: 0.8rem;
-            color: #999;
-            margin-top: 0.25rem;
-        }
-    </style>
 </body>
 </html>

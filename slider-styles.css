@@ -48,6 +48,14 @@
     right: 0;
     bottom: 0;
     z-index: 0;
+    overflow: hidden;
+}
+
+.slide-background::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
 }
 
 .slide-pattern {
@@ -102,9 +110,10 @@
 }
 
 .slide-tags .tag {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    color: var(--color-dark);
 }
 
 .slide-metrics {
@@ -128,7 +137,7 @@
 
 .slide-metrics .metric-label {
     display: block;
-    font-size: 0.75rem;
+    font-size: 1rem;
     opacity: 0.8;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -136,7 +145,7 @@
 
 .slide-info .btn {
     background: var(--color-white);
-    color: var(--color-primary);
+    color: var(--color-primary-ink);
     border: none;
 }
 
@@ -216,13 +225,13 @@
 
 .tech-item h4 {
     font-size: 1.25rem;
-    color: var(--color-primary);
+    color: var(--color-primary-ink);
     margin-bottom: 0.5rem;
 }
 
 .tech-item p {
-    font-size: 0.875rem;
-    color: #6c757d;
+    font-size: 1rem;
+    color: var(--color-muted);
     margin: 0;
 }
 
@@ -247,6 +256,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.gallery-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 0;
+}
+
+.gallery-image > * {
+    position: relative;
+    z-index: 1;
 }
 
 .gallery-thumbs {
@@ -301,7 +324,7 @@
 .code-example code {
     color: #e9ecef;
     font-family: 'Courier New', monospace;
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: 1.6;
     display: block;
 }
@@ -338,13 +361,13 @@
 
 .feature-card h3 {
     font-size: 1.25rem;
-    color: var(--color-primary);
+    color: var(--color-primary-ink);
     margin-bottom: 0.5rem;
 }
 
 .feature-card p {
-    font-size: 0.875rem;
-    color: #6c757d;
+    font-size: 1rem;
+    color: var(--color-muted);
     margin: 0;
 }
 
@@ -421,7 +444,7 @@
     }
 
     .slide-description {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
 
     .slide-metrics .metric-value {
@@ -429,7 +452,7 @@
     }
 
     .slide-metrics .metric-label {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 
     .tech-swiper {
@@ -482,7 +505,7 @@
     }
 
     .slide-tags .tag {
-        font-size: 0.7rem;
+        font-size: 1rem;
         padding: 0.2rem 0.5rem;
     }
 
@@ -499,7 +522,7 @@
     }
 
     .code-example code {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 }
 
