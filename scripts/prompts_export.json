@@ -1,0 +1,191 @@
+{
+  "metadata": {
+    "project": "isn.biz Website",
+    "brand_colors": {
+      "blue": "#1E9FF2",
+      "cyan": "#5FDFDF",
+      "charcoal": "#3F4447"
+    },
+    "total_assets": 23,
+    "categories": 4,
+    "description": "Professional AI-generated visual assets for tech company website"
+  },
+  "hero_backgrounds": {
+    "category": "Hero Backgrounds",
+    "count": 5,
+    "resolution": "2560x1440",
+    "format": "PNG",
+    "assets": [
+      {
+        "name": "hero-bg-network",
+        "filename": "hero-bg-network.png",
+        "prompt": "Ultra-modern abstract digital network background, flowing data streams and glowing nodes, color palette of bright blue #1E9FF2 and cyan #5FDFDF on dark charcoal #3F4447 background, futuristic technology aesthetic, clean professional design, high resolution 2560x1440, cinematic lighting, depth of field, photorealistic render, trending on artstation",
+        "negative_prompt": "cluttered, busy, text, logos, people, faces, amateur, low quality"
+      },
+      {
+        "name": "hero-bg-geometric",
+        "filename": "hero-bg-geometric.png",
+        "prompt": "Minimalist geometric abstract background, floating 3D shapes and polygons, gradient from bright blue #1E9FF2 to cyan #5FDFDF, dark charcoal #3F4447 accents, modern tech aesthetic, clean composition, professional corporate design, 2560x1440 resolution, studio lighting, sharp focus, ultra detailed",
+        "negative_prompt": "cluttered, messy, chaotic, text, watermarks, low resolution"
+      },
+      {
+        "name": "hero-bg-data-viz",
+        "filename": "hero-bg-data-viz.png",
+        "prompt": "Sleek data visualization abstract background, glowing charts and graphs elements, circuit board patterns, color scheme of electric blue #1E9FF2 and vibrant cyan #5FDFDF on charcoal #3F4447 base, futuristic dashboard aesthetic, professional tech design, 2560x1440 high resolution, cinematic composition, photorealistic 3D render",
+        "negative_prompt": "messy, cluttered, amateur, cartoonish, low quality, text"
+      },
+      {
+        "name": "hero-bg-metallic",
+        "filename": "hero-bg-metallic.png",
+        "prompt": "Premium metallic technology background, brushed metal texture with blue #1E9FF2 and cyan #5FDFDF lighting effects, dark charcoal #3F4447 base, abstract tech patterns, sophisticated modern design, enterprise-grade aesthetic, 2560x1440 resolution, professional studio lighting, ultra sharp, photorealistic",
+        "negative_prompt": "rusty, old, vintage, cluttered, low quality, amateur"
+      },
+      {
+        "name": "hero-bg-particles",
+        "filename": "hero-bg-particles.png",
+        "prompt": "Dynamic particle flow abstract background, glowing particles in motion, energy streams in bright blue #1E9FF2 and cyan #5FDFDF colors, dark charcoal #3F4447 background, cutting-edge technology aesthetic, clean modern composition, 2560x1440 high resolution, volumetric lighting, photorealistic render, professional grade",
+        "negative_prompt": "static, boring, cluttered, messy, text, low resolution"
+      }
+    ]
+  },
+  "portfolio_mockups": {
+    "category": "Portfolio Project Mockups",
+    "count": 8,
+    "resolution": "1920x1080 or 1600x1200",
+    "format": "PNG",
+    "assets": [
+      {
+        "name": "portfolio-opportunity-bot-dashboard",
+        "filename": "portfolio-opportunity-bot-dashboard.png",
+        "resolution": "1920x1080",
+        "prompt": "Modern AI chatbot dashboard interface mockup, dark theme UI with blue #1E9FF2 and cyan #5FDFDF accent colors, conversation threads, analytics graphs, clean professional design, realistic software interface, high detail, flat design with depth, 1920x1080 resolution, professional UI/UX design",
+        "negative_prompt": "cluttered, amateur, outdated, low quality, blurry"
+      },
+      {
+        "name": "portfolio-opportunity-bot-chat",
+        "filename": "portfolio-opportunity-bot-chat.png",
+        "resolution": "1920x1080",
+        "prompt": "Sleek AI chat interface mockup, modern messaging UI with blue #1E9FF2 and cyan #5FDFDF highlights, chatbot conversation bubbles, typing indicators, dark charcoal #3F4447 background, professional SaaS design, clean layout, 1920x1080 resolution, high fidelity mockup, modern UI design",
+        "negative_prompt": "messy, cluttered, old-fashioned, low quality, amateur"
+      },
+      {
+        "name": "portfolio-spiritatlas-profile",
+        "filename": "portfolio-spiritatlas-profile.png",
+        "resolution": "1600x1200",
+        "prompt": "Premium mobile app interface mockup on iPhone 15 Pro, spiritual wellness app, profile screen with meditation stats, blue #1E9FF2 and cyan #5FDFDF color scheme, modern iOS design, clean minimalist UI, realistic phone mockup, professional app design, 1600x1200 resolution, studio lighting on device",
+        "negative_prompt": "cluttered, amateur, outdated phone, low quality, messy"
+      },
+      {
+        "name": "portfolio-spiritatlas-meditation",
+        "filename": "portfolio-spiritatlas-meditation.png",
+        "resolution": "1600x1200",
+        "prompt": "Beautiful mobile meditation app interface on modern smartphone, guided meditation screen with wave animations, calming blue #1E9FF2 gradients, cyan #5FDFDF accents, peaceful design aesthetic, professional UI/UX, realistic phone mockup, 1600x1200 resolution, premium app design",
+        "negative_prompt": "cluttered, chaotic, amateur, low quality, unrealistic"
+      },
+      {
+        "name": "portfolio-analytics-dashboard",
+        "filename": "portfolio-analytics-dashboard.png",
+        "resolution": "1920x1080",
+        "prompt": "Professional analytics dashboard interface, modern data visualization, charts and graphs in blue #1E9FF2 and cyan #5FDFDF colors, dark theme with charcoal #3F4447 background, clean layout, enterprise-grade UI design, 1920x1080 resolution, high detail, realistic software interface, professional design",
+        "negative_prompt": "cluttered, messy, amateur, outdated, low quality"
+      },
+      {
+        "name": "portfolio-cloud-architecture",
+        "filename": "portfolio-cloud-architecture.png",
+        "resolution": "1920x1080",
+        "prompt": "Modern cloud architecture diagram visualization, AWS/Azure infrastructure, isometric 3D elements, blue #1E9FF2 and cyan #5FDFDF color scheme, clean professional infographic style, dark charcoal #3F4447 background, technical but accessible, 1920x1080 resolution, high quality illustration",
+        "negative_prompt": "cluttered, messy, confusing, amateur, low quality"
+      },
+      {
+        "name": "portfolio-ecommerce-platform",
+        "filename": "portfolio-ecommerce-platform.png",
+        "resolution": "1920x1080",
+        "prompt": "Sleek e-commerce platform dashboard mockup, modern admin interface, product management screen, sales analytics, blue #1E9FF2 and cyan #5FDFDF accents, professional SaaS design, clean layout, realistic UI, 1920x1080 resolution, high fidelity mockup, enterprise-grade design",
+        "negative_prompt": "cluttered, outdated, amateur, messy, low quality"
+      },
+      {
+        "name": "portfolio-api-docs",
+        "filename": "portfolio-api-docs.png",
+        "resolution": "1920x1080",
+        "prompt": "Modern API documentation portal interface, developer-focused design, code snippets with syntax highlighting, blue #1E9FF2 and cyan #5FDFDF theme, dark mode interface, professional tech documentation layout, 1920x1080 resolution, clean typography, high quality UI design",
+        "negative_prompt": "cluttered, confusing, amateur, outdated, low quality"
+      }
+    ]
+  },
+  "service_icons": {
+    "category": "Service Icons",
+    "count": 6,
+    "resolution": "512x512",
+    "format": "PNG with transparency",
+    "assets": [
+      {
+        "name": "icon-custom-dev",
+        "filename": "icon-custom-dev.png",
+        "prompt": "Modern icon for custom software development, code brackets and gear symbol, bright blue #1E9FF2 and cyan #5FDFDF gradient, flat design with subtle depth, clean professional style, 512x512 resolution, transparent background, crisp edges, vector-style illustration",
+        "negative_prompt": "3D, realistic, cluttered, messy, low quality, blurry"
+      },
+      {
+        "name": "icon-ai-ml",
+        "filename": "icon-ai-ml.png",
+        "prompt": "Sleek AI and machine learning icon, neural network nodes connected, blue #1E9FF2 to cyan #5FDFDF gradient, modern flat design, professional tech icon style, 512x512 resolution, transparent background, clean geometric shapes, high quality vector-style",
+        "negative_prompt": "3D, photorealistic, cluttered, amateur, low quality"
+      },
+      {
+        "name": "icon-cloud-architecture",
+        "filename": "icon-cloud-architecture.png",
+        "prompt": "Modern cloud computing icon, stylized cloud with server nodes, bright blue #1E9FF2 and cyan #5FDFDF colors, flat design with depth, professional tech icon, 512x512 resolution, transparent background, clean minimalist style, crisp vector illustration",
+        "negative_prompt": "realistic, 3D, cluttered, outdated, low quality"
+      },
+      {
+        "name": "icon-data-engineering",
+        "filename": "icon-data-engineering.png",
+        "prompt": "Professional data engineering icon, database cylinders with data flow arrows, blue #1E9FF2 and cyan #5FDFDF gradient, modern flat icon design, clean tech aesthetic, 512x512 resolution, transparent background, geometric precision, high quality vector-style",
+        "negative_prompt": "3D, photorealistic, messy, amateur, low quality"
+      },
+      {
+        "name": "icon-security",
+        "filename": "icon-security.png",
+        "prompt": "Modern cybersecurity icon, shield with lock and circuit elements, bright blue #1E9FF2 to cyan #5FDFDF gradient, flat design with subtle depth, professional security icon style, 512x512 resolution, transparent background, clean geometric design, vector illustration quality",
+        "negative_prompt": "3D, realistic, cluttered, outdated, low quality"
+      },
+      {
+        "name": "icon-mobile-dev",
+        "filename": "icon-mobile-dev.png",
+        "prompt": "Sleek mobile development icon, smartphone with code elements, blue #1E9FF2 and cyan #5FDFDF colors, modern flat icon design, professional tech style, 512x512 resolution, transparent background, clean minimalist aesthetic, crisp vector-style illustration",
+        "negative_prompt": "3D, photorealistic, messy, amateur, low quality, blurry"
+      }
+    ]
+  },
+  "section_dividers": {
+    "category": "Section Dividers",
+    "count": 4,
+    "resolution": "1920x400",
+    "format": "PNG",
+    "assets": [
+      {
+        "name": "divider-gradient-wave",
+        "filename": "divider-gradient-wave.png",
+        "prompt": "Subtle abstract wave gradient background, smooth flowing curves, blue #1E9FF2 to cyan #5FDFDF to charcoal #3F4447 gradient, minimal professional design, 1920x400 banner resolution, clean modern aesthetic, high quality render",
+        "negative_prompt": "busy, cluttered, distracting, harsh, low quality"
+      },
+      {
+        "name": "divider-metallic-lines",
+        "filename": "divider-metallic-lines.png",
+        "prompt": "Sleek metallic horizontal lines pattern, subtle tech aesthetic, blue #1E9FF2 and cyan #5FDFDF highlights on charcoal #3F4447 base, minimal professional background, 1920x400 resolution, clean modern design, high quality",
+        "negative_prompt": "cluttered, messy, distracting, amateur, low quality"
+      },
+      {
+        "name": "divider-particle-scatter",
+        "filename": "divider-particle-scatter.png",
+        "prompt": "Minimal particle scatter background, subtle glowing dots, blue #1E9FF2 and cyan #5FDFDF particles on dark charcoal #3F4447, professional tech aesthetic, non-distracting, 1920x400 banner, clean modern design, high quality render",
+        "negative_prompt": "busy, cluttered, chaotic, harsh, low quality"
+      },
+      {
+        "name": "divider-circuit-pattern",
+        "filename": "divider-circuit-pattern.png",
+        "prompt": "Subtle circuit board pattern background, minimal tech lines, blue #1E9FF2 and cyan #5FDFDF accents on charcoal #3F4447, professional subtle design, 1920x400 resolution, clean modern aesthetic, non-distracting, high quality",
+        "negative_prompt": "cluttered, busy, messy, harsh, low quality"
+      }
+    ]
+  }
+}

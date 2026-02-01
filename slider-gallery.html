@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider & Gallery Showcase - iSN.BiZ Inc</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Swiper 11 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom Slider Styles -->
+    <link rel="stylesheet" href="slider-styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/logo-pallete/ISS white long 500(1).png" alt="iSN.BiZ Inc Logo" class="logo-img">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="index.html#investors">Investors</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero portfolio-hero">
+        <div class="hero-background"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Slider & Gallery Showcase</h1>
+                <p class="hero-subtitle">Award-Winning Implementations with Cutting-Edge Technology</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Full-Screen Portfolio Slider -->
+    <section id="portfolio-slider" class="section slider-section">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Component 1</span>
+                <h2 class="section-title">Full-Screen Portfolio Project Slider</h2>
+                <p class="section-description">Immersive 3D coverflow effect with parallax backgrounds</p>
+            </div>
+
+            <!-- Swiper Container -->
+            <div class="swiper portfolio-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1: Opportunity Bot -->
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="slide-background" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                <div class="slide-pattern"></div>
+                            </div>
+                            <div class="slide-info">
+                                <span class="slide-number">01</span>
+                                <h3 class="slide-title">AI-Powered Opportunity Research Bot</h3>
+                                <p class="slide-description">Intelligent business opportunity discovery with FICO-based personalization using RAG technology and local AI models.</p>
+                                <div class="slide-tags">
+                                    <span class="tag">AI/ML</span>
+                                    <span class="tag">RAG System</span>
+                                    <span class="tag">Python</span>
+                                </div>
+                                <div class="slide-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">700+</span>
+                                        <span class="metric-label">Lines of Code</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">95%</span>
+                                        <span class="metric-label">Time Savings</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">24/7</span>
+                                        <span class="metric-label">Automated</span>
+                                    </div>
+                                </div>
+                                <a href="portfolio.html#opportunity-bot" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Credit Automation -->
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="slide-background" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                                <div class="slide-pattern"></div>
+                            </div>
+                            <div class="slide-info">
+                                <span class="slide-number">02</span>
+                                <h3 class="slide-title">Enterprise Credit Report Automation</h3>
+                                <p class="slide-description">Secure browser automation with 1Password CLI integration for multi-bureau credit monitoring.</p>
+                                <div class="slide-tags">
+                                    <span class="tag">Automation</span>
+                                    <span class="tag">Security</span>
+                                    <span class="tag">Playwright</span>
+                                </div>
+                                <div class="slide-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">620</span>
+                                        <span class="metric-label">Lines of Code</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">45 min</span>
+                                        <span class="metric-label">Time Saved</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">0</span>
+                                        <span class="metric-label">Hardcoded Creds</span>
+                                    </div>
+                                </div>
+                                <a href="portfolio.html#credit-automation" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: HROC Website -->
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="slide-background" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                                <div class="slide-pattern"></div>
+                            </div>
+                            <div class="slide-info">
+                                <span class="slide-number">03</span>
+                                <h3 class="slide-title">HROC Non-Profit Website</h3>
+                                <p class="slide-description">Professional web presence with AI-generated imagery and cloud deployment pipeline.</p>
+                                <div class="slide-tags">
+                                    <span class="tag">Web Development</span>
+                                    <span class="tag">AI Images</span>
+                                    <span class="tag">AWS S3</span>
+                                </div>
+                                <div class="slide-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">417</span>
+                                        <span class="metric-label">Total Files</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">13</span>
+                                        <span class="metric-label">AI Portraits</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">$5K+</span>
+                                        <span class="metric-label">Cost Savings</span>
+                                    </div>
+                                </div>
+                                <a href="portfolio.html#hroc-website" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4: RAG System -->
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="slide-background" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                                <div class="slide-pattern"></div>
+                            </div>
+                            <div class="slide-info">
+                                <span class="slide-number">04</span>
+                                <h3 class="slide-title">Enterprise RAG Business Intelligence</h3>
+                                <p class="slide-description">Local LLM deployment with vector search for intelligent document analysis.</p>
+                                <div class="slide-tags">
+                                    <span class="tag">RAG</span>
+                                    <span class="tag">Vector DB</span>
+                                    <span class="tag">llama.cpp</span>
+                                </div>
+                                <div class="slide-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">100%</span>
+                                        <span class="metric-label">On-Premise</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">&lt;2s</span>
+                                        <span class="metric-label">Query Speed</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">$0</span>
+                                        <span class="metric-label">API Costs</span>
+                                    </div>
+                                </div>
+                                <a href="portfolio.html#rag-system" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5: AI Infrastructure -->
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="slide-background" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                                <div class="slide-pattern"></div>
+                            </div>
+                            <div class="slide-info">
+                                <span class="slide-number">05</span>
+                                <h3 class="slide-title">Enterprise AI Infrastructure Platform</h3>
+                                <p class="slide-description">Self-hosted AI ecosystem with ComfyUI, SillyTavern, and TrueNAS integration.</p>
+                                <div class="slide-tags">
+                                    <span class="tag">Infrastructure</span>
+                                    <span class="tag">DevOps</span>
+                                    <span class="tag">Docker</span>
+                                </div>
+                                <div class="slide-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">4</span>
+                                        <span class="metric-label">Platforms</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">TB+</span>
+                                        <span class="metric-label">Storage</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">$1K+</span>
+                                        <span class="metric-label">Monthly Savings</span>
+                                    </div>
+                                </div>
+                                <a href="portfolio.html#infrastructure" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Code Example -->
+            <div class="code-example">
+                <h4>Implementation Code:</h4>
+                <pre><code>const portfolioSwiper = new Swiper('.portfolio-swiper', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+  pagination: { clickable: true },
+  navigation: true,
+  keyboard: { enabled: true },
+});</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Technology Stack Carousel -->
+    <section id="tech-carousel" class="section slider-section alt-bg">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Component 2</span>
+                <h2 class="section-title">Technology Stack Carousel</h2>
+                <p class="section-description">Auto-rotating showcase with infinite loop and free scrolling</p>
+            </div>
+
+            <!-- Swiper Container -->
+            <div class="swiper tech-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Tech Items -->
+                    <div class="swiper-slide tech-slide">
+                        <div class="tech-item">
+                            <div class="tech-icon">🤖</div>
+                            <h4>AI/ML</h4>
+                            <p>Qwen 2.5, ChromaDB, RAG</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tech-slide">
+                        <div class="tech-item">
+                            <div class="tech-icon">🐍</div>
+                            <h4>Python</h4>
+                            <p>3.11+, Async, FastAPI</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tech-slide">
+                        <div class="tech-item">
+                            <div class="tech-icon">⚛️</div>
+                            <h4>JavaScript</h4>
+                            <p>Node.js, React, TypeScript</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tech-slide">
+                        <div class="tech-item">
+                            <div class="tech-icon">🐳</div>
+                            <h4>Docker</h4>
+                            <p>Containerization, K8s</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tech-slide">
+                        <div class="tech-item">
+                            <div class="tech-icon">☁️</div>
+                            <h4>AWS</h4>
+                            <p>S3, Lambda, CloudFront</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tech-slide">
+                        <div class="tech-item">
+                            <div class="tech-icon">🔒</div>
+                            <h4>Security</h4>
+                            <p>1Password, Playwright</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tech-slide">
+                        <div class="tech-item">
+                            <div class="tech-icon">🎨</div>
+                            <h4>Design</h4>
+                            <p>ComfyUI, Stable Diffusion</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tech-slide">
+                        <div class="tech-item">
+                            <div class="tech-icon">📊</div>
+                            <h4>Analytics</h4>
+                            <p>Vector DB, BI Platforms</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Code Example -->
+            <div class="code-example">
+                <h4>Implementation Code:</h4>
+                <pre><code>const techSwiper = new Swiper('.tech-swiper', {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  freeMode: {
+    enabled: true,
+    momentum: true,
+    momentumRatio: 0.5,
+  },
+  breakpoints: {
+    640: { slidesPerView: 3 },
+    768: { slidesPerView: 4 },
+    1024: { slidesPerView: 5 },
+  },
+});</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Thumbnail Gallery -->
+    <section id="thumbnail-gallery" class="section slider-section">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Component 3</span>
+                <h2 class="section-title">Thumbnail Navigation Gallery</h2>
+                <p class="section-description">Synchronized main and thumbnail sliders with lazy loading</p>
+            </div>
+
+            <!-- Main Gallery -->
+            <div class="swiper gallery-main">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="gallery-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 60px; text-align: center;">
+                            <h3 style="color: white; font-size: 2rem;">Project Screenshot 1</h3>
+                            <p style="color: rgba(255,255,255,0.9);">AI Dashboard Interface</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 60px; text-align: center;">
+                            <h3 style="color: white; font-size: 2rem;">Project Screenshot 2</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Automation Pipeline</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 60px; text-align: center;">
+                            <h3 style="color: white; font-size: 2rem;">Project Screenshot 3</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Website Design</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); padding: 60px; text-align: center;">
+                            <h3 style="color: white; font-size: 2rem;">Project Screenshot 4</h3>
+                            <p style="color: rgba(255,255,255,0.9);">RAG System</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); padding: 60px; text-align: center;">
+                            <h3 style="color: white; font-size: 2rem;">Project Screenshot 5</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Infrastructure Stack</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <!-- Thumbnail Gallery -->
+            <div class="swiper gallery-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="thumb-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Code Example -->
+            <div class="code-example">
+                <h4>Implementation Code:</h4>
+                <pre><code>const galleryThumbs = new Swiper('.gallery-thumbs', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  watchSlidesProgress: true,
+});
+
+const galleryMain = new Swiper('.gallery-main', {
+  spaceBetween: 10,
+  navigation: true,
+  thumbs: { swiper: galleryThumbs },
+  lazy: true,
+});</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Features Overview -->
+    <section id="features" class="section features-section alt-bg">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Modern Features</span>
+                <h2 class="section-title">Cutting-Edge Slider Capabilities</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>3D Effects</h3>
+                    <p>Cube, coverflow, flip, and cards effects with hardware acceleration</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Touch Gestures</h3>
+                    <p>Natural swipe and momentum with multi-touch support</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lazy Loading</h3>
+                    <p>Load images only when needed for optimal performance</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">♿</div>
+                    <h3>Accessibility</h3>
+                    <p>Keyboard navigation and screen reader support</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Auto-Play</h3>
+                    <p>Configurable auto-rotation with pause on hover</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📐</div>
+                    <h3>Responsive</h3>
+                    <p>Breakpoint-based configuration for all devices</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Parallax</h3>
+                    <p>Smooth parallax scrolling effects for backgrounds</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">∞</div>
+                    <h3>Infinite Loop</h3>
+                    <p>Seamless continuous scrolling in both directions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/logo-pallete/ISS white long 500(1).png" alt="iSN.BiZ Inc Logo" class="footer-logo">
+                    <p class="footer-description">Building the future of enterprise software with innovative, AI-powered solutions since 2015.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved.</p>
+                <p>Powered by Swiper 11</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper 11 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom Slider Initialization -->
+    <script src="slider-init.js"></script>
+
+    <!-- Navigation Toggle -->
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

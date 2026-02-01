@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISN.BIZ AI Asset Prompts - Interactive Viewer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1E9FF2 0%, #5FDFDF 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1E9FF2 0%, #5FDFDF 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .brand-colors {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .color-swatch {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .swatch {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            border: 3px solid white;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .swatch:hover {
+            transform: scale(1.1);
+        }
+
+        .color-label {
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        nav {
+            background: #3F4447;
+            padding: 0;
+            display: flex;
+            overflow-x: auto;
+        }
+
+        .tab {
+            padding: 20px 30px;
+            color: white;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: background 0.3s;
+            border: none;
+            background: transparent;
+            font-size: 1em;
+        }
+
+        .tab:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .tab.active {
+            background: #1E9FF2;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .category-section {
+            display: none;
+        }
+
+        .category-section.active {
+            display: block;
+        }
+
+        .category-header {
+            margin-bottom: 30px;
+        }
+
+        .category-title {
+            font-size: 2em;
+            color: #3F4447;
+            margin-bottom: 10px;
+        }
+
+        .category-specs {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .spec-item {
+            background: #f5f5f5;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            color: #3F4447;
+        }
+
+        .spec-label {
+            color: #1E9FF2;
+            margin-right: 5px;
+        }
+
+        .asset-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .asset-card {
+            background: #f9f9f9;
+            border-radius: 12px;
+            padding: 25px;
+            border: 2px solid #e0e0e0;
+            transition: all 0.3s;
+        }
+
+        .asset-card:hover {
+            border-color: #1E9FF2;
+            box-shadow: 0 5px 20px rgba(30, 159, 242, 0.2);
+        }
+
+        .asset-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .asset-name {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #3F4447;
+        }
+
+        .asset-filename {
+            font-family: 'Courier New', monospace;
+            background: #3F4447;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+
+        .prompt-section {
+            margin-bottom: 15px;
+        }
+
+        .prompt-label {
+            font-weight: bold;
+            color: #1E9FF2;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .prompt-text {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 0.95em;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        .copy-btn {
+            background: #1E9FF2;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background 0.3s;
+        }
+
+        .copy-btn:hover {
+            background: #5FDFDF;
+        }
+
+        .copy-btn.copied {
+            background: #4CAF50;
+        }
+
+        .negative-prompt {
+            margin-top: 10px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+            background: #f5f5f5;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #1E9FF2;
+        }
+
+        .stat-label {
+            color: #3F4447;
+            margin-top: 5px;
+        }
+
+        .instructions {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .instructions h3 {
+            color: #3F4447;
+            margin-bottom: 10px;
+        }
+
+        .instructions ul {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .brand-colors {
+                flex-wrap: wrap;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ISN.BIZ AI Asset Prompts</h1>
+            <p class="subtitle">Professional Visual Asset Generation Guide</p>
+            <div class="brand-colors">
+                <div class="color-swatch">
+                    <div class="swatch" style="background-color: #1E9FF2;" onclick="copyColor('#1E9FF2')" title="Click to copy"></div>
+                    <span class="color-label">#1E9FF2</span>
+                    <span style="font-size: 0.8em;">Blue</span>
+                </div>
+                <div class="color-swatch">
+                    <div class="swatch" style="background-color: #5FDFDF;" onclick="copyColor('#5FDFDF')" title="Click to copy"></div>
+                    <span class="color-label">#5FDFDF</span>
+                    <span style="font-size: 0.8em;">Cyan</span>
+                </div>
+                <div class="color-swatch">
+                    <div class="swatch" style="background-color: #3F4447;" onclick="copyColor('#3F4447')" title="Click to copy"></div>
+                    <span class="color-label">#3F4447</span>
+                    <span style="font-size: 0.8em;">Charcoal</span>
+                </div>
+            </div>
+        </header>
+
+        <nav id="nav">
+            <!-- Tabs will be generated here -->
+        </nav>
+
+        <div class="content">
+            <div class="instructions">
+                <h3>📋 How to Use</h3>
+                <ul>
+                    <li>Click on a category tab to view its assets</li>
+                    <li>Click "Copy Prompt" or "Copy Negative" to copy to clipboard</li>
+                    <li>Paste prompts into your AI image generator (Flux 2, Midjourney, DALL-E, etc.)</li>
+                    <li>Use the exact resolutions specified for each asset</li>
+                    <li>Save generated images with the suggested filename</li>
+                </ul>
+            </div>
+
+            <div id="content-container">
+                <!-- Content will be generated here -->
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">23</div>
+                    <div class="stat-label">Total Assets</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Categories</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">~$2</div>
+                    <div class="stat-label">Estimated Cost</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Load prompts data
+        const promptsData = {
+            "hero_backgrounds": {
+                "title": "Hero Backgrounds",
+                "count": 5,
+                "resolution": "2560x1440",
+                "format": "PNG",
+                "assets": [
+                    {
+                        "name": "Network",
+                        "filename": "hero-bg-network.png",
+                        "prompt": "Ultra-modern abstract digital network background, flowing data streams and glowing nodes, color palette of bright blue #1E9FF2 and cyan #5FDFDF on dark charcoal #3F4447 background, futuristic technology aesthetic, clean professional design, high resolution 2560x1440, cinematic lighting, depth of field, photorealistic render, trending on artstation",
+                        "negative": "cluttered, busy, text, logos, people, faces, amateur, low quality"
+                    },
+                    {
+                        "name": "Geometric",
+                        "filename": "hero-bg-geometric.png",
+                        "prompt": "Minimalist geometric abstract background, floating 3D shapes and polygons, gradient from bright blue #1E9FF2 to cyan #5FDFDF, dark charcoal #3F4447 accents, modern tech aesthetic, clean composition, professional corporate design, 2560x1440 resolution, studio lighting, sharp focus, ultra detailed",
+                        "negative": "cluttered, messy, chaotic, text, watermarks, low resolution"
+                    },
+                    {
+                        "name": "Data Visualization",
+                        "filename": "hero-bg-data-viz.png",
+                        "prompt": "Sleek data visualization abstract background, glowing charts and graphs elements, circuit board patterns, color scheme of electric blue #1E9FF2 and vibrant cyan #5FDFDF on charcoal #3F4447 base, futuristic dashboard aesthetic, professional tech design, 2560x1440 high resolution, cinematic composition, photorealistic 3D render",
+                        "negative": "messy, cluttered, amateur, cartoonish, low quality, text"
+                    },
+                    {
+                        "name": "Metallic Tech",
+                        "filename": "hero-bg-metallic.png",
+                        "prompt": "Premium metallic technology background, brushed metal texture with blue #1E9FF2 and cyan #5FDFDF lighting effects, dark charcoal #3F4447 base, abstract tech patterns, sophisticated modern design, enterprise-grade aesthetic, 2560x1440 resolution, professional studio lighting, ultra sharp, photorealistic",
+                        "negative": "rusty, old, vintage, cluttered, low quality, amateur"
+                    },
+                    {
+                        "name": "Particle Flow",
+                        "filename": "hero-bg-particles.png",
+                        "prompt": "Dynamic particle flow abstract background, glowing particles in motion, energy streams in bright blue #1E9FF2 and cyan #5FDFDF colors, dark charcoal #3F4447 background, cutting-edge technology aesthetic, clean modern composition, 2560x1440 high resolution, volumetric lighting, photorealistic render, professional grade",
+                        "negative": "static, boring, cluttered, messy, text, low resolution"
+                    }
+                ]
+            },
+            "portfolio_mockups": {
+                "title": "Portfolio Mockups",
+                "count": 8,
+                "resolution": "1920x1080",
+                "format": "PNG",
+                "assets": [
+                    {
+                        "name": "Opportunity Bot Dashboard",
+                        "filename": "portfolio-opportunity-bot-dashboard.png",
+                        "prompt": "Modern AI chatbot dashboard interface mockup, dark theme UI with blue #1E9FF2 and cyan #5FDFDF accent colors, conversation threads, analytics graphs, clean professional design, realistic software interface, high detail, flat design with depth, 1920x1080 resolution, professional UI/UX design",
+                        "negative": "cluttered, amateur, outdated, low quality, blurry"
+                    },
+                    {
+                        "name": "Opportunity Bot Chat",
+                        "filename": "portfolio-opportunity-bot-chat.png",
+                        "prompt": "Sleek AI chat interface mockup, modern messaging UI with blue #1E9FF2 and cyan #5FDFDF highlights, chatbot conversation bubbles, typing indicators, dark charcoal #3F4447 background, professional SaaS design, clean layout, 1920x1080 resolution, high fidelity mockup, modern UI design",
+                        "negative": "messy, cluttered, old-fashioned, low quality, amateur"
+                    },
+                    {
+                        "name": "SpiritAtlas Profile",
+                        "filename": "portfolio-spiritatlas-profile.png",
+                        "resolution": "1600x1200",
+                        "prompt": "Premium mobile app interface mockup on iPhone 15 Pro, spiritual wellness app, profile screen with meditation stats, blue #1E9FF2 and cyan #5FDFDF color scheme, modern iOS design, clean minimalist UI, realistic phone mockup, professional app design, 1600x1200 resolution, studio lighting on device",
+                        "negative": "cluttered, amateur, outdated phone, low quality, messy"
+                    },
+                    {
+                        "name": "SpiritAtlas Meditation",
+                        "filename": "portfolio-spiritatlas-meditation.png",
+                        "resolution": "1600x1200",
+                        "prompt": "Beautiful mobile meditation app interface on modern smartphone, guided meditation screen with wave animations, calming blue #1E9FF2 gradients, cyan #5FDFDF accents, peaceful design aesthetic, professional UI/UX, realistic phone mockup, 1600x1200 resolution, premium app design",
+                        "negative": "cluttered, chaotic, amateur, low quality, unrealistic"
+                    },
+                    {
+                        "name": "Analytics Dashboard",
+                        "filename": "portfolio-analytics-dashboard.png",
+                        "prompt": "Professional analytics dashboard interface, modern data visualization, charts and graphs in blue #1E9FF2 and cyan #5FDFDF colors, dark theme with charcoal #3F4447 background, clean layout, enterprise-grade UI design, 1920x1080 resolution, high detail, realistic software interface, professional design",
+                        "negative": "cluttered, messy, amateur, outdated, low quality"
+                    },
+                    {
+                        "name": "Cloud Architecture",
+                        "filename": "portfolio-cloud-architecture.png",
+                        "prompt": "Modern cloud architecture diagram visualization, AWS/Azure infrastructure, isometric 3D elements, blue #1E9FF2 and cyan #5FDFDF color scheme, clean professional infographic style, dark charcoal #3F4447 background, technical but accessible, 1920x1080 resolution, high quality illustration",
+                        "negative": "cluttered, messy, confusing, amateur, low quality"
+                    },
+                    {
+                        "name": "E-commerce Platform",
+                        "filename": "portfolio-ecommerce-platform.png",
+                        "prompt": "Sleek e-commerce platform dashboard mockup, modern admin interface, product management screen, sales analytics, blue #1E9FF2 and cyan #5FDFDF accents, professional SaaS design, clean layout, realistic UI, 1920x1080 resolution, high fidelity mockup, enterprise-grade design",
+                        "negative": "cluttered, outdated, amateur, messy, low quality"
+                    },
+                    {
+                        "name": "API Documentation",
+                        "filename": "portfolio-api-docs.png",
+                        "prompt": "Modern API documentation portal interface, developer-focused design, code snippets with syntax highlighting, blue #1E9FF2 and cyan #5FDFDF theme, dark mode interface, professional tech documentation layout, 1920x1080 resolution, clean typography, high quality UI design",
+                        "negative": "cluttered, confusing, amateur, outdated, low quality"
+                    }
+                ]
+            },
+            "service_icons": {
+                "title": "Service Icons",
+                "count": 6,
+                "resolution": "512x512",
+                "format": "PNG (Transparent)",
+                "assets": [
+                    {
+                        "name": "Custom Development",
+                        "filename": "icon-custom-dev.png",
+                        "prompt": "Modern icon for custom software development, code brackets and gear symbol, bright blue #1E9FF2 and cyan #5FDFDF gradient, flat design with subtle depth, clean professional style, 512x512 resolution, transparent background, crisp edges, vector-style illustration",
+                        "negative": "3D, realistic, cluttered, messy, low quality, blurry"
+                    },
+                    {
+                        "name": "AI/ML",
+                        "filename": "icon-ai-ml.png",
+                        "prompt": "Sleek AI and machine learning icon, neural network nodes connected, blue #1E9FF2 to cyan #5FDFDF gradient, modern flat design, professional tech icon style, 512x512 resolution, transparent background, clean geometric shapes, high quality vector-style",
+                        "negative": "3D, photorealistic, cluttered, amateur, low quality"
+                    },
+                    {
+                        "name": "Cloud Architecture",
+                        "filename": "icon-cloud-architecture.png",
+                        "prompt": "Modern cloud computing icon, stylized cloud with server nodes, bright blue #1E9FF2 and cyan #5FDFDF colors, flat design with depth, professional tech icon, 512x512 resolution, transparent background, clean minimalist style, crisp vector illustration",
+                        "negative": "realistic, 3D, cluttered, outdated, low quality"
+                    },
+                    {
+                        "name": "Data Engineering",
+                        "filename": "icon-data-engineering.png",
+                        "prompt": "Professional data engineering icon, database cylinders with data flow arrows, blue #1E9FF2 and cyan #5FDFDF gradient, modern flat icon design, clean tech aesthetic, 512x512 resolution, transparent background, geometric precision, high quality vector-style",
+                        "negative": "3D, photorealistic, messy, amateur, low quality"
+                    },
+                    {
+                        "name": "Security",
+                        "filename": "icon-security.png",
+                        "prompt": "Modern cybersecurity icon, shield with lock and circuit elements, bright blue #1E9FF2 to cyan #5FDFDF gradient, flat design with subtle depth, professional security icon style, 512x512 resolution, transparent background, clean geometric design, vector illustration quality",
+                        "negative": "3D, realistic, cluttered, outdated, low quality"
+                    },
+                    {
+                        "name": "Mobile Development",
+                        "filename": "icon-mobile-dev.png",
+                        "prompt": "Sleek mobile development icon, smartphone with code elements, blue #1E9FF2 and cyan #5FDFDF colors, modern flat icon design, professional tech style, 512x512 resolution, transparent background, clean minimalist aesthetic, crisp vector-style illustration",
+                        "negative": "3D, photorealistic, messy, amateur, low quality, blurry"
+                    }
+                ]
+            },
+            "section_dividers": {
+                "title": "Section Dividers",
+                "count": 4,
+                "resolution": "1920x400",
+                "format": "PNG",
+                "assets": [
+                    {
+                        "name": "Gradient Wave",
+                        "filename": "divider-gradient-wave.png",
+                        "prompt": "Subtle abstract wave gradient background, smooth flowing curves, blue #1E9FF2 to cyan #5FDFDF to charcoal #3F4447 gradient, minimal professional design, 1920x400 banner resolution, clean modern aesthetic, high quality render",
+                        "negative": "busy, cluttered, distracting, harsh, low quality"
+                    },
+                    {
+                        "name": "Metallic Lines",
+                        "filename": "divider-metallic-lines.png",
+                        "prompt": "Sleek metallic horizontal lines pattern, subtle tech aesthetic, blue #1E9FF2 and cyan #5FDFDF highlights on charcoal #3F4447 base, minimal professional background, 1920x400 resolution, clean modern design, high quality",
+                        "negative": "cluttered, messy, distracting, amateur, low quality"
+                    },
+                    {
+                        "name": "Particle Scatter",
+                        "filename": "divider-particle-scatter.png",
+                        "prompt": "Minimal particle scatter background, subtle glowing dots, blue #1E9FF2 and cyan #5FDFDF particles on dark charcoal #3F4447, professional tech aesthetic, non-distracting, 1920x400 banner, clean modern design, high quality render",
+                        "negative": "busy, cluttered, chaotic, harsh, low quality"
+                    },
+                    {
+                        "name": "Circuit Pattern",
+                        "filename": "divider-circuit-pattern.png",
+                        "prompt": "Subtle circuit board pattern background, minimal tech lines, blue #1E9FF2 and cyan #5FDFDF accents on charcoal #3F4447, professional subtle design, 1920x400 resolution, clean modern aesthetic, non-distracting, high quality",
+                        "negative": "cluttered, busy, messy, harsh, low quality"
+                    }
+                ]
+            }
+        };
+
+        // Generate UI
+        function init() {
+            const nav = document.getElementById('nav');
+            const contentContainer = document.getElementById('content-container');
+
+            Object.keys(promptsData).forEach((categoryKey, index) => {
+                const category = promptsData[categoryKey];
+
+                // Create tab
+                const tab = document.createElement('button');
+                tab.className = 'tab' + (index === 0 ? ' active' : '');
+                tab.textContent = category.title;
+                tab.onclick = () => switchTab(categoryKey);
+                nav.appendChild(tab);
+
+                // Create content section
+                const section = document.createElement('div');
+                section.className = 'category-section' + (index === 0 ? ' active' : '');
+                section.id = categoryKey;
+
+                section.innerHTML = `
+                    <div class="category-header">
+                        <h2 class="category-title">${category.title}</h2>
+                        <div class="category-specs">
+                            <div class="spec-item"><span class="spec-label">Count:</span>${category.count}</div>
+                            <div class="spec-item"><span class="spec-label">Resolution:</span>${category.resolution}</div>
+                            <div class="spec-item"><span class="spec-label">Format:</span>${category.format}</div>
+                        </div>
+                    </div>
+                    <div class="asset-grid">
+                        ${category.assets.map(asset => createAssetCard(asset)).join('')}
+                    </div>
+                `;
+
+                contentContainer.appendChild(section);
+            });
+        }
+
+        function createAssetCard(asset) {
+            const resolution = asset.resolution || '';
+            return `
+                <div class="asset-card">
+                    <div class="asset-header">
+                        <span class="asset-name">${asset.name}</span>
+                        <span class="asset-filename">${asset.filename}</span>
+                        ${resolution ? `<span class="spec-item"><span class="spec-label">Res:</span>${resolution}</span>` : ''}
+                    </div>
+                    <div class="prompt-section">
+                        <div class="prompt-label">
+                            Prompt
+                            <button class="copy-btn" onclick="copyToClipboard('${escapeHtml(asset.prompt)}', this)">Copy Prompt</button>
+                        </div>
+                        <div class="prompt-text">${asset.prompt}</div>
+                    </div>
+                    <div class="prompt-section negative-prompt">
+                        <div class="prompt-label">
+                            Negative Prompt
+                            <button class="copy-btn" onclick="copyToClipboard('${escapeHtml(asset.negative)}', this)">Copy Negative</button>
+                        </div>
+                        <div class="prompt-text">${asset.negative}</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function switchTab(categoryKey) {
+            // Update tabs
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Update content
+            document.querySelectorAll('.category-section').forEach(section => section.classList.remove('active'));
+            document.getElementById(categoryKey).classList.add('active');
+        }
+
+        function copyToClipboard(text, button) {
+            const decodedText = text.replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+            navigator.clipboard.writeText(decodedText).then(() => {
+                const originalText = button.textContent;
+                button.textContent = '✓ Copied!';
+                button.classList.add('copied');
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.classList.remove('copied');
+                }, 2000);
+            });
+        }
+
+        function copyColor(color) {
+            navigator.clipboard.writeText(color).then(() => {
+                alert(`Color ${color} copied to clipboard!`);
+            });
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Initialize on load
+        window.onload = init;
+    </script>
+</body>
+</html>
