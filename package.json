@@ -1,0 +1,28 @@
+{
+  "name": "isnbiz_files",
+  "version": "1.0.0",
+  "description": "Professional, investor-ready homepage built for iSN.BiZ Inc to attract funding and showcase the company's software solutions portfolio.",
+  "main": "enhanced-interactions.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isndotbiz/website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/isndotbiz/website/issues"
+  },
+  "homepage": "https://github.com/isndotbiz/website#readme",
+  "dependencies": {
+    "@playwright/test": "^1.58.1",
+    "playwright": "^1.58.1"
+  }
+}

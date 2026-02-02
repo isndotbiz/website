@@ -1,0 +1,54 @@
+# ISN.BIZ Inc - Robots.txt
+# Production SEO Configuration
+
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://isn.biz/sitemap.xml
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Block aggressive bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+# Disallow access to documentation and backup files (if any)
+User-agent: *
+Disallow: /docs/
+Disallow: /*.backup$
+Disallow: /*.bak$
+Disallow: /*backup_*
+
+# Allow CSS, JS, and image files (important for modern SEO)
+User-agent: *
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.webp$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.svg$
+
+# Crawl-delay for general bots (prevent server overload)
+Crawl-delay: 2
+
+# Host preference (canonical domain)
+Host: https://isn.biz

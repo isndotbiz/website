@@ -1,0 +1,48 @@
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://isn.biz/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About",
+      "item": "https://isn.biz/#about"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Solutions",
+      "item": "https://isn.biz/#solutions"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Portfolio",
+      "item": "https://isn.biz/portfolio.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Team",
+      "item": "https://isn.biz/#team"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Investors",
+      "item": "https://isn.biz/#investors"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Contact",
+      "item": "https://isn.biz/#contact"
+    }
+  ]
+}

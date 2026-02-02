@@ -1,0 +1,116 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://isn.biz/#organization",
+  "name": "ISN.BIZ Inc",
+  "legalName": "iSN.BiZ Inc",
+  "alternateName": ["ISN.BIZ", "iSN.BiZ"],
+  "url": "https://isn.biz",
+  "logo": {
+    "@type": "ImageObject",
+    "@id": "https://isn.biz/#logo",
+    "url": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+    "width": "500",
+    "height": "100",
+    "caption": "ISN.BIZ Inc Logo"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/og/og_default.webp",
+    "width": "1200",
+    "height": "630"
+  },
+  "description": "ISN.BIZ delivers enterprise AI software development, custom cloud infrastructure, and business automation solutions. 11+ years of proven results with 100% client retention.",
+  "foundingDate": "2015-07-08",
+  "founder": {
+    "@type": "Person",
+    "name": "Jonathan",
+    "jobTitle": "Chairman and CEO",
+    "url": "https://isn.biz/jonathan.html"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Seattle",
+    "addressRegion": "WA",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "47.6062",
+    "longitude": "-122.3321"
+  },
+  "email": "info@isn.biz",
+  "sameAs": [
+    "https://www.linkedin.com/company/isn-biz",
+    "https://twitter.com/isnbiz",
+    "https://github.com/isn-biz"
+  ],
+  "vatID": "47-4530188",
+  "duns": "080513772",
+  "naics": "541511",
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Cloud Computing",
+    "Enterprise Software Development",
+    "Data Analytics",
+    "Business Automation",
+    "DevOps",
+    "Cybersecurity",
+    "API Development",
+    "Cloud Architecture"
+  ],
+  "areaServed": {
+    "@type": "Place",
+    "name": "United States"
+  },
+  "employees": {
+    "@type": "QuantitativeValue",
+    "value": "4"
+  },
+  "memberOf": [
+    {
+      "@type": "Organization",
+      "name": "Dun & Bradstreet",
+      "identifier": "080513772"
+    }
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Business Registration",
+      "name": "Washington State UBI",
+      "identifier": "603-522-339"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Tax Identification",
+      "name": "Federal EIN",
+      "identifier": "47-4530188"
+    }
+  ],
+  "owns": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "AI Market Intelligence Engine",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Linux",
+      "description": "Proprietary AI pipeline for autonomous opportunity discovery and scoring"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Enterprise AI/ML Infrastructure Platform",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Linux",
+      "description": "Production-grade on-premise computing platform for AI inference"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "ratingCount": "1",
+    "reviewCount": "1"
+  },
+  "slogan": "Building the Future of Enterprise Software"
+}

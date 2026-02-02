@@ -1,53 +1,95 @@
 #!/bin/bash
+#
+# Run founder photo enhancement using fal.ai
+# This script:
+# 1. Activates virtual environment
+# 2. Gets FAL API key from 1Password
+# 3. Runs the photo enhancement script
+#
 
-echo "============================================================"
-echo "HROC FOUNDER PHOTO ENHANCEMENT"
-echo "Using fal.ai Portrait Enhance & FLUX 1.1 Pro Ultra"
-echo "============================================================"
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
+
+echo "=============================================================================="
+echo "FOUNDER PHOTO ENHANCEMENT - Setup"
+echo "=============================================================================="
+
+# Step 1: Activate virtual environment
 echo ""
-
-# Check if API key is set
-if [ -z "$FAL_API_KEY" ]; then
-    echo "FAL_API_KEY not found in environment."
+echo "Step 1: Activating virtual environment..."
+if [ ! -d "$PROJECT_DIR/venv_fal" ]; then
+    echo "ERROR: Virtual environment not found at $PROJECT_DIR/venv_fal"
     echo ""
-    echo "To get your API key:"
-    echo "1. Go to https://fal.ai/"
-    echo "2. Sign up/login"
-    echo "3. Go to API Keys section"
-    echo "4. Create or copy your API key"
-    echo ""
-    read -p "Enter your FAL API key: " api_key
-    export FAL_API_KEY="$api_key"
-    echo ""
-fi
-
-# Check Python availability
-if ! command -v python3 &> /dev/null; then
-    echo "ERROR: python3 not found. Please install Python 3."
+    echo "Create it with:"
+    echo "  python3 -m venv venv_fal"
+    echo "  source venv_fal/bin/activate"
+    echo "  pip install fal-client requests"
     exit 1
 fi
 
-# Check requests library
-echo "Checking dependencies..."
-python3 -c "import requests" 2>/dev/null
-if [ $? -ne 0 ]; then
-    echo "Installing requests library..."
-    pip install requests
+source "$PROJECT_DIR/venv_fal/bin/activate"
+echo "✓ Virtual environment activated"
+
+# Step 2: Check if fal-client is installed
+echo ""
+echo "Step 2: Checking dependencies..."
+if ! python -c "import fal_client" 2>/dev/null; then
+    echo "Installing fal-client..."
+    pip install fal-client requests
+fi
+echo "✓ Dependencies installed"
+
+# Step 3: Get FAL API key from 1Password
+echo ""
+echo "Step 3: Getting FAL API key from 1Password..."
+
+# Check if already signed in
+if ! op whoami &>/dev/null; then
+    echo "Signing into 1Password..."
+    eval $(op signin)
 fi
 
+export FAL_KEY=$(op read "op://Research/FAL API Key/credential")
+
+if [ -z "$FAL_KEY" ]; then
+    echo "ERROR: Could not retrieve FAL API key from 1Password"
+    echo ""
+    echo "Make sure:"
+    echo "  1. 1Password CLI is installed"
+    echo "  2. You're signed in: eval \$(op signin)"
+    echo "  3. The key exists: op item get 'FAL API Key' --vault Research"
+    exit 1
+fi
+
+echo "✓ FAL API key retrieved (${#FAL_KEY} characters)"
+
+# Step 4: Run the enhancement script
 echo ""
-echo "Starting enhancement process..."
-echo "This will create 24 enhanced photos (6 per founder)"
-echo "Estimated cost: ~$5.52"
-echo ""
-read -p "Press Enter to continue or Ctrl+C to cancel..."
+echo "=============================================================================="
+echo "STARTING PHOTO ENHANCEMENT"
+echo "=============================================================================="
 echo ""
 
-# Run the enhancement script
-python3 /home/jdmal/workspace/ISNBIZ_Files/scripts/enhance_founder_photos.py
+python "$SCRIPT_DIR/fix_necks_and_create_community_photos.py"
+
+EXIT_CODE=$?
 
 echo ""
-echo "============================================================"
-echo "Enhancement complete!"
-echo "Check: /home/jdmal/workspace/ISNBIZ_Files/assets/team/"
-echo "============================================================"
+echo "=============================================================================="
+if [ $EXIT_CODE -eq 0 ]; then
+    echo "PHOTO ENHANCEMENT COMPLETE!"
+    echo "=============================================================================="
+    echo ""
+    echo "Check results:"
+    echo "  Fixed necks:      $PROJECT_DIR/assets/founders/fixed_necks/"
+    echo "  Community photos: $PROJECT_DIR/assets/founders/community/"
+else
+    echo "PHOTO ENHANCEMENT FAILED (exit code: $EXIT_CODE)"
+    echo "=============================================================================="
+    echo ""
+    echo "Check the error messages above for details."
+fi
+
+exit $EXIT_CODE
