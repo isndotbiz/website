@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ComfyUI Flux WAN Automation - Scalable generative image workflow automation for production content pipelines">
+    <meta name="keywords" content="ComfyUI, Flux, image generation, automation, AI content, iSN.BiZ">
+    <title>ComfyUI Flux WAN Automation | iSN.BiZ Inc</title>
+    <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="enhanced-animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="index.html#team">Team</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height: 70vh; padding-top: 120px;">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">AI Content Generation</span>
+                <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">ComfyUI Flux WAN Automation</h1>
+                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">Automation suite providing a programmatic layer over ComfyUI, delivering reproducible workflows, batch generation, and LoRA management that turns a UI-driven system into a scalable production pipeline.</p>
+            </div>
+            <div style="max-width: 1000px; margin: 3rem auto;">
+                <img src="assets/projects/comfyui_1.webp" alt="ComfyUI automation workflow" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <div class="about-grid">
+                <div>
+                    <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Investor Summary</h2>
+                    <p class="lead">Generative image workflows are often fragile, manual, and difficult to scale. This project provides a programmatic automation layer that delivers reproducible workflows, batch generation, and LoRA management for production-grade content operations.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Product Scope</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ ComfyUI API manager for status and queueing</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Flux workflow builder with configurable settings</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Config-driven model management</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Batch generators for branded content</li>
+                        <li style="padding: 0.5rem 0;">✓ Saved workflow JSON artifacts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 3rem;">Platform Capabilities</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="portfolio-card">
+                    <img src="assets/projects/comfyui_2.webp" alt="Workflow automation" style="width: 100%; border-radius: 8px;">
+                    <h3 style="margin-top: 1rem;">Programmatic Workflows</h3>
+                    <p>ComfyUI API control with reproducible workflow generation.</p>
+                </div>
+                <div class="portfolio-card">
+                    <img src="assets/projects/comfyui_3.webp" alt="Batch generation" style="width: 100%; border-radius: 8px;">
+                    <h3 style="margin-top: 1rem;">Batch Production</h3>
+                    <p>Config-driven batch output with saved workflow artifacts.</p>
+                </div>
+                <div class="portfolio-card">
+                    <img src="assets/projects/comfyui_4.webp" alt="LoRA management" style="width: 100%; border-radius: 8px;">
+                    <h3 style="margin-top: 1rem;">Model Management</h3>
+                    <p>Built-in support for LoRA and multiple model variants.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered">Technology Stack</h2>
+            <div class="portfolio-tags" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 2rem;">
+                <span class="tag">Python 3.10+</span>
+                <span class="tag">requests</span>
+                <span class="tag">aiohttp</span>
+                <span class="tag">Pillow</span>
+                <span class="tag">PyYAML</span>
+                <span class="tag">fal-client</span>
+                <span class="tag">replicate</span>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Commercial Use Cases</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Marketing Teams</h4>
+                        <p>Scalable asset generation for campaigns and creative operations.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Creative Agencies</h4>
+                        <p>Batch creative production at consistent quality standards.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Content Factories</h4>
+                        <p>Internal tooling for AI-assisted content production workflows.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Interested in This Solution?</h2>
+            <p class="section-description" style="margin-bottom: 2rem;">Learn how we can automate your generative content workflows.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="index.html#contact" class="btn btn-primary"><span>Schedule a Demo</span></a>
+                <a href="portfolio.html" class="btn btn-outline"><span>View All Projects</span></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>iSN.BiZ Inc</h3>
+                    <p>Building the future of enterprise software with AI-powered solutions.</p>
+                    <div class="footer-credentials">
+                        <p><strong>DUNS:</strong> 080513772</p>
+                        <p><strong>UBI:</strong> 603-522-339</p>
+                        <p><strong>EIN:</strong> 47-4530188</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#solutions">Solutions</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="index.html#team">Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Ready to transform your business?</p>
+                    <a href="index.html#contact" class="btn btn-primary" style="margin-top: 1rem;"><span>Get in Touch</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved. | Founded 2015</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
