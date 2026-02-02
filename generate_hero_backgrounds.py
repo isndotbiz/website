@@ -5,7 +5,7 @@ from PIL import Image
 FAL_API_KEY = "64b786c3-d6b1-4fbb-9d46-9211ceea552f:d472cdf8c68b4fe873557ca33bfb25eb"
 FAL_ENDPOINT = "https://fal.run/fal-ai/gpt-image-1.5"
 S3_BUCKET = "isnbiz-assets-1769962280"
-BASE_DIR = "D:/workspace/ISNBIZ_Files/assets/premium_v3"
+BASE_DIR = "/home/jdmal/workspace/ISNBIZ_Files/assets/premium_v3"
 HERO_DIR = os.path.join(BASE_DIR, "hero")
 SECTIONS_DIR = os.path.join(BASE_DIR, "sections")
 os.makedirs(HERO_DIR, exist_ok=True)
