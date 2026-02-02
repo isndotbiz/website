@@ -3,11 +3,11 @@ from PIL import Image
 import numpy as np
 import os
 
-OUTPUT_DIR = "D:/workspace/ISNBIZ_Files/assets/premium_v2/logos"
+OUTPUT_DIR = "/home/jdmal/workspace/ISNBIZ_Files/assets/premium_v2/logos"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-CIRCULAR_LOGO = "D:/workspace/ISNBIZ_Files/assets/premium_v2/logos/source_9(1).png"
-ISS_JPG = "D:/workspace/ISNBIZ_Files/assets/premium_v2/logos/source_ISS.jpg"
+CIRCULAR_LOGO = "/home/jdmal/workspace/ISNBIZ_Files/assets/premium_v2/logos/source_9(1).png"
+ISS_JPG = "/home/jdmal/workspace/ISNBIZ_Files/assets/premium_v2/logos/source_ISS.jpg"
 
 
 def save_png_and_webp(img, base_name):

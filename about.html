@@ -53,6 +53,7 @@
             margin: 0 var(--spacing-md);
             border: 2px solid transparent;
             transition: all var(--transition-medium);
+            min-width: 0;
         }
 
         .timeline-content:hover {
@@ -76,13 +77,15 @@
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
             background: var(--color-primary);
-            border: 4px solid var(--color-white);
+            border: 3px solid var(--color-white);
             border-radius: 50%;
             box-shadow: var(--shadow-md);
-            z-index: 10;
+            z-index: 1;
+            flex-shrink: 0;
+            top: 0;
         }
 
         .timeline-content h3 {
@@ -309,29 +312,127 @@
             margin: 0;
         }
 
+        /* Team Grid Styles */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-lg);
+            padding: var(--spacing-xl) 0;
+        }
+
+        .team-card {
+            text-align: center;
+            transition: transform var(--transition-medium);
+            background: var(--color-white);
+            padding: var(--spacing-md);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .team-photo {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto var(--spacing-md);
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid var(--color-primary);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .team-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .team-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--color-primary-ink);
+        }
+
+        .team-card .team-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .team-card .team-bio {
+            font-size: 0.95rem;
+            color: var(--color-muted);
+            margin: var(--spacing-sm) 0;
+            line-height: 1.5;
+        }
+
+        .btn-small {
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+            margin-top: var(--spacing-sm);
+        }
+
         /* Responsive Timeline */
         @media (max-width: 768px) {
             .timeline-line {
-                left: 30px;
+                left: 40px;
             }
 
             .timeline-item,
             .timeline-item:nth-child(even) {
-                flex-direction: row;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 80px;
             }
 
             .timeline-year {
-                flex: 0 0 60px;
+                position: absolute;
+                left: 0;
+                flex: 0 0 auto;
                 font-size: 1.5rem;
             }
 
             .timeline-marker {
-                left: 30px;
+                left: 40px;
             }
 
             .timeline-content {
-                margin-left: var(--spacing-md);
+                margin-left: 0;
                 margin-right: 0;
+                width: 100%;
+            }
+
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: var(--spacing-md);
+            }
+
+            .team-photo {
+                width: 120px;
+                height: 120px;
+            }
+
+            .team-card {
+                padding: var(--spacing-sm);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -448,31 +549,39 @@
             <div class="team-grid">
                 <div class="team-card">
                     <div class="team-photo">
-                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/founders/alicia.webp" alt="Portrait of Alicia, founding team member" loading="lazy">
-                    </div>
-                    <h3>Alicia</h3>
-                    <p>Founding Team Member</p>
-                </div>
-                <div class="team-card">
-                    <div class="team-photo">
-                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/founders/bri.webp" alt="Portrait of Bri, founding team member" loading="lazy">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/founders/bri_base.webp" alt="Portrait of Bri, Secretary and COO" loading="lazy">
                     </div>
                     <h3>Bri</h3>
-                    <p>Founding Team Member</p>
+                    <p class="team-title">Secretary & Chief Operating Officer</p>
+                    <p class="team-bio">Operations excellence and strategic execution that keeps the business running smoothly.</p>
+                    <a href="bri.html" class="btn btn-outline btn-small">Learn More</a>
                 </div>
                 <div class="team-card">
                     <div class="team-photo">
-                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/founders/jonathan.webp" alt="Portrait of Jonathan, founding team member" loading="lazy">
-                    </div>
-                    <h3>Jonathan</h3>
-                    <p>Founding Team Member</p>
-                </div>
-                <div class="team-card">
-                    <div class="team-photo">
-                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/founders/lilly.webp" alt="Portrait of Lilly, founding team member" loading="lazy">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/founders/lilly_base.webp" alt="Portrait of Lilly, Treasurer and CFO" loading="lazy">
                     </div>
                     <h3>Lilly</h3>
-                    <p>Founding Team Member</p>
+                    <p class="team-title">Treasurer & Chief Financial Officer</p>
+                    <p class="team-bio">Financial stewardship and strategic planning that ensures sustainable growth.</p>
+                    <a href="lilly.html" class="btn btn-outline btn-small">Learn More</a>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/founders/jonathan_base.webp" alt="Portrait of Jonathan, Chairman and CEO" loading="lazy">
+                    </div>
+                    <h3>Jonathan</h3>
+                    <p class="team-title">Chairman & Chief Executive Officer</p>
+                    <p class="team-bio">Technical vision and leadership that drives innovation and client success.</p>
+                    <a href="jonathan.html" class="btn btn-outline btn-small">Learn More</a>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/founders/alicia_base.webp" alt="Portrait of Alicia, VP and CPO" loading="lazy">
+                    </div>
+                    <h3>Alicia</h3>
+                    <p class="team-title">Vice President & Chief Product Officer</p>
+                    <p class="team-bio">Product strategy and user experience that delivers exceptional client value.</p>
+                    <a href="alicia.html" class="btn btn-outline btn-small">Learn More</a>
                 </div>
             </div>
         </div>
@@ -508,9 +617,9 @@
                     <p class="stat-showcase-description">Manual process elimination through intelligent automation</p>
                 </div>
                 <div class="stat-showcase">
-                    <div class="stat-showcase-value">$1.5k+</div>
-                    <div class="stat-showcase-label">Monthly Savings</div>
-                    <p class="stat-showcase-description">Typical cost reduction per project through self-hosted AI infrastructure</p>
+                    <div class="stat-showcase-value">Zero</div>
+                    <div class="stat-showcase-label">Cloud Dependency</div>
+                    <p class="stat-showcase-description">Self-hosted AI infrastructure with complete data sovereignty</p>
                 </div>
                 <div class="stat-showcase">
                     <div class="stat-showcase-value">24/7</div>
@@ -868,7 +977,7 @@
                 <div class="portfolio-card">
                     <div class="portfolio-number">06</div>
                     <h3>Measurable ROI Focus</h3>
-                    <p>Every feature has KPIs. Every project has metrics. 95% time savings, 10x efficiency gains, $1,500+ monthly cost reductions. We build systems that demonstrably move your business forward.</p>
+                    <p>Every feature has KPIs. Every project has metrics. 95% time savings, 10x efficiency gains, measurable operational cost reductions. We build systems that demonstrably move your business forward.</p>
                     <div class="portfolio-tags">
                         <span class="tag">Metrics-Driven</span>
                         <span class="tag">ROI Focused</span>

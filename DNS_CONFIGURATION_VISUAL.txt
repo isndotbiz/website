@@ -1,0 +1,148 @@
+================================================================================
+CLOUDFLARE DNS CONFIGURATION - VISUAL SUMMARY
+================================================================================
+
+DOMAIN HIERARCHY
+================================================================================
+
+isn.biz (Domain)
+│
+├─ ROOT DOMAIN ⚠️
+│  isn.biz → 73.140.158.252
+│  Proxy: DISABLED (gray cloud)
+│  Status: NOT PROTECTED - NEEDS FIX
+│
+├─ WWW SUBDOMAIN ⚠️
+│  www.isn.biz → 73.140.158.252
+│  Proxy: DISABLED (gray cloud)
+│  Status: NOT PROTECTED - NEEDS FIX
+│
+├─ RAG SUBDOMAIN ⚠️⚠️
+│  rag.isn.biz → 10.0.0.89 (internal)
+│  rag.isn.biz → 73.140.158.252 (external)
+│  Status: DUPLICATE RECORDS - NEEDS FIX
+│
+├─ INTERNAL NETWORK
+│  ├─ 1pass.isn.biz → 10.0.0.89
+│  ├─ nas.isn.biz → 73.140.158.252 (not proxied)
+│  └─ router.isn.biz → 73.140.158.252 (not proxied)
+│
+└─ PROTECTED SERVICES (20+ subdomains)
+   ├─ alertmanager.isn.biz → 73.140.158.252 ✓ PROXIED
+   ├─ cadvisor.isn.biz → 73.140.158.252 ✓ PROXIED
+   ├─ claude.isn.biz → 73.140.158.252 ✓ PROXIED
+   ├─ dolphin.isn.biz → 73.140.158.252 ✓ PROXIED
+   ├─ flowise.isn.biz → 73.140.158.252 ✓ PROXIED
+   ├─ grafana.isn.biz → 73.140.158.252 ✓ PROXIED
+   ├─ langfuse.isn.biz → 73.140.158.252 ✓ PROXIED
+   ├─ litellm.isn.biz → 73.140.158.252 ✓ PROXIED
+   ├─ llama.isn.biz → 73.140.158.252 ✓ PROXIED
+   ├─ media.isn.biz → 73.140.158.252 ✓ PROXIED
+   ├─ n8n.isn.biz → 73.140.158.252 ✓ PROXIED
+   ├─ openwebui.isn.biz → 73.140.158.252 ✓ PROXIED
+   ├─ portainer.isn.biz → 73.140.158.252 ✓ PROXIED
+   ├─ prometheus.isn.biz → 73.140.158.252 ✓ PROXIED
+   ├─ pushgateway.isn.biz → 73.140.158.252 ✓ PROXIED
+   ├─ security.isn.biz → 73.140.158.252 ✓ PROXIED
+   ├─ studio.isn.biz → 73.140.158.252 ✓ PROXIED
+   ├─ supabase.isn.biz → 73.140.158.252 ✓ PROXIED
+   ├─ tavern.isn.biz → 73.140.158.252 ✓ PROXIED
+   └─ traefik.isn.biz → 73.140.158.252 ✓ PROXIED
+
+
+CURRENT DNS STATUS BY SUBDOMAIN
+════════════════════════════════════════════════════════════════════════
+
+INVESTOR WEBSITE (NEEDS PROXY):
+  isn.biz (root)         [Gray]  73.140.158.252
+  www.isn.biz            [Gray]  73.140.158.252
+  Status: DNS ONLY (no protection)
+  Risk: No DDoS, no WAF, no CDN
+  Fix: Enable orange cloud
+
+DUPLICATE/PROBLEMATIC:
+  rag.isn.biz (INTERNAL)    [Gray]  10.0.0.89
+  rag.isn.biz (EXTERNAL)    [Orange] 73.140.158.252
+  Status: TWO CONFLICTING RECORDS
+  Problem: Unpredictable DNS resolution
+  Fix: Delete one, keep the other
+
+PROTECTED SERVICES (20+ subdomains):
+  (Various services)       [Orange] 73.140.158.252
+  Status: Proxied through Cloudflare (protected, accelerated)
+  Features: DDoS protection, WAF, CDN, caching
+
+INTERNAL ONLY:
+  1pass.isn.biz          [Gray]  10.0.0.89
+  nas.isn.biz            [Gray]  73.140.158.252
+  router.isn.biz         [Gray]  73.140.158.252
+  Status: Not proxied (accessible from internal network only)
+  Security: Proper isolation maintained
+
+
+PROXY STATUS COMPARISON
+════════════════════════════════════════════════════════════════════════
+
+WITHOUT CLOUDFLARE PROXY (Gray Cloud):
+  Your Server IP: EXPOSED (73.140.158.252 visible to attackers)
+  DDoS Protection: NONE
+  WAF: NONE
+  CDN: NONE
+  Caching: NONE
+  Bot Protection: NONE
+
+WITH CLOUDFLARE PROXY (Orange Cloud):
+  Your Server IP: HIDDEN (Cloudflare IP shown instead)
+  DDoS Protection: YES
+  WAF: YES
+  CDN: YES (Global)
+  Caching: YES (Automatic)
+  Bot Protection: YES
+
+
+CONFIGURATION SUMMARY
+════════════════════════════════════════════════════════════════════════
+
+Total DNS Records:     41
+├─ A Records:          27
+├─ CNAME Records:      2
+├─ MX Records:         2
+└─ TXT Records:        10
+
+Proxied (Orange):      20+ services
+Not Proxied (Gray):    5 records (isn.biz, www.isn.biz, etc.)
+Problematic:           1 (duplicate rag.isn.biz)
+
+
+CRITICAL ISSUES SUMMARY
+════════════════════════════════════════════════════════════════════════
+
+ISSUE 1: Investor Website Not Protected (HIGH)
+  Domain: isn.biz and www.isn.biz
+  Current: Gray cloud (DNS only, no protection)
+  Modified: 2026-02-02 07:56:05-06 UTC (TODAY!)
+  Impact: No DDoS, no WAF, exposed IP
+  Fix: Enable orange cloud proxy
+
+ISSUE 2: Duplicate Records (HIGH)
+  Domain: rag.isn.biz
+  Problem: Two conflicting A records
+  Impact: Unpredictable DNS resolution
+  Fix: Delete one record, keep the other
+
+
+RECORDS NEEDING ACTION
+════════════════════════════════════════════════════════════════════════
+
+ENABLE PROXY (Gray → Orange):
+  - isn.biz (root domain)
+  - www.isn.biz
+
+DELETE ONE (KEEP THE OTHER):
+  - rag.isn.biz (10.0.0.89 OR 73.140.158.252)
+
+
+================================================================================
+Generated: 2026-02-02
+Status: Configuration checked and documented
+================================================================================

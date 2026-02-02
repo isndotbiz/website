@@ -4,7 +4,7 @@
 from PIL import Image
 from pathlib import Path
 
-INPUT_DIR = Path("D:/workspace/ISNBIZ_Files/assets/premium_v3/portfolio")
+INPUT_DIR = Path("/home/jdmal/workspace/ISNBIZ_Files/assets/premium_v3/portfolio")
 
 # Images to process
 IMAGES = [

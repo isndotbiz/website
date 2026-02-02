@@ -1,8 +1,8 @@
 from PIL import Image
 import os
 
-SRC = "D:/workspace/ISNBIZ_Files/assets/premium_v2/logos"
-OUT = "D:/workspace/ISNBIZ_Files/assets/premium_v3/logos"
+SRC = "/home/jdmal/workspace/ISNBIZ_Files/assets/premium_v2/logos"
+OUT = "/home/jdmal/workspace/ISNBIZ_Files/assets/premium_v3/logos"
 os.makedirs(OUT, exist_ok=True)
 
 # 1. Circular logo -> favicon sizes

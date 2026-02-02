@@ -6,7 +6,7 @@ FAL_API_KEY = "64b786c3-d6b1-4fbb-9d46-9211ceea552f:d472cdf8c68b4fe873557ca33bfb
 FAL_ENDPOINT = "https://fal.run/fal-ai/gpt-image-1.5"
 HEADERS = {"Authorization": "Key " + FAL_API_KEY, "Content-Type": "application/json"}
 
-BASE_DIR = "D:/workspace/ISNBIZ_Files/assets/premium_v3"
+BASE_DIR = "/home/jdmal/workspace/ISNBIZ_Files/assets/premium_v3"
 SERVICES_DIR = os.path.join(BASE_DIR, "services")
 PORTFOLIO_DIR = os.path.join(BASE_DIR, "portfolio")
 S3_BUCKET = "isnbiz-assets-1769962280"

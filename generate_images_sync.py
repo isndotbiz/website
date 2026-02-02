@@ -8,7 +8,7 @@ from pathlib import Path
 
 # Configuration
 FAL_API_KEY = "64b786c3-d6b1-4fbb-9d46-9211ceea552f:d472cdf8c68b4fe873557ca33bfb25eb"
-OUTPUT_DIR = Path("D:/workspace/ISNBIZ_Files/assets/premium_v3/portfolio")
+OUTPUT_DIR = Path("/home/jdmal/workspace/ISNBIZ_Files/assets/premium_v3/portfolio")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Simplified prompts
