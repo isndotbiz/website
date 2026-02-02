@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-02T15:08:29.237184",
+  "generated_at": "2026-02-02T15:00:30.007971",
   "brand_colors": {
     "blue": "#1E9FF2",
     "cyan": "#5FDFDF",
@@ -7,176 +7,175 @@
   },
   "total_images": 24,
   "images": {
-    "office_innovation_lab": {
-      "filename": "office_innovation_lab.png",
-      "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\office_innovation_lab.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb0b/ATPYcDnlrOBHp4wTTxwRI_XlcW2Ni9.png",
-      "category": "office",
-      "prompt": "High-tech innovation lab, engineers working with holographic displays, blue and cyan color scheme, modern workspace with standing desks, bright open space, technology-focused, professional business setting, cinematic lighting"
-    },
-    "office_open_workspace": {
-      "filename": "office_open_workspace.png",
-      "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\office_open_workspace.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb0b/EqcIRPLBEfzm8Xf4-1bj0_PtMEVkuB.png",
-      "category": "office",
-      "prompt": "Contemporary open-plan office, collaborative workspace with blue and cyan color accents, modern furniture, technology everywhere, diverse professionals at work, natural light flooding through windows, professional photography"
-    },
     "office_collaboration_modern": {
       "filename": "office_collaboration_modern.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\office_collaboration_modern.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb0b/8ZZx0eJuO6TiFhEb8cbhT_UorgWOpb.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceadb/Qppnibk35BIgK1RDBAatk_diffsPmn.png",
       "category": "office",
       "prompt": "Ultra-modern tech office, diverse team collaborating around large touchscreen display, sleek glass walls, natural lighting, minimalist design, vibrant blue #1E9FF2 accent walls, cyan #5FDFDF LED strips, professional atmosphere, 8k quality, architectural photography"
+    },
+    "office_innovation_lab": {
+      "filename": "office_innovation_lab.png",
+      "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\office_innovation_lab.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceae0/EnVHCFCYRvBBNlGbFXbw7_Ig8AESfl.png",
+      "category": "office",
+      "prompt": "High-tech innovation lab, engineers working with holographic displays, blue and cyan color scheme, modern workspace with standing desks, bright open space, technology-focused, professional business setting, cinematic lighting"
     },
     "office_boardroom_premium": {
       "filename": "office_boardroom_premium.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\office_boardroom_premium.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb0b/cQL1HGFwe514eCLA6Gpwi_nO7m4aXJ.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceae5/b93LRh6Rt3-jPvUVBWjwc_mLi3Y460.png",
       "category": "office",
       "prompt": "Premium executive boardroom, floor-to-ceiling windows with city skyline, ultra-modern conference table with blue accent lighting, professional business meeting, sophisticated interior design, 8k quality, corporate elegance"
+    },
+    "office_open_workspace": {
+      "filename": "office_open_workspace.png",
+      "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\office_open_workspace.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceaeb/jp6TyBRnfEGrcTgvQ0h1p_vRJYI5E7.png",
+      "category": "office",
+      "prompt": "Contemporary open-plan office, collaborative workspace with blue and cyan color accents, modern furniture, technology everywhere, diverse professionals at work, natural light flooding through windows, professional photography"
     },
     "dashboard_analytics_premium": {
       "filename": "dashboard_analytics_premium.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\dashboard_analytics_premium.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb0b/PwSmd7ckiGMsqQED7MSAs_lmQL1KB1.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceaf1/SygMniNA6BnXo2oR3EGvY_s72IBmU7.png",
       "category": "dashboard",
       "prompt": "Advanced analytics dashboard on 4K display, beautiful data visualizations with blue and cyan graphs, real-time metrics, clean modern UI design, professional business intelligence platform, glowing screens in dark modern office, ultra-detailed, 8k quality"
+    },
+    "dashboard_ai_monitoring": {
+      "filename": "dashboard_ai_monitoring.png",
+      "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\dashboard_ai_monitoring.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceaf7/-YkFh7cp1TktVtPPw_cyp_7LVG8liO.png",
+      "category": "dashboard",
+      "prompt": "AI monitoring dashboard showing neural network visualizations, blue and cyan data streams, real-time performance metrics, futuristic interface design, professional tech aesthetic, glowing holographic elements, 8k quality"
+    },
+    "dashboard_cloud_control": {
+      "filename": "dashboard_cloud_control.png",
+      "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\dashboard_cloud_control.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceafc/vAmzPuOOfErQ1HGSWAorf_pSHDfrt1.png",
+      "category": "dashboard",
+      "prompt": "Cloud infrastructure control panel, network topology visualization in blue and cyan, server status indicators, modern UI/UX design, professional tech interface, sleek dark theme with vibrant accents, ultra-high resolution"
     },
     "dashboard_enterprise_metrics": {
       "filename": "dashboard_enterprise_metrics.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\dashboard_enterprise_metrics.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb10/hbom7xmhjg_G7G1S-97mA_67qSvdVs.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceb02/5IsweyAEWIoc1uJCJDvuj_wh9DQkCU.png",
       "category": "dashboard",
       "prompt": "Enterprise business metrics dashboard, KPI visualizations with professional blue color scheme, clean charts and graphs, modern corporate interface, financial data displays, sophisticated design, 8k quality screen capture"
     },
     "growth_chart_upward": {
       "filename": "growth_chart_upward.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\growth_chart_upward.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb10/C8E1hiVVK-AArkNPs7NCU_L7Cqvbgw.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceb08/vXLX6FcK6_17DhPpOIcQe_MErcK1Ob.png",
       "category": "growth",
       "prompt": "Dramatic upward business growth chart with glowing blue and cyan lines, 3D visualization, financial success metrics, professional corporate aesthetic, dark background with vibrant data, futuristic business graphics, 8k quality"
-    },
-    "dashboard_cloud_control": {
-      "filename": "dashboard_cloud_control.png",
-      "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\dashboard_cloud_control.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb10/vOHHH5XvscTjwrMS-OYhq_eGsC0O7P.png",
-      "category": "dashboard",
-      "prompt": "Cloud infrastructure control panel, network topology visualization in blue and cyan, server status indicators, modern UI/UX design, professional tech interface, sleek dark theme with vibrant accents, ultra-high resolution"
-    },
-    "dashboard_ai_monitoring": {
-      "filename": "dashboard_ai_monitoring.png",
-      "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\dashboard_ai_monitoring.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb10/f8CTJGi-LIbKWmmTn0XVC_GSnVeUCi.png",
-      "category": "dashboard",
-      "prompt": "AI monitoring dashboard showing neural network visualizations, blue and cyan data streams, real-time performance metrics, futuristic interface design, professional tech aesthetic, glowing holographic elements, 8k quality"
     },
     "growth_global_expansion": {
       "filename": "growth_global_expansion.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\growth_global_expansion.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb11/ggnwfnlhIkfFSHEL_EB62_KLdyNGf7.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceb0d/QLessQK5S4F3acQhxKser_vMi41kvU.png",
       "category": "growth",
       "prompt": "Global business expansion visualization, 3D world map with blue network connections, illuminated nodes showing worldwide presence, professional corporate graphics, cyan data streams, modern tech aesthetic, cinematic quality"
     },
     "growth_success_trajectory": {
       "filename": "growth_success_trajectory.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\growth_success_trajectory.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb15/I4If_6KhzSrlyecqf5cFu_k5QyxQOY.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceb13/YV3tl1xXB6c0K5WvAUrRJ_10agB5ns.png",
       "category": "growth",
       "prompt": "Abstract representation of business success, ascending arrow made of blue and cyan light trails, professional corporate atmosphere, modern digital art, inspirational business visual, clean composition, 8k quality"
     },
     "team_strategy_session": {
       "filename": "team_strategy_session.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\team_strategy_session.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb16/0H6oWQdQdLl1ivVFftStz_oB3jO8dz.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceb18/6AZhmUL3rTqg0Pq5G7rg1_XW7CpCWQ.png",
       "category": "team",
       "prompt": "Professional strategy session, diverse team around interactive digital whiteboard, blue and cyan visual elements, modern collaborative workspace, engaged professionals brainstorming, natural lighting, corporate photography, 8k quality"
     },
     "team_innovation_workshop": {
       "filename": "team_innovation_workshop.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\team_innovation_workshop.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb16/Hlw7EnRwEZJAx6T8TNewa_aOZySLTh.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceb1e/xZqjq1Qt6OT2bxbmzKNsw_RQVrF8EI.png",
       "category": "team",
       "prompt": "Innovation workshop with creative professionals, modern office setting with blue accents, collaborative work environment, technology integration, diverse team members, professional business atmosphere, high-quality photography"
     },
     "team_digital_collaboration": {
       "filename": "team_digital_collaboration.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\team_digital_collaboration.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb16/vvQ3oDCvcgTUhE6ZOiFD4_dC3b5gHw.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceb24/JSPPokzMD7O74AoBCvIi3_RF2VQDDa.png",
       "category": "team",
       "prompt": "Remote team collaboration via large video wall, modern tech office with blue and cyan lighting, professional digital workspace, multiple screens showing team members, contemporary business environment, 8k quality"
     },
     "infrastructure_server_room": {
       "filename": "infrastructure_server_room.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\infrastructure_server_room.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb17/RvuQIEF7qzIMJtteXmqdR_IbxlRAZg.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceb2a/mR6qYWA6Q4Kdzd0pqFn_K_68GHwEUu.png",
       "category": "infrastructure",
       "prompt": "Ultra-modern server room with blue LED indicators, rows of enterprise servers, cyan status lights, professional data center, clean organized cables, high-tech atmosphere, industrial photography, 8k quality"
     },
     "infrastructure_cloud_network": {
       "filename": "infrastructure_cloud_network.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\infrastructure_cloud_network.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb1a/6HjK5seOjtEHDbkiO0QFh_YQO9LUBY.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceb30/QieAku2nbJO1ywABZ8W25_qeqVgQxZ.png",
       "category": "infrastructure",
       "prompt": "Cloud network visualization, abstract representation of distributed servers, blue and cyan connection lines, nodes glowing with data transfer, professional tech graphics, futuristic design, 3D rendered, ultra-high quality"
     },
     "infrastructure_datacenter": {
       "filename": "infrastructure_datacenter.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\infrastructure_datacenter.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb1b/68WAn5OD9RUfTmHkBnp4X_ObJDkMx4.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceb35/IIZoBivjVpiNgm8GJhN7a_VandwkIx.png",
       "category": "infrastructure",
       "prompt": "Enterprise data center with modern architecture, blue atmospheric lighting, rows of server racks with cyan indicators, professional IT infrastructure, clean technical environment, architectural photography, 8k quality"
     },
     "interface_ai_platform": {
       "filename": "interface_ai_platform.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\interface_ai_platform.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb1c/BHfo_MnphKKb7V2qMiXxe_qJcdMXGo.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceb3a/yeAWPmIfcjFmyclAObSzY_YZJH3uI2.png",
       "category": "interface",
       "prompt": "Modern AI platform interface, clean UI design with blue and cyan accents, neural network visualization, professional software dashboard, sleek dark theme, intuitive layout, 8k screen capture quality"
     },
     "interface_enterprise_app": {
       "filename": "interface_enterprise_app.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\interface_enterprise_app.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb1c/4gb2-kUdgfdW1q6_zGoig_Rqi2NF0C.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceb40/Dw5B2mQt8w8UB2DL6pmGV_MXTS7N5f.png",
       "category": "interface",
       "prompt": "Enterprise application interface, professional business software UI, blue color scheme with cyan highlights, modern dashboard design, clean data tables and charts, sophisticated UX, ultra-high resolution"
     },
     "interface_cloud_console": {
       "filename": "interface_cloud_console.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\interface_cloud_console.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb1d/anJ7WBZX8dZq6q0_ycyBz_HVRLl4a4.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceb46/PLDYmC3iSR3xBzgwTrUvG_MU8C4eI5.png",
       "category": "interface",
       "prompt": "Cloud management console, modern admin interface with blue theme, resource monitoring panels, professional tech platform, cyan status indicators, clean organized layout, 8k quality screenshot"
     },
     "innovation_ai_neural": {
       "filename": "innovation_ai_neural.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\innovation_ai_neural.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb1f/hnB6hWWl8F3Bx8DWOpwl6_j8aaJZ7f.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceb4c/aA5sgi884us0GRN1et2zh_GnUuLfZz.png",
       "category": "innovation",
       "prompt": "Abstract AI neural network visualization, blue and cyan glowing nodes connected by light trails, 3D representation of machine learning, professional tech graphics, dark background with vibrant digital elements, futuristic aesthetic, 8k quality"
     },
     "innovation_quantum_computing": {
       "filename": "innovation_quantum_computing.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\innovation_quantum_computing.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb21/VJq4B4ruEYNItATLBNMuJ_79mW4fgu.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceb51/a8yF0pbouOQqsEVs4uBRT_iPHpqaym.png",
       "category": "innovation",
       "prompt": "Quantum computing visualization, abstract quantum bits in blue and cyan, futuristic technology representation, professional scientific graphics, glowing particles and energy waves, cinematic tech aesthetic, ultra-high quality"
     },
     "innovation_automation_flow": {
       "filename": "innovation_automation_flow.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\innovation_automation_flow.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb21/6NkgMbBLkJGVOlZhNKkIC_wQJf5vwd.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceb57/lODgEmqkTh7SDfEkoSgnh_MkWVqLAN.png",
       "category": "innovation",
       "prompt": "Business process automation flowchart, blue and cyan connection lines, modern workflow visualization, professional infographic style, clean design with glowing elements, corporate tech graphics, 8k quality"
     },
     "innovation_digital_transformation": {
       "filename": "innovation_digital_transformation.png",
       "filepath": "D:\\workspace\\ISNBIZ_Files\\assets\\business\\innovation_digital_transformation.png",
-      "url": "https://v3b.fal.media/files/b/0a8ceb22/ueGNumhj6UnuUkCpMuvXj_cnyYOyRF.png",
+      "url": "https://v3b.fal.media/files/b/0a8ceb5c/UKyTBStnZEY8YPgP4-03P_VgPXybpB.png",
       "category": "innovation",
       "prompt": "Digital transformation concept, transitioning from analog to digital, blue and cyan digital particles forming business icons, professional corporate visual, modern tech aesthetic, inspirational business graphics, cinematic quality"
     }
   },
   "success_count": 24,
-  "failed_count": 0,
-  "failed_names": []
+  "failed_count": 0
 }
