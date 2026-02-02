@@ -1,0 +1,68 @@
+# Portfolio Image S3 URLs - Ready to Use
+
+Generated: 2026-02-01
+All images uploaded and ready for production use.
+
+================================================================================
+CLI TEMPLATE FRAMEWORK
+================================================================================
+
+Desktop (1536x1024, 160 KB):
+https://isnbiz-assets-1769962280.s3.amazonaws.com/premium_v3/portfolio/cli_template_desktop.webp
+
+Tablet (1024x683, 87 KB):
+https://isnbiz-assets-1769962280.s3.amazonaws.com/premium_v3/portfolio/cli_template_tablet.webp
+
+Mobile (800x533, 58 KB):
+https://isnbiz-assets-1769962280.s3.amazonaws.com/premium_v3/portfolio/cli_template_mobile.webp
+
+Original (1536x1024, 1544 KB):
+https://isnbiz-assets-1769962280.s3.amazonaws.com/premium_v3/portfolio/cli_template.webp
+
+
+================================================================================
+COMFYUI FLUX WAN AUTOMATION
+================================================================================
+
+Desktop (1536x1024, 214 KB):
+https://isnbiz-assets-1769962280.s3.amazonaws.com/premium_v3/portfolio/comfyui_wan_desktop.webp
+
+Tablet (1024x683, 116 KB):
+https://isnbiz-assets-1769962280.s3.amazonaws.com/premium_v3/portfolio/comfyui_wan_tablet.webp
+
+Mobile (800x533, 78 KB):
+https://isnbiz-assets-1769962280.s3.amazonaws.com/premium_v3/portfolio/comfyui_wan_mobile.webp
+
+Original (1536x1024, 1779 KB):
+https://isnbiz-assets-1769962280.s3.amazonaws.com/premium_v3/portfolio/comfyui_wan.webp
+
+
+================================================================================
+GEDCOM PROCESSING SYSTEM
+================================================================================
+
+Desktop (1536x1024, 274 KB):
+https://isnbiz-assets-1769962280.s3.amazonaws.com/premium_v3/portfolio/gedcom_processing_desktop.webp
+
+Tablet (1024x683, 149 KB):
+https://isnbiz-assets-1769962280.s3.amazonaws.com/premium_v3/portfolio/gedcom_processing_tablet.webp
+
+Mobile (800x533, 99 KB):
+https://isnbiz-assets-1769962280.s3.amazonaws.com/premium_v3/portfolio/gedcom_processing_mobile.webp
+
+Original (1536x1024, 1961 KB):
+https://isnbiz-assets-1769962280.s3.amazonaws.com/premium_v3/portfolio/gedcom_processing.webp
+
+
+================================================================================
+QUICK REFERENCE - DESKTOP ONLY
+================================================================================
+
+cli_template_desktop.webp
+https://isnbiz-assets-1769962280.s3.amazonaws.com/premium_v3/portfolio/cli_template_desktop.webp
+
+comfyui_wan_desktop.webp
+https://isnbiz-assets-1769962280.s3.amazonaws.com/premium_v3/portfolio/comfyui_wan_desktop.webp
+
+gedcom_processing_desktop.webp
+https://isnbiz-assets-1769962280.s3.amazonaws.com/premium_v3/portfolio/gedcom_processing_desktop.webp

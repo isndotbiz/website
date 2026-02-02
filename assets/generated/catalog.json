@@ -1,0 +1,50 @@
+{
+  "total_images": 31,
+  "output_directory": "assets\\generated",
+  "format": "webp",
+  "quality": "low",
+  "categories": {
+    "hero_backgrounds": [
+      "hero_tech_grid",
+      "hero_data_flow",
+      "hero_ai_neural",
+      "hero_cloud_tech"
+    ],
+    "project_illustrations": [
+      "project_ai_chat",
+      "project_ai_analysis",
+      "project_cloud_servers",
+      "project_cloud_scale",
+      "project_enterprise_dashboard",
+      "project_enterprise_workflow",
+      "project_data_pipeline",
+      "project_data_analytics",
+      "project_opportunity_bot",
+      "project_opportunity_search",
+      "project_infrastructure",
+      "project_infrastructure_monitoring",
+      "project_portfolio_browser",
+      "project_portfolio_analytics"
+    ],
+    "tech_elements": [
+      "tech_particles",
+      "tech_waves",
+      "tech_hexagons",
+      "tech_circuits",
+      "tech_globe_network",
+      "tech_code_matrix",
+      "tech_api_network"
+    ],
+    "office_scenes": [
+      "office_modern",
+      "office_collaboration",
+      "office_server_room"
+    ],
+    "dashboards": [
+      "dashboard_metrics",
+      "dashboard_realtime",
+      "dashboard_control"
+    ]
+  },
+  "failed": []
+}

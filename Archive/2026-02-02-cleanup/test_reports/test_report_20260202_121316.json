@@ -1,0 +1,1174 @@
+{
+  "test_date": "2026-02-02T12:11:59.532989",
+  "base_url": "https://isn.biz",
+  "pages_tested": 18,
+  "pages_passed": 11,
+  "pages_failed": 7,
+  "total_images": 89,
+  "images_loaded": 40,
+  "images_failed": 49,
+  "broken_links": [],
+  "page_results": [
+    {
+      "category": "Main Pages",
+      "name": "Home",
+      "url": "https://isn.biz",
+      "path": "",
+      "status_code": 200,
+      "page_loaded": true,
+      "images": [
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 261,
+          "height": 100,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/hero_logo.webp",
+          "alt": "iSN.BiZ Inc - Innovation Solutions Systems",
+          "loaded": true,
+          "width": 1000,
+          "height": 382,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/services/ai_research.webp",
+          "alt": "AI opportunity analytics dashboard mockup",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/opportunity_bot.webp",
+          "alt": "AI opportunity research bot dashboard",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/infrastructure.webp",
+          "alt": "TrueNAS infrastructure platform monitoring dashboard",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/credit_automation.webp",
+          "alt": "Enterprise credit report automation interface",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/rag_bi.webp",
+          "alt": "BIN intelligence fraud analysis dashboard",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/androidaps_health.webp",
+          "alt": "SpiritAtlas Android application screens",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/infrastructure.webp",
+          "alt": "Enterprise AI infrastructure architecture diagram",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/jonathan_headshot.webp",
+          "alt": "Jonathan - Chairman and CEO",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/bri_headshot.webp",
+          "alt": "Bri - Secretary and COO",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/lilly_headshot.webp",
+          "alt": "Lilly - Treasurer and CFO",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/alicia_headshot.webp",
+          "alt": "Alicia - VP and Chief Product Officer",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/footer_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 130,
+          "height": 50,
+          "complete": true
+        }
+      ],
+      "image_stats": {
+        "total": 14,
+        "loaded": 4,
+        "failed": 10
+      },
+      "links_checked": 0,
+      "broken_links": [],
+      "errors": [
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/opportunity_bot.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/infrastructure.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/credit_automation.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/rag_bi.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/androidaps_health.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/infrastructure.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/jonathan_headshot.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/bri_headshot.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/lilly_headshot.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/alicia_headshot.webp - Failed to load"
+      ],
+      "screenshot": "\\tmp\\playwright-screenshots\\main_pages_index.png"
+    },
+    {
+      "category": "Main Pages",
+      "name": "About",
+      "url": "https://isn.biz/about.html",
+      "path": "about.html",
+      "status_code": 200,
+      "page_loaded": true,
+      "images": [
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 261,
+          "height": 100,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/hero_logo.webp",
+          "alt": "iSN.BiZ Inc - Innovation Solutions Systems",
+          "loaded": true,
+          "width": 1000,
+          "height": 382,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/founders/bri_base.webp",
+          "alt": "Portrait of Bri, Secretary and COO",
+          "loaded": true,
+          "width": 768,
+          "height": 1024,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/founders/lilly_base.webp",
+          "alt": "Portrait of Lilly, Treasurer and CFO",
+          "loaded": true,
+          "width": 768,
+          "height": 1024,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/founders/jonathan_base.webp",
+          "alt": "Portrait of Jonathan, Chairman and CEO",
+          "loaded": true,
+          "width": 768,
+          "height": 1024,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/founders/alicia_base.webp",
+          "alt": "Portrait of Alicia, VP and CPO",
+          "loaded": true,
+          "width": 768,
+          "height": 1024,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/footer_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 130,
+          "height": 50,
+          "complete": true
+        }
+      ],
+      "image_stats": {
+        "total": 7,
+        "loaded": 7,
+        "failed": 0
+      },
+      "links_checked": 0,
+      "broken_links": [],
+      "errors": [],
+      "screenshot": "\\tmp\\playwright-screenshots\\main_pages_about.png"
+    },
+    {
+      "category": "Main Pages",
+      "name": "Portfolio",
+      "url": "https://isn.biz/portfolio.html",
+      "path": "portfolio.html",
+      "status_code": 200,
+      "page_loaded": true,
+      "images": [
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 261,
+          "height": 100,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/truenas_infrastructure.webp",
+          "alt": "TrueNAS Infrastructure Platform",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/videogen_youtube.webp",
+          "alt": "VideoGen YouTube Pipeline",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/bin_intelligence.webp",
+          "alt": "BIN Intelligence Platform",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas_1.webp",
+          "alt": "SpiritAtlas Mobile App",
+          "loaded": true,
+          "width": 1536,
+          "height": 1024,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/comfyui_automation.webp",
+          "alt": "ComfyUI Automation",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/gedcom_processing.webp",
+          "alt": "GEDCOM Processing Engine",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/llm_optimization.webp",
+          "alt": "LLM Optimization Framework",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/opportunity_bot.webp",
+          "alt": "AI Market Intelligence Engine",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/footer_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 130,
+          "height": 50,
+          "complete": true
+        }
+      ],
+      "image_stats": {
+        "total": 10,
+        "loaded": 3,
+        "failed": 7
+      },
+      "links_checked": 0,
+      "broken_links": [],
+      "errors": [
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/truenas_infrastructure.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/videogen_youtube.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/bin_intelligence.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/comfyui_automation.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/gedcom_processing.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/llm_optimization.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/opportunity_bot.webp - Failed to load"
+      ],
+      "screenshot": "\\tmp\\playwright-screenshots\\main_pages_portfolio.png"
+    },
+    {
+      "category": "Main Pages",
+      "name": "Investors",
+      "url": "https://isn.biz/investors.html",
+      "path": "investors.html",
+      "status_code": 200,
+      "page_loaded": true,
+      "images": [
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 261,
+          "height": 100,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/hero_logo.webp",
+          "alt": "iSN.BiZ Inc - Innovation Solutions Systems",
+          "loaded": true,
+          "width": 1000,
+          "height": 382,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/footer_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 130,
+          "height": 50,
+          "complete": true
+        }
+      ],
+      "image_stats": {
+        "total": 3,
+        "loaded": 3,
+        "failed": 0
+      },
+      "links_checked": 0,
+      "broken_links": [],
+      "errors": [],
+      "screenshot": "\\tmp\\playwright-screenshots\\main_pages_investors.png"
+    },
+    {
+      "category": "Main Pages",
+      "name": "Slider Gallery",
+      "url": "https://isn.biz/slider-gallery.html",
+      "path": "slider-gallery.html",
+      "status_code": 200,
+      "page_loaded": true,
+      "images": [
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 261,
+          "height": 100,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/footer_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 130,
+          "height": 50,
+          "complete": true
+        }
+      ],
+      "image_stats": {
+        "total": 2,
+        "loaded": 2,
+        "failed": 0
+      },
+      "links_checked": 0,
+      "broken_links": [],
+      "errors": [],
+      "screenshot": "\\tmp\\playwright-screenshots\\main_pages_slider-gallery.png"
+    },
+    {
+      "category": "Main Pages",
+      "name": "Portfolio Grid",
+      "url": "https://isn.biz/portfolio-grid.html",
+      "path": "portfolio-grid.html",
+      "status_code": 200,
+      "page_loaded": true,
+      "images": [
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+          "alt": "iSN.BiZ",
+          "loaded": true,
+          "width": 261,
+          "height": 100,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/truenas_1.webp",
+          "alt": "TrueNAS",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/videogen_1.webp",
+          "alt": "VideoGen",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/bin_1.webp",
+          "alt": "BIN Intelligence",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/cli_1.webp",
+          "alt": "CLI",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        }
+      ],
+      "image_stats": {
+        "total": 5,
+        "loaded": 1,
+        "failed": 4
+      },
+      "links_checked": 0,
+      "broken_links": [],
+      "errors": [
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/truenas_1.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/videogen_1.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/bin_1.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/cli_1.webp - Failed to load"
+      ],
+      "screenshot": "\\tmp\\playwright-screenshots\\main_pages_portfolio-grid.png"
+    },
+    {
+      "category": "Founder Pages",
+      "name": "Alicia",
+      "url": "https://isn.biz/alicia.html",
+      "path": "alicia.html",
+      "status_code": 200,
+      "page_loaded": true,
+      "images": [
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 261,
+          "height": 100,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/alicia_headshot.webp",
+          "alt": "Alicia - Vice President and Chief Program Officer of iSN.BiZ Inc",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/alicia_working.webp",
+          "alt": "Alicia managing complex enterprise programs",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/alicia_presenting.webp",
+          "alt": "Alicia presenting solution architecture to clients",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/alicia_collaborating.webp",
+          "alt": "Alicia collaborating with clients on strategic initiatives",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\casual_variants/alicia_coffee.webp",
+          "alt": "Alicia in strategic discussion session",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/alicia_analyzing.webp",
+          "alt": "Alicia analyzing program metrics and outcomes",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\casual_variants/alicia_brainstorming.webp",
+          "alt": "Alicia in creative brainstorming session",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        }
+      ],
+      "image_stats": {
+        "total": 8,
+        "loaded": 1,
+        "failed": 7
+      },
+      "links_checked": 0,
+      "broken_links": [],
+      "errors": [
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/alicia_headshot.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/alicia_working.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/alicia_presenting.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/alicia_collaborating.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\casual_variants/alicia_coffee.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/alicia_analyzing.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\casual_variants/alicia_brainstorming.webp - Failed to load"
+      ],
+      "screenshot": "\\tmp\\playwright-screenshots\\founder_pages_alicia.png"
+    },
+    {
+      "category": "Founder Pages",
+      "name": "Bri",
+      "url": "https://isn.biz/bri.html",
+      "path": "bri.html",
+      "status_code": 200,
+      "page_loaded": true,
+      "images": [
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 261,
+          "height": 100,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/bri_headshot.webp",
+          "alt": "Bri - Secretary and Chief Operating Officer of iSN.BiZ Inc",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "assets/founders/bri_office_work.webp",
+          "alt": "Bri overseeing operational systems and workflows",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/bri_presenting.webp",
+          "alt": "Bri presenting operational strategy to stakeholders",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/bri_collaborating.webp",
+          "alt": "Bri collaborating with cross-functional teams",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "assets/founders/bri_strategic_planning.webp",
+          "alt": "Bri engaged in strategic planning session",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/bri_analyzing.webp",
+          "alt": "Bri analyzing operational metrics and KPIs",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\casual_variants/bri_casual_meeting.webp",
+          "alt": "Bri in an informal team discussion",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        }
+      ],
+      "image_stats": {
+        "total": 8,
+        "loaded": 1,
+        "failed": 7
+      },
+      "links_checked": 0,
+      "broken_links": [],
+      "errors": [
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/bri_headshot.webp - Failed to load",
+        "Image failed: assets/founders/bri_office_work.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/bri_presenting.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/bri_collaborating.webp - Failed to load",
+        "Image failed: assets/founders/bri_strategic_planning.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/bri_analyzing.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\casual_variants/bri_casual_meeting.webp - Failed to load"
+      ],
+      "screenshot": "\\tmp\\playwright-screenshots\\founder_pages_bri.png"
+    },
+    {
+      "category": "Founder Pages",
+      "name": "Jonathan",
+      "url": "https://isn.biz/jonathan.html",
+      "path": "jonathan.html",
+      "status_code": 200,
+      "page_loaded": true,
+      "images": [
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 261,
+          "height": 100,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/jonathan_headshot.webp",
+          "alt": "Jonathan - Chairman and CEO of iSN.BiZ Inc",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/jonathan_presenting.webp",
+          "alt": "Jonathan presenting company vision and strategic roadmap",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/jonathan_working.webp",
+          "alt": "Jonathan working on enterprise software architecture",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/jonathan_collaborating.webp",
+          "alt": "Jonathan collaborating with team on client solutions",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\casual_variants/jonathan_coffee.webp",
+          "alt": "Jonathan in thoughtful discussion about technology strategy",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/jonathan_analyzing.webp",
+          "alt": "Jonathan analyzing business metrics and performance data",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\casual_variants/jonathan_outdoor.webp",
+          "alt": "Jonathan in a relaxed outdoor setting",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        }
+      ],
+      "image_stats": {
+        "total": 8,
+        "loaded": 1,
+        "failed": 7
+      },
+      "links_checked": 0,
+      "broken_links": [],
+      "errors": [
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/jonathan_headshot.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/jonathan_presenting.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/jonathan_working.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/jonathan_collaborating.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\casual_variants/jonathan_coffee.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/jonathan_analyzing.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\casual_variants/jonathan_outdoor.webp - Failed to load"
+      ],
+      "screenshot": "\\tmp\\playwright-screenshots\\founder_pages_jonathan.png"
+    },
+    {
+      "category": "Founder Pages",
+      "name": "Lilly",
+      "url": "https://isn.biz/lilly.html",
+      "path": "lilly.html",
+      "status_code": 200,
+      "page_loaded": true,
+      "images": [
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 261,
+          "height": 100,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/lilly_headshot.webp",
+          "alt": "Lilly - Treasurer and Chief Financial Officer of iSN.BiZ Inc",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "assets/founders/lilly_office_work.webp",
+          "alt": "Lilly managing financial operations and strategic planning",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "assets/founders/lilly_presentation.webp",
+          "alt": "Lilly presenting financial strategy to investors",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/lilly_presenting.webp",
+          "alt": "Lilly presenting to potential investors and stakeholders",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/lilly_collaborating.webp",
+          "alt": "Lilly collaborating on financial strategy with team",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/lilly_analyzing.webp",
+          "alt": "Lilly analyzing financial data and performance metrics",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\casual_variants/lilly_outdoor.webp",
+          "alt": "Lilly in a relaxed outdoor setting",
+          "loaded": false,
+          "width": 0,
+          "height": 0,
+          "complete": false
+        }
+      ],
+      "image_stats": {
+        "total": 8,
+        "loaded": 1,
+        "failed": 7
+      },
+      "links_checked": 0,
+      "broken_links": [],
+      "errors": [
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/lilly_headshot.webp - Failed to load",
+        "Image failed: assets/founders/lilly_office_work.webp - Failed to load",
+        "Image failed: assets/founders/lilly_presentation.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/lilly_presenting.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/lilly_collaborating.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/lilly_analyzing.webp - Failed to load",
+        "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\casual_variants/lilly_outdoor.webp - Failed to load"
+      ],
+      "screenshot": "\\tmp\\playwright-screenshots\\founder_pages_lilly.png"
+    },
+    {
+      "category": "Project Pages",
+      "name": "CLI Standards",
+      "url": "https://isn.biz/project-cli-standards.html",
+      "path": "project-cli-standards.html",
+      "status_code": 200,
+      "page_loaded": true,
+      "images": [
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 261,
+          "height": 100,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/footer_logo.webp",
+          "alt": "iSN.BiZ Inc",
+          "loaded": true,
+          "width": 130,
+          "height": 50,
+          "complete": true
+        }
+      ],
+      "image_stats": {
+        "total": 2,
+        "loaded": 2,
+        "failed": 0
+      },
+      "links_checked": 0,
+      "broken_links": [],
+      "errors": [],
+      "screenshot": "\\tmp\\playwright-screenshots\\project_pages_project-cli-standards.png"
+    },
+    {
+      "category": "Project Pages",
+      "name": "ComfyUI Automation",
+      "url": "https://isn.biz/project-comfyui-automation.html",
+      "path": "project-comfyui-automation.html",
+      "status_code": 200,
+      "page_loaded": true,
+      "images": [
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 261,
+          "height": 100,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/footer_logo.webp",
+          "alt": "iSN.BiZ Inc",
+          "loaded": true,
+          "width": 130,
+          "height": 50,
+          "complete": true
+        }
+      ],
+      "image_stats": {
+        "total": 2,
+        "loaded": 2,
+        "failed": 0
+      },
+      "links_checked": 0,
+      "broken_links": [],
+      "errors": [],
+      "screenshot": "\\tmp\\playwright-screenshots\\project_pages_project-comfyui-automation.png"
+    },
+    {
+      "category": "Project Pages",
+      "name": "GEDCOM Platform",
+      "url": "https://isn.biz/project-gedcom-platform.html",
+      "path": "project-gedcom-platform.html",
+      "status_code": 200,
+      "page_loaded": true,
+      "images": [
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 261,
+          "height": 100,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/footer_logo.webp",
+          "alt": "iSN.BiZ Inc",
+          "loaded": true,
+          "width": 130,
+          "height": 50,
+          "complete": true
+        }
+      ],
+      "image_stats": {
+        "total": 2,
+        "loaded": 2,
+        "failed": 0
+      },
+      "links_checked": 0,
+      "broken_links": [],
+      "errors": [],
+      "screenshot": "\\tmp\\playwright-screenshots\\project_pages_project-gedcom-platform.png"
+    },
+    {
+      "category": "Project Pages",
+      "name": "LLM Optimization",
+      "url": "https://isn.biz/project-llm-optimization.html",
+      "path": "project-llm-optimization.html",
+      "status_code": 200,
+      "page_loaded": true,
+      "images": [
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 261,
+          "height": 100,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/footer_logo.webp",
+          "alt": "iSN.BiZ Inc",
+          "loaded": true,
+          "width": 130,
+          "height": 50,
+          "complete": true
+        }
+      ],
+      "image_stats": {
+        "total": 2,
+        "loaded": 2,
+        "failed": 0
+      },
+      "links_checked": 0,
+      "broken_links": [],
+      "errors": [],
+      "screenshot": "\\tmp\\playwright-screenshots\\project_pages_project-llm-optimization.png"
+    },
+    {
+      "category": "Project Pages",
+      "name": "Opportunity Bot",
+      "url": "https://isn.biz/project-opportunity-bot.html",
+      "path": "project-opportunity-bot.html",
+      "status_code": 200,
+      "page_loaded": true,
+      "images": [
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 261,
+          "height": 100,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/footer_logo.webp",
+          "alt": "iSN.BiZ Inc",
+          "loaded": true,
+          "width": 130,
+          "height": 50,
+          "complete": true
+        }
+      ],
+      "image_stats": {
+        "total": 2,
+        "loaded": 2,
+        "failed": 0
+      },
+      "links_checked": 0,
+      "broken_links": [],
+      "errors": [],
+      "screenshot": "\\tmp\\playwright-screenshots\\project_pages_project-opportunity-bot.png"
+    },
+    {
+      "category": "Project Pages",
+      "name": "SpiritAtlas",
+      "url": "https://isn.biz/project-spiritatlas.html",
+      "path": "project-spiritatlas.html",
+      "status_code": 200,
+      "page_loaded": true,
+      "images": [
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 261,
+          "height": 100,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/footer_logo.webp",
+          "alt": "iSN.BiZ Inc",
+          "loaded": true,
+          "width": 130,
+          "height": 50,
+          "complete": true
+        }
+      ],
+      "image_stats": {
+        "total": 2,
+        "loaded": 2,
+        "failed": 0
+      },
+      "links_checked": 0,
+      "broken_links": [],
+      "errors": [],
+      "screenshot": "\\tmp\\playwright-screenshots\\project_pages_project-spiritatlas.png"
+    },
+    {
+      "category": "Project Pages",
+      "name": "TrueNAS Infrastructure",
+      "url": "https://isn.biz/project-truenas-infrastructure.html",
+      "path": "project-truenas-infrastructure.html",
+      "status_code": 200,
+      "page_loaded": true,
+      "images": [
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 261,
+          "height": 100,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/footer_logo.webp",
+          "alt": "iSN.BiZ Inc",
+          "loaded": true,
+          "width": 130,
+          "height": 50,
+          "complete": true
+        }
+      ],
+      "image_stats": {
+        "total": 2,
+        "loaded": 2,
+        "failed": 0
+      },
+      "links_checked": 0,
+      "broken_links": [],
+      "errors": [],
+      "screenshot": "\\tmp\\playwright-screenshots\\project_pages_project-truenas-infrastructure.png"
+    },
+    {
+      "category": "Project Pages",
+      "name": "VideoGen YouTube",
+      "url": "https://isn.biz/project-videogen-youtube.html",
+      "path": "project-videogen-youtube.html",
+      "status_code": 200,
+      "page_loaded": true,
+      "images": [
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+          "alt": "iSN.BiZ Inc Logo",
+          "loaded": true,
+          "width": 261,
+          "height": 100,
+          "complete": true
+        },
+        {
+          "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/footer_logo.webp",
+          "alt": "iSN.BiZ Inc",
+          "loaded": true,
+          "width": 130,
+          "height": 50,
+          "complete": true
+        }
+      ],
+      "image_stats": {
+        "total": 2,
+        "loaded": 2,
+        "failed": 0
+      },
+      "links_checked": 0,
+      "broken_links": [],
+      "errors": [],
+      "screenshot": "\\tmp\\playwright-screenshots\\project_pages_project-videogen-youtube.png"
+    }
+  ],
+  "errors": [
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/opportunity_bot.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/infrastructure.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/credit_automation.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/rag_bi.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/androidaps_health.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/infrastructure.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/jonathan_headshot.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/bri_headshot.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/lilly_headshot.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/alicia_headshot.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/truenas_infrastructure.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/videogen_youtube.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/bin_intelligence.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/comfyui_automation.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/gedcom_processing.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/llm_optimization.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/opportunity_bot.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/truenas_1.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/videogen_1.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/bin_1.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/cli_1.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/alicia_headshot.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/alicia_working.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/alicia_presenting.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/alicia_collaborating.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\casual_variants/alicia_coffee.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/alicia_analyzing.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\casual_variants/alicia_brainstorming.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/bri_headshot.webp - Failed to load",
+    "Image failed: assets/founders/bri_office_work.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/bri_presenting.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/bri_collaborating.webp - Failed to load",
+    "Image failed: assets/founders/bri_strategic_planning.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/bri_analyzing.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\casual_variants/bri_casual_meeting.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/jonathan_headshot.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/jonathan_presenting.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/jonathan_working.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/jonathan_collaborating.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\casual_variants/jonathan_coffee.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/jonathan_analyzing.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\casual_variants/jonathan_outdoor.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\headshots_with_bg/lilly_headshot.webp - Failed to load",
+    "Image failed: assets/founders/lilly_office_work.webp - Failed to load",
+    "Image failed: assets/founders/lilly_presentation.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/lilly_presenting.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/lilly_collaborating.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\corporate_photos/lilly_analyzing.webp - Failed to load",
+    "Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\\casual_variants/lilly_outdoor.webp - Failed to load"
+  ]
+}

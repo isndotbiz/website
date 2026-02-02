@@ -1,0 +1,731 @@
+{
+  "timestamp": "2026-02-02T13:57:58.281330",
+  "local": {
+    "title": "iSN.BiZ Inc - Innovative Software Solutions",
+    "meta_description": "iSN.BiZ Inc - Innovative Software Solutions. Founded 2015. Delivering cutting-edge software design and development with AI-powered capabilities for enterprise clients.",
+    "css_files": [
+      "http://localhost:9393/styles.css",
+      "http://localhost:9393/enhanced-animations.css",
+      "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap"
+    ],
+    "js_files": [
+      "http://localhost:9393/enhanced-interactions.js"
+    ],
+    "images": [
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "width": 261,
+        "height": 100
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/hero_logo.webp",
+        "alt": "iSN.BiZ Inc - Innovation Solutions Systems",
+        "width": 1000,
+        "height": 382
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/services/ai_research.webp",
+        "alt": "AI opportunity analytics dashboard mockup",
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/opportunity_bot.webp",
+        "alt": "AI opportunity research bot dashboard",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/infrastructure.webp",
+        "alt": "TrueNAS infrastructure platform monitoring dashboard",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/credit_automation.webp",
+        "alt": "Enterprise credit report automation interface",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/rag_bi.webp",
+        "alt": "BIN intelligence fraud analysis dashboard",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/androidaps_health.webp",
+        "alt": "SpiritAtlas Android application screens",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/infrastructure.webp",
+        "alt": "Enterprise AI infrastructure architecture diagram",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/jonathan_headshot.webp",
+        "alt": "Jonathan - Chairman and CEO",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/bri_headshot.webp",
+        "alt": "Bri - Secretary and COO",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/lilly_headshot.webp",
+        "alt": "Lilly - Treasurer and CFO",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/alicia_headshot.webp",
+        "alt": "Alicia - VP and Chief Product Officer",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/footer_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "width": 130,
+        "height": 50
+      }
+    ],
+    "fonts": [
+      "\"Times New Roman\"",
+      "\"IBM Plex Sans\", -apple-system, sans-serif",
+      "\"JetBrains Mono\", \"Courier New\", monospace",
+      "Arial",
+      "\"Archivo Black\", impact, sans-serif"
+    ],
+    "colors": [
+      "rgb(0, 0, 0)",
+      "rgb(13, 17, 23)",
+      "rgb(240, 244, 248)",
+      "rgb(30, 159, 242)",
+      "rgba(13, 17, 23, 0.95)",
+      "rgba(30, 159, 242, 0.05)",
+      "rgb(28, 31, 38)",
+      "rgba(30, 159, 242, 0.1)",
+      "rgb(255, 45, 85)",
+      "rgba(255, 45, 85, 0.1)",
+      "rgba(30, 159, 242, 0.03)",
+      "rgba(255, 255, 255, 0.05)",
+      "rgb(255, 255, 255)",
+      "rgb(95, 223, 223)",
+      "rgba(255, 255, 255, 0.8)",
+      "rgba(30, 159, 242, 0.5)",
+      "rgba(30, 159, 242, 0.44)",
+      "rgba(30, 159, 242, 0.38)",
+      "rgba(30, 159, 242, 0.32)",
+      "rgba(30, 159, 242, 0.26)",
+      "rgba(30, 159, 242, 0.2)",
+      "rgba(30, 159, 242, 0.14)",
+      "rgba(30, 159, 242, 0.08)"
+    ],
+    "body_styles": {
+      "backgroundColor": "rgb(13, 17, 23)",
+      "color": "rgb(240, 244, 248)",
+      "fontFamily": "\"IBM Plex Sans\", -apple-system, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "hero_styles": {
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "linear-gradient(135deg, rgb(13, 17, 23) 0%, rgb(28, 31, 38) 100%)",
+      "color": "rgb(240, 244, 248)",
+      "height": "1803.39px",
+      "display": "flex",
+      "alignItems": "center",
+      "justifyContent": "normal"
+    },
+    "nav_styles": {
+      "backgroundColor": "rgba(13, 17, 23, 0.95)",
+      "color": "rgb(240, 244, 248)",
+      "position": "fixed",
+      "backdropFilter": "blur(20px) saturate(1.8)"
+    },
+    "sections": [
+      {
+        "className": "hero",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "100px 0px 0px"
+      },
+      {
+        "className": "section about",
+        "id": "about",
+        "backgroundColor": "rgb(28, 31, 38)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "128px 0px"
+      },
+      {
+        "className": "section-header",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-label",
+        "id": "",
+        "backgroundColor": "rgba(30, 159, 242, 0.1)",
+        "color": "rgb(30, 159, 242)",
+        "padding": "8px 16px"
+      },
+      {
+        "className": "section-title",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section solutions",
+        "id": "solutions",
+        "backgroundColor": "rgb(13, 17, 23)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "128px 0px"
+      },
+      {
+        "className": "section-header centered",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-label",
+        "id": "",
+        "backgroundColor": "rgba(30, 159, 242, 0.1)",
+        "color": "rgb(30, 159, 242)",
+        "padding": "8px 16px"
+      },
+      {
+        "className": "section-title",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-description",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section portfolio",
+        "id": "portfolio",
+        "backgroundColor": "rgb(28, 31, 38)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "128px 0px"
+      },
+      {
+        "className": "section-header centered",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-label",
+        "id": "",
+        "backgroundColor": "rgba(30, 159, 242, 0.1)",
+        "color": "rgb(30, 159, 242)",
+        "padding": "8px 16px"
+      },
+      {
+        "className": "section-title",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-description",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section investors",
+        "id": "investors",
+        "backgroundColor": "rgb(13, 17, 23)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "128px 0px"
+      },
+      {
+        "className": "section-header centered",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-label investors-label",
+        "id": "",
+        "backgroundColor": "rgba(255, 45, 85, 0.1)",
+        "color": "rgb(255, 45, 85)",
+        "padding": "8px 16px"
+      },
+      {
+        "className": "section-title",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-description",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "team section",
+        "id": "team",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "80px 20px"
+      },
+      {
+        "className": "section-header centered",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-label",
+        "id": "",
+        "backgroundColor": "rgba(30, 159, 242, 0.1)",
+        "color": "rgb(30, 159, 242)",
+        "padding": "8px 16px"
+      },
+      {
+        "className": "section-title",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-description",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section contact",
+        "id": "contact",
+        "backgroundColor": "rgb(28, 31, 38)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "128px 0px"
+      },
+      {
+        "className": "section-header centered",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-label",
+        "id": "",
+        "backgroundColor": "rgba(30, 159, 242, 0.1)",
+        "color": "rgb(30, 159, 242)",
+        "padding": "8px 16px"
+      },
+      {
+        "className": "section-title",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-description",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      }
+    ]
+  },
+  "truenas": {
+    "title": "iSN.BiZ Inc - Innovative Software Solutions",
+    "meta_description": "iSN.BiZ Inc - Innovative Software Solutions. Founded 2015. Delivering cutting-edge software design and development with AI-powered capabilities for enterprise clients.",
+    "css_files": [
+      "https://isn.biz/styles.css",
+      "https://isn.biz/enhanced-animations.css",
+      "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap"
+    ],
+    "js_files": [
+      "https://isn.biz/enhanced-interactions.js"
+    ],
+    "images": [
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "width": 261,
+        "height": 100
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/hero_logo.webp",
+        "alt": "iSN.BiZ Inc - Innovation Solutions Systems",
+        "width": 1000,
+        "height": 382
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/services/ai_research.webp",
+        "alt": "AI opportunity analytics dashboard mockup",
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/opportunity_bot.webp",
+        "alt": "AI opportunity research bot dashboard",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/infrastructure.webp",
+        "alt": "TrueNAS infrastructure platform monitoring dashboard",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/credit_automation.webp",
+        "alt": "Enterprise credit report automation interface",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/rag_bi.webp",
+        "alt": "BIN intelligence fraud analysis dashboard",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/androidaps_health.webp",
+        "alt": "SpiritAtlas Android application screens",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/infrastructure.webp",
+        "alt": "Enterprise AI infrastructure architecture diagram",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/jonathan_headshot.webp",
+        "alt": "Jonathan - Chairman and CEO",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/bri_headshot.webp",
+        "alt": "Bri - Secretary and COO",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/lilly_headshot.webp",
+        "alt": "Lilly - Treasurer and CFO",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/alicia_headshot.webp",
+        "alt": "Alicia - VP and Chief Product Officer",
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/footer_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "width": 130,
+        "height": 50
+      }
+    ],
+    "fonts": [
+      "\"Times New Roman\"",
+      "\"IBM Plex Sans\", -apple-system, sans-serif",
+      "\"JetBrains Mono\", \"Courier New\", monospace",
+      "Arial",
+      "\"Archivo Black\", impact, sans-serif"
+    ],
+    "colors": [
+      "rgb(0, 0, 0)",
+      "rgb(13, 17, 23)",
+      "rgb(240, 244, 248)",
+      "rgb(30, 159, 242)",
+      "rgba(13, 17, 23, 0.95)",
+      "rgba(30, 159, 242, 0.05)",
+      "rgb(28, 31, 38)",
+      "rgba(30, 159, 242, 0.1)",
+      "rgb(255, 45, 85)",
+      "rgba(255, 45, 85, 0.1)",
+      "rgba(30, 159, 242, 0.03)",
+      "rgba(255, 255, 255, 0.05)",
+      "rgb(255, 255, 255)",
+      "rgb(95, 223, 223)",
+      "rgba(255, 255, 255, 0.8)",
+      "rgba(30, 159, 242, 0.5)",
+      "rgba(30, 159, 242, 0.44)",
+      "rgba(30, 159, 242, 0.38)",
+      "rgba(30, 159, 242, 0.32)",
+      "rgba(30, 159, 242, 0.26)",
+      "rgba(30, 159, 242, 0.2)",
+      "rgba(30, 159, 242, 0.14)",
+      "rgba(30, 159, 242, 0.08)"
+    ],
+    "body_styles": {
+      "backgroundColor": "rgb(13, 17, 23)",
+      "color": "rgb(240, 244, 248)",
+      "fontFamily": "\"IBM Plex Sans\", -apple-system, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "25.6px"
+    },
+    "hero_styles": {
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "linear-gradient(135deg, rgb(13, 17, 23) 0%, rgb(28, 31, 38) 100%)",
+      "color": "rgb(240, 244, 248)",
+      "height": "1803.39px",
+      "display": "flex",
+      "alignItems": "center",
+      "justifyContent": "normal"
+    },
+    "nav_styles": {
+      "backgroundColor": "rgba(13, 17, 23, 0.95)",
+      "color": "rgb(240, 244, 248)",
+      "position": "fixed",
+      "backdropFilter": "blur(20px) saturate(1.8)"
+    },
+    "sections": [
+      {
+        "className": "hero",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "100px 0px 0px"
+      },
+      {
+        "className": "section about",
+        "id": "about",
+        "backgroundColor": "rgb(28, 31, 38)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "128px 0px"
+      },
+      {
+        "className": "section-header",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-label",
+        "id": "",
+        "backgroundColor": "rgba(30, 159, 242, 0.1)",
+        "color": "rgb(30, 159, 242)",
+        "padding": "8px 16px"
+      },
+      {
+        "className": "section-title",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section solutions",
+        "id": "solutions",
+        "backgroundColor": "rgb(13, 17, 23)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "128px 0px"
+      },
+      {
+        "className": "section-header centered",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-label",
+        "id": "",
+        "backgroundColor": "rgba(30, 159, 242, 0.1)",
+        "color": "rgb(30, 159, 242)",
+        "padding": "8px 16px"
+      },
+      {
+        "className": "section-title",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-description",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section portfolio",
+        "id": "portfolio",
+        "backgroundColor": "rgb(28, 31, 38)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "128px 0px"
+      },
+      {
+        "className": "section-header centered",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-label",
+        "id": "",
+        "backgroundColor": "rgba(30, 159, 242, 0.1)",
+        "color": "rgb(30, 159, 242)",
+        "padding": "8px 16px"
+      },
+      {
+        "className": "section-title",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-description",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section investors",
+        "id": "investors",
+        "backgroundColor": "rgb(13, 17, 23)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "128px 0px"
+      },
+      {
+        "className": "section-header centered",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-label investors-label",
+        "id": "",
+        "backgroundColor": "rgba(255, 45, 85, 0.1)",
+        "color": "rgb(255, 45, 85)",
+        "padding": "8px 16px"
+      },
+      {
+        "className": "section-title",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-description",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "team section",
+        "id": "team",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "80px 20px"
+      },
+      {
+        "className": "section-header centered",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-label",
+        "id": "",
+        "backgroundColor": "rgba(30, 159, 242, 0.1)",
+        "color": "rgb(30, 159, 242)",
+        "padding": "8px 16px"
+      },
+      {
+        "className": "section-title",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-description",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section contact",
+        "id": "contact",
+        "backgroundColor": "rgb(28, 31, 38)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "128px 0px"
+      },
+      {
+        "className": "section-header centered",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-label",
+        "id": "",
+        "backgroundColor": "rgba(30, 159, 242, 0.1)",
+        "color": "rgb(30, 159, 242)",
+        "padding": "8px 16px"
+      },
+      {
+        "className": "section-title",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      },
+      {
+        "className": "section-description",
+        "id": "",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(240, 244, 248)",
+        "padding": "0px"
+      }
+    ]
+  }
+}
