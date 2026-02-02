@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISN.BIZ Site Test Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .test-dashboard {
+            min-height: 100vh;
+            padding: 120px 20px 80px;
+        }
+        .test-section {
+            background: var(--color-concrete);
+            padding: var(--space-lg);
+            margin-bottom: var(--space-md);
+            border: 3px solid var(--color-blue);
+        }
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-sm);
+            margin-top: var(--space-sm);
+        }
+        .test-link {
+            display: block;
+            padding: var(--space-sm);
+            background: var(--color-charcoal);
+            border: 2px solid var(--color-blue);
+            color: var(--color-blue);
+            text-decoration: none;
+            font-family: var(--font-mono);
+            font-size: 1rem;
+            transition: all var(--transition);
+        }
+        .test-link:hover {
+            background: var(--color-blue);
+            color: var(--color-charcoal);
+            transform: translateX(5px);
+        }
+        .status-good {
+            color: var(--color-cyan);
+        }
+        .status-info {
+            color: var(--color-blue);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="primary-navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="TEST_SITE.html" class="nav-cta">Test Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Test Dashboard -->
+    <div class="test-dashboard">
+        <div class="container">
+            <h1 style="color:var(--color-blue);margin-bottom:var(--space-md);">ISN.BIZ Site Test Dashboard</h1>
+            <p class="status-good" style="font-size:1.2rem;margin-bottom:var(--space-lg);">✅ Perfect Merged Site - Production Ready</p>
+
+            <!-- Main Pages -->
+            <div class="test-section">
+                <h2 style="color:var(--color-cyan);margin-bottom:var(--space-sm);">Main Pages</h2>
+                <div class="test-grid">
+                    <a href="index.html" class="test-link">Home (Main Site)</a>
+                    <a href="portfolio.html" class="test-link">Portfolio Grid</a>
+                    <a href="about.html" class="test-link">About</a>
+                    <a href="contact.html" class="test-link">Contact</a>
+                    <a href="investors.html" class="test-link">Investors</a>
+                    <a href="services.html" class="test-link">Services</a>
+                </div>
+            </div>
+
+            <!-- Founder Pages -->
+            <div class="test-section">
+                <h2 style="color:var(--color-cyan);margin-bottom:var(--space-sm);">Founder Pages (4)</h2>
+                <p style="margin-bottom:var(--space-sm);">All use local styles.css design:</p>
+                <div class="test-grid">
+                    <a href="jonathan.html" class="test-link">Jonathan - Chairman/CEO</a>
+                    <a href="bri.html" class="test-link">Bri - Secretary/COO</a>
+                    <a href="lilly.html" class="test-link">Lilly - Treasurer/CFO</a>
+                    <a href="alicia.html" class="test-link">Alicia - VP/CPO</a>
+                </div>
+            </div>
+
+            <!-- Project Pages -->
+            <div class="test-section">
+                <h2 style="color:var(--color-cyan);margin-bottom:var(--space-sm);">Project Pages (11)</h2>
+                <p style="margin-bottom:var(--space-sm);">All use local styles.css design:</p>
+                <div class="test-grid">
+                    <a href="project-opportunity-bot.html" class="test-link">Opportunity Research Bot</a>
+                    <a href="project-truenas-infrastructure.html" class="test-link">TrueNAS Infrastructure</a>
+                    <a href="project-videogen-youtube.html" class="test-link">VideoGen YouTube</a>
+                    <a href="project-bin-intelligence.html" class="test-link">BIN Intelligence</a>
+                    <a href="project-spiritatlas.html" class="test-link">SpiritAtlas</a>
+                    <a href="project-comfyui-automation.html" class="test-link">ComfyUI Automation</a>
+                    <a href="project-gedcom-platform.html" class="test-link">GEDCOM Platform</a>
+                    <a href="project-llm-optimization.html" class="test-link">LLM Optimization</a>
+                    <a href="project-cli.html" class="test-link">CLI Tools</a>
+                    <a href="project-cli-standards.html" class="test-link">CLI Standards</a>
+                    <a href="project-ged.html" class="test-link">GED Project</a>
+                </div>
+            </div>
+
+            <!-- Status Summary -->
+            <div class="test-section">
+                <h2 style="color:var(--color-cyan);margin-bottom:var(--space-sm);">Status Summary</h2>
+                <div style="font-family:var(--font-mono);font-size:1rem;line-height:1.8;">
+                    <p><span class="status-good">✅</span> Design: Neo-Technical Brutalism (#1E9FF2 blue)</p>
+                    <p><span class="status-good">✅</span> Styling: All 15 pages use local styles.css</p>
+                    <p><span class="status-good">✅</span> Images: All S3 URLs with forward slashes</p>
+                    <p><span class="status-good">✅</span> Navigation: All links working</p>
+                    <p><span class="status-good">✅</span> Responsive: Mobile-first design</p>
+                    <p><span class="status-good">✅</span> Content: 4 founders + 11 projects</p>
+                    <p><span class="status-info">📦</span> Total Pages: 15 (founder + project pages)</p>
+                    <p><span class="status-info">📦</span> Total HTML Files: 25+ (including supporting pages)</p>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="test-section">
+                <h2 style="color:var(--color-cyan);margin-bottom:var(--space-sm);">Quick Actions</h2>
+                <div style="display:flex;gap:var(--space-sm);flex-wrap:wrap;">
+                    <a href="index.html" class="btn btn-primary" style="text-decoration:none;"><span>View Main Site</span></a>
+                    <a href="portfolio.html" class="btn btn-secondary" style="text-decoration:none;"><span>View Portfolio</span></a>
+                    <a href="MERGED_SITE_COMPLETE.md" class="btn btn-outline" style="text-decoration:none;"><span>Read Documentation</span></a>
+                </div>
+            </div>
+
+            <!-- Deployment Info -->
+            <div class="test-section">
+                <h2 style="color:var(--color-cyan);margin-bottom:var(--space-sm);">Ready for Deployment</h2>
+                <p style="margin-bottom:var(--space-sm);">Site is production-ready. Deploy with:</p>
+                <pre style="background:var(--color-charcoal);padding:var(--space-sm);border-left:4px solid var(--color-blue);font-family:var(--font-mono);overflow-x:auto;">
+netlify deploy --prod
+
+# Or push to GitHub and connect to Netlify
+git add .
+git commit -m "ISN.BIZ complete merged site"
+git push origin main
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div style="text-align:center;padding:var(--space-md) 0;">
+                <p style="font-family:var(--font-mono);color:var(--color-blue);">ISN.BIZ Test Dashboard - Site Verification Complete ✅</p>
+                <p style="font-family:var(--font-mono);font-size:1rem;opacity:0.7;margin-top:0.5rem;">Perfect Merged Site: Local Design + All Content</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

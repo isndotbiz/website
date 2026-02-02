@@ -1,0 +1,260 @@
+================================================================================
+ISN.BIZ WEBSITE TEST REPORT
+================================================================================
+Test Date: 2026-02-02T12:11:59.532989
+Base URL: https://isn.biz
+
+OVERALL SUMMARY
+--------------------------------------------------------------------------------
+Pages Tested:    18
+Pages Passed:    11 ✅
+Pages Failed:    7 ❌
+Success Rate:    61.1%
+
+Total Images:    89
+Images Loaded:   40 ✅
+Images Failed:   49 ❌
+Image Success:   44.9%
+
+
+MAIN PAGES
+--------------------------------------------------------------------------------
+
+❌ FAIL - Home
+  URL: https://isn.biz
+  Status Code: 200
+  Images: 4/14 loaded
+  Screenshot: \tmp\playwright-screenshots\main_pages_index.png
+  Errors:
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/opportunity_bot.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/infrastructure.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/credit_automation.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/rag_bi.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/androidaps_health.webp - Failed to load
+    ... and 5 more errors
+
+✅ PASS - About
+  URL: https://isn.biz/about.html
+  Status Code: 200
+  Images: 7/7 loaded
+  Screenshot: \tmp\playwright-screenshots\main_pages_about.png
+
+❌ FAIL - Portfolio
+  URL: https://isn.biz/portfolio.html
+  Status Code: 200
+  Images: 3/10 loaded
+  Screenshot: \tmp\playwright-screenshots\main_pages_portfolio.png
+  Errors:
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/truenas_infrastructure.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/videogen_youtube.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/bin_intelligence.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/comfyui_automation.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/gedcom_processing.webp - Failed to load
+    ... and 2 more errors
+
+✅ PASS - Investors
+  URL: https://isn.biz/investors.html
+  Status Code: 200
+  Images: 3/3 loaded
+  Screenshot: \tmp\playwright-screenshots\main_pages_investors.png
+
+✅ PASS - Slider Gallery
+  URL: https://isn.biz/slider-gallery.html
+  Status Code: 200
+  Images: 2/2 loaded
+  Screenshot: \tmp\playwright-screenshots\main_pages_slider-gallery.png
+
+❌ FAIL - Portfolio Grid
+  URL: https://isn.biz/portfolio-grid.html
+  Status Code: 200
+  Images: 1/5 loaded
+  Screenshot: \tmp\playwright-screenshots\main_pages_portfolio-grid.png
+  Errors:
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/truenas_1.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/videogen_1.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/bin_1.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/cli_1.webp - Failed to load
+
+FOUNDER PAGES
+--------------------------------------------------------------------------------
+
+❌ FAIL - Alicia
+  URL: https://isn.biz/alicia.html
+  Status Code: 200
+  Images: 1/8 loaded
+  Screenshot: \tmp\playwright-screenshots\founder_pages_alicia.png
+  Errors:
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\headshots_with_bg/alicia_headshot.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/alicia_working.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/alicia_presenting.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/alicia_collaborating.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\casual_variants/alicia_coffee.webp - Failed to load
+    ... and 2 more errors
+
+❌ FAIL - Bri
+  URL: https://isn.biz/bri.html
+  Status Code: 200
+  Images: 1/8 loaded
+  Screenshot: \tmp\playwright-screenshots\founder_pages_bri.png
+  Errors:
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\headshots_with_bg/bri_headshot.webp - Failed to load
+    - Image failed: assets/founders/bri_office_work.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/bri_presenting.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/bri_collaborating.webp - Failed to load
+    - Image failed: assets/founders/bri_strategic_planning.webp - Failed to load
+    ... and 2 more errors
+
+❌ FAIL - Jonathan
+  URL: https://isn.biz/jonathan.html
+  Status Code: 200
+  Images: 1/8 loaded
+  Screenshot: \tmp\playwright-screenshots\founder_pages_jonathan.png
+  Errors:
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\headshots_with_bg/jonathan_headshot.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/jonathan_presenting.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/jonathan_working.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/jonathan_collaborating.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\casual_variants/jonathan_coffee.webp - Failed to load
+    ... and 2 more errors
+
+❌ FAIL - Lilly
+  URL: https://isn.biz/lilly.html
+  Status Code: 200
+  Images: 1/8 loaded
+  Screenshot: \tmp\playwright-screenshots\founder_pages_lilly.png
+  Errors:
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\headshots_with_bg/lilly_headshot.webp - Failed to load
+    - Image failed: assets/founders/lilly_office_work.webp - Failed to load
+    - Image failed: assets/founders/lilly_presentation.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/lilly_presenting.webp - Failed to load
+    - Image failed: https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/lilly_collaborating.webp - Failed to load
+    ... and 2 more errors
+
+PROJECT PAGES
+--------------------------------------------------------------------------------
+
+✅ PASS - CLI Standards
+  URL: https://isn.biz/project-cli-standards.html
+  Status Code: 200
+  Images: 2/2 loaded
+  Screenshot: \tmp\playwright-screenshots\project_pages_project-cli-standards.png
+
+✅ PASS - ComfyUI Automation
+  URL: https://isn.biz/project-comfyui-automation.html
+  Status Code: 200
+  Images: 2/2 loaded
+  Screenshot: \tmp\playwright-screenshots\project_pages_project-comfyui-automation.png
+
+✅ PASS - GEDCOM Platform
+  URL: https://isn.biz/project-gedcom-platform.html
+  Status Code: 200
+  Images: 2/2 loaded
+  Screenshot: \tmp\playwright-screenshots\project_pages_project-gedcom-platform.png
+
+✅ PASS - LLM Optimization
+  URL: https://isn.biz/project-llm-optimization.html
+  Status Code: 200
+  Images: 2/2 loaded
+  Screenshot: \tmp\playwright-screenshots\project_pages_project-llm-optimization.png
+
+✅ PASS - Opportunity Bot
+  URL: https://isn.biz/project-opportunity-bot.html
+  Status Code: 200
+  Images: 2/2 loaded
+  Screenshot: \tmp\playwright-screenshots\project_pages_project-opportunity-bot.png
+
+✅ PASS - SpiritAtlas
+  URL: https://isn.biz/project-spiritatlas.html
+  Status Code: 200
+  Images: 2/2 loaded
+  Screenshot: \tmp\playwright-screenshots\project_pages_project-spiritatlas.png
+
+✅ PASS - TrueNAS Infrastructure
+  URL: https://isn.biz/project-truenas-infrastructure.html
+  Status Code: 200
+  Images: 2/2 loaded
+  Screenshot: \tmp\playwright-screenshots\project_pages_project-truenas-infrastructure.png
+
+✅ PASS - VideoGen YouTube
+  URL: https://isn.biz/project-videogen-youtube.html
+  Status Code: 200
+  Images: 2/2 loaded
+  Screenshot: \tmp\playwright-screenshots\project_pages_project-videogen-youtube.png
+
+FAILED IMAGES DETAILS
+--------------------------------------------------------------------------------
+
+Home (https://isn.biz):
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/opportunity_bot.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/infrastructure.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/credit_automation.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/rag_bi.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/androidaps_health.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/infrastructure.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\headshots_with_bg/jonathan_headshot.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\headshots_with_bg/bri_headshot.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\headshots_with_bg/lilly_headshot.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\headshots_with_bg/alicia_headshot.webp
+
+Portfolio (https://isn.biz/portfolio.html):
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/truenas_infrastructure.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/videogen_youtube.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/bin_intelligence.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/comfyui_automation.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/gedcom_processing.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/llm_optimization.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/opportunity_bot.webp
+
+Portfolio Grid (https://isn.biz/portfolio-grid.html):
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/truenas_1.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/videogen_1.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/bin_1.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/cli_1.webp
+
+Alicia (https://isn.biz/alicia.html):
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\headshots_with_bg/alicia_headshot.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/alicia_working.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/alicia_presenting.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/alicia_collaborating.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\casual_variants/alicia_coffee.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/alicia_analyzing.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\casual_variants/alicia_brainstorming.webp
+
+Bri (https://isn.biz/bri.html):
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\headshots_with_bg/bri_headshot.webp
+  - assets/founders/bri_office_work.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/bri_presenting.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/bri_collaborating.webp
+  - assets/founders/bri_strategic_planning.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/bri_analyzing.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\casual_variants/bri_casual_meeting.webp
+
+Jonathan (https://isn.biz/jonathan.html):
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\headshots_with_bg/jonathan_headshot.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/jonathan_presenting.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/jonathan_working.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/jonathan_collaborating.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\casual_variants/jonathan_coffee.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/jonathan_analyzing.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\casual_variants/jonathan_outdoor.webp
+
+Lilly (https://isn.biz/lilly.html):
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\headshots_with_bg/lilly_headshot.webp
+  - assets/founders/lilly_office_work.webp
+  - assets/founders/lilly_presentation.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/lilly_presenting.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/lilly_collaborating.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\corporate_photos/lilly_analyzing.webp
+  - https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders\casual_variants/lilly_outdoor.webp
+
+SCREENSHOTS
+--------------------------------------------------------------------------------
+Screenshots saved to: \tmp\playwright-screenshots
+Total screenshots: 18
+
+RECOMMENDATIONS
+--------------------------------------------------------------------------------
+⚠️  7 pages had issues - review errors above
+❌ 49 images failed to load - check S3 URLs and permissions
+
+================================================================================

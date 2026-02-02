@@ -1,0 +1,115 @@
+═══════════════════════════════════════════════════════════════════
+ISN.BIZ DEPLOYMENT - COPY & PASTE THESE COMMANDS
+═══════════════════════════════════════════════════════════════════
+
+Everything is ready! Just copy-paste these commands in your terminal.
+
+─────────────────────────────────────────────────────────────────
+STEP 1: Get TrueNAS Password
+─────────────────────────────────────────────────────────────────
+
+eval $(op signin)
+op read "op://TrueNAS Infrastructure/Truenas Password/password"
+
+(Copy the password that appears - you'll need it for SSH)
+
+─────────────────────────────────────────────────────────────────
+STEP 2: Copy Deployment Package to TrueNAS
+─────────────────────────────────────────────────────────────────
+
+scp /tmp/isn-biz-truenas.tar.gz jdmal@100.83.75.4:/tmp/
+
+(Enter the password from Step 1 when prompted)
+
+─────────────────────────────────────────────────────────────────
+STEP 3: SSH to TrueNAS and Deploy
+─────────────────────────────────────────────────────────────────
+
+ssh jdmal@100.83.75.4
+
+(Once connected, run these commands:)
+
+# Backup existing site
+sudo mkdir -p /mnt/tank/backups/websites/isn.biz_$(date +%Y%m%d_%H%M%S)
+sudo cp -r /mnt/tank/websites/kusanagi/isn.biz/public/* /mnt/tank/backups/websites/isn.biz_$(date +%Y%m%d_%H%M%S)/ 2>/dev/null || echo "No existing site"
+
+# Prepare site directory
+sudo mkdir -p /mnt/tank/websites/kusanagi/isn.biz/public
+sudo rm -rf /mnt/tank/websites/kusanagi/isn.biz/public/*
+
+# Extract files
+cd /mnt/tank/websites/kusanagi/isn.biz/public
+sudo tar xzf /tmp/isn-biz-truenas.tar.gz
+
+# Set permissions
+sudo chown -R www-data:www-data /mnt/tank/websites/kusanagi/isn.biz/public
+sudo chmod -R 755 /mnt/tank/websites/kusanagi/isn.biz/public
+sudo find /mnt/tank/websites/kusanagi/isn.biz/public -type f -exec chmod 644 {} \;
+
+# Verify deployment
+echo "Files deployed:"
+ls -lh /mnt/tank/websites/kusanagi/isn.biz/public | head -15
+echo "..."
+echo "Total: $(find /mnt/tank/websites/kusanagi/isn.biz/public -type f | wc -l) files"
+
+# Restart nginx
+sudo systemctl restart nginx
+
+# Check nginx status
+sudo systemctl status nginx
+
+# Clean up
+rm /tmp/isn-biz-truenas.tar.gz
+
+─────────────────────────────────────────────────────────────────
+STEP 4: Configure SSL (if needed)
+─────────────────────────────────────────────────────────────────
+
+(Still SSH'd to TrueNAS:)
+
+sudo certbot --nginx -d isn.biz -d www.isn.biz
+
+Follow the prompts:
+- Enter email for renewal notifications
+- Agree to Terms of Service (Y)
+- Redirect HTTP to HTTPS? (Y)
+
+# Verify SSL
+sudo certbot certificates
+curl -I https://isn.biz
+
+─────────────────────────────────────────────────────────────────
+STEP 5: Test the Site
+─────────────────────────────────────────────────────────────────
+
+# From TrueNAS
+curl -I https://isn.biz
+curl -I https://www.isn.biz
+
+# Check an S3 image loads
+curl -I https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/jonathan_headshot.webp
+
+# Exit SSH
+exit
+
+# From your browser, open:
+https://isn.biz
+
+Verify:
+✓ Site loads with HTTPS (green padlock)
+✓ All images display (from S3)
+✓ Founder pages work
+✓ Project pages work
+✓ Mobile responsive
+
+─────────────────────────────────────────────────────────────────
+DONE! 🎉
+─────────────────────────────────────────────────────────────────
+
+Your ISN.BIZ investor website is now live!
+
+Site: https://isn.biz
+Images: Served from S3 CDN
+Size: 107KB on TrueNAS + 9.47MB on S3
+
+═══════════════════════════════════════════════════════════════════

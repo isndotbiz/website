@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="iSN.BiZ Inc - Interactive slider and gallery showcase featuring portfolio projects, technology stack, and cutting-edge UI components.">
+    <meta name="keywords" content="iSN.BiZ portfolio, slider gallery, project showcase, AI software, enterprise solutions, interactive UI">
+    <title>Slider & Gallery Showcase - iSN.BiZ Inc</title>
+    <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
+    <link rel="apple-touch-icon" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/apple_touch_icon.webp">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Swiper 11 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom Slider Styles -->
+    <link rel="stylesheet" href="slider-styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- WCAG FIX: Skip navigation link for keyboard users -->
+    <a href="#portfolio-slider" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="primary-navigation" role="menubar">
+                <li role="none"><a href="about.html" role="menuitem">About</a></li>
+                <li role="none"><a href="services.html" role="menuitem">Services</a></li>
+                <li role="none"><a href="portfolio.html" role="menuitem">Portfolio</a></li>
+                <li role="none"><a href="investors.html" role="menuitem">Investors</a></li>
+                <li role="none"><a href="contact.html" class="nav-cta" role="menuitem">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero portfolio-hero">
+        <div class="hero-background"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Slider & Gallery Showcase</h1>
+                <p class="hero-subtitle">Award-Winning Implementations with Cutting-Edge Technology</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Full-Screen Portfolio Slider -->
+    <section id="portfolio-slider" class="section slider-section">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Component 1</span>
+                <h2 class="section-title">Full-Screen Portfolio Project Slider</h2>
+                <p class="section-description">Immersive 3D coverflow effect with parallax backgrounds</p>
+            </div>
+
+            <!-- Swiper Container -->
+            <div class="swiper portfolio-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1: Software Engineering -->
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="slide-background" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_1.webp') center/cover no-repeat;">
+                                <div class="slide-pattern"></div>
+                            </div>
+                            <div class="slide-info">
+                                <span class="slide-number">01</span>
+                                <h3 class="slide-title">Modern Software Engineering</h3>
+                                <p class="slide-description">Professional development workspace with cutting-edge tools and collaborative environments.</p>
+                                <div class="slide-tags">
+                                    <span class="tag">Software Dev</span>
+                                    <span class="tag">Clean Code</span>
+                                    <span class="tag">Best Practices</span>
+                                </div>
+                                <div class="slide-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">100%</span>
+                                        <span class="metric-label">Quality</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">Fast</span>
+                                        <span class="metric-label">Delivery</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">24/7</span>
+                                        <span class="metric-label">Support</span>
+                                    </div>
+                                </div>
+                                <a href="portfolio.html" class="btn btn-primary"><span>View Portfolio</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: AI & Neural Networks -->
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="slide-background" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_2.webp') center/cover no-repeat;">
+                                <div class="slide-pattern"></div>
+                            </div>
+                            <div class="slide-info">
+                                <span class="slide-number">02</span>
+                                <h3 class="slide-title">AI & Machine Learning</h3>
+                                <p class="slide-description">Advanced neural networks and data flow visualizations powering intelligent solutions.</p>
+                                <div class="slide-tags">
+                                    <span class="tag">AI/ML</span>
+                                    <span class="tag">Deep Learning</span>
+                                    <span class="tag">Neural Nets</span>
+                                </div>
+                                <div class="slide-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">95%+</span>
+                                        <span class="metric-label">Accuracy</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">Local</span>
+                                        <span class="metric-label">Models</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">$0</span>
+                                        <span class="metric-label">API Costs</span>
+                                    </div>
+                                </div>
+                                <a href="services.html#ai" class="btn btn-primary"><span>AI Services</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: Data Center Infrastructure -->
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="slide-background" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_3.webp') center/cover no-repeat;">
+                                <div class="slide-pattern"></div>
+                            </div>
+                            <div class="slide-info">
+                                <span class="slide-number">03</span>
+                                <h3 class="slide-title">Enterprise Infrastructure</h3>
+                                <p class="slide-description">High-performance data centers with robust security and 99.9% uptime guarantee.</p>
+                                <div class="slide-tags">
+                                    <span class="tag">Infrastructure</span>
+                                    <span class="tag">DevOps</span>
+                                    <span class="tag">Cloud</span>
+                                </div>
+                                <div class="slide-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">99.9%</span>
+                                        <span class="metric-label">Uptime</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">TB+</span>
+                                        <span class="metric-label">Storage</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">Fast</span>
+                                        <span class="metric-label">Response</span>
+                                    </div>
+                                </div>
+                                <a href="services.html#infrastructure" class="btn btn-primary"><span>Infrastructure</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4: Cloud Computing -->
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="slide-background" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_4.webp') center/cover no-repeat;">
+                                <div class="slide-pattern"></div>
+                            </div>
+                            <div class="slide-info">
+                                <span class="slide-number">04</span>
+                                <h3 class="slide-title">Cloud Solutions</h3>
+                                <p class="slide-description">Scalable cloud architecture with distributed systems and intelligent data management.</p>
+                                <div class="slide-tags">
+                                    <span class="tag">AWS</span>
+                                    <span class="tag">Azure</span>
+                                    <span class="tag">Scalable</span>
+                                </div>
+                                <div class="slide-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">Auto</span>
+                                        <span class="metric-label">Scaling</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">Global</span>
+                                        <span class="metric-label">CDN</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">Secure</span>
+                                        <span class="metric-label">Encrypted</span>
+                                    </div>
+                                </div>
+                                <a href="services.html#cloud" class="btn btn-primary"><span>Cloud Services</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5: Data Analytics -->
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="slide-background" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_5.webp') center/cover no-repeat;">
+                                <div class="slide-pattern"></div>
+                            </div>
+                            <div class="slide-info">
+                                <span class="slide-number">05</span>
+                                <h3 class="slide-title">Business Intelligence</h3>
+                                <p class="slide-description">Advanced analytics dashboards transforming data into actionable business insights.</p>
+                                <div class="slide-tags">
+                                    <span class="tag">Analytics</span>
+                                    <span class="tag">BI</span>
+                                    <span class="tag">Dashboards</span>
+                                </div>
+                                <div class="slide-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">Real-time</span>
+                                        <span class="metric-label">Data</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">Visual</span>
+                                        <span class="metric-label">Reports</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">Insights</span>
+                                        <span class="metric-label">Driven</span>
+                                    </div>
+                                </div>
+                                <a href="services.html#analytics" class="btn btn-primary"><span>Analytics</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6: AI Processing -->
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="slide-background" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_6.webp') center/cover no-repeat;">
+                                <div class="slide-pattern"></div>
+                            </div>
+                            <div class="slide-info">
+                                <span class="slide-number">06</span>
+                                <h3 class="slide-title">Advanced AI Processing</h3>
+                                <p class="slide-description">State-of-the-art machine learning pipelines with neural network optimization.</p>
+                                <div class="slide-tags">
+                                    <span class="tag">ML Pipeline</span>
+                                    <span class="tag">GPU</span>
+                                    <span class="tag">Training</span>
+                                </div>
+                                <div class="slide-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">Fast</span>
+                                        <span class="metric-label">Processing</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">Efficient</span>
+                                        <span class="metric-label">Training</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">Optimized</span>
+                                        <span class="metric-label">Models</span>
+                                    </div>
+                                </div>
+                                <a href="services.html#ml" class="btn btn-primary"><span>ML Services</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 7: Collaborative Workspace -->
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="slide-background" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_7.webp') center/cover no-repeat;">
+                                <div class="slide-pattern"></div>
+                            </div>
+                            <div class="slide-info">
+                                <span class="slide-number">07</span>
+                                <h3 class="slide-title">Team Collaboration</h3>
+                                <p class="slide-description">Modern collaborative environments fostering innovation and efficient team workflows.</p>
+                                <div class="slide-tags">
+                                    <span class="tag">Collaboration</span>
+                                    <span class="tag">Agile</span>
+                                    <span class="tag">Remote</span>
+                                </div>
+                                <div class="slide-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">Seamless</span>
+                                        <span class="metric-label">Integration</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">Efficient</span>
+                                        <span class="metric-label">Workflow</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">Global</span>
+                                        <span class="metric-label">Teams</span>
+                                    </div>
+                                </div>
+                                <a href="about.html" class="btn btn-primary"><span>Our Team</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 8: Cybersecurity -->
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="slide-background" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_8.webp') center/cover no-repeat;">
+                                <div class="slide-pattern"></div>
+                            </div>
+                            <div class="slide-info">
+                                <span class="slide-number">08</span>
+                                <h3 class="slide-title">Enterprise Security</h3>
+                                <p class="slide-description">Advanced cybersecurity with blockchain technology and end-to-end encryption.</p>
+                                <div class="slide-tags">
+                                    <span class="tag">Security</span>
+                                    <span class="tag">Blockchain</span>
+                                    <span class="tag">Encryption</span>
+                                </div>
+                                <div class="slide-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">256-bit</span>
+                                        <span class="metric-label">Encryption</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">SOC 2</span>
+                                        <span class="metric-label">Compliant</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">24/7</span>
+                                        <span class="metric-label">Monitoring</span>
+                                    </div>
+                                </div>
+                                <a href="services.html#security" class="btn btn-primary"><span>Security</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Code Example -->
+            <div class="code-example">
+                <h4>Implementation Code:</h4>
+                <pre><code>const portfolioSwiper = new Swiper('.portfolio-swiper', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+  pagination: { clickable: true },
+  navigation: true,
+  keyboard: { enabled: true },
+});</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Technology Stack Carousel -->
+    <section id="tech-carousel" class="section slider-section alt-bg">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Component 2</span>
+                <h2 class="section-title">Technology Stack Carousel</h2>
+                <p class="section-description">Auto-rotating showcase with infinite loop and free scrolling</p>
+            </div>
+
+            <!-- Swiper Container -->
+            <div class="swiper tech-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Tech Items -->
+                    <div class="swiper-slide tech-slide">
+                        <div class="tech-item">
+                            <div class="tech-icon">🤖</div>
+                            <h4>AI/ML</h4>
+                            <p>Qwen 2.5, ChromaDB, RAG</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tech-slide">
+                        <div class="tech-item">
+                            <div class="tech-icon">🐍</div>
+                            <h4>Python</h4>
+                            <p>3.11+, Async, FastAPI</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tech-slide">
+                        <div class="tech-item">
+                            <div class="tech-icon">⚛️</div>
+                            <h4>JavaScript</h4>
+                            <p>Node.js, React, TypeScript</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tech-slide">
+                        <div class="tech-item">
+                            <div class="tech-icon">🐳</div>
+                            <h4>Docker</h4>
+                            <p>Containerization, K8s</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tech-slide">
+                        <div class="tech-item">
+                            <div class="tech-icon">☁️</div>
+                            <h4>AWS</h4>
+                            <p>S3, Lambda, CloudFront</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tech-slide">
+                        <div class="tech-item">
+                            <div class="tech-icon">🔒</div>
+                            <h4>Security</h4>
+                            <p>1Password, Playwright</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tech-slide">
+                        <div class="tech-item">
+                            <div class="tech-icon">🎨</div>
+                            <h4>Design</h4>
+                            <p>ComfyUI, Stable Diffusion</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tech-slide">
+                        <div class="tech-item">
+                            <div class="tech-icon">📊</div>
+                            <h4>Analytics</h4>
+                            <p>Vector DB, BI Platforms</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Code Example -->
+            <div class="code-example">
+                <h4>Implementation Code:</h4>
+                <pre><code>const techSwiper = new Swiper('.tech-swiper', {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  freeMode: {
+    enabled: true,
+    momentum: true,
+    momentumRatio: 0.5,
+  },
+  breakpoints: {
+    640: { slidesPerView: 3 },
+    768: { slidesPerView: 4 },
+    1024: { slidesPerView: 5 },
+  },
+});</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Thumbnail Gallery -->
+    <section id="thumbnail-gallery" class="section slider-section">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Component 3</span>
+                <h2 class="section-title">Thumbnail Navigation Gallery</h2>
+                <p class="section-description">Synchronized main and thumbnail sliders with lazy loading</p>
+            </div>
+
+            <!-- Main Gallery -->
+            <div class="swiper gallery-main">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="gallery-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_1.webp') center/cover no-repeat; padding: 60px; text-align: center;">
+                            <h3 style="color: white; font-size: 2rem;">Software Engineering</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Modern Development Excellence</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_2.webp') center/cover no-repeat; padding: 60px; text-align: center;">
+                            <h3 style="color: white; font-size: 2rem;">AI & Machine Learning</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Neural Network Intelligence</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_3.webp') center/cover no-repeat; padding: 60px; text-align: center;">
+                            <h3 style="color: white; font-size: 2rem;">Data Center Infrastructure</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Enterprise-Grade Performance</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_4.webp') center/cover no-repeat; padding: 60px; text-align: center;">
+                            <h3 style="color: white; font-size: 2rem;">Cloud Computing</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Scalable Cloud Architecture</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_5.webp') center/cover no-repeat; padding: 60px; text-align: center;">
+                            <h3 style="color: white; font-size: 2rem;">Business Intelligence</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Data-Driven Insights</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_6.webp') center/cover no-repeat; padding: 60px; text-align: center;">
+                            <h3 style="color: white; font-size: 2rem;">Advanced AI Processing</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Neural Network Optimization</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_7.webp') center/cover no-repeat; padding: 60px; text-align: center;">
+                            <h3 style="color: white; font-size: 2rem;">Team Collaboration</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Modern Workspace Innovation</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_8.webp') center/cover no-repeat; padding: 60px; text-align: center;">
+                            <h3 style="color: white; font-size: 2rem;">Enterprise Security</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Blockchain & Encryption</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <!-- Thumbnail Gallery -->
+            <div class="swiper gallery-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="thumb-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_1.webp') center/cover no-repeat;"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_2.webp') center/cover no-repeat;"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_3.webp') center/cover no-repeat;"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_4.webp') center/cover no-repeat;"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_5.webp') center/cover no-repeat;"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_6.webp') center/cover no-repeat;"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_7.webp') center/cover no-repeat;"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="thumb-image" style="background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/slider/slider_8.webp') center/cover no-repeat;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Code Example -->
+            <div class="code-example">
+                <h4>Implementation Code:</h4>
+                <pre><code>const galleryThumbs = new Swiper('.gallery-thumbs', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  watchSlidesProgress: true,
+});
+
+const galleryMain = new Swiper('.gallery-main', {
+  spaceBetween: 10,
+  navigation: true,
+  thumbs: { swiper: galleryThumbs },
+  lazy: true,
+});</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Features Overview -->
+    <section id="features" class="section features-section alt-bg">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Modern Features</span>
+                <h2 class="section-title">Cutting-Edge Slider Capabilities</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>3D Effects</h3>
+                    <p>Cube, coverflow, flip, and cards effects with hardware acceleration</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Touch Gestures</h3>
+                    <p>Natural swipe and momentum with multi-touch support</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lazy Loading</h3>
+                    <p>Load images only when needed for optimal performance</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">♿</div>
+                    <h3>Accessibility</h3>
+                    <p>Keyboard navigation and screen reader support</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Auto-Play</h3>
+                    <p>Configurable auto-rotation with pause on hover</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📐</div>
+                    <h3>Responsive</h3>
+                    <p>Breakpoint-based configuration for all devices</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Parallax</h3>
+                    <p>Smooth parallax scrolling effects for backgrounds</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">∞</div>
+                    <h3>Infinite Loop</h3>
+                    <p>Seamless continuous scrolling in both directions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/footer_logo.webp" alt="iSN.BiZ Inc Logo" class="footer-logo">
+                    <p class="footer-description">Building the future of enterprise software with innovative, AI-powered solutions since 2015.</p>
+                    <div class="footer-credentials">
+                        <p><strong>DUNS:</strong> 080513772</p>
+                        <p><strong>UBI:</strong> 603-522-339</p>
+                        <p><strong>EIN:</strong> 47-4530188</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="investors.html">Investors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">Request Demo</a></li>
+                        <li><a href="investors.html">Pitch Deck</a></li>
+                        <li><a href="investors.html">Investor Relations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#security">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved.</p>
+                <p>Founded July 8, 2015 | Seattle, Washington</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper 11 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom Slider Initialization -->
+    <script src="slider-init.js"></script>
+
+    <!-- Navigation & Page Scripts -->
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        const syncNavState = () => {
+            const isOpen = navMenu.classList.contains('active');
+            navToggle.setAttribute('aria-expanded', isOpen.toString());
+        };
+
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            syncNavState();
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    navToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    syncNavState();
+                }
+            });
+        });
+
+        // Sticky Navigation
+        const nav = document.querySelector('.nav');
+        const navHeight = nav.offsetHeight;
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > navHeight) {
+                nav.classList.add('nav-sticky');
+            } else {
+                nav.classList.remove('nav-sticky');
+            }
+        });
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+.:
+total 3.9M
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 14:32 Archive/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 01:24 assets/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 00:32 docs/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 13:46 node_modules/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 03:03 scripts/
+-rw-r--r-- 1 Jdmal 197609  53K Feb  2 01:24 about.html
+-rw-r--r-- 1 Jdmal 197609  23K Feb  2 12:33 alicia.html
+-rw-r--r-- 1 Jdmal 197609  22K Feb  2 12:33 bri.html
+-rw-r--r-- 1 Jdmal 197609  15K Feb  1 09:14 CLAUDE.md
+-rw-r--r-- 1 Jdmal 197609  27K Feb  1 13:01 contact.html
+-rwxr-xr-x 1 Jdmal 197609 4.6K Feb  2 11:07 DEPLOY_NOW.sh*
+-rw-r--r-- 1 Jdmal 197609 4.5K Feb  1 07:11 DEPLOY_TO_NETLIFY.md
+-rw-r--r-- 1 Jdmal 197609 9.5K Feb  1 06:17 DEPLOYMENT_CHECKLIST.md
+-rw-r--r-- 1 Jdmal 197609  42K Feb  2 13:52 index.html
+-rw-r--r-- 1 Jdmal 197609  32K Feb  2 00:22 investors.html
+-rw-r--r-- 1 Jdmal 197609  22K Feb  2 12:33 jonathan.html
+-rw-r--r-- 1 Jdmal 197609  22K Feb  2 12:33 lilly.html
+-rw-r--r-- 1 Jdmal 197609  12K Feb  1 05:10 logo.png
+-rw-r--r-- 1 Jdmal 197609 3.4M Feb  1 11:24 logo-pallete.zip
+-rw-r--r-- 1 Jdmal 197609  764 Feb  2 13:46 package.json
+-rw-r--r-- 1 Jdmal 197609 2.2K Feb  2 13:46 package-lock.json
+-rw-r--r-- 1 Jdmal 197609  26K Feb  2 11:07 portfolio.html
+-rw-r--r-- 1 Jdmal 197609 7.2K Feb  2 12:33 portfolio-grid.html
+-rw-r--r-- 1 Jdmal 197609 8.4K Feb  1 06:15 README.md
+-rw-r--r-- 1 Jdmal 197609  687 Feb  1 07:00 script.js
+-rw-r--r-- 1 Jdmal 197609  49K Feb  1 13:01 services.html
+-rw-r--r-- 1 Jdmal 197609  43K Feb  2 10:26 styles.css
+
+./Archive:
+total 12K
+drwxr-xr-x 1 Jdmal 197609 0 Feb  2 14:39 2026-02-02-cleanup/
+drwxr-xr-x 1 Jdmal 197609 0 Feb  2 13:04 scripts-used/
+drwxr-xr-x 1 Jdmal 197609 0 Feb  2 13:04 temp-files/
+
+./Archive/2026-02-02-cleanup:
+total 72K
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 14:35 backup-files/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 14:33 backups/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 14:35 comparison-files/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 14:33 comparison-reports/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 14:35 deployment-reports/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 14:38 docs/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 14:34 documentation/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 14:35 documentation-old/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 14:33 logs/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 14:36 project-pages/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 14:33 scripts/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 14:35 scripts-archive/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  1 09:27 site-verification/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 12:13 test_reports/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 14:36 test-files/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 14:33 test-reports/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 14:38 wordpress/
+drwxr-xr-x 1 Jdmal 197609    0 Feb  2 14:32 wordpress-theme/
+-rw-r--r-- 1 Jdmal 197609 8.8K Feb  2 14:38 CLEANUP_REPORT.md
+-rw-r--r-- 1 Jdmal 197609    0 Feb  2 14:39 DIRECTORY_STRUCTURE.txt
+
+./Archive/2026-02-02-cleanup/backup-files:
+total 0
+
+./Archive/2026-02-02-cleanup/backups:
+total 376K
+-rw-r--r-- 1 Jdmal 197609  22K Feb  2 11:06 alicia.html.backup
+-rw-r--r-- 1 Jdmal 197609  23K Feb  2 12:33 alicia.html.backup_20260202_123341
+-rw-r--r-- 1 Jdmal 197609  22K Feb  2 11:06 bri.html.backup
+-rw-r--r-- 1 Jdmal 197609  22K Feb  2 12:33 bri.html.backup_20260202_123341
+-rw-r--r-- 1 Jdmal 197609  43K Feb  2 11:06 index.html.backup
+-rw-r--r-- 1 Jdmal 197609  43K Feb  2 12:33 index.html.backup_20260202_123342
+-rw-r--r-- 1 Jdmal 197609  22K Feb  2 11:06 jonathan.html.backup
+-rw-r--r-- 1 Jdmal 197609  23K Feb  2 12:33 jonathan.html.backup_20260202_123342
+-rw-r--r-- 1 Jdmal 197609  22K Feb  2 11:06 lilly.html.backup
+-rw-r--r-- 1 Jdmal 197609  22K Feb  2 12:33 lilly.html.backup_20260202_123342
+-rw-r--r-- 1 Jdmal 197609  26K Feb  2 11:06 portfolio.html.backup
+-rw-r--r-- 1 Jdmal 197609 7.1K Feb  2 11:06 portfolio-grid.html.backup
+-rw-r--r-- 1 Jdmal 197609 7.3K Feb  2 12:33 portfolio-grid.html.backup_20260202_123342
+-rw-r--r-- 1 Jdmal 197609  15K Feb  2 11:06 preview_founder_images.html.backup
+-rw-r--r-- 1 Jdmal 197609  34K Feb  2 11:06 preview_project_images.html.backup
+
+./Archive/2026-02-02-cleanup/comparison-files:
+total 16K
+drwxr-xr-x 1 Jdmal 197609 0 Feb  2 13:47 screenshots/
+drwxr-xr-x 1 Jdmal 197609 0 Feb  2 13:57 screenshots_comparison/
+drwxr-xr-x 1 Jdmal 197609 0 Feb  2 13:45 truenas-current/
+
+./Archive/2026-02-02-cleanup/comparison-files/screenshots:
+total 6.6M
+-rw-r--r-- 1 Jdmal 197609  46K Feb  2 13:47 local.html
+-rw-r--r-- 1 Jdmal 197609 1.9M Feb  2 13:47 local-full.png
+-rw-r--r-- 1 Jdmal 197609 1.4M Feb  2 13:47 local-viewport.png
+-rw-r--r-- 1 Jdmal 197609  46K Feb  2 13:47 truenas.html
+-rw-r--r-- 1 Jdmal 197609 1.8M Feb  2 13:47 truenas-full.png
+-rw-r--r-- 1 Jdmal 197609 1.4M Feb  2 13:47 truenas-viewport.png
+
+./Archive/2026-02-02-cleanup/comparison-files/screenshots_comparison:
+total 7.5M
+-rw-r--r-- 1 Jdmal 197609  24K Feb  2 13:57 analysis.json
+-rw-r--r-- 1 Jdmal 197609  12K Feb  2 13:57 comparison_report.md
+-rw-r--r-- 1 Jdmal 197609 2.3M Feb  2 13:57 local_full.png
