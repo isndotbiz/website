@@ -118,7 +118,7 @@ if [ $? -eq 0 ]; then
     echo "=============================================================================="
     echo ""
     echo "Assets saved to:"
-    echo "  /mnt/d/workspace/ISNBIZ_Files/assets/generated/"
+    echo "  /home/jdmal/workspace/ISNBIZ_Files/assets/generated/"
     echo ""
     echo "Next steps:"
     echo "  1. Review the generated assets"
