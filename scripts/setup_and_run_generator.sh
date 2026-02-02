@@ -50,7 +50,7 @@ echo "✓ All dependencies satisfied"
 echo ""
 
 # Create output directory
-OUTPUT_DIR="/mnt/d/workspace/ISNBIZ_Files/assets/generated"
+OUTPUT_DIR="/home/jdmal/workspace/ISNBIZ_Files/assets/generated"
 mkdir -p "$OUTPUT_DIR"/{hero,portfolio,icons,team,video}
 echo "✓ Output directories created at: $OUTPUT_DIR"
 echo ""
@@ -94,7 +94,7 @@ echo "Starting Asset Generation"
 echo "=========================================="
 echo ""
 
-cd /mnt/d/workspace/ISNBIZ_Files/scripts
+cd /home/jdmal/workspace/ISNBIZ_Files/scripts
 python3 generate_website_assets.py
 
 echo ""

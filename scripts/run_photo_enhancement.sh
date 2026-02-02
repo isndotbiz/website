@@ -44,10 +44,10 @@ read -p "Press Enter to continue or Ctrl+C to cancel..."
 echo ""
 
 # Run the enhancement script
-python3 /mnt/d/workspace/ISNBIZ_Files/scripts/enhance_founder_photos.py
+python3 /home/jdmal/workspace/ISNBIZ_Files/scripts/enhance_founder_photos.py
 
 echo ""
 echo "============================================================"
 echo "Enhancement complete!"
-echo "Check: /mnt/d/workspace/ISNBIZ_Files/assets/team/"
+echo "Check: /home/jdmal/workspace/ISNBIZ_Files/assets/team/"
 echo "============================================================"
