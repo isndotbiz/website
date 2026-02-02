@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GEDCOM Processing Platform - Production-grade genealogy data cleaning with integrity guarantees">
+    <meta name="keywords" content="GEDCOM, genealogy, data processing, Python, iSN.BiZ">
+    <title>GEDCOM Data Integrity Platform | iSN.BiZ Inc</title>
+    <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="enhanced-animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="index.html#team">Team</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height: 70vh; padding-top: 120px;">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Data Processing</span>
+                <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">GEDCOM Data Integrity Platform</h1>
+                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">A production-grade system for cleaning, standardizing, and validating GEDCOM 5.5.1 datasets with audit trails and zero data loss guarantees — transforming raw genealogy data into import-ready assets.</p>
+            </div>
+            <div style="max-width: 1000px; margin: 3rem auto;">
+                <img src="assets/projects/gedcom_1.webp" alt="GEDCOM processing platform" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <div class="about-grid">
+                <div>
+                    <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Investor Summary</h2>
+                    <p class="lead">Genealogy data is high-value but messy, fragmented, and expensive to clean. This project delivers an automated, integrity-first pipeline with complete audit trails and rollback capabilities.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Key Capabilities</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ GEDCOM scanning and issue detection</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Date, name, and place standardization</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Relationship-preserving deduplication</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ End-to-end processing workflows</li>
+                        <li style="padding: 0.5rem 0;">✓ Platform exports and review reports</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 3rem;">Processing Pipeline</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="portfolio-card">
+                    <img src="assets/projects/gedcom_2.webp" alt="Data scanning" style="width: 100%; border-radius: 8px;">
+                    <h3 style="margin-top: 1rem;">Scanning & Detection</h3>
+                    <p>Comprehensive issue detection with prioritized reporting.</p>
+                </div>
+                <div class="portfolio-card">
+                    <img src="assets/projects/gedcom_3.webp" alt="Data cleaning" style="width: 100%; border-radius: 8px;">
+                    <h3 style="margin-top: 1rem;">Standardization</h3>
+                    <p>Automated cleaning with AutoFix notes and audit trails.</p>
+                </div>
+                <div class="portfolio-card">
+                    <img src="assets/projects/gedcom_4.webp" alt="Verification" style="width: 100%; border-radius: 8px;">
+                    <h3 style="margin-top: 1rem;">Verification & Export</h3>
+                    <p>Integrity verification with rollback and platform export.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered">Technology Stack</h2>
+            <div class="portfolio-tags" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 2rem;">
+                <span class="tag">Python 3.11</span>
+                <span class="tag">ged4py</span>
+                <span class="tag">click</span>
+                <span class="tag">rapidfuzz</span>
+                <span class="tag">python-dateutil</span>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Differentiation</h3>
+                <ul style="font-size: 1.1rem; line-height: 1.8;">
+                    <li>Integrity-first design with explicit verification and rollback tooling</li>
+                    <li>Auditable processing with documented change trails</li>
+                    <li>Packaged CLI and library that can be embedded into larger systems</li>
+                </ul>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Commercial Use Cases</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Genealogy Services</h4>
+                        <p>Archives and services with large data migration needs.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Data Cleansing</h4>
+                        <p>Legacy family tree product migrations and updates.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Professional Services</h4>
+                        <p>Premium integrity-verified processing for genealogists.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Interested in This Solution?</h2>
+            <p class="section-description" style="margin-bottom: 2rem;">Learn how we can build custom data processing and integrity systems.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="index.html#contact" class="btn btn-primary"><span>Schedule a Demo</span></a>
+                <a href="portfolio.html" class="btn btn-outline"><span>View All Projects</span></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>iSN.BiZ Inc</h3>
+                    <p>Building the future of enterprise software with AI-powered solutions.</p>
+                    <div class="footer-credentials">
+                        <p><strong>DUNS:</strong> 080513772</p>
+                        <p><strong>UBI:</strong> 603-522-339</p>
+                        <p><strong>EIN:</strong> 47-4530188</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#solutions">Solutions</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="index.html#team">Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Ready to transform your business?</p>
+                    <a href="index.html#contact" class="btn btn-primary" style="margin-top: 1rem;"><span>Get in Touch</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved. | Founded 2015</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
