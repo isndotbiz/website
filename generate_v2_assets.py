@@ -42,8 +42,8 @@ from typing import Optional, List, Dict, Any
 # Constants
 # ---------------------------------------------------------------------------
 
-OUTPUT_DIR = Path("D:/workspace/ISNBIZ_Files/assets/premium_v2")
-HEADSHOT_DIR = Path("D:/workspace/ISNBIZ_Files/1")
+OUTPUT_DIR = Path("/home/jdmal/workspace/ISNBIZ_Files/assets/premium_v2")
+HEADSHOT_DIR = Path("/home/jdmal/workspace/ISNBIZ_Files/1")
 S3_BUCKET = "isnbiz-assets-1769962280"
 S3_PREFIX = "premium_v2"
 S3_REGION = "us-west-2"

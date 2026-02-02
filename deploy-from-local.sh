@@ -38,7 +38,7 @@ if [[ "$OSTYPE" == "msys" ]] || [[ "$OSTYPE" == "win32" ]]; then
     THEME_DIR="/d/workspace/ISNBIZ_Files"
 elif [[ -f "/proc/version" ]] && grep -qi microsoft /proc/version; then
     # WSL
-    THEME_DIR="/mnt/d/workspace/ISNBIZ_Files"
+    THEME_DIR="/home/jdmal/workspace/ISNBIZ_Files"
 fi
 
 echo -e "${YELLOW}Environment:${NC}"

@@ -17,6 +17,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/og/og_default.webp">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="enhanced-animations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -40,6 +41,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#team">Team</a></li>
                 <li><a href="investors.html">Investors</a></li>
                 <li><a href="contact.html" class="nav-cta">Contact</a></li>
             </ul>
@@ -52,11 +54,11 @@
         <div class="container hero-container">
             <div class="hero-content">
                 <div class="hero-logo">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/hero_logo.webp" alt="iSN.BiZ Inc - Innovation Solutions Systems" class="hero-logo-img">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/hero_logo.webp" alt="iSN.BiZ Inc - Innovation Solutions Systems" class="hero-logo-img glow">
                 </div>
-                <h1 class="hero-title">Building the Future of Enterprise Software</h1>
-                <p class="hero-subtitle">AI-Powered Solutions. Proven Results. Strategic Innovation.</p>
-                <div class="hero-stats">
+                <h1 class="hero-title animate-in stagger-2">Building the Future of Enterprise Software</h1>
+                <p class="hero-subtitle animate-in stagger-3">AI-Powered Solutions. Proven Results. Strategic Innovation.</p>
+                <div class="hero-stats animate-in stagger-4">
                     <div class="stat">
                         <div class="stat-number">11+</div>
                         <div class="stat-label">Years Experience</div>
@@ -70,9 +72,9 @@
                         <div class="stat-label">Client Retention</div>
                     </div>
                 </div>
-                <div class="hero-cta">
-                    <a href="#investors" class="btn btn-primary"><span>Investment Opportunities</span></a>
-                    <a href="#contact" class="btn btn-secondary"><span>Schedule a Demo</span></a>
+                <div class="hero-cta animate-in stagger-5">
+                    <a href="#investors" class="btn btn-primary lift-on-hover"><span>Investment Opportunities</span></a>
+                    <a href="#contact" class="btn btn-secondary lift-on-hover"><span>Schedule a Demo</span></a>
                 </div>
                 <div class="hero-visual">
                     <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/services/ai_research.webp" alt="AI opportunity analytics dashboard mockup" loading="eager">
@@ -169,8 +171,8 @@
                 <p class="section-description">We deliver end-to-end software solutions that drive digital transformation and competitive advantage</p>
             </div>
             <div class="solutions-grid">
-                <div class="solution-card">
-                    <div class="solution-icon">
+                <div class="solution-card lift-on-hover grid-overlay">
+                    <div class="solution-icon glow">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
                             <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
@@ -189,8 +191,8 @@
                         <li>Intelligent Automation</li>
                     </ul>
                 </div>
-                <div class="solution-card">
-                    <div class="solution-icon">
+                <div class="solution-card lift-on-hover grid-overlay">
+                    <div class="solution-icon glow">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
                         </svg>
@@ -204,8 +206,8 @@
                         <li>Cloud Security & Compliance</li>
                     </ul>
                 </div>
-                <div class="solution-card">
-                    <div class="solution-icon">
+                <div class="solution-card lift-on-hover grid-overlay">
+                    <div class="solution-icon glow">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                             <line x1="8" y1="21" x2="16" y2="21"></line>
@@ -221,8 +223,8 @@
                         <li>Workflow Automation</li>
                     </ul>
                 </div>
-                <div class="solution-card">
-                    <div class="solution-icon">
+                <div class="solution-card lift-on-hover grid-overlay">
+                    <div class="solution-icon glow">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M3 3h18v18H3zM21 9H3M21 15H3M12 3v18"></path>
                         </svg>
@@ -234,6 +236,21 @@
                         <li>Real-Time Analytics</li>
                         <li>Data Visualization</li>
                         <li>Predictive Modeling</li>
+                    </ul>
+                </div>
+                <div class="solution-card lift-on-hover grid-overlay">
+                    <div class="solution-icon glow">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Security & Compliance</h3>
+                    <p>Enterprise-grade security measures protecting your applications and data while ensuring compliance with industry regulations and standards.</p>
+                    <ul class="solution-features">
+                        <li>Zero-Trust Architecture</li>
+                        <li>Data Encryption</li>
+                        <li>Compliance Implementation</li>
+                        <li>Security Audits</li>
                     </ul>
                 </div>
             </div>
@@ -399,6 +416,97 @@
                     <div class="investor-buttons">
                         <a href="#contact" class="btn btn-primary"><span>Schedule Investor Meeting</span></a>
                         <a href="#contact" class="btn btn-secondary"><span>Request Pitch Deck</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team section" id="team">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Leadership Team</span>
+                <h2 class="section-title">Our Leadership Team</h2>
+                <p class="section-description">
+                    Experienced leaders driving innovation in AI, cloud technology, and enterprise software
+                </p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Jonathan - Chairman/CEO -->
+                <div class="team-member">
+                    <div class="member-photo">
+                        <picture>
+                            <source srcset="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/jonathan_headshot.webp" type="image/webp">
+                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/jonathan_headshot.webp"
+                                 alt="Jonathan - Chairman and CEO"
+                                 loading="lazy"
+                                 width="400"
+                                 height="400">
+                        </picture>
+                    </div>
+                    <div class="member-info">
+                        <h3><a href="jonathan.html">Jonathan</a></h3>
+                        <p class="role">Chairman / CEO</p>
+                        <p class="bio">Visionary leader with 11+ years driving AI-powered innovation and scalable cloud solutions for enterprise clients.</p>
+                    </div>
+                </div>
+
+                <!-- Bri - Secretary/COO -->
+                <div class="team-member">
+                    <div class="member-photo">
+                        <picture>
+                            <source srcset="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/bri_headshot.webp" type="image/webp">
+                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/bri_headshot.webp"
+                                 alt="Bri - Secretary and COO"
+                                 loading="lazy"
+                                 width="400"
+                                 height="400">
+                        </picture>
+                    </div>
+                    <div class="member-info">
+                        <h3><a href="bri.html">Bri</a></h3>
+                        <p class="role">Secretary / COO</p>
+                        <p class="bio">Operational excellence leader ensuring strategic execution and sustainable growth across all business functions.</p>
+                    </div>
+                </div>
+
+                <!-- Lilly - Treasurer/CFO -->
+                <div class="team-member">
+                    <div class="member-photo">
+                        <picture>
+                            <source srcset="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/lilly_headshot.webp" type="image/webp">
+                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/lilly_headshot.webp"
+                                 alt="Lilly - Treasurer and CFO"
+                                 loading="lazy"
+                                 width="400"
+                                 height="400">
+                        </picture>
+                    </div>
+                    <div class="member-info">
+                        <h3><a href="lilly.html">Lilly</a></h3>
+                        <p class="role">Treasurer / CFO</p>
+                        <p class="bio">Financial strategist managing capital allocation and driving sustainable growth through disciplined execution.</p>
+                    </div>
+                </div>
+
+                <!-- Alicia - VP/CPO -->
+                <div class="team-member">
+                    <div class="member-photo">
+                        <picture>
+                            <source srcset="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/alicia_headshot.webp" type="image/webp">
+                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/alicia_headshot.webp"
+                                 alt="Alicia - VP and Chief Product Officer"
+                                 loading="lazy"
+                                 width="400"
+                                 height="400">
+                        </picture>
+                    </div>
+                    <div class="member-info">
+                        <h3><a href="alicia.html">Alicia</a></h3>
+                        <p class="role">VP / CPO</p>
+                        <p class="bio">Product innovator creating user-centered solutions that solve real business problems with cutting-edge technology.</p>
                     </div>
                 </div>
             </div>
@@ -623,5 +731,6 @@
             observer.observe(section);
         });
     </script>
+    <script src="enhanced-interactions.js"></script>
 </body>
 </html>
