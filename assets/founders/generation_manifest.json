@@ -1,0 +1,50 @@
+{
+  "generation_time": "2026-02-02T09:32:47.142548",
+  "model": "fal-ai/gpt-image-1.5/edit",
+  "founders": {
+    "alicia": {
+      "original": "1/a1.png",
+      "headshot_with_bg": "assets\\founders\\headshots_with_bg\\alicia_headshot.png",
+      "headshot_no_bg": "assets\\founders\\headshots_no_bg\\alicia_headshot_no_bg.png",
+      "corporate_photos": {
+        "presenting": "assets\\founders\\corporate_photos\\alicia_presenting.png",
+        "working": "assets\\founders\\corporate_photos\\alicia_working.png",
+        "collaborating": "assets\\founders\\corporate_photos\\alicia_collaborating.png",
+        "analyzing": "assets\\founders\\corporate_photos\\alicia_analyzing.png"
+      }
+    },
+    "bri": {
+      "original": "1/b1.png",
+      "headshot_with_bg": "assets\\founders\\headshots_with_bg\\bri_headshot.png",
+      "headshot_no_bg": "assets\\founders\\headshots_no_bg\\bri_headshot_no_bg.png",
+      "corporate_photos": {
+        "presenting": "assets\\founders\\corporate_photos\\bri_presenting.png",
+        "working": "assets\\founders\\corporate_photos\\bri_working.png",
+        "collaborating": "assets\\founders\\corporate_photos\\bri_collaborating.png",
+        "analyzing": "assets\\founders\\corporate_photos\\bri_analyzing.png"
+      }
+    },
+    "jonathan": {
+      "original": "1/j1.png",
+      "headshot_with_bg": "assets\\founders\\headshots_with_bg\\jonathan_headshot.png",
+      "headshot_no_bg": "assets\\founders\\headshots_no_bg\\jonathan_headshot_no_bg.png",
+      "corporate_photos": {
+        "presenting": "assets\\founders\\corporate_photos\\jonathan_presenting.png",
+        "working": "assets\\founders\\corporate_photos\\jonathan_working.png",
+        "collaborating": "assets\\founders\\corporate_photos\\jonathan_collaborating.png",
+        "analyzing": "assets\\founders\\corporate_photos\\jonathan_analyzing.png"
+      }
+    },
+    "lilly": {
+      "original": "1/l1.png",
+      "headshot_with_bg": "assets\\founders\\headshots_with_bg\\lilly_headshot.png",
+      "headshot_no_bg": "assets\\founders\\headshots_no_bg\\lilly_headshot_no_bg.png",
+      "corporate_photos": {
+        "presenting": "assets\\founders\\corporate_photos\\lilly_presenting.png",
+        "working": "assets\\founders\\corporate_photos\\lilly_working.png",
+        "collaborating": "assets\\founders\\corporate_photos\\lilly_collaborating.png",
+        "analyzing": "assets\\founders\\corporate_photos\\lilly_analyzing.png"
+      }
+    }
+  }
+}
