@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Market Intelligence Engine - Autonomous opportunity discovery and scoring pipeline using local LLM inference and RAG-based semantic search">
+    <meta name="keywords" content="AI, market intelligence, opportunity bot, LLM, ChromaDB, RAG, iSN.BiZ">
+    <title>AI Market Intelligence Engine | iSN.BiZ Inc</title>
+    <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="enhanced-animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="index.html#team">Team</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="hero" style="min-height: 70vh; padding-top: 120px;">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">AI Market Intelligence</span>
+                <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">AI Market Intelligence Engine</h1>
+                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">Proprietary AI pipeline that autonomously discovers and scores revenue opportunities across multiple data sources using local LLM inference and RAG-based semantic search — delivering institutional-grade market intelligence at zero marginal cost per query.</p>
+            </div>
+
+            <div style="max-width: 1000px; margin: 3rem auto;">
+                <img src="assets/projects/opportunity_bot_1.webp" alt="AI opportunity research bot dashboard" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Investor Summary -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <div class="about-grid">
+                <div>
+                    <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Investor Summary</h2>
+                    <p class="lead">Opportunity discovery is noisy and time-intensive. This system automates sourcing and analysis across multiple channels, scores opportunities with local LLMs, and stores results in a semantic search database for rapid filtering and decision support.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Key Capabilities</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Scrapers for Reddit, Indie Hackers, and Google dorking</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ LLM analysis pipeline with structured scoring</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ ChromaDB-based semantic search and metadata filtering</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Production, demo, and personalization pipelines</li>
+                        <li style="padding: 0.5rem 0;">✓ Cron automation and setup scripts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Gallery -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 3rem;">System Architecture</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="portfolio-card">
+                    <img src="assets/projects/opportunity_bot_2.webp" alt="Opportunity discovery pipeline" style="width: 100%; border-radius: 8px;">
+                    <h3 style="margin-top: 1rem;">Multi-Source Ingestion</h3>
+                    <p>Automated scraping from Reddit, Indie Hackers, and custom Google dorking queries.</p>
+                </div>
+                <div class="portfolio-card">
+                    <img src="assets/projects/opportunity_bot_3.webp" alt="LLM analysis interface" style="width: 100%; border-radius: 8px;">
+                    <h3 style="margin-top: 1rem;">Local LLM Analysis</h3>
+                    <p>Structured opportunity scoring using local inference for zero API costs.</p>
+                </div>
+                <div class="portfolio-card">
+                    <img src="assets/projects/opportunity_bot_4.webp" alt="Semantic search dashboard" style="width: 100%; border-radius: 8px;">
+                    <h3 style="margin-top: 1rem;">RAG-Based Retrieval</h3>
+                    <p>ChromaDB vector search for rapid opportunity filtering and decision workflows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered">Technology Stack</h2>
+            <div class="portfolio-tags" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 2rem;">
+                <span class="tag">Python</span>
+                <span class="tag">PRAW</span>
+                <span class="tag">BeautifulSoup</span>
+                <span class="tag">ChromaDB</span>
+                <span class="tag">Local LLM</span>
+                <span class="tag">RAG Pipeline</span>
+                <span class="tag">Vector Database</span>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Differentiation and Moat</h3>
+                <ul style="font-size: 1.1rem; line-height: 1.8;">
+                    <li>Multi-source ingestion with consistent scoring methodology</li>
+                    <li>Local LLM analysis reduces ongoing API costs to zero</li>
+                    <li>RAG-based retrieval optimized for decision workflows</li>
+                    <li>Production-ready automation with cron scheduling</li>
+                </ul>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Commercial Use Cases</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Deal Sourcing</h4>
+                        <p>Automated opportunity discovery for venture capital and private equity firms.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Market Intelligence</h4>
+                        <p>Internal research and competitive analysis for strategic planning teams.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Product Ideation</h4>
+                        <p>Trend analysis and opportunity validation for founders and product teams.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Interested in This Solution?</h2>
+            <p class="section-description" style="margin-bottom: 2rem;">Learn how we can build custom AI market intelligence systems for your organization.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="index.html#contact" class="btn btn-primary"><span>Schedule a Demo</span></a>
+                <a href="portfolio.html" class="btn btn-outline"><span>View All Projects</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>iSN.BiZ Inc</h3>
+                    <p>Building the future of enterprise software with AI-powered solutions.</p>
+                    <div class="footer-credentials">
+                        <p><strong>DUNS:</strong> 080513772</p>
+                        <p><strong>UBI:</strong> 603-522-339</p>
+                        <p><strong>EIN:</strong> 47-4530188</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#solutions">Solutions</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="index.html#team">Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Ready to transform your business?</p>
+                    <a href="index.html#contact" class="btn btn-primary" style="margin-top: 1rem;"><span>Get in Touch</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved. | Founded 2015</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
