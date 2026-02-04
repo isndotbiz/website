@@ -68,9 +68,50 @@ final-mobile.png
 screenshots/
 logo.png
 logo-pallete.zip
+logo-pallete/
 
 # Archive (backed up to baby_nas)
 Archive/
+backups/
+
+# Documentation (non-deployed)
+docs/
+*.backup
+
+# Dev/build scripts (not needed in deployment)
+scripts/
+*.sh
+*.py
+
+# Reports and session docs (not deployed)
+ANALYSIS_COMPLETE.md
+BUSINESS_VISUALS_*.md
+CLEANUP_*.md
+CLEANUP_*.txt
+CODEX_HANDOFF_COMPLETE.md
+DELETED_SCRIPTS_ANALYSIS.md
+DEPLOY_MANUAL.md
+DEPLOY_TO_NETLIFY.md
+DEPLOYMENT_CHECKLIST.md
+DEPLOYMENT_READY.md
+HUMANIZATION_PLAN.md
+IMAGE_SELECTION_MATRIX.md
+MASSIVE_PROGRESS_COMPLETE.md
+PACKAGES_READY.txt
+PHOTO_*.md
+PHOTO_*.txt
+POINT_ISN_BIZ_TO_NETLIFY.md
+QUICK_RUN_PHOTOS.txt
+README_ASSET_ANALYSIS.md
+SCRIPTS_STATUS.md
+SEO_*.md
+SERENA_HANDOFF.md
+SETUP_COMPLETE_SUMMARY.txt
+START_HERE_*.md
+TONIGHT_FINAL_STATUS.md
+VISUAL_WORK_PROGRESS.md
+WAKE_UP_INSTRUCTIONS.md
+WEBSITE_UPDATE_COMPLETE.md
 
 # Local Netlify folder
 .netlify
