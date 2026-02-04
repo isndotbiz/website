@@ -72,7 +72,7 @@
             </div>
 
             <div style="max-width: 1000px; margin: 3rem auto;">
-                <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/opportunity_1.webp" alt="AI opportunity research bot dashboard" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/opportunity_bot.webp" alt="AI opportunity research bot dashboard showing real-time deal scoring" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
             </div>
         </div>
     </section>
@@ -84,7 +84,8 @@
                 <div>
                     <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Investor Summary</h2>
                     <p class="lead">Opportunity discovery is noisy and time-intensive. This system automates sourcing and analysis across multiple channels, scores opportunities with local LLMs, and stores results in a semantic search database for rapid filtering and decision support.</p>
-                    <p style="margin-top: 1rem; color: var(--color-light);">The $50B+ market intelligence industry relies on expensive subscriptions and manual research. By running local LLM inference, we eliminate per-query API costs while delivering institutional-grade analysis that scales infinitely without marginal cost increases.</p>
+                    <p style="margin-top: 1rem; color: var(--color-light);">The $50B+ market intelligence industry relies on expensive subscriptions and manual research. By running local LLM inference on a Qwen 30B model, we eliminate per-query API costs while delivering institutional-grade analysis that scales infinitely without marginal cost increases. Every opportunity is embedded into ChromaDB for instant semantic retrieval, enabling analysts to query the entire opportunity corpus in natural language rather than relying on keyword filters or manual spreadsheet reviews.</p>
+                    <p style="margin-top: 1rem; color: var(--color-light);">Our pipeline ingests from Reddit communities, Indie Hackers forums, and targeted Google dorking queries on a configurable schedule. Each raw signal passes through a structured scoring methodology that evaluates market size, competitive landscape, technical feasibility, and revenue potential. The result is a continuously growing intelligence database that compounds in value with every ingestion cycle.</p>
                 </div>
                 <div>
                     <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Product Capabilities</h3>
@@ -93,32 +94,74 @@
                         <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; LLM analysis pipeline with structured scoring methodology</li>
                         <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; ChromaDB-based semantic search and metadata filtering</li>
                         <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Production, demo, and personalization pipelines</li>
-                        <li style="padding: 0.5rem 0;">&#10003; Cron automation and setup scripts for hands-off operation</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Cron automation and setup scripts for hands-off operation</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; FICO-based personalization for credit-aware deal matching</li>
+                        <li style="padding: 0.5rem 0;">&#10003; Natural language query interface over opportunity corpus</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- System Architecture -->
+    <!-- Deep Dive: RAG Pipeline -->
     <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Deep Dive: The RAG Pipeline</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Our Retrieval-Augmented Generation architecture transforms raw web signals into structured, queryable market intelligence through a multi-stage processing pipeline.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/opportunity_1.webp" alt="RAG pipeline architecture diagram showing data flow from ingestion to semantic retrieval" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                </div>
+                <div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">How It Works</h3>
+                    <p style="color: var(--color-light); line-height: 1.8; margin-bottom: 1rem;">The pipeline begins with multi-source ingestion. Custom scrapers monitor Reddit subreddits like r/SideProject and r/Entrepreneur, parse Indie Hackers discussion threads, and execute targeted Google dorking queries designed to surface early-stage business signals that traditional market research tools miss entirely.</p>
+                    <p style="color: var(--color-light); line-height: 1.8; margin-bottom: 1rem;">Raw text from each source passes through a preprocessing stage that normalizes formatting, extracts key entities, and removes noise. The cleaned content is then forwarded to our local Qwen 30B language model running on dedicated GPU hardware for structured analysis.</p>
+                    <p style="color: var(--color-light); line-height: 1.8;">The LLM evaluates each opportunity against a consistent rubric covering market size estimation, competitive density, technical complexity, monetization potential, and time-to-revenue. Scored opportunities are embedded as dense vectors and stored in ChromaDB alongside rich metadata, enabling both semantic similarity search and structured filtering.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Architecture -->
+    <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <h2 class="section-title centered" style="margin-bottom: 3rem;">System Architecture</h2>
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
                 <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
                     <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#128270;</div>
                     <h3 style="margin-top: 1rem; color: var(--color-cyan);">Multi-Source Ingestion</h3>
-                    <p style="color: var(--color-light);">Automated scraping from Reddit, Indie Hackers, and custom Google dorking queries. Continuous monitoring across multiple opportunity channels.</p>
+                    <p style="color: var(--color-light);">Automated scraping from Reddit, Indie Hackers, and custom Google dorking queries. Continuous monitoring across multiple opportunity channels with configurable frequency and source targeting.</p>
                 </div>
                 <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
                     <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#129302;</div>
                     <h3 style="margin-top: 1rem; color: var(--color-cyan);">Local LLM Analysis</h3>
-                    <p style="color: var(--color-light);">Structured opportunity scoring using local inference for zero API costs. Consistent methodology across all discovered opportunities.</p>
+                    <p style="color: var(--color-light);">Structured opportunity scoring using Qwen 30B running on local GPU hardware. Zero API costs, full data privacy, and consistent methodology across every discovered opportunity.</p>
                 </div>
                 <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
                     <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#128451;</div>
                     <h3 style="margin-top: 1rem; color: var(--color-cyan);">RAG-Based Retrieval</h3>
-                    <p style="color: var(--color-light);">ChromaDB vector search for rapid opportunity filtering and decision workflows. Semantic search across your entire opportunity database.</p>
+                    <p style="color: var(--color-light);">ChromaDB vector search for rapid opportunity filtering and decision workflows. Semantic search across your entire opportunity database with metadata-aware filtering.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Details -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Implementation Details</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Built on production-grade infrastructure designed for reliability, scalability, and zero ongoing API expenditure.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">ChromaDB Vector Storage</h3>
+                    <p style="color: var(--color-light); line-height: 1.8; margin-bottom: 1rem;">Each scored opportunity is converted into a high-dimensional embedding vector using sentence transformers and stored in ChromaDB. This enables semantic similarity search, meaning analysts can query opportunities by concept rather than exact keyword matches. Asking for "passive income SaaS with low competition" returns conceptually relevant results even when those exact phrases never appear in the source material.</p>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem; margin-top: 1.5rem;">Deal Scoring Methodology</h3>
+                    <p style="color: var(--color-light); line-height: 1.8;">The scoring rubric evaluates each opportunity on five dimensions: addressable market size, competitive landscape density, technical barrier to entry, estimated time-to-first-revenue, and automation potential. Each dimension receives a weighted score, and the composite result determines the opportunity's priority ranking. The personalization layer can further adjust scores based on the user's FICO profile and credit capacity, surfacing opportunities that align with available financing options.</p>
+                </div>
+                <div>
+                    <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/opportunity_2.webp" alt="Deal scoring dashboard showing multi-dimensional opportunity analysis" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
                 </div>
             </div>
         </div>
@@ -133,10 +176,12 @@
                 <span class="tag">PRAW</span>
                 <span class="tag">BeautifulSoup</span>
                 <span class="tag">ChromaDB</span>
-                <span class="tag">Local LLM</span>
+                <span class="tag">Qwen 30B</span>
                 <span class="tag">RAG Pipeline</span>
                 <span class="tag">Vector Database</span>
+                <span class="tag">Sentence Transformers</span>
                 <span class="tag">Cron Automation</span>
+                <span class="tag">llama.cpp</span>
             </div>
 
             <div style="margin-top: 3rem;">
@@ -144,39 +189,75 @@
                 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
                     <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
                         <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Multi-Source</h4>
-                        <p>Consistent scoring methodology across all ingestion channels.</p>
+                        <p>Consistent scoring methodology across all ingestion channels for apples-to-apples comparison.</p>
                     </div>
                     <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
                         <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Zero API Costs</h4>
-                        <p>Local LLM analysis eliminates ongoing per-query expenses.</p>
+                        <p>Local LLM analysis eliminates ongoing per-query expenses and removes third-party dependency.</p>
                     </div>
                     <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
                         <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">RAG Retrieval</h4>
-                        <p>Optimized for decision workflows with semantic search.</p>
+                        <p>Optimized for decision workflows with semantic search and metadata-aware filtering.</p>
                     </div>
                     <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
                         <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Production-Ready</h4>
-                        <p>Cron scheduling for hands-off automated operation.</p>
+                        <p>Cron scheduling for hands-off automated operation with monitoring and alerting.</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div style="margin-top: 3rem;">
-                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem; text-align: center;">Commercial Use Cases</h3>
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
-                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
-                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Deal Sourcing</h4>
-                        <p>Automated opportunity discovery for venture capital and private equity firms.</p>
+    <!-- Results & Impact -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Results &amp; Impact</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Measurable outcomes demonstrating the platform's value in reducing research overhead and accelerating deal flow.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/opportunity_3.webp" alt="Market intelligence analytics showing opportunity trends and scoring distributions" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                </div>
+                <div>
+                    <div style="background: rgba(95, 223, 223, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Research Time Reduction</h4>
+                        <p style="color: var(--color-light);">Manual opportunity research that previously required 15-20 hours per week is now fully automated. The pipeline runs on a configurable cron schedule, continuously building a growing corpus of scored opportunities without human intervention.</p>
                     </div>
-                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
-                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Market Intelligence</h4>
-                        <p>Internal research and competitive analysis for strategic planning teams.</p>
+                    <div style="background: rgba(95, 223, 223, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Cost Elimination</h4>
+                        <p style="color: var(--color-light);">By running Qwen 30B locally via llama.cpp on dedicated GPU hardware, the system processes unlimited queries with zero marginal cost. Comparable cloud-based LLM analysis would cost $0.03-0.10 per opportunity at scale.</p>
                     </div>
-                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
-                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Product Ideation</h4>
-                        <p>Trend analysis and opportunity validation for founders and product teams.</p>
+                    <div style="background: rgba(95, 223, 223, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan);">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Compounding Intelligence</h4>
+                        <p style="color: var(--color-light);">The vector database grows more valuable with each ingestion cycle. Historical trend analysis reveals emerging patterns across sectors, and semantic search improves as the corpus expands, delivering richer contextual results over time.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commercial Use Cases -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Commercial Use Cases</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Applicable across venture capital, corporate strategy, and entrepreneurial research workflows.</p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Deal Sourcing</h4>
+                    <p>Automated opportunity discovery for venture capital and private equity firms seeking early-stage signals before they reach mainstream deal platforms.</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Market Intelligence</h4>
+                    <p>Internal research and competitive analysis for strategic planning teams who need continuous monitoring of emerging market dynamics.</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Product Ideation</h4>
+                    <p>Trend analysis and opportunity validation for founders and product teams seeking data-driven validation of new business concepts.</p>
+                </div>
+            </div>
+
+            <div style="max-width: 1000px; margin: 3rem auto;">
+                <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/opportunity_4.webp" alt="Semantic search interface showing natural language opportunity queries and results" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
             </div>
         </div>
     </section>

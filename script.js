@@ -14,4 +14,21 @@ document.addEventListener('DOMContentLoaded', function() {
             if (target) target.scrollIntoView({ behavior: 'smooth' });
         });
     });
+
+    // Enforce full rows only in card grids (no partial rows)
+    function enforceFullRows() {
+        document.querySelectorAll('.portfolio-grid, .solutions-grid').forEach(function(grid) {
+            var cards = grid.querySelectorAll('.portfolio-card, .solution-card');
+            if (!cards.length) return;
+            // Detect column count from computed grid
+            var cols = getComputedStyle(grid).gridTemplateColumns.split(' ').length;
+            var total = cards.length;
+            var visible = Math.floor(total / cols) * cols;
+            cards.forEach(function(card, i) {
+                card.style.display = i < visible ? '' : 'none';
+            });
+        });
+    }
+    enforceFullRows();
+    window.addEventListener('resize', enforceFullRows);
 });

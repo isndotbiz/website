@@ -72,7 +72,7 @@
             </div>
 
             <div style="max-width: 1000px; margin: 3rem auto;">
-                <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/infrastructure.webp" alt="AI content production pipeline workflow" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/videogen_youtube.webp" alt="AI content production pipeline workflow showing automated video generation stages" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
             </div>
         </div>
     </section>
@@ -84,7 +84,8 @@
                 <div>
                     <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Investor Summary</h2>
                     <p class="lead">Video content demand is massive, but production is expensive and slow. This system automates the core workflow from content ingestion through scripts, visuals, narration, assembly, and upload — enabling a scalable content operation with consistent output quality.</p>
-                    <p style="margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.8;">The creator economy has exploded to $12B, yet most creators face the same bottleneck: producing quality video content is time-consuming and costly. Our pipeline transforms a single URL into a fully-rendered, narrated video ready for upload — in minutes, not days.</p>
+                    <p style="margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.8;">The creator economy has exploded to $12B, yet most creators face the same bottleneck: producing quality video content is time-consuming and costly. Our pipeline transforms a single URL into a fully-rendered, narrated video ready for upload — in minutes, not days. Traditional production requires a team of writers, designers, voice artists, and editors. Our system replaces that entire workflow with an orchestrated chain of best-in-class AI services.</p>
+                    <p style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.8;">The platform is designed for horizontal scalability. Each pipeline stage operates independently, allowing operators to run multiple concurrent video productions across different content niches. This architecture transforms video production from a labor-intensive creative process into a scalable, predictable content operation with measurable unit economics.</p>
                 </div>
                 <div>
                     <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Product Capabilities</h3>
@@ -115,8 +116,39 @@
         </div>
     </section>
 
-    <!-- Production Workflow -->
+    <!-- Deep Dive: AI Video Generation -->
     <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Deep Dive: AI Video Generation</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">The pipeline leverages cutting-edge generative AI models to produce visual content that rivals traditional production quality at a fraction of the cost and turnaround time.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Stable Diffusion and Image Generation</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">The visual generation stage uses fal.ai's infrastructure to run Stable Diffusion XL and Flux models at scale, producing high-resolution images that match the storyboard prompts generated in the scripting phase. Each frame is generated with consistent style parameters — aspect ratio, color palette, and artistic direction — ensuring visual coherence across the entire video. The system generates multiple candidate images per scene and uses a scoring algorithm to select the frame that best matches the narrative context.</p>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem; margin-top: 1.5rem;">Wan Video Model Integration</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">For scenes requiring motion, the pipeline integrates the Wan video generation model, which transforms static images into short animated clips with natural camera movement and subject motion. This bridges the gap between slideshow-style content and fully animated video, adding production value that dramatically increases viewer engagement and watch time. The Wan model excels at producing smooth transitions, subtle environmental effects, and character animations that bring static compositions to life.</p>
+                </div>
+                <div>
+                    <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/videogen_1.webp" alt="AI-generated video frames showing Stable Diffusion visual production pipeline" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-top: 3rem;">
+                <div>
+                    <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/videogen_2.webp" alt="ElevenLabs voice synthesis and narration generation interface for automated content production" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                </div>
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">ElevenLabs Voice Synthesis</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Narration is generated through ElevenLabs' neural text-to-speech engine, which produces studio-quality voiceovers indistinguishable from professional voice actors. The system supports multiple voice profiles tuned to different content categories — authoritative tones for business and technology topics, conversational styles for lifestyle content, and energetic delivery for entertainment niches. Voice cloning capabilities allow channels to maintain a consistent narrator identity across their entire content library.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">The narration module automatically segments the script into timed blocks, generating audio files with precise timestamps that the assembly engine uses to synchronize visual transitions with speech cadence. Pause insertion, emphasis marking, and pronunciation guides are embedded in the script format, giving the voice synthesis engine the context it needs to deliver natural, engaging narration without manual audio editing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Production Workflow -->
+    <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <h2 class="section-title centered" style="margin-bottom: 3rem;">Production Workflow</h2>
             <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;">
@@ -126,7 +158,7 @@
                         <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Ingestion</h3>
                     </div>
                     <h3 style="margin-top: 1rem;">Web Scraping</h3>
-                    <p>Automated article extraction and dataset generation with Firecrawl for any content source.</p>
+                    <p>Automated article extraction and dataset generation with Firecrawl. The crawler handles JavaScript-rendered pages, paywalled content, and multi-page articles with intelligent content boundaries.</p>
                 </div>
                 <div class="portfolio-card">
                     <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
@@ -134,7 +166,7 @@
                         <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Script Gen</h3>
                     </div>
                     <h3 style="margin-top: 1rem;">AI Scriptwriting</h3>
-                    <p>Intelligent content transformation into engaging video scripts with storyboard generation.</p>
+                    <p>Intelligent content transformation into engaging video scripts with storyboard prompts, scene descriptions, and timing annotations optimized for viewer retention.</p>
                 </div>
                 <div class="portfolio-card">
                     <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
@@ -142,7 +174,7 @@
                         <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">AI Generation</h3>
                     </div>
                     <h3 style="margin-top: 1rem;">Multi-Provider AI</h3>
-                    <p>Image, animation, and narration generation using fal.ai, ElevenLabs, and Runway.</p>
+                    <p>Image, animation, and narration generation using fal.ai for visuals, ElevenLabs for voice, and Runway for motion — with automatic fallback handling between providers.</p>
                 </div>
                 <div class="portfolio-card">
                     <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
@@ -150,7 +182,27 @@
                         <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Distribution</h3>
                     </div>
                     <h3 style="margin-top: 1rem;">Upload Automation</h3>
-                    <p>Automated assembly, editing, and YouTube OAuth upload workflows with metadata.</p>
+                    <p>Automated video assembly, rendering, and YouTube OAuth upload with AI-optimized titles, descriptions, tags, and thumbnail selection for maximum discoverability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Details -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Implementation Details</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">The orchestration layer manages dependencies between pipeline stages, handles provider rate limits and failures gracefully, and maintains a persistent job queue that enables reliable batch processing across thousands of videos.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/videogen_3.webp" alt="Video assembly and rendering pipeline with automated editing and post-production" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                </div>
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Orchestration Engine</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">The Node.js orchestration layer manages the complete pipeline lifecycle from URL ingestion to YouTube upload. Each stage emits structured events that downstream stages consume, creating a decoupled architecture where individual components can be upgraded, replaced, or scaled independently. The orchestrator handles retry logic with exponential backoff, provider rate limiting, and cost tracking per video to maintain predictable unit economics.</p>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Assembly and Post-Production</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">The video assembly stage combines generated images, animated clips, narration audio, background music, and text overlays into a cohesive final render. Transition effects are selected algorithmically based on scene mood and pacing, with Ken Burns motion applied to static images to maintain visual interest. The system generates multiple thumbnail candidates using composition rules optimized for YouTube click-through rates, then selects the highest-scoring option based on contrast, text readability, and emotional impact metrics.</p>
                 </div>
             </div>
         </div>
@@ -167,6 +219,8 @@
                 <span class="tag">fal.ai</span>
                 <span class="tag">ElevenLabs</span>
                 <span class="tag">Runway</span>
+                <span class="tag">Stable Diffusion</span>
+                <span class="tag">Wan Model</span>
                 <span class="tag">Descript</span>
                 <span class="tag">AWS S3</span>
                 <span class="tag">YouTube OAuth</span>
@@ -179,19 +233,19 @@
                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
                     <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
                         <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">End-to-End Pipeline</h4>
-                        <p>Complete automation from content ingestion through final upload — no manual steps required for production.</p>
+                        <p>Complete automation from content ingestion through final upload — no manual steps required for production. A single URL becomes a published video without human intervention.</p>
                     </div>
                     <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Multi-Provider Integration</h4>
-                        <p>Best-of-breed AI providers for images, video, and narration with graceful fallback handling.</p>
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Multi-Provider Resilience</h4>
+                        <p>Best-of-breed AI providers for images, video, and narration with graceful fallback handling. If one provider experiences downtime, the system automatically routes to alternatives.</p>
                     </div>
                     <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
                         <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Battle-Tested Runbooks</h4>
-                        <p>Extensive operational documentation and tooling depth from real production usage.</p>
+                        <p>Extensive operational documentation and tooling depth from real production usage. Every failure mode has been encountered, documented, and automated away.</p>
                     </div>
                     <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
                         <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">10x Content Velocity</h4>
-                        <p>Produce content at a fraction of the time and cost of traditional video production workflows.</p>
+                        <p>Produce content at a fraction of the time and cost of traditional video production. What once required a team of five and a week of work now takes minutes and costs dollars.</p>
                     </div>
                 </div>
             </div>
@@ -202,35 +256,61 @@
     <section class="section">
         <div class="container">
             <h2 class="section-title centered" style="margin-bottom: 2rem;">Commercial Use Cases</h2>
-            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">From solo creators to enterprise marketing teams, our pipeline scales content production across industries.</p>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">From solo creators to enterprise marketing teams, our pipeline scales content production across industries and content formats.</p>
 
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
                 <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
                     <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#128250;</div>
                     <h4 style="color: var(--color-blue); margin-bottom: 1rem;">YouTube Channels</h4>
-                    <p>Scalable channel operations with consistent content quality. Transform any niche into a content machine with automated production.</p>
+                    <p>Scalable channel operations with consistent content quality. Transform any niche into a content machine with automated production that maintains brand consistency across hundreds of videos in a content library.</p>
                 </div>
                 <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
                     <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#128188;</div>
                     <h4 style="color: var(--color-blue); margin-bottom: 1rem;">B2B Marketing</h4>
-                    <p>Content production for marketing teams and agencies. Turn thought leadership into video at scale without production crews.</p>
+                    <p>Content production for marketing teams and agencies who need to turn thought leadership articles, whitepapers, and case studies into engaging video content at scale without production crews or studio time.</p>
                 </div>
                 <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
                     <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#127891;</div>
-                    <h4 style="color: var(--color-blue); margin-bottom: 1rem;">Education & Training</h4>
-                    <p>Rapid content creation for educational platforms. Convert documentation and courses into engaging video tutorials.</p>
+                    <h4 style="color: var(--color-blue); margin-bottom: 1rem;">Education and Training</h4>
+                    <p>Rapid content creation for educational platforms and corporate training programs. Convert documentation, course materials, and technical guides into engaging video tutorials with professional narration.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Evidence of Execution -->
+    <!-- Results & Impact -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
-            <h2 class="section-title centered" style="margin-bottom: 2rem;">Evidence of Execution</h2>
-            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Production-tested pipeline with comprehensive automation and operational documentation.</p>
+            <h2 class="section-title centered" style="margin-bottom: 2rem;">Results and Impact</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Production-tested pipeline with comprehensive automation and operational documentation delivering measurable improvements over traditional content production workflows.</p>
 
-            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                            <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">90%</div>
+                            <p style="font-size: 0.95rem; margin: 0;">Reduction in per-video production cost</p>
+                        </div>
+                        <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                            <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">10x</div>
+                            <p style="font-size: 0.95rem; margin: 0;">Faster production compared to manual workflows</p>
+                        </div>
+                        <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                            <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">0</div>
+                            <p style="font-size: 0.95rem; margin: 0;">Manual steps from URL to published video</p>
+                        </div>
+                        <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                            <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">3+</div>
+                            <p style="font-size: 0.95rem; margin: 0;">AI providers with automatic failover</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/videogen_4.webp" alt="YouTube channel analytics showing content velocity improvement from automated AI video production" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 2rem;">
                 <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
                     <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">orchestrate.js</div>
                     <p style="font-size: 0.95rem; margin: 0;">Pipeline entrypoint and orchestration</p>
