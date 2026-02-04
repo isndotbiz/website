@@ -3,23 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alicia - VP & Chief Program Officer of iSN.BiZ Inc. Leading program delivery, client success, and solution architecture for enterprise software excellence.">
-    <meta name="keywords" content="Alicia, CPO, VP, program management, client success, solution architecture, iSN.BiZ">
+    <meta name="description" content="Alicia - VP & Chief Program Officer of iSN.BiZ Inc. A transformative leader orchestrating enterprise software excellence through strategic program delivery, solution architecture, and client success partnerships.">
+    <meta name="keywords" content="Alicia, CPO, VP, program management, client success, solution architecture, iSN.BiZ, enterprise software, digital transformation">
+    <meta name="author" content="iSN.BiZ Inc">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Alicia - VP & Chief Program Officer | iSN.BiZ Inc">
+    <meta property="og:description" content="Transformative leader orchestrating enterprise software excellence through strategic program delivery and client success partnerships.">
+    <meta property="og:image" content="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/alicia_headshot.webp">
+    <meta property="og:url" content="https://isn.biz/alicia.html">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alicia - VP & Chief Program Officer | iSN.BiZ Inc">
+    <meta name="twitter:description" content="Transformative leader orchestrating enterprise software excellence.">
+    <meta name="twitter:image" content="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/alicia_headshot.webp">
+
     <title>Alicia - VP & Chief Program Officer | iSN.BiZ Inc</title>
     <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
+    <link rel="canonical" href="https://isn.biz/alicia.html">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="enhanced-animations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Founder Page Specific Styles */
+        /* Founder Page Specific Styles - Neo-Technical Brutalism */
         .founder-hero {
-            min-height: 60vh;
-            padding: calc(80px + var(--space-lg)) 0 var(--space-lg);
-            background: linear-gradient(135deg, var(--color-charcoal) 0%, var(--color-concrete) 100%);
+            min-height: 100vh;
+            padding: calc(80px + var(--space-xl)) 0 var(--space-xl);
+            background: linear-gradient(180deg, var(--color-charcoal) 0%, #0a0d12 50%, var(--color-charcoal) 100%);
             position: relative;
             overflow: hidden;
+            display: flex;
+            align-items: center;
         }
 
         .founder-hero::before {
@@ -37,57 +55,108 @@
             z-index: 0;
         }
 
-        .founder-hero-grid {
+        .founder-hero::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(95, 223, 223, 0.1) 0%, transparent 70%);
+            z-index: 0;
+        }
+
+        .founder-hero-content {
             position: relative;
             z-index: 2;
-            display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: var(--space-lg);
-            align-items: center;
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
         }
 
         .founder-hero-image {
             position: relative;
+            max-width: 400px;
+            margin: 0 auto var(--space-lg);
+        }
+
+        .founder-hero-image::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 2px solid var(--color-cyan);
+            opacity: 0.5;
+            z-index: -1;
         }
 
         .founder-hero-image img {
             width: 100%;
             height: auto;
-            border-radius: 8px;
-            box-shadow: var(--shadow-deep);
-        }
-
-        .founder-hero-content {
-            padding: var(--space-md);
+            border-radius: 4px;
+            box-shadow:
+                0 25px 50px rgba(0, 0, 0, 0.5),
+                0 0 100px rgba(95, 223, 223, 0.2);
         }
 
         .founder-name {
-            font-size: clamp(3rem, 8vw, 6rem);
+            font-size: clamp(3.5rem, 10vw, 7rem);
             margin: var(--space-sm) 0;
-            color: var(--color-blue);
-            text-shadow: 0 0 20px rgba(30, 159, 242, 0.3);
+            color: var(--color-white);
+            text-shadow: 0 0 40px rgba(30, 159, 242, 0.4);
+            letter-spacing: -0.02em;
         }
 
         .founder-title {
-            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            font-size: clamp(1.2rem, 3vw, 1.6rem);
             color: var(--color-cyan);
             margin-bottom: var(--space-md);
             font-family: var(--font-mono);
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.15em;
+            font-weight: 400;
         }
 
         .founder-intro {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             line-height: 1.8;
-            margin-bottom: var(--space-md);
+            margin-bottom: var(--space-lg);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: rgba(240, 244, 248, 0.9);
         }
 
         .founder-stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: var(--space-md);
+            display: flex;
+            justify-content: center;
+            gap: var(--space-lg);
+            flex-wrap: wrap;
             margin-top: var(--space-lg);
+        }
+
+        .founder-stats .stat {
+            text-align: center;
+            min-width: 150px;
+        }
+
+        .founder-stats .stat-number {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            color: var(--color-blue);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .founder-stats .stat-label {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: rgba(240, 244, 248, 0.7);
         }
 
         /* Biography Sections */
@@ -120,6 +189,8 @@
             font-size: clamp(1.8rem, 4vw, 2.5rem);
             margin-bottom: var(--space-md);
             color: var(--color-cyan);
+            text-transform: none;
+            letter-spacing: -0.01em;
         }
 
         .bio-text p {
@@ -132,7 +203,19 @@
         .bio-image {
             position: relative;
             overflow: hidden;
-            border-radius: 8px;
+            border-radius: 4px;
+        }
+
+        .bio-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(30, 159, 242, 0.1) 0%, transparent 50%);
+            z-index: 1;
+            pointer-events: none;
         }
 
         .bio-image img {
@@ -143,7 +226,88 @@
         }
 
         .bio-image:hover img {
-            transform: scale(1.05);
+            transform: scale(1.03);
+        }
+
+        /* Expertise Section */
+        .expertise-section {
+            background: linear-gradient(180deg, #0a0d12 0%, var(--color-charcoal) 100%);
+            padding: var(--space-xl) 0;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+        }
+
+        .expertise-card {
+            background: rgba(30, 159, 242, 0.05);
+            border: 1px solid rgba(30, 159, 242, 0.2);
+            padding: var(--space-md);
+            position: relative;
+            transition: all var(--transition);
+        }
+
+        .expertise-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--color-cyan);
+            transform: scaleY(0);
+            transition: transform var(--transition);
+        }
+
+        .expertise-card:hover {
+            background: rgba(30, 159, 242, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .expertise-card:hover::before {
+            transform: scaleY(1);
+        }
+
+        .expertise-card h4 {
+            font-family: var(--font-mono);
+            font-size: 1.1rem;
+            color: var(--color-blue);
+            margin-bottom: var(--space-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .expertise-card p {
+            font-size: 1rem;
+            color: rgba(240, 244, 248, 0.8);
+            line-height: 1.7;
+        }
+
+        /* Leadership Philosophy */
+        .philosophy-section {
+            background: var(--color-charcoal);
+            padding: var(--space-xl) 0;
+            text-align: center;
+        }
+
+        .philosophy-quote {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-family: var(--font-body);
+            font-weight: 300;
+            font-style: italic;
+            color: var(--color-white);
+            max-width: 900px;
+            margin: 0 auto var(--space-lg);
+            line-height: 1.5;
+        }
+
+        .philosophy-quote::before,
+        .philosophy-quote::after {
+            content: '"';
+            color: var(--color-cyan);
         }
 
         /* CTA Section */
@@ -151,17 +315,38 @@
             background: linear-gradient(135deg, var(--color-blue-dark) 0%, var(--color-blue) 100%);
             padding: var(--space-xl) 0;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+                linear-gradient(0deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
         }
 
         .cta-content h2 {
             font-size: clamp(2rem, 5vw, 3.5rem);
             margin-bottom: var(--space-md);
+            text-transform: none;
         }
 
         .cta-content p {
             font-size: 1.3rem;
             margin-bottom: var(--space-lg);
-            opacity: 0.9;
+            opacity: 0.95;
         }
 
         .cta-buttons {
@@ -173,13 +358,17 @@
 
         /* Responsive Design */
         @media (max-width: 992px) {
-            .founder-hero-grid {
-                grid-template-columns: 1fr;
-                text-align: center;
+            .founder-hero {
+                min-height: auto;
+                padding: calc(80px + var(--space-lg)) 0 var(--space-lg);
+            }
+
+            .founder-hero-image {
+                max-width: 300px;
             }
 
             .founder-stats {
-                justify-content: center;
+                gap: var(--space-md);
             }
 
             .bio-row,
@@ -187,11 +376,16 @@
                 grid-template-columns: 1fr;
                 direction: ltr;
             }
+
+            .bio-image {
+                order: -1;
+            }
         }
 
         @media (max-width: 768px) {
             .founder-stats {
-                grid-template-columns: 1fr;
+                flex-direction: column;
+                align-items: center;
             }
 
             .cta-buttons {
@@ -209,7 +403,9 @@
     <nav class="nav">
         <div class="container nav-container">
             <div class="logo">
-                <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
+                <a href="index.html">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
+                </a>
             </div>
             <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation" type="button">
                 <span></span>
@@ -217,20 +413,19 @@
                 <span></span>
             </button>
             <ul class="nav-menu" id="primary-navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="index.html#team">Team</a></li>
                 <li><a href="investors.html">Investors</a></li>
                 <li><a href="contact.html" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Founder Hero Section -->
+    <!-- Founder Hero Section - Centered Layout -->
     <section class="founder-hero section">
         <div class="container">
-            <div class="founder-hero-grid">
+            <div class="founder-hero-content">
                 <div class="founder-hero-image">
                     <picture>
                         <source srcset="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/alicia_headshot.webp" type="image/webp">
@@ -241,25 +436,69 @@
                              height="1200">
                     </picture>
                 </div>
-                <div class="founder-hero-content">
-                    <span class="section-label">Leadership Profile</span>
-                    <h1 class="founder-name">Alicia</h1>
-                    <p class="founder-title">Vice President & Chief Program Officer</p>
-                    <p class="founder-intro lead">Client-focused leader with deep expertise in program delivery, solution architecture, and building long-term partnerships that transform enterprise technology landscapes.</p>
-                    <div class="founder-stats">
-                        <div class="stat">
-                            <div class="stat-number">95%</div>
-                            <div class="stat-label">Client Satisfaction</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">60+</div>
-                            <div class="stat-label">Programs Delivered</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">$15M+</div>
-                            <div class="stat-label">Value Delivered</div>
-                        </div>
+                <span class="section-label">Leadership Profile</span>
+                <h1 class="founder-name">Alicia</h1>
+                <p class="founder-title">Vice President & Chief Program Officer</p>
+                <p class="founder-intro">The architect of client success. Alicia transforms complex enterprise challenges into elegantly delivered solutions, building partnerships that endure and technology that performs.</p>
+                <div class="founder-stats">
+                    <div class="stat">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Client Satisfaction</div>
                     </div>
+                    <div class="stat">
+                        <div class="stat-number">60+</div>
+                        <div class="stat-label">Programs Delivered</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">$15M+</div>
+                        <div class="stat-label">Value Created</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Philosophy -->
+    <section class="philosophy-section section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Philosophy</span>
+            </div>
+            <p class="philosophy-quote">True program leadership is not about managing projects. It is about understanding the human aspirations behind every requirement and engineering solutions that exceed them.</p>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="expertise-section section">
+        <div class="container">
+            <div class="section-header" style="text-align: center;">
+                <span class="section-label">Core Expertise</span>
+                <h2 class="section-title">Areas of Excellence</h2>
+            </div>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <h4>Enterprise Program Delivery</h4>
+                    <p>Orchestrating multi-million dollar implementations from inception to optimization, ensuring every milestone delivers measurable business value.</p>
+                </div>
+                <div class="expertise-card">
+                    <h4>Solution Architecture</h4>
+                    <p>Designing scalable, future-proof technical architectures that balance innovation with pragmatic operational requirements.</p>
+                </div>
+                <div class="expertise-card">
+                    <h4>Digital Transformation</h4>
+                    <p>Guiding organizations through complex modernization journeys, minimizing disruption while maximizing competitive advantage.</p>
+                </div>
+                <div class="expertise-card">
+                    <h4>Strategic Partnerships</h4>
+                    <p>Building lasting client relationships that transcend individual projects, becoming trusted advisors for long-term technology strategy.</p>
+                </div>
+                <div class="expertise-card">
+                    <h4>Team Leadership</h4>
+                    <p>Developing high-performance delivery teams through mentorship, empowerment, and a culture of excellence and accountability.</p>
+                </div>
+                <div class="expertise-card">
+                    <h4>AI Integration</h4>
+                    <p>Leading the adoption of AI-powered tools and methodologies that enhance program efficiency and client outcomes.</p>
                 </div>
             </div>
         </div>
@@ -268,22 +507,23 @@
     <!-- Biography Section -->
     <section id="main-content" class="founder-bio section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Delivering Client Success</h2>
+            <div class="section-header" style="text-align: center;">
+                <span class="section-label">Biography</span>
+                <h2 class="section-title">Delivering Excellence at Scale</h2>
             </div>
 
             <!-- Bio Content Row 1 -->
             <div class="bio-row">
                 <div class="bio-text">
-                    <h3>Program Leadership & Delivery</h3>
-                    <p>As Chief Program Officer and Vice President, Alicia oversees the end-to-end delivery of iSN.BiZ's most complex and strategic client engagements. Her expertise spans the complete program lifecycle, from initial discovery and requirements gathering through solution design, implementation, and ongoing optimization. This comprehensive oversight ensures that every project aligns with client objectives and delivers measurable business value.</p>
-                    <p>Alicia's approach to program management combines rigorous methodology with adaptive flexibility. She understands that enterprise software projects rarely follow a perfectly linear path, and her ability to navigate complexity while keeping teams focused on objectives has resulted in a 95% client satisfaction rate across dozens of major enterprise programs.</p>
+                    <h3>The Program Leader</h3>
+                    <p>When enterprise organizations face their most complex technology challenges, they turn to Alicia. As Chief Program Officer and Vice President of iSN.BiZ Inc, she has built a reputation for transforming ambitious visions into operational reality. Her methodology combines rigorous discipline with adaptive agility, allowing her to navigate the unpredictable terrain of large-scale software implementations while keeping all stakeholders aligned and confident.</p>
+                    <p>What distinguishes Alicia is her holistic understanding of enterprise software ecosystems. She does not simply manage timelines and budgets. She orchestrates entire organizational transformations, ensuring that technology investments translate into sustainable competitive advantages. This comprehensive approach has resulted in a 95% client satisfaction rate across more than 60 major enterprise programs.</p>
                 </div>
                 <div class="bio-image">
                     <picture>
                         <source srcset="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/corporate_photos/alicia_working.webp" type="image/webp">
                         <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/corporate_photos/alicia_working.webp"
-                             alt="Alicia managing complex enterprise programs"
+                             alt="Alicia leading complex enterprise program delivery"
                              loading="lazy"
                              width="1024"
                              height="1536">
@@ -297,31 +537,31 @@
                     <picture>
                         <source srcset="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/corporate_photos/alicia_presenting.webp" type="image/webp">
                         <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/corporate_photos/alicia_presenting.webp"
-                             alt="Alicia presenting solution architecture to clients"
+                             alt="Alicia presenting solution architecture to enterprise clients"
                              loading="lazy"
                              width="1024"
                              height="1536">
                     </picture>
                 </div>
                 <div class="bio-text">
-                    <h3>Solution Architecture Excellence</h3>
-                    <p>Alicia's technical background enables her to serve as both program leader and solution architect. She works closely with clients to understand their business challenges, technical constraints, and strategic goals, then crafts comprehensive solutions that address immediate needs while positioning organizations for future growth. Her solutions are pragmatic, scalable, and designed for real-world operational environments.</p>
-                    <p>Her expertise in cloud architecture, AI integration, and enterprise systems has been particularly valuable as clients modernize their technology stacks. Alicia helps organizations navigate the complexity of digital transformation, making strategic technology decisions that balance innovation with stability and ensure smooth transitions that minimize business disruption.</p>
+                    <h3>The Solution Architect</h3>
+                    <p>Behind every successful program Alicia delivers lies a meticulously crafted technical architecture. Her deep expertise in cloud infrastructure, AI integration, and enterprise systems enables her to serve as both strategic leader and technical architect. She speaks the language of both boardrooms and engineering teams, translating business requirements into technical specifications and vice versa with equal fluency.</p>
+                    <p>In an era of rapid technological change, Alicia helps organizations navigate complexity with confidence. She designs solutions that address immediate operational needs while positioning clients for future innovation. Her architectures are pragmatic, scalable, and built to evolve, reflecting her understanding that great software is never truly finished but continuously refined.</p>
                 </div>
             </div>
 
             <!-- Bio Content Row 3 -->
             <div class="bio-row">
                 <div class="bio-text">
-                    <h3>Client Relationship Building</h3>
-                    <p>What truly distinguishes Alicia is her commitment to understanding clients not just as accounts, but as partners. She invests time in learning each client's business model, competitive landscape, and organizational culture. This deep understanding allows her to anticipate needs, proactively identify opportunities, and serve as a trusted advisor who contributes to strategic business decisions beyond the scope of individual projects.</p>
-                    <p>Alicia's relationship-building approach has transformed transactional vendor relationships into strategic partnerships. Many of iSN.BiZ's longest-standing client relationships were established and nurtured by Alicia, who maintains regular contact even after project completion to ensure solutions continue to deliver value as business needs evolve.</p>
+                    <h3>The Relationship Builder</h3>
+                    <p>Technology is ultimately about people. Alicia invests deeply in understanding each client's organizational culture, competitive landscape, and strategic aspirations. This commitment transforms her from vendor to partner, enabling her to anticipate needs, identify opportunities, and contribute to decisions that extend far beyond the scope of any single project.</p>
+                    <p>Many of iSN.BiZ's most enduring client relationships were established by Alicia. She maintains active engagement even after project completion, ensuring solutions continue to deliver value as business needs evolve. This dedication has created a network of clients who view her not as a service provider but as a trusted advisor and strategic thought partner.</p>
                 </div>
                 <div class="bio-image">
                     <picture>
                         <source srcset="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/corporate_photos/alicia_collaborating.webp" type="image/webp">
                         <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/corporate_photos/alicia_collaborating.webp"
-                             alt="Alicia collaborating with clients on strategic initiatives"
+                             alt="Alicia building strategic client partnerships"
                              loading="lazy"
                              width="1024"
                              height="1536">
@@ -335,31 +575,31 @@
                     <picture>
                         <source srcset="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/casual_variants/alicia_coffee.webp" type="image/webp">
                         <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/casual_variants/alicia_coffee.webp"
-                             alt="Alicia in strategic discussion session"
+                             alt="Alicia mentoring the next generation of program leaders"
                              loading="lazy"
                              width="1024"
                              height="1536">
                     </picture>
                 </div>
                 <div class="bio-text">
-                    <h3>Team Leadership & Mentorship</h3>
-                    <p>Alicia leads iSN.BiZ's program delivery teams with a focus on professional development and collaborative excellence. She has developed training programs that elevate the entire organization's program management capabilities, ensuring consistent delivery quality across all client engagements. Her mentorship has helped develop the next generation of program leaders within the company.</p>
-                    <p>Her leadership style emphasizes empowerment and accountability. Alicia provides clear direction and support while giving team members autonomy to make decisions and solve problems creatively. This approach has created a high-performing culture where team members take ownership of outcomes and continuously push to exceed client expectations.</p>
+                    <h3>The Team Developer</h3>
+                    <p>Alicia believes that exceptional program delivery begins with exceptional people. She has developed comprehensive training programs that elevate program management capabilities across iSN.BiZ, creating consistent excellence regardless of which team member touches a client engagement. Her mentorship has cultivated the next generation of program leaders within the company.</p>
+                    <p>Her leadership philosophy centers on empowerment with accountability. She provides clear direction and unwavering support while trusting team members to make decisions and solve problems creatively. This approach has fostered a high-performance culture where individuals take ownership of outcomes and continuously push to exceed expectations.</p>
                 </div>
             </div>
 
             <!-- Bio Content Row 5 -->
             <div class="bio-row">
                 <div class="bio-text">
-                    <h3>Innovation & Continuous Improvement</h3>
-                    <p>Alicia is passionate about continuously improving how iSN.BiZ delivers programs. She has championed the adoption of new project management tools, agile methodologies, and AI-assisted planning systems that make delivery more efficient and predictable. Her willingness to experiment with new approaches, measure results, and iterate based on data has kept the company at the forefront of program delivery excellence.</p>
-                    <p>She actively participates in industry forums and maintains relationships with other technology leaders to stay current on emerging best practices. This external engagement ensures that iSN.BiZ's approach to program delivery incorporates the latest thinking while remaining grounded in proven methodologies that clients trust.</p>
+                    <h3>The Innovation Champion</h3>
+                    <p>Continuous improvement is not a goal for Alicia; it is a discipline. She has championed the adoption of AI-assisted planning systems, advanced project management platforms, and agile methodologies that make program delivery more efficient and predictable. Her willingness to experiment, measure results, and iterate based on data keeps iSN.BiZ at the forefront of program delivery excellence.</p>
+                    <p>She actively participates in industry forums and maintains relationships with technology leaders worldwide. This external engagement ensures iSN.BiZ's delivery approaches incorporate cutting-edge best practices while remaining grounded in methodologies that clients trust. Innovation, in her view, must always serve client outcomes rather than novelty for its own sake.</p>
                 </div>
                 <div class="bio-image">
                     <picture>
                         <source srcset="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/corporate_photos/alicia_analyzing.webp" type="image/webp">
                         <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/corporate_photos/alicia_analyzing.webp"
-                             alt="Alicia analyzing program metrics and outcomes"
+                             alt="Alicia analyzing program metrics and driving innovation"
                              loading="lazy"
                              width="1024"
                              height="1536">
@@ -373,16 +613,16 @@
                     <picture>
                         <source srcset="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/casual_variants/alicia_brainstorming.webp" type="image/webp">
                         <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/casual_variants/alicia_brainstorming.webp"
-                             alt="Alicia in creative brainstorming session"
+                             alt="Alicia envisioning the future of enterprise software delivery"
                              loading="lazy"
                              width="1024"
                              height="1536">
                     </picture>
                 </div>
                 <div class="bio-text">
-                    <h3>Strategic Growth Vision</h3>
-                    <p>Looking ahead, Alicia is focused on scaling iSN.BiZ's program delivery capabilities to support the company's growth trajectory. She is building frameworks and systems that will enable the company to manage multiple large-scale enterprise programs simultaneously while maintaining the personalized attention and quality that clients expect. Her vision includes leveraging AI and automation to handle routine program management tasks, freeing teams to focus on strategic problem-solving and client relationship building.</p>
-                    <p>Alicia believes the future of enterprise software delivery lies in truly understanding client businesses and serving as strategic technology partners, not just implementers. She is positioning iSN.BiZ to operate at this higher level, where program officers don't just deliver projects but contribute meaningfully to clients' long-term business success. This strategic vision aligns perfectly with the company's mission to deliver transformative enterprise solutions.</p>
+                    <h3>Vision for Tomorrow</h3>
+                    <p>Looking ahead, Alicia is building the frameworks and systems that will enable iSN.BiZ to manage multiple large-scale enterprise programs simultaneously while maintaining the personalized attention that defines the company's client relationships. Her vision leverages AI and automation for routine program management tasks, freeing teams to focus on strategic problem-solving and relationship building.</p>
+                    <p>The future of enterprise software delivery, she believes, lies in true partnership. Program officers will not merely implement solutions but will contribute meaningfully to clients' long-term business success. Under her leadership, iSN.BiZ is positioning itself to operate at this elevated level, where technology delivery and business strategy become inseparable.</p>
                 </div>
             </div>
         </div>
@@ -392,10 +632,10 @@
     <section class="cta-section section">
         <div class="container">
             <div class="cta-content">
-                <h2>Let's Create Success Together</h2>
-                <p>Experience world-class program delivery that transforms your enterprise technology.</p>
+                <h2>Ready to Transform Your Enterprise?</h2>
+                <p>Experience world-class program delivery that turns ambitious visions into operational reality.</p>
                 <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary lift-on-hover"><span>Start Your Project</span></a>
+                    <a href="contact.html" class="btn btn-primary lift-on-hover"><span>Start Your Program</span></a>
                     <a href="investors.html" class="btn btn-secondary lift-on-hover"><span>Investment Information</span></a>
                 </div>
             </div>
@@ -409,10 +649,12 @@
                 <div class="footer-col">
                     <h4>iSN.BiZ Inc</h4>
                     <p class="footer-credentials">
+                        <strong>Address:</strong> 9030 35th Ave SW, Suite 100<br>Seattle, WA 98126<br>
+                        <strong>Local:</strong> (206) 785-9782<br>
+                        <strong>Toll-Free:</strong> (800) 986-4614<br>
                         <strong>DUNS:</strong> 080513772<br>
-                        <strong>UBI:</strong> 603-522-339<br>
                         <strong>EIN:</strong> 47-4530188<br>
-                        <strong>Founded:</strong> 2015
+                        <strong>UBI:</strong> 603-522-339
                     </p>
                 </div>
                 <div class="footer-col">
@@ -420,8 +662,8 @@
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="index.html#team">Team</a></li>
                         <li><a href="investors.html">Investors</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -432,7 +674,7 @@
                         <li><a href="jonathan.html">Jonathan - CEO</a></li>
                         <li><a href="bri.html">Bri - COO</a></li>
                         <li><a href="lilly.html">Lilly - CFO</a></li>
-                        <li><a href="alicia.html">Alicia - CPO</a></li>
+                        <li><a href="alicia.html" class="active">Alicia - CPO</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -443,6 +685,7 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 iSN.BiZ Inc. All rights reserved.</p>
+                <p>Founded July 8, 2015 | 9030 35th Ave SW, Suite 100, Seattle, WA 98126</p>
             </div>
         </div>
     </footer>

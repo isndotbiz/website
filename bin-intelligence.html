@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Payment Fraud Intelligence Platform - Real-time BIN enrichment and fraud analytics for e-commerce transaction security">
-    <meta name="keywords" content="BIN intelligence, fraud detection, payment security, e-commerce, iSN.BiZ">
+    <meta name="description" content="Payment Fraud Intelligence Platform - Real-time BIN enrichment and fraud analytics serving the $32B payment fraud prevention market with automated feed ingestion and risk scoring">
+    <meta name="keywords" content="BIN intelligence, fraud detection, payment security, e-commerce, Neutrino API, risk scoring, iSN.BiZ">
+    <meta name="author" content="iSN.BiZ Inc">
+    <meta property="og:title" content="Payment Fraud Intelligence Platform | iSN.BiZ Inc">
+    <meta property="og:description" content="Real-time BIN enrichment and fraud analytics for e-commerce transaction security">
+    <meta property="og:type" content="website">
     <title>Payment Fraud Intelligence Platform | iSN.BiZ Inc</title>
     <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
     <link rel="stylesheet" href="styles.css">
@@ -22,12 +26,17 @@
                     <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
                 </a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#solutions">Solutions</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="index.html#team">Team</a></li>
-                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="primary-navigation">
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="investors.html">Investors</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -42,8 +51,28 @@
                 <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">Real-time BIN enrichment and fraud analytics engine serving the $32B payment fraud prevention market — combining automated feed ingestion, Neutrino API enrichment, and live risk scoring dashboards for e-commerce transaction security.</p>
             </div>
 
+            <!-- Key Metrics -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; max-width: 900px; margin: 3rem auto; text-align: center;">
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">$32B</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">Target Market</div>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">Real-time</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">Enrichment</div>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">REST</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">API Integration</div>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">3DS</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">Posture Analysis</div>
+                </div>
+            </div>
+
             <div style="max-width: 1000px; margin: 3rem auto;">
-                <img src="assets/projects/bin_1.webp" alt="BIN intelligence fraud analysis dashboard" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/data_analytics.webp" alt="BIN intelligence fraud analysis dashboard" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
             </div>
         </div>
     </section>
@@ -55,40 +84,65 @@
                 <div>
                     <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Investor Summary</h2>
                     <p class="lead">Fraud prevention teams need reliable BIN intelligence to evaluate card risk and 3DS posture. This platform automates BIN ingestion, enrichment, classification, and reporting with a dashboard and API, enabling faster decisions and easier integration into fraud workflows.</p>
+                    <p style="margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.8;">E-commerce fraud costs merchants billions annually. Our platform provides the intelligence layer that fraud teams need — real-time BIN data enrichment, exploit classification, and risk scoring that integrates seamlessly into existing transaction processing workflows.</p>
                 </div>
                 <div>
-                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Key Capabilities</h3>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Product Capabilities</h3>
                     <ul style="list-style: none; padding: 0;">
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Flask dashboard and REST API for BIN analytics</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Automated BIN enrichment using Neutrino API</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Fraud feed scraping and exploit classification</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ SQLAlchemy storage with export and reporting</li>
-                        <li style="padding: 0.5rem 0;">✓ Bootstrap and Chart.js UI components</li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Flask dashboard and REST API for BIN analytics and reporting</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Automated BIN enrichment using Neutrino API integration</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Fraud feed scraping and exploit classification engine</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>SQLAlchemy storage with export and reporting utilities</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Bootstrap and Chart.js UI with interactive visualizations</span>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Screenshots Gallery -->
+    <!-- Platform Features -->
     <section class="section">
         <div class="container">
             <h2 class="section-title centered" style="margin-bottom: 3rem;">Platform Features</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
                 <div class="portfolio-card">
-                    <img src="assets/projects/bin_2.webp" alt="Real-time BIN enrichment" style="width: 100%; border-radius: 8px;">
-                    <h3 style="margin-top: 1rem;">Automated Enrichment</h3>
-                    <p>Real-time BIN data enrichment with comprehensive card issuer intelligence.</p>
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128274;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Automated Enrichment</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Real-Time BIN Data</h3>
+                    <p>Comprehensive card issuer intelligence with automatic enrichment via Neutrino API for every transaction.</p>
                 </div>
                 <div class="portfolio-card">
-                    <img src="assets/projects/bin_3.webp" alt="Fraud analytics dashboard" style="width: 100%; border-radius: 8px;">
-                    <h3 style="margin-top: 1rem;">Risk Scoring Dashboard</h3>
-                    <p>Live risk scoring and fraud pattern detection with interactive visualizations.</p>
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128200;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Risk Scoring</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Fraud Pattern Detection</h3>
+                    <p>Live risk scoring and fraud pattern detection with interactive visualizations and drill-down capabilities.</p>
                 </div>
                 <div class="portfolio-card">
-                    <img src="assets/projects/bin_4.webp" alt="API integration interface" style="width: 100%; border-radius: 8px;">
-                    <h3 style="margin-top: 1rem;">REST API Integration</h3>
-                    <p>Clean API surface for integration into existing fraud prevention workflows.</p>
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128268;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">API Integration</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">REST API Surface</h3>
+                    <p>Clean API surface for seamless integration into existing fraud prevention workflows and decision engines.</p>
                 </div>
             </div>
         </div>
@@ -106,33 +160,81 @@
                 <span class="tag">Neutrino API</span>
                 <span class="tag">Bootstrap</span>
                 <span class="tag">Chart.js</span>
+                <span class="tag">REST API</span>
             </div>
 
             <div style="margin-top: 3rem;">
-                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Differentiation and Moat</h3>
-                <ul style="font-size: 1.1rem; line-height: 1.8;">
-                    <li>Automated enrichment and exploit classification in a single unified system</li>
-                    <li>Clear API surface plus operator dashboard for both programmatic and manual workflows</li>
-                    <li>Extensible data model for new exploit types and risk factors</li>
-                    <li>Comprehensive deployment and operational documentation</li>
-                </ul>
+                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Differentiation and Moat</h3>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Unified Intelligence</h4>
+                        <p>Automated enrichment and exploit classification in a single unified system — no more juggling multiple vendors.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Dual Interface</h4>
+                        <p>Clear API surface plus operator dashboard for both programmatic and manual fraud investigation workflows.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Extensible Data Model</h4>
+                        <p>Built for expansion — easily add new exploit types, risk factors, and data sources without rebuilding.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Production Documentation</h4>
+                        <p>Comprehensive deployment and operational documentation for rapid enterprise deployment.</p>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div style="margin-top: 3rem;">
-                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Commercial Use Cases</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">E-Commerce Platforms</h4>
-                        <p>Fraud prevention and risk teams protecting transaction security.</p>
-                    </div>
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Payment Processors</h4>
-                        <p>Merchant service providers requiring BIN-level risk assessment.</p>
-                    </div>
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Security Analytics</h4>
-                        <p>Teams needing BIN-based threat intelligence and pattern detection.</p>
-                    </div>
+    <!-- Commercial Use Cases -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 2rem;">Commercial Use Cases</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Serving fraud prevention teams across e-commerce, payment processing, and security analytics.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#128722;</div>
+                    <h4 style="color: var(--color-blue); margin-bottom: 1rem;">E-Commerce Platforms</h4>
+                    <p>Fraud prevention and risk teams protecting transaction security. Reduce chargebacks and false positives with accurate BIN intelligence.</p>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#128179;</div>
+                    <h4 style="color: var(--color-blue); margin-bottom: 1rem;">Payment Processors</h4>
+                    <p>Merchant service providers requiring BIN-level risk assessment. Instant enrichment for transaction authorization decisions.</p>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#128270;</div>
+                    <h4 style="color: var(--color-blue); margin-bottom: 1rem;">Security Analytics</h4>
+                    <p>Teams needing BIN-based threat intelligence and pattern detection. Historical analysis and trend identification across transactions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evidence of Execution -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 2rem;">Evidence of Execution</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Production-ready platform with complete pipeline, API, and operational documentation.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">main.py</div>
+                    <p style="font-size: 0.95rem; margin: 0;">Flask app and API endpoints</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">bin_enricher.py</div>
+                    <p style="font-size: 0.95rem; margin: 0;">Enrichment pipeline logic</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">fraud_feed.py</div>
+                    <p style="font-size: 0.95rem; margin: 0;">Feed scrapers and classifiers</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">templates/</div>
+                    <p style="font-size: 0.95rem; margin: 0;">Dashboard UI components</p>
                 </div>
             </div>
         </div>
@@ -144,7 +246,7 @@
             <h2 class="section-title">Interested in This Solution?</h2>
             <p class="section-description" style="margin-bottom: 2rem;">Learn how we can build custom payment fraud intelligence systems for your organization.</p>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="index.html#contact" class="btn btn-primary"><span>Schedule a Demo</span></a>
+                <a href="contact.html" class="btn btn-primary"><span>Schedule a Demo</span></a>
                 <a href="portfolio.html" class="btn btn-outline"><span>View All Projects</span></a>
             </div>
         </div>
@@ -166,20 +268,21 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#solutions">Solutions</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="index.html#team">Team</a></li>
+                        <li><a href="investors.html">Investors</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Ready to transform your business?</p>
-                    <a href="index.html#contact" class="btn btn-primary" style="margin-top: 1rem;"><span>Get in Touch</span></a>
+                    <p>9030 35th Ave SW, Suite 100<br>Seattle, WA 98126</p>
+                    <p>Local: (206) 785-9782<br>Toll-Free: (800) 986-4614</p>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem;"><span>Get in Touch</span></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved. | Founded 2015</p>
+                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved. | Founded July 8, 2015</p>
             </div>
         </div>
     </footer>

@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AI Content Production Pipeline - Automated video content creation from web articles to YouTube uploads">
-    <meta name="keywords" content="video generation, content automation, YouTube, AI production, iSN.BiZ">
+    <meta name="description" content="AI Content Production Pipeline - End-to-end automated video content factory targeting the $12B creator economy with 10x content velocity at fractional production costs">
+    <meta name="keywords" content="video generation, content automation, YouTube, AI production, fal.ai, ElevenLabs, Runway, creator economy, iSN.BiZ">
+    <meta name="author" content="iSN.BiZ Inc">
+    <meta property="og:title" content="AI Content Production Pipeline | iSN.BiZ Inc">
+    <meta property="og:description" content="End-to-end automated content factory converting raw sources into production-ready video assets">
+    <meta property="og:type" content="website">
     <title>AI Content Production Pipeline | iSN.BiZ Inc</title>
     <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
     <link rel="stylesheet" href="styles.css">
@@ -14,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="nav">
         <div class="container nav-container">
             <div class="logo">
@@ -21,16 +26,22 @@
                     <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
                 </a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#solutions">Solutions</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="index.html#team">Team</a></li>
-                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="primary-navigation">
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="investors.html">Investors</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- Project Hero -->
     <section class="hero" style="min-height: 70vh; padding-top: 120px;">
         <div class="hero-background"></div>
         <div class="container">
@@ -39,62 +50,113 @@
                 <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">AI Content Production Pipeline</h1>
                 <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">End-to-end automated content factory converting raw sources into production-ready video assets using multi-provider AI orchestration (fal.ai, ElevenLabs, Runway) — targeting the $12B creator economy with 10x content velocity at fractional production costs.</p>
             </div>
+
+            <!-- Key Metrics -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; max-width: 900px; margin: 3rem auto; text-align: center;">
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">10x</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">Content Velocity</div>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">$12B</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">Target Market</div>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">90%</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">Cost Reduction</div>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">E2E</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">Full Automation</div>
+                </div>
+            </div>
+
             <div style="max-width: 1000px; margin: 3rem auto;">
-                <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/infrastructure.webp" alt="AI content production pipeline" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/infrastructure.webp" alt="AI content production pipeline workflow" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
             </div>
         </div>
     </section>
 
+    <!-- Investor Summary -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <div class="about-grid">
                 <div>
                     <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Investor Summary</h2>
-                    <p class="lead">Video content demand is massive, but production is expensive and slow. This system automates the core workflow from content ingestion through scripts, visuals, narration, assembly, and upload, enabling a scalable content operation with consistent output quality.</p>
+                    <p class="lead">Video content demand is massive, but production is expensive and slow. This system automates the core workflow from content ingestion through scripts, visuals, narration, assembly, and upload — enabling a scalable content operation with consistent output quality.</p>
+                    <p style="margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.8;">The creator economy has exploded to $12B, yet most creators face the same bottleneck: producing quality video content is time-consuming and costly. Our pipeline transforms a single URL into a fully-rendered, narrated video ready for upload — in minutes, not days.</p>
                 </div>
                 <div>
-                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Product Scope</h3>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Product Capabilities</h3>
                     <ul style="list-style: none; padding: 0;">
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Orchestrated scrape-to-script pipeline</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Script, storyboard, and narration generators</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Image and animation integrations</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Video assembly and editing guidance</li>
-                        <li style="padding: 0.5rem 0;">✓ Automated upload workflows</li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Orchestrated scrape-to-script pipeline with automatic dataset generation</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Script, storyboard, narration, and slide-deck generators</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>AI image and animation generation integrations</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Video assembly, editing guidance, and rendering workflows</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Automated YouTube OAuth upload with metadata optimization</span>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Production Workflow -->
     <section class="section">
         <div class="container">
             <h2 class="section-title centered" style="margin-bottom: 3rem;">Production Workflow</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;">
                 <div class="portfolio-card">
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; height: 200px; display: flex; align-items: center; justify-content: center;">
-                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center;">Content Ingestion</h3>
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128269;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Ingestion</h3>
                     </div>
                     <h3 style="margin-top: 1rem;">Web Scraping</h3>
-                    <p>Automated article extraction and dataset generation with Firecrawl.</p>
+                    <p>Automated article extraction and dataset generation with Firecrawl for any content source.</p>
                 </div>
                 <div class="portfolio-card">
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; height: 200px; display: flex; align-items: center; justify-content: center;">
-                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center;">AI Generation</h3>
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128221;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Script Gen</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">AI Scriptwriting</h3>
+                    <p>Intelligent content transformation into engaging video scripts with storyboard generation.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#127912;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">AI Generation</h3>
                     </div>
                     <h3 style="margin-top: 1rem;">Multi-Provider AI</h3>
-                    <p>Script, image, and narration generation using fal.ai and ElevenLabs.</p>
+                    <p>Image, animation, and narration generation using fal.ai, ElevenLabs, and Runway.</p>
                 </div>
                 <div class="portfolio-card">
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; height: 200px; display: flex; align-items: center; justify-content: center;">
-                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center;">Distribution</h3>
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128249;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Distribution</h3>
                     </div>
                     <h3 style="margin-top: 1rem;">Upload Automation</h3>
-                    <p>Automated assembly, editing, and YouTube OAuth upload workflows.</p>
+                    <p>Automated assembly, editing, and YouTube OAuth upload workflows with metadata.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Technology Stack -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <h2 class="section-title centered">Technology Stack</h2>
@@ -108,38 +170,88 @@
                 <span class="tag">Descript</span>
                 <span class="tag">AWS S3</span>
                 <span class="tag">YouTube OAuth</span>
+                <span class="tag">Axios</span>
+                <span class="tag">Cheerio</span>
             </div>
 
             <div style="margin-top: 3rem;">
-                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Differentiation</h3>
-                <ul style="font-size: 1.1rem; line-height: 1.8;">
-                    <li>End-to-end pipeline with both data and creative automation</li>
-                    <li>Multi-provider integrations for maximum flexibility</li>
-                    <li>Battle-tested operational runbooks and tooling depth</li>
-                    <li>10x content velocity at fractional production costs</li>
-                </ul>
-            </div>
-
-            <div style="margin-top: 3rem;">
-                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Commercial Use Cases</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">YouTube Channels</h4>
-                        <p>Scalable channel operations with consistent content quality.</p>
+                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Differentiation and Moat</h3>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">End-to-End Pipeline</h4>
+                        <p>Complete automation from content ingestion through final upload — no manual steps required for production.</p>
                     </div>
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">B2B Marketing</h4>
-                        <p>Content production for marketing teams and agencies.</p>
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Multi-Provider Integration</h4>
+                        <p>Best-of-breed AI providers for images, video, and narration with graceful fallback handling.</p>
                     </div>
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Education & Training</h4>
-                        <p>Rapid content creation for educational platforms.</p>
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Battle-Tested Runbooks</h4>
+                        <p>Extensive operational documentation and tooling depth from real production usage.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">10x Content Velocity</h4>
+                        <p>Produce content at a fraction of the time and cost of traditional video production workflows.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Commercial Use Cases -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 2rem;">Commercial Use Cases</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">From solo creators to enterprise marketing teams, our pipeline scales content production across industries.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#128250;</div>
+                    <h4 style="color: var(--color-blue); margin-bottom: 1rem;">YouTube Channels</h4>
+                    <p>Scalable channel operations with consistent content quality. Transform any niche into a content machine with automated production.</p>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#128188;</div>
+                    <h4 style="color: var(--color-blue); margin-bottom: 1rem;">B2B Marketing</h4>
+                    <p>Content production for marketing teams and agencies. Turn thought leadership into video at scale without production crews.</p>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#127891;</div>
+                    <h4 style="color: var(--color-blue); margin-bottom: 1rem;">Education & Training</h4>
+                    <p>Rapid content creation for educational platforms. Convert documentation and courses into engaging video tutorials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evidence of Execution -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 2rem;">Evidence of Execution</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Production-tested pipeline with comprehensive automation and operational documentation.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">orchestrate.js</div>
+                    <p style="font-size: 0.95rem; margin: 0;">Pipeline entrypoint and orchestration</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">video_pipeline/</div>
+                    <p style="font-size: 0.95rem; margin: 0;">Core pipeline logic and stages</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">scripts/</div>
+                    <p style="font-size: 0.95rem; margin: 0;">Automation helpers and utilities</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">docs/</div>
+                    <p style="font-size: 0.95rem; margin: 0;">Guides, runbooks, and roadmap</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
     <section class="section">
         <div class="container" style="text-align: center;">
             <h2 class="section-title">Interested in This Solution?</h2>
@@ -151,6 +263,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -174,12 +287,13 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Ready to transform your business?</p>
+                    <p>9030 35th Ave SW, Suite 100<br>Seattle, WA 98126</p>
+                    <p>Local: (206) 785-9782<br>Toll-Free: (800) 986-4614</p>
                     <a href="index.html#contact" class="btn btn-primary" style="margin-top: 1rem;"><span>Get in Touch</span></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved. | Founded 2015</p>
+                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved. | Founded July 8, 2015</p>
             </div>
         </div>
     </footer>
