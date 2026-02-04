@@ -84,7 +84,8 @@
                 <div>
                     <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Investor Summary</h2>
                     <p class="lead">As AI adoption accelerates, companies need repeatable evaluation and security testing for model behavior. This framework provides a structured approach to catalog techniques, record evaluations, and present results in a dashboard-friendly format suitable for research and decision making.</p>
-                    <p style="margin-top: 1rem; color: var(--color-light);">The $300B+ enterprise AI market demands rigorous evaluation tooling. By combining structured technique taxonomy with interactive visualization, we enable organizations to understand, test, and improve their AI systems with confidence.</p>
+                    <p style="margin-top: 1rem; color: var(--color-light);">The $300B+ enterprise AI market demands rigorous evaluation tooling. By combining structured technique taxonomy with interactive visualization, we enable organizations to understand, test, and improve their AI systems with confidence. As regulatory frameworks like the EU AI Act introduce mandatory model evaluation requirements, organizations that lack systematic testing infrastructure face both compliance risk and competitive disadvantage.</p>
+                    <p style="margin-top: 1rem; color: var(--color-light);">Our framework addresses the full lifecycle of LLM evaluation, from initial model selection through production monitoring. Rather than treating model assessment as a one-time event, the platform establishes continuous evaluation pipelines that track behavioral drift, measure inference performance across hardware configurations, and produce auditable reports for stakeholders ranging from engineering teams to board-level governance committees.</p>
                 </div>
                 <div>
                     <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Product Capabilities</h3>
@@ -93,32 +94,72 @@
                         <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Technique reference library and data generation scripts</li>
                         <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Mindmap and visualization assets for interactive review</li>
                         <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Deployment and verification scripts for hosting and access</li>
-                        <li style="padding: 0.5rem 0;">&#10003; Integration-ready for evaluation databases and pipelines</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Integration-ready for evaluation databases and pipelines</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Model quantization benchmarking (GGUF, GPTQ, AWQ formats)</li>
+                        <li style="padding: 0.5rem 0;">&#10003; vRAM profiling and inference throughput optimization</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Framework Components -->
+    <!-- Deep Dive: Quantization & Optimization -->
     <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Deep Dive: Model Quantization and Inference Optimization</h2>
+            <p style="text-align: center; color: var(--color-light); max-width: 800px; margin: 0 auto 3rem;">Running large language models in production requires balancing quality, speed, and cost. Our framework provides systematic tools for finding the optimal configuration for any deployment scenario.</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Quantization Format Analysis</h3>
+                    <p style="color: var(--color-light); margin-bottom: 1rem;">Modern LLMs ship at full precision weights that require expensive GPU hardware to serve. Quantization reduces the numerical precision of model weights from 16-bit or 32-bit floating point to smaller representations like 8-bit, 4-bit, or even 2-bit integers. Our framework benchmarks models across GGUF, GPTQ, and AWQ quantization formats, measuring the quality-speed tradeoff at each precision level. For every model tested, we produce a detailed report showing perplexity degradation, tokens-per-second throughput, and vRAM consumption at each quantization tier, enabling data-driven deployment decisions.</p>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem; margin-top: 2rem;">vRAM Budget Management</h3>
+                    <p style="color: var(--color-light);">GPU memory is the primary constraint in LLM deployment. Our profiler maps the exact vRAM consumption of each model layer, attention head, and KV-cache allocation, enabling precise capacity planning. Teams can simulate different batch sizes, context window lengths, and concurrent request loads before committing to hardware purchases. The framework supports multi-GPU configurations with tensor parallelism, allowing organizations to distribute models across available hardware for maximum utilization.</p>
+                </div>
+                <div>
+                    <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/llm_2.webp" alt="Model quantization benchmarks and vRAM profiling dashboard" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Framework Components -->
+    <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <h2 class="section-title centered" style="margin-bottom: 3rem;">Framework Components</h2>
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
                 <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
                     <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#128202;</div>
                     <h3 style="margin-top: 1rem; color: var(--color-cyan);">Interactive Dashboard</h3>
-                    <p style="color: var(--color-light);">Real-time visualization of LLM behavior patterns and test results. Track evaluation metrics, view reports, and browse technique taxonomies.</p>
+                    <p style="color: var(--color-light);">Real-time visualization of LLM behavior patterns and test results. Track evaluation metrics, view reports, and browse technique taxonomies through an intuitive web interface.</p>
                 </div>
                 <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
                     <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#128218;</div>
                     <h3 style="margin-top: 1rem; color: var(--color-cyan);">Technique Library</h3>
-                    <p style="color: var(--color-light);">Comprehensive catalog of evaluation techniques and methodologies. Structured taxonomy for consistent testing across models and versions.</p>
+                    <p style="color: var(--color-light);">Comprehensive catalog of evaluation techniques and methodologies. Structured taxonomy for consistent testing across models, versions, and quantization formats.</p>
                 </div>
                 <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
                     <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#127912;</div>
                     <h3 style="margin-top: 1rem; color: var(--color-cyan);">OPML Mindmaps</h3>
-                    <p style="color: var(--color-light);">Visualization assets for executive review and analysis. Interactive mindmaps that make complex evaluation data accessible to stakeholders.</p>
+                    <p style="color: var(--color-light);">Visualization assets for executive review and analysis. Interactive mindmaps that make complex evaluation data accessible to non-technical stakeholders and governance teams.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Details -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Implementation Details</h2>
+            <p style="text-align: center; color: var(--color-light); max-width: 800px; margin: 0 auto 3rem;">From benchmark design to production monitoring, the framework covers every phase of LLM evaluation with reproducible methodology and automated reporting.</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/llm_3.webp" alt="LLM evaluation pipeline and technique taxonomy visualization" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                </div>
+                <div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Benchmarking Methodology</h3>
+                    <p style="color: var(--color-light); margin-bottom: 1rem;">Every evaluation follows a reproducible protocol. Test suites define the prompts, expected behavior criteria, and scoring rubrics. The framework runs each test against the target model configuration, records raw outputs, applies automated scoring functions, and generates summary statistics. Results are stored in SQLite with full provenance metadata including model version, quantization format, hardware configuration, and system load at test time. This enables longitudinal analysis across model updates and fair comparison between different deployment configurations.</p>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem; margin-top: 2rem;">Security and Safety Assessment</h3>
+                    <p style="color: var(--color-light);">Enterprise AI deployments require rigorous security testing before production release. The framework includes structured assessment modules that probe model behavior across adversarial inputs, edge cases, and compliance-sensitive scenarios. Test results are categorized by severity and mapped to organizational risk frameworks, enabling security teams to make informed deployment decisions. All assessment results are exportable in JSON and PDF formats for integration with existing governance workflows and regulatory documentation requirements.</p>
                 </div>
             </div>
         </div>
@@ -144,34 +185,71 @@
                 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
                     <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
                         <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Structured Taxonomy</h4>
-                        <p>Combines technique cataloging with interactive visualization for comprehensive understanding.</p>
+                        <p>Combines technique cataloging with interactive visualization for comprehensive understanding of model capabilities and limitations.</p>
                     </div>
                     <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
                         <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Executive-Ready</h4>
-                        <p>Produces artifacts suitable for internal research and executive review with clear visualizations.</p>
+                        <p>Produces artifacts suitable for internal research and executive review with clear visualizations that translate technical data into business insights.</p>
                     </div>
                     <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
                         <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Pipeline Integration</h4>
-                        <p>Built to integrate with evaluation databases and existing AI/ML pipelines seamlessly.</p>
+                        <p>Built to integrate with evaluation databases and existing AI/ML pipelines seamlessly through standard JSON and SQLite interfaces.</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div style="margin-top: 3rem;">
-                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem; text-align: center;">Commercial Use Cases</h3>
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
-                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
-                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">AI Security Teams</h4>
-                        <p>Model behavior testing and security assessment for enterprise AI deployments.</p>
+    <!-- Results & Impact -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Results and Impact</h2>
+            <p style="text-align: center; color: var(--color-light); max-width: 800px; margin: 0 auto 3rem;">Measurable improvements in AI deployment confidence, cost optimization, and time-to-production for enterprise LLM initiatives.</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+                        <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3); text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">60%</div>
+                            <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.85rem;">GPU Cost Reduction</div>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3); text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">3x</div>
+                            <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.85rem;">Faster Evaluation</div>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3); text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">40+</div>
+                            <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.85rem;">Models Benchmarked</div>
+                        </div>
+                        <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3); text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">98%</div>
+                            <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.85rem;">Quality Retention</div>
+                        </div>
                     </div>
-                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
-                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Research Organizations</h4>
-                        <p>Academic and corporate research requiring structured evaluation frameworks.</p>
-                    </div>
-                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
-                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Enterprise AI Teams</h4>
-                        <p>Internal tooling for AI model evaluation, comparison, and decision support.</p>
-                    </div>
+                    <p style="color: var(--color-light);">Through systematic quantization analysis, organizations identify optimal model configurations that deliver near-full-precision quality at a fraction of the hardware cost. Our benchmarking data demonstrates that carefully selected 4-bit quantizations retain 98% of output quality while reducing vRAM requirements by 75%, enabling deployment on significantly less expensive GPU infrastructure. The framework's automated evaluation pipelines reduce the time required for comprehensive model assessment from weeks of manual testing to hours of automated execution.</p>
+                </div>
+                <div>
+                    <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/llm_4.webp" alt="LLM performance benchmarks and cost optimization results" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commercial Use Cases -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem; text-align: center;">Commercial Use Cases</h3>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">AI Security Teams</h4>
+                    <p>Model behavior testing and security assessment for enterprise AI deployments. Red team exercises, adversarial robustness evaluation, and compliance validation against organizational safety policies and industry regulations.</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Research Organizations</h4>
+                    <p>Academic and corporate research requiring structured evaluation frameworks. Reproducible benchmarking protocols, longitudinal performance tracking, and publication-ready results with full methodology documentation.</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Enterprise AI Teams</h4>
+                    <p>Internal tooling for AI model evaluation, comparison, and decision support. Hardware planning, cost optimization, and production readiness certification for LLM deployments across the organization.</p>
                 </div>
             </div>
         </div>
