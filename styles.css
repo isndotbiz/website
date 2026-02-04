@@ -420,7 +420,7 @@ p {
             rgba(13, 17, 23, 0.60) 50%,
             rgba(30, 159, 242, 0.15) 100%
         ),
-        url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/backgrounds/hero-background-main.webp') center/cover no-repeat;
+        url('https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/generated/website/hero_abstract_tech_1.webp') center/cover no-repeat;
     background-attachment: fixed;
     z-index: 0;
 }
@@ -1172,7 +1172,7 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/sections/investor_backdrop.webp') center/cover no-repeat;
+    background: url('https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/generated/website/growth_chart_abstract_1.webp') center/cover no-repeat;
     opacity: 0.08;
     mix-blend-mode: screen;
 }
