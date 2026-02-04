@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISN.BIZ Founder Images - Review</title>
+    <style>
+        :root {
+            --blue: #1E9FF2;
+            --cyan: #5FDFDF;
+            --charcoal: #3F4447;
+            --dark: #1a1a2e;
+            --card-bg: #252540;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--dark);
+            color: #fff;
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--blue), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 2rem;
+        }
+
+        .instructions {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--cyan);
+        }
+
+        .instructions h3 { color: var(--cyan); margin-bottom: 0.5rem; }
+        .instructions ul { margin-left: 1.5rem; color: #ccc; }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--charcoal);
+        }
+
+        .section-header h2 {
+            color: var(--blue);
+        }
+
+        .badge {
+            background: var(--charcoal);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(30, 159, 242, 0.2);
+        }
+
+        .card.selected {
+            outline: 3px solid var(--cyan);
+        }
+
+        .card.selected::after {
+            content: '✓ SELECTED';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--cyan);
+            color: var(--dark);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+
+        .card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .card img:hover {
+            opacity: 0.9;
+        }
+
+        .card-info {
+            padding: 1rem;
+        }
+
+        .card-title {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .card-meta {
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+        }
+
+        .btn {
+            padding: 0.4rem 0.8rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: all 0.2s;
+        }
+
+        .btn-select {
+            background: var(--blue);
+            color: white;
+        }
+
+        .btn-select:hover {
+            background: var(--cyan);
+            color: var(--dark);
+        }
+
+        .btn-view {
+            background: var(--charcoal);
+            color: #ccc;
+        }
+
+        .btn-view:hover {
+            background: #555;
+        }
+
+        .founder-group {
+            margin-bottom: 2rem;
+        }
+
+        .founder-name {
+            color: var(--cyan);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .founder-name::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--cyan);
+            border-radius: 50%;
+        }
+
+        /* QC Checklist */
+        .qc-panel {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            width: 300px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+            z-index: 100;
+        }
+
+        .qc-panel h3 {
+            color: var(--cyan);
+            margin-bottom: 1rem;
+        }
+
+        .qc-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 0;
+            font-size: 0.85rem;
+            color: #ccc;
+        }
+
+        .qc-item input {
+            accent-color: var(--cyan);
+        }
+
+        .selection-summary {
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            width: 280px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+        }
+
+        .selection-summary h3 {
+            color: var(--blue);
+            margin-bottom: 1rem;
+        }
+
+        .selection-count {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--cyan);
+        }
+
+        .export-btn {
+            width: 100%;
+            padding: 0.75rem;
+            background: linear-gradient(135deg, var(--blue), var(--cyan));
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        .export-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .qc-panel, .selection-summary {
+                position: static;
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>ISN.BIZ Founder Images</h1>
+    <p class="subtitle">Review & Select - Generated 2026-02-04</p>
+
+    <div class="instructions">
+        <h3>How to Review</h3>
+        <ul>
+            <li>Click any image to view full size</li>
+            <li>Click "Select" to mark your preferred variant</li>
+            <li>Use the QC checklist for each image</li>
+            <li>Export your selections when done</li>
+        </ul>
+    </div>
+
+    <!-- Proportion Fixes -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Proportion Fixes</h2>
+            <span class="badge">6 images</span>
+        </div>
+
+        <div class="founder-group">
+            <div class="founder-name">Lilly (CFO)</div>
+            <div class="grid">
+                <div class="card" data-id="lilly_fixed_1">
+                    <img src="proportion_fixes/lilly_fixed_1.webp" alt="Lilly Fixed 1" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Lilly - Variant 1</div>
+                        <div class="card-meta">Proportion fix</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="lilly_fixed_2">
+                    <img src="proportion_fixes/lilly_fixed_2.webp" alt="Lilly Fixed 2" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Lilly - Variant 2</div>
+                        <div class="card-meta">Proportion fix</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="lilly_fixed_3">
+                    <img src="proportion_fixes/lilly_fixed_3.webp" alt="Lilly Fixed 3" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Lilly - Variant 3</div>
+                        <div class="card-meta">Proportion fix</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="founder-group">
+            <div class="founder-name">Bri (COO)</div>
+            <div class="grid">
+                <div class="card" data-id="bri_fixed_1">
+                    <img src="proportion_fixes/bri_fixed_1.webp" alt="Bri Fixed 1" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Bri - Variant 1</div>
+                        <div class="card-meta">Proportion fix</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="bri_fixed_2">
+                    <img src="proportion_fixes/bri_fixed_2.webp" alt="Bri Fixed 2" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Bri - Variant 2</div>
+                        <div class="card-meta">Proportion fix</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="bri_fixed_3">
+                    <img src="proportion_fixes/bri_fixed_3.webp" alt="Bri Fixed 3" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Bri - Variant 3</div>
+                        <div class="card-meta">Proportion fix</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portraits -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Executive Portraits</h2>
+            <span class="badge">12 images</span>
+        </div>
+
+        <div class="founder-group">
+            <div class="founder-name">Jonathan (Chairman)</div>
+            <div class="grid">
+                <div class="card" data-id="jonathan_portrait_1">
+                    <img src="portraits/jonathan_portrait_1.webp" alt="Jonathan Portrait 1" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Jonathan - Variant 1</div>
+                        <div class="card-meta">Executive portrait</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="jonathan_portrait_2">
+                    <img src="portraits/jonathan_portrait_2.webp" alt="Jonathan Portrait 2" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Jonathan - Variant 2</div>
+                        <div class="card-meta">Executive portrait</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="jonathan_portrait_3">
+                    <img src="portraits/jonathan_portrait_3.webp" alt="Jonathan Portrait 3" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Jonathan - Variant 3</div>
+                        <div class="card-meta">Executive portrait</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="founder-group">
+            <div class="founder-name">Alicia (Co-founder)</div>
+            <div class="grid">
+                <div class="card" data-id="alicia_portrait_1">
+                    <img src="portraits/alicia_portrait_1.webp" alt="Alicia Portrait 1" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Alicia - Variant 1</div>
+                        <div class="card-meta">Executive portrait</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="alicia_portrait_2">
+                    <img src="portraits/alicia_portrait_2.webp" alt="Alicia Portrait 2" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Alicia - Variant 2</div>
+                        <div class="card-meta">Executive portrait</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="alicia_portrait_3">
+                    <img src="portraits/alicia_portrait_3.webp" alt="Alicia Portrait 3" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Alicia - Variant 3</div>
+                        <div class="card-meta">Executive portrait</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="founder-group">
+            <div class="founder-name">Bri (COO)</div>
+            <div class="grid">
+                <div class="card" data-id="bri_portrait_1">
+                    <img src="portraits/bri_portrait_1.webp" alt="Bri Portrait 1" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Bri - Variant 1</div>
+                        <div class="card-meta">Executive portrait</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="bri_portrait_2">
+                    <img src="portraits/bri_portrait_2.webp" alt="Bri Portrait 2" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Bri - Variant 2</div>
+                        <div class="card-meta">Executive portrait</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="bri_portrait_3">
+                    <img src="portraits/bri_portrait_3.webp" alt="Bri Portrait 3" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Bri - Variant 3</div>
+                        <div class="card-meta">Executive portrait</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="founder-group">
+            <div class="founder-name">Lilly (CFO)</div>
+            <div class="grid">
+                <div class="card" data-id="lilly_portrait_1">
+                    <img src="portraits/lilly_portrait_1.webp" alt="Lilly Portrait 1" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Lilly - Variant 1</div>
+                        <div class="card-meta">Executive portrait</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="lilly_portrait_2">
+                    <img src="portraits/lilly_portrait_2.webp" alt="Lilly Portrait 2" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Lilly - Variant 2</div>
+                        <div class="card-meta">Executive portrait</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="lilly_portrait_3">
+                    <img src="portraits/lilly_portrait_3.webp" alt="Lilly Portrait 3" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Lilly - Variant 3</div>
+                        <div class="card-meta">Executive portrait</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Casual Scenes -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Casual Scenes</h2>
+            <span class="badge">12 images</span>
+        </div>
+
+        <div class="founder-group">
+            <div class="founder-name">Jonathan (Chairman)</div>
+            <div class="grid">
+                <div class="card" data-id="jonathan_casual_1">
+                    <img src="casual/jonathan_casual_1.webp" alt="Jonathan Casual 1" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Jonathan - Laptop Review</div>
+                        <div class="card-meta">Casual / Co-working</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="jonathan_casual_2">
+                    <img src="casual/jonathan_casual_2.webp" alt="Jonathan Casual 2" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Jonathan - Discussion</div>
+                        <div class="card-meta">Casual / Co-working</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="jonathan_casual_3">
+                    <img src="casual/jonathan_casual_3.webp" alt="Jonathan Casual 3" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Jonathan - Whiteboard</div>
+                        <div class="card-meta">Casual / Co-working</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="founder-group">
+            <div class="founder-name">Alicia (Co-founder)</div>
+            <div class="grid">
+                <div class="card" data-id="alicia_casual_1">
+                    <img src="casual/alicia_casual_1.webp" alt="Alicia Casual 1" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Alicia - Laptop Review</div>
+                        <div class="card-meta">Casual / Co-working</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="alicia_casual_2">
+                    <img src="casual/alicia_casual_2.webp" alt="Alicia Casual 2" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Alicia - Discussion</div>
+                        <div class="card-meta">Casual / Co-working</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="alicia_casual_3">
+                    <img src="casual/alicia_casual_3.webp" alt="Alicia Casual 3" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Alicia - Whiteboard</div>
+                        <div class="card-meta">Casual / Co-working</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="founder-group">
+            <div class="founder-name">Bri (COO)</div>
+            <div class="grid">
+                <div class="card" data-id="bri_casual_1">
+                    <img src="casual/bri_casual_1.webp" alt="Bri Casual 1" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Bri - Laptop Review</div>
+                        <div class="card-meta">Casual / Co-working</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="bri_casual_2">
+                    <img src="casual/bri_casual_2.webp" alt="Bri Casual 2" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Bri - Discussion</div>
+                        <div class="card-meta">Casual / Co-working</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="bri_casual_3">
+                    <img src="casual/bri_casual_3.webp" alt="Bri Casual 3" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Bri - Whiteboard</div>
+                        <div class="card-meta">Casual / Co-working</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="founder-group">
+            <div class="founder-name">Lilly (CFO)</div>
+            <div class="grid">
+                <div class="card" data-id="lilly_casual_1">
+                    <img src="casual/lilly_casual_1.webp" alt="Lilly Casual 1" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Lilly - Laptop Review</div>
+                        <div class="card-meta">Casual / Co-working</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="lilly_casual_2">
+                    <img src="casual/lilly_casual_2.webp" alt="Lilly Casual 2" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Lilly - Discussion</div>
+                        <div class="card-meta">Casual / Co-working</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="lilly_casual_3">
+                    <img src="casual/lilly_casual_3.webp" alt="Lilly Casual 3" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">Lilly - Whiteboard</div>
+                        <div class="card-meta">Casual / Co-working</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Group Scenes -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Group Scenes</h2>
+            <span class="badge">3 images</span>
+        </div>
+
+        <div class="grid">
+            <div class="card" data-id="founders_group_1">
+                <img src="group/founders_group_1.webp" alt="Group Scene 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Founders Group - Variant 1</div>
+                    <div class="card-meta">Strategy session</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="founders_group_2">
+                <img src="group/founders_group_2.webp" alt="Group Scene 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Founders Group - Variant 2</div>
+                    <div class="card-meta">Strategy session</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="founders_group_3">
+                <img src="group/founders_group_3.webp" alt="Group Scene 3" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Founders Group - Variant 3</div>
+                    <div class="card-meta">Strategy session</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Assets - Hero Backgrounds -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Hero Backgrounds</h2>
+            <span class="badge">5 images</span>
+        </div>
+        <div class="grid">
+            <div class="card" data-id="hero_abstract_tech_1">
+                <img src="assets/hero/hero_abstract_tech_1.webp" alt="Abstract Tech 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Abstract Tech - Variant 1</div>
+                    <div class="card-meta">AI/Neural network visualization</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="hero_abstract_tech_2">
+                <img src="assets/hero/hero_abstract_tech_2.webp" alt="Abstract Tech 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Abstract Tech - Variant 2</div>
+                    <div class="card-meta">AI/Neural network visualization</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="hero_abstract_tech_3">
+                <img src="assets/hero/hero_abstract_tech_3.webp" alt="Abstract Tech 3" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Abstract Tech - Variant 3</div>
+                    <div class="card-meta">AI/Neural network visualization</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="hero_skyline_dawn_1">
+                <img src="assets/hero/hero_skyline_dawn_1.webp" alt="Skyline Dawn 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Skyline Dawn - Variant 1</div>
+                    <div class="card-meta">Metropolitan ambition</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="hero_skyline_dawn_2">
+                <img src="assets/hero/hero_skyline_dawn_2.webp" alt="Skyline Dawn 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Skyline Dawn - Variant 2</div>
+                    <div class="card-meta">Metropolitan ambition</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Assets - Section Backgrounds -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Section Backgrounds</h2>
+            <span class="badge">6 images</span>
+        </div>
+        <div class="grid">
+            <div class="card" data-id="section_data_viz_1">
+                <img src="assets/section/section_data_viz_1.webp" alt="Data Viz 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Data Visualization - V1</div>
+                    <div class="card-meta">Analytics/Dashboard</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="section_data_viz_2">
+                <img src="assets/section/section_data_viz_2.webp" alt="Data Viz 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Data Visualization - V2</div>
+                    <div class="card-meta">Analytics/Dashboard</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="section_cloud_abstract_1">
+                <img src="assets/section/section_cloud_abstract_1.webp" alt="Cloud Abstract 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Cloud Abstract - V1</div>
+                    <div class="card-meta">Cloud computing</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="section_cloud_abstract_2">
+                <img src="assets/section/section_cloud_abstract_2.webp" alt="Cloud Abstract 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Cloud Abstract - V2</div>
+                    <div class="card-meta">Cloud computing</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="section_ai_neural_1">
+                <img src="assets/section/section_ai_neural_1.webp" alt="AI Neural 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">AI Neural - V1</div>
+                    <div class="card-meta">Neural networks</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="section_ai_neural_2">
+                <img src="assets/section/section_ai_neural_2.webp" alt="AI Neural 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">AI Neural - V2</div>
+                    <div class="card-meta">Neural networks</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Assets - Office/Workspace -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Office & Workspace</h2>
+            <span class="badge">4 images</span>
+        </div>
+        <div class="grid">
+            <div class="card" data-id="office_modern_meeting_1">
+                <img src="assets/office/office_modern_meeting_1.webp" alt="Meeting Room 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Modern Meeting - V1</div>
+                    <div class="card-meta">Conference room</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="office_modern_meeting_2">
+                <img src="assets/office/office_modern_meeting_2.webp" alt="Meeting Room 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Modern Meeting - V2</div>
+                    <div class="card-meta">Conference room</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="office_workspace_detail_1">
+                <img src="assets/office/office_workspace_detail_1.webp" alt="Workspace 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Workspace Detail - V1</div>
+                    <div class="card-meta">Desk/productivity</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="office_workspace_detail_2">
+                <img src="assets/office/office_workspace_detail_2.webp" alt="Workspace 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Workspace Detail - V2</div>
+                    <div class="card-meta">Desk/productivity</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Assets - Technology -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Technology Visuals</h2>
+            <span class="badge">4 images</span>
+        </div>
+        <div class="grid">
+            <div class="card" data-id="tech_code_abstract_1">
+                <img src="assets/tech/tech_code_abstract_1.webp" alt="Code Abstract 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Code Abstract - V1</div>
+                    <div class="card-meta">Development/Engineering</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="tech_code_abstract_2">
+                <img src="assets/tech/tech_code_abstract_2.webp" alt="Code Abstract 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Code Abstract - V2</div>
+                    <div class="card-meta">Development/Engineering</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="tech_security_shield_1">
+                <img src="assets/tech/tech_security_shield_1.webp" alt="Security Shield 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Security Shield - V1</div>
+                    <div class="card-meta">Cybersecurity</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="tech_security_shield_2">
+                <img src="assets/tech/tech_security_shield_2.webp" alt="Security Shield 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Security Shield - V2</div>
+                    <div class="card-meta">Cybersecurity</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Assets - Investor/Growth -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Investor & Growth</h2>
+            <span class="badge">4 images</span>
+        </div>
+        <div class="grid">
+            <div class="card" data-id="growth_chart_abstract_1">
+                <img src="assets/investor/growth_chart_abstract_1.webp" alt="Growth Chart 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Growth Chart - V1</div>
+                    <div class="card-meta">Business growth</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="growth_chart_abstract_2">
+                <img src="assets/investor/growth_chart_abstract_2.webp" alt="Growth Chart 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Growth Chart - V2</div>
+                    <div class="card-meta">Business growth</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="collab_hands_abstract_1">
+                <img src="assets/collaboration/collab_hands_abstract_1.webp" alt="Collaboration 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Collaboration - V1</div>
+                    <div class="card-meta">Team/Partnership</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="collab_hands_abstract_2">
+                <img src="assets/collaboration/collab_hands_abstract_2.webp" alt="Collaboration 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Collaboration - V2</div>
+                    <div class="card-meta">Team/Partnership</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Lifestyle - All Four Founders -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Community - All Four Founders</h2>
+            <span class="badge">8 images</span>
+        </div>
+        <div class="grid">
+            <div class="card" data-id="all_four_yoga_1">
+                <img src="community/all_four_yoga_1.webp" alt="All Four Yoga 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">All Four - Yoga V1</div>
+                    <div class="card-meta">Outdoor yoga session</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="all_four_yoga_2">
+                <img src="community/all_four_yoga_2.webp" alt="All Four Yoga 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">All Four - Yoga V2</div>
+                    <div class="card-meta">Outdoor yoga session</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="all_four_coffee_1">
+                <img src="community/all_four_coffee_1.webp" alt="All Four Coffee 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">All Four - Coffee V1</div>
+                    <div class="card-meta">Coffee shop hangout</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="all_four_coffee_2">
+                <img src="community/all_four_coffee_2.webp" alt="All Four Coffee 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">All Four - Coffee V2</div>
+                    <div class="card-meta">Coffee shop hangout</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="all_four_gym_1">
+                <img src="community/all_four_gym_1.webp" alt="All Four Gym 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">All Four - Gym V1</div>
+                    <div class="card-meta">Working out together</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="all_four_gym_2">
+                <img src="community/all_four_gym_2.webp" alt="All Four Gym 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">All Four - Gym V2</div>
+                    <div class="card-meta">Working out together</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="all_four_outreach_1">
+                <img src="community/all_four_outreach_1.webp" alt="All Four Outreach 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">All Four - Outreach V1</div>
+                    <div class="card-meta">Community service</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="all_four_outreach_2">
+                <img src="community/all_four_outreach_2.webp" alt="All Four Outreach 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">All Four - Outreach V2</div>
+                    <div class="card-meta">Community service</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community - Jonathan Pairs -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Community - Jonathan + Partners</h2>
+            <span class="badge">12 images</span>
+        </div>
+
+        <div class="founder-group">
+            <div class="founder-name">Jonathan & Bri</div>
+            <div class="grid">
+                <div class="card" data-id="jonathan_bri_coffee_1">
+                    <img src="community/jonathan_bri_coffee_1.webp" alt="Jonathan Bri Coffee 1" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">J&B Coffee V1</div>
+                        <div class="card-meta">Cafe meetup</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="jonathan_bri_coffee_2">
+                    <img src="community/jonathan_bri_coffee_2.webp" alt="Jonathan Bri Coffee 2" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">J&B Coffee V2</div>
+                        <div class="card-meta">Cafe meetup</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="jonathan_bri_gym_1">
+                    <img src="community/jonathan_bri_gym_1.webp" alt="Jonathan Bri Gym 1" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">J&B Gym V1</div>
+                        <div class="card-meta">Workout partners</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="jonathan_bri_gym_2">
+                    <img src="community/jonathan_bri_gym_2.webp" alt="Jonathan Bri Gym 2" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">J&B Gym V2</div>
+                        <div class="card-meta">Workout partners</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="founder-group">
+            <div class="founder-name">Jonathan & Lilly</div>
+            <div class="grid">
+                <div class="card" data-id="jonathan_lilly_yoga_1">
+                    <img src="community/jonathan_lilly_yoga_1.webp" alt="Jonathan Lilly Yoga 1" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">J&L Yoga V1</div>
+                        <div class="card-meta">Partner yoga</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="jonathan_lilly_yoga_2">
+                    <img src="community/jonathan_lilly_yoga_2.webp" alt="Jonathan Lilly Yoga 2" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">J&L Yoga V2</div>
+                        <div class="card-meta">Partner yoga</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="jonathan_lilly_outreach_1">
+                    <img src="community/jonathan_lilly_outreach_1.webp" alt="Jonathan Lilly Outreach 1" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">J&L Outreach V1</div>
+                        <div class="card-meta">Community service</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="jonathan_lilly_outreach_2">
+                    <img src="community/jonathan_lilly_outreach_2.webp" alt="Jonathan Lilly Outreach 2" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">J&L Outreach V2</div>
+                        <div class="card-meta">Community service</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="founder-group">
+            <div class="founder-name">Jonathan & Alicia</div>
+            <div class="grid">
+                <div class="card" data-id="jonathan_alicia_coffee_1">
+                    <img src="community/jonathan_alicia_coffee_1.webp" alt="Jonathan Alicia Coffee 1" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">J&A Coffee V1</div>
+                        <div class="card-meta">Cafe conversation</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="jonathan_alicia_coffee_2">
+                    <img src="community/jonathan_alicia_coffee_2.webp" alt="Jonathan Alicia Coffee 2" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">J&A Coffee V2</div>
+                        <div class="card-meta">Cafe conversation</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="jonathan_alicia_gym_1">
+                    <img src="community/jonathan_alicia_gym_1.webp" alt="Jonathan Alicia Gym 1" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">J&A Gym V1</div>
+                        <div class="card-meta">Fitness session</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-id="jonathan_alicia_gym_2">
+                    <img src="community/jonathan_alicia_gym_2.webp" alt="Jonathan Alicia Gym 2" onclick="openLightbox(this)">
+                    <div class="card-info">
+                        <div class="card-title">J&A Gym V2</div>
+                        <div class="card-meta">Fitness session</div>
+                        <div class="card-actions">
+                            <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                            <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community - Girls Together -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Community - Girls Together</h2>
+            <span class="badge">8 images</span>
+        </div>
+        <div class="grid">
+            <div class="card" data-id="girls_yoga_1">
+                <img src="community/girls_yoga_1.webp" alt="Girls Yoga 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Girls Yoga V1</div>
+                    <div class="card-meta">Alicia, Bri, Lilly</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="girls_yoga_2">
+                <img src="community/girls_yoga_2.webp" alt="Girls Yoga 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Girls Yoga V2</div>
+                    <div class="card-meta">Alicia, Bri, Lilly</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="girls_coffee_1">
+                <img src="community/girls_coffee_1.webp" alt="Girls Coffee 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Girls Coffee V1</div>
+                    <div class="card-meta">Brunch date</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="girls_coffee_2">
+                <img src="community/girls_coffee_2.webp" alt="Girls Coffee 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Girls Coffee V2</div>
+                    <div class="card-meta">Brunch date</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="girls_gym_1">
+                <img src="community/girls_gym_1.webp" alt="Girls Gym 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Girls Gym V1</div>
+                    <div class="card-meta">Workout squad</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="girls_gym_2">
+                <img src="community/girls_gym_2.webp" alt="Girls Gym 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Girls Gym V2</div>
+                    <div class="card-meta">Workout squad</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="girls_outreach_1">
+                <img src="community/girls_outreach_1.webp" alt="Girls Outreach 1" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Girls Outreach V1</div>
+                    <div class="card-meta">Women helping women</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-id="girls_outreach_2">
+                <img src="community/girls_outreach_2.webp" alt="Girls Outreach 2" onclick="openLightbox(this)">
+                <div class="card-info">
+                    <div class="card-title">Girls Outreach V2</div>
+                    <div class="card-meta">Women helping women</div>
+                    <div class="card-actions">
+                        <button class="btn btn-select" onclick="toggleSelect(this)">Select</button>
+                        <button class="btn btn-view" onclick="openLightbox(this.closest('.card').querySelector('img'))">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selection Summary -->
+    <div class="selection-summary">
+        <h3>Selection Summary</h3>
+        <div class="selection-count" id="selection-count">0</div>
+        <p style="color: #888; font-size: 0.9rem;">images selected</p>
+        <button class="export-btn" onclick="exportSelections()">Export Selections</button>
+    </div>
+
+    <!-- QC Panel -->
+    <div class="qc-panel">
+        <h3>QC Checklist</h3>
+        <div class="qc-item"><input type="checkbox" id="qc-identity"> <label for="qc-identity">Identity match</label></div>
+        <div class="qc-item"><input type="checkbox" id="qc-proportions"> <label for="qc-proportions">Proportions correct</label></div>
+        <div class="qc-item"><input type="checkbox" id="qc-lighting"> <label for="qc-lighting">Lighting consistent</label></div>
+        <div class="qc-item"><input type="checkbox" id="qc-realism"> <label for="qc-realism">Realistic (no plastic skin)</label></div>
+        <div class="qc-item"><input type="checkbox" id="qc-gaze"> <label for="qc-gaze">Not looking at camera</label></div>
+        <div class="qc-item"><input type="checkbox" id="qc-artifacts"> <label for="qc-artifacts">No artifacts</label></div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <script>
+        let selections = new Set();
+
+        function toggleSelect(btn) {
+            const card = btn.closest('.card');
+            const id = card.dataset.id;
+
+            if (card.classList.contains('selected')) {
+                card.classList.remove('selected');
+                selections.delete(id);
+                btn.textContent = 'Select';
+            } else {
+                card.classList.add('selected');
+                selections.add(id);
+                btn.textContent = 'Deselect';
+            }
+
+            updateCount();
+        }
+
+        function updateCount() {
+            document.getElementById('selection-count').textContent = selections.size;
+        }
+
+        function openLightbox(img) {
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        function exportSelections() {
+            const data = {
+                timestamp: new Date().toISOString(),
+                selections: Array.from(selections),
+                count: selections.size
+            };
+
+            const blob = new Blob([JSON.stringify(data, null, 2)], {type: 'application/json'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'founder_image_selections.json';
+            a.click();
+            URL.revokeObjectURL(url);
+
+            alert('Selections exported! Share this file to proceed with optimization and S3 upload.');
+        }
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>
