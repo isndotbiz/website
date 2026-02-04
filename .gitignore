@@ -7,6 +7,12 @@ node_modules/
 .env
 .env.local
 .env.*.local
+.env.production
+
+# Templates are safe to commit
+!.env.tpl
+!.env.example
+!.env.template
 
 # OS Files
 .DS_Store
@@ -52,3 +58,13 @@ __pycache__/
 # Temporary generated files
 b64data.txt
 1/
+
+# Generated images (all hosted on S3: isnbiz-assets-1769962280)
+generated_founders/
+publish/
+final-desktop.png
+final-mobile.png
+screenshots/
+
+# Local Netlify folder
+.netlify
