@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="LLM Optimization Framework - Research and evaluation framework for AI model behavior testing">
-    <meta name="keywords" content="LLM, AI evaluation, optimization, security testing, iSN.BiZ">
+    <meta name="description" content="LLM Optimization Framework - Enterprise research and evaluation framework for AI model behavior testing, security assessment, and structured technique cataloging with interactive dashboards">
+    <meta name="keywords" content="LLM, AI evaluation, optimization, security testing, model behavior, Flask, dashboard, iSN.BiZ">
+    <meta name="author" content="iSN.BiZ Inc">
+    <meta property="og:title" content="LLM Optimization Framework | iSN.BiZ Inc">
+    <meta property="og:description" content="Research and evaluation framework for AI model behavior testing with interactive dashboards">
+    <meta property="og:type" content="website">
     <title>LLM Optimization Framework | iSN.BiZ Inc</title>
     <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
     <link rel="stylesheet" href="styles.css">
@@ -14,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="nav">
         <div class="container nav-container">
             <div class="logo">
@@ -21,79 +26,105 @@
                     <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
                 </a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#solutions">Solutions</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="index.html#team">Team</a></li>
-                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="primary-navigation">
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="investors.html">Investors</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- Project Hero -->
     <section class="hero" style="min-height: 70vh; padding-top: 120px;">
         <div class="hero-background"></div>
         <div class="container">
             <div class="section-header centered">
                 <span class="section-label">AI Research</span>
                 <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">LLM Optimization Framework</h1>
-                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">Research and evaluation framework for testing LLM behavior, cataloging techniques, and visualizing results through dashboards and mindmaps — providing repeatable evaluation and security testing for model behavior.</p>
+                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">Enterprise research and evaluation framework for testing LLM behavior, cataloging techniques, and visualizing results through interactive dashboards and mindmaps - providing repeatable evaluation and security testing for production AI systems.</p>
             </div>
+
+            <!-- Key Metrics -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; max-width: 900px; margin: 3rem auto; text-align: center;">
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">Flask</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Dashboard</div>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">OPML</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Mindmaps</div>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">SQLite</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Storage</div>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">JSON</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Export</div>
+                </div>
+            </div>
+
             <div style="max-width: 1000px; margin: 3rem auto;">
-                <img src="assets/projects/llm_1.webp" alt="LLM optimization dashboard" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/llm_1.webp" alt="LLM optimization dashboard interface" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
             </div>
         </div>
     </section>
 
+    <!-- Investor Summary -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <div class="about-grid">
                 <div>
                     <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Investor Summary</h2>
                     <p class="lead">As AI adoption accelerates, companies need repeatable evaluation and security testing for model behavior. This framework provides a structured approach to catalog techniques, record evaluations, and present results in a dashboard-friendly format suitable for research and decision making.</p>
+                    <p style="margin-top: 1rem; color: var(--color-light);">The $300B+ enterprise AI market demands rigorous evaluation tooling. By combining structured technique taxonomy with interactive visualization, we enable organizations to understand, test, and improve their AI systems with confidence.</p>
                 </div>
                 <div>
-                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Product Scope</h3>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Product Capabilities</h3>
                     <ul style="list-style: none; padding: 0;">
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Flask dashboard for evaluation stats</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Technique reference library</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Mindmap and visualization assets</li>
-                        <li style="padding: 0.5rem 0;">✓ Deployment and verification scripts</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Flask dashboard for evaluation stats, reports, and OPML browsing</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Technique reference library and data generation scripts</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Mindmap and visualization assets for interactive review</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Deployment and verification scripts for hosting and access</li>
+                        <li style="padding: 0.5rem 0;">&#10003; Integration-ready for evaluation databases and pipelines</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Framework Components -->
     <section class="section">
         <div class="container">
             <h2 class="section-title centered" style="margin-bottom: 3rem;">Framework Components</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                <div class="portfolio-card">
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; height: 200px; display: flex; align-items: center; justify-content: center;">
-                        <h3 style="color: var(--color-cyan); margin: 0;">Interactive Dashboard</h3>
-                    </div>
-                    <h3 style="margin-top: 1rem;">Evaluation Stats</h3>
-                    <p>Real-time visualization of LLM behavior patterns and test results.</p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#128202;</div>
+                    <h3 style="margin-top: 1rem; color: var(--color-cyan);">Interactive Dashboard</h3>
+                    <p style="color: var(--color-light);">Real-time visualization of LLM behavior patterns and test results. Track evaluation metrics, view reports, and browse technique taxonomies.</p>
                 </div>
-                <div class="portfolio-card">
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; height: 200px; display: flex; align-items: center; justify-content: center;">
-                        <h3 style="color: var(--color-cyan); margin: 0;">Technique Library</h3>
-                    </div>
-                    <h3 style="margin-top: 1rem;">Structured Taxonomy</h3>
-                    <p>Comprehensive catalog of evaluation techniques and methodologies.</p>
+                <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#128218;</div>
+                    <h3 style="margin-top: 1rem; color: var(--color-cyan);">Technique Library</h3>
+                    <p style="color: var(--color-light);">Comprehensive catalog of evaluation techniques and methodologies. Structured taxonomy for consistent testing across models and versions.</p>
                 </div>
-                <div class="portfolio-card">
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; height: 200px; display: flex; align-items: center; justify-content: center;">
-                        <h3 style="color: var(--color-cyan); margin: 0;">OPML Mindmaps</h3>
-                    </div>
-                    <h3 style="margin-top: 1rem;">Interactive Review</h3>
-                    <p>Visualization assets for executive review and analysis.</p>
+                <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#127912;</div>
+                    <h3 style="margin-top: 1rem; color: var(--color-cyan);">OPML Mindmaps</h3>
+                    <p style="color: var(--color-light);">Visualization assets for executive review and analysis. Interactive mindmaps that make complex evaluation data accessible to stakeholders.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Technology Stack -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <h2 class="section-title centered">Technology Stack</h2>
@@ -104,35 +135,86 @@
                 <span class="tag">HTML/JS</span>
                 <span class="tag">OPML</span>
                 <span class="tag">JSON</span>
+                <span class="tag">Jinja2</span>
+                <span class="tag">Bootstrap</span>
             </div>
 
             <div style="margin-top: 3rem;">
-                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Differentiation</h3>
-                <ul style="font-size: 1.1rem; line-height: 1.8;">
-                    <li>Combines structured technique taxonomy with interactive visualization</li>
-                    <li>Produces artifacts suitable for internal research and executive review</li>
-                    <li>Built to integrate with evaluation databases and pipelines</li>
-                </ul>
+                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem; text-align: center;">Differentiation and Moat</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Structured Taxonomy</h4>
+                        <p>Combines technique cataloging with interactive visualization for comprehensive understanding.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Executive-Ready</h4>
+                        <p>Produces artifacts suitable for internal research and executive review with clear visualizations.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Pipeline Integration</h4>
+                        <p>Built to integrate with evaluation databases and existing AI/ML pipelines seamlessly.</p>
+                    </div>
+                </div>
             </div>
 
             <div style="margin-top: 3rem;">
-                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Status</h3>
-                <p style="font-size: 1.1rem; line-height: 1.8;">Documentation and tooling are present for dashboard deployment and technique cataloging. Evaluation results can be populated from connected databases when available.</p>
+                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem; text-align: center;">Commercial Use Cases</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">AI Security Teams</h4>
+                        <p>Model behavior testing and security assessment for enterprise AI deployments.</p>
+                    </div>
+                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Research Organizations</h4>
+                        <p>Academic and corporate research requiring structured evaluation frameworks.</p>
+                    </div>
+                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Enterprise AI Teams</h4>
+                        <p>Internal tooling for AI model evaluation, comparison, and decision support.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Evidence of Execution -->
     <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 3rem;">Evidence of Execution</h2>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.1), rgba(95, 223, 223, 0.05)); padding: 1.5rem; border-radius: 8px; text-align: center; border: 1px solid rgba(30, 159, 242, 0.2);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Dashboard</h4>
+                    <p style="font-size: 0.9rem;">app_final.py Flask implementation</p>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.1), rgba(95, 223, 223, 0.05)); padding: 1.5rem; border-radius: 8px; text-align: center; border: 1px solid rgba(30, 159, 242, 0.2);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Technique Library</h4>
+                    <p style="font-size: 0.9rem;">TECHNIQUES_REFERENCE.md and docs</p>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.1), rgba(95, 223, 223, 0.05)); padding: 1.5rem; border-radius: 8px; text-align: center; border: 1px solid rgba(30, 159, 242, 0.2);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Visualizations</h4>
+                    <p style="font-size: 0.9rem;">techniques_mindmap.html assets</p>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.1), rgba(95, 223, 223, 0.05)); padding: 1.5rem; border-radius: 8px; text-align: center; border: 1px solid rgba(30, 159, 242, 0.2);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Deployment</h4>
+                    <p style="font-size: 0.9rem;">setup_mindmap.sh and verification</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: var(--color-charcoal);">
         <div class="container" style="text-align: center;">
             <h2 class="section-title">Interested in This Solution?</h2>
-            <p class="section-description" style="margin-bottom: 2rem;">Learn how we can build LLM evaluation and optimization systems.</p>
+            <p class="section-description" style="margin-bottom: 2rem;">Learn how we can build LLM evaluation and optimization systems for your AI initiatives.</p>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="index.html#contact" class="btn btn-primary"><span>Schedule a Demo</span></a>
+                <a href="contact.html" class="btn btn-primary"><span>Schedule a Demo</span></a>
                 <a href="portfolio.html" class="btn btn-outline"><span>View All Projects</span></a>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -148,20 +230,21 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#solutions">Solutions</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Solutions</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="index.html#team">Team</a></li>
+                        <li><a href="investors.html">Investors</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Ready to transform your business?</p>
-                    <a href="index.html#contact" class="btn btn-primary" style="margin-top: 1rem;"><span>Get in Touch</span></a>
+                    <p>9030 35th Ave SW, Suite 100<br>Seattle, WA 98126</p>
+                    <p>Local: (206) 785-9782<br>Toll-Free: (800) 986-4614</p>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem;"><span>Get in Touch</span></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved. | Founded 2015</p>
+                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved. | Founded July 8, 2015</p>
             </div>
         </div>
     </footer>

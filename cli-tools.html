@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CLI Engineering Standards - Internal blueprint for rapid, reliable command-line tool delivery">
-    <meta name="keywords" content="CLI, engineering standards, TypeScript, testing, iSN.BiZ">
+    <meta name="description" content="CLI Engineering Standards - Internal blueprint for rapid, reliable command-line tool delivery with standardized project structure, testing, and quality gates">
+    <meta name="keywords" content="CLI, engineering standards, TypeScript, testing, quality gates, developer experience, iSN.BiZ">
+    <meta name="author" content="iSN.BiZ Inc">
+    <meta property="og:title" content="CLI Engineering Standards | iSN.BiZ Inc">
+    <meta property="og:description" content="Internal blueprint that standardizes project structure, testing, and quality gates for rapid tooling delivery">
+    <meta property="og:type" content="website">
     <title>CLI Engineering Standards | iSN.BiZ Inc</title>
     <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
     <link rel="stylesheet" href="styles.css">
@@ -22,12 +26,17 @@
                     <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
                 </a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#solutions">Solutions</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="index.html#team">Team</a></li>
-                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="primary-navigation">
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="investors.html">Investors</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -39,11 +48,31 @@
             <div class="section-header centered">
                 <span class="section-label">Engineering Excellence</span>
                 <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">CLI Engineering Standards</h1>
-                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">Internal CLI blueprint that standardizes project structure, testing, and quality gates for rapid tooling delivery — operational excellence as a competitive moat.</p>
+                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">Internal CLI blueprint that standardizes project structure, testing, and quality gates for rapid tooling delivery - operational excellence as a competitive moat that reduces engineering overhead and improves delivery speed across the portfolio.</p>
+            </div>
+
+            <!-- Key Metrics -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; max-width: 900px; margin: 3rem auto; text-align: center;">
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">TS</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">TypeScript</div>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">100%</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Coverage Target</div>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">CI/CD</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Integrated</div>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">MIT</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Licensed</div>
+                </div>
             </div>
 
             <div style="max-width: 1000px; margin: 3rem auto;">
-                <img src="assets/projects/cli_1.webp" alt="CLI engineering standards and scaffolding" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/cli_1.webp" alt="CLI engineering standards and scaffolding" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
             </div>
         </div>
     </section>
@@ -55,49 +84,51 @@
                 <div>
                     <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Investor Summary</h2>
                     <p class="lead">Operational excellence is a competitive moat. This repository codifies internal standards for building and shipping reliable command-line tools, reducing engineering overhead and improving delivery speed across the portfolio.</p>
+                    <p style="margin-top: 1rem; color: var(--color-light);">By standardizing project structure, testing strategies, and quality gates, we enable consistent tooling delivery that scales with the organization. Every new CLI tool starts from a proven foundation, eliminating boilerplate decisions and accelerating time-to-production.</p>
                 </div>
                 <div>
                     <h3 style="color: var(--color-blue); margin-bottom: 1rem;">What Is Included</h3>
                     <ul style="list-style: none; padding: 0;">
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Standardized CLI structure and entrypoint conventions</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Testing strategy and coverage targets</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Build, lint, and formatting workflows</li>
-                        <li style="padding: 0.5rem 0;">✓ Conventional commit and PR standards</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Standardized CLI structure and entrypoint conventions</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Testing strategy and coverage targets</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Build, lint, and formatting workflows</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Conventional commit and PR standards</li>
+                        <li style="padding: 0.5rem 0;">&#10003; CI/CD integration patterns</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Screenshots Gallery -->
+    <!-- Framework Components -->
     <section class="section">
         <div class="container">
             <h2 class="section-title centered" style="margin-bottom: 3rem;">Framework Components</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                <div class="portfolio-card">
-                    <img src="assets/projects/cli_2.webp" alt="Standardized project structure" style="width: 100%; border-radius: 8px;">
-                    <h3 style="margin-top: 1rem;">Project Structure</h3>
-                    <p>Defined patterns for commands, libraries, and test organization.</p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#128193;</div>
+                    <h3 style="margin-top: 1rem; color: var(--color-cyan);">Project Structure</h3>
+                    <p style="color: var(--color-light);">Defined patterns for commands, libraries, and test organization. Consistent directory layout across all CLI tools in the portfolio.</p>
                 </div>
-                <div class="portfolio-card">
-                    <img src="assets/projects/cli_3.webp" alt="Testing and quality gates" style="width: 100%; border-radius: 8px;">
-                    <h3 style="margin-top: 1rem;">Quality Standards</h3>
-                    <p>Comprehensive testing strategy with coverage targets and CI/CD integration.</p>
+                <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#10004;</div>
+                    <h3 style="margin-top: 1rem; color: var(--color-cyan);">Quality Standards</h3>
+                    <p style="color: var(--color-light);">Comprehensive testing strategy with coverage targets and CI/CD integration. Quality gates that prevent regressions.</p>
                 </div>
-                <div class="portfolio-card">
-                    <img src="assets/projects/cli_4.webp" alt="Developer workflow automation" style="width: 100%; border-radius: 8px;">
-                    <h3 style="margin-top: 1rem;">Developer Experience</h3>
-                    <p>Automated linting, formatting, and build processes for rapid iteration.</p>
+                <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#9889;</div>
+                    <h3 style="margin-top: 1rem; color: var(--color-cyan);">Developer Experience</h3>
+                    <p style="color: var(--color-light);">Automated linting, formatting, and build processes for rapid iteration. Zero-config development environment setup.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Technology Stack -->
+    <!-- Expected Structure -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <h2 class="section-title centered">Expected Structure</h2>
-            <div style="background: rgba(30, 159, 242, 0.05); padding: 2rem; border-radius: 8px; margin: 2rem auto; max-width: 600px; font-family: var(--font-mono); font-size: 0.95rem;">
+            <div style="background: rgba(30, 159, 242, 0.05); padding: 2rem; border-radius: 8px; margin: 2rem auto; max-width: 600px; font-family: var(--font-mono); font-size: 0.95rem; border: 1px solid rgba(30, 159, 242, 0.2);">
                 <pre style="margin: 0; color: var(--color-cyan);">src/main.ts           CLI handler
 bin/cli.ts            Binary entry
 src/commands/         Command modules
@@ -106,43 +137,99 @@ tests/                Test suite</pre>
             </div>
 
             <div style="margin-top: 3rem;">
-                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Developer Commands</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
-                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-                        <code style="color: var(--color-cyan); font-size: 1.1rem;">npm install</code>
+                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem; text-align: center;">Developer Commands</h3>
+                <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 1rem; margin-top: 1.5rem;">
+                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1rem; border-radius: 8px; text-align: center; border: 1px solid rgba(95, 223, 223, 0.2);">
+                        <code style="color: var(--color-cyan); font-size: 0.9rem;">npm install</code>
                     </div>
-                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-                        <code style="color: var(--color-cyan); font-size: 1.1rem;">npm run dev</code>
+                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1rem; border-radius: 8px; text-align: center; border: 1px solid rgba(95, 223, 223, 0.2);">
+                        <code style="color: var(--color-cyan); font-size: 0.9rem;">npm run dev</code>
                     </div>
-                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-                        <code style="color: var(--color-cyan); font-size: 1.1rem;">npm run build</code>
+                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1rem; border-radius: 8px; text-align: center; border: 1px solid rgba(95, 223, 223, 0.2);">
+                        <code style="color: var(--color-cyan); font-size: 0.9rem;">npm run build</code>
                     </div>
-                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-                        <code style="color: var(--color-cyan); font-size: 1.1rem;">npm test</code>
+                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1rem; border-radius: 8px; text-align: center; border: 1px solid rgba(95, 223, 223, 0.2);">
+                        <code style="color: var(--color-cyan); font-size: 0.9rem;">npm test</code>
                     </div>
-                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-                        <code style="color: var(--color-cyan); font-size: 1.1rem;">npm run lint</code>
+                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1rem; border-radius: 8px; text-align: center; border: 1px solid rgba(95, 223, 223, 0.2);">
+                        <code style="color: var(--color-cyan); font-size: 0.9rem;">npm run lint</code>
                     </div>
-                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1rem; border-radius: 8px; text-align: center;">
-                        <code style="color: var(--color-cyan); font-size: 1.1rem;">npm run format</code>
+                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1rem; border-radius: 8px; text-align: center; border: 1px solid rgba(95, 223, 223, 0.2);">
+                        <code style="color: var(--color-cyan); font-size: 0.9rem;">npm run format</code>
                     </div>
                 </div>
             </div>
 
             <div style="margin-top: 3rem;">
-                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Status</h3>
-                <p style="font-size: 1.1rem; line-height: 1.8;">This repository contains the standards and scaffolding documentation. Application code can be added following the documented patterns, ensuring consistency across all CLI tools in the portfolio.</p>
+                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem; text-align: center;">Differentiation and Moat</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Consistency</h4>
+                        <p>Every CLI tool follows identical patterns, reducing cognitive load for developers.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Speed</h4>
+                        <p>New tools start from proven foundation, eliminating boilerplate decisions.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Quality</h4>
+                        <p>Built-in quality gates prevent regressions and ensure production readiness.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem; text-align: center;">Commercial Use Cases</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Internal Tooling</h4>
+                        <p>Rapid development of internal CLI tools with enterprise-grade quality.</p>
+                    </div>
+                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Client Deliverables</h4>
+                        <p>Consistent CLI tools for client projects with professional polish.</p>
+                    </div>
+                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Open Source</h4>
+                        <p>Foundation for open source CLI tool releases with community standards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evidence of Execution -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 3rem;">Evidence of Execution</h2>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.1), rgba(95, 223, 223, 0.05)); padding: 1.5rem; border-radius: 8px; text-align: center; border: 1px solid rgba(30, 159, 242, 0.2);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Standards Docs</h4>
+                    <p style="font-size: 0.9rem;">AGENTS.md and CLAUDE.md guidelines</p>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.1), rgba(95, 223, 223, 0.05)); padding: 1.5rem; border-radius: 8px; text-align: center; border: 1px solid rgba(30, 159, 242, 0.2);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Structure Patterns</h4>
+                    <p style="font-size: 0.9rem;">Defined layouts for all tool types</p>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.1), rgba(95, 223, 223, 0.05)); padding: 1.5rem; border-radius: 8px; text-align: center; border: 1px solid rgba(30, 159, 242, 0.2);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Test Framework</h4>
+                    <p style="font-size: 0.9rem;">Coverage targets and CI integration</p>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.1), rgba(95, 223, 223, 0.05)); padding: 1.5rem; border-radius: 8px; text-align: center; border: 1px solid rgba(30, 159, 242, 0.2);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Quality Gates</h4>
+                    <p style="font-size: 0.9rem;">Lint, format, and build workflows</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="section">
+    <section class="section" style="background: var(--color-charcoal);">
         <div class="container" style="text-align: center;">
             <h2 class="section-title">Interested in This Solution?</h2>
             <p class="section-description" style="margin-bottom: 2rem;">Learn how we can establish engineering standards and accelerate your tooling development.</p>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="index.html#contact" class="btn btn-primary"><span>Schedule a Demo</span></a>
+                <a href="contact.html" class="btn btn-primary"><span>Schedule a Demo</span></a>
                 <a href="portfolio.html" class="btn btn-outline"><span>View All Projects</span></a>
             </div>
         </div>
@@ -164,20 +251,21 @@ tests/                Test suite</pre>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#solutions">Solutions</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Solutions</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="index.html#team">Team</a></li>
+                        <li><a href="investors.html">Investors</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Ready to transform your business?</p>
-                    <a href="index.html#contact" class="btn btn-primary" style="margin-top: 1rem;"><span>Get in Touch</span></a>
+                    <p>9030 35th Ave SW, Suite 100<br>Seattle, WA 98126</p>
+                    <p>Local: (206) 785-9782<br>Toll-Free: (800) 986-4614</p>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem;"><span>Get in Touch</span></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved. | Founded 2015</p>
+                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved. | Founded July 8, 2015</p>
             </div>
         </div>
     </footer>

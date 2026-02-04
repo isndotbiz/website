@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SpiritAtlas - Privacy-first Android app for spiritual and relationship insights">
-    <meta name="keywords" content="Android, mobile app, spiritual wellness, Kotlin, Jetpack Compose, iSN.BiZ">
+    <meta name="description" content="SpiritAtlas Mobile Platform - Privacy-first Android app delivering spiritual and relationship insights with 100+ custom visual assets and premium subscription monetization">
+    <meta name="keywords" content="Android, mobile app, spiritual wellness, Kotlin, Jetpack Compose, privacy-first, subscription, iSN.BiZ">
+    <meta name="author" content="iSN.BiZ Inc">
+    <meta property="og:title" content="SpiritAtlas Mobile Platform | iSN.BiZ Inc">
+    <meta property="og:description" content="Privacy-first Android app for spiritual and relationship insights">
+    <meta property="og:type" content="website">
     <title>SpiritAtlas Mobile Platform | iSN.BiZ Inc</title>
     <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
     <link rel="stylesheet" href="styles.css">
@@ -14,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="nav">
         <div class="container nav-container">
             <div class="logo">
@@ -21,80 +26,137 @@
                     <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
                 </a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#solutions">Solutions</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="index.html#team">Team</a></li>
-                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="primary-navigation">
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="investors.html">Investors</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- Project Hero -->
     <section class="hero" style="min-height: 70vh; padding-top: 120px;">
         <div class="hero-background"></div>
         <div class="container">
             <div class="section-header centered">
                 <span class="section-label">Mobile Excellence</span>
                 <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">SpiritAtlas Mobile Platform</h1>
-                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">Privacy-first Android application delivering spiritual and relationship insights using modern mobile architecture and consent-gated AI assistance — premium mobile experience with 100+ custom visual assets.</p>
+                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">Privacy-first Android application delivering spiritual and relationship insights using modern mobile architecture and consent-gated AI assistance — premium mobile experience with 100+ custom visual assets designed for subscription monetization.</p>
             </div>
+
+            <!-- Key Metrics -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; max-width: 900px; margin: 3rem auto; text-align: center;">
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">100+</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">Custom Assets</div>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">SDK 34</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">Android Target</div>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">Privacy</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">First Design</div>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">Premium</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">Subscription</div>
+                </div>
+            </div>
+
             <div style="max-width: 600px; margin: 3rem auto;">
-                <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/androidaps_health.webp" alt="SpiritAtlas Android application" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/androidaps_health.webp" alt="SpiritAtlas Android application interface" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
             </div>
         </div>
     </section>
 
+    <!-- Investor Summary -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <div class="about-grid">
                 <div>
                     <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Investor Summary</h2>
-                    <p class="lead">SpiritAtlas is a premium mobile experience that blends multiple spiritual systems with a high-end visual identity and privacy-first AI integration. The product emphasizes trust, design quality, and modular engineering, making it suitable for subscription or premium content monetization.</p>
+                    <p class="lead">SpiritAtlas is a premium mobile experience that blends multiple spiritual systems with a high-end visual identity and privacy-first AI integration. The product emphasizes trust, design quality, and modular engineering, making it ideal for subscription or premium content monetization.</p>
+                    <p style="margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.8;">The wellness app market continues to grow as users seek personalized spiritual guidance. Our platform differentiates through premium design, explicit consent gating, and a modular architecture that enables rapid feature expansion while maintaining user trust.</p>
                 </div>
                 <div>
-                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Key Capabilities</h3>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Product Capabilities</h3>
                     <ul style="list-style: none; padding: 0;">
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Multi-module Android architecture</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Numerology, astrology, ayurveda engines</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Consent gates and local-first behavior</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Encrypted storage and SSL pinning</li>
-                        <li style="padding: 0.5rem 0;">✓ 100+ custom optimized visual assets</li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Multi-module Android app with clean boundaries and testable domain logic</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Core engines for numerology, astrology, ayurveda, and human design</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Consent gates and local-first behavior for any cloud AI usage</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Encrypted storage and SSL pinning for security-sensitive workflows</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>100+ custom visual assets optimized across Android density tiers</span>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Mobile Architecture -->
     <section class="section">
         <div class="container">
             <h2 class="section-title centered" style="margin-bottom: 3rem;">Mobile Architecture</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;">
                 <div class="portfolio-card">
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; height: 200px; display: flex; align-items: center; justify-content: center;">
-                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center;">Clean Architecture</h3>
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#127959;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Clean Architecture</h3>
                     </div>
                     <h3 style="margin-top: 1rem;">Modular Design</h3>
-                    <p>Multi-module structure with testable domain logic and clear boundaries.</p>
+                    <p>Multi-module structure with testable domain logic and clear separation of concerns.</p>
                 </div>
                 <div class="portfolio-card">
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; height: 200px; display: flex; align-items: center; justify-content: center;">
-                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center;">Privacy-First</h3>
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128274;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Privacy-First</h3>
                     </div>
                     <h3 style="margin-top: 1rem;">Security Posture</h3>
-                    <p>Strong privacy with consent gating, encrypted storage, and SSL pinning.</p>
+                    <p>Strong privacy with consent gating, encrypted storage, and certificate pinning.</p>
                 </div>
                 <div class="portfolio-card">
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; height: 200px; display: flex; align-items: center; justify-content: center;">
-                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center;">Premium Design</h3>
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#127912;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Premium Design</h3>
                     </div>
                     <h3 style="margin-top: 1rem;">Visual Excellence</h3>
-                    <p>Proprietary asset library optimized across Android density tiers.</p>
+                    <p>Proprietary asset library optimized across all Android screen density tiers.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128301;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Spiritual Engines</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Calculation Core</h3>
+                    <p>Native engines for numerology, astrology, ayurveda, and human design systems.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Technology Stack -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <h2 class="section-title centered">Technology Stack</h2>
@@ -105,48 +167,96 @@
                 <span class="tag">Hilt</span>
                 <span class="tag">WorkManager</span>
                 <span class="tag">Gradle 8.x</span>
+                <span class="tag">EncryptedSharedPreferences</span>
+                <span class="tag">SSL Pinning</span>
             </div>
 
             <div style="margin-top: 3rem;">
-                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Differentiation</h3>
-                <ul style="font-size: 1.1rem; line-height: 1.8;">
-                    <li>Strong privacy posture with explicit consent gating and encrypted storage</li>
-                    <li>Robust modular architecture enabling rapid feature expansion</li>
-                    <li>Proprietary visual asset library with premium design quality</li>
-                </ul>
-            </div>
-
-            <div style="margin-top: 3rem;">
-                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Commercial Use Cases</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Wellness Subscriptions</h4>
-                        <p>Premium spiritual wellness app with recurring revenue model.</p>
+                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Differentiation and Moat</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Privacy Leadership</h4>
+                        <p>Strong privacy posture with explicit consent gating and encrypted storage — building user trust as a competitive advantage.</p>
                     </div>
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Relationship Insights</h4>
-                        <p>Personalized compatibility analysis and relationship guidance.</p>
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Modular Architecture</h4>
+                        <p>Robust multi-module design enabling rapid feature expansion without architecture debt or regression risk.</p>
                     </div>
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Enterprise Licensing</h4>
-                        <p>White-label platform for wellness companies seeking premium UX.</p>
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Visual Asset Library</h4>
+                        <p>Proprietary 100+ asset collection with premium design quality across density tiers — difficult to replicate.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Commercial Use Cases -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 2rem;">Commercial Use Cases</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Multiple monetization paths from direct consumer subscriptions to enterprise white-labeling.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#128178;</div>
+                    <h4 style="color: var(--color-blue); margin-bottom: 1rem;">Wellness Subscriptions</h4>
+                    <p>Premium spiritual wellness app with recurring subscription revenue. Monthly/yearly tiers with expanded insights and personalization.</p>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#128150;</div>
+                    <h4 style="color: var(--color-blue); margin-bottom: 1rem;">Relationship Insights</h4>
+                    <p>Personalized compatibility analysis and relationship guidance. Premium couples features with synastry and compatibility reports.</p>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 2rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#127970;</div>
+                    <h4 style="color: var(--color-blue); margin-bottom: 1rem;">Enterprise Licensing</h4>
+                    <p>White-label platform for wellness companies seeking premium UX. Custom branding and feature configuration available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evidence of Execution -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 2rem;">Evidence of Execution</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Production-grade mobile architecture with comprehensive testing and documentation.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">app/</div>
+                    <p style="font-size: 0.95rem; margin: 0;">Host module and navigation</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">core/</div>
+                    <p style="font-size: 0.95rem; margin: 0;">Reusable calculation and UI</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">domain/</div>
+                    <p style="font-size: 0.95rem; margin: 0;">Business rules and models</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">feature/</div>
+                    <p style="font-size: 0.95rem; margin: 0;">Feature modules</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
     <section class="section">
         <div class="container" style="text-align: center;">
             <h2 class="section-title">Interested in This Solution?</h2>
             <p class="section-description" style="margin-bottom: 2rem;">Learn how we can build premium mobile applications for your business.</p>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="index.html#contact" class="btn btn-primary"><span>Schedule a Demo</span></a>
+                <a href="contact.html" class="btn btn-primary"><span>Schedule a Demo</span></a>
                 <a href="portfolio.html" class="btn btn-outline"><span>View All Projects</span></a>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -162,20 +272,21 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#solutions">Solutions</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="index.html#team">Team</a></li>
+                        <li><a href="investors.html">Investors</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Ready to transform your business?</p>
-                    <a href="index.html#contact" class="btn btn-primary" style="margin-top: 1rem;"><span>Get in Touch</span></a>
+                    <p>9030 35th Ave SW, Suite 100<br>Seattle, WA 98126</p>
+                    <p>Local: (206) 785-9782<br>Toll-Free: (800) 986-4614</p>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem;"><span>Get in Touch</span></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved. | Founded 2015</p>
+                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved. | Founded July 8, 2015</p>
             </div>
         </div>
     </footer>

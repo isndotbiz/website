@@ -3,23 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lilly - Treasurer & CFO of iSN.BiZ Inc. Leading financial strategy, resource optimization, and sustainable growth through data-driven decision making.">
-    <meta name="keywords" content="Lilly, CFO, Treasurer, finance, strategic planning, leadership, iSN.BiZ">
+    <meta name="description" content="Lilly - Treasurer & CFO of iSN.BiZ Inc. A strategic financial leader driving sustainable growth through data-driven decision making, resource optimization, and fiscal excellence.">
+    <meta name="keywords" content="Lilly, CFO, Treasurer, finance, strategic planning, investor relations, leadership, iSN.BiZ, enterprise software">
+    <meta name="author" content="iSN.BiZ Inc">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Lilly - Treasurer & CFO | iSN.BiZ Inc">
+    <meta property="og:description" content="Strategic financial leader driving sustainable growth through data-driven decision making and fiscal excellence.">
+    <meta property="og:image" content="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/lilly_headshot.webp">
+    <meta property="og:url" content="https://isn.biz/lilly.html">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lilly - Treasurer & CFO | iSN.BiZ Inc">
+    <meta name="twitter:description" content="Strategic financial leader driving sustainable growth and fiscal excellence.">
+    <meta name="twitter:image" content="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/lilly_headshot.webp">
+
     <title>Lilly - Treasurer & CFO | iSN.BiZ Inc</title>
     <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
+    <link rel="canonical" href="https://isn.biz/lilly.html">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="enhanced-animations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Founder Page Specific Styles */
+        /* Founder Page Specific Styles - Neo-Technical Brutalism */
         .founder-hero {
-            min-height: 60vh;
-            padding: calc(80px + var(--space-lg)) 0 var(--space-lg);
-            background: linear-gradient(135deg, var(--color-charcoal) 0%, var(--color-concrete) 100%);
+            min-height: 100vh;
+            padding: calc(80px + var(--space-xl)) 0 var(--space-xl);
+            background: linear-gradient(180deg, var(--color-charcoal) 0%, #0a0d12 50%, var(--color-charcoal) 100%);
             position: relative;
             overflow: hidden;
+            display: flex;
+            align-items: center;
         }
 
         .founder-hero::before {
@@ -37,57 +55,108 @@
             z-index: 0;
         }
 
-        .founder-hero-grid {
+        .founder-hero::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(95, 223, 223, 0.12) 0%, transparent 65%);
+            z-index: 0;
+        }
+
+        .founder-hero-content {
             position: relative;
             z-index: 2;
-            display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: var(--space-lg);
-            align-items: center;
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
         }
 
         .founder-hero-image {
             position: relative;
+            max-width: 400px;
+            margin: 0 auto var(--space-lg);
+        }
+
+        .founder-hero-image::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 2px solid var(--color-cyan);
+            opacity: 0.5;
+            z-index: -1;
         }
 
         .founder-hero-image img {
             width: 100%;
             height: auto;
-            border-radius: 8px;
-            box-shadow: var(--shadow-deep);
-        }
-
-        .founder-hero-content {
-            padding: var(--space-md);
+            border-radius: 4px;
+            box-shadow:
+                0 25px 50px rgba(0, 0, 0, 0.5),
+                0 0 100px rgba(95, 223, 223, 0.2);
         }
 
         .founder-name {
-            font-size: clamp(3rem, 8vw, 6rem);
+            font-size: clamp(3.5rem, 10vw, 7rem);
             margin: var(--space-sm) 0;
-            color: var(--color-blue);
-            text-shadow: 0 0 20px rgba(30, 159, 242, 0.3);
+            color: var(--color-white);
+            text-shadow: 0 0 40px rgba(95, 223, 223, 0.4);
+            letter-spacing: -0.02em;
         }
 
         .founder-title {
-            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            font-size: clamp(1.2rem, 3vw, 1.6rem);
             color: var(--color-cyan);
             margin-bottom: var(--space-md);
             font-family: var(--font-mono);
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.15em;
+            font-weight: 400;
         }
 
         .founder-intro {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             line-height: 1.8;
-            margin-bottom: var(--space-md);
+            margin-bottom: var(--space-lg);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: rgba(240, 244, 248, 0.9);
         }
 
         .founder-stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: var(--space-md);
+            display: flex;
+            justify-content: center;
+            gap: var(--space-lg);
+            flex-wrap: wrap;
             margin-top: var(--space-lg);
+        }
+
+        .founder-stats .stat {
+            text-align: center;
+            min-width: 150px;
+        }
+
+        .founder-stats .stat-number {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            color: var(--color-blue);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .founder-stats .stat-label {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: rgba(240, 244, 248, 0.7);
         }
 
         /* Biography Sections */
@@ -120,6 +189,8 @@
             font-size: clamp(1.8rem, 4vw, 2.5rem);
             margin-bottom: var(--space-md);
             color: var(--color-cyan);
+            text-transform: none;
+            letter-spacing: -0.01em;
         }
 
         .bio-text p {
@@ -132,7 +203,19 @@
         .bio-image {
             position: relative;
             overflow: hidden;
-            border-radius: 8px;
+            border-radius: 4px;
+        }
+
+        .bio-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(95, 223, 223, 0.1) 0%, transparent 50%);
+            z-index: 1;
+            pointer-events: none;
         }
 
         .bio-image img {
@@ -143,7 +226,88 @@
         }
 
         .bio-image:hover img {
-            transform: scale(1.05);
+            transform: scale(1.03);
+        }
+
+        /* Expertise Section */
+        .expertise-section {
+            background: linear-gradient(180deg, #0a0d12 0%, var(--color-charcoal) 100%);
+            padding: var(--space-xl) 0;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+        }
+
+        .expertise-card {
+            background: rgba(95, 223, 223, 0.05);
+            border: 1px solid rgba(95, 223, 223, 0.2);
+            padding: var(--space-md);
+            position: relative;
+            transition: all var(--transition);
+        }
+
+        .expertise-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--color-cyan);
+            transform: scaleY(0);
+            transition: transform var(--transition);
+        }
+
+        .expertise-card:hover {
+            background: rgba(95, 223, 223, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .expertise-card:hover::before {
+            transform: scaleY(1);
+        }
+
+        .expertise-card h4 {
+            font-family: var(--font-mono);
+            font-size: 1.1rem;
+            color: var(--color-blue);
+            margin-bottom: var(--space-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .expertise-card p {
+            font-size: 1rem;
+            color: rgba(240, 244, 248, 0.8);
+            line-height: 1.7;
+        }
+
+        /* Leadership Philosophy */
+        .philosophy-section {
+            background: var(--color-charcoal);
+            padding: var(--space-xl) 0;
+            text-align: center;
+        }
+
+        .philosophy-quote {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-family: var(--font-body);
+            font-weight: 300;
+            font-style: italic;
+            color: var(--color-white);
+            max-width: 900px;
+            margin: 0 auto var(--space-lg);
+            line-height: 1.5;
+        }
+
+        .philosophy-quote::before,
+        .philosophy-quote::after {
+            content: '"';
+            color: var(--color-cyan);
         }
 
         /* CTA Section */
@@ -151,17 +315,38 @@
             background: linear-gradient(135deg, var(--color-blue-dark) 0%, var(--color-blue) 100%);
             padding: var(--space-xl) 0;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+                linear-gradient(0deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
         }
 
         .cta-content h2 {
             font-size: clamp(2rem, 5vw, 3.5rem);
             margin-bottom: var(--space-md);
+            text-transform: none;
         }
 
         .cta-content p {
             font-size: 1.3rem;
             margin-bottom: var(--space-lg);
-            opacity: 0.9;
+            opacity: 0.95;
         }
 
         .cta-buttons {
@@ -173,13 +358,17 @@
 
         /* Responsive Design */
         @media (max-width: 992px) {
-            .founder-hero-grid {
-                grid-template-columns: 1fr;
-                text-align: center;
+            .founder-hero {
+                min-height: auto;
+                padding: calc(80px + var(--space-lg)) 0 var(--space-lg);
+            }
+
+            .founder-hero-image {
+                max-width: 300px;
             }
 
             .founder-stats {
-                justify-content: center;
+                gap: var(--space-md);
             }
 
             .bio-row,
@@ -187,11 +376,16 @@
                 grid-template-columns: 1fr;
                 direction: ltr;
             }
+
+            .bio-image {
+                order: -1;
+            }
         }
 
         @media (max-width: 768px) {
             .founder-stats {
-                grid-template-columns: 1fr;
+                flex-direction: column;
+                align-items: center;
             }
 
             .cta-buttons {
@@ -227,10 +421,10 @@
         </div>
     </nav>
 
-    <!-- Founder Hero Section -->
+    <!-- Founder Hero Section - Centered Layout -->
     <section class="founder-hero section">
         <div class="container">
-            <div class="founder-hero-grid">
+            <div class="founder-hero-content">
                 <div class="founder-hero-image">
                     <picture>
                         <source srcset="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/lilly_headshot.webp" type="image/webp">
@@ -241,25 +435,69 @@
                              height="1200">
                     </picture>
                 </div>
-                <div class="founder-hero-content">
-                    <span class="section-label">Leadership Profile</span>
-                    <h1 class="founder-name">Lilly</h1>
-                    <p class="founder-title">Treasurer & Chief Financial Officer</p>
-                    <p class="founder-intro lead">Financial strategist with expertise in growth management, resource optimization, and building sustainable business models that fuel innovation while maintaining fiscal responsibility.</p>
-                    <div class="founder-stats">
-                        <div class="stat">
-                            <div class="stat-number">45%</div>
-                            <div class="stat-label">Margin Improvement</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">Zero</div>
-                            <div class="stat-label">Late Payments</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">$2M+</div>
-                            <div class="stat-label">Capital Managed</div>
-                        </div>
+                <span class="section-label">Leadership Profile</span>
+                <h1 class="founder-name">Lilly</h1>
+                <p class="founder-title">Treasurer & Chief Financial Officer</p>
+                <p class="founder-intro">The guardian of growth. Lilly combines financial discipline with strategic vision, ensuring iSN.BiZ has the resources to innovate boldly while maintaining the stability that enterprise clients demand.</p>
+                <div class="founder-stats">
+                    <div class="stat">
+                        <div class="stat-number">45%</div>
+                        <div class="stat-label">Margin Improvement</div>
                     </div>
+                    <div class="stat">
+                        <div class="stat-number">Zero</div>
+                        <div class="stat-label">Late Payments</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">$2M+</div>
+                        <div class="stat-label">Capital Managed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Philosophy -->
+    <section class="philosophy-section section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Philosophy</span>
+            </div>
+            <p class="philosophy-quote">Financial excellence is not about constraints. It is about creating the freedom to pursue ambitious goals while building the foundation for sustainable, responsible growth.</p>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="expertise-section section">
+        <div class="container">
+            <div class="section-header" style="text-align: center;">
+                <span class="section-label">Core Expertise</span>
+                <h2 class="section-title">Areas of Excellence</h2>
+            </div>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <h4>Financial Strategy</h4>
+                    <p>Developing comprehensive financial plans that align resources with strategic objectives and enable sustainable growth.</p>
+                </div>
+                <div class="expertise-card">
+                    <h4>Investor Relations</h4>
+                    <p>Building compelling investment narratives and maintaining transparent, trust-based relationships with stakeholders.</p>
+                </div>
+                <div class="expertise-card">
+                    <h4>Risk Management</h4>
+                    <p>Implementing comprehensive frameworks that protect the company from financial, operational, and compliance risks.</p>
+                </div>
+                <div class="expertise-card">
+                    <h4>Financial Analytics</h4>
+                    <p>Leveraging data-driven insights to inform strategic decisions and optimize resource allocation.</p>
+                </div>
+                <div class="expertise-card">
+                    <h4>Capital Management</h4>
+                    <p>Optimizing capital structure and cash flow to ensure operational stability while funding growth initiatives.</p>
+                </div>
+                <div class="expertise-card">
+                    <h4>Governance & Compliance</h4>
+                    <p>Establishing robust internal controls and audit procedures that exceed industry standards.</p>
                 </div>
             </div>
         </div>
@@ -268,21 +506,22 @@
     <!-- Biography Section -->
     <section id="main-content" class="founder-bio section">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" style="text-align: center;">
+                <span class="section-label">Biography</span>
                 <h2 class="section-title">Strategic Financial Leadership</h2>
             </div>
 
             <!-- Bio Content Row 1 -->
             <div class="bio-row">
                 <div class="bio-text">
-                    <h3>Financial Stewardship & Growth</h3>
-                    <p>As CFO and Treasurer of iSN.BiZ Inc, Lilly oversees all financial operations, from daily cash management to long-term strategic planning. Her disciplined approach to financial management has enabled the company to invest confidently in growth initiatives while maintaining the stability and predictability that enterprise clients expect from their technology partners.</p>
-                    <p>Lilly's financial leadership goes beyond traditional accounting. She serves as a strategic advisor to the executive team, providing data-driven insights that inform major business decisions. Her ability to translate complex financial data into actionable intelligence has been instrumental in identifying new market opportunities and optimizing resource allocation across the organization.</p>
+                    <h3>The Financial Strategist</h3>
+                    <p>As CFO and Treasurer of iSN.BiZ Inc, Lilly oversees all financial operations with a philosophy that views finance not as a constraint but as an enabler. Her disciplined approach has allowed the company to invest confidently in growth initiatives, from AI research to talent acquisition, while maintaining the financial stability that enterprise clients require from their technology partners.</p>
+                    <p>Lilly's financial leadership extends far beyond traditional accounting. She serves as a strategic advisor to the executive team, transforming complex financial data into actionable intelligence that guides major business decisions. Her ability to see around corners, identifying opportunities and risks before they become obvious, has been instrumental in iSN.BiZ's sustained profitability and growth.</p>
                 </div>
                 <div class="bio-image">
                     <picture>
-                        <source srcset="assets/founders/lilly_office_work.webp" type="image/webp">
-                        <img src="assets/founders/lilly_office_work.webp"
+                        <source srcset="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/corporate_photos/lilly_working.webp" type="image/webp">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/corporate_photos/lilly_working.webp"
                              alt="Lilly managing financial operations and strategic planning"
                              loading="lazy"
                              width="1024"
@@ -295,32 +534,32 @@
             <div class="bio-row reverse">
                 <div class="bio-image">
                     <picture>
-                        <source srcset="assets/founders/lilly_presentation.webp" type="image/webp">
-                        <img src="assets/founders/lilly_presentation.webp"
-                             alt="Lilly presenting financial strategy to investors"
+                        <source srcset="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/corporate_photos/lilly_presenting.webp" type="image/webp">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/corporate_photos/lilly_presenting.webp"
+                             alt="Lilly presenting financial strategy to stakeholders"
                              loading="lazy"
                              width="1024"
                              height="1536">
                     </picture>
                 </div>
                 <div class="bio-text">
-                    <h3>Data-Driven Decision Making</h3>
-                    <p>Lilly has implemented sophisticated financial analytics systems that provide real-time visibility into the company's financial health. These systems track project profitability, forecast cash flow, and identify trends that inform strategic decisions. Her commitment to transparency and accuracy ensures that leadership always has the information needed to make informed choices.</p>
-                    <p>She has developed financial models that evaluate the long-term impact of strategic initiatives, helping the company balance short-term profitability with long-term growth. This analytical rigor has enabled iSN.BiZ to make bold investments in R&D and new service offerings while maintaining financial stability and meeting all obligations to stakeholders.</p>
+                    <h3>The Data-Driven Leader</h3>
+                    <p>Lilly has implemented sophisticated financial analytics systems that provide real-time visibility into the company's financial health. These systems track project profitability, forecast cash flow with precision, and identify trends that inform strategic decisions. Her commitment to transparency and accuracy ensures leadership always has the information needed to make confident choices.</p>
+                    <p>She has developed financial models that evaluate the long-term impact of strategic initiatives, enabling the company to balance short-term profitability with investments in future growth. This analytical rigor has allowed iSN.BiZ to make bold moves in R&D and new service development while maintaining financial discipline that inspires stakeholder confidence.</p>
                 </div>
             </div>
 
             <!-- Bio Content Row 3 -->
             <div class="bio-row">
                 <div class="bio-text">
-                    <h3>Investor Relations & Fundraising</h3>
-                    <p>With the company preparing for its next phase of growth, Lilly is spearheading investor relations efforts. She has crafted a compelling financial narrative that showcases iSN.BiZ's strong fundamentals, growth trajectory, and market opportunity. Her transparent communication style and deep understanding of investor concerns make her an effective advocate for the company's vision.</p>
+                    <h3>The Investor Champion</h3>
+                    <p>With iSN.BiZ preparing for its next phase of growth, Lilly is leading investor relations efforts with the same rigor she brings to all financial matters. She has crafted a compelling financial narrative that showcases the company's strong fundamentals, growth trajectory, and market opportunity. Her transparent communication style and deep understanding of investor concerns make her an effective advocate for the company's vision.</p>
                     <p>Lilly's preparation for fundraising has included developing comprehensive financial projections, creating investor materials, and establishing the financial controls and reporting systems that institutional investors expect. Her work ensures that iSN.BiZ is positioned to attract the right investment partners who share the company's long-term vision and values.</p>
                 </div>
                 <div class="bio-image">
                     <picture>
-                        <source srcset="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/corporate_photos/lilly_presenting.webp" type="image/webp">
-                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/corporate_photos/lilly_presenting.webp"
+                        <source srcset="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/corporate_photos/lilly_investor.webp" type="image/webp">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/corporate_photos/lilly_investor.webp"
                              alt="Lilly presenting to potential investors and stakeholders"
                              loading="lazy"
                              width="1024"
@@ -342,8 +581,8 @@
                     </picture>
                 </div>
                 <div class="bio-text">
-                    <h3>Risk Management & Compliance</h3>
-                    <p>Lilly has established comprehensive risk management frameworks that protect the company from financial, operational, and compliance risks. She maintains strong relationships with legal counsel, auditors, and regulatory advisors to ensure iSN.BiZ operates with complete integrity and transparency. This proactive approach to risk management gives clients and investors confidence in the company's stability.</p>
+                    <h3>The Risk Guardian</h3>
+                    <p>Lilly has established comprehensive risk management frameworks that protect iSN.BiZ from financial, operational, and compliance risks. She maintains strong relationships with legal counsel, auditors, and regulatory advisors to ensure the company operates with complete integrity. This proactive approach to risk management gives clients and investors confidence in the company's stability and governance.</p>
                     <p>She has implemented internal controls and audit procedures that exceed industry standards, creating a culture of accountability throughout the organization. Her attention to compliance and governance not only protects the company but also positions it for seamless scaling as it grows and takes on larger enterprise contracts that demand rigorous financial controls.</p>
                 </div>
             </div>
@@ -351,9 +590,9 @@
             <!-- Bio Content Row 5 -->
             <div class="bio-row">
                 <div class="bio-text">
-                    <h3>Resource Optimization & Efficiency</h3>
-                    <p>Under Lilly's financial leadership, iSN.BiZ has improved profit margins by 45% through strategic cost management and operational efficiency improvements. She works closely with operations to identify opportunities to reduce waste, optimize vendor relationships, and improve project economics without compromising quality or employee satisfaction.</p>
-                    <p>Lilly's approach to financial efficiency is holistic. She looks beyond simple cost-cutting to understand the true drivers of profitability. By investing in the right tools, training, and processes, she has helped create an organization that operates efficiently while maintaining the flexibility to respond to market opportunities and client needs.</p>
+                    <h3>The Efficiency Architect</h3>
+                    <p>Under Lilly's financial leadership, iSN.BiZ has improved profit margins by 45% through strategic cost management and operational efficiency improvements. She works closely with operations to identify opportunities to reduce waste, optimize vendor relationships, and improve project economics without compromising quality or team satisfaction.</p>
+                    <p>Lilly's approach to financial efficiency is holistic. She looks beyond simple cost-cutting to understand the true drivers of profitability. By investing in the right tools, training, and processes, she has helped create an organization that operates efficiently while maintaining the flexibility to respond to market opportunities and client needs with agility.</p>
                 </div>
                 <div class="bio-image">
                     <picture>
@@ -373,16 +612,16 @@
                     <picture>
                         <source srcset="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/casual_variants/lilly_outdoor.webp" type="image/webp">
                         <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/casual_variants/lilly_outdoor.webp"
-                             alt="Lilly in a relaxed outdoor setting"
+                             alt="Lilly envisioning the future of iSN.BiZ"
                              loading="lazy"
                              width="1024"
                              height="1536">
                     </picture>
                 </div>
                 <div class="bio-text">
-                    <h3>Vision for Sustainable Growth</h3>
-                    <p>Looking ahead, Lilly is focused on building financial systems and processes that will scale with the company's growth ambitions. She envisions a future where advanced analytics, AI-powered forecasting, and automated financial operations enable iSN.BiZ to operate with the sophistication of a much larger enterprise while maintaining the agility and client focus that defines the company today.</p>
-                    <p>Lilly is committed to responsible growth that creates value for all stakeholders—employees, clients, investors, and the broader community. Her balanced approach ensures that financial success is measured not just in profit margins but in the sustainable value the company creates through innovation, excellent client service, and positive impact on the technology ecosystem.</p>
+                    <h3>Vision for Tomorrow</h3>
+                    <p>Looking ahead, Lilly is building financial systems and processes that will scale with the company's growth ambitions. She envisions a future where advanced analytics, AI-powered forecasting, and automated financial operations enable iSN.BiZ to operate with the sophistication of a much larger enterprise while maintaining the agility and client focus that defines the company.</p>
+                    <p>Lilly is committed to responsible growth that creates value for all stakeholders, including employees, clients, investors, and the broader community. Her balanced approach ensures that financial success is measured not just in profit margins but in the sustainable value the company creates through innovation, excellent client service, and positive impact on the technology ecosystem.</p>
                 </div>
             </div>
         </div>
@@ -393,7 +632,7 @@
         <div class="container">
             <div class="cta-content">
                 <h2>Partner with Financial Excellence</h2>
-                <p>Discover how our financial discipline and strategic planning create lasting value.</p>
+                <p>Discover how our financial discipline and strategic planning create lasting value for clients and investors alike.</p>
                 <div class="cta-buttons">
                     <a href="contact.html" class="btn btn-primary lift-on-hover"><span>Discuss Your Project</span></a>
                     <a href="investors.html" class="btn btn-secondary lift-on-hover"><span>Investment Opportunity</span></a>
@@ -409,10 +648,12 @@
                 <div class="footer-col">
                     <h4>iSN.BiZ Inc</h4>
                     <p class="footer-credentials">
+                        <strong>Address:</strong> 9030 35th Ave SW, Suite 100<br>Seattle, WA 98126<br>
+                        <strong>Local:</strong> (206) 785-9782<br>
+                        <strong>Toll-Free:</strong> (800) 986-4614<br>
                         <strong>DUNS:</strong> 080513772<br>
-                        <strong>UBI:</strong> 603-522-339<br>
                         <strong>EIN:</strong> 47-4530188<br>
-                        <strong>Founded:</strong> 2015
+                        <strong>UBI:</strong> 603-522-339
                     </p>
                 </div>
                 <div class="footer-col">
@@ -431,7 +672,7 @@
                     <ul class="footer-links">
                         <li><a href="jonathan.html">Jonathan - CEO</a></li>
                         <li><a href="bri.html">Bri - COO</a></li>
-                        <li><a href="lilly.html">Lilly - CFO</a></li>
+                        <li><a href="lilly.html" class="active">Lilly - CFO</a></li>
                         <li><a href="alicia.html">Alicia - CPO</a></li>
                     </ul>
                 </div>
@@ -443,6 +684,7 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 iSN.BiZ Inc. All rights reserved.</p>
+                <p>Founded July 8, 2015 | 9030 35th Ave SW, Suite 100, Seattle, WA 98126</p>
             </div>
         </div>
     </footer>
