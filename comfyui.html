@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ComfyUI Flux WAN Automation - Enterprise-grade generative image workflow automation for production content pipelines with programmatic API control, batch generation, and LoRA management">
-    <meta name="keywords" content="ComfyUI, Flux, image generation, automation, AI content, batch processing, LoRA, generative AI, iSN.BiZ">
+    <meta name="description" content="ComfyUI Flux WAN Automation - Enterprise-grade generative image and video workflow automation with Stable Diffusion, Flux models, batch processing, LoRA management, and programmatic API control">
+    <meta name="keywords" content="ComfyUI, Flux, Stable Diffusion, image generation, video generation, automation, AI content, batch processing, LoRA, generative AI, iSN.BiZ">
     <meta name="author" content="iSN.BiZ Inc">
     <meta property="og:title" content="ComfyUI Flux WAN Automation | iSN.BiZ Inc">
-    <meta property="og:description" content="Scalable generative image workflow automation turning UI-driven systems into production pipelines">
+    <meta property="og:description" content="Scalable generative image and video workflow automation turning UI-driven systems into production content pipelines">
     <meta property="og:type" content="website">
     <title>ComfyUI Flux WAN Automation | iSN.BiZ Inc</title>
     <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
@@ -48,7 +48,7 @@
             <div class="section-header centered">
                 <span class="section-label">AI Content Generation</span>
                 <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">ComfyUI Flux WAN Automation</h1>
-                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">Enterprise automation suite providing a programmatic layer over ComfyUI, delivering reproducible workflows, batch generation, and LoRA management that transforms UI-driven systems into scalable production content pipelines.</p>
+                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">Enterprise automation suite providing a programmatic layer over ComfyUI, delivering reproducible workflows, batch generation, and LoRA management that transforms UI-driven systems into scalable production content pipelines for both still imagery and AI-generated video.</p>
             </div>
 
             <!-- Key Metrics -->
@@ -66,13 +66,13 @@
                     <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Management</div>
                 </div>
                 <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
-                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">JSON</div>
-                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Workflow Artifacts</div>
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">Video</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Generation</div>
                 </div>
             </div>
 
             <div style="max-width: 1000px; margin: 3rem auto;">
-                <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/comfyui_1.webp" alt="ComfyUI automation workflow dashboard" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/comfyui_automation.webp" alt="ComfyUI automation workflow dashboard showing node-based generation pipeline" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
             </div>
         </div>
     </section>
@@ -84,7 +84,8 @@
                 <div>
                     <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Investor Summary</h2>
                     <p class="lead">Generative image workflows are often fragile, manual, and difficult to scale. This project provides a programmatic automation layer over ComfyUI, delivering reproducible workflows, batch generation, and LoRA management that turns a UI-driven system into a scalable production pipeline.</p>
-                    <p style="margin-top: 1rem; color: var(--color-light);">The $50B+ generative AI market demands enterprise-grade tooling. By abstracting ComfyUI's complexity behind a configuration-driven API, we enable creative teams to scale from single images to thousands while maintaining brand consistency and quality standards.</p>
+                    <p style="margin-top: 1rem; color: var(--color-light);">The $50B+ generative AI market demands enterprise-grade tooling that bridges the gap between creative experimentation and production deployment. Most generative AI tools require manual interaction for each output, making them unsuitable for campaigns requiring hundreds or thousands of consistent assets. By abstracting ComfyUI's node-graph complexity behind a configuration-driven API, we enable creative teams to scale from single images to massive batch runs while maintaining brand consistency, quality standards, and full reproducibility across every generated asset.</p>
+                    <p style="margin-top: 1rem; color: var(--color-light);">Our platform supports the full spectrum of modern generative models including Stable Diffusion XL, Flux Dev, Flux Schnell, and WAN video generation models. Each workflow is serialized as a JSON artifact, enabling version control, A/B testing of prompt strategies, and deterministic reproduction of any previously generated output.</p>
                 </div>
                 <div>
                     <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Product Capabilities</h3>
@@ -93,33 +94,74 @@
                         <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Flux workflow builder with configurable model, sampler, and LoRA settings</li>
                         <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Config-driven model management for Flux, VAE, and CLIP assets</li>
                         <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Batch generators for branded content and campaign output</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; WAN video generation pipeline with frame interpolation</li>
                         <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Operational scripts for service control and LoRA downloads</li>
-                        <li style="padding: 0.5rem 0;">&#10003; Saved workflow JSON artifacts for reproducibility</li>
+                        <li style="padding: 0.5rem 0;">&#10003; Saved workflow JSON artifacts for full reproducibility</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Platform Architecture -->
+    <!-- Deep Dive: Stable Diffusion & Flux -->
     <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Deep Dive: Stable Diffusion &amp; Flux Models</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Our pipeline supports the latest generation of open-source diffusion models, each optimized for different production requirements.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/comfyui_1.webp" alt="Flux model comparison showing output quality across different checkpoint configurations" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                </div>
+                <div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Model Architecture Support</h3>
+                    <p style="color: var(--color-light); line-height: 1.8; margin-bottom: 1rem;">The platform provides unified workflow generation across multiple model architectures. Flux Dev delivers the highest quality output for hero imagery and detailed compositions, leveraging its transformer-based architecture for superior text rendering and spatial coherence. Flux Schnell offers 4-step generation for rapid iteration cycles, enabling creative teams to explore prompt variations at ten times the speed of standard inference without sacrificing compositional accuracy.</p>
+                    <p style="color: var(--color-light); line-height: 1.8; margin-bottom: 1rem;">Stable Diffusion XL remains available for workflows requiring broad ecosystem compatibility, including the extensive library of community-trained LoRA adapters and ControlNet models. Our abstraction layer handles the differences in tokenizer configuration, VAE selection, and sampling schedules transparently, so operators switch between model families by changing a single configuration parameter.</p>
+                    <p style="color: var(--color-light); line-height: 1.8;">Each model's output is tagged with complete generation metadata including the checkpoint hash, sampler settings, seed value, prompt text, and LoRA weights applied. This metadata chain ensures that any generated asset can be exactly reproduced months or years later, a critical requirement for brand compliance and regulatory documentation in regulated industries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Architecture -->
+    <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <h2 class="section-title centered" style="margin-bottom: 3rem;">Platform Architecture</h2>
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
                 <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
                     <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#9881;</div>
                     <h3 style="margin-top: 1rem; color: var(--color-cyan);">Programmatic Workflows</h3>
-                    <p style="color: var(--color-light);">ComfyUI API control with reproducible workflow generation. Queue prompts, monitor status, and manage execution programmatically.</p>
+                    <p style="color: var(--color-light);">ComfyUI API control with reproducible workflow generation. Queue prompts, monitor status, and manage execution programmatically without manual node-graph interaction.</p>
                 </div>
                 <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
                     <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#128202;</div>
                     <h3 style="margin-top: 1rem; color: var(--color-cyan);">Batch Production</h3>
-                    <p style="color: var(--color-light);">Config-driven batch output with saved workflow artifacts. Generate thousands of assets with consistent quality and brand adherence.</p>
+                    <p style="color: var(--color-light);">Config-driven batch output with saved workflow artifacts. Generate thousands of assets with consistent quality, automatic naming, and organized output directories.</p>
                 </div>
                 <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
                     <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#128295;</div>
                     <h3 style="margin-top: 1rem; color: var(--color-cyan);">Model Management</h3>
-                    <p style="color: var(--color-light);">Built-in support for LoRA, multiple model variants, VAE, and CLIP assets. Hot-swap models without workflow rewrites.</p>
+                    <p style="color: var(--color-light);">Built-in support for LoRA adapters, multiple model variants, VAE encoders, and CLIP text encoders. Hot-swap models without workflow rewrites.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Details: Batch & Video -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Implementation Details</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">From batch image campaigns to AI-generated video, every workflow is driven by configuration files rather than manual UI interaction.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Batch Automation Engine</h3>
+                    <p style="color: var(--color-light); line-height: 1.8; margin-bottom: 1rem;">The batch engine reads a YAML configuration file containing prompt templates, model selections, sampler parameters, and output specifications. It iterates through prompt variations, substituting variables for each generation pass. A campaign requiring 500 product images across 10 style variations and 5 aspect ratios is defined in a single configuration file and executed without supervision. Progress tracking, error recovery, and output organization are handled automatically.</p>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem; margin-top: 1.5rem;">Video Generation Pipeline</h3>
+                    <p style="color: var(--color-light); line-height: 1.8;">The WAN video pipeline extends our image automation into motion content. Starting from a text prompt or reference image, the system generates frame sequences using video-optimized diffusion models, applies temporal smoothing for motion coherence, and assembles the output into standard video formats. Frame interpolation models increase the effective frame rate, producing smooth motion from sparse keyframes. This enables marketing teams to produce short-form video content for social media and advertising without traditional video production workflows or stock footage licensing.</p>
+                </div>
+                <div>
+                    <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/comfyui_2.webp" alt="Batch generation output gallery showing branded content produced across multiple style variations" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
                 </div>
             </div>
         </div>
@@ -131,15 +173,15 @@
             <h2 class="section-title centered">Technology Stack</h2>
             <div class="portfolio-tags" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 2rem;">
                 <span class="tag">Python 3.10+</span>
-                <span class="tag">requests</span>
+                <span class="tag">ComfyUI API</span>
+                <span class="tag">Flux Dev/Schnell</span>
+                <span class="tag">Stable Diffusion XL</span>
+                <span class="tag">WAN Video</span>
+                <span class="tag">LoRA Adapters</span>
                 <span class="tag">aiohttp</span>
                 <span class="tag">Pillow</span>
                 <span class="tag">PyYAML</span>
-                <span class="tag">fal-client</span>
-                <span class="tag">replicate</span>
-                <span class="tag">gradio-client</span>
-                <span class="tag">ComfyUI API</span>
-                <span class="tag">Flux Models</span>
+                <span class="tag">CUDA/RTX</span>
             </div>
 
             <div style="margin-top: 3rem;">
@@ -147,35 +189,71 @@
                 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
                     <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
                         <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">API Abstraction</h4>
-                        <p>Programmatic workflow generation with full ComfyUI API control eliminates manual UI interaction.</p>
+                        <p>Programmatic workflow generation with full ComfyUI API control eliminates manual UI interaction and enables CI/CD integration.</p>
                     </div>
                     <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
                         <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Reproducibility</h4>
-                        <p>Saved workflow JSON artifacts ensure every generation can be exactly replicated.</p>
+                        <p>Saved workflow JSON artifacts with complete metadata ensure every generation can be exactly replicated at any future date.</p>
                     </div>
                     <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
                         <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Model Flexibility</h4>
-                        <p>Built-in support for LoRA and multiple model variants without workflow rewrites.</p>
+                        <p>Unified interface across Flux, SDXL, and video models with LoRA hot-swapping and per-workflow configuration.</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div style="margin-top: 3rem;">
-                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem; text-align: center;">Commercial Use Cases</h3>
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
-                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
-                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Marketing Teams</h4>
-                        <p>Scalable asset generation for campaigns, social media, and creative operations at enterprise scale.</p>
+    <!-- Results & Impact -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Results &amp; Impact</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Measurable improvements in creative production throughput, cost efficiency, and brand consistency.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/comfyui_3.webp" alt="Creative production analytics showing throughput improvements and cost reduction metrics" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                </div>
+                <div>
+                    <div style="background: rgba(95, 223, 223, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Production Speed</h4>
+                        <p style="color: var(--color-light);">Batch automation eliminates the manual prompt-and-wait cycle that dominates traditional ComfyUI usage. A campaign that would take a designer days of iterative generation runs to completion overnight, with assets organized and metadata tagged automatically upon completion.</p>
                     </div>
-                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
-                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Creative Agencies</h4>
-                        <p>Batch creative production at consistent quality standards for client deliverables.</p>
+                    <div style="background: rgba(95, 223, 223, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Cost Reduction</h4>
+                        <p style="color: var(--color-light);">Running generation on local GPU hardware with RTX 3090 and RTX 4060 Ti cards eliminates per-image API fees. At scale, this reduces creative asset production costs by orders of magnitude compared to cloud-based generation services or traditional stock photography licensing.</p>
                     </div>
-                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
-                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Content Factories</h4>
-                        <p>Internal tooling for AI-assisted content production workflows at massive scale.</p>
+                    <div style="background: rgba(95, 223, 223, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan);">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Brand Consistency</h4>
+                        <p style="color: var(--color-light);">LoRA adapters trained on brand-specific imagery ensure every generated asset maintains visual coherence with existing brand guidelines. Prompt templates with locked style parameters prevent drift across large batch runs, delivering consistent quality regardless of volume.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commercial Use Cases -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Commercial Use Cases</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Serving creative teams, agencies, and content operations that need scalable, consistent AI-generated visual content.</p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Marketing Teams</h4>
+                    <p>Scalable asset generation for campaigns, social media, and creative operations. Produce hundreds of on-brand variants from a single prompt template.</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Creative Agencies</h4>
+                    <p>Batch creative production at consistent quality standards for client deliverables. Rapid concept exploration and style variation without manual generation loops.</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">E-Commerce Platforms</h4>
+                    <p>Product visualization, lifestyle imagery, and catalog asset generation at scale. Reduce dependency on expensive product photography for large inventories.</p>
+                </div>
+            </div>
+
+            <div style="max-width: 1000px; margin: 3rem auto;">
+                <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/comfyui_4.webp" alt="AI-generated video frames showing WAN model output with temporal coherence" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
             </div>
         </div>
     </section>

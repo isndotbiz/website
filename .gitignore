@@ -59,12 +59,18 @@ __pycache__/
 b64data.txt
 1/
 
-# Generated images (all hosted on S3: isnbiz-assets-1769962280)
+# All images hosted on S3 (isnbiz-assets-1769962280)
 generated_founders/
 publish/
+assets/
 final-desktop.png
 final-mobile.png
 screenshots/
+logo.png
+logo-pallete.zip
+
+# Archive (backed up to baby_nas)
+Archive/
 
 # Local Netlify folder
 .netlify
