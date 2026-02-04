@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ComfyUI Flux WAN Automation - Scalable generative image workflow automation for production content pipelines">
-    <meta name="keywords" content="ComfyUI, Flux, image generation, automation, AI content, iSN.BiZ">
+    <meta name="description" content="ComfyUI Flux WAN Automation - Enterprise-grade generative image workflow automation for production content pipelines with programmatic API control, batch generation, and LoRA management">
+    <meta name="keywords" content="ComfyUI, Flux, image generation, automation, AI content, batch processing, LoRA, generative AI, iSN.BiZ">
+    <meta name="author" content="iSN.BiZ Inc">
+    <meta property="og:title" content="ComfyUI Flux WAN Automation | iSN.BiZ Inc">
+    <meta property="og:description" content="Scalable generative image workflow automation turning UI-driven systems into production pipelines">
+    <meta property="og:type" content="website">
     <title>ComfyUI Flux WAN Automation | iSN.BiZ Inc</title>
     <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
     <link rel="stylesheet" href="styles.css">
@@ -14,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="nav">
         <div class="container nav-container">
             <div class="logo">
@@ -21,74 +26,106 @@
                     <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
                 </a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#solutions">Solutions</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="index.html#team">Team</a></li>
-                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="primary-navigation">
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="investors.html">Investors</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- Project Hero -->
     <section class="hero" style="min-height: 70vh; padding-top: 120px;">
         <div class="hero-background"></div>
         <div class="container">
             <div class="section-header centered">
                 <span class="section-label">AI Content Generation</span>
                 <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">ComfyUI Flux WAN Automation</h1>
-                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">Automation suite providing a programmatic layer over ComfyUI, delivering reproducible workflows, batch generation, and LoRA management that turns a UI-driven system into a scalable production pipeline.</p>
+                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">Enterprise automation suite providing a programmatic layer over ComfyUI, delivering reproducible workflows, batch generation, and LoRA management that transforms UI-driven systems into scalable production content pipelines.</p>
             </div>
+
+            <!-- Key Metrics -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; max-width: 900px; margin: 3rem auto; text-align: center;">
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">API</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Control Layer</div>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">Batch</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Generation</div>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">LoRA</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Management</div>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">JSON</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Workflow Artifacts</div>
+                </div>
+            </div>
+
             <div style="max-width: 1000px; margin: 3rem auto;">
-                <img src="assets/projects/comfyui_1.webp" alt="ComfyUI automation workflow" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/comfyui_1.webp" alt="ComfyUI automation workflow dashboard" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
             </div>
         </div>
     </section>
 
+    <!-- Investor Summary -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <div class="about-grid">
                 <div>
                     <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Investor Summary</h2>
-                    <p class="lead">Generative image workflows are often fragile, manual, and difficult to scale. This project provides a programmatic automation layer that delivers reproducible workflows, batch generation, and LoRA management for production-grade content operations.</p>
+                    <p class="lead">Generative image workflows are often fragile, manual, and difficult to scale. This project provides a programmatic automation layer over ComfyUI, delivering reproducible workflows, batch generation, and LoRA management that turns a UI-driven system into a scalable production pipeline.</p>
+                    <p style="margin-top: 1rem; color: var(--color-light);">The $50B+ generative AI market demands enterprise-grade tooling. By abstracting ComfyUI's complexity behind a configuration-driven API, we enable creative teams to scale from single images to thousands while maintaining brand consistency and quality standards.</p>
                 </div>
                 <div>
-                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Product Scope</h3>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Product Capabilities</h3>
                     <ul style="list-style: none; padding: 0;">
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ ComfyUI API manager for status and queueing</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Flux workflow builder with configurable settings</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Config-driven model management</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Batch generators for branded content</li>
-                        <li style="padding: 0.5rem 0;">✓ Saved workflow JSON artifacts</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; ComfyUI API manager for status checks and prompt queueing</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Flux workflow builder with configurable model, sampler, and LoRA settings</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Config-driven model management for Flux, VAE, and CLIP assets</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Batch generators for branded content and campaign output</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Operational scripts for service control and LoRA downloads</li>
+                        <li style="padding: 0.5rem 0;">&#10003; Saved workflow JSON artifacts for reproducibility</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Platform Architecture -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title centered" style="margin-bottom: 3rem;">Platform Capabilities</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                <div class="portfolio-card">
-                    <img src="assets/projects/comfyui_2.webp" alt="Workflow automation" style="width: 100%; border-radius: 8px;">
-                    <h3 style="margin-top: 1rem;">Programmatic Workflows</h3>
-                    <p>ComfyUI API control with reproducible workflow generation.</p>
+            <h2 class="section-title centered" style="margin-bottom: 3rem;">Platform Architecture</h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#9881;</div>
+                    <h3 style="margin-top: 1rem; color: var(--color-cyan);">Programmatic Workflows</h3>
+                    <p style="color: var(--color-light);">ComfyUI API control with reproducible workflow generation. Queue prompts, monitor status, and manage execution programmatically.</p>
                 </div>
-                <div class="portfolio-card">
-                    <img src="assets/projects/comfyui_3.webp" alt="Batch generation" style="width: 100%; border-radius: 8px;">
-                    <h3 style="margin-top: 1rem;">Batch Production</h3>
-                    <p>Config-driven batch output with saved workflow artifacts.</p>
+                <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#128202;</div>
+                    <h3 style="margin-top: 1rem; color: var(--color-cyan);">Batch Production</h3>
+                    <p style="color: var(--color-light);">Config-driven batch output with saved workflow artifacts. Generate thousands of assets with consistent quality and brand adherence.</p>
                 </div>
-                <div class="portfolio-card">
-                    <img src="assets/projects/comfyui_4.webp" alt="LoRA management" style="width: 100%; border-radius: 8px;">
-                    <h3 style="margin-top: 1rem;">Model Management</h3>
-                    <p>Built-in support for LoRA and multiple model variants.</p>
+                <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#128295;</div>
+                    <h3 style="margin-top: 1rem; color: var(--color-cyan);">Model Management</h3>
+                    <p style="color: var(--color-light);">Built-in support for LoRA, multiple model variants, VAE, and CLIP assets. Hot-swap models without workflow rewrites.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Technology Stack -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <h2 class="section-title centered">Technology Stack</h2>
@@ -100,39 +137,87 @@
                 <span class="tag">PyYAML</span>
                 <span class="tag">fal-client</span>
                 <span class="tag">replicate</span>
+                <span class="tag">gradio-client</span>
+                <span class="tag">ComfyUI API</span>
+                <span class="tag">Flux Models</span>
             </div>
 
             <div style="margin-top: 3rem;">
-                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Commercial Use Cases</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Marketing Teams</h4>
-                        <p>Scalable asset generation for campaigns and creative operations.</p>
+                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem; text-align: center;">Differentiation and Moat</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">API Abstraction</h4>
+                        <p>Programmatic workflow generation with full ComfyUI API control eliminates manual UI interaction.</p>
                     </div>
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Creative Agencies</h4>
-                        <p>Batch creative production at consistent quality standards.</p>
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Reproducibility</h4>
+                        <p>Saved workflow JSON artifacts ensure every generation can be exactly replicated.</p>
                     </div>
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Content Factories</h4>
-                        <p>Internal tooling for AI-assisted content production workflows.</p>
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Model Flexibility</h4>
+                        <p>Built-in support for LoRA and multiple model variants without workflow rewrites.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem; text-align: center;">Commercial Use Cases</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Marketing Teams</h4>
+                        <p>Scalable asset generation for campaigns, social media, and creative operations at enterprise scale.</p>
+                    </div>
+                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Creative Agencies</h4>
+                        <p>Batch creative production at consistent quality standards for client deliverables.</p>
+                    </div>
+                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Content Factories</h4>
+                        <p>Internal tooling for AI-assisted content production workflows at massive scale.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Evidence of Execution -->
     <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 3rem;">Evidence of Execution</h2>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.1), rgba(95, 223, 223, 0.05)); padding: 1.5rem; border-radius: 8px; text-align: center; border: 1px solid rgba(30, 159, 242, 0.2);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Core Automation</h4>
+                    <p style="font-size: 0.9rem;">src/core/ with ComfyUI and Flux handlers</p>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.1), rgba(95, 223, 223, 0.05)); padding: 1.5rem; border-radius: 8px; text-align: center; border: 1px solid rgba(30, 159, 242, 0.2);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Configuration</h4>
+                    <p style="font-size: 0.9rem;">configs/config.yaml for models and servers</p>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.1), rgba(95, 223, 223, 0.05)); padding: 1.5rem; border-radius: 8px; text-align: center; border: 1px solid rgba(30, 159, 242, 0.2);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Production Scripts</h4>
+                    <p style="font-size: 0.9rem;">scripts/ and workflow artifacts</p>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.1), rgba(95, 223, 223, 0.05)); padding: 1.5rem; border-radius: 8px; text-align: center; border: 1px solid rgba(30, 159, 242, 0.2);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Package Management</h4>
+                    <p style="font-size: 0.9rem;">pyproject.toml dependency management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: var(--color-charcoal);">
         <div class="container" style="text-align: center;">
             <h2 class="section-title">Interested in This Solution?</h2>
-            <p class="section-description" style="margin-bottom: 2rem;">Learn how we can automate your generative content workflows.</p>
+            <p class="section-description" style="margin-bottom: 2rem;">Learn how we can automate your generative content workflows and scale your creative production.</p>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="index.html#contact" class="btn btn-primary"><span>Schedule a Demo</span></a>
+                <a href="contact.html" class="btn btn-primary"><span>Schedule a Demo</span></a>
                 <a href="portfolio.html" class="btn btn-outline"><span>View All Projects</span></a>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -148,20 +233,21 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#solutions">Solutions</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Solutions</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="index.html#team">Team</a></li>
+                        <li><a href="investors.html">Investors</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Ready to transform your business?</p>
-                    <a href="index.html#contact" class="btn btn-primary" style="margin-top: 1rem;"><span>Get in Touch</span></a>
+                    <p>9030 35th Ave SW, Suite 100<br>Seattle, WA 98126</p>
+                    <p>Local: (206) 785-9782<br>Toll-Free: (800) 986-4614</p>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem;"><span>Get in Touch</span></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved. | Founded 2015</p>
+                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved. | Founded July 8, 2015</p>
             </div>
         </div>
     </footer>

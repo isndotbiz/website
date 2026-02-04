@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AI Market Intelligence Engine - Autonomous opportunity discovery and scoring pipeline using local LLM inference and RAG-based semantic search">
-    <meta name="keywords" content="AI, market intelligence, opportunity bot, LLM, ChromaDB, RAG, iSN.BiZ">
+    <meta name="description" content="AI Market Intelligence Engine - Autonomous opportunity discovery and scoring pipeline using local LLM inference and RAG-based semantic search for institutional-grade market intelligence">
+    <meta name="keywords" content="AI, market intelligence, opportunity bot, LLM, ChromaDB, RAG, semantic search, deal sourcing, iSN.BiZ">
+    <meta name="author" content="iSN.BiZ Inc">
+    <meta property="og:title" content="AI Market Intelligence Engine | iSN.BiZ Inc">
+    <meta property="og:description" content="Autonomous opportunity discovery and scoring pipeline delivering institutional-grade market intelligence">
+    <meta property="og:type" content="website">
     <title>AI Market Intelligence Engine | iSN.BiZ Inc</title>
     <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
     <link rel="stylesheet" href="styles.css">
@@ -22,12 +26,17 @@
                     <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
                 </a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#solutions">Solutions</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="index.html#team">Team</a></li>
-                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="primary-navigation">
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="investors.html">Investors</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -39,11 +48,31 @@
             <div class="section-header centered">
                 <span class="section-label">AI Market Intelligence</span>
                 <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">AI Market Intelligence Engine</h1>
-                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">Proprietary AI pipeline that autonomously discovers and scores revenue opportunities across multiple data sources using local LLM inference and RAG-based semantic search — delivering institutional-grade market intelligence at zero marginal cost per query.</p>
+                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">Proprietary AI pipeline that autonomously discovers and scores revenue opportunities across multiple data sources using local LLM inference and RAG-based semantic search - delivering institutional-grade market intelligence at zero marginal cost per query.</p>
+            </div>
+
+            <!-- Key Metrics -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; max-width: 900px; margin: 3rem auto; text-align: center;">
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">$0</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Per Query Cost</div>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">Multi</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Source Ingestion</div>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">RAG</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Semantic Search</div>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">Local</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">LLM Inference</div>
+                </div>
             </div>
 
             <div style="max-width: 1000px; margin: 3rem auto;">
-                <img src="assets/projects/opportunity_1.webp" alt="AI opportunity research bot dashboard" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/projects/opportunity_1.webp" alt="AI opportunity research bot dashboard" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
             </div>
         </div>
     </section>
@@ -55,40 +84,41 @@
                 <div>
                     <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Investor Summary</h2>
                     <p class="lead">Opportunity discovery is noisy and time-intensive. This system automates sourcing and analysis across multiple channels, scores opportunities with local LLMs, and stores results in a semantic search database for rapid filtering and decision support.</p>
+                    <p style="margin-top: 1rem; color: var(--color-light);">The $50B+ market intelligence industry relies on expensive subscriptions and manual research. By running local LLM inference, we eliminate per-query API costs while delivering institutional-grade analysis that scales infinitely without marginal cost increases.</p>
                 </div>
                 <div>
-                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Key Capabilities</h3>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Product Capabilities</h3>
                     <ul style="list-style: none; padding: 0;">
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Scrapers for Reddit, Indie Hackers, and Google dorking</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ LLM analysis pipeline with structured scoring</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ ChromaDB-based semantic search and metadata filtering</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">✓ Production, demo, and personalization pipelines</li>
-                        <li style="padding: 0.5rem 0;">✓ Cron automation and setup scripts</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Scrapers for Reddit, Indie Hackers, and Google dorking</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; LLM analysis pipeline with structured scoring methodology</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; ChromaDB-based semantic search and metadata filtering</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">&#10003; Production, demo, and personalization pipelines</li>
+                        <li style="padding: 0.5rem 0;">&#10003; Cron automation and setup scripts for hands-off operation</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Screenshots Gallery -->
+    <!-- System Architecture -->
     <section class="section">
         <div class="container">
             <h2 class="section-title centered" style="margin-bottom: 3rem;">System Architecture</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                <div class="portfolio-card">
-                    <img src="assets/projects/opportunity_2.webp" alt="Opportunity discovery pipeline" style="width: 100%; border-radius: 8px;">
-                    <h3 style="margin-top: 1rem;">Multi-Source Ingestion</h3>
-                    <p>Automated scraping from Reddit, Indie Hackers, and custom Google dorking queries.</p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#128270;</div>
+                    <h3 style="margin-top: 1rem; color: var(--color-cyan);">Multi-Source Ingestion</h3>
+                    <p style="color: var(--color-light);">Automated scraping from Reddit, Indie Hackers, and custom Google dorking queries. Continuous monitoring across multiple opportunity channels.</p>
                 </div>
-                <div class="portfolio-card">
-                    <img src="assets/projects/opportunity_3.webp" alt="LLM analysis interface" style="width: 100%; border-radius: 8px;">
-                    <h3 style="margin-top: 1rem;">Local LLM Analysis</h3>
-                    <p>Structured opportunity scoring using local inference for zero API costs.</p>
+                <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#129302;</div>
+                    <h3 style="margin-top: 1rem; color: var(--color-cyan);">Local LLM Analysis</h3>
+                    <p style="color: var(--color-light);">Structured opportunity scoring using local inference for zero API costs. Consistent methodology across all discovered opportunities.</p>
                 </div>
-                <div class="portfolio-card">
-                    <img src="assets/projects/opportunity_4.webp" alt="Semantic search dashboard" style="width: 100%; border-radius: 8px;">
-                    <h3 style="margin-top: 1rem;">RAG-Based Retrieval</h3>
-                    <p>ChromaDB vector search for rapid opportunity filtering and decision workflows.</p>
+                <div class="portfolio-card" style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(95, 223, 223, 0.05)); border: 1px solid rgba(30, 159, 242, 0.2); padding: 2rem; border-radius: 12px; text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-blue), var(--color-cyan)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">&#128451;</div>
+                    <h3 style="margin-top: 1rem; color: var(--color-cyan);">RAG-Based Retrieval</h3>
+                    <p style="color: var(--color-light);">ChromaDB vector search for rapid opportunity filtering and decision workflows. Semantic search across your entire opportunity database.</p>
                 </div>
             </div>
         </div>
@@ -106,31 +136,44 @@
                 <span class="tag">Local LLM</span>
                 <span class="tag">RAG Pipeline</span>
                 <span class="tag">Vector Database</span>
+                <span class="tag">Cron Automation</span>
             </div>
 
             <div style="margin-top: 3rem;">
-                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Differentiation and Moat</h3>
-                <ul style="font-size: 1.1rem; line-height: 1.8;">
-                    <li>Multi-source ingestion with consistent scoring methodology</li>
-                    <li>Local LLM analysis reduces ongoing API costs to zero</li>
-                    <li>RAG-based retrieval optimized for decision workflows</li>
-                    <li>Production-ready automation with cron scheduling</li>
-                </ul>
+                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem; text-align: center;">Differentiation and Moat</h3>
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Multi-Source</h4>
+                        <p>Consistent scoring methodology across all ingestion channels.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Zero API Costs</h4>
+                        <p>Local LLM analysis eliminates ongoing per-query expenses.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">RAG Retrieval</h4>
+                        <p>Optimized for decision workflows with semantic search.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: center;">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Production-Ready</h4>
+                        <p>Cron scheduling for hands-off automated operation.</p>
+                    </div>
+                </div>
             </div>
 
             <div style="margin-top: 3rem;">
-                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Commercial Use Cases</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Deal Sourcing</h4>
+                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem; text-align: center;">Commercial Use Cases</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Deal Sourcing</h4>
                         <p>Automated opportunity discovery for venture capital and private equity firms.</p>
                     </div>
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Market Intelligence</h4>
+                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Market Intelligence</h4>
                         <p>Internal research and competitive analysis for strategic planning teams.</p>
                     </div>
-                    <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Product Ideation</h4>
+                    <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); text-align: center;">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Product Ideation</h4>
                         <p>Trend analysis and opportunity validation for founders and product teams.</p>
                     </div>
                 </div>
@@ -138,13 +181,38 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- Evidence of Execution -->
     <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 3rem;">Evidence of Execution</h2>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.1), rgba(95, 223, 223, 0.05)); padding: 1.5rem; border-radius: 8px; text-align: center; border: 1px solid rgba(30, 159, 242, 0.2);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Pipeline Entrypoints</h4>
+                    <p style="font-size: 0.9rem;">production_opportunity_pipeline.py</p>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.1), rgba(95, 223, 223, 0.05)); padding: 1.5rem; border-radius: 8px; text-align: center; border: 1px solid rgba(30, 159, 242, 0.2);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Scrapers</h4>
+                    <p style="font-size: 0.9rem;">scrapers/ with configs and handlers</p>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.1), rgba(95, 223, 223, 0.05)); padding: 1.5rem; border-radius: 8px; text-align: center; border: 1px solid rgba(30, 159, 242, 0.2);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Vector Storage</h4>
+                    <p style="font-size: 0.9rem;">data/ with ChromaDB assets</p>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.1), rgba(95, 223, 223, 0.05)); padding: 1.5rem; border-radius: 8px; text-align: center; border: 1px solid rgba(30, 159, 242, 0.2);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Architecture</h4>
+                    <p style="font-size: 0.9rem;">ARCHITECTURE.md system design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: var(--color-charcoal);">
         <div class="container" style="text-align: center;">
             <h2 class="section-title">Interested in This Solution?</h2>
             <p class="section-description" style="margin-bottom: 2rem;">Learn how we can build custom AI market intelligence systems for your organization.</p>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="index.html#contact" class="btn btn-primary"><span>Schedule a Demo</span></a>
+                <a href="contact.html" class="btn btn-primary"><span>Schedule a Demo</span></a>
                 <a href="portfolio.html" class="btn btn-outline"><span>View All Projects</span></a>
             </div>
         </div>
@@ -166,20 +234,21 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#solutions">Solutions</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Solutions</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="index.html#team">Team</a></li>
+                        <li><a href="investors.html">Investors</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <p>Ready to transform your business?</p>
-                    <a href="index.html#contact" class="btn btn-primary" style="margin-top: 1rem;"><span>Get in Touch</span></a>
+                    <p>9030 35th Ave SW, Suite 100<br>Seattle, WA 98126</p>
+                    <p>Local: (206) 785-9782<br>Toll-Free: (800) 986-4614</p>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem;"><span>Get in Touch</span></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved. | Founded 2015</p>
+                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved. | Founded July 8, 2015</p>
             </div>
         </div>
     </footer>
