@@ -57,15 +57,71 @@
         <priority>0.7</priority>
     </url>
 
-    <!-- Video Components Showcase -->
+    <!-- Project Pages -->
     <url>
-        <loc>https://isn.biz/docs/video-slider-components.html</loc>
-        <lastmod>2026-02-02</lastmod>
-        <changefreq>quarterly</changefreq>
-        <priority>0.5</priority>
+        <loc>https://isn.biz/opportunity-bot.html</loc>
+        <lastmod>2026-02-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 
-    <!-- Future Pages (placeholder for when created) -->
+    <url>
+        <loc>https://isn.biz/truenas.html</loc>
+        <lastmod>2026-02-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://isn.biz/bin-intelligence.html</loc>
+        <lastmod>2026-02-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://isn.biz/spiritatlas.html</loc>
+        <lastmod>2026-02-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://isn.biz/videogen.html</loc>
+        <lastmod>2026-02-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://isn.biz/comfyui.html</loc>
+        <lastmod>2026-02-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://isn.biz/gedcom.html</loc>
+        <lastmod>2026-02-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://isn.biz/llm-optimization.html</loc>
+        <lastmod>2026-02-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://isn.biz/aurallm.html</loc>
+        <lastmod>2026-02-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Core Pages -->
     <url>
         <loc>https://isn.biz/about.html</loc>
         <lastmod>2026-02-02</lastmod>
