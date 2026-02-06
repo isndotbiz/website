@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AuraLLM Reflective Wellness Platform - Privacy-first Android app combining voice energy analysis, habit tracking, and a dual-ring energy dial with AR glasses integration, on-device ML, and pluggable LLM narratives for personal wellness reflection">
-    <meta name="keywords" content="Android, wellness app, voice analysis, energy tracking, habit tracker, AR glasses, on-device ML, privacy-first, LLM, chakra guidance, iSN.BiZ">
+    <meta name="description" content="AuraLLM Reflective Wellness Platform - Privacy-first Android app combining voice energy analysis, habit tracking, trigger tags, and a dual-ring energy dial with AR glasses integration, chakra guidance, on-device ML, and pluggable LLM narratives for personal wellness reflection">
+    <meta name="keywords" content="Android, wellness app, voice analysis, energy tracking, habit tracker, AR glasses, on-device ML, privacy-first, LLM, chakra guidance, trigger tags, red zone, DMT aesthetic, iSN.BiZ">
     <meta name="author" content="iSN.BiZ Inc">
     <meta property="og:title" content="AuraLLM Reflective Wellness Platform | iSN.BiZ Inc">
     <meta property="og:description" content="Privacy-first Android app combining voice energy analysis, habit tracking, and a dual-ring energy dial with AR glasses integration">
@@ -76,8 +76,9 @@
         <div class="container">
             <div class="section-header centered">
                 <span class="section-label">Reflective Wellness &middot; ~2025</span>
-                <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">AuraLLM Reflective Wellness Platform</h1>
-                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">Privacy-first Android application weaving voice energy analysis, habit tracking, and self-reported triggers into a living energy portrait — powered by on-device ML, a dual-ring aura dial, chakra-mapped guidance, and an open AR glasses schema for heads-up wellness display.</p>
+                <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">AuraLLM</h1>
+                <p class="hero-tagline" style="font-size: 1.6rem; color: var(--color-cyan); margin-bottom: 0.5rem; font-weight: 600;">Know Your Energy. Protect Your Light.</p>
+                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.2rem;">Voice patterns. Body signals. The triggers you choose. Woven into a living portrait of your wellness — private, on-device, and never medical. AuraLLM combines voice energy analysis, habit tracking, and self-reported triggers into a single energy portrait powered by on-device ML, a dual-ring aura dial, chakra-mapped guidance, and an open AR glasses schema.</p>
             </div>
 
             <!-- Key Metrics -->
@@ -133,11 +134,15 @@
                         </li>
                         <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
                             <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Trigger tags — Sleep, Exercise, Social, Work, Nature, Creative — surfacing connections you feel but can't name</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
                             <span>Chakra guidance system mapping energy state to Root-through-Crown levels with three actionable micro-interventions per level</span>
                         </li>
                         <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
                             <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
-                            <span>3-day rolling trend analysis via WorkManager with pluggable LLM insight generation (template, TFLite, cloud roadmap)</span>
+                            <span>3-day rolling trend analysis via WorkManager with pluggable LLM insight generation (template, TFLite, GGUF, cloud roadmap)</span>
                         </li>
                         <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
                             <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
@@ -153,39 +158,467 @@
         </div>
     </section>
 
-    <!-- Deep Dive: Dual-Ring Energy Dial -->
+    <!-- Three Signals: Voice, Habits, Triggers -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Deep Dive: The Dual-Ring Energy Dial</h2>
-            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">At the heart of AuraLLM is a concentric visualization that separates how you feel from how you show up. Two rings, one aura score — a reflective lens, not a clinical verdict.</p>
+            <h2 class="section-title centered" style="margin-bottom: 1rem;">Three Signals. One Story.</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">No other wellness app combines this depth of personal energy reflection while keeping every byte on your device. AuraLLM weaves voice analysis, habit tracking, and self-reported triggers into a single, living energy portrait.</p>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
                 <div>
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/aurallm_dial.webp" alt="AuraLLM dual-ring energy dial showing Self Energy and Others Impact rings with colour-coded aura labels" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/aurallm_features.webp" alt="AuraLLM habit tracking and voice analysis interfaces" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
                 </div>
                 <div>
-                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Two Dimensions of Energy</h3>
-                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">The outer ring captures Self Energy — how you feel internally, derived from self-report or voice analysis. The inner ring captures Others Impact — how you show up to the world, calculated from self-energy plus a habit bonus that rewards consistent positive actions. The combined score maps to a living aura state: Radiant (70-100, violet), Steady (45-69, teal), Recharging (20-44, amber), or Red Zone (0-19, rose). Each state pulses a DMT-palette colour through the dial and optional glasses HUD.</p>
-                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem; margin-top: 1.5rem;">Chakra Guidance Ladder</h3>
-                    <p style="font-size: 1.05rem; line-height: 1.8;">Energy maps to a six-level chakra ladder from Root (0-24, grounding) to Crown (85+, purpose and stillness). Each level delivers three specific micro-interventions — "Place a hand on your chest and breathe in 4, out 6" at Heart level, or "Take a slow grounding walk or stand barefoot" at Root. The system applies a self-centred penalty when Self Energy exceeds Others Impact by 20+ points and a red zone penalty, rewarding outward awareness over personal highs. This structured framework turns abstract energy scores into actionable next steps.</p>
-                </div>
-            </div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Voice Energy — Your Tone Tells a Story</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">With explicit, revocable consent, AuraLLM captures a brief voice sample and extracts derived features entirely on-device. Raw audio is processed in-memory and immediately discarded — only numeric scores persist: Speaking Rate (words-per-minute cadence), Tone Warmth (emotional warmth 0-100), and Vocal Energy (estimated energy 0-100). Future TFLite prosody model integration will deepen analysis without changing the privacy guarantees.</p>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-top: 3rem;">
-                <div>
-                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Voice Energy Extraction</h3>
-                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">With explicit, revocable consent managed through SpeechConsentManager backed by DataStore, AuraLLM captures a brief voice sample and runs SpeechFeatureExtractor entirely in-memory. Raw audio is processed and immediately discarded — only three numeric scores persist: speaking rate (words per minute), tone warmth (0-100), and vocal energy (0-100). Future releases will integrate a TFLite prosody model for richer feature extraction without any change to the privacy guarantees. The consent flow is binary and reversible: users tap "Enable Voice" to grant, "Revoke" to disable, with no dark patterns or friction.</p>
-                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem; margin-top: 1.5rem;">Habit Bonus Algorithm</h3>
-                    <p style="font-size: 1.05rem; line-height: 1.8;">Six habit categories (Meal, Sleep, Exercise, Hydration, Meditation, Social) accept daily log entries rated 1-5 for quality. A rolling 3-day average drives the Habit Bonus: excellent habits (4-5 avg) add +10 to +15 points to Others Impact, good habits (3-4 avg) add +5 to +10, and building habits (1-3 avg) add +0 to +5. This transparent, compounding system ensures that consistent positive actions visibly improve the energy portrait over days, creating a natural engagement loop grounded in genuine behavioural feedback rather than gamification tricks.</p>
-                </div>
-                <div>
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/aurallm_features.webp" alt="AuraLLM habit tracking and voice analysis interfaces showing daily energy logging and trend visualization" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Habit Tracking — Small Actions, Big Impact</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">Log the habits that shape your energy every day across six categories: Meal, Sleep, Exercise, Hydration, Meditation, and Social. Each entry is rated 1-5 for quality. A rolling 3-day average drives the Habit Bonus: excellent habits (4-5) add +10 to +15 points to Others Impact, good habits (3-4) add +5 to +10, building habits (1-3) add +0 to +5. Consistent positive actions compound visibly over days.</p>
+
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Trigger Tags — Name What Moves You</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">Tag what's influencing your energy today and let the model surface connections you feel but can't name. Six tag categories — Sleep, Exercise, Social, Work, Nature, and Creative — capture the dimensions of daily life that shape your energy portrait. The LLM weaves these triggers into personalized reflective narratives, revealing patterns across days and weeks that manual journaling would miss.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Platform Architecture -->
+    <!-- Deep Dive: Dual-Ring Energy Dial -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">The Dual-Ring Energy Dial</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">At the heart of AuraLLM is a concentric visualization that separates how you feel from how you show up. Two rings, one aura score — a reflective lens, not a clinical verdict.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/aurallm_dial.webp" alt="AuraLLM dual-ring energy dial showing Self Energy and Others Impact rings" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                </div>
+                <div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Two Dimensions of Energy</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">The outer ring captures Self Energy — how you feel internally, derived from self-report or voice analysis. The inner ring captures Others Impact — how you show up to the world, calculated from self-energy plus a habit bonus that rewards consistent positive actions.</p>
+
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Aura Labels</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1.5rem;">
+                        <div style="background: rgba(156, 26, 231, 0.2); padding: 0.75rem 1rem; border-radius: 6px; border-left: 3px solid #9C1AE7;">
+                            <strong style="color: #9C1AE7;">Radiant</strong> <span style="opacity: 0.8;">70-100</span>
+                        </div>
+                        <div style="background: rgba(58, 229, 231, 0.2); padding: 0.75rem 1rem; border-radius: 6px; border-left: 3px solid #3AE5E7;">
+                            <strong style="color: #3AE5E7;">Steady</strong> <span style="opacity: 0.8;">45-69</span>
+                        </div>
+                        <div style="background: rgba(245, 207, 29, 0.2); padding: 0.75rem 1rem; border-radius: 6px; border-left: 3px solid #F5CF1D;">
+                            <strong style="color: #F5CF1D;">Recharging</strong> <span style="opacity: 0.8;">20-44</span>
+                        </div>
+                        <div style="background: rgba(247, 9, 59, 0.2); padding: 0.75rem 1rem; border-radius: 6px; border-left: 3px solid #F7093B;">
+                            <strong style="color: #F7093B;">Red Zone</strong> <span style="opacity: 0.8;">0-19</span>
+                        </div>
+                    </div>
+
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">The Aura Colour Spectrum</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 0.75rem;">Every energy level maps to a DMT-palette colour that pulses through the dial and glasses HUD:</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span style="background: #2CD27E; color: #000; padding: 0.4rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600;">80-100 Green</span>
+                        <span style="background: #9C1AE7; color: #fff; padding: 0.4rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600;">60-79 Purple</span>
+                        <span style="background: #3AE5E7; color: #000; padding: 0.4rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600;">40-59 Cyan</span>
+                        <span style="background: #F5CF1D; color: #000; padding: 0.4rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600;">20-39 Yellow</span>
+                        <span style="background: #F7093B; color: #fff; padding: 0.4rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600;">0-19 Red</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chakra Guidance + Red Zone -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Chakra Guidance &amp; Red Zone</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Energy maps to a structured framework for micro-interventions. Each chakra level delivers three specific, actionable suggestions. The Red Zone is a conscious user action — never algorithmically inferred.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 3rem;">
+                <div style="background: rgba(156, 26, 231, 0.15); padding: 1.5rem; border-radius: 8px; border-top: 3px solid #9C1AE7; text-align: center;">
+                    <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">&#9775;</div>
+                    <h4 style="color: #9C1AE7; margin-bottom: 0.5rem;">Crown (85+)</h4>
+                    <p style="font-size: 0.95rem;">Purpose &amp; stillness. Sit in stillness for 3-5 minutes. Offer a kind act. Name one purpose to embody today.</p>
+                </div>
+                <div style="background: rgba(58, 229, 231, 0.15); padding: 1.5rem; border-radius: 8px; border-top: 3px solid #3AE5E7; text-align: center;">
+                    <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">&#9775;</div>
+                    <h4 style="color: #3AE5E7; margin-bottom: 0.5rem;">Throat (70-84)</h4>
+                    <p style="font-size: 0.95rem;">Expression &amp; communication. Speak one honest sentence kindly. Hydrate and take slow breaths.</p>
+                </div>
+                <div style="background: rgba(44, 210, 126, 0.15); padding: 1.5rem; border-radius: 8px; border-top: 3px solid #2CD27E; text-align: center;">
+                    <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">&#9829;</div>
+                    <h4 style="color: #2CD27E; margin-bottom: 0.5rem;">Heart (55-69)</h4>
+                    <p style="font-size: 0.95rem;">Gratitude &amp; connection. Place a hand on your chest and breathe in 4, out 6. List three things you're grateful for.</p>
+                </div>
+                <div style="background: rgba(245, 207, 29, 0.15); padding: 1.5rem; border-radius: 8px; border-top: 3px solid #F5CF1D; text-align: center;">
+                    <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">&#9788;</div>
+                    <h4 style="color: #F5CF1D; margin-bottom: 0.5rem;">Solar (40-54)</h4>
+                    <p style="font-size: 0.95rem;">Clarity &amp; action. Identify one thing you can control right now. Do it with intention.</p>
+                </div>
+                <div style="background: rgba(245, 207, 29, 0.12); padding: 1.5rem; border-radius: 8px; border-top: 3px solid #F5CF1D; text-align: center;">
+                    <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">&#9836;</div>
+                    <h4 style="color: #F5CF1D; margin-bottom: 0.5rem;">Sacral (25-39)</h4>
+                    <p style="font-size: 0.95rem;">Creativity &amp; movement. Move your body for 5 minutes. Create something small. Connect with water.</p>
+                </div>
+                <div style="background: rgba(247, 9, 59, 0.15); padding: 1.5rem; border-radius: 8px; border-top: 3px solid #F7093B; text-align: center;">
+                    <div style="font-size: 1.8rem; margin-bottom: 0.5rem;">&#9878;</div>
+                    <h4 style="color: #F7093B; margin-bottom: 0.5rem;">Root (0-24)</h4>
+                    <p style="font-size: 0.95rem;">Grounding &amp; survival. Take a slow grounding walk. Exhale longer than you inhale. Choose one steadying habit.</p>
+                </div>
+            </div>
+
+            <div style="background: rgba(247, 9, 59, 0.1); padding: 2rem; border-radius: 8px; border: 1px solid rgba(247, 9, 59, 0.3);">
+                <h3 style="color: #F7093B; margin-bottom: 1rem;">Red Zone — Crisis Self-Report</h3>
+                <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">The Red Zone is <strong>never algorithmically inferred</strong>. AuraLLM does not claim to detect distress, diagnose conditions, or assess risk. Red Zone activation is a conscious user action — an honest self-report that says "I'm not okay right now." When activated: energy scores set to minimum (5/5), aura label shifts to Red Zone, chakra drops to Root with grounding suggestions, the dial pulses red as a visible reminder, and the state is recorded with the trigger <code style="background: rgba(247, 9, 59, 0.2); padding: 0.2rem 0.5rem; border-radius: 3px;">self-report:&lt;reason&gt;</code>.</p>
+                <p style="font-style: italic; color: var(--color-cyan); font-size: 1.1rem;">The app meets you where you are. It doesn't judge. It doesn't diagnose. It just reflects.</p>
+                <p style="margin-top: 1rem; font-size: 0.95rem;">The chakra system also applies a self-centred penalty when Self Energy exceeds Others Impact by 20+ points and a red zone penalty — ensuring the system rewards outward awareness, not just personal highs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multi-Day Trend Analysis -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Multi-Day Trend Analysis</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">A single snapshot tells you where you are. A rolling window tells you where you're headed. Background analysis runs every 6 hours via WorkManager, analyzing a 3-day rolling window of energy readings and habit data.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 3rem;">
+                <div style="background: rgba(44, 210, 126, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #2CD27E;">
+                    <h4 style="color: #2CD27E; margin-bottom: 0.5rem;">High Energy, Upward</h4>
+                    <p style="font-size: 0.95rem; font-style: italic;">"Your energy has been consistently high. Keep nurturing what fuels you."</p>
+                </div>
+                <div style="background: rgba(58, 229, 231, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #3AE5E7;">
+                    <h4 style="color: #3AE5E7; margin-bottom: 0.5rem;">Moderate, Rising</h4>
+                    <p style="font-size: 0.95rem; font-style: italic;">"Nice upward momentum — small positive changes are compounding."</p>
+                </div>
+                <div style="background: rgba(245, 207, 29, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #F5CF1D;">
+                    <h4 style="color: #F5CF1D; margin-bottom: 0.5rem;">Moderate, Falling</h4>
+                    <p style="font-size: 0.95rem; font-style: italic;">"Your energy has been tapering. A short reset activity might help."</p>
+                </div>
+                <div style="background: rgba(156, 26, 231, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #9C1AE7;">
+                    <h4 style="color: #9C1AE7; margin-bottom: 0.5rem;">High, Slight Dip</h4>
+                    <p style="font-size: 0.95rem; font-style: italic;">"Your energy is strong but shows a slight dip — consider what may have shifted."</p>
+                </div>
+                <div style="background: rgba(44, 210, 126, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #2CD27E;">
+                    <h4 style="color: #2CD27E; margin-bottom: 0.5rem;">Low, Improving</h4>
+                    <p style="font-size: 0.95rem; font-style: italic;">"Low overall but the direction is improving. Gentle consistency matters."</p>
+                </div>
+                <div style="background: rgba(247, 9, 59, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #F7093B;">
+                    <h4 style="color: #F7093B; margin-bottom: 0.5rem;">Low, Declining</h4>
+                    <p style="font-size: 0.95rem; font-style: italic;">"It looks like a challenging stretch. Be kind to yourself — rest is productive too."</p>
+                </div>
+            </div>
+
+            <p style="text-align: center; font-size: 0.95rem; opacity: 0.7;">All insights are appended with: (For wellness reflection only.)</p>
+        </div>
+    </section>
+
+    <!-- LLM Provider Roadmap -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">LLM-Powered Reflective Insights</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">A pluggable LLM architecture generates personalized wellness narratives from your energy data. The LlmProvider interface accepts energy readings and habit summaries, returning reflective insights. Integration is completely optional — your energy calculations, habit tracking, and dial work perfectly without it.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+                <div style="background: rgba(44, 210, 126, 0.15); padding: 1.5rem; border-radius: 8px; border-top: 3px solid #2CD27E; text-align: center;">
+                    <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: #2CD27E; margin-bottom: 0.5rem;">Active</div>
+                    <h4 style="margin-bottom: 0.5rem;">Mock (Template)</h4>
+                    <p style="font-size: 0.9rem;">Deterministic, instant, zero-cost. No network required. Pattern-matched insights from energy data.</p>
+                </div>
+                <div style="background: rgba(245, 207, 29, 0.1); padding: 1.5rem; border-radius: 8px; border-top: 3px solid #F5CF1D; text-align: center;">
+                    <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: #F5CF1D; margin-bottom: 0.5rem;">Planned</div>
+                    <h4 style="margin-bottom: 0.5rem;">On-Device TFLite</h4>
+                    <p style="font-size: 0.9rem;">Private, fast, no API key. Runs entirely on device for maximum privacy with richer prosody analysis.</p>
+                </div>
+                <div style="background: rgba(245, 207, 29, 0.1); padding: 1.5rem; border-radius: 8px; border-top: 3px solid #F5CF1D; text-align: center;">
+                    <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: #F5CF1D; margin-bottom: 0.5rem;">Planned</div>
+                    <h4 style="margin-bottom: 0.5rem;">On-Device GGUF</h4>
+                    <p style="font-size: 0.9rem;">Maximum quality, fully local. Quantized language models running natively for deepest on-device narratives.</p>
+                </div>
+                <div style="background: rgba(156, 26, 231, 0.1); padding: 1.5rem; border-radius: 8px; border-top: 3px solid #9C1AE7; text-align: center;">
+                    <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: #9C1AE7; margin-bottom: 0.5rem;">Planned</div>
+                    <h4 style="margin-bottom: 0.5rem;">Cloud API</h4>
+                    <p style="font-size: 0.9rem;">Deepest narratives, user-configured. Only aggregated scores sent — never raw audio or identifiable data.</p>
+                </div>
+            </div>
+
+            <div style="background: rgba(95, 223, 223, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); margin-top: 2rem;">
+                <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">LlmProvider Interface</h4>
+                <pre style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 6px; overflow-x: auto; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; color: var(--color-cyan);"><code>interface LlmProvider {
+    suspend fun generateInsight(
+        readings: List&lt;EnergyReading&gt;,
+        habitSummary: String? = null
+    ): String?
+}</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- AR Glasses -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Aura on Your Glasses</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">A minimal heads-up display shows your energy state at a glance — colour-coded, distraction-free, always private. Compatible with the open DialState schema for any smart glasses platform.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/aurallm_glasses.webp" alt="AuraLLM AR glasses HUD preview showing pulsing aura ring and chakra bar overlay" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                </div>
+                <div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">The Glasses HUD</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; display: flex; gap: 0.75rem; align-items: flex-start;">
+                            <span style="color: var(--color-cyan);">&#9679;</span>
+                            <span><strong>Pulsing Aura Ring</strong> — Colour-coded concentric circles that breathe with a 2-second animation cycle</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; gap: 0.75rem; align-items: flex-start;">
+                            <span style="color: var(--color-cyan);">&#9679;</span>
+                            <span><strong>Energy Score</strong> — Combined average displayed as a large number</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; gap: 0.75rem; align-items: flex-start;">
+                            <span style="color: var(--color-cyan);">&#9679;</span>
+                            <span><strong>Aura Label</strong> — Radiant / Steady / Recharging / Red Zone</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; gap: 0.75rem; align-items: flex-start;">
+                            <span style="color: var(--color-cyan);">&#9679;</span>
+                            <span><strong>Chakra Bar</strong> — Vertical ladder showing current chakra level with active/inactive segments</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; gap: 0.75rem; align-items: flex-start;">
+                            <span style="color: var(--color-cyan);">&#9679;</span>
+                            <span><strong>Camera Passthrough</strong> — Live camera feed with HUD overlay for real-world AR preview</span>
+                        </li>
+                    </ul>
+
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem; margin-top: 1.5rem;">Transport Roadmap</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+                        <div style="background: rgba(44, 210, 126, 0.15); padding: 0.75rem; border-radius: 6px; text-align: center;">
+                            <div style="font-size: 0.7rem; text-transform: uppercase; color: #2CD27E; margin-bottom: 0.25rem;">Active</div>
+                            <strong style="font-size: 0.9rem;">JSON Export</strong>
+                        </div>
+                        <div style="background: rgba(245, 207, 29, 0.1); padding: 0.75rem; border-radius: 6px; text-align: center;">
+                            <div style="font-size: 0.7rem; text-transform: uppercase; color: #F5CF1D; margin-bottom: 0.25rem;">Planned</div>
+                            <strong style="font-size: 0.9rem;">BLE Broadcast</strong>
+                        </div>
+                        <div style="background: rgba(245, 207, 29, 0.1); padding: 0.75rem; border-radius: 6px; text-align: center;">
+                            <div style="font-size: 0.7rem; text-transform: uppercase; color: #F5CF1D; margin-bottom: 0.25rem;">Planned</div>
+                            <strong style="font-size: 0.9rem;">Companion SDK</strong>
+                        </div>
+                        <div style="background: rgba(245, 207, 29, 0.1); padding: 0.75rem; border-radius: 6px; text-align: center;">
+                            <div style="font-size: 0.7rem; text-transform: uppercase; color: #F5CF1D; margin-bottom: 0.25rem;">Planned</div>
+                            <strong style="font-size: 0.9rem;">Shared File</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: rgba(95, 223, 223, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); margin-top: 2rem;">
+                <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Open DialState Schema (JSON)</h4>
+                <pre style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 6px; overflow-x: auto; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: var(--color-cyan);"><code>{
+    "selfEnergy": 78,
+    "othersImpact": 68,
+    "auraColorHex": "#9C1AE7",
+    "label": "Radiant",
+    "chakra": {
+        "level": 4, "label": "Throat",
+        "colorHex": "#3AE5E7",
+        "suggestions": ["Speak one honest sentence kindly.",
+            "Hydrate and take slow, open breaths.",
+            "Write a short note of appreciation."]
+    },
+    "isRedZone": false,
+    "timestampMillis": 1738800000000
+}</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Design -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">A Visual Experience Rooted in Energy</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">AuraLLM features a DMT neon aesthetic on deep midnight — a design language inspired by bioluminescence, energy fields, and visual consciousness.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 3rem;">
+                <div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">The DMT Palette</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <div style="width: 32px; height: 32px; border-radius: 50%; background: #9C1AE7;"></div>
+                            <div><strong>AuraViolet</strong> <code style="font-size: 0.8rem; opacity: 0.7;">#9C1AE7</code><br><span style="font-size: 0.85rem;">High energy, crown chakra</span></div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <div style="width: 32px; height: 32px; border-radius: 50%; background: #3AE5E7;"></div>
+                            <div><strong>AuraTeal</strong> <code style="font-size: 0.8rem; opacity: 0.7;">#3AE5E7</code><br><span style="font-size: 0.85rem;">Clarity, throat chakra</span></div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <div style="width: 32px; height: 32px; border-radius: 50%; background: #2CD27E;"></div>
+                            <div><strong>AuraGreen</strong> <code style="font-size: 0.8rem; opacity: 0.7;">#2CD27E</code><br><span style="font-size: 0.85rem;">Positive energy, heart</span></div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <div style="width: 32px; height: 32px; border-radius: 50%; background: #F5CF1D;"></div>
+                            <div><strong>AuraAmber</strong> <code style="font-size: 0.8rem; opacity: 0.7;">#F5CF1D</code><br><span style="font-size: 0.85rem;">Caution, solar/sacral</span></div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <div style="width: 32px; height: 32px; border-radius: 50%; background: #F7093B;"></div>
+                            <div><strong>AuraRose</strong> <code style="font-size: 0.8rem; opacity: 0.7;">#F7093B</code><br><span style="font-size: 0.85rem;">Alert, root, red zone</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Surfaces</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <div style="background: #0F0B1A; padding: 1rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
+                            <strong>Midnight</strong> <code style="font-size: 0.8rem; opacity: 0.7;">#0F0B1A</code><br>
+                            <span style="font-size: 0.85rem;">Primary background</span>
+                        </div>
+                        <div style="background: #1A1528; padding: 1rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
+                            <strong>Card</strong> <code style="font-size: 0.8rem; opacity: 0.7;">#1A1528</code><br>
+                            <span style="font-size: 0.85rem;">Elevated cards, panels</span>
+                        </div>
+                        <div style="background: rgba(240, 236, 247, 0.1); padding: 1rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);">
+                            <strong style="color: #F0ECF7;">On Surface</strong> <code style="font-size: 0.8rem; opacity: 0.7;">#F0ECF7</code><br>
+                            <span style="font-size: 0.85rem;">Primary text</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Nine AI Illustrations</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem;">Created with FAL (gpt-image-1.5) at 1024x1024. Each illustration bridges DMT-inspired energy art with clean mobile interface design.</p>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem;">
+                        <div style="display: flex; gap: 0.5rem;"><span style="color: var(--color-cyan);">&#8226;</span> Onboarding walkthrough</div>
+                        <div style="display: flex; gap: 0.5rem;"><span style="color: var(--color-cyan);">&#8226;</span> Account creation</div>
+                        <div style="display: flex; gap: 0.5rem;"><span style="color: var(--color-cyan);">&#8226;</span> Daily dashboard with dial</div>
+                        <div style="display: flex; gap: 0.5rem;"><span style="color: var(--color-cyan);">&#8226;</span> Weekly trend chart</div>
+                        <div style="display: flex; gap: 0.5rem;"><span style="color: var(--color-cyan);">&#8226;</span> Close-up aura dial</div>
+                        <div style="display: flex; gap: 0.5rem;"><span style="color: var(--color-cyan);">&#8226;</span> Voice analysis results</div>
+                        <div style="display: flex; gap: 0.5rem;"><span style="color: var(--color-cyan);">&#8226;</span> Habit logging interface</div>
+                        <div style="display: flex; gap: 0.5rem;"><span style="color: var(--color-cyan);">&#8226;</span> Settings &amp; privacy</div>
+                        <div style="display: flex; gap: 0.5rem;"><span style="color: var(--color-cyan);">&#8226;</span> Marketing phone mockup</div>
+                    </div>
+                    <p style="font-size: 0.85rem; margin-top: 0.75rem; opacity: 0.7;">Typography: Cormorant (display serif) + Outfit (geometric sans)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Privacy Is the Product.</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Your wellness data is deeply personal. AuraLLM was engineered from the ground up with privacy as a core architectural principle — not a feature, not an afterthought.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <div style="display: grid; grid-template-columns: 1fr; gap: 1rem;">
+                        <div style="display: flex; gap: 1rem; align-items: flex-start; background: rgba(95, 223, 223, 0.05); padding: 1rem; border-radius: 6px;">
+                            <span style="color: var(--color-cyan); font-size: 1.3rem;">&#128274;</span>
+                            <div><strong>Local-First</strong><br><span style="font-size: 0.95rem;">Room database on-device. No cloud servers in the core data path.</span></div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: flex-start; background: rgba(95, 223, 223, 0.05); padding: 1rem; border-radius: 6px;">
+                            <span style="color: var(--color-cyan); font-size: 1.3rem;">&#127908;</span>
+                            <div><strong>No Raw Audio</strong><br><span style="font-size: 0.95rem;">Voice processed in-memory, immediately discarded. Only numeric scores stored.</span></div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: flex-start; background: rgba(95, 223, 223, 0.05); padding: 1rem; border-radius: 6px;">
+                            <span style="color: var(--color-cyan); font-size: 1.3rem;">&#9745;</span>
+                            <div><strong>Consent-Gated</strong><br><span style="font-size: 0.95rem;">SpeechConsentManager via DataStore. Must be explicitly true before any capture. Revocable any time.</span></div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: flex-start; background: rgba(95, 223, 223, 0.05); padding: 1rem; border-radius: 6px;">
+                            <span style="color: var(--color-cyan); font-size: 1.3rem;">&#128683;</span>
+                            <div><strong>No Data Harvesting</strong><br><span style="font-size: 0.95rem;">No advertising profiles. No third-party data brokers. No analytics SDK.</span></div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: flex-start; background: rgba(95, 223, 223, 0.05); padding: 1rem; border-radius: 6px;">
+                            <span style="color: var(--color-cyan); font-size: 1.3rem;">&#128225;</span>
+                            <div><strong>No Network (Core)</strong><br><span style="font-size: 0.95rem;">The entire core pipeline — scoring, dial, habits, speech — works fully offline.</span></div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: flex-start; background: rgba(95, 223, 223, 0.05); padding: 1rem; border-radius: 6px;">
+                            <span style="color: var(--color-cyan); font-size: 1.3rem;">&#9888;</span>
+                            <div><strong>Not Medical</strong><br><span style="font-size: 0.95rem;">All copy uses "reflective wellness insights." Red Zone is self-report only. No condition detection.</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/aurallm_privacy.webp" alt="AuraLLM privacy-first architecture showing on-device processing and consent flow" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep); margin-bottom: 2rem;">
+                    <div style="background: rgba(95, 223, 223, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan);">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Consent Flow</h4>
+                        <p style="font-size: 0.95rem; font-family: 'JetBrains Mono', monospace; line-height: 1.8;">
+                            User taps "Enable Voice"<br>
+                            &rarr; SpeechConsentManager.grant()<br>
+                            &rarr; DataStore: consent = true<br>
+                            &rarr; SpeechFeatureExtractor available<br><br>
+                            User taps "Revoke"<br>
+                            &rarr; SpeechConsentManager.revoke()<br>
+                            &rarr; DataStore: consent = false<br>
+                            &rarr; Feature extraction disabled
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Architecture -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Data Architecture</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Clean Architecture with MVVM. Three core data entities in Room, a WorkManager-driven analysis pipeline, and a Compose UI layer connected through ViewModel state flows.</p>
+
+            <div style="background: rgba(95, 223, 223, 0.08); padding: 2rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); margin-bottom: 3rem;">
+                <h4 style="color: var(--color-cyan); margin-bottom: 1rem;">Data Flow Pipeline</h4>
+                <pre style="background: rgba(0,0,0,0.3); padding: 1.5rem; border-radius: 6px; overflow-x: auto; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: var(--color-cyan); line-height: 1.6;"><code>User Input / Voice ──► SpeechFeatureExtractor ──► SpeechFeature (Room)
+                                                        │
+Manual Check-in ──► EnergyReading (Room) ◄──────────────┘
+                          │
+                    EnergyRepository (3-day rolling window)
+                          │
+                    AnalysisWorker (WorkManager, every 6h)
+                          │
+                    LlmProvider.generateInsight()
+                          │
+                    EnergyReading.insight (written back)
+                          │
+                    EnergyDialViewModel ──► UI (Compose)
+                          │
+                    DialState ──► AR Glasses (JSON export)</code></pre>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 3rem;">
+                <div style="background: rgba(30, 159, 242, 0.08); padding: 1.5rem; border-radius: 8px; border-top: 3px solid var(--color-blue);">
+                    <h4 style="color: var(--color-blue); margin-bottom: 0.75rem;">EnergyReading</h4>
+                    <p style="font-size: 0.9rem; font-family: 'JetBrains Mono', monospace;">Table: energy_readings</p>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">selfEnergy, othersImpact, triggers, insight, source, timestamp</p>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.08); padding: 1.5rem; border-radius: 8px; border-top: 3px solid var(--color-blue);">
+                    <h4 style="color: var(--color-blue); margin-bottom: 0.75rem;">SpeechFeature</h4>
+                    <p style="font-size: 0.9rem; font-family: 'JetBrains Mono', monospace;">Table: speech_features</p>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">speakingRate, toneWarmth, vocalEnergy, sampleDurationSec</p>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.08); padding: 1.5rem; border-radius: 8px; border-top: 3px solid var(--color-blue);">
+                    <h4 style="color: var(--color-blue); margin-bottom: 0.75rem;">HabitEntry</h4>
+                    <p style="font-size: 0.9rem; font-family: 'JetBrains Mono', monospace;">Table: habit_entries</p>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">category, label, quality (1-5), timestamp</p>
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+                <div style="background: rgba(95, 223, 223, 0.08); padding: 1rem; border-radius: 6px; text-align: center;">
+                    <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-cyan); margin-bottom: 0.25rem;">Platform</div>
+                    <strong>Android 8.0+ (API 28)</strong>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.08); padding: 1rem; border-radius: 6px; text-align: center;">
+                    <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-cyan); margin-bottom: 0.25rem;">UI</div>
+                    <strong>Jetpack Compose + Material 3</strong>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.08); padding: 1rem; border-radius: 6px; text-align: center;">
+                    <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-cyan); margin-bottom: 0.25rem;">Camera</div>
+                    <strong>CameraX (core, camera2, lifecycle)</strong>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.08); padding: 1rem; border-radius: 6px; text-align: center;">
+                    <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-cyan); margin-bottom: 0.25rem;">Build</div>
+                    <strong>Gradle (AGP 8.7.3), Kotlin</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Architecture Cards -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <h2 class="section-title centered" style="margin-bottom: 3rem;">Platform Architecture</h2>
@@ -196,7 +629,7 @@
                         <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Voice Engine</h3>
                     </div>
                     <h3 style="margin-top: 1rem;">On-Device Speech Analysis</h3>
-                    <p>SpeechFeatureExtractor processes audio in-memory with zero disk writes. Consent-gated via DataStore, the pipeline extracts speaking rate, tone warmth, and vocal energy as numeric scores. Raw audio is discarded immediately after extraction. Future TFLite integration will add prosody analysis while maintaining the same privacy guarantees and consent model.</p>
+                    <p>SpeechFeatureExtractor processes audio in-memory with zero disk writes. Consent-gated via DataStore, the pipeline extracts speaking rate, tone warmth, and vocal energy. Raw audio discarded immediately. Future TFLite prosody model integration planned.</p>
                 </div>
                 <div class="portfolio-card">
                     <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
@@ -204,7 +637,7 @@
                         <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Habit Engine</h3>
                     </div>
                     <h3 style="margin-top: 1rem;">Structured Wellness Tracking</h3>
-                    <p>Room database stores HabitEntry records across six categories with 1-5 quality ratings. A 3-day rolling average drives the Habit Bonus algorithm that transparently influences Others Impact scores. Entries never leave the device. The compounding effect — consistent good habits visibly improving energy scores — creates natural retention without artificial streaks.</p>
+                    <p>Room database stores HabitEntry records across six categories with 1-5 quality ratings. A 3-day rolling average drives the Habit Bonus algorithm that transparently influences Others Impact scores. Entries never leave the device.</p>
                 </div>
                 <div class="portfolio-card">
                     <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
@@ -212,7 +645,7 @@
                         <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">LLM Integration</h3>
                     </div>
                     <h3 style="margin-top: 1rem;">Pluggable Insight Generation</h3>
-                    <p>The LlmProvider interface accepts energy readings and habit summaries, returning reflective narrative insights. Currently backed by a deterministic template engine (zero cost, zero network), with planned on-device TFLite and GGUF providers for maximum privacy, plus optional cloud API providers for deepest narratives. All insights append "(For wellness reflection only.)"</p>
+                    <p>LlmProvider interface accepts energy readings and habit summaries. Currently backed by deterministic template engine (zero cost). Planned: on-device TFLite, GGUF, and optional cloud API. All insights append wellness reflection disclaimer.</p>
                 </div>
                 <div class="portfolio-card">
                     <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
@@ -220,7 +653,7 @@
                         <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">AR Glasses</h3>
                     </div>
                     <h3 style="margin-top: 1rem;">Open DialState Schema</h3>
-                    <p>The DialState is a serializable JSON object containing selfEnergy, othersImpact, auraColorHex, label, chakra level with suggestions, and timestamp. The in-app preview simulates the glasses HUD with pulsing aura ring, energy score, and chakra bar. Camera passthrough shows the overlay on a live feed. BLE broadcast and companion SDK are planned for hardware pairing.</p>
+                    <p>Serializable JSON object with selfEnergy, othersImpact, auraColorHex, label, chakra level and suggestions. In-app HUD preview with pulsing aura ring. Camera passthrough for AR preview. BLE broadcast and companion SDK planned.</p>
                 </div>
                 <div class="portfolio-card">
                     <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
@@ -228,7 +661,7 @@
                         <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Privacy-First</h3>
                     </div>
                     <h3 style="margin-top: 1rem;">Architectural Guarantee</h3>
-                    <p>Local-first Room database. No raw audio on disk or network. SpeechConsentManager via DataStore with explicit grant/revoke. No analytics SDK, no advertising profiles, no third-party data brokers. The entire core pipeline — scoring, dial, habits, speech — works fully offline. Red Zone is self-report only; the app never claims to detect distress or diagnose conditions.</p>
+                    <p>Local-first Room database. No raw audio on disk or network. SpeechConsentManager with explicit grant/revoke. No analytics SDK, no advertising profiles, no data brokers. Full offline capability. Red Zone is self-report only.</p>
                 </div>
                 <div class="portfolio-card">
                     <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
@@ -236,13 +669,13 @@
                         <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Background Analysis</h3>
                     </div>
                     <h3 style="margin-top: 1rem;">WorkManager Scheduling</h3>
-                    <p>AnalysisWorker runs every six hours via WorkManager, consuming a 3-day rolling window of EnergyReading and HabitEntry data. The worker feeds aggregated scores to LlmProvider.generateInsight(), writes the reflective insight back to the reading, and surfaces it in the UI. Battery-aware scheduling respects Doze mode and App Standby restrictions.</p>
+                    <p>AnalysisWorker runs every six hours consuming a 3-day rolling window. Feeds aggregated scores to LlmProvider.generateInsight(), writes reflective insight back to the reading. Battery-aware scheduling respects Doze and App Standby.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Technology Stack -->
+    <!-- Technology Stack + Differentiation -->
     <section class="section">
         <div class="container">
             <h2 class="section-title centered">Technology Stack</h2>
@@ -259,6 +692,9 @@
                 <span class="tag">Gradle (AGP 8.7.3)</span>
                 <span class="tag">MVVM</span>
                 <span class="tag">Clean Architecture</span>
+                <span class="tag">TFLite (Planned)</span>
+                <span class="tag">GGUF (Planned)</span>
+                <span class="tag">BLE (Planned)</span>
             </div>
 
             <div style="margin-top: 3rem;">
@@ -266,93 +702,133 @@
                 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
                     <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
                         <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Privacy as Product</h4>
-                        <p>Not a feature — an architectural guarantee. Zero raw audio persistence, consent-gated features, no analytics SDK, no data brokers. In a market where wellness apps routinely harvest sensitive data, AuraLLM's privacy posture is a genuine competitive advantage that drives trust, retention, and app store ratings among a vocal privacy-conscious segment.</p>
+                        <p>Not a feature — an architectural guarantee. Zero raw audio persistence, consent-gated features, no analytics SDK, no data brokers. In a market where wellness apps routinely harvest sensitive data, AuraLLM's privacy posture is a genuine competitive advantage.</p>
                     </div>
                     <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
                         <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">AR-First Positioning</h4>
-                        <p>The open DialState JSON schema and glasses HUD preview position AuraLLM to ride the smart glasses adoption curve. By building the integration layer now — before mainstream hardware arrives — we establish brand association and switching costs. When smart glasses reach consumer scale, AuraLLM will be the wellness app with native glasses support already shipped.</p>
+                        <p>The open DialState JSON schema and glasses HUD preview position AuraLLM to ride the smart glasses adoption curve. Building the integration layer now establishes brand association and switching costs before mainstream hardware arrives.</p>
                     </div>
                     <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
                         <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Multi-Signal Synthesis</h4>
-                        <p>No competing app combines voice-derived energy, structured habit tracking, and self-reported triggers into a single composite score. The dual-ring dial — separating internal feeling from outward impact — offers a perspective that pure fitness trackers and meditation apps cannot replicate. The synthesis creates a defensible product category rather than competing in an existing one.</p>
+                        <p>No competing app combines voice-derived energy, structured habit tracking, and self-reported triggers into a single composite score. The dual-ring dial creates a defensible product category rather than competing in an existing one.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Freemium Model -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Freemium with Premium Expansion</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Revenue scales with user value, not data exploitation. Premium features enhance the experience without gating core privacy protections.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 800px; margin: 0 auto;">
+                <div style="background: rgba(95, 223, 223, 0.08); padding: 2rem; border-radius: 12px; border: 1px solid rgba(95, 223, 223, 0.2);">
+                    <h3 style="color: var(--color-cyan); text-align: center; margin-bottom: 0.5rem;">Free (Core)</h3>
+                    <div style="text-align: center; font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); margin-bottom: 1.5rem;">$0</div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem;"><span style="color: var(--color-cyan);">&#10003;</span> Voice energy analysis</li>
+                        <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem;"><span style="color: var(--color-cyan);">&#10003;</span> Habit tracking (6 categories)</li>
+                        <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem;"><span style="color: var(--color-cyan);">&#10003;</span> Daily energy dial</li>
+                        <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem;"><span style="color: var(--color-cyan);">&#10003;</span> Trigger tags</li>
+                        <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem;"><span style="color: var(--color-cyan);">&#10003;</span> 3-day rolling insights</li>
+                        <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem;"><span style="color: var(--color-cyan);">&#10003;</span> Chakra guidance</li>
+                        <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem;"><span style="color: var(--color-cyan);">&#10003;</span> Full local processing</li>
+                        <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem;"><span style="color: var(--color-cyan);">&#10003;</span> Data export (JSON)</li>
+                    </ul>
+                </div>
+                <div style="background: rgba(156, 26, 231, 0.12); padding: 2rem; border-radius: 12px; border: 2px solid rgba(156, 26, 231, 0.4);">
+                    <h3 style="color: #9C1AE7; text-align: center; margin-bottom: 0.5rem;">Premium (Aura+)</h3>
+                    <div style="text-align: center; font-size: 2.5rem; font-weight: 700; color: #9C1AE7; margin-bottom: 1.5rem;">$4.99<span style="font-size: 1rem; font-weight: 400;">/mo</span></div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem;"><span style="color: #9C1AE7;">&#10003;</span> Everything in Free</li>
+                        <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem;"><span style="color: #9C1AE7;">&#10003;</span> Advanced trend analytics</li>
+                        <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem;"><span style="color: #9C1AE7;">&#10003;</span> Custom analysis windows</li>
+                        <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem;"><span style="color: #9C1AE7;">&#10003;</span> AR aura visualization</li>
+                        <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem;"><span style="color: #9C1AE7;">&#10003;</span> Multiple LLM insight styles</li>
+                        <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem;"><span style="color: #9C1AE7;">&#10003;</span> Priority feature access</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Results & Impact -->
-    <section class="section" style="background: var(--color-charcoal);">
+    <section class="section">
         <div class="container">
             <h2 class="section-title centered" style="margin-bottom: 2rem;">Results and Impact</h2>
             <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Production-grade mobile architecture with measurable engineering outcomes and a clear path from core product to premium monetization and AR hardware integration.</p>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
-                <div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-                        <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-                            <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">$0</div>
-                            <p style="font-size: 0.95rem; margin: 0;">Marginal cost per user (core pipeline)</p>
-                        </div>
-                        <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-                            <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">$4.99</div>
-                            <p style="font-size: 0.95rem; margin: 0;">Premium tier (Aura+) monthly revenue</p>
-                        </div>
-                        <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-                            <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">100%</div>
-                            <p style="font-size: 0.95rem; margin: 0;">Offline capability for all core features</p>
-                        </div>
-                        <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-                            <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">6h</div>
-                            <p style="font-size: 0.95rem; margin: 0;">Automatic trend analysis cycle interval</p>
-                        </div>
-                    </div>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 3rem;">
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">$0</div>
+                    <p style="font-size: 0.9rem; margin: 0;">Marginal cost per user</p>
                 </div>
-                <div>
-                    <div style="background: rgba(95, 223, 223, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); margin-bottom: 1.5rem;">
-                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Freemium Unit Economics</h4>
-                        <p>Core pipeline runs at zero marginal cost — no cloud inference, no per-user storage costs, no API fees. The premium tier ($4.99/mo) gates advanced analytics, custom analysis windows, AR visualization, and multiple LLM insight styles. Revenue scales with user value, not data exploitation. Premium features enhance without restricting core privacy guarantees.</p>
-                    </div>
-                    <div style="background: rgba(95, 223, 223, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan);">
-                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Not Medical — By Design</h4>
-                        <p>All copy uses "reflective wellness insights." Disclaimers are embedded in UI and generated text. Red Zone is self-report only. The app never claims to detect distress, diagnose conditions, or assess risk. This deliberate positioning avoids regulatory complexity while serving users who want structured self-reflection without clinical framing.</p>
-                    </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">$4.99</div>
+                    <p style="font-size: 0.9rem; margin: 0;">Premium monthly revenue</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">100%</div>
+                    <p style="font-size: 0.9rem; margin: 0;">Offline capable</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">9</div>
+                    <p style="font-size: 0.9rem; margin: 0;">AI-generated illustrations</p>
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem;">
+                <div style="background: rgba(95, 223, 223, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Freemium Unit Economics</h4>
+                    <p>Core pipeline runs at zero marginal cost — no cloud inference, no per-user storage, no API fees. Revenue scales with premium conversions, not data exploitation.</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Not Medical — By Design</h4>
+                    <p>Deliberate positioning avoids regulatory complexity. "Reflective wellness insights" framing serves users who want structured self-reflection without clinical framing.</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">AR Hardware Ready</h4>
+                    <p>Open DialState schema positions for smart glasses adoption. Early integration builds brand association and switching costs before the AR wellness category matures.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Commercial Use Cases -->
-    <section class="section">
+    <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Commercial Use Cases</h2>
             <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Applicable across consumer wellness, corporate wellbeing programs, wearable hardware partnerships, and white-label licensing for health platforms.</p>
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
                 <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan);">
                     <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Consumer Wellness</h4>
-                    <p>Direct-to-consumer Android app with freemium conversion to Aura+ subscription. The daily energy dial and habit tracking create natural engagement loops, while privacy-first positioning drives word-of-mouth in communities increasingly sceptical of data-harvesting wellness apps. Waitlist-based launch builds early community before general availability.</p>
+                    <p>Direct-to-consumer Android app with freemium conversion to Aura+ subscription. Privacy-first positioning drives word-of-mouth in communities increasingly sceptical of data-harvesting wellness apps.</p>
                 </div>
                 <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan);">
                     <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Corporate Wellbeing</h4>
-                    <p>White-label deployment for enterprise wellness programs where employers want energy-awareness tools without accessing employee health data. The local-first architecture means the employer never touches personal wellness data — they provide the tool, employees own the data. Per-seat licensing with aggregate anonymized reporting.</p>
+                    <p>White-label deployment for enterprise wellness programs. The local-first architecture means employers never touch personal wellness data — they provide the tool, employees own the data.</p>
                 </div>
                 <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan);">
                     <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Wearable Partnerships</h4>
-                    <p>The open DialState schema is designed for hardware integration. Smart glasses manufacturers seeking wellness app partnerships get a ready-made HUD implementation with BLE transport planned. Ring and watch manufacturers can ingest DialState for ambient energy display. Early partnerships create distribution channels before the AR wellness category is crowded.</p>
+                    <p>Smart glasses manufacturers get a ready-made HUD implementation. Ring and watch manufacturers can ingest DialState for ambient energy display. Early partnerships create distribution before the AR wellness category is crowded.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="section" style="background: var(--color-charcoal);">
+    <!-- Ready CTA -->
+    <section class="section" style="background: linear-gradient(135deg, rgba(156, 26, 231, 0.15), rgba(58, 229, 231, 0.1));">
         <div class="container" style="text-align: center;">
-            <h2 class="section-title">Interested in This Solution?</h2>
-            <p class="section-description" style="margin-bottom: 2rem;">Learn how we can build privacy-first wellness platforms with voice analysis, habit tracking, and AR integration for your organization.</p>
+            <h2 class="section-title">Ready to See Your Energy?</h2>
+            <p class="section-description" style="margin-bottom: 0.5rem; max-width: 800px; margin-left: auto; margin-right: auto;">AuraLLM brings together voice analysis, habit tracking, self-reported triggers, a dual-ring energy dial, chakra guidance, and AR glasses integration into one privacy-first Android experience.</p>
+            <p style="font-size: 1.3rem; color: var(--color-cyan); font-weight: 600; margin-bottom: 2rem;">Know your energy. Protect your light.</p>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                 <a href="contact.html" class="btn btn-primary"><span>Schedule a Demo</span></a>
                 <a href="portfolio.html" class="btn btn-outline"><span>View All Projects</span></a>
             </div>
+            <p style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.7;">For personal wellness reflection only. Not a medical or diagnostic tool.</p>
         </div>
     </section>
 
