@@ -944,15 +944,15 @@ p {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-lg);
     margin-bottom: var(--space-xl);
 }
 
-/* Tablet: 3 columns */
+/* Tablet: 2 columns */
 @media (max-width: 992px) {
     .portfolio-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -1043,31 +1043,11 @@ p {
 }
 
 /* ================================
-   PORTFOLIO GRID - 4 COLUMN LAYOUT
+   PORTFOLIO GRID SECTION
    ================================ */
 .portfolio-grid-section {
     background: var(--color-concrete);
     padding: var(--space-xl) 0;
-}
-
-.portfolio-grid-4col {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--space-lg);
-}
-
-/* Tablet: 2 columns */
-@media (max-width: 992px) {
-    .portfolio-grid-4col {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Mobile: 1 column */
-@media (max-width: 768px) {
-    .portfolio-grid-4col {
-        grid-template-columns: 1fr;
-    }
 }
 
 .portfolio-card {
@@ -1077,6 +1057,9 @@ p {
     transition: all var(--transition);
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 .portfolio-card:hover {
@@ -1288,6 +1271,16 @@ p {
     background: linear-gradient(135deg, var(--color-charcoal) 0%, #2a2e31 100%);
 }
 
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .team-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1321,8 +1314,18 @@ p {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.team-member.reverse {
+    flex-direction: row-reverse;
 }
 
 .team-member:hover {
@@ -1333,8 +1336,9 @@ p {
 
 .member-photo {
     position: relative;
-    width: 100%;
-    height: 400px;
+    width: 320px;
+    height: 320px;
+    flex: 0 0 320px;
     overflow: hidden;
     background: linear-gradient(135deg, #2a2e31 0%, var(--color-charcoal) 100%);
 }
@@ -1384,7 +1388,9 @@ p {
 /* Responsive adjustments for member photo */
 @media (max-width: 768px) {
     .member-photo {
-        height: 350px;
+        width: 100%;
+        height: 320px;
+        flex: 0 0 auto;
     }
 
     .member-info {
@@ -1401,6 +1407,14 @@ p {
 
     .member-info .bio {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    .team-member,
+    .team-member.reverse {
+        flex-direction: column;
+        text-align: center;
     }
 }
 
