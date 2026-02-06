@@ -150,7 +150,7 @@
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <h2 class="section-title centered" style="margin-bottom: 3rem;">Platform Components</h2>
-            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;">
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
                 <div class="portfolio-card">
                     <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
                         <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#129302;</div>
@@ -182,6 +182,22 @@
                     </div>
                     <h3 style="margin-top: 1rem;">Secret Management</h3>
                     <p>1Password Connect integration with automated credential injection into Docker containers. Zero hardcoded secrets with comprehensive audit trails for compliance.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128268;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">RAG Pipeline</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Vector Search</h3>
+                    <p>ChromaDB vector storage with web crawling, document parsing, and embedding generation for retrieval-augmented generation across internal knowledge bases.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128279;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Networking</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Mesh VPN and Routing</h3>
+                    <p>Traefik reverse proxy with automatic TLS and Tailscale mesh VPN for zero-trust remote access to all services without exposing ports to the public internet.</p>
                 </div>
             </div>
         </div>
@@ -287,7 +303,7 @@
                 </div>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 2rem;">
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem;">
                 <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
                     <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">scripts/</div>
                     <p style="font-size: 0.95rem; margin: 0;">Deployment, backup, and verification automation</p>
@@ -301,8 +317,16 @@
                     <p style="font-size: 0.95rem; margin: 0;">RAG pipeline and indexing utilities</p>
                 </div>
                 <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">ai-router/</div>
+                    <p style="font-size: 0.95rem; margin: 0;">OpenAI-compatible API gateway</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
                     <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">security/</div>
                     <p style="font-size: 0.95rem; margin: 0;">Hardening and audit documentation</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">docker-compose/</div>
+                    <p style="font-size: 0.95rem; margin: 0;">Service stack manifests and configs</p>
                 </div>
             </div>
         </div>
