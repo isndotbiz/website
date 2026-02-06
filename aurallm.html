@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AuraLLM Reflective Wellness Platform - Privacy-first Android app combining voice energy analysis, habit tracking, and a dual-ring energy dial with AR glasses integration, on-device ML, and pluggable LLM narratives for personal wellness reflection">
+    <meta name="keywords" content="Android, wellness app, voice analysis, energy tracking, habit tracker, AR glasses, on-device ML, privacy-first, LLM, chakra guidance, iSN.BiZ">
+    <meta name="author" content="iSN.BiZ Inc">
+    <meta property="og:title" content="AuraLLM Reflective Wellness Platform | iSN.BiZ Inc">
+    <meta property="og:description" content="Privacy-first Android app combining voice energy analysis, habit tracking, and a dual-ring energy dial with AR glasses integration">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://isn.biz/aurallm.html">
+    <meta property="og:image" content="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/aurallm_hero.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AuraLLM Reflective Wellness Platform | iSN.BiZ Inc">
+    <meta name="twitter:description" content="Voice energy analysis, habit tracking, and AR glasses integration in a privacy-first wellness app">
+    <meta name="twitter:image" content="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/aurallm_hero.webp">
+    <link rel="canonical" href="https://isn.biz/aurallm.html">
+    <title>AuraLLM Reflective Wellness Platform | iSN.BiZ Inc</title>
+    <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="enhanced-animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "AuraLLM",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Android 8.0+",
+        "description": "Privacy-first reflective wellness app combining voice energy analysis, habit tracking, and a dual-ring energy dial with AR glasses integration.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "iSN.BiZ Inc",
+            "url": "https://isn.biz"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="primary-navigation">
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="investors.html">Investors</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="hero" style="min-height: 70vh; padding-top: 120px;">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Reflective Wellness &middot; ~2025</span>
+                <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">AuraLLM Reflective Wellness Platform</h1>
+                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">Privacy-first Android application weaving voice energy analysis, habit tracking, and self-reported triggers into a living energy portrait — powered by on-device ML, a dual-ring aura dial, chakra-mapped guidance, and an open AR glasses schema for heads-up wellness display.</p>
+            </div>
+
+            <!-- Key Metrics -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; max-width: 900px; margin: 3rem auto; text-align: center;">
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">3</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">Signal Sources</div>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">0</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">Raw Audio Stored</div>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">6</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">Chakra Levels</div>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">100%</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">Offline Capable</div>
+                </div>
+            </div>
+
+            <div style="max-width: 600px; margin: 3rem auto;">
+                <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/aurallm_hero.webp" alt="AuraLLM energy dial interface showing dual-ring aura visualization and chakra guidance" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Investor Summary -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <div class="about-grid">
+                <div>
+                    <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Investor Summary</h2>
+                    <p class="lead">AuraLLM occupies a unique position in the $7B+ wellness app market by combining voice-derived energy analysis, structured habit tracking, and an open AR glasses schema into a single privacy-first experience. Unlike fitness trackers that focus on physical metrics or meditation apps limited to guided sessions, AuraLLM reflects how users feel and how they show up through a dual-ring energy dial that separates internal state from outward impact.</p>
+                    <p style="margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.8;">The core pipeline runs entirely on-device. Voice samples are processed in-memory and immediately discarded — only numeric scores persist. Habit entries stay in the local Room database. The 3-day rolling analysis window runs via WorkManager every six hours, generating reflective insights through a pluggable LLM interface that currently uses a deterministic template engine with a clear roadmap to on-device TFLite and cloud providers. This architecture means the product delivers full value at zero marginal cost per user while the freemium model ($4.99/month Aura+) gates advanced analytics, custom analysis windows, and AR visualization without restricting core privacy guarantees.</p>
+                    <p style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.8;">The AR glasses integration — built around an open JSON schema for DialState — positions AuraLLM ahead of the curve as smart glasses move from niche hardware into mainstream consumer adoption. The pulsing aura ring, energy score, and chakra bar render on any compatible HUD, creating a persistent wellness overlay that no competing app currently offers. Early integration with this form factor builds brand association and switching costs before the market matures.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Product Capabilities</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Voice energy extraction (speaking rate, tone warmth, vocal energy) processed entirely on-device with zero raw audio persistence</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Dual-ring aura dial separating Self Energy from Others Impact with colour-coded labels (Radiant, Steady, Recharging, Red Zone)</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Six-category habit tracking with quality ratings and a transparent Habit Bonus algorithm influencing energy scores</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Chakra guidance system mapping energy state to Root-through-Crown levels with three actionable micro-interventions per level</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>3-day rolling trend analysis via WorkManager with pluggable LLM insight generation (template, TFLite, cloud roadmap)</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Red Zone crisis self-report — never algorithmically inferred — with grounding-focused guidance and trigger logging</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Open DialState JSON schema for AR glasses HUD with BLE broadcast and companion SDK planned</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep Dive: Dual-Ring Energy Dial -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Deep Dive: The Dual-Ring Energy Dial</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">At the heart of AuraLLM is a concentric visualization that separates how you feel from how you show up. Two rings, one aura score — a reflective lens, not a clinical verdict.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/aurallm_dial.webp" alt="AuraLLM dual-ring energy dial showing Self Energy and Others Impact rings with colour-coded aura labels" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                </div>
+                <div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Two Dimensions of Energy</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">The outer ring captures Self Energy — how you feel internally, derived from self-report or voice analysis. The inner ring captures Others Impact — how you show up to the world, calculated from self-energy plus a habit bonus that rewards consistent positive actions. The combined score maps to a living aura state: Radiant (70-100, violet), Steady (45-69, teal), Recharging (20-44, amber), or Red Zone (0-19, rose). Each state pulses a DMT-palette colour through the dial and optional glasses HUD.</p>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem; margin-top: 1.5rem;">Chakra Guidance Ladder</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">Energy maps to a six-level chakra ladder from Root (0-24, grounding) to Crown (85+, purpose and stillness). Each level delivers three specific micro-interventions — "Place a hand on your chest and breathe in 4, out 6" at Heart level, or "Take a slow grounding walk or stand barefoot" at Root. The system applies a self-centred penalty when Self Energy exceeds Others Impact by 20+ points and a red zone penalty, rewarding outward awareness over personal highs. This structured framework turns abstract energy scores into actionable next steps.</p>
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-top: 3rem;">
+                <div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Voice Energy Extraction</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">With explicit, revocable consent managed through SpeechConsentManager backed by DataStore, AuraLLM captures a brief voice sample and runs SpeechFeatureExtractor entirely in-memory. Raw audio is processed and immediately discarded — only three numeric scores persist: speaking rate (words per minute), tone warmth (0-100), and vocal energy (0-100). Future releases will integrate a TFLite prosody model for richer feature extraction without any change to the privacy guarantees. The consent flow is binary and reversible: users tap "Enable Voice" to grant, "Revoke" to disable, with no dark patterns or friction.</p>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem; margin-top: 1.5rem;">Habit Bonus Algorithm</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">Six habit categories (Meal, Sleep, Exercise, Hydration, Meditation, Social) accept daily log entries rated 1-5 for quality. A rolling 3-day average drives the Habit Bonus: excellent habits (4-5 avg) add +10 to +15 points to Others Impact, good habits (3-4 avg) add +5 to +10, and building habits (1-3 avg) add +0 to +5. This transparent, compounding system ensures that consistent positive actions visibly improve the energy portrait over days, creating a natural engagement loop grounded in genuine behavioural feedback rather than gamification tricks.</p>
+                </div>
+                <div>
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/aurallm_features.webp" alt="AuraLLM habit tracking and voice analysis interfaces showing daily energy logging and trend visualization" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Architecture -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 3rem;">Platform Architecture</h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#127908;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Voice Engine</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">On-Device Speech Analysis</h3>
+                    <p>SpeechFeatureExtractor processes audio in-memory with zero disk writes. Consent-gated via DataStore, the pipeline extracts speaking rate, tone warmth, and vocal energy as numeric scores. Raw audio is discarded immediately after extraction. Future TFLite integration will add prosody analysis while maintaining the same privacy guarantees and consent model.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128200;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Habit Engine</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Structured Wellness Tracking</h3>
+                    <p>Room database stores HabitEntry records across six categories with 1-5 quality ratings. A 3-day rolling average drives the Habit Bonus algorithm that transparently influences Others Impact scores. Entries never leave the device. The compounding effect — consistent good habits visibly improving energy scores — creates natural retention without artificial streaks.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#129302;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">LLM Integration</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Pluggable Insight Generation</h3>
+                    <p>The LlmProvider interface accepts energy readings and habit summaries, returning reflective narrative insights. Currently backed by a deterministic template engine (zero cost, zero network), with planned on-device TFLite and GGUF providers for maximum privacy, plus optional cloud API providers for deepest narratives. All insights append "(For wellness reflection only.)"</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128083;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">AR Glasses</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Open DialState Schema</h3>
+                    <p>The DialState is a serializable JSON object containing selfEnergy, othersImpact, auraColorHex, label, chakra level with suggestions, and timestamp. The in-app preview simulates the glasses HUD with pulsing aura ring, energy score, and chakra bar. Camera passthrough shows the overlay on a live feed. BLE broadcast and companion SDK are planned for hardware pairing.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128274;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Privacy-First</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Architectural Guarantee</h3>
+                    <p>Local-first Room database. No raw audio on disk or network. SpeechConsentManager via DataStore with explicit grant/revoke. No analytics SDK, no advertising profiles, no third-party data brokers. The entire core pipeline — scoring, dial, habits, speech — works fully offline. Red Zone is self-report only; the app never claims to detect distress or diagnose conditions.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128336;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Background Analysis</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">WorkManager Scheduling</h3>
+                    <p>AnalysisWorker runs every six hours via WorkManager, consuming a 3-day rolling window of EnergyReading and HabitEntry data. The worker feeds aggregated scores to LlmProvider.generateInsight(), writes the reflective insight back to the reading, and surfaces it in the UI. Battery-aware scheduling respects Doze mode and App Standby restrictions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered">Technology Stack</h2>
+            <div class="portfolio-tags" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 2rem;">
+                <span class="tag">Kotlin</span>
+                <span class="tag">Android SDK 28+</span>
+                <span class="tag">Jetpack Compose</span>
+                <span class="tag">Material 3</span>
+                <span class="tag">Room Database</span>
+                <span class="tag">WorkManager</span>
+                <span class="tag">DataStore</span>
+                <span class="tag">CameraX</span>
+                <span class="tag">kotlinx-serialization</span>
+                <span class="tag">Gradle (AGP 8.7.3)</span>
+                <span class="tag">MVVM</span>
+                <span class="tag">Clean Architecture</span>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem; text-align: center;">Differentiation and Moat</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Privacy as Product</h4>
+                        <p>Not a feature — an architectural guarantee. Zero raw audio persistence, consent-gated features, no analytics SDK, no data brokers. In a market where wellness apps routinely harvest sensitive data, AuraLLM's privacy posture is a genuine competitive advantage that drives trust, retention, and app store ratings among a vocal privacy-conscious segment.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">AR-First Positioning</h4>
+                        <p>The open DialState JSON schema and glasses HUD preview position AuraLLM to ride the smart glasses adoption curve. By building the integration layer now — before mainstream hardware arrives — we establish brand association and switching costs. When smart glasses reach consumer scale, AuraLLM will be the wellness app with native glasses support already shipped.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Multi-Signal Synthesis</h4>
+                        <p>No competing app combines voice-derived energy, structured habit tracking, and self-reported triggers into a single composite score. The dual-ring dial — separating internal feeling from outward impact — offers a perspective that pure fitness trackers and meditation apps cannot replicate. The synthesis creates a defensible product category rather than competing in an existing one.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results & Impact -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 2rem;">Results and Impact</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Production-grade mobile architecture with measurable engineering outcomes and a clear path from core product to premium monetization and AR hardware integration.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                            <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">$0</div>
+                            <p style="font-size: 0.95rem; margin: 0;">Marginal cost per user (core pipeline)</p>
+                        </div>
+                        <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                            <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">$4.99</div>
+                            <p style="font-size: 0.95rem; margin: 0;">Premium tier (Aura+) monthly revenue</p>
+                        </div>
+                        <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                            <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">100%</div>
+                            <p style="font-size: 0.95rem; margin: 0;">Offline capability for all core features</p>
+                        </div>
+                        <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                            <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">6h</div>
+                            <p style="font-size: 0.95rem; margin: 0;">Automatic trend analysis cycle interval</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="background: rgba(95, 223, 223, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Freemium Unit Economics</h4>
+                        <p>Core pipeline runs at zero marginal cost — no cloud inference, no per-user storage costs, no API fees. The premium tier ($4.99/mo) gates advanced analytics, custom analysis windows, AR visualization, and multiple LLM insight styles. Revenue scales with user value, not data exploitation. Premium features enhance without restricting core privacy guarantees.</p>
+                    </div>
+                    <div style="background: rgba(95, 223, 223, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan);">
+                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Not Medical — By Design</h4>
+                        <p>All copy uses "reflective wellness insights." Disclaimers are embedded in UI and generated text. Red Zone is self-report only. The app never claims to detect distress, diagnose conditions, or assess risk. This deliberate positioning avoids regulatory complexity while serving users who want structured self-reflection without clinical framing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commercial Use Cases -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Commercial Use Cases</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Applicable across consumer wellness, corporate wellbeing programs, wearable hardware partnerships, and white-label licensing for health platforms.</p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Consumer Wellness</h4>
+                    <p>Direct-to-consumer Android app with freemium conversion to Aura+ subscription. The daily energy dial and habit tracking create natural engagement loops, while privacy-first positioning drives word-of-mouth in communities increasingly sceptical of data-harvesting wellness apps. Waitlist-based launch builds early community before general availability.</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Corporate Wellbeing</h4>
+                    <p>White-label deployment for enterprise wellness programs where employers want energy-awareness tools without accessing employee health data. The local-first architecture means the employer never touches personal wellness data — they provide the tool, employees own the data. Per-seat licensing with aggregate anonymized reporting.</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan);">
+                    <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Wearable Partnerships</h4>
+                    <p>The open DialState schema is designed for hardware integration. Smart glasses manufacturers seeking wellness app partnerships get a ready-made HUD implementation with BLE transport planned. Ring and watch manufacturers can ingest DialState for ambient energy display. Early partnerships create distribution channels before the AR wellness category is crowded.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Interested in This Solution?</h2>
+            <p class="section-description" style="margin-bottom: 2rem;">Learn how we can build privacy-first wellness platforms with voice analysis, habit tracking, and AR integration for your organization.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="contact.html" class="btn btn-primary"><span>Schedule a Demo</span></a>
+                <a href="portfolio.html" class="btn btn-outline"><span>View All Projects</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>iSN.BiZ Inc</h3>
+                    <p>Building the future of enterprise software with AI-powered solutions.</p>
+                    <div class="footer-credentials">
+                        <p><strong>DUNS:</strong> 080513772</p>
+                        <p><strong>UBI:</strong> 603-522-339</p>
+                        <p><strong>EIN:</strong> 47-4530188</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Solutions</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="investors.html">Investors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>9030 35th Ave SW, Suite 100<br>Seattle, WA 98126</p>
+                    <p>Local: (206) 785-9782<br>Toll-Free: (800) 986-4614</p>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem;"><span>Get in Touch</span></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved. | Founded July 8, 2015</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
