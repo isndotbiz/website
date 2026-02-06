@@ -86,6 +86,7 @@
                     <p class="lead">Fraud prevention teams need reliable BIN intelligence to evaluate card risk and 3DS posture. This platform automates BIN ingestion, enrichment, classification, and reporting with a dashboard and API, enabling faster decisions and easier integration into fraud workflows.</p>
                     <p style="margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.8;">E-commerce fraud losses exceeded $48 billion globally in 2023, and the figure continues to climb as card-not-present transactions grow. The first six to eight digits of a payment card number, known as the Bank Identification Number (BIN), encode critical intelligence about the card's issuing bank, country of origin, card type (credit, debit, prepaid), scheme (Visa, Mastercard, Amex), and authentication capabilities. Fraud analysts rely on this data to assess transaction risk: a prepaid card issued by a bank with no 3DS enrollment in a high-risk jurisdiction carries fundamentally different risk than a credit card from a major issuer with full 3D Secure 2.0 support. Yet most fraud teams still perform BIN lookups manually or maintain stale spreadsheets that lack the enrichment depth needed for accurate decisioning.</p>
                     <p style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.8;">Our platform solves this by automating the entire BIN intelligence lifecycle. Raw BIN ranges are ingested from industry sources and card scheme registries, then enriched in bulk through the Neutrino BIN Lookup API which returns issuer name, country, card type, category, and 3DS enrollment status. A parallel fraud feed scraper monitors underground forums and breach notification services to classify BINs by exploit type: fullz availability, virtual card abuse, and known carding targets. The enriched data feeds into a SQLAlchemy-backed data store that powers both the Flask dashboard for human analysts and the REST API for programmatic integration into existing fraud rules engines, transaction screening pipelines, and case management systems.</p>
+            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/action/bin_action_1.webp" alt="Cybersecurity analyst studying financial transaction patterns" loading="lazy" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep); margin: 2rem 0;">
                 </div>
                 <div>
                     <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Product Capabilities</h3>
@@ -161,6 +162,7 @@
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
                 <div class="portfolio-card">
                     <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/action/bin_action_2.webp" alt="Data scientist analyzing global transaction flows on a holographic globe" loading="lazy" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep); margin: 2rem 0;">
                         <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128269;</div>
                         <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">BIN Enricher</h3>
                     </div>
@@ -381,6 +383,24 @@
     </section>
 
     <!-- Footer -->
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 2rem;">In Action</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                <div style="overflow: hidden; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/action/bin_action_1.webp" alt="Cybersecurity analyst studying financial transaction patterns" loading="lazy" style="width: 100%; height: 300px; object-fit: cover; display: block;">
+                </div>
+                <div style="overflow: hidden; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/action/bin_action_2.webp" alt="Data scientist analyzing global transaction flows on a holographic globe" loading="lazy" style="width: 100%; height: 300px; object-fit: cover; display: block;">
+                </div>
+                <div style="overflow: hidden; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/action/bin_action_3.webp" alt="Analysts in a war room discussing fraud detection dashboards" loading="lazy" style="width: 100%; height: 300px; object-fit: cover; display: block;">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
