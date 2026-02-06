@@ -19,7 +19,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="nav">
+        <nav class="nav">
         <div class="container nav-container">
             <div class="logo">
                 <a href="index.html">
@@ -32,11 +32,11 @@
                 <span></span>
             </button>
             <ul class="nav-menu" id="primary-navigation">
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html" class="active">Portfolio</a></li>
-                <li><a href="investors.html">Investors</a></li>
-                <li><a href="contact.html" class="nav-cta">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="investors.html">Investors</a></li>
+            <li><a href="contact.html" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -135,13 +135,13 @@
                     <p style="font-size: 1.05rem; line-height: 1.8;">For every model tested, the framework produces a detailed report containing perplexity measurements on standardized test corpora, tokens-per-second throughput across batch sizes, peak vRAM consumption broken down by model component, and time-to-first-token latency under varying concurrent request loads. These reports are stored in SQLite with full provenance metadata including the model version hash, quantization parameters, hardware configuration, driver versions, and system load at test time, enabling fair comparison across runs separated by weeks or months.</p>
                 </div>
                 <div>
-                    <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/llm_2.webp" alt="Model quantization benchmarks showing perplexity-throughput tradeoff curves across GGUF, GPTQ, and AWQ formats" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/llm_2.webp" alt="Model quantization benchmarks showing perplexity-throughput tradeoff curves across GGUF, GPTQ, and AWQ formats" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
                 </div>
             </div>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-top: 3rem;">
                 <div>
-                    <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/llm_3.webp" alt="vRAM profiling dashboard showing layer-by-layer memory allocation and KV-cache scaling analysis" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/llm_3.webp" alt="vRAM profiling dashboard showing layer-by-layer memory allocation and KV-cache scaling analysis" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
                 </div>
                 <div>
                     <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">vRAM Budget Management and Capacity Planning</h3>
@@ -195,7 +195,7 @@
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
                 <div>
-                    <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/llm_3.webp" alt="Evaluation pipeline architecture showing test suite execution, scoring, and report generation" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/llm_3.webp" alt="Evaluation pipeline architecture showing test suite execution, scoring, and report generation" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
                 </div>
                 <div>
                     <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Reproducible Evaluation Protocols</h3>
@@ -278,7 +278,7 @@
                     <p style="margin-top: 1.5rem; font-size: 1.05rem; line-height: 1.8;">Through systematic quantization analysis, organizations identify optimal model configurations that deliver near-full-precision quality at a fraction of the hardware cost. Our benchmarking data demonstrates that carefully selected 4-bit quantizations using AWQ retain 98% of output quality as measured by perplexity on standardized test corpora, while reducing vRAM requirements by 75%. This enables deployment on consumer-grade RTX 4090 GPUs rather than data center A100 cards, cutting hardware expenditure from $15,000 per GPU to under $2,000 without meaningful quality degradation for the majority of enterprise use cases. The framework's automated evaluation pipelines reduce the time required for comprehensive model assessment from weeks of manual testing to hours of automated execution, with full provenance tracking that makes every result auditable and reproducible.</p>
                 </div>
                 <div>
-                    <img src="https://isnbiz-assets-1769962280.s3.amazonaws.com/assets/projects/llm_4.webp" alt="Performance benchmarks showing cost savings and quality retention across quantization levels" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/llm_4.webp" alt="Performance benchmarks showing cost savings and quality retention across quantization levels" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
                 </div>
             </div>
         </div>
@@ -370,36 +370,46 @@
         </div>
     </section>
 
-    <footer class="footer">
+        <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-section">
-                    <h3>iSN.BiZ Inc</h3>
-                    <p>Building the future of enterprise software with AI-powered solutions.</p>
+                <div class="footer-column">
+                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="footer-logo" style="height: 40px; margin-bottom: 1rem;">
+                    <p>Building the future of enterprise software with AI-powered solutions since 2015.</p>
                     <div class="footer-credentials">
                         <p><strong>DUNS:</strong> 080513772</p>
                         <p><strong>UBI:</strong> 603-522-339</p>
                         <p><strong>EIN:</strong> 47-4530188</p>
                     </div>
                 </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
+                <div class="footer-column">
+                    <h4>Company</h4>
                     <ul class="footer-links">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Solutions</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="investors.html">Investors</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer-column">
+                    <h4>Leadership</h4>
+                    <ul class="footer-links">
+                        <li><a href="jonathan.html">Jonathan &mdash; CEO</a></li>
+                        <li><a href="bri.html">Bri &mdash; COO</a></li>
+                        <li><a href="lilly.html">Lilly &mdash; CFO</a></li>
+                        <li><a href="alicia.html">Alicia &mdash; CPO</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
                     <h4>Contact</h4>
                     <p>9030 35th Ave SW, Suite 100<br>Seattle, WA 98126</p>
                     <p>Local: (206) 785-9782<br>Toll-Free: (800) 986-4614</p>
-                    <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem;"><span>Get in Touch</span></a>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 0.5rem; display: inline-block;">Get in Touch</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved. | Founded July 8, 2015</p>
+                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved.</p>
+                <p>Founded July 8, 2015 | 9030 35th Ave SW, Suite 100, Seattle, WA 98126</p>
             </div>
         </div>
     </footer>
