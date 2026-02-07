@@ -33,9 +33,19 @@ AuraLLM page: aurallm.html, images on S3 at assets/projects/aurallm_*.webp
 ## 4 Founders
 Jonathan (CEO), Bri (COO), Lilly (CFO), Alicia (CPO)
 
+## Recent Updates (2026-02-06)
+- ✓ Homepage: SpiritAtlas slider with "Coming March 2026"
+- ✓ About page: 3-column grid + 6th trust badge (Open Source Contributor)
+- ✓ Repo: Removed cli-tools.html, publish/ folder
+- ✓ Git: Added playwright-report/, test-results/ to .gitignore
+- ✓ 404 error page created
+- ✓ DEPLOYMENT_GAPS.md: Complete external dependency checklist
+- ✓ Branch: audit-cleanup-2026-02-06 pushed to GitHub
+
 ## Known Issues
 - Alicia headshot: CENTER CHIN DIMPLE (AI artifact)
-- 137 unused assets (~70MB)
+- assets/ folder (154MB, 197 files) - all on S3, local copies in .gitignore, safe to delete
+- Playwright tests fail against live site (not yet deployed with latest changes)
 
 ## Recommended Hosting
 Cloudflare Pages (prod) + TrueNAS (dev) + Cloudflare CDN for S3
