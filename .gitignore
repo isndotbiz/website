@@ -115,3 +115,7 @@ WEBSITE_UPDATE_COMPLETE.md
 
 # Local Netlify folder
 .netlify
+
+# Playwright test artifacts
+playwright-report/
+test-results/

@@ -16,7 +16,7 @@
 - Quality: ALWAYS `"low"` (inverted - low=best)
 - NEVER: high/medium quality, nano-banana-pro, flux-pro
 
-## 9 Projects
+## 9 Projects (Updated 2026-02-06)
 1. TrueNAS Infrastructure
 2. VideoGen YouTube
 3. BIN Intelligence
@@ -25,7 +25,10 @@
 6. GEDCOM Processing
 7. LLM Optimization
 8. Opportunity Bot
-9. CLI Tools
+9. AuraLLM (~2025) — replaced CLI Tools on 2026-02-06
+
+CLI Tools removed: internal standards, not a product.
+AuraLLM page: aurallm.html, images on S3 at assets/projects/aurallm_*.webp
 
 ## 4 Founders
 Jonathan (CEO), Bri (COO), Lilly (CFO), Alicia (CPO)
