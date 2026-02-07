@@ -1,29 +1,11 @@
-# Ignore Archive directory (contains old files and Python venvs)
 Archive/
-
-# Ignore Python virtual environments
+docs/
+scripts/
 venv_fal/
-venv/
-__pycache__/
-*.pyc
-
-# Ignore node_modules
-node_modules/
-
-# Ignore git
-.git/
-.gitignore
-
-# Ignore development files
-*.md
-*.txt
+generated_founders/
+.serena/
+playwright-report/
+test-results/
 *.sh
 *.py
-*.json
-.env
-.serena/
-backups/
-docs/
-
-# Only deploy web files
-# Keep: index.html, styles.css, script.js, *.html, assets/, logo-pallete/
+requirements*.txt
