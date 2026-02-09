@@ -1,4 +1,6 @@
 Archive/
+Archive-*.tar.gz
+backups/
 docs/
 scripts/
 venv_fal/
@@ -6,6 +8,11 @@ generated_founders/
 .serena/
 playwright-report/
 test-results/
+node_modules/
+.git/
 *.sh
 *.py
 requirements*.txt
+*.md
+.env
+.env.tpl
