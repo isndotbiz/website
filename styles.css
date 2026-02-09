@@ -345,6 +345,60 @@ p {
     z-index: 1;
 }
 
+/* Dropdown Menu Styles */
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu li.has-dropdown > a::after {
+    content: ' ▼';
+    font-size: 0.7em;
+    margin-left: 0.3em;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--color-charcoal);
+    border: 2px solid var(--color-blue);
+    border-radius: 8px;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all var(--transition);
+    z-index: 1000;
+    padding: 0.5rem 0;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.nav-menu li.has-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    width: 100%;
+    border: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.dropdown-menu a::before {
+    display: none;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(30, 159, 242, 0.1);
+}
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -1657,6 +1711,266 @@ li a:not(.nav-menu a):not(.footer-links a):not(.btn) {
 }
 
 /* ================================
+   SERVICES PAGE STYLES
+   ================================ */
+
+/* Services Visual Grid */
+.services-visuals {
+    background: var(--color-concrete);
+    padding: var(--space-xl) 0;
+}
+
+.services-visual-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}
+
+.service-visual-card {
+    background: var(--color-charcoal);
+    border: 3px solid var(--color-blue);
+    overflow: hidden;
+    transition: all var(--transition);
+    text-align: center;
+}
+
+.service-visual-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-brutal);
+    border-color: var(--color-accent);
+}
+
+.service-visual-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transition);
+}
+
+.service-visual-card:hover img {
+    transform: scale(1.05);
+}
+
+.service-visual-card figcaption {
+    padding: var(--space-md);
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-blue);
+    background: var(--color-charcoal);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Service Detail Sections */
+.project-detail {
+    padding: var(--space-xl) 0;
+}
+
+.project-detail.alt-bg {
+    background: var(--color-concrete);
+}
+
+.project-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--space-lg);
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.project-number {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    color: var(--color-blue);
+    line-height: 1;
+    margin-bottom: var(--space-sm);
+}
+
+.project-title {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    color: var(--color-white);
+    margin-bottom: var(--space-sm);
+    line-height: 1.2;
+}
+
+.project-subtitle {
+    font-family: var(--font-mono);
+    font-size: 1.125rem;
+    color: var(--color-cyan);
+    margin-bottom: var(--space-md);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}
+
+.project-description h3 {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    color: var(--color-cyan);
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-md);
+    padding-top: var(--space-md);
+    border-top: 2px solid rgba(30, 159, 242, 0.2);
+}
+
+.project-description h3:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+.project-description p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: var(--space-lg);
+    color: var(--color-white);
+}
+
+.feature-list {
+    list-style: none;
+    margin: var(--space-md) 0 var(--space-lg) 0;
+    padding: 0;
+}
+
+.feature-list li {
+    display: flex;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-sm);
+    align-items: flex-start;
+    line-height: 1.7;
+}
+
+.feature-list svg {
+    flex-shrink: 0;
+    color: var(--color-cyan);
+    margin-top: 0.25rem;
+}
+
+.feature-list strong {
+    color: var(--color-cyan);
+    font-weight: 700;
+}
+
+.project-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.metric-card {
+    background: var(--color-steel);
+    border: 2px solid var(--color-blue);
+    padding: var(--space-md);
+    transition: all var(--transition);
+}
+
+.metric-card:hover {
+    border-color: var(--color-cyan);
+    transform: translateX(8px);
+}
+
+.metric-card.highlight-card {
+    background: linear-gradient(135deg, var(--color-blue-dark), var(--color-steel));
+    border-color: var(--color-cyan);
+}
+
+.metric-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    color: var(--color-cyan);
+    margin-bottom: var(--space-md);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+}
+
+.tech-badge {
+    background: var(--color-charcoal);
+    border: 1px solid var(--color-blue);
+    padding: 0.5rem 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--color-blue);
+    transition: all var(--transition);
+}
+
+.tech-badge:hover {
+    background: var(--color-blue);
+    color: var(--color-charcoal);
+    transform: translateY(-2px);
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+}
+
+.metric {
+    text-align: center;
+}
+
+.metric-value {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    color: var(--color-cyan);
+    line-height: 1;
+    margin-bottom: var(--space-xs);
+}
+
+.metric-label {
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    color: var(--color-white);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.impact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.impact-list li {
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid rgba(30, 159, 242, 0.2);
+    font-size: 1rem;
+    color: var(--color-white);
+}
+
+.impact-list li:last-child {
+    border-bottom: none;
+}
+
+.impact-list li::before {
+    content: "▸";
+    color: var(--color-cyan);
+    font-weight: bold;
+    margin-right: var(--space-xs);
+}
+
+/* ================================
    RESPONSIVE
    ================================ */
 @media (max-width: 992px) {
@@ -1675,6 +1989,19 @@ li a:not(.nav-menu a):not(.footer-links a):not(.btn) {
 
     .hero-stats {
         gap: var(--space-md);
+    }
+
+    /* Services page responsive */
+    .services-visual-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-header {
+        flex-direction: column;
     }
 }
 
@@ -1711,6 +2038,29 @@ li a:not(.nav-menu a):not(.footer-links a):not(.btn) {
         padding: 1rem 0;
     }
 
+    /* Mobile dropdown styles */
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        box-shadow: none;
+        background: rgba(30, 159, 242, 0.05);
+        display: none;
+    }
+
+    .nav-menu li.has-dropdown.active .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu a {
+        padding-left: 2rem;
+        font-size: 0.9rem;
+    }
+
     .hero-stats {
         flex-wrap: wrap;
         gap: var(--space-sm);
@@ -1722,6 +2072,15 @@ li a:not(.nav-menu a):not(.footer-links a):not(.btn) {
     }
 
     .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Services page mobile */
+    .services-visual-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .metrics-grid {
         grid-template-columns: 1fr;
     }
 

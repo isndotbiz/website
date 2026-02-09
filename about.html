@@ -101,9 +101,12 @@
 
         .stats-showcase {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: var(--spacing-md);
             margin: var(--spacing-lg) 0;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .stat-showcase {
@@ -145,8 +148,11 @@
 
         .value-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: var(--spacing-md);
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .value-card {
@@ -272,6 +278,9 @@
             grid-template-columns: repeat(3, 1fr);
             gap: var(--spacing-md);
             margin-top: var(--spacing-lg);
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .trust-badge {
@@ -434,6 +443,29 @@
             .team-grid {
                 grid-template-columns: 1fr;
             }
+
+            .stats-showcase,
+            .value-cards,
+            .trust-badges {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Tablet responsive adjustments for 3-column grids */
+        @media (max-width: 992px) and (min-width: 769px) {
+            .stats-showcase,
+            .value-cards,
+            .trust-badges {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) and (min-width: 481px) {
+            .stats-showcase,
+            .value-cards,
+            .trust-badges {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
     </style>
 </head>
@@ -459,6 +491,15 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="investors.html">Investors</a></li>
+            <li class="has-dropdown">
+                <a href="#team">Team</a>
+                <ul class="dropdown-menu">
+                    <li><a href="jonathan.html">Jonathan Maldonado</a></li>
+                    <li><a href="lilly.html">Lilly Fano</a></li>
+                    <li><a href="bri.html">Bri Lee</a></li>
+                    <li><a href="alicia.html">Alicia Young</a></li>
+                </ul>
+            </li>
             <li><a href="contact.html" class="nav-cta">Contact</a></li>
             </ul>
         </div>
@@ -1037,10 +1078,10 @@
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h4>Contact</h4>
-                    <p>9030 35th Ave SW, Suite 100<br>Seattle, WA 98126</p>
+                    <p>9030 35th Ave SW<br>Suite 100<br>Seattle, WA 98126</p>
                     <p>Local: (206) 785-9782<br>Toll-Free: (800) 986-4614</p>
-                    <a href="contact.html" class="btn btn-primary" style="margin-top: 0.5rem; display: inline-block;">Get in Touch</a>
+                    <h4>Get in Touch</h4>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 0.5rem; display: inline-block;">Contact Us</a>
                 </div>
             </div>
             <div class="footer-bottom">
