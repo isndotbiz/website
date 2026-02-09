@@ -119,3 +119,4 @@ WEBSITE_UPDATE_COMPLETE.md
 # Playwright test artifacts
 playwright-report/
 test-results/
+*.tar.gz
