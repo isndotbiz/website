@@ -1,0 +1,11 @@
+[build]
+  publish = "."
+  ignore = "git diff --quiet HEAD^ HEAD -- ':(exclude)Archive/' ':(exclude)docs/' ':(exclude)scripts/' ':(exclude)backups/' ':(exclude)*.md'"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.environment]
+  NODE_VERSION = "18"
