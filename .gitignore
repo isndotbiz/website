@@ -120,3 +120,8 @@ WEBSITE_UPDATE_COMPLETE.md
 playwright-report/
 test-results/
 *.tar.gz
+
+.env
+
+# Local 1Password import payloads (contains secrets)
+1password_import/
