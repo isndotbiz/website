@@ -58,280 +58,6 @@
     <link rel="stylesheet" href="enhanced-animations.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Hero Slider Styles -->
-    <style>
-        .hero-slider {
-            width: 100%;
-            max-width: 900px;
-            margin: 2rem auto 0;
-            outline: none;
-        }
-
-        .slider-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
-            padding: 0 1rem;
-        }
-
-        .slider-header-actions {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .slider-header h3 {
-            font-size: 1.5rem;
-            color: var(--color-blue, #1E9FF2);
-            margin: 0;
-        }
-
-        .launch-badge {
-            background: linear-gradient(135deg, var(--color-blue, #1E9FF2), var(--color-cyan, #5FDFDF));
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.875rem;
-            font-weight: 700;
-            box-shadow: 0 4px 12px rgba(30, 159, 242, 0.3);
-        }
-
-        .slider-toggle {
-            border: 1px solid rgba(95, 223, 223, 0.4);
-            background: rgba(8, 20, 37, 0.75);
-            color: var(--color-light, #ffffff);
-            font-weight: 700;
-            font-size: 0.8rem;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            border-radius: 999px;
-            padding: 0.45rem 0.8rem;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        .slider-toggle:hover {
-            background: rgba(30, 159, 242, 0.2);
-            border-color: rgba(30, 159, 242, 0.85);
-        }
-
-        .slider-container {
-            position: relative;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-        }
-
-        .slider-track {
-            display: flex;
-            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .slide {
-            min-width: 100%;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-
-        .slide.active {
-            opacity: 1;
-        }
-
-        .slide-figure {
-            margin: 0;
-            position: relative;
-            aspect-ratio: 9 / 16;
-            max-height: 720px;
-            overflow: hidden;
-            background: #091426;
-        }
-
-        .slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            display: block;
-            position: relative;
-            z-index: 1;
-        }
-
-        .slide-placeholder {
-            position: absolute;
-            inset: 0;
-            z-index: 0;
-            background: linear-gradient(135deg, #10213d 0%, #2a4f8f 50%, #5b2091 100%);
-            opacity: 0.85;
-        }
-
-        .slide-image-fallback {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            z-index: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 1rem;
-            font-weight: 600;
-            padding: 1.5rem;
-            background: radial-gradient(circle at 20% 20%, rgba(95, 223, 223, 0.35), rgba(16, 33, 61, 0.6) 40%, rgba(6, 14, 29, 0.92) 100%);
-        }
-
-        .slide-caption {
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 2;
-            display: flex;
-            flex-direction: column;
-            gap: 0.2rem;
-            padding: 0.75rem 1rem;
-            background: linear-gradient(180deg, rgba(3, 8, 18, 0) 0%, rgba(3, 8, 18, 0.78) 70%, rgba(3, 8, 18, 0.92) 100%);
-            color: #ffffff;
-        }
-
-        .slide-caption strong {
-            font-size: 0.95rem;
-            letter-spacing: 0.02em;
-        }
-
-        .slide-caption span {
-            font-size: 0.8rem;
-            opacity: 0.92;
-        }
-
-        .slider-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255,255,255,0.9);
-            border: none;
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--color-charcoal, #3F4447);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            z-index: 10;
-        }
-
-        .slider-nav:hover {
-            background: white;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            transform: translateY(-50%) scale(1.1);
-        }
-
-        .slider-nav.prev {
-            left: 1rem;
-        }
-
-        .slider-nav.next {
-            right: 1rem;
-        }
-
-        .slider-dots {
-            display: flex;
-            justify-content: center;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-
-        .dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            border: 2px solid var(--color-blue, #1E9FF2);
-            background: transparent;
-            cursor: pointer;
-            padding: 0;
-            transition: all 0.3s ease;
-        }
-
-        .dot.active {
-            background: var(--color-blue, #1E9FF2);
-            transform: scale(1.3);
-        }
-
-        .slider-toggle:focus-visible,
-        .slider-nav:focus-visible,
-        .dot:focus-visible {
-            outline: 2px solid var(--color-cyan, #5FDFDF);
-            outline-offset: 2px;
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .slider-track,
-            .slide {
-                transition: none !important;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hero-slider {
-                max-width: 100%;
-            }
-
-            .slider-header {
-                flex-wrap: wrap;
-                gap: 0.75rem;
-            }
-
-            .slider-header-actions {
-                width: 100%;
-                justify-content: space-between;
-            }
-
-            .slider-nav {
-                width: 36px;
-                height: 36px;
-                font-size: 1.2rem;
-            }
-
-            .slider-nav.prev {
-                left: 0.5rem;
-            }
-
-            .slider-nav.next {
-                right: 0.5rem;
-            }
-
-            .slider-header h3 {
-                font-size: 1.25rem;
-            }
-
-            .launch-badge {
-                font-size: 0.75rem;
-                padding: 0.4rem 0.8rem;
-            }
-
-            .slider-toggle {
-                font-size: 0.7rem;
-                padding: 0.35rem 0.7rem;
-            }
-
-            .slide-caption {
-                padding: 0.6rem 0.8rem;
-            }
-
-            .slide-caption strong {
-                font-size: 0.85rem;
-            }
-
-            .slide-caption span {
-                font-size: 0.75rem;
-            }
-        }
-    </style>
-
     <!-- Alternate Languages (if needed in future) -->
     <link rel="alternate" hreflang="en" href="https://isn.biz/">
     <link rel="alternate" hreflang="x-default" href="https://isn.biz/">
@@ -541,19 +267,21 @@
                     <a href="#contact" class="btn btn-secondary lift-on-hover"><span>Schedule a Demo</span></a>
                 </div>
                 <div class="hero-visual">
-                    <div class="hero-slider" data-hero-slider aria-roledescription="carousel" aria-label="SpiritAtlas app screenshots">
+                    <div class="hero-slider" data-hero-slider tabindex="0" aria-roledescription="carousel" aria-label="SpiritAtlas app screenshots">
                         <div class="slider-header">
-                            <h3>SpiritAtlas</h3>
+                            <h3>SpiritAtlas App Tour</h3>
                             <div class="slider-header-actions">
-                                <span class="launch-badge">Coming March 2026</span>
+                                <span class="launch-badge" data-release-countdown>Release in 47 days • Apr 1, 2026</span>
                                 <button class="slider-toggle" type="button" data-slider-toggle aria-pressed="false" aria-label="Pause slide autoplay">Pause</button>
                             </div>
                         </div>
+                        <p class="sr-only" data-slider-announcer aria-live="polite" aria-atomic="true"></p>
                         <div class="slider-container">
-                            <div class="slider-track" data-slider-track role="listbox" aria-live="polite"></div>
+                            <div class="slider-track" data-slider-track role="listbox" aria-label="SpiritAtlas featured screens"></div>
                             <button class="slider-nav prev" type="button" data-slider-prev aria-label="Previous slide">&lt;</button>
                             <button class="slider-nav next" type="button" data-slider-next aria-label="Next slide">&gt;</button>
                         </div>
+                        <div class="slider-progress" aria-hidden="true"><span data-slider-progress></span></div>
                         <div class="slider-dots" data-slider-dots aria-label="Slide navigation"></div>
                     </div>
                 </div>
@@ -732,10 +460,10 @@
                 <!-- Row 1 -->
                 <a href="opportunity-bot.html" class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/opportunity_bot.webp" alt="AI opportunity research bot dashboard" loading="lazy">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/generated/project_cards/20260213_imagine15/01_01_opportunity_signal_engine.webp" alt="AI opportunity research bot dashboard" loading="lazy">
                     </div>
                     <div class="portfolio-number">01</div>
-                    <h3>AI Market Intelligence Engine</h3>
+                    <h3>Opportunity Signal Intelligence Engine</h3>
                     <p>Autonomous opportunity discovery and scoring using local LLM inference and RAG-based semantic search.</p>
                     <div class="portfolio-tags">
                         <span class="tag">Python</span>
@@ -745,10 +473,10 @@
                 </a>
                 <a href="truenas.html" class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/infrastructure.webp" alt="TrueNAS infrastructure platform" loading="lazy">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/generated/project_cards/20260213_imagine15/02_02_sovereign_ai_fabric.webp" alt="TrueNAS infrastructure platform" loading="lazy">
                     </div>
                     <div class="portfolio-number">02</div>
-                    <h3>Enterprise AI/ML Infrastructure</h3>
+                    <h3>Sovereign AI Infrastructure Fabric</h3>
                     <p>Production-grade on-premise platform powering 50+ containerized services with full observability.</p>
                     <div class="portfolio-tags">
                         <span class="tag">TrueNAS</span>
@@ -758,10 +486,10 @@
                 </a>
                 <a href="bin-intelligence.html" class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/rag_bi.webp" alt="BIN intelligence fraud analysis" loading="lazy">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/generated/project_cards/20260213_imagine15/03_03_commerce_risk_grid.webp" alt="BIN intelligence fraud analysis" loading="lazy">
                     </div>
                     <div class="portfolio-number">03</div>
-                    <h3>Payment Fraud Intelligence</h3>
+                    <h3>Commerce Risk Intelligence Grid</h3>
                     <p>Real-time BIN enrichment and fraud analytics for e-commerce transaction security.</p>
                     <div class="portfolio-tags">
                         <span class="tag">Flask</span>
@@ -773,7 +501,7 @@
                 <!-- Row 2 -->
                 <a href="spiritatlas.html" class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas_1.webp" alt="SpiritAtlas mobile app" loading="lazy">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/generated/project_cards/20260213_imagine15/04_04_spiritatlas_cosmic.webp" alt="SpiritAtlas mobile app profiles hub screenshot" loading="lazy">
                     </div>
                     <div class="portfolio-number">04</div>
                     <h3>SpiritAtlas — Where Ancient Wisdom Meets AI Clarity.</h3>
@@ -786,10 +514,10 @@
                 </a>
                 <a href="videogen.html" class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/videogen_youtube.webp" alt="AI content production pipeline" loading="lazy">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/generated/project_cards/20260213_imagine15/05_05_media_forge.webp" alt="AI content production pipeline" loading="lazy">
                     </div>
                     <div class="portfolio-number">05</div>
-                    <h3>AI Content Production Pipeline</h3>
+                    <h3>Autonomous Media Production Forge</h3>
                     <p>Automated content factory converting articles to production-ready video assets.</p>
                     <div class="portfolio-tags">
                         <span class="tag">Node.js</span>
@@ -799,10 +527,10 @@
                 </a>
                 <a href="comfyui.html" class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/comfyui_1.webp" alt="ComfyUI automation workflow" loading="lazy">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/generated/project_cards/20260213_imagine15/06_06_comfyui_engine.webp" alt="ComfyUI automation workflow" loading="lazy">
                     </div>
                     <div class="portfolio-number">06</div>
-                    <h3>ComfyUI Flux Automation</h3>
+                    <h3>ComfyUI Creative Automation Engine</h3>
                     <p>Programmatic automation layer for scalable generative image production workflows.</p>
                     <div class="portfolio-tags">
                         <span class="tag">Python</span>
@@ -814,10 +542,10 @@
                 <!-- Row 3 -->
                 <a href="gedcom.html" class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/gedcom_1.webp" alt="GEDCOM data processing" loading="lazy">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/generated/project_cards/20260213_imagine15/07_07_lineage_vault.webp" alt="GEDCOM data processing" loading="lazy">
                     </div>
                     <div class="portfolio-number">07</div>
-                    <h3>GEDCOM Data Integrity Platform</h3>
+                    <h3>Lineage Data Integrity Vault</h3>
                     <p>Production-grade genealogy data cleaning with audit trails and zero data loss.</p>
                     <div class="portfolio-tags">
                         <span class="tag">Python</span>
@@ -827,10 +555,10 @@
                 </a>
                 <a href="llm-optimization.html" class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/llm_1.webp" alt="LLM optimization dashboard" loading="lazy">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/generated/project_cards/20260213_imagine15/08_08_llm_safety_lab.webp" alt="LLM optimization dashboard" loading="lazy">
                     </div>
                     <div class="portfolio-number">08</div>
-                    <h3>LLM Optimization Framework</h3>
+                    <h3>LLM Reliability & Safety Lab</h3>
                     <p>Research and evaluation framework for testing AI model behavior and security.</p>
                     <div class="portfolio-tags">
                         <span class="tag">Flask</span>
@@ -840,10 +568,10 @@
                 </a>
                 <a href="aurallm.html" class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/aurallm_hero.webp" alt="AuraLLM Reflective Wellness Platform" loading="lazy">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/generated/project_cards/20260213_imagine15/09_09_aura_reflective_suite.webp" alt="AuraLLM Reflective Wellness Platform" loading="lazy">
                     </div>
                     <div class="portfolio-number">09</div>
-                    <h3>AuraLLM - Reflective Wellness</h3>
+                    <h3>AuraLLM Reflective Intelligence Suite</h3>
                     <p>Privacy-first voice energy analysis, habit tracking, and AR glasses integration.</p>
                     <div class="portfolio-tags">
                         <span class="tag">Kotlin</span>
@@ -949,7 +677,7 @@
                         </picture>
                     </div>
                     <div class="member-info">
-                        <h3>Jonathan</h3>
+                        <h3>Jonathan Mallinger</h3>
                         <p class="role">Chairman / CEO</p>
                         <p class="bio">Sets company strategy, aligns the portfolio with market needs, and guides architecture decisions that keep every platform secure, scalable, and measurable. Leads key client partnerships and ensures every engagement delivers outcomes, not just features.</p>
                     </div>
@@ -968,7 +696,7 @@
                         </picture>
                     </div>
                     <div class="member-info">
-                        <h3>Bri</h3>
+                        <h3>Brianna Bear</h3>
                         <p class="role">Secretary / COO</p>
                         <p class="bio">Turns strategy into execution by building delivery systems, quality standards, and operational cadence across teams. Oversees governance, security, and release readiness so platforms ship on time and run reliably.</p>
                     </div>
@@ -987,7 +715,7 @@
                         </picture>
                     </div>
                     <div class="member-info">
-                        <h3>Lilly</h3>
+                        <h3>Lilly Fedas</h3>
                         <p class="role">Treasurer / CFO</p>
                         <p class="bio">Manages capital allocation, forecasting, pricing, and risk so each product line stays profitable and investable. Connects financial models to roadmap decisions and keeps reporting, compliance, and controls enterprise-ready.</p>
                     </div>
@@ -1006,7 +734,7 @@
                         </picture>
                     </div>
                     <div class="member-info">
-                        <h3>Alicia</h3>
+                        <h3>Alicia Haas</h3>
                         <p class="role">VP / CPO</p>
                         <p class="bio">Leads product discovery, roadmap prioritization, and UX design to ensure every app solves real client problems. Translates customer insight into features, onboarding, and documentation that drive adoption.</p>
                     </div>
@@ -1242,281 +970,8 @@
             observer.observe(section);
         });
 
-        // Hero Slider
-        // Replace only src/title/caption/alt values below when future screenshot runs land.
-        const spiritAtlasSliderData = [
-            {
-                id: 'home-dashboard',
-                title: 'SpiritAtlas Home Command Center',
-                caption: 'Your daily guidance hub for spiritual momentum and clarity.',
-                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_085504_uix1/01_home-dashboard.webp',
-                alt: 'SpiritAtlas home dashboard screenshot',
-                placeholder: 'linear-gradient(135deg, #132846 0%, #2a4f8f 50%, #5b2091 100%)',
-                loading: 'eager'
-            },
-            {
-                id: 'numerology-intro',
-                title: 'Understand Numerology Instantly',
-                caption: 'A vivid learning screen that turns symbolism into actionable insight.',
-                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_085504_uix1/02_numerology-intro.webp',
-                alt: 'SpiritAtlas numerology introduction screenshot',
-                placeholder: 'linear-gradient(135deg, #113157 0%, #245ea9 52%, #8226bc 100%)'
-            },
-            {
-                id: 'numerology-detail',
-                title: 'Numerology Deep-Dive View',
-                caption: 'Long-form spiritual narratives designed for sustained engagement.',
-                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_085504_uix1/03_numerology-detail.webp',
-                alt: 'SpiritAtlas numerology deep-dive screenshot',
-                placeholder: 'linear-gradient(135deg, #10233f 0%, #2f6cb8 52%, #7f2ed1 100%)'
-            },
-            {
-                id: 'profiles-hub',
-                title: 'Spiritual Profiles Hub',
-                caption: 'Manage multiple profiles with clear structure and fast navigation.',
-                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_085504_uix1/04_profiles-hub.webp',
-                alt: 'SpiritAtlas spiritual profiles hub screenshot',
-                placeholder: 'linear-gradient(135deg, #0d1f39 0%, #2269bf 50%, #8829c6 100%)'
-            },
-            {
-                id: 'compatibility-trigger',
-                title: 'Compatibility Launch Point',
-                caption: 'Instant entry to compatibility workflows from the profile hub.',
-                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_085504_uix1/05_compatibility-trigger.webp',
-                alt: 'SpiritAtlas compatibility launch screenshot',
-                placeholder: 'linear-gradient(135deg, #13253e 0%, #1e5aa8 52%, #6f2bc2 100%)'
-            },
-            {
-                id: 'create-profile-basics',
-                title: 'Create Profile Basics',
-                caption: 'Fast onboarding with just the essentials to get started.',
-                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_085504_uix1/06_create-profile-basics.webp',
-                alt: 'SpiritAtlas create profile basics screenshot',
-                placeholder: 'linear-gradient(135deg, #0f2949 0%, #1f60b1 52%, #7c34cf 100%)'
-            },
-            {
-                id: 'profile-modules',
-                title: 'Progressive Profile Builder',
-                caption: 'Unlock deeper precision by adding advanced spiritual modules.',
-                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_085504_uix1/07_profile-modules.webp',
-                alt: 'SpiritAtlas profile modules screenshot',
-                placeholder: 'linear-gradient(135deg, #112741 0%, #215496 50%, #762abf 100%)'
-            },
-            {
-                id: 'connection-style',
-                title: 'Connection Style Setup',
-                caption: 'Define relationship context to personalize compatibility results.',
-                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_085504_uix1/08_connection-style.webp',
-                alt: 'SpiritAtlas connection style setup screenshot',
-                placeholder: 'linear-gradient(135deg, #12253d 0%, #255ca3 52%, #7d2fca 100%)'
-            },
-            {
-                id: 'intention-signals',
-                title: 'Intentionality Signals',
-                caption: 'Capture emotional intent with lightweight, guided inputs.',
-                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_085504_uix1/09_intention-signals.webp',
-                alt: 'SpiritAtlas intention signals screenshot',
-                placeholder: 'linear-gradient(135deg, #102842 0%, #2365b2 50%, #8031d0 100%)'
-            },
-            {
-                id: 'connection-narrative-1',
-                title: 'Connection Narrative Draft',
-                caption: 'AI-ready narrative fields that transform data into guidance.',
-                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_085504_uix1/10_connection-narrative-1.webp',
-                alt: 'SpiritAtlas connection narrative draft screenshot',
-                placeholder: 'linear-gradient(135deg, #0f2740 0%, #215ea8 50%, #792dc4 100%)'
-            },
-            {
-                id: 'connection-narrative-2',
-                title: 'Expanded Relationship Context',
-                caption: 'Richer context blocks designed for precision spiritual interpretation.',
-                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_085504_uix1/11_connection-narrative-2.webp',
-                alt: 'SpiritAtlas expanded relationship context screenshot',
-                placeholder: 'linear-gradient(135deg, #13233a 0%, #24539a 52%, #7226b6 100%)'
-            },
-            {
-                id: 'connection-narrative-3',
-                title: 'SpiritAtlas — Where Ancient Wisdom Meets AI Clarity',
-                caption: 'Enterprise-grade architecture powering a premium spiritual product.',
-                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_085504_uix1/12_connection-narrative-3.webp',
-                alt: 'SpiritAtlas refined compatibility narrative screenshot',
-                placeholder: 'linear-gradient(135deg, #14243d 0%, #23579e 50%, #7b2ec7 100%)'
-            }
-        ];
-
-        const escapeHtml = (value = '') => String(value)
-            .replaceAll('&', '&amp;')
-            .replaceAll('<', '&lt;')
-            .replaceAll('>', '&gt;')
-            .replaceAll('"', '&quot;')
-            .replaceAll("'", '&#39;');
-
-        const initHeroSlider = () => {
-            const slider = document.querySelector('[data-hero-slider]');
-            const track = slider?.querySelector('[data-slider-track]');
-            const dotsContainer = slider?.querySelector('[data-slider-dots]');
-            const prevBtn = slider?.querySelector('[data-slider-prev]');
-            const nextBtn = slider?.querySelector('[data-slider-next]');
-            const toggleBtn = slider?.querySelector('[data-slider-toggle]');
-
-            if (!slider || !track || !dotsContainer) return;
-
-            const slidesConfig = spiritAtlasSliderData.filter(slide => slide && slide.id);
-            if (!slidesConfig.length) return;
-
-            track.innerHTML = slidesConfig.map((slide, index) => {
-                const hasImage = typeof slide.src === 'string' && slide.src.trim().length > 0;
-                const loading = slide.loading || (index === 0 ? 'eager' : 'lazy');
-                const safeTitle = escapeHtml(slide.title || `SpiritAtlas Preview ${index + 1}`);
-                const safeCaption = escapeHtml(slide.caption || 'Replace with your latest app screenshot.');
-                const safeAlt = escapeHtml(slide.alt || slide.title || `SpiritAtlas slide ${index + 1}`);
-                const safePlaceholder = escapeHtml(slide.placeholder || 'linear-gradient(135deg, #122d52 0%, #305dab 55%, #7229ba 100%)');
-                const safeSrc = hasImage ? escapeHtml(slide.src) : '';
-
-                return `
-                    <div class="slide${index === 0 ? ' active' : ''}" role="option" aria-selected="${index === 0}" tabindex="${index === 0 ? '0' : '-1'}" data-slide-id="${escapeHtml(slide.id)}">
-                        <figure class="slide-figure">
-                            <div class="slide-placeholder" style="background:${safePlaceholder};" aria-hidden="true"></div>
-                            ${hasImage
-                                ? `<img src="${safeSrc}" alt="${safeAlt}" loading="${loading}" decoding="async" width="1080" height="2400">`
-                                : `<div class="slide-image-fallback" role="img" aria-label="${safeAlt}">Screenshot placeholder ready for next upload</div>`
-                            }
-                            <figcaption class="slide-caption">
-                                <strong>${safeTitle}</strong>
-                                <span>${safeCaption}</span>
-                            </figcaption>
-                        </figure>
-                    </div>
-                `;
-            }).join('');
-
-            dotsContainer.innerHTML = slidesConfig.map((slide, index) => {
-                const label = escapeHtml(slide.title || `SpiritAtlas Preview ${index + 1}`);
-                return `<button class="dot${index === 0 ? ' active' : ''}" type="button" aria-label="Go to slide ${index + 1}: ${label}" aria-current="${index === 0}" data-slide-to="${index}"></button>`;
-            }).join('');
-
-            const slides = Array.from(track.querySelectorAll('.slide'));
-            const dots = Array.from(dotsContainer.querySelectorAll('.dot'));
-            const totalSlides = slides.length;
-            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-            const autoPlayDelayMs = 6000;
-
-            let currentIndex = 0;
-            let autoPlayTimer = null;
-            let isPaused = prefersReducedMotion;
-
-            const updatePauseButton = () => {
-                if (!toggleBtn) return;
-                toggleBtn.textContent = isPaused ? 'Play' : 'Pause';
-                toggleBtn.setAttribute('aria-pressed', String(isPaused));
-                toggleBtn.setAttribute('aria-label', isPaused ? 'Resume slide autoplay' : 'Pause slide autoplay');
-            };
-
-            const clearAutoPlay = () => {
-                if (autoPlayTimer) {
-                    clearInterval(autoPlayTimer);
-                    autoPlayTimer = null;
-                }
-            };
-
-            const restartAutoPlay = () => {
-                clearAutoPlay();
-                if (isPaused || totalSlides < 2) return;
-                autoPlayTimer = setInterval(() => {
-                    updateSlider(currentIndex + 1);
-                }, autoPlayDelayMs);
-            };
-
-            const updateSlider = (index) => {
-                const normalizedIndex = ((index % totalSlides) + totalSlides) % totalSlides;
-
-                slides.forEach((slide, slideIndex) => {
-                    const isActive = slideIndex === normalizedIndex;
-                    slide.classList.toggle('active', isActive);
-                    slide.setAttribute('aria-selected', String(isActive));
-                    slide.setAttribute('tabindex', isActive ? '0' : '-1');
-                });
-
-                dots.forEach((dot, dotIndex) => {
-                    const isActive = dotIndex === normalizedIndex;
-                    dot.classList.toggle('active', isActive);
-                    dot.setAttribute('aria-current', String(isActive));
-                });
-
-                track.style.transform = `translateX(-${normalizedIndex * 100}%)`;
-                currentIndex = normalizedIndex;
-            };
-
-            const pauseTemporarily = () => {
-                if (!isPaused) clearAutoPlay();
-            };
-
-            const resumeTemporarily = () => {
-                if (!isPaused) restartAutoPlay();
-            };
-
-            prevBtn?.addEventListener('click', () => {
-                updateSlider(currentIndex - 1);
-                restartAutoPlay();
-            });
-
-            nextBtn?.addEventListener('click', () => {
-                updateSlider(currentIndex + 1);
-                restartAutoPlay();
-            });
-
-            dots.forEach((dot, index) => {
-                dot.addEventListener('click', () => {
-                    updateSlider(index);
-                    restartAutoPlay();
-                });
-            });
-
-            toggleBtn?.addEventListener('click', () => {
-                isPaused = !isPaused;
-                updatePauseButton();
-                restartAutoPlay();
-            });
-
-            slider.addEventListener('mouseenter', pauseTemporarily);
-            slider.addEventListener('mouseleave', resumeTemporarily);
-            slider.addEventListener('focusin', pauseTemporarily);
-            slider.addEventListener('focusout', (event) => {
-                if (!slider.contains(event.relatedTarget)) {
-                    resumeTemporarily();
-                }
-            });
-
-            slider.addEventListener('keydown', (event) => {
-                if (event.key === 'ArrowLeft') {
-                    event.preventDefault();
-                    updateSlider(currentIndex - 1);
-                    restartAutoPlay();
-                } else if (event.key === 'ArrowRight') {
-                    event.preventDefault();
-                    updateSlider(currentIndex + 1);
-                    restartAutoPlay();
-                } else if (event.key === 'Home') {
-                    event.preventDefault();
-                    updateSlider(0);
-                    restartAutoPlay();
-                } else if (event.key === 'End') {
-                    event.preventDefault();
-                    updateSlider(totalSlides - 1);
-                    restartAutoPlay();
-                }
-            });
-
-            updatePauseButton();
-            updateSlider(0);
-            restartAutoPlay();
-        };
-
-        // Initialize slider after DOM loaded
-        if (document.querySelector('.hero-slider')) {
-            initHeroSlider();
-        }
     </script>
-
+    <script src="js/spiritatlas-slider-data.js"></script>
+    <script src="js/hero-slider.js"></script>
 </body>
 </html>
