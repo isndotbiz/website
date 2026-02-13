@@ -64,6 +64,7 @@
             width: 100%;
             max-width: 900px;
             margin: 2rem auto 0;
+            outline: none;
         }
 
         .slider-header {
@@ -72,6 +73,12 @@
             align-items: center;
             margin-bottom: 1rem;
             padding: 0 1rem;
+        }
+
+        .slider-header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
         }
 
         .slider-header h3 {
@@ -88,6 +95,25 @@
             font-size: 0.875rem;
             font-weight: 700;
             box-shadow: 0 4px 12px rgba(30, 159, 242, 0.3);
+        }
+
+        .slider-toggle {
+            border: 1px solid rgba(95, 223, 223, 0.4);
+            background: rgba(8, 20, 37, 0.75);
+            color: var(--color-light, #ffffff);
+            font-weight: 700;
+            font-size: 0.8rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            padding: 0.45rem 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .slider-toggle:hover {
+            background: rgba(30, 159, 242, 0.2);
+            border-color: rgba(30, 159, 242, 0.85);
         }
 
         .slider-container {
@@ -112,10 +138,70 @@
             opacity: 1;
         }
 
+        .slide-figure {
+            margin: 0;
+            position: relative;
+            aspect-ratio: 9 / 16;
+            max-height: 720px;
+            overflow: hidden;
+            background: #091426;
+        }
+
         .slide img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: contain;
             display: block;
+            position: relative;
+            z-index: 1;
+        }
+
+        .slide-placeholder {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background: linear-gradient(135deg, #10213d 0%, #2a4f8f 50%, #5b2091 100%);
+            opacity: 0.85;
+        }
+
+        .slide-image-fallback {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 1.5rem;
+            background: radial-gradient(circle at 20% 20%, rgba(95, 223, 223, 0.35), rgba(16, 33, 61, 0.6) 40%, rgba(6, 14, 29, 0.92) 100%);
+        }
+
+        .slide-caption {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+            padding: 0.75rem 1rem;
+            background: linear-gradient(180deg, rgba(3, 8, 18, 0) 0%, rgba(3, 8, 18, 0.78) 70%, rgba(3, 8, 18, 0.92) 100%);
+            color: #ffffff;
+        }
+
+        .slide-caption strong {
+            font-size: 0.95rem;
+            letter-spacing: 0.02em;
+        }
+
+        .slide-caption span {
+            font-size: 0.8rem;
+            opacity: 0.92;
         }
 
         .slider-nav {
@@ -175,9 +261,33 @@
             transform: scale(1.3);
         }
 
+        .slider-toggle:focus-visible,
+        .slider-nav:focus-visible,
+        .dot:focus-visible {
+            outline: 2px solid var(--color-cyan, #5FDFDF);
+            outline-offset: 2px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .slider-track,
+            .slide {
+                transition: none !important;
+            }
+        }
+
         @media (max-width: 768px) {
             .hero-slider {
                 max-width: 100%;
+            }
+
+            .slider-header {
+                flex-wrap: wrap;
+                gap: 0.75rem;
+            }
+
+            .slider-header-actions {
+                width: 100%;
+                justify-content: space-between;
             }
 
             .slider-nav {
@@ -201,6 +311,23 @@
             .launch-badge {
                 font-size: 0.75rem;
                 padding: 0.4rem 0.8rem;
+            }
+
+            .slider-toggle {
+                font-size: 0.7rem;
+                padding: 0.35rem 0.7rem;
+            }
+
+            .slide-caption {
+                padding: 0.6rem 0.8rem;
+            }
+
+            .slide-caption strong {
+                font-size: 0.85rem;
+            }
+
+            .slide-caption span {
+                font-size: 0.75rem;
             }
         }
     </style>
@@ -371,6 +498,15 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="investors.html">Investors</a></li>
+            <li class="has-dropdown">
+                <a href="#team">Team</a>
+                <ul class="dropdown-menu">
+                    <li><a href="jonathan.html">Jonathan Maldonado</a></li>
+                    <li><a href="lilly.html">Lilly Fano</a></li>
+                    <li><a href="bri.html">Bri Lee</a></li>
+                    <li><a href="alicia.html">Alicia Young</a></li>
+                </ul>
+            </li>
             <li><a href="contact.html" class="nav-cta">Contact</a></li>
             </ul>
         </div>
@@ -405,67 +541,20 @@
                     <a href="#contact" class="btn btn-secondary lift-on-hover"><span>Schedule a Demo</span></a>
                 </div>
                 <div class="hero-visual">
-                    <div class="hero-slider">
+                    <div class="hero-slider" data-hero-slider aria-roledescription="carousel" aria-label="SpiritAtlas app screenshots">
                         <div class="slider-header">
                             <h3>SpiritAtlas</h3>
-                            <span class="launch-badge">Coming March 2026</span>
+                            <div class="slider-header-actions">
+                                <span class="launch-badge">Coming March 2026</span>
+                                <button class="slider-toggle" type="button" data-slider-toggle aria-pressed="false" aria-label="Pause slide autoplay">Pause</button>
+                            </div>
                         </div>
                         <div class="slider-container">
-                            <div class="slider-track">
-                                <div class="slide active">
-                                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/desktop_spiritatlas_01.webp" alt="SpiritAtlas app screenshot 1" loading="eager">
-                                </div>
-                                <div class="slide">
-                                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/desktop_spiritatlas_02.webp" alt="SpiritAtlas app screenshot 2" loading="lazy">
-                                </div>
-                                <div class="slide">
-                                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/desktop_spiritatlas_03.webp" alt="SpiritAtlas app screenshot 3" loading="lazy">
-                                </div>
-                                <div class="slide">
-                                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/desktop_spiritatlas_04.webp" alt="SpiritAtlas app screenshot 4" loading="lazy">
-                                </div>
-                                <div class="slide">
-                                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/desktop_spiritatlas_05.webp" alt="SpiritAtlas app screenshot 5" loading="lazy">
-                                </div>
-                                <div class="slide">
-                                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/desktop_spiritatlas_06.webp" alt="SpiritAtlas app screenshot 6" loading="lazy">
-                                </div>
-                                <div class="slide">
-                                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/mobile_spiritatlas_01.webp" alt="SpiritAtlas app screenshot 7" loading="lazy">
-                                </div>
-                                <div class="slide">
-                                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/mobile_spiritatlas_02.webp" alt="SpiritAtlas app screenshot 8" loading="lazy">
-                                </div>
-                                <div class="slide">
-                                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/mobile_spiritatlas_03.webp" alt="SpiritAtlas app screenshot 9" loading="lazy">
-                                </div>
-                                <div class="slide">
-                                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/mobile_spiritatlas_04.webp" alt="SpiritAtlas app screenshot 10" loading="lazy">
-                                </div>
-                                <div class="slide">
-                                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/mobile_spiritatlas_05.webp" alt="SpiritAtlas app screenshot 11" loading="lazy">
-                                </div>
-                                <div class="slide">
-                                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/mobile_spiritatlas_06.webp" alt="SpiritAtlas app screenshot 12" loading="lazy">
-                                </div>
-                            </div>
-                            <button class="slider-nav prev" aria-label="Previous slide">&lt;</button>
-                            <button class="slider-nav next" aria-label="Next slide">&gt;</button>
+                            <div class="slider-track" data-slider-track role="listbox" aria-live="polite"></div>
+                            <button class="slider-nav prev" type="button" data-slider-prev aria-label="Previous slide">&lt;</button>
+                            <button class="slider-nav next" type="button" data-slider-next aria-label="Next slide">&gt;</button>
                         </div>
-                        <div class="slider-dots">
-                            <button class="dot active" aria-label="Go to slide 1"></button>
-                            <button class="dot" aria-label="Go to slide 2"></button>
-                            <button class="dot" aria-label="Go to slide 3"></button>
-                            <button class="dot" aria-label="Go to slide 4"></button>
-                            <button class="dot" aria-label="Go to slide 5"></button>
-                            <button class="dot" aria-label="Go to slide 6"></button>
-                            <button class="dot" aria-label="Go to slide 7"></button>
-                            <button class="dot" aria-label="Go to slide 8"></button>
-                            <button class="dot" aria-label="Go to slide 9"></button>
-                            <button class="dot" aria-label="Go to slide 10"></button>
-                            <button class="dot" aria-label="Go to slide 11"></button>
-                            <button class="dot" aria-label="Go to slide 12"></button>
-                        </div>
+                        <div class="slider-dots" data-slider-dots aria-label="Slide navigation"></div>
                     </div>
                 </div>
             </div>
@@ -684,7 +773,7 @@
                 <!-- Row 2 -->
                 <a href="spiritatlas.html" class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/portfolio/androidaps_health.webp" alt="SpiritAtlas mobile app" loading="lazy">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas_1.webp" alt="SpiritAtlas mobile app" loading="lazy">
                     </div>
                     <div class="portfolio-number">04</div>
                     <h3>SpiritAtlas — Where Ancient Wisdom Meets AI Clarity.</h3>
@@ -1059,10 +1148,10 @@
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h4>Contact</h4>
-                    <p>9030 35th Ave SW, Suite 100<br>Seattle, WA 98126</p>
+                    <p>9030 35th Ave SW<br>Suite 100<br>Seattle, WA 98126</p>
                     <p>Local: (206) 785-9782<br>Toll-Free: (800) 986-4614</p>
-                    <a href="contact.html" class="btn btn-primary" style="margin-top: 0.5rem; display: inline-block;">Get in Touch</a>
+                    <h4>Get in Touch</h4>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 0.5rem; display: inline-block;">Contact Us</a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -1154,60 +1243,273 @@
         });
 
         // Hero Slider
-        const initHeroSlider = () => {
-            const track = document.querySelector('.slider-track');
-            const slides = document.querySelectorAll('.slide');
-            const dots = document.querySelectorAll('.dot');
-            const prevBtn = document.querySelector('.slider-nav.prev');
-            const nextBtn = document.querySelector('.slider-nav.next');
+        // Replace only src/title/caption/alt values below when future screenshot runs land.
+        const spiritAtlasSliderData = [
+            {
+                id: 'desktop-01',
+                title: 'SpiritAtlas Home Command Center',
+                caption: 'Your daily guidance hub for spiritual momentum and clarity.',
+                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/desktop_spiritatlas_01.webp',
+                alt: 'SpiritAtlas desktop screenshot showing home command center',
+                placeholder: 'linear-gradient(135deg, #132846 0%, #2a4f8f 50%, #5b2091 100%)',
+                loading: 'eager'
+            },
+            {
+                id: 'desktop-02',
+                title: 'Profile Depth That Feels Personal',
+                caption: 'Turn birth data into precise, high-trust spiritual insight.',
+                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/desktop_spiritatlas_02.webp',
+                alt: 'SpiritAtlas desktop screenshot showing profile intelligence',
+                placeholder: 'linear-gradient(135deg, #113157 0%, #245ea9 52%, #8226bc 100%)'
+            },
+            {
+                id: 'desktop-03',
+                title: 'Five Systems. One Clear Narrative.',
+                caption: 'Unified analysis across Numerology, Astrology, Ayurveda, Human Design, and Tantra.',
+                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/desktop_spiritatlas_03.webp',
+                alt: 'SpiritAtlas desktop screenshot with multi-system spiritual analysis',
+                placeholder: 'linear-gradient(135deg, #10233f 0%, #2f6cb8 52%, #7f2ed1 100%)'
+            },
+            {
+                id: 'desktop-04',
+                title: 'Compatibility Intelligence Engine',
+                caption: 'See relationship strengths, growth edges, and energetic alignment.',
+                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/desktop_spiritatlas_04.webp',
+                alt: 'SpiritAtlas desktop screenshot showing compatibility analysis results',
+                placeholder: 'linear-gradient(135deg, #0d1f39 0%, #2269bf 50%, #8829c6 100%)'
+            },
+            {
+                id: 'desktop-05',
+                title: 'AI Insights With Consent Control',
+                caption: 'Premium narrative depth with privacy-first architecture.',
+                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/desktop_spiritatlas_05.webp',
+                alt: 'SpiritAtlas desktop screenshot showing AI-enhanced spiritual report',
+                placeholder: 'linear-gradient(135deg, #13253e 0%, #1e5aa8 52%, #6f2bc2 100%)'
+            },
+            {
+                id: 'desktop-06',
+                title: 'Daily Guidance That Drives Retention',
+                caption: 'Built for consistent daily engagement, not one-time curiosity.',
+                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/desktop_spiritatlas_06.webp',
+                alt: 'SpiritAtlas desktop screenshot showing daily dashboard and guidance',
+                placeholder: 'linear-gradient(135deg, #0f2949 0%, #1f60b1 52%, #7c34cf 100%)'
+            },
+            {
+                id: 'mobile-01',
+                title: 'Mobile Experience, Premium Feel',
+                caption: 'A polished Android experience designed for daily rituals.',
+                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/mobile_spiritatlas_01.webp',
+                alt: 'SpiritAtlas mobile screenshot home experience',
+                placeholder: 'linear-gradient(135deg, #112741 0%, #215496 50%, #762abf 100%)'
+            },
+            {
+                id: 'mobile-02',
+                title: 'Fast Onboarding, Deep Outcomes',
+                caption: 'Get started quickly and unlock deeper accuracy over time.',
+                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/mobile_spiritatlas_02.webp',
+                alt: 'SpiritAtlas mobile screenshot onboarding and profile setup',
+                placeholder: 'linear-gradient(135deg, #12253d 0%, #255ca3 52%, #7d2fca 100%)'
+            },
+            {
+                id: 'mobile-03',
+                title: 'Designed for Trust',
+                caption: 'High-signal insights presented in an intuitive mobile flow.',
+                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/mobile_spiritatlas_03.webp',
+                alt: 'SpiritAtlas mobile screenshot with spiritual insights and data points',
+                placeholder: 'linear-gradient(135deg, #102842 0%, #2365b2 50%, #8031d0 100%)'
+            },
+            {
+                id: 'mobile-04',
+                title: 'Clarity Across Every Screen',
+                caption: 'Every interaction pushes the user toward confident action.',
+                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/mobile_spiritatlas_04.webp',
+                alt: 'SpiritAtlas mobile screenshot detailed profile section',
+                placeholder: 'linear-gradient(135deg, #0f2740 0%, #215ea8 50%, #792dc4 100%)'
+            },
+            {
+                id: 'mobile-05',
+                title: 'Relationship Insight in Seconds',
+                caption: 'Compare profiles and reveal energetic fit instantly.',
+                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/mobile_spiritatlas_05.webp',
+                alt: 'SpiritAtlas mobile screenshot compatibility and relationship insights',
+                placeholder: 'linear-gradient(135deg, #13233a 0%, #24539a 52%, #7226b6 100%)'
+            },
+            {
+                id: 'mobile-06',
+                title: 'SpiritAtlas — Where Ancient Wisdom Meets AI Clarity',
+                caption: 'Enterprise-grade architecture powering a premium spiritual product.',
+                src: 'https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_074725/mobile_spiritatlas_06.webp',
+                alt: 'SpiritAtlas mobile screenshot showcasing final premium experience',
+                placeholder: 'linear-gradient(135deg, #14243d 0%, #23579e 50%, #7b2ec7 100%)'
+            }
+        ];
 
-            if (!track || !slides.length) return;
+        const escapeHtml = (value = '') => String(value)
+            .replaceAll('&', '&amp;')
+            .replaceAll('<', '&lt;')
+            .replaceAll('>', '&gt;')
+            .replaceAll('"', '&quot;')
+            .replaceAll("'", '&#39;');
+
+        const initHeroSlider = () => {
+            const slider = document.querySelector('[data-hero-slider]');
+            const track = slider?.querySelector('[data-slider-track]');
+            const dotsContainer = slider?.querySelector('[data-slider-dots]');
+            const prevBtn = slider?.querySelector('[data-slider-prev]');
+            const nextBtn = slider?.querySelector('[data-slider-next]');
+            const toggleBtn = slider?.querySelector('[data-slider-toggle]');
+
+            if (!slider || !track || !dotsContainer) return;
+
+            const slidesConfig = spiritAtlasSliderData.filter(slide => slide && slide.id);
+            if (!slidesConfig.length) return;
+
+            track.innerHTML = slidesConfig.map((slide, index) => {
+                const hasImage = typeof slide.src === 'string' && slide.src.trim().length > 0;
+                const loading = slide.loading || (index === 0 ? 'eager' : 'lazy');
+                const safeTitle = escapeHtml(slide.title || `SpiritAtlas Preview ${index + 1}`);
+                const safeCaption = escapeHtml(slide.caption || 'Replace with your latest app screenshot.');
+                const safeAlt = escapeHtml(slide.alt || slide.title || `SpiritAtlas slide ${index + 1}`);
+                const safePlaceholder = escapeHtml(slide.placeholder || 'linear-gradient(135deg, #122d52 0%, #305dab 55%, #7229ba 100%)');
+                const safeSrc = hasImage ? escapeHtml(slide.src) : '';
+
+                return `
+                    <div class="slide${index === 0 ? ' active' : ''}" role="option" aria-selected="${index === 0}" tabindex="${index === 0 ? '0' : '-1'}" data-slide-id="${escapeHtml(slide.id)}">
+                        <figure class="slide-figure">
+                            <div class="slide-placeholder" style="background:${safePlaceholder};" aria-hidden="true"></div>
+                            ${hasImage
+                                ? `<img src="${safeSrc}" alt="${safeAlt}" loading="${loading}" decoding="async" width="1080" height="2400">`
+                                : `<div class="slide-image-fallback" role="img" aria-label="${safeAlt}">Screenshot placeholder ready for next upload</div>`
+                            }
+                            <figcaption class="slide-caption">
+                                <strong>${safeTitle}</strong>
+                                <span>${safeCaption}</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                `;
+            }).join('');
+
+            dotsContainer.innerHTML = slidesConfig.map((slide, index) => {
+                const label = escapeHtml(slide.title || `SpiritAtlas Preview ${index + 1}`);
+                return `<button class="dot${index === 0 ? ' active' : ''}" type="button" aria-label="Go to slide ${index + 1}: ${label}" aria-current="${index === 0}" data-slide-to="${index}"></button>`;
+            }).join('');
+
+            const slides = Array.from(track.querySelectorAll('.slide'));
+            const dots = Array.from(dotsContainer.querySelectorAll('.dot'));
+            const totalSlides = slides.length;
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const autoPlayDelayMs = 6000;
 
             let currentIndex = 0;
-            const totalSlides = slides.length;
+            let autoPlayTimer = null;
+            let isPaused = prefersReducedMotion;
+
+            const updatePauseButton = () => {
+                if (!toggleBtn) return;
+                toggleBtn.textContent = isPaused ? 'Play' : 'Pause';
+                toggleBtn.setAttribute('aria-pressed', String(isPaused));
+                toggleBtn.setAttribute('aria-label', isPaused ? 'Resume slide autoplay' : 'Pause slide autoplay');
+            };
+
+            const clearAutoPlay = () => {
+                if (autoPlayTimer) {
+                    clearInterval(autoPlayTimer);
+                    autoPlayTimer = null;
+                }
+            };
+
+            const restartAutoPlay = () => {
+                clearAutoPlay();
+                if (isPaused || totalSlides < 2) return;
+                autoPlayTimer = setInterval(() => {
+                    updateSlider(currentIndex + 1);
+                }, autoPlayDelayMs);
+            };
 
             const updateSlider = (index) => {
-                // Update active slide
-                slides.forEach((slide, i) => {
-                    slide.classList.toggle('active', i === index);
+                const normalizedIndex = ((index % totalSlides) + totalSlides) % totalSlides;
+
+                slides.forEach((slide, slideIndex) => {
+                    const isActive = slideIndex === normalizedIndex;
+                    slide.classList.toggle('active', isActive);
+                    slide.setAttribute('aria-selected', String(isActive));
+                    slide.setAttribute('tabindex', isActive ? '0' : '-1');
                 });
 
-                // Update dots
-                dots.forEach((dot, i) => {
-                    dot.classList.toggle('active', i === index);
+                dots.forEach((dot, dotIndex) => {
+                    const isActive = dotIndex === normalizedIndex;
+                    dot.classList.toggle('active', isActive);
+                    dot.setAttribute('aria-current', String(isActive));
                 });
 
-                // Move track
-                track.style.transform = `translateX(-${index * 100}%)`;
-                currentIndex = index;
+                track.style.transform = `translateX(-${normalizedIndex * 100}%)`;
+                currentIndex = normalizedIndex;
             };
 
-            const nextSlide = () => {
-                const next = (currentIndex + 1) % totalSlides;
-                updateSlider(next);
+            const pauseTemporarily = () => {
+                if (!isPaused) clearAutoPlay();
             };
 
-            const prevSlide = () => {
-                const prev = (currentIndex - 1 + totalSlides) % totalSlides;
-                updateSlider(prev);
+            const resumeTemporarily = () => {
+                if (!isPaused) restartAutoPlay();
             };
 
-            // Event listeners
-            if (prevBtn) prevBtn.addEventListener('click', prevSlide);
-            if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+            prevBtn?.addEventListener('click', () => {
+                updateSlider(currentIndex - 1);
+                restartAutoPlay();
+            });
+
+            nextBtn?.addEventListener('click', () => {
+                updateSlider(currentIndex + 1);
+                restartAutoPlay();
+            });
 
             dots.forEach((dot, index) => {
-                dot.addEventListener('click', () => updateSlider(index));
+                dot.addEventListener('click', () => {
+                    updateSlider(index);
+                    restartAutoPlay();
+                });
             });
 
-            // Auto-advance every 5 seconds
-            setInterval(nextSlide, 5000);
-
-            // Keyboard navigation
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'ArrowLeft') prevSlide();
-                if (e.key === 'ArrowRight') nextSlide();
+            toggleBtn?.addEventListener('click', () => {
+                isPaused = !isPaused;
+                updatePauseButton();
+                restartAutoPlay();
             });
+
+            slider.addEventListener('mouseenter', pauseTemporarily);
+            slider.addEventListener('mouseleave', resumeTemporarily);
+            slider.addEventListener('focusin', pauseTemporarily);
+            slider.addEventListener('focusout', (event) => {
+                if (!slider.contains(event.relatedTarget)) {
+                    resumeTemporarily();
+                }
+            });
+
+            slider.addEventListener('keydown', (event) => {
+                if (event.key === 'ArrowLeft') {
+                    event.preventDefault();
+                    updateSlider(currentIndex - 1);
+                    restartAutoPlay();
+                } else if (event.key === 'ArrowRight') {
+                    event.preventDefault();
+                    updateSlider(currentIndex + 1);
+                    restartAutoPlay();
+                } else if (event.key === 'Home') {
+                    event.preventDefault();
+                    updateSlider(0);
+                    restartAutoPlay();
+                } else if (event.key === 'End') {
+                    event.preventDefault();
+                    updateSlider(totalSlides - 1);
+                    restartAutoPlay();
+                }
+            });
+
+            updatePauseButton();
+            updateSlider(0);
+            restartAutoPlay();
         };
 
         // Initialize slider after DOM loaded
