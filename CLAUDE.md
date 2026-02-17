@@ -524,6 +524,87 @@ curl -w "@curl-format.txt" -o /dev/null -s https://isn.biz
 
 ---
 
+## Serena & Memory Usage Guidelines
+
+### Available Project Memories
+
+This project uses Serena's memory system to preserve important knowledge. Current memories:
+
+- **`project_overview`** - What this project is, tech stack, purpose
+- **`website_state_2026_02_04`** - Current deployment state, live URLs, S3 buckets
+- **`codebase_structure`** - How files are organized
+- **`code_style_conventions`** - Team coding standards
+- **`deploy_commands`** - Deployment procedures and commands
+- **`task_completion_workflow`** - How to complete tasks properly
+- **`codex_handoff_2026_02_04`** - Handoff notes and context
+
+### When to Automatically Read Memories
+
+**Always read at conversation start:**
+- ✅ `project_overview` - Provides essential context about the project
+
+**Read when relevant to task:**
+- 🚀 Deployment mentioned → Read `deploy_commands` + `website_state_2026_02_04`
+- 🎨 Code changes → Read `code_style_conventions` + `codebase_structure`
+- 🐛 Troubleshooting → Read `website_state_2026_02_04` for current state
+- 📋 Task workflow questions → Read `task_completion_workflow`
+
+### When to Write/Update Memories
+
+**Automatically write after:**
+- ✅ Solving major issues (document the problem + solution)
+- ✅ Deployment changes (update `website_state_*`)
+- ✅ Infrastructure changes (S3 buckets, server IPs, DNS)
+- ✅ Learning important gotchas or patterns
+- ✅ Completing multi-step tasks
+
+**Memory naming convention:**
+- Use snake_case: `cloudflare_troubleshooting`
+- Include dates for snapshots: `website_state_2026_02_15`
+- Be descriptive: `deployment_rollback_procedure` not just `rollback`
+
+**Example scenarios:**
+```
+Scenario: Cloudflare domain suspended
+→ After fix: Write "cloudflare_suspension_troubleshooting"
+→ Content: What happened, why, how to fix, prevention
+
+Scenario: New S3 bucket created
+→ Update: "website_state_2026_02_04" or create new snapshot
+→ Content: Bucket name, region, purpose, CDN config
+
+Scenario: Deployment process changes
+→ Update: "deploy_commands"
+→ Content: New commands, removed steps, why changed
+```
+
+### When to Use Serena Code Tools
+
+**Use Serena's semantic tools for:**
+- 🔍 Finding specific functions/classes: `mcp__serena__find_symbol`
+- 📊 Understanding file structure: `mcp__serena__get_symbols_overview`
+- ✏️ Editing specific methods: `mcp__serena__replace_symbol_body`
+- 🔗 Finding code references: `mcp__serena__find_referencing_symbols`
+- 🔎 Pattern searching: `mcp__serena__search_for_pattern`
+
+**Use standard Read/Edit tools for:**
+- Reading non-code files (HTML, CSS, markdown)
+- Simple text replacements
+- Configuration files
+
+### Critical Infrastructure Info (Always in Memories)
+
+Keep these always documented in `website_state_*` memory:
+- ✅ Live URLs (production, staging, CDN)
+- ✅ Server IPs and locations
+- ✅ S3 bucket names and regions
+- ✅ Cloudflare zone IDs
+- ✅ Netlify site names
+- ✅ GitHub repository URLs
+- ✅ Deployment status and last deploy date
+
+---
+
 ## Common Tasks for Claude
 
 ### Update Company Stats
