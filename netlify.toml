@@ -1,11 +1,69 @@
+# Netlify Configuration for ISN.BIZ Website
 [build]
   publish = "."
-  ignore = "git diff --quiet HEAD^ HEAD -- ':(exclude)Archive/' ':(exclude)docs/' ':(exclude)scripts/' ':(exclude)backups/' ':(exclude)*.md'"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  command = "echo 'Static site - no build required'"
 
 [build.environment]
   NODE_VERSION = "18"
+
+# Redirect rules
+[[redirects]]
+  from = "/team"
+  to = "/#team"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/services"
+  to = "/services.html"
+  status = 200
+
+[[redirects]]
+  from = "/portfolio"
+  to = "/portfolio.html"
+  status = 200
+
+[[redirects]]
+  from = "/investors"
+  to = "/investors.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+# 404 page
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# Headers for security and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
