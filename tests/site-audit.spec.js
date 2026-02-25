@@ -102,10 +102,10 @@ test.describe('Footer Uniformity', () => {
       await expect(footer.locator('text=47-4530188')).toBeAttached(); // EIN
 
       // Leadership links
-      await expect(footer.locator('a[href="jonathan.html"]')).toBeAttached();
-      await expect(footer.locator('a[href="bri.html"]')).toBeAttached();
-      await expect(footer.locator('a[href="lilly.html"]')).toBeAttached();
-      await expect(footer.locator('a[href="alicia.html"]')).toBeAttached();
+      await expect(footer.locator('a[href="/jonathan"]')).toBeAttached();
+      await expect(footer.locator('a[href="/bri"]')).toBeAttached();
+      await expect(footer.locator('a[href="/lilly"]')).toBeAttached();
+      await expect(footer.locator('a[href="/alicia"]')).toBeAttached();
 
       // Footer bottom
       await expect(footer.locator('.footer-bottom')).toBeAttached();
