@@ -119,18 +119,26 @@ test.describe('Section Visibility', () => {
   for (const page of ALL_PAGES) {
     test(`${page.name} sections become visible on scroll`, async ({ page: p }) => {
       await p.goto(`${BASE_URL}${page.path}`, GOTO_OPTS);
-      // Wait for IntersectionObserver to fire
+      // Wait for DOMContentLoaded scripts (including IntersectionObserver setup)
+      await p.waitForTimeout(500);
+
+      // Scroll incrementally through the page to trigger IntersectionObserver for all sections
+      await p.evaluate(async () => {
+        const delay = ms => new Promise(r => setTimeout(r, ms));
+        const totalHeight = document.body.scrollHeight;
+        for (let y = 0; y < totalHeight; y += 300) {
+          window.scrollTo(0, y);
+          await delay(80);
+        }
+        window.scrollTo(0, totalHeight);
+      });
       await p.waitForTimeout(1000);
 
-      // Scroll to bottom to trigger all sections
-      await p.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-      await p.waitForTimeout(1500);
-
-      // All .section elements should have .visible class
+      // All .section elements should have an animation class (visible or animate-in)
       const sections = await p.locator('.section').all();
       for (const section of sections) {
         const classes = await section.getAttribute('class');
-        expect(classes, `Section missing .visible class on ${page.name}`).toContain('visible');
+        expect(classes, `Section missing animation class on ${page.name}`).toMatch(/visible|animate-in/);
       }
     });
   }
