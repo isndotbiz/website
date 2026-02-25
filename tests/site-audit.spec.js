@@ -5,33 +5,33 @@ const BASE_URL = process.env.BASE_URL || 'https://isn.biz';
 
 const ALL_PAGES = [
   { path: '/', name: 'Home' },
-  { path: '/about.html', name: 'About' },
-  { path: '/services.html', name: 'Services' },
-  { path: '/portfolio.html', name: 'Portfolio' },
-  { path: '/investors.html', name: 'Investors' },
-  { path: '/contact.html', name: 'Contact' },
-  { path: '/opportunity-bot.html', name: 'Opportunity Bot' },
-  { path: '/truenas.html', name: 'TrueNAS' },
-  { path: '/bin-intelligence.html', name: 'BIN Intelligence' },
-  { path: '/spiritatlas.html', name: 'SpiritAtlas' },
-  { path: '/videogen.html', name: 'VideoGen' },
-  { path: '/comfyui.html', name: 'ComfyUI' },
-  { path: '/gedcom.html', name: 'GEDCOM' },
-  { path: '/llm-optimization.html', name: 'LLM Optimization' },
-  { path: '/aurallm.html', name: 'AuraLLM' },
-  { path: '/jonathan.html', name: 'Jonathan' },
-  { path: '/bri.html', name: 'Bri' },
-  { path: '/lilly.html', name: 'Lilly' },
-  { path: '/alicia.html', name: 'Alicia' },
+  { path: '/about', name: 'About' },
+  { path: '/services', name: 'Services' },
+  { path: '/portfolio', name: 'Portfolio' },
+  { path: '/investors', name: 'Investors' },
+  { path: '/contact', name: 'Contact' },
+  { path: '/opportunity-bot', name: 'Opportunity Bot' },
+  { path: '/truenas', name: 'TrueNAS' },
+  { path: '/bin-intelligence', name: 'BIN Intelligence' },
+  { path: '/spiritatlas', name: 'SpiritAtlas' },
+  { path: '/videogen', name: 'VideoGen' },
+  { path: '/comfyui', name: 'ComfyUI' },
+  { path: '/gedcom', name: 'GEDCOM' },
+  { path: '/llm-optimization', name: 'LLM Optimization' },
+  { path: '/aurallm', name: 'AuraLLM' },
+  { path: '/jonathan', name: 'Jonathan' },
+  { path: '/bri', name: 'Bri' },
+  { path: '/lilly', name: 'Lilly' },
+  { path: '/alicia', name: 'Alicia' },
 ];
 
 const PRODUCT_PAGES = ALL_PAGES.filter(p =>
-  ['/opportunity-bot.html', '/truenas.html', '/bin-intelligence.html', '/spiritatlas.html',
-   '/videogen.html', '/comfyui.html', '/gedcom.html', '/llm-optimization.html', '/aurallm.html'].includes(p.path)
+  ['/opportunity-bot', '/truenas', '/bin-intelligence', '/spiritatlas',
+   '/videogen', '/comfyui', '/gedcom', '/llm-optimization', '/aurallm'].includes(p.path)
 );
 
 const FOUNDER_PAGES = ALL_PAGES.filter(p =>
-  ['/jonathan.html', '/bri.html', '/lilly.html', '/alicia.html'].includes(p.path)
+  ['/jonathan', '/bri', '/lilly', '/alicia'].includes(p.path)
 );
 
 // Use domcontentloaded for all goto() calls - we test DOM structure, not image downloads
@@ -50,30 +50,31 @@ test.describe('Page Loading', () => {
 // ==================== NAV UNIFORMITY ====================
 test.describe('Navigation Uniformity', () => {
   for (const page of ALL_PAGES) {
-    test(`${page.name} has standard nav with 5 menu items`, async ({ page: p }) => {
+    test(`${page.name} has standard nav with 6 menu items`, async ({ page: p }) => {
       await p.goto(`${BASE_URL}${page.path}`, GOTO_OPTS);
 
       // Nav exists
       const nav = p.locator('nav.nav');
       await expect(nav).toBeVisible();
 
-      // Logo links to index.html
+      // Logo links to /
       const logoLink = nav.locator('.logo a');
-      await expect(logoLink).toHaveAttribute('href', 'index.html');
+      await expect(logoLink).toHaveAttribute('href', '/');
 
       // Logo image exists
       const logoImg = nav.locator('.logo-img');
       await expect(logoImg).toHaveCount(1);
 
-      // 5 menu items: About, Services, Portfolio, Investors, Contact
-      const menuItems = nav.locator('.nav-menu li');
-      await expect(menuItems).toHaveCount(5);
+      // 6 menu items: About, Services, Portfolio, Investors, Team, Contact
+      const menuItems = nav.locator('.nav-menu > li');
+      await expect(menuItems).toHaveCount(6);
 
-      // Correct hrefs
-      const expectedLinks = ['about.html', 'services.html', 'portfolio.html', 'investors.html', 'contact.html'];
+      // Correct hrefs for main nav links (skip Team at index 4 - it's a dropdown with #team)
+      const expectedLinks = ['/about', '/services', '/portfolio', '/investors'];
       for (let i = 0; i < expectedLinks.length; i++) {
         await expect(menuItems.nth(i).locator('a')).toHaveAttribute('href', expectedLinks[i]);
       }
+      await expect(menuItems.nth(5).locator('a')).toHaveAttribute('href', '/contact');
 
       // Mobile toggle exists
       const toggle = nav.locator('.nav-toggle');
