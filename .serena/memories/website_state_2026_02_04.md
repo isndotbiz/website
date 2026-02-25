@@ -1,10 +1,21 @@
 # ISN.BIZ Website State - 2026-02-04
 
-## Quick Reference
+## Quick Reference (Updated 2026-02-24)
 - **Live:** https://isn.biz
-- **Server:** TrueNAS 100.83.75.4 `/mnt/tank/websites/kusanagi/isn.biz/public/`
+- **Netlify:** https://isndotbiz.netlify.app (Site ID: 4d860499-0d6c-49cd-864f-69a0b7a2b3fe)
 - **S3:** `isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com`
 - **Repo:** https://github.com/isndotbiz/website.git
+- **Cloudflare Zone:** `a2efe184e74443f824ef58f1c862eb5a`
+
+## Architecture (as of 2026-02-24)
+```
+Browser → Cloudflare (proxy ON, SSL: Full) → Netlify (HTML)
+                                           → S3 (all images)
+```
+- DNS: Cloudflare proxy ENABLED (orange cloud) → IPs 104.21.18.246, 172.67.183.245
+- SSL: Cloudflare Universal SSL (fixed 2026-02-24, was DNS-only with no cert)
+- Last CLI deploy: Feb 17 2026 (deploy ID: 69948971795b231edff10983)
+- TrueNAS no longer serves this site
 
 ## Symmetry Rules (CRITICAL)
 - Cards MUST be 3×n or 4×n (3,4,6,8,9,12)
