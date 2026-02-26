@@ -1,283 +1,190 @@
 # CLAUDE.md - ISN.BIZ Website
 
 **Project:** ISN.BIZ Inc Investor-Ready Website
-**Status:** Production Ready - READY FOR DEPLOYMENT
-**Location:** `/mnt/d/workspace/ISNBIZ_Files/`
+**Status:** LIVE IN PRODUCTION at https://isn.biz
+**Location:** `D:\workspace\ISNBIZ_Files\`
+**Last Updated:** 2026-02-25
 
 ---
 
 ## Quick Overview
 
-Professional investor-ready website for ISN.BIZ Inc (software company). Static HTML/CSS/JS site designed to attract funding and showcase AI/cloud software portfolio.
+Multi-page static HTML/CSS/JS website for ISN.BIZ Inc (software company). Designed to attract investor funding and showcase the AI/cloud software portfolio. The site is fully live with CI/CD auto-deployment via GitHub Actions to Netlify.
 
-**Key Stats:**
-- **30KB HTML** + **23KB CSS** + **687B JS** (ultra-lightweight)
-- **Fully responsive** (mobile-first design)
-- **SEO optimized** (semantic HTML, proper meta tags)
-- **Fast load** (<3 seconds target)
-- **Ready to deploy** (Netlify recommended)
+**Architecture:**
+```
+Browser → Cloudflare (proxy ON, SSL: Full) → Netlify (HTML pages)
+                                            → S3 CDN (all images/assets)
+```
+
+**Key Facts:**
+- **20 HTML pages** (7 main + 4 founder bios + 9 project pages)
+- **Design system:** Neo-Technical Brutalism (dark, technical aesthetic)
+- **Testing:** Playwright (`tests/site-audit.spec.js`), runs against https://isn.biz
+- **CI/CD:** GitHub Actions (`.github/workflows/auto-deploy.yml`) - tests then deploys
+- **Repo:** https://github.com/isndotbiz/website.git
+- **Netlify site:** `isndotbiz.netlify.app` (site ID: `4d860499-0d6c-49cd-864f-69a0b7a2b3fe`)
 
 ---
 
-## Website Structure
+## Website Pages
 
-### Sections
+### Main Pages
+| File | URL | Description |
+|------|-----|-------------|
+| `index.html` | `/` | Homepage: hero, about, solutions (4), portfolio preview (9), team (4), investors |
+| `about.html` | `/about` | Company details, 6 trust badges, team grid (4 founders) |
+| `services.html` | `/services` | Solutions portfolio with visual grid |
+| `portfolio.html` | `/portfolio` | 8 case studies (4x2), methodology, results |
+| `investors.html` | `/investors` | Investment pitch, market, use of funds (6 items) |
+| `contact.html` | `/contact` | Contact form (currently stub - shows alert()) |
+| `404.html` | (error) | Custom 404 error page |
 
-1. **Navigation** - Fixed header with blur effect, mobile menu
-2. **Hero** - Full-height entry with ISS logo, metallic background, key stats
-3. **About** - Company overview, credentials (DUNS, UBI, EIN)
-4. **Solutions** - 4 cards: AI Apps, Cloud, Enterprise Software, Data Analytics
-5. **Portfolio Preview** - 3 case studies with metrics
-6. **Investor Section** - Professional pitch, investment highlights, dual CTAs
-7. **Contact** - Form + company info card
-8. **Footer** - Credentials, links, copyright
+### Founder Bio Pages
+`jonathan.html` (CEO), `bri.html` (COO), `lilly.html` (CFO), `alicia.html` (CPO)
 
-### Brand Colors
+### Project Pages (9 total)
+`truenas.html`, `videogen.html`, `bin-intelligence.html`, `spiritatlas.html` (Coming March 2026),
+`comfyui.html`, `gedcom.html`, `llm-optimization.html`, `opportunity-bot.html`, `aurallm.html`
+
+### Brand Colors (Neo-Technical Brutalism)
 
 ```css
 --color-blue: #1E9FF2      /* Primary brand - CTAs, accents */
 --color-cyan: #5FDFDF      /* Secondary - highlights, gradients */
---color-charcoal: #3F4447  /* Dark text, backgrounds */
+--color-charcoal: #0D1117  /* Dark backgrounds */
+--accent-pink: #FF2D55     /* Accent highlights */
 ```
 
-### Files
+### File Structure
 
 ```
 ISNBIZ_Files/
-├── index.html              # Main page (30KB)
-├── styles.css              # Stylesheet (23KB)
-├── script.js               # Interactivity (687B)
-├── logo-pallete/           # Brand assets
-│   ├── ISS white long 500(1).png
-│   ├── ISS2500.png
-│   ├── metal 4 squared.jpg
-│   ├── metal 5.jpg
-│   └── pallete.png
-└── docs/                   # Documentation (40 files)
+├── *.html                          # 20 HTML pages
+├── styles.css                      # Main stylesheet
+├── script.js                       # Main JavaScript (minimal)
+├── enhanced-animations.css         # Animation styles
+├── netlify.toml                    # Netlify build config + URL redirects (19 clean URLs)
+├── playwright.config.js            # Test config (baseURL: https://isn.biz)
+├── package.json                    # Node deps (Playwright only)
+├── .github/workflows/auto-deploy.yml  # CI/CD: test → deploy on push to main
+├── tests/site-audit.spec.js        # Playwright test suite
+├── scripts/                        # Python asset generation scripts (fal.ai)
+├── venv_fal/                       # Python venv (gitignored)
+├── assets/                         # Local asset copies (gitignored, 154MB - use S3)
+├── logo.png                        # ISN.BIZ logo
+├── docs/                           # 40+ historical documentation files
+├── .serena/memories/               # Serena AI memory files (read these first)
+└── .claude/                        # Compound engineering plugin (agents, commands, skills)
 ```
 
 ---
 
 ## How to Deploy
 
-### Option 1: Netlify (RECOMMENDED - Easiest)
-
-**Why Netlify:**
-- Drag-and-drop deployment
-- Free SSL certificate (HTTPS)
-- Built-in form handling
-- CDN included
-- Automatic Git deployments
-- Custom domain easy
-
-**Steps:**
+### Standard Workflow (CI/CD - Use This)
 
 ```bash
-# Method A: Netlify CLI
+cd /d/workspace/ISNBIZ_Files
+git add <specific files>
+git commit -m "fix: description"
+git push origin main
+# GitHub Actions: runs Playwright tests → deploys to Netlify if tests pass
+```
+
+### Emergency Manual Deploy
+
+```bash
 npm install -g netlify-cli
-cd /mnt/d/workspace/ISNBIZ_Files
-netlify deploy --prod
-
-# Method B: Drag-and-drop
-# 1. Go to https://app.netlify.com/
-# 2. Drag ISNBIZ_Files folder to deploy
-# 3. Configure custom domain (isn.biz)
-
-# Method C: Git-based (auto-deploy)
-cd /mnt/d/workspace/ISNBIZ_Files
-git init
-git add .
-git commit -m "Initial investor website"
-git remote add origin https://github.com/isn-biz/website.git
-git push -u origin main
-# Connect repo to Netlify for auto-deploy on push
+netlify deploy --prod --dir=. \
+  --auth=$NETLIFY_AUTH_TOKEN \
+  --site=4d860499-0d6c-49cd-864f-69a0b7a2b3fe
 ```
 
-**Documentation:** See `DEPLOY_TO_NETLIFY.md` for detailed guide
-
-### Option 2: GitHub Pages
+### Verify Live Site
 
 ```bash
-# 1. Create GitHub repo: isn-biz/website
-# 2. Push code
-git init
-git add .
-git commit -m "ISN.BIZ investor website"
-git remote add origin https://github.com/isn-biz/website.git
-git push -u origin main
+curl -I https://isn.biz
 
-# 3. Enable GitHub Pages in repo settings
-# 4. Configure custom domain (isn.biz)
+# Tailscale DNS bypass (needed on this Windows machine)
+curl --resolve "isn.biz:443:104.21.18.246" -I https://isn.biz  # via Cloudflare
+curl --resolve "isn.biz:443:75.2.60.5" -I https://isn.biz       # via Netlify
 ```
 
-### Option 3: Traditional cPanel/FTP
+### Open Tasks Before Feature-Complete
 
-```bash
-# 1. Upload all files via FTP/SFTP
-# 2. Configure SSL certificate (Let's Encrypt)
-# 3. Point domain to server
-# 4. Test
-```
+**Critical:**
+- [ ] Contact form backend (currently shows `alert()` - needs Netlify Forms or Formspree)
 
-### Option 4: Kusanagi (Like HROC)
+**High Priority:**
+- [ ] Google Analytics 4 (no tracking yet - add GA4 ID to all 20 pages)
+- [ ] reCAPTCHA on contact form (no spam protection)
+- [ ] Alicia headshot regeneration (chin dimple AI artifact)
 
-**Pros:** Match HROC infrastructure
-**Cons:** More complex, requires server management
+**Medium:**
+- [ ] SpiritAtlas launch (update "Coming March 2026" badge)
+- [ ] Privacy policy + Terms of service pages
 
-See `.serena/WEBSITES.md` for Kusanagi setup details
-
----
-
-## Deployment Workflow
-
-### Pre-Launch Checklist
-
-**CRITICAL (Must Complete Before Launch):**
-- [ ] Update contact email (currently placeholder)
-- [ ] Add real company metrics in hero stats
-- [ ] Replace portfolio examples with actual projects
-- [ ] Set up form backend (Formspree, Netlify Forms, or custom)
-- [ ] Configure SSL certificate (HTTPS)
-- [ ] Test on multiple devices (mobile, tablet, desktop)
-- [ ] Test on multiple browsers (Chrome, Firefox, Safari, Edge)
-
-**IMPORTANT (Week 1):**
-- [ ] Add Google Analytics 4 tracking
-- [ ] Set up Google Search Console
-- [ ] Configure form spam protection (CAPTCHA)
-- [ ] Optimize images (WebP format, compression)
-- [ ] Update LinkedIn with new URL
-- [ ] Update CrunchBase profile
-- [ ] Update AngelList/Wellfound
-
-**ENHANCED (Weeks 2-4):**
-- [ ] Create privacy policy page
-- [ ] Create terms of service page
-- [ ] Add team photos and bios
-- [ ] Create downloadable pitch deck PDF
-- [ ] Add client logos (with permission)
-- [ ] Implement schema markup (JSON-LD)
-- [ ] Set up email newsletter signup
-- [ ] Create blog section
-
-**Full checklist:** See `DEPLOYMENT_CHECKLIST.md`
-
-### GitHub Workflow
-
-```bash
-# Setup (one-time)
-cd /mnt/d/workspace/ISNBIZ_Files
-git init
-git add .
-git commit -m "Initial investor-ready website"
-git remote add origin https://github.com/isn-biz/website.git
-git push -u origin main
-
-# Daily workflow
-git add .
-git commit -m "Update: description of changes"
-git push
-
-# Netlify will auto-deploy on push to main
-```
+**Full list:** See `.serena/memories/task_checklist.md`
 
 ---
 
 ## How to Update
 
-### Change Content
+### Change Content in a Page
 
-**Edit `index.html`:**
+Edit the relevant `.html` file directly. Key patterns:
 
-```bash
-# Hero stats (lines ~45-57)
+```html
+<!-- Hero stats -->
 <div class="stat">
     <span class="stat-number">11+</span>
     <span class="stat-label">Years</span>
 </div>
 
-# Company info (lines ~89-115)
-<h2>About ISN.BIZ Inc</h2>
-<p>Your description here...</p>
-
-# Solutions (lines ~130-195)
+<!-- Card (MUST maintain 3xN or 4xN grid - CRITICAL RULE) -->
 <div class="solution-card">
     <h3>AI-Powered Applications</h3>
     <p>Description...</p>
 </div>
-
-# Portfolio items (lines ~207-235)
-<div class="portfolio-item">
-    <h3>Project Title</h3>
-    <p>Description...</p>
-</div>
-
-# Contact info (line ~480)
-<p><strong>Email:</strong> contact@isn.biz</p>
 ```
 
 ### Change Colors
 
-**Edit `styles.css` (lines 1-25):**
+Edit `styles.css` (CSS custom properties at top of file):
 
 ```css
 :root {
-    --color-blue: #1E9FF2;      /* Change primary color */
-    --color-cyan: #5FDFDF;      /* Change secondary */
-    --color-charcoal: #3F4447;  /* Change dark color */
+    --color-blue: #1E9FF2;      /* Primary brand color */
+    --color-cyan: #5FDFDF;      /* Secondary color */
+    --color-charcoal: #0D1117;  /* Dark background */
+    --accent-pink: #FF2D55;     /* Accent color */
 }
 ```
 
-### Add New Section
+### Add a New Page
 
-1. Copy existing section structure from `index.html`
-2. Maintain consistent class naming
-3. Update navigation menu
-4. Test responsiveness
-5. Git commit and push
+1. Copy an existing similar page as a template
+2. Update navigation links on ALL pages (not just the new one)
+3. Add a clean URL redirect to `netlify.toml`
+4. Add test coverage in `tests/site-audit.spec.js`
+5. Commit and push - CI/CD handles deploy
 
-### Update Logo
+### S3 Asset Management (Current Setup)
 
-1. Replace files in `logo-pallete/`
-2. Update references in `index.html`:
-   ```html
-   <img src="logo-pallete/ISS white long 500(1).png" alt="ISN.BIZ Logo">
-   ```
-3. Optimize image (compress, WebP)
-4. Test on different backgrounds
-
----
-
-## S3 Asset Management
-
-### Current: Local Assets
-
-All images in `logo-pallete/` directory, served directly with HTML.
-
-### Future: S3 + CloudFront CDN
-
-**Benefits:**
-- Fast global delivery
-- Reduced server load
-- Scalable storage
-- Cost-effective
-
-**Setup:**
+All production images served from S3 CDN (not local files):
+- **S3 Bucket:** `isnbiz-assets-1769962280` (us-east-1)
+- **URL pattern:** `https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/...`
+- **Format:** WebP preferred for all images
+- Local `assets/` folder is gitignored - do NOT commit it
 
 ```bash
-# Upload to S3
-aws s3 cp logo-pallete/ISS2500.png s3://isn-biz-assets/images/
+# Upload a new asset to S3
+aws s3 cp my-image.webp s3://isnbiz-assets-1769962280/assets/ --acl public-read
 
-# Configure CloudFront distribution
-# Point to S3 bucket
-# Enable HTTPS
-# Set caching headers
-
-# Update HTML
-<img src="https://cdn.isn.biz/images/ISS2500.png" alt="ISN.BIZ Logo">
+# Then reference in HTML:
+# <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/my-image.webp" ...>
 ```
-
-**See:** `/mnt/d/workspace/.serena/WEBSITES.md` for S3 setup details
 
 ---
 
@@ -334,54 +241,46 @@ def contact():
 ### Local Preview
 
 ```bash
-cd /mnt/d/workspace/ISNBIZ_Files
-
-# Open in browser
-# Windows: start index.html
-# Linux: xdg-open index.html
-# Or just double-click index.html
+cd /d/workspace/ISNBIZ_Files
+python -m http.server 8000
+# Open http://localhost:8000
 ```
 
-### Deploy to Netlify
+### Run Tests
 
 ```bash
-netlify deploy --prod
+cd /d/workspace/ISNBIZ_Files
+npx playwright test                          # All tests (vs https://isn.biz)
+npx playwright test --ui                     # Interactive mode
+BASE_URL=http://localhost:8000 npx playwright test  # Against local server
+```
+
+### Deploy (Standard)
+
+```bash
+cd /d/workspace/ISNBIZ_Files
+git add <files>
+git commit -m "Description"
+git push origin main    # Auto-triggers tests → Netlify deploy
 ```
 
 ### Git Workflow
 
 ```bash
-cd /mnt/d/workspace/ISNBIZ_Files
-
+cd /d/workspace/ISNBIZ_Files
 git status                     # Check changes
-git add .                      # Stage changes
-git commit -m "Description"    # Commit
-git push                       # Push (auto-deploys on Netlify)
+git log --oneline -5           # Recent commits
+git diff                       # Unstaged changes
+git push                       # Push (triggers CI/CD auto-deploy)
 ```
 
-### Image Optimization
+### Verify Live Site
 
 ```bash
-# Convert to WebP (better compression)
-for img in logo-pallete/*.{jpg,png}; do
-  cwebp -q 85 "$img" -o "${img%.*}.webp"
-done
+curl -I https://isn.biz
 
-# Use in HTML with fallback
-<picture>
-  <source srcset="logo-pallete/ISS2500.webp" type="image/webp">
-  <img src="logo-pallete/ISS2500.png" alt="ISN.BIZ Logo">
-</picture>
-```
-
-### Performance Check
-
-```bash
-# Lighthouse audit (Chrome DevTools)
-# Or use online tool: web.dev/measure/
-
-# Check load time
-curl -w "@curl-format.txt" -o /dev/null -s https://isn.biz
+# If Tailscale is overriding DNS (use on this machine):
+curl --resolve "isn.biz:443:104.21.18.246" -I https://isn.biz
 ```
 
 ---
@@ -419,40 +318,28 @@ curl -w "@curl-format.txt" -o /dev/null -s https://isn.biz
 
 ## Where to Find Things
 
-### Documentation
+### Key Files
 
-**Quick Starts:**
-- `GET_STARTED.md` - Getting started guide
-- `QUICK_START_GUIDE.md` - Launch instructions
-- `DEPLOYMENT_CHECKLIST.md` - Pre-launch tasks
+| What | Where |
+|------|-------|
+| HTML pages | `*.html` (20 files in root) |
+| Main CSS | `styles.css` |
+| Main JavaScript | `script.js` |
+| Animation CSS | `enhanced-animations.css` |
+| Netlify config + redirects | `netlify.toml` |
+| CI/CD workflow | `.github/workflows/auto-deploy.yml` |
+| Playwright tests | `tests/site-audit.spec.js` |
+| Python asset scripts | `scripts/` |
+| AI asset memories | `.serena/memories/` |
+| Compound eng. plugin | `.claude/` (agents, commands, skills) |
+| Historical docs | `docs/` (40+ markdown files) |
 
-**Design Guides:**
-- `BRAND_ASSETS_GUIDE.md` - Logo usage, colors
-- `VISUAL_PREVIEW_GUIDE.md` - Design preview
-- `ASSET_CATALOG.md` - All available assets
-- `ASSET_USAGE_GUIDE.md` - How to use assets
+### Open Tasks & State
 
-**Deployment:**
-- `DEPLOY_TO_NETLIFY.md` - Netlify deployment
-- `MANUAL_DEPLOYMENT_GUIDE.md` - Manual deployment
-- `DEPLOYMENT_CHECKLIST.md` - Pre-launch checklist
-
-**Assets:**
-- `COMPLETE_ASSET_GENERATION_PLAN.md` - Asset strategy
-- `ASSET_GENERATION_QUICK_START.md` - Quick asset guide
-- `AI_ASSET_GENERATION_SUMMARY.md` - AI-generated assets
-
-**Summaries:**
-- `COMPLETE_WEBSITE_SUMMARY.md` - Full site overview
-- `DELIVERY_COMPLETE.txt` - Completion report
-
-### File Locations
-
-- **HTML:** `index.html` (main page)
-- **CSS:** `styles.css` (all styling)
-- **JavaScript:** `script.js` (interactivity)
-- **Images:** `logo-pallete/` (brand assets)
-- **Docs:** `docs/` (40 documentation files)
+- **Task checklist:** `.serena/memories/task_checklist.md`
+- **Deploy commands:** `.serena/memories/deploy_commands.md`
+- **Live infra state:** `.serena/memories/website_state_2026_02_04.md`
+- **External TODOs:** `DEPLOYMENT_GAPS.md` (GA4, form backend, etc.)
 
 ---
 
@@ -474,8 +361,8 @@ curl -w "@curl-format.txt" -o /dev/null -s https://isn.biz
 - Data Analytics (RAG, vector databases)
 
 **Website:**
-- **Current:** isn.biz (placeholder)
-- **New:** Production-ready, awaiting deployment
+- **Live:** https://isn.biz (production, deployed Feb 2026)
+- **Netlify:** https://isndotbiz.netlify.app
 
 ---
 
@@ -487,9 +374,10 @@ curl -w "@curl-format.txt" -o /dev/null -s https://isn.biz
 - Verify action URL is correct
 
 ### "Images not loading"
-- Check file paths are correct (case-sensitive on Linux)
-- Verify images exist in `logo-pallete/`
+- All production images are on S3 CDN (`isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com`)
 - Check browser console for 404 errors
+- Verify S3 URL is correct and file was uploaded with `--acl public-read`
+- Local `assets/` folder is gitignored and not deployed
 
 ### "Mobile menu not working"
 - Ensure `script.js` is loading
@@ -528,26 +416,31 @@ curl -w "@curl-format.txt" -o /dev/null -s https://isn.biz
 
 ### Available Project Memories
 
-This project uses Serena's memory system to preserve important knowledge. Current memories:
+This project uses Serena's memory system to preserve important knowledge. Current memories (as of 2026-02-25):
 
-- **`project_overview`** - What this project is, tech stack, purpose
-- **`website_state_2026_02_04`** - Current deployment state, live URLs, S3 buckets
-- **`codebase_structure`** - How files are organized
-- **`code_style_conventions`** - Team coding standards
-- **`deploy_commands`** - Deployment procedures and commands
-- **`task_completion_workflow`** - How to complete tasks properly
-- **`codex_handoff_2026_02_04`** - Handoff notes and context
+- **`project_overview`** - What this project is, tech stack, all 20 pages, critical rules
+- **`website_state_2026_02_04`** - Live infrastructure state: URLs, Netlify, Cloudflare, S3, CI/CD
+- **`deploy_commands`** - Full deployment procedures (CI/CD, manual, tests, asset generation)
+- **`task_checklist`** - Open tasks, completed items, known issues
+- **`suggested_commands`** - Dev, build, test, and deploy commands with examples
+- **`codebase_structure`** - Detailed directory tree and file organization
+- **`code_style_conventions`** - Team coding standards and patterns
+- **`task_completion_workflow`** - Quality checklist for completing development tasks
+- **`codex_handoff_2026_02_04`** - fal.ai settings, 9 projects list, image policy
+- **`cloudflare_suspension_troubleshooting`** - How the domain suspension was resolved
 
 ### When to Automatically Read Memories
 
 **Always read at conversation start:**
-- ✅ `project_overview` - Provides essential context about the project
+- `project_overview` - Provides essential context about the project
 
 **Read when relevant to task:**
-- 🚀 Deployment mentioned → Read `deploy_commands` + `website_state_2026_02_04`
-- 🎨 Code changes → Read `code_style_conventions` + `codebase_structure`
-- 🐛 Troubleshooting → Read `website_state_2026_02_04` for current state
-- 📋 Task workflow questions → Read `task_completion_workflow`
+- Deployment mentioned → Read `deploy_commands` + `website_state_2026_02_04`
+- Code changes → Read `code_style_conventions` + `codebase_structure`
+- Troubleshooting live site → Read `website_state_2026_02_04`
+- Task planning → Read `task_checklist`
+- Workflow questions → Read `task_completion_workflow`
+- Image generation → Read `codex_handoff_2026_02_04` (critical fal.ai settings)
 
 ### When to Write/Update Memories
 
@@ -659,8 +552,8 @@ Add before `</head>` in `index.html`:
 
 ---
 
-**Last Updated:** 2026-02-01
+**Last Updated:** 2026-02-25
 **Maintained by:** jdmal + Claude AI
-**Status:** Production ready, awaiting deployment
+**Status:** LIVE IN PRODUCTION at https://isn.biz
 
-**Next Step:** Deploy to Netlify → See `DEPLOY_TO_NETLIFY.md`
+**Next priority:** Contact form backend + Google Analytics 4 (see `.serena/memories/task_checklist.md`)
