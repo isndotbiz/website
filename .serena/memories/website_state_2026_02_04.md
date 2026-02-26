@@ -1,6 +1,6 @@
 # ISN.BIZ Website State - 2026-02-04
 
-## Quick Reference (Updated 2026-02-24)
+## Quick Reference (Updated 2026-02-25)
 - **Live:** https://isn.biz
 - **Netlify:** https://isndotbiz.netlify.app (Site ID: 4d860499-0d6c-49cd-864f-69a0b7a2b3fe)
 - **S3:** `isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com`
@@ -14,8 +14,21 @@ Browser → Cloudflare (proxy ON, SSL: Full) → Netlify (HTML)
 ```
 - DNS: Cloudflare proxy ENABLED (orange cloud) → IPs 104.21.18.246, 172.67.183.245
 - SSL: Cloudflare Universal SSL (fixed 2026-02-24, was DNS-only with no cert)
-- Last CLI deploy: Feb 17 2026 (deploy ID: 69948971795b231edff10983)
+- Last CI deploy: Feb 25 2026 (deploy ID: 699ec426a23b8757455fce0c, commit 80ea051)
 - TrueNAS no longer serves this site
+- GitHub Actions secrets: NETLIFY_AUTH_TOKEN + NETLIFY_SITE_ID set ✓
+
+## CI/CD Status (2026-02-25)
+- GitHub Actions: fully working, all 132 tests pass ✓
+- Netlify deploy: triggered by push to main, tests-then-deploy ✓
+- All HTML pages use clean URLs (/about, /jonathan, /opportunity-bot, etc.)
+- netlify.toml has redirects for all 19 pages (main + team + projects)
+- tests/website-fixes-verification.spec.js DELETED (was using localhost:8000)
+
+## Local DNS Warning
+- This Windows machine has Tailscale overriding `isn.biz` DNS → 100.65.249.20
+- Use `--resolve "isn.biz:443:104.21.18.246"` to test via Cloudflare
+- Or `--resolve "isn.biz:443:75.2.60.5"` to test via Netlify directly
 
 ## Symmetry Rules (CRITICAL)
 - Cards MUST be 3×n or 4×n (3,4,6,8,9,12)
@@ -56,7 +69,7 @@ Jonathan (CEO), Bri (COO), Lilly (CFO), Alicia (CPO)
 ## Known Issues
 - Alicia headshot: CENTER CHIN DIMPLE (AI artifact)
 - assets/ folder (154MB, 197 files) - all on S3, local copies in .gitignore, safe to delete
-- Playwright tests fail against live site (not yet deployed with latest changes)
+- Local Tailscale DNS overrides isn.biz → use --resolve to bypass
 
 ## Recommended Hosting
 Cloudflare Pages (prod) + TrueNAS (dev) + Cloudflare CDN for S3

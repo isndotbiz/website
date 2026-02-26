@@ -125,3 +125,14 @@ test-results/
 
 # Local 1Password import payloads (contains secrets)
 1password_import/
+
+# Local utility scripts with credentials
+fix-ssl.ps1
+deploy-both-sites.bat
+
+# Serena (session-local)
+.serena/cache/
+.serena/memories/
+
+# Local MCP config (machine-specific)
+.mcp.json
