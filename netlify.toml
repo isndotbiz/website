@@ -104,6 +104,23 @@
   to = "/aurallm.html"
   status = 200
 
+# Notion OAuth callback
+[[redirects]]
+  from = "/auth/notion/callback"
+  to = "/auth/notion/callback"
+  status = 200
+
+# Legal pages
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy.html"
+  status = 200
+
+[[redirects]]
+  from = "/terms"
+  to = "/terms.html"
+  status = 200
+
 # 404 page
 [[redirects]]
   from = "/*"
