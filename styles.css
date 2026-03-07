@@ -73,8 +73,14 @@
     /* Transition alias for slider-styles.css */
     --transition-medium: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    /* Shadow alias for slider-styles.css */
+    /* Shadow aliases */
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.25);
     --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.5);
+
+    /* Gradient aliases */
+    --gradient-primary: linear-gradient(135deg, #1E9FF2, #5FDFDF);
+    --gradient-dark: linear-gradient(135deg, #0D1117, #1C1F26);
 }
 
 /* ================================
