@@ -136,3 +136,4 @@ deploy-both-sites.bat
 
 # Local MCP config (machine-specific)
 .mcp.json
+compound-engineering.local.md

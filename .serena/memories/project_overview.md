@@ -1,10 +1,16 @@
 # ISN.BIZ Website - Project Overview
 
+**Last Updated:** 2026-02-25
+
 ## Purpose
-Professional investor-ready website for ISN.BIZ Inc (software company). Static multi-page website designed to attract funding and showcase AI/cloud software portfolio.
+Professional investor-ready website for ISN.BIZ Inc (software company). Multi-page static HTML/CSS/JS site designed to attract funding and showcase AI/cloud software portfolio.
 
 ## Project Status
-**Production Ready** - Awaiting deployment to Netlify or Kusanagi
+**LIVE IN PRODUCTION** at https://isn.biz
+- CI/CD: GitHub Actions auto-deploys to Netlify on push to main
+- All Playwright tests pass (132 tests, `tests/site-audit.spec.js`)
+- DNS: Cloudflare proxy (orange cloud) → Netlify
+- TrueNAS no longer serves this site (Netlify only)
 
 ## Tech Stack
 
@@ -41,13 +47,22 @@ Professional investor-ready website for ISN.BIZ Inc (software company). Static m
 
 ## Website Structure
 
-### Pages (Multi-page site)
-1. **index.html** - Homepage with hero, about, and overview
-2. **about.html** - Company details and history
-3. **services.html** - Solutions portfolio
-4. **portfolio.html** - Case studies and projects
-5. **investors.html** - Investment opportunities
-6. **contact.html** - Contact form
+### Pages (20 total)
+**Main pages:**
+1. `index.html` - Homepage (hero, about, solutions, portfolio preview, investor section, team, contact)
+2. `about.html` - Company details, trust badges (6), team grid (4 founders)
+3. `services.html` - Solutions portfolio with visual grid
+4. `portfolio.html` - 8 case studies (4x2), methodology, results
+5. `investors.html` - Investment pitch, market opportunity, use of funds (6 items)
+6. `contact.html` - Contact form (currently stub - shows alert())
+7. `404.html` - Custom error page
+
+**Founder bio pages:**
+8. `jonathan.html` (CEO) | 9. `bri.html` (COO) | 10. `lilly.html` (CFO) | 11. `alicia.html` (CPO)
+
+**Project pages (9 projects):**
+12. `truenas.html` | 13. `videogen.html` | 14. `bin-intelligence.html` | 15. `spiritatlas.html` (Coming March 2026)
+16. `comfyui.html` | 17. `gedcom.html` | 18. `llm-optimization.html` | 19. `opportunity-bot.html` | 20. `aurallm.html`
 
 ### Key Sections on Homepage
 - Navigation (fixed header with mobile menu)
@@ -62,50 +77,50 @@ Professional investor-ready website for ISN.BIZ Inc (software company). Static m
 ## File Structure
 ```
 ISNBIZ_Files/
-├── index.html              # Main homepage
-├── about.html              # About page
-├── services.html           # Services page
-├── portfolio.html          # Portfolio page
-├── investors.html          # Investors page
-├── contact.html            # Contact page
+├── *.html                  # 20 HTML pages (see Pages section above)
 ├── styles.css              # Main stylesheet
-├── script.js               # JavaScript functionality
-├── slider-styles.css       # Gallery/slider styles
-├── slider-init.js          # Gallery/slider initialization
-├── .gitignore              # Git ignore patterns
-├── README.md               # Project documentation
-├── CLAUDE.md               # AI assistant context
-├── docs/                   # 40+ documentation files
-├── scripts/                # Python asset generation scripts
-├── assets/                 # Local assets (if any)
-├── venv_fal/               # Python virtual environment
-├── wp-theme-isnbiz-2026/   # WordPress theme version
-└── deploy-*.sh             # Deployment scripts
+├── script.js               # Main JavaScript (minimal, ~687B)
+├── enhanced-animations.css # Animation styles
+├── netlify.toml            # Netlify config + clean URL redirects for all 19 pages
+├── playwright.config.js    # Playwright config (baseURL: https://isn.biz)
+├── package.json            # Node deps (Playwright only)
+├── .github/workflows/      # CI/CD (auto-deploy.yml: test → deploy)
+├── tests/                  # Playwright test suite
+│   └── site-audit.spec.js  # 132 tests covering all pages
+├── scripts/                # Python asset generation scripts (fal.ai + S3)
+├── venv_fal/               # Python venv for asset generation (gitignored)
+├── assets/                 # Local asset copies (gitignored, 154MB - use S3 instead)
+├── docs/                   # 40+ historical documentation files
+├── .serena/                # Serena AI context (memories, project.yml)
+└── .claude/                # Compound engineering plugin (agents, commands, skills)
 ```
 
-## Key Features
-- **WCAG 2.1 AA Compliant** - Accessibility audited
-- **Mobile-First** - Responsive design, touch-friendly
-- **SEO Optimized** - Semantic HTML, proper meta tags
-- **Fast Loading** - Ultra-lightweight (30KB HTML + 23KB CSS + 687B JS)
-- **Investor-Focused** - Clear CTAs, professional design
-- **Trust Signals** - DUNS, UBI, EIN displayed
-
 ## Company Information
-- **DUNS:** 080513772
-- **UBI:** 603-522-339
-- **EIN:** 47-4530188
-- **Founded:** July 8, 2015
-- **Type:** Software development company
-- **Focus:** AI, Cloud, Enterprise Software, Data Analytics
+- **DUNS:** 080513772 | **UBI:** 603-522-339 | **EIN:** 47-4530188
+- **Founded:** July 8, 2015 | **Type:** Software development company
+- **Founders:** Jonathan (CEO), Bri (COO), Lilly (CFO), Alicia (CPO)
+- **Focus:** AI (Claude, GPT, Qwen), Cloud (AWS/Azure), Enterprise Software, Data Analytics
 
-## Development Environment
-- **Platform:** Windows (WSL2 compatible)
-- **Location:** D:\workspace\ISNBIZ_Files
-- **Git:** Yes, separate git repo for this project
-- **Serena:** Active (.serena/ directory present)
+## Critical Design Rules
+
+### Card Grid Symmetry (ENFORCED - CRITICAL)
+- Cards MUST be 3xN or 4xN (acceptable: 3, 4, 6, 8, 9, 12)
+- NEVER allow 1 or 2 orphaned/hanging cards in any grid section
+
+### Image Policy for fal.ai Asset Generation
+- Model: `fal-ai/gpt-image-1.5` (generation) or `fal-ai/gpt-image-1.5/edit` (editing)
+- Quality: ALWAYS `"low"` (INVERTED setting - "low" = best quality, fastest, cheapest)
+- NEVER use: high/medium quality, nano-banana-pro, flux-pro
+
+### Clean URLs
+- All pages use clean URLs (/about, /jonathan, /opportunity-bot, etc.)
+- Redirects defined in `netlify.toml`
+
+## Local Development Warning
+- This Windows machine has Tailscale overriding `isn.biz` DNS → 100.65.249.20
+- To test via Cloudflare: `curl --resolve "isn.biz:443:104.21.18.246" https://isn.biz`
+- To test via Netlify directly: `curl --resolve "isn.biz:443:75.2.60.5" https://isn.biz`
 
 ## Related Projects
 - **HROC Website** - Similar static site (reference for patterns)
-- **Opportunity Bot** - AI research tool (separate project)
 - **Workspace** - D:\workspace\ (container for all projects)
