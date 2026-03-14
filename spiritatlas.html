@@ -3,23 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SpiritAtlas - The Most Comprehensive Spiritual Intelligence Platform on Earth. Five ancient wisdom systems unified: Numerology, Astrology, Ayurveda, Human Design, and Tantra. Six-dimensional compatibility analysis, 119 custom illustrations, AI-powered narratives from 6 providers, privacy-first Android architecture.">
-    <meta name="keywords" content="Android, mobile app, spiritual wellness, Kotlin, Jetpack Compose, Hilt, privacy-first, subscription, numerology, astrology, ayurveda, human design, tantra, compatibility, chakra, moon phases, sacred geometry, AI, iSN.BiZ">
+    <meta name="description" content="Spirit — Discover your cosmic entity archetype. 12 ancient forces. One 12-question quiz. Find the entity that chose you. Available at isn.biz.">
+    <meta name="keywords" content="spiritual app, cosmic entity, archetype quiz, spirit atlas, ancient wisdom, cosmic forces, spiritual discovery, isn.biz">
     <meta name="author" content="iSN.BiZ Inc">
-    <meta property="og:title" content="SpiritAtlas - Spiritual Intelligence Platform | iSN.BiZ Inc">
-    <meta property="og:description" content="Five ancient wisdom systems. Six-dimensional compatibility. 119 sacred illustrations. The most comprehensive spiritual intelligence platform on Earth.">
+    <meta property="og:title" content="Spirit — Discover Your Cosmic Entity | iSN.BiZ Inc">
+    <meta property="og:description" content="12 ancient cosmic forces. One 12-question quiz. Your entity has been waiting. Find it at isn.biz.">
     <meta property="og:type" content="website">
-    <title>SpiritAtlas - Spiritual Intelligence Platform | iSN.BiZ Inc</title>
+    <meta property="og:image" content="/spirits/crystalline.png">
+    <title>Spirit — Cosmic Entity Discovery | iSN.BiZ Inc</title>
     <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="enhanced-animations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Spirit page specific styles */
+        .spirit-hero-label {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-cyan);
+            border: 1px solid rgba(95,223,223,0.4);
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            margin-bottom: 1.5rem;
+        }
+
+        .entity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .entity-card {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            aspect-ratio: 3/4;
+            background: var(--color-charcoal);
+        }
+
+        .entity-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 60px rgba(95,223,223,0.25);
+        }
+
+        .entity-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .entity-card .entity-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem 1rem 1rem;
+            background: linear-gradient(transparent, rgba(0,0,0,0.85));
+        }
+
+        .entity-name {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-cyan);
+            margin: 0;
+        }
+
+        .entity-tagline {
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.7);
+            margin: 0.25rem 0 0;
+        }
+
+        .entity-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(30,159,242,0.15), rgba(95,223,223,0.08));
+            border: 1px solid rgba(95,223,223,0.2);
+            font-size: 3rem;
+        }
+
+        .screenshots-row {
+            display: flex;
+            gap: 1.5rem;
+            overflow-x: auto;
+            padding: 1rem 0 2rem;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(95,223,223,0.3) transparent;
+        }
+
+        .screenshot-frame {
+            flex: 0 0 200px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(95,223,223,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .screenshot-frame:hover {
+            transform: translateY(-8px) scale(1.02);
+        }
+
+        .screenshot-frame img {
+            width: 100%;
+            display: block;
+        }
+
+        .quiz-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .quiz-step {
+            background: rgba(30,159,242,0.07);
+            border: 1px solid rgba(30,159,242,0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .quiz-step-num {
+            font-family: var(--font-mono);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-cyan);
+            margin-bottom: 0.75rem;
+        }
+
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            max-width: 700px;
+            margin: 2.5rem auto 0;
+        }
+
+        @media (max-width: 600px) {
+            .pricing-cards {
+                grid-template-columns: 1fr;
+            }
+            .entity-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .pricing-card {
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid rgba(95,223,223,0.25);
+            background: var(--color-charcoal);
+        }
+
+        .pricing-card.featured {
+            border-color: var(--color-cyan);
+            background: linear-gradient(135deg, rgba(95,223,223,0.1), rgba(30,159,242,0.05));
+            position: relative;
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--color-cyan);
+            color: #000;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+        }
+
+        .price-amount {
+            font-family: var(--font-mono);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-cyan);
+            margin: 1rem 0 0.25rem;
+        }
+
+        .price-period {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.5);
+        }
+
+        .features-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+            text-align: left;
+        }
+
+        .features-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.07);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .features-list li:last-child {
+            border-bottom: none;
+        }
+
+        .features-list li::before {
+            content: "✦";
+            color: var(--color-cyan);
+            font-size: 0.7rem;
+            flex-shrink: 0;
+        }
+
+        .cosmic-banner {
+            background: linear-gradient(135deg, rgba(95,223,223,0.12) 0%, rgba(30,159,242,0.08) 50%, rgba(95,223,223,0.05) 100%);
+            border: 1px solid rgba(95,223,223,0.3);
+            border-radius: 16px;
+            padding: 2.5rem;
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .archetype-pair {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(95,223,223,0.1);
+            border: 1px solid rgba(95,223,223,0.3);
+            border-radius: 8px;
+            padding: 0.4rem 1rem;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--color-cyan);
+            margin: 0.25rem;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
-        <nav class="nav">
+    <nav class="nav">
         <div class="container nav-container">
             <div class="logo">
                 <a href="/">
@@ -32,790 +270,433 @@
                 <span></span>
             </button>
             <ul class="nav-menu" id="primary-navigation">
-            <li><a href="/about">About</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/portfolio" class="active">Portfolio</a></li>
-            <li><a href="/investors">Investors</a></li>
-            <li class="has-dropdown">
-                <a href="#team">Team</a>
-                <ul class="dropdown-menu">
-                    <li><a href="/jonathan">Jonathan Maldonado</a></li>
-                    <li><a href="/lilly">Lilly Fano</a></li>
-                    <li><a href="/bri">Bri Lee</a></li>
-                    <li><a href="/alicia">Alicia Young</a></li>
-                </ul>
-            </li>
-            <li><a href="/contact" class="nav-cta">Contact</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/portfolio" class="active">Portfolio</a></li>
+                <li><a href="/investors">Investors</a></li>
+                <li class="has-dropdown">
+                    <a href="#team">Team</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/jonathan">Jonathan Maldonado</a></li>
+                        <li><a href="/lilly">Lilly Fano</a></li>
+                        <li><a href="/bri">Bri Lee</a></li>
+                        <li><a href="/alicia">Alicia Young</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contact" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Project Hero -->
-    <section class="hero" style="min-height: 70vh; padding-top: 120px;">
+    <!-- Hero -->
+    <section class="hero" style="min-height: 80vh; padding-top: 130px; padding-bottom: 80px;">
         <div class="hero-background"></div>
         <div class="container">
             <div class="section-header centered">
-                <span class="section-label">Spiritual Intelligence Platform</span>
-                <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">SpiritAtlas</h1>
-                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">The Most Comprehensive Spiritual Intelligence Platform on Earth. Five ancient wisdom systems unified into a single privacy-first Android experience: Numerology, Astrology, Ayurveda, Human Design, and Tantra &mdash; with six-dimensional compatibility analysis, AI-powered narratives from six providers, 119 custom sacred illustrations, and a DMT neon aesthetic that transforms spiritual practice into visual art.</p>
+                <span class="spirit-hero-label">∞ Cosmic Entity Discovery</span>
+                <h1 class="section-title" style="font-size: clamp(3rem, 7vw, 5.5rem); letter-spacing: -0.02em;">Spirit</h1>
+                <p class="section-description" style="max-width: 680px; margin: 1.5rem auto; font-size: 1.25rem; line-height: 1.7;">12 ancient cosmic forces predate recorded history. One survived the Tartarian reset. It has been trying to reach you.&nbsp;12 questions will tell you which one.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="https://isn.biz" target="_blank" rel="noopener" class="btn btn-primary"><span>Find Your Entity &rarr; isn.biz</span></a>
+                    <a href="#entities" class="btn btn-outline"><span>Meet the Entities</span></a>
+                </div>
+                <p style="margin-top: 1.5rem; font-size: 0.9rem; color: rgba(255,255,255,0.45); font-family: var(--font-mono);">Free to discover &nbsp;·&nbsp; $9.99/month for full cosmic access</p>
             </div>
 
-            <!-- Key Metrics -->
-            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; max-width: 1000px; margin: 3rem auto; text-align: center;">
-                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
-                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">5</div>
-                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Spiritual Systems</div>
-                </div>
-                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
-                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">119</div>
-                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Custom Illustrations</div>
-                </div>
-                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
-                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">150</div>
-                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Tests Passing</div>
-                </div>
-                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
-                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">9.2</div>
-                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Art Quality / 10</div>
-                </div>
-            </div>
-
-            <div style="max-width: 600px; margin: 3rem auto;">
-                <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_001_primary_app_icon.webp" alt="SpiritAtlas app icon featuring sacred geometry and cosmic design elements" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
-            </div>
-            <div style="margin-top: 3rem;">
-                <div class="hero-slider" data-hero-slider tabindex="0" aria-roledescription="carousel" aria-label="SpiritAtlas app screenshots">
-                    <div class="slider-header">
-                        <h3>SpiritAtlas App Tour</h3>
-                        <div class="slider-header-actions">
-                            <span class="launch-badge">Live Capture · Feb 13, 2026</span>
-                            <button class="slider-toggle" type="button" data-slider-toggle aria-pressed="false" aria-label="Pause slide autoplay">Pause</button>
-                        </div>
-                    </div>
-                    <p class="sr-only" data-slider-announcer aria-live="polite" aria-atomic="true"></p>
-                    <div class="slider-container">
-                        <div class="slider-track" data-slider-track role="listbox" aria-label="SpiritAtlas featured screens"></div>
-                        <button class="slider-nav prev" type="button" data-slider-prev aria-label="Previous slide">&lt;</button>
-                        <button class="slider-nav next" type="button" data-slider-next aria-label="Next slide">&gt;</button>
-                    </div>
-                    <div class="slider-progress" aria-hidden="true"><span data-slider-progress></span></div>
-                    <div class="slider-dots" data-slider-dots aria-label="Slide navigation"></div>
-                </div>
-                <p class="section-description centered" style="max-width: 860px; margin: 1.5rem auto 0; font-size: 1rem;">Each slide in this reel uses the Fal.ai gpt-image-1.5 edit flow (advanced quality set to low for the crispest neon fidelity) and is backed by the shared Fal edit manifest so the team can rerun the same prompts whenever new captures arrive.</p>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; text-align: center; margin-top: 1.5rem;">
-                    <div style="background: rgba(95, 223, 223, 0.08); padding: 1rem; border-radius: 12px;">
-                        <strong>Daily Command Center</strong>
-                        <p style="margin: 0.5rem 0 0;">Moon phases, intention cues, and ritual scheduling keep users returning.</p>
-                    </div>
-                    <div style="background: rgba(30, 159, 242, 0.08); padding: 1rem; border-radius: 12px;">
-                        <strong>Numerology &amp; Compatibility</strong>
-                        <p style="margin: 0.5rem 0 0;">Hybrid tiles merge numerology profiles with compatibility intent buttons.</p>
-                    </div>
-                    <div style="background: rgba(30, 159, 242, 0.08); padding: 1rem; border-radius: 12px;">
-                        <strong>Narrative Creation</strong>
-                        <p style="margin: 0.5rem 0 0;">AI-ready narrative drafts weave relationship stories across modules.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Investor Summary -->
-    <section class="section" style="background: var(--color-charcoal);">
-        <div class="container">
-            <div class="about-grid">
-                <div>
-                    <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Investor Summary</h2>
-                    <p class="lead">SpiritAtlas is a premium mobile experience that unifies five ancient wisdom systems &mdash; Numerology, Astrology, Ayurveda, Human Design, and Tantra &mdash; into a single privacy-first platform with six-dimensional compatibility analysis, AI-powered spiritual narratives, and a proprietary library of 119 sacred illustrations. The product targets the wellness app market projected to exceed $9 billion by 2027, with a subscription monetization model designed to capture the premium segment where average revenue per user is three to five times higher than ad-supported alternatives.</p>
-                    <p style="margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.8;">No competing app brings together this depth of spiritual analysis. Where competitors serve pre-written horoscope content rotated on a schedule, SpiritAtlas computes every reading from the user's actual birth data using validated algorithms across five independent spiritual traditions. The six-dimensional compatibility engine scores relationships across Numerology, Astrology, Ayurveda, Human Design, Tantric, and Communication dimensions, producing personalized compatibility narratives that no other platform can replicate. This computational authenticity creates fundamentally different user experiences: readings feel personal because they are personal, driving the trust that converts free users into long-term subscribers.</p>
-                    <p style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.8;">The modular Kotlin architecture enables new spiritual systems to be added as independent feature modules without modifying existing code, reducing regression risk and shortening development cycles. AI narrative generation supports six providers at costs as low as $0.0008 per reading, while all core calculations run fully offline. The combination of computational depth, a defensible visual asset library of 119 original illustrations averaging 9.2/10 quality rating, genuine multi-system integration, and a privacy-first architecture positions SpiritAtlas to capture meaningful share of the premium wellness segment.</p>
-                </div>
-                <div>
-                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Product Capabilities</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
-                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
-                            <span>Five spiritual calculation engines &mdash; Numerology (Chaldean + Pythagorean), Astrology (Tropical + Sidereal), Ayurveda, Human Design, and Tantra</span>
-                        </li>
-                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
-                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
-                            <span>Six-dimensional compatibility analysis scoring relationships across every spiritual system plus communication style</span>
-                        </li>
-                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
-                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
-                            <span>119 custom AI-generated sacred illustrations (FLUX 1.1 Pro) across 5 density tiers &mdash; 595 total asset files, 44.3 MB optimized</span>
-                        </li>
-                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
-                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
-                            <span>AI narrative generation from 6 providers (Claude Haiku, Gemini Flash, Groq Llama, GPT-4o, Claude Direct, OpenRouter) at ~$0.0008/reading</span>
-                        </li>
-                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
-                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
-                            <span>36-data-point profile system across 4 tiers (Quick Start through Master) with unlimited profiles and cross-profile compatibility</span>
-                        </li>
-                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
-                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
-                            <span>Daily Cosmic Dashboard with live moon phase tracking, lucky numbers, planetary transit alerts, and spiritual weather</span>
-                        </li>
-                        <li style="padding: 0.75rem 0; display: flex; align-items: flex-start; gap: 0.75rem;">
-                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
-                            <span>Privacy-first architecture: EncryptedSharedPreferences, SSL certificate pinning, explicit consent gates, 100% offline core functionality</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Deep Dive: Five Spiritual Systems -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Deep Dive: Five Ancient Wisdom Systems</h2>
-            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">No other app brings together this depth of spiritual analysis. SpiritAtlas weaves five time-tested traditions into a single, coherent spiritual profile. Each engine operates as an independent module with its own domain logic, data models, and presentation layer, ensuring accuracy, testability, and extensibility without cross-module coupling.</p>
-
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
-                <div>
-                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Numerology &mdash; The Language of Numbers</h3>
-                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Your name and birth date carry hidden numerical codes that shape your personality, purpose, and destiny. SpiritAtlas computes your complete numerological profile using both the ancient Chaldean (Babylonian) and Pythagorean (Greek) systems. The engine calculates Life Path, Expression, Soul Urge, Personality, and Destiny numbers through iterative digit summation with special handling for Master Numbers 11, 22, and 33. Name-based calculations implement standard letter-to-number mapping tables, processing full legal names through vowel and consonant separation to derive Soul Urge and Personality values independently. The reduction pipeline handles edge cases including hyphenated names, suffixes, and cultural naming patterns.</p>
-                    <h3 style="color: var(--color-blue); margin-bottom: 1rem; margin-top: 1.5rem;">Astrology &mdash; Celestial Wisdom Written in the Stars</h3>
-                    <p style="font-size: 1.05rem; line-height: 1.8;">SpiritAtlas generates complete astrological profiles with both Tropical (Western) and Sidereal (Vedic) zodiac systems. The calculation pipeline begins with Julian Day Number conversion from the Gregorian birth date and time, then applies Swiss Ephemeris algorithms for planetary longitude computation. The engine delivers Sun, Moon, and Rising sign analysis along with all planetary positions, 12 house placements via the Placidus system, and full aspect analysis including conjunctions, trines, squares, and oppositions. Current transit tracking provides real-time cosmic weather including Mercury Retrograde alerts with intensity meters. Synastry reports compare two natal charts across communication, emotional resonance, physical attraction, and long-term alignment dimensions.</p>
-                </div>
-                <div>
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/home_topic_numerology.webp" alt="SpiritAtlas numerology topic card with sacred number symbolism" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep); margin-bottom: 1.5rem;">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/home_topic_astrology.webp" alt="SpiritAtlas astrology topic card with celestial constellation artwork" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                </div>
-            </div>
-
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-top: 3rem;">
-                <div>
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/home_topic_ayurveda.webp" alt="SpiritAtlas Ayurveda topic card with dosha balance visualization" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep); margin-bottom: 1.5rem;">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/home_topic_human_design.webp" alt="SpiritAtlas Human Design topic card with BodyGraph energy centers" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                </div>
-                <div>
-                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Ayurveda &mdash; Ancient Wellness for Modern Life</h3>
-                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">The Ayurveda module implements dosha constitution analysis through a structured questionnaire evaluating physical characteristics, behavioral tendencies, and dietary patterns across thirty-six weighted assessment dimensions. Users receive their Vata-Pitta-Kapha profile as both a primary dosha and a percentage distribution, with personalized recommendations for nutrition, daily routines, yoga practices, herbal support, meditation techniques, and seasonal wellness adjustments. The scoring algorithm accounts for bidosha and tridosha constitutions where two or three doshas are nearly equal, a common result that many competing apps fail to handle. Seasonal adjustment recommendations shift based on the user's geographic location and current date.</p>
-                    <h3 style="color: var(--color-blue); margin-bottom: 1rem; margin-top: 1.5rem;">Human Design &mdash; Your Energetic Blueprint</h3>
-                    <p style="font-size: 1.05rem; line-height: 1.8;">The Human Design engine synthesizes elements from the I Ching, Kabbalah, Hindu-Brahmin chakra system, and quantum physics to generate a user's BodyGraph chart. The calculation begins with two separate sets of planetary positions: the conscious calculation at the moment of birth and the unconscious calculation at approximately eighty-eight days before birth. These positions map to the sixty-four hexagrams and their corresponding gates and channels. The engine determines one of five energy types &mdash; Manifestor, Generator, Manifesting Generator, Projector, or Reflector &mdash; along with six profile lines, nine energy centers, inner authority type, and detailed life strategy guidance.</p>
-                </div>
-            </div>
-
-            <!-- Tantra - The Fifth System -->
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-top: 3rem;">
-                <div>
-                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Tantra &mdash; Sacred Connection and Union</h3>
-                    <p style="font-size: 1.05rem; line-height: 1.8;">The fifth spiritual system goes beyond the surface to explore sacred intimacy, energy polarity, chakra alignment, and spiritual union potential. The Tantric analysis engine computes Energy Polarity Type (Masculine/Shiva, Feminine/Shakti, or Balanced), seven-chakra alignment from Root to Crown, and Intimacy Style Mapping across six archetypes: Sensual, Passionate, Spiritual, Playful, Nurturing, and Intense. The system integrates Attachment Style Assessment (Secure, Anxious, Avoidant, or Fearful-Avoidant), Love Language mapping for how users give and receive love, and Kundalini Awakening Guidance with safe practices for spiritual energy work. This system adds a dimension of relationship analysis that no competitor offers, providing the depth that serious spiritual practitioners demand and are willing to pay premium subscription prices to access.</p>
-                </div>
-                <div>
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/home_topic_tantra.webp" alt="SpiritAtlas Tantra topic card with sacred union energy visualization" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Six-Dimensional Compatibility Analysis -->
-    <section class="section" style="background: var(--color-charcoal);">
-        <div class="container">
-            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Six-Dimensional Compatibility Analysis</h2>
-            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">This is not a simple "what's your sign?" quiz. SpiritAtlas delivers the deepest relationship compatibility analysis available anywhere, scoring connections across six distinct dimensions with personalized narrative insights.</p>
-
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
-                <div>
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/home_topic_compatibility.webp" alt="SpiritAtlas compatibility analysis showing multi-dimensional relationship scoring" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                </div>
-                <div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                        <div style="background: rgba(30, 159, 242, 0.08); padding: 1.25rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                            <h4 style="color: var(--color-blue); margin-bottom: 0.4rem; font-size: 0.95rem;">Numerology</h4>
-                            <p style="font-size: 0.9rem; margin: 0;">Life path harmony, expression alignment, soul urge resonance, master number synergy</p>
-                        </div>
-                        <div style="background: rgba(30, 159, 242, 0.08); padding: 1.25rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                            <h4 style="color: var(--color-blue); margin-bottom: 0.4rem; font-size: 0.95rem;">Astrology</h4>
-                            <p style="font-size: 0.9rem; margin: 0;">Sun, Moon, Rising compatibility, element balance, planetary aspects</p>
-                        </div>
-                        <div style="background: rgba(30, 159, 242, 0.08); padding: 1.25rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                            <h4 style="color: var(--color-blue); margin-bottom: 0.4rem; font-size: 0.95rem;">Ayurveda</h4>
-                            <p style="font-size: 0.9rem; margin: 0;">Dosha complementarity and constitutional balance assessment</p>
-                        </div>
-                        <div style="background: rgba(30, 159, 242, 0.08); padding: 1.25rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                            <h4 style="color: var(--color-blue); margin-bottom: 0.4rem; font-size: 0.95rem;">Human Design</h4>
-                            <p style="font-size: 0.9rem; margin: 0;">Energy type compatibility, profile resonance, electromagnetic center chemistry</p>
-                        </div>
-                        <div style="background: rgba(30, 159, 242, 0.08); padding: 1.25rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                            <h4 style="color: var(--color-blue); margin-bottom: 0.4rem; font-size: 0.95rem;">Tantric</h4>
-                            <p style="font-size: 0.9rem; margin: 0;">Energy polarity, chakra alignment, intimacy style, attachment compatibility</p>
-                        </div>
-                        <div style="background: rgba(30, 159, 242, 0.08); padding: 1.25rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                            <h4 style="color: var(--color-blue); margin-bottom: 0.4rem; font-size: 0.95rem;">Communication</h4>
-                            <p style="font-size: 0.9rem; margin: 0;">Expression styles, emotional processing, conflict resolution compatibility</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Compatibility Levels -->
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2.5rem;">
-                <div style="background: rgba(95, 223, 223, 0.12); padding: 1.25rem; border-radius: 8px; text-align: center;">
-                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1.5rem; margin-bottom: 0.3rem;">90-100</div>
-                    <p style="font-size: 0.9rem; margin: 0; color: var(--color-cyan); font-weight: 600;">Soulmate</p>
-                    <p style="font-size: 0.8rem; margin: 0.25rem 0 0;">Twin flame potential</p>
-                </div>
-                <div style="background: rgba(95, 223, 223, 0.08); padding: 1.25rem; border-radius: 8px; text-align: center;">
-                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1.5rem; margin-bottom: 0.3rem;">75-89</div>
-                    <p style="font-size: 0.9rem; margin: 0; color: var(--color-blue); font-weight: 600;">Excellent</p>
-                    <p style="font-size: 0.8rem; margin: 0.25rem 0 0;">Strong partnership foundation</p>
-                </div>
-                <div style="background: rgba(95, 223, 223, 0.05); padding: 1.25rem; border-radius: 8px; text-align: center;">
-                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1.5rem; margin-bottom: 0.3rem;">60-74</div>
-                    <p style="font-size: 0.9rem; margin: 0; color: var(--color-blue); font-weight: 600;">Good</p>
-                    <p style="font-size: 0.8rem; margin: 0.25rem 0 0;">Meaningful connection with growth</p>
-                </div>
-            </div>
-            <p style="text-align: center; margin-top: 1.5rem; font-size: 1.05rem; line-height: 1.8; max-width: 800px; margin-left: auto; margin-right: auto;">Every analysis includes detailed strengths, challenges, growth recommendations, and optional AI-powered narrative insights that weave all six dimensions into a personalized relationship story. The depth and personalization of this compatibility engine is the primary driver of viral sharing and organic growth.</p>
-        </div>
-    </section>
-
-    <!-- Chakra System, Moon Phases, Elements, Sacred Geometry -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Spiritual Feature Depth</h2>
-            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Beyond the five core wisdom systems, SpiritAtlas integrates chakra analysis, real-time moon phase tracking, elemental mapping, and sacred geometry into an immersive spiritual experience that drives daily engagement and long-term retention.</p>
-
-            <!-- Chakra System -->
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
-                <div>
-                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Seven Chakra Energy Centers</h3>
-                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">SpiritAtlas identifies chakra strengths and blockages across all seven energy centers and recommends specific healing practices for each. The chakra system integrates with the Tantric compatibility engine to assess Root-to-Crown alignment between partners, providing a dimension of relationship analysis that serious practitioners find deeply valuable.</p>
-                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin-top: 1rem;">
-                        <div style="text-align: center;">
-                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_046_root_chakra_muladhara.webp" alt="Root Chakra" style="width: 100%; border-radius: 8px;">
-                            <p style="font-size: 0.75rem; margin: 0.3rem 0 0; color: var(--color-cyan);">Root</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_049_heart_chakra_anahata.webp" alt="Heart Chakra" style="width: 100%; border-radius: 8px;">
-                            <p style="font-size: 0.75rem; margin: 0.3rem 0 0; color: var(--color-cyan);">Heart</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_051_third_eye_chakra_ajna.webp" alt="Third Eye Chakra" style="width: 100%; border-radius: 8px;">
-                            <p style="font-size: 0.75rem; margin: 0.3rem 0 0; color: var(--color-cyan);">Third Eye</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_052_crown_chakra_sahasrara.webp" alt="Crown Chakra" style="width: 100%; border-radius: 8px;">
-                            <p style="font-size: 0.75rem; margin: 0.3rem 0 0; color: var(--color-cyan);">Crown</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Live Moon Phase Tracking</h3>
-                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Real-time moon phase tracking on the home screen with illumination percentage and spiritual guidance for each of eight lunar phases. The moon tracking drives daily engagement as users return to check current cosmic conditions, with each phase offering specific guidance for intention setting, manifestation, gratitude, and release.</p>
-                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin-top: 1rem;">
-                        <div style="text-align: center;">
-                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_053_new_moon_dark_renewal.webp" alt="New Moon" style="width: 100%; border-radius: 8px;">
-                            <p style="font-size: 0.75rem; margin: 0.3rem 0 0; color: var(--color-cyan);">New Moon</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_055_first_quarter_decisive_moment.webp" alt="First Quarter" style="width: 100%; border-radius: 8px;">
-                            <p style="font-size: 0.75rem; margin: 0.3rem 0 0; color: var(--color-cyan);">First Quarter</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_057_full_moon_peak_illumination.webp" alt="Full Moon" style="width: 100%; border-radius: 8px;">
-                            <p style="font-size: 0.75rem; margin: 0.3rem 0 0; color: var(--color-cyan);">Full Moon</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_059_last_quarter_release_point.webp" alt="Last Quarter" style="width: 100%; border-radius: 8px;">
-                            <p style="font-size: 0.75rem; margin: 0.3rem 0 0; color: var(--color-cyan);">Last Quarter</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Five Elements and Sacred Geometry -->
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-top: 3rem;">
-                <div>
-                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">The Five Elements</h3>
-                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Every spiritual system draws on elemental forces. SpiritAtlas maps elemental balance across Ayurvedic doshas and astrological signs, showing users how Fire (Transformation), Water (Emotion), Earth (Stability), Air (Intellect), and Ether (Spirit) interact in their unique constitution.</p>
-                    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.5rem;">
-                        <div style="text-align: center;">
-                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_061_fire_element_symbol.webp" alt="Fire Element" style="width: 100%; border-radius: 8px;">
-                            <p style="font-size: 0.7rem; margin: 0.25rem 0 0; color: var(--color-cyan);">Fire</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_062_water_element_symbol.webp" alt="Water Element" style="width: 100%; border-radius: 8px;">
-                            <p style="font-size: 0.7rem; margin: 0.25rem 0 0; color: var(--color-cyan);">Water</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_063_earth_element_symbol.webp" alt="Earth Element" style="width: 100%; border-radius: 8px;">
-                            <p style="font-size: 0.7rem; margin: 0.25rem 0 0; color: var(--color-cyan);">Earth</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_064_air_element_symbol.webp" alt="Air Element" style="width: 100%; border-radius: 8px;">
-                            <p style="font-size: 0.7rem; margin: 0.25rem 0 0; color: var(--color-cyan);">Air</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_065_ether_spirit_element_symbol.webp" alt="Ether Element" style="width: 100%; border-radius: 8px;">
-                            <p style="font-size: 0.7rem; margin: 0.25rem 0 0; color: var(--color-cyan);">Ether</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Sacred Geometry &mdash; The Architecture of the Universe</h3>
-                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Woven throughout the app experience, sacred geometry patterns connect users to the mathematical language underlying all of creation. These patterns are rendered as living animations: spinning mandalas, fractal burst particle effects, rotating chakra wheels, and Flower of Life progressive drawings that transform the app into a meditative visual experience.</p>
-                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;">
-                        <div style="text-align: center;">
-                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_066_flower_of_life.webp" alt="Flower of Life sacred geometry" style="width: 100%; border-radius: 8px;">
-                            <p style="font-size: 0.75rem; margin: 0.3rem 0 0; color: var(--color-cyan);">Flower of Life</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_068_sri_yantra.webp" alt="Sri Yantra sacred geometry" style="width: 100%; border-radius: 8px;">
-                            <p style="font-size: 0.75rem; margin: 0.3rem 0 0; color: var(--color-cyan);">Sri Yantra</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_072_merkaba_star_tetrahedron.webp" alt="Merkaba Star Tetrahedron" style="width: 100%; border-radius: 8px;">
-                            <p style="font-size: 0.75rem; margin: 0.3rem 0 0; color: var(--color-cyan);">Merkaba</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AI Provider System and Profile System -->
-    <section class="section" style="background: var(--color-charcoal);">
-        <div class="container">
-            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">AI-Powered Spiritual Narratives</h2>
-            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">SpiritAtlas uses advanced AI to weave calculated spiritual data into rich, personalized narratives. Six AI providers offer flexibility from free to premium, with costs as low as $0.0008 per reading. AI enrichment is completely optional and off by default &mdash; core calculations work perfectly without it.</p>
-
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
-                <div>
-                    <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem;">AI Provider Options</h3>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                        <div style="background: rgba(30, 159, 242, 0.08); padding: 1.25rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.2);">
-                            <h4 style="color: var(--color-blue); margin-bottom: 0.4rem; font-size: 0.9rem;">Claude 4.5 Haiku</h4>
-                            <p style="font-size: 0.85rem; margin: 0; color: var(--color-cyan);">~$0.0008/reading</p>
-                            <p style="font-size: 0.8rem; margin: 0.25rem 0 0;">Default. Poetic, nuanced spiritual language</p>
-                        </div>
-                        <div style="background: rgba(30, 159, 242, 0.08); padding: 1.25rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.2);">
-                            <h4 style="color: var(--color-blue); margin-bottom: 0.4rem; font-size: 0.9rem;">Gemini 2.5 Flash</h4>
-                            <p style="font-size: 0.85rem; margin: 0; color: var(--color-cyan);">Free</p>
-                            <p style="font-size: 0.8rem; margin: 0.25rem 0 0;">Very fast. Quick daily insights</p>
-                        </div>
-                        <div style="background: rgba(30, 159, 242, 0.08); padding: 1.25rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.2);">
-                            <h4 style="color: var(--color-blue); margin-bottom: 0.4rem; font-size: 0.9rem;">Groq Llama 3.3 70B</h4>
-                            <p style="font-size: 0.85rem; margin: 0; color: var(--color-cyan);">Free</p>
-                            <p style="font-size: 0.8rem; margin: 0.25rem 0 0;">Extremely fast. Accurate responses</p>
-                        </div>
-                        <div style="background: rgba(30, 159, 242, 0.08); padding: 1.25rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.2);">
-                            <h4 style="color: var(--color-blue); margin-bottom: 0.4rem; font-size: 0.9rem;">OpenAI GPT-4o</h4>
-                            <p style="font-size: 0.85rem; margin: 0; color: var(--color-cyan);">API key required</p>
-                            <p style="font-size: 0.8rem; margin: 0.25rem 0 0;">Balanced depth and speed</p>
-                        </div>
-                        <div style="background: rgba(30, 159, 242, 0.08); padding: 1.25rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.2);">
-                            <h4 style="color: var(--color-blue); margin-bottom: 0.4rem; font-size: 0.9rem;">Anthropic Claude Direct</h4>
-                            <p style="font-size: 0.85rem; margin: 0; color: var(--color-cyan);">API key required</p>
-                            <p style="font-size: 0.8rem; margin: 0.25rem 0 0;">Maximum narrative quality</p>
-                        </div>
-                        <div style="background: rgba(30, 159, 242, 0.08); padding: 1.25rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.2);">
-                            <h4 style="color: var(--color-blue); margin-bottom: 0.4rem; font-size: 0.9rem;">OpenRouter</h4>
-                            <p style="font-size: 0.85rem; margin: 0; color: var(--color-cyan);">API key required</p>
-                            <p style="font-size: 0.8rem; margin: 0.25rem 0 0;">Access to many models</p>
-                        </div>
-                    </div>
-                    <div style="background: rgba(95, 223, 223, 0.08); padding: 1.25rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); margin-top: 1.5rem;">
-                        <p style="font-size: 0.95rem; margin: 0; font-style: italic; line-height: 1.6;">"Your Life Path 11 combines with Sagittarius Sun and Manifesting Generator energy to create a visionary educator. Your role is to bridge spiritual wisdom with practical action. This week, your Pitta imbalance suggests cooling practices: yin yoga, herbal teas, and throat chakra meditation..."</p>
-                    </div>
-                </div>
-                <div>
-                    <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem;">36-Point Profile System</h3>
-                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">The deepest spiritual profile system ever built. Up to 36 data points across 8 categories create unmatched spiritual accuracy. Start with just name and birth date, then progressively add data to deepen insights &mdash; creating natural engagement loops that drive retention.</p>
-                    <div style="display: grid; gap: 1rem;">
-                        <div style="background: rgba(95, 223, 223, 0.12); padding: 1rem 1.25rem; border-radius: 8px; display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <span style="color: var(--color-cyan); font-weight: 700;">Quick Start</span>
-                                <span style="font-size: 0.85rem; margin-left: 0.5rem;">3-9 fields</span>
-                            </div>
-                            <span style="font-size: 0.85rem; color: var(--color-light);">~300 words</span>
-                        </div>
-                        <div style="background: rgba(95, 223, 223, 0.09); padding: 1rem 1.25rem; border-radius: 8px; display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <span style="color: var(--color-cyan); font-weight: 700;">Standard</span>
-                                <span style="font-size: 0.85rem; margin-left: 0.5rem;">10-18 fields</span>
-                            </div>
-                            <span style="font-size: 0.85rem; color: var(--color-light);">~900 words</span>
-                        </div>
-                        <div style="background: rgba(95, 223, 223, 0.06); padding: 1rem 1.25rem; border-radius: 8px; display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <span style="color: var(--color-cyan); font-weight: 700;">Advanced</span>
-                                <span style="font-size: 0.85rem; margin-left: 0.5rem;">19-27 fields</span>
-                            </div>
-                            <span style="font-size: 0.85rem; color: var(--color-light);">~1,800 words</span>
-                        </div>
-                        <div style="background: rgba(95, 223, 223, 0.04); padding: 1rem 1.25rem; border-radius: 8px; display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <span style="color: var(--color-cyan); font-weight: 700;">Master</span>
-                                <span style="font-size: 0.85rem; margin-left: 0.5rem;">28-36 fields</span>
-                            </div>
-                            <span style="font-size: 0.85rem; color: var(--color-light);">~2,700 words</span>
-                        </div>
-                    </div>
-                    <p style="font-size: 0.95rem; line-height: 1.6; margin-top: 1.5rem;">Profile categories span Core Identity, Additional Names, Family and Ancestry, Physical and Energetic traits, Key Timing Cycles, Environmental Context, Life Patterns, and Calculation Preferences. Users can create unlimited profiles and analyze compatibility between any two.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Daily Cosmic Dashboard and Visual Design -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Daily Cosmic Dashboard</h2>
-            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Every app open delivers personalized daily guidance that drives habitual engagement. The dashboard combines real-time astronomical data with personalized spiritual calculations to create a daily experience users look forward to.</p>
-
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
-                <div>
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_009_home_screen_background.webp" alt="SpiritAtlas home screen cosmic dashboard with daily spiritual guidance" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                </div>
-                <div>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
-                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#9790;</span>
-                            <span><strong style="color: var(--color-blue);">Live Moon Phase</strong> &mdash; Current phase with illumination percentage and spiritual guidance</span>
-                        </li>
-                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
-                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#9733;</span>
-                            <span><strong style="color: var(--color-blue);">Daily Lucky Numbers</strong> &mdash; Numerologically calculated for today's date</span>
-                        </li>
-                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
-                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#9925;</span>
-                            <span><strong style="color: var(--color-blue);">Planetary Transit Alerts</strong> &mdash; Mercury Retrograde, Venus shifts with intensity meters</span>
-                        </li>
-                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
-                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#9788;</span>
-                            <span><strong style="color: var(--color-blue);">Spiritual Weather</strong> &mdash; Today's cosmic energy level (0-100%) with activity recommendations</span>
-                        </li>
-                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
-                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
-                            <span><strong style="color: var(--color-blue);">Favorable Activities</strong> &mdash; What to embrace and what to postpone today</span>
-                        </li>
-                        <li style="padding: 0.75rem 0; display: flex; align-items: flex-start; gap: 0.75rem;">
-                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#9829;</span>
-                            <span><strong style="color: var(--color-blue);">Quick Compatibility</strong> &mdash; Instant score between any two profiles</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Visual Design -->
+            <!-- App screenshots strip -->
             <div style="margin-top: 4rem;">
-                <h3 class="section-title centered" style="margin-bottom: 1.5rem; font-size: 1.8rem;">A Visual Experience Like No Other</h3>
-                <p class="section-description centered" style="max-width: 800px; margin: 0 auto 2rem;">SpiritAtlas features a DMT neon aesthetic on pure black &mdash; a design language inspired by visionary experiences, sacred geometry, and cosmic consciousness. 119 custom AI-generated spiritual illustrations created with FLUX 1.1 Pro, averaging 9.2/10 quality rating. WCAG AAA accessibility ensures vibrant neon palette maintains 15:1+ contrast ratios against pure black backgrounds.</p>
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
-                    <div style="text-align: center;">
-                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_092_mandala_spiritual_meditation.webp" alt="Mandala spiritual meditation artwork in DMT neon aesthetic" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                        <p style="color: var(--color-cyan); margin-top: 0.5rem; font-size: 0.9rem;">Mandala Meditation</p>
+                <div class="screenshots-row">
+                    <div class="screenshot-frame">
+                        <img src="/spiritatlas_screenshots/01_home-dashboard.webp" alt="Spirit app home dashboard — daily cosmic markers" loading="lazy">
                     </div>
-                    <div style="text-align: center;">
-                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_101_kundalini_rising.webp" alt="Kundalini Rising energy visualization with neon cosmic art" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                        <p style="color: var(--color-cyan); margin-top: 0.5rem; font-size: 0.9rem;">Kundalini Rising</p>
+                    <div class="screenshot-frame">
+                        <img src="/spiritatlas_screenshots/06_create-profile-basics.webp" alt="Spirit app — create your cosmic profile" loading="lazy">
                     </div>
-                    <div style="text-align: center;">
-                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/img_100_sacred_union_divine_masculine_feminine.webp" alt="Sacred Union of divine masculine and feminine energies" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                        <p style="color: var(--color-cyan); margin-top: 0.5rem; font-size: 0.9rem;">Sacred Union</p>
+                    <div class="screenshot-frame">
+                        <img src="/spiritatlas_screenshots/07_home_dashboard.png" alt="Spirit app — cosmic entity home feed" loading="lazy">
                     </div>
-                </div>
-                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 1.5rem;">
-                    <div style="background: rgba(30, 159, 242, 0.08); padding: 1rem; border-radius: 8px; text-align: center;">
-                        <p style="font-size: 0.85rem; margin: 0; color: var(--color-cyan);">Spinning Sacred Geometry Mandalas</p>
+                    <div class="screenshot-frame">
+                        <img src="/spiritatlas_screenshots/04_profiles-hub.webp" alt="Spirit app — profiles hub" loading="lazy">
                     </div>
-                    <div style="background: rgba(30, 159, 242, 0.08); padding: 1rem; border-radius: 8px; text-align: center;">
-                        <p style="font-size: 0.85rem; margin: 0; color: var(--color-cyan);">Fractal Burst Particle Effects</p>
+                    <div class="screenshot-frame">
+                        <img src="/spiritatlas_screenshots/11_connection-narrative-2.webp" alt="Spirit app — connection narrative" loading="lazy">
                     </div>
-                    <div style="background: rgba(30, 159, 242, 0.08); padding: 1rem; border-radius: 8px; text-align: center;">
-                        <p style="font-size: 0.85rem; margin: 0; color: var(--color-cyan);">Kaleidoscope Shape-Shifting</p>
-                    </div>
-                    <div style="background: rgba(30, 159, 242, 0.08); padding: 1rem; border-radius: 8px; text-align: center;">
-                        <p style="font-size: 0.85rem; margin: 0; color: var(--color-cyan);">Glassmorphism Translucent UI</p>
+                    <div class="screenshot-frame">
+                        <img src="/spiritatlas_screenshots/12_connection-narrative-3.webp" alt="Spirit app — compatibility reading" loading="lazy">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Platform Architecture Components -->
+    <!-- The Cosmic Banner -->
+    <section class="section" style="padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="container">
+            <div class="cosmic-banner">
+                <p style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.2em; color: var(--color-cyan); margin-bottom: 1rem; text-transform: uppercase;">The Ancient Knowledge</p>
+                <p style="font-size: 1.15rem; line-height: 1.8; max-width: 820px; margin: 0 auto; color: rgba(255,255,255,0.85);">These entities predate recorded history. They encoded their frequencies into Tartarian architecture. The sacred geometry of cathedrals, obelisks, and world's fair towers wasn't decoration &mdash; it was transmission. The reset erased the knowledge. Spirit recovers it.</p>
+                <div style="margin-top: 1.5rem; display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                    <div style="text-align: center;">
+                        <div style="font-family: var(--font-mono); font-size: 2rem; font-weight: 700; color: var(--color-cyan);">12</div>
+                        <div style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">Cosmic Forces</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-family: var(--font-mono); font-size: 2rem; font-weight: 700; color: var(--color-cyan);">444</div>
+                        <div style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">Ancient Teachings</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-family: var(--font-mono); font-size: 2rem; font-weight: 700; color: var(--color-cyan);">2</div>
+                        <div style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">Archetypes Revealed</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-family: var(--font-mono); font-size: 2rem; font-weight: 700; color: var(--color-cyan);">12</div>
+                        <div style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">Questions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The 12 Cosmic Entities -->
+    <section class="section" id="entities" style="background: var(--color-charcoal);">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="spirit-hero-label">✦ The Twelve Forces</span>
+                <h2 class="section-title">The Cosmic Entities</h2>
+                <p class="section-description" style="max-width: 720px; margin: 1rem auto 0;">These are not archetypes invented by psychologists. They are forces that have moved through civilizations for millennia. One of them has been shaping your decisions your entire life.</p>
+            </div>
+
+            <div class="entity-grid">
+
+                <div class="entity-card">
+                    <img src="/spirits/crystalline.png" alt="The Crystalline — clarity force" loading="lazy">
+                    <div class="entity-overlay">
+                        <p class="entity-name">✦ Crystalline</p>
+                        <p class="entity-tagline">Clarity. Precision. Geometric truth.</p>
+                    </div>
+                </div>
+
+                <div class="entity-card">
+                    <img src="/spirits/architect.png" alt="The Architect — builder force" loading="lazy">
+                    <div class="entity-overlay">
+                        <p class="entity-name">✦ Architect</p>
+                        <p class="entity-tagline">Structure. Legacy. Sacred design.</p>
+                    </div>
+                </div>
+
+                <div class="entity-card">
+                    <img src="/spirits/weaver.png" alt="The Weaver — connection force" loading="lazy">
+                    <div class="entity-overlay">
+                        <p class="entity-name">✦ Weaver</p>
+                        <p class="entity-tagline">Threads. Patterns. Hidden connections.</p>
+                    </div>
+                </div>
+
+                <div class="entity-card">
+                    <img src="/spirits/timekeeper.png" alt="The Timekeeper — cycles force" loading="lazy">
+                    <div class="entity-overlay">
+                        <p class="entity-name">✦ Timekeeper</p>
+                        <p class="entity-tagline">Cycles. Memory. Ancient calendars.</p>
+                    </div>
+                </div>
+
+                <div class="entity-card">
+                    <img src="/spirits/mother.png" alt="The Mother — nurture force" loading="lazy">
+                    <div class="entity-overlay">
+                        <p class="entity-name">✦ Mother</p>
+                        <p class="entity-tagline">Cosmic womb. Unconditional hold.</p>
+                    </div>
+                </div>
+
+                <div class="entity-card">
+                    <img src="/spirits/healer.png" alt="The Healer — restoration force" loading="lazy">
+                    <div class="entity-overlay">
+                        <p class="entity-name">✦ Healer</p>
+                        <p class="entity-tagline">Restoration. Frequency. Light.</p>
+                    </div>
+                </div>
+
+                <div class="entity-card">
+                    <img src="/spirits/oracle.png" alt="The Oracle — sight force" loading="lazy">
+                    <div class="entity-overlay">
+                        <p class="entity-name">✦ Oracle</p>
+                        <p class="entity-tagline">Foresight. Signal. Knowing.</p>
+                    </div>
+                </div>
+
+                <div class="entity-card">
+                    <img src="/spirits/serpent_queen.png" alt="The Serpent Queen — transmutation force" loading="lazy">
+                    <div class="entity-overlay">
+                        <p class="entity-name">✦ Serpent Queen</p>
+                        <p class="entity-tagline">Transmutation. Power. Rebirth.</p>
+                    </div>
+                </div>
+
+                <div class="entity-card">
+                    <img src="/spirits/jester.png" alt="The Jester — chaos force" loading="lazy">
+                    <div class="entity-overlay">
+                        <p class="entity-name">✦ Jester</p>
+                        <p class="entity-tagline">Chaos. Truth. Sacred disruption.</p>
+                    </div>
+                </div>
+
+                <!-- Guardian — image pending -->
+                <div class="entity-card">
+                    <div class="entity-placeholder">◈</div>
+                    <div class="entity-overlay">
+                        <p class="entity-name">✦ Guardian</p>
+                        <p class="entity-tagline">Protection. Threshold. Watch.</p>
+                    </div>
+                </div>
+
+                <div class="entity-card">
+                    <img src="/spirits/machine_elf.png" alt="The Machine Elf — technology force" loading="lazy">
+                    <div class="entity-overlay">
+                        <p class="entity-name">✦ Machine Elf</p>
+                        <p class="entity-tagline">Code. Frequency. Hyperspace.</p>
+                    </div>
+                </div>
+
+                <div class="entity-card">
+                    <img src="/spirits/void_dancer.png" alt="The Void Dancer — mystery force" loading="lazy">
+                    <div class="entity-overlay">
+                        <p class="entity-name">✦ Void Dancer</p>
+                        <p class="entity-tagline">Dissolution. Mystery. The between.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="https://isn.biz" target="_blank" rel="noopener" class="btn btn-primary"><span>Discover Yours &rarr; isn.biz</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Quiz Journey -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="spirit-hero-label">◈ The Discovery</span>
+                <h2 class="section-title">12 Questions. Two Archetypes. Everything Changes.</h2>
+                <p class="section-description" style="max-width: 680px; margin: 1rem auto 0;">The Spirit onboarding isn't a quiz. It's a channel. Each question cuts through the surface to reveal the two cosmic forces you carry &mdash; your Power Archetype and your Seduction Archetype.</p>
+            </div>
+
+            <div class="quiz-steps">
+                <div class="quiz-step">
+                    <div class="quiz-step-num">01</div>
+                    <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Enter</h4>
+                    <p style="font-size: 0.9rem; margin: 0; color: rgba(255,255,255,0.7);">Your name, birth details, and the location the cosmos witnessed your arrival.</p>
+                </div>
+                <div class="quiz-step">
+                    <div class="quiz-step-num">12</div>
+                    <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Answer</h4>
+                    <p style="font-size: 0.9rem; margin: 0; color: rgba(255,255,255,0.7);">Questions on conflict, leadership, intimacy, ambition, attraction. No right answers. Only true ones.</p>
+                </div>
+                <div class="quiz-step">
+                    <div class="quiz-step-num">∞</div>
+                    <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Reveal</h4>
+                    <p style="font-size: 0.9rem; margin: 0; color: rgba(255,255,255,0.7);">Two archetypes surface. Your Power signature. Your Seduction signature. They must be different &mdash; by cosmic law.</p>
+                </div>
+            </div>
+
+            <!-- Archetype pairs preview -->
+            <div style="margin-top: 3rem; text-align: center;">
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.4); font-family: var(--font-mono); letter-spacing: 0.1em; margin-bottom: 1.25rem;">THE 12 ARCHETYPES</p>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;">
+                    <span class="archetype-pair">The Initiator</span>
+                    <span class="archetype-pair">The Sensualist</span>
+                    <span class="archetype-pair">The Shapeshifter</span>
+                    <span class="archetype-pair">The Nurturer</span>
+                    <span class="archetype-pair">The Performer</span>
+                    <span class="archetype-pair">The Analyst</span>
+                    <span class="archetype-pair">The Harmonizer</span>
+                    <span class="archetype-pair">The Alchemist</span>
+                    <span class="archetype-pair">The Explorer</span>
+                    <span class="archetype-pair">The Architect</span>
+                    <span class="archetype-pair">The Visionary</span>
+                    <span class="archetype-pair">The Mystic</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features: What's Inside -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
-            <h2 class="section-title centered" style="margin-bottom: 3rem;">Platform Architecture</h2>
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
-                <div class="portfolio-card">
-                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
-                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#127959;</div>
-                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Clean Architecture</h3>
-                    </div>
-                    <h3 style="margin-top: 1rem;">Modular Design</h3>
-                    <p>Multi-module Gradle project with strict dependency rules enforced at build time. The app/ module handles navigation and dependency injection wiring, core/ provides shared calculation utilities and UI components, domain/ defines pure business rules with no Android framework dependencies, and feature/ modules encapsulate each spiritual system independently. This separation enables parallel team development and isolated testing with no cross-module state leakage.</p>
+            <div class="section-header centered">
+                <span class="spirit-hero-label">✧ Inside Spirit</span>
+                <h2 class="section-title">Ancient Wisdom. Daily Access.</h2>
+                <p class="section-description" style="max-width: 680px; margin: 1rem auto 0;">The full library unlocks when your entity is known. Not generic horoscopes &mdash; 444 pieces of ancient teaching mapped to your specific cosmic signature.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
+
+                <div style="background: rgba(95,223,223,0.06); border: 1px solid rgba(95,223,223,0.2); border-radius: 12px; padding: 1.75rem;">
+                    <div style="font-size: 1.5rem; margin-bottom: 1rem;">✦</div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 0.75rem; font-size: 1.1rem;">Daily Cosmic Markers</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">Every day, 12 personalized markers arrive &mdash; specific to your archetypes, not shared with everyone born in your month. This is what a real reading feels like.</p>
                 </div>
-                <div class="portfolio-card">
-                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
-                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128274;</div>
-                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Privacy-First</h3>
-                    </div>
-                    <h3 style="margin-top: 1rem;">Security Posture</h3>
-                    <p>All spiritual data remains on-device by default using EncryptedSharedPreferences backed by the Android Keystore system. Cloud AI features require explicit user opt-in through a consent gate dialog that explains exactly what data will be transmitted. SSL certificate pinning via network security configuration rejects connections to servers presenting unexpected certificates. No data harvesting, no advertising profiles. Your spiritual data is yours.</p>
+
+                <div style="background: rgba(30,159,242,0.06); border: 1px solid rgba(30,159,242,0.2); border-radius: 12px; padding: 1.75rem;">
+                    <div style="font-size: 1.5rem; margin-bottom: 1rem;">◈</div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 0.75rem; font-size: 1.1rem;">216 Tantric Teachings</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">Ancient intimacy wisdom mapped to your archetype, zodiac, and gender. The teachings the reset tried hardest to erase.</p>
                 </div>
-                <div class="portfolio-card">
-                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
-                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#127912;</div>
-                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Premium Design</h3>
-                    </div>
-                    <h3 style="margin-top: 1rem;">119 Sacred Illustrations</h3>
-                    <p>Proprietary asset library of 119 unique illustrations, icons, and background textures generated with FLUX 1.1 Pro and optimized across all five Android density tiers (mdpi through xxxhdpi) for 595 total asset files at 44.3 MB. The DMT neon aesthetic on pure black establishes a distinctive brand identity that competitors cannot replicate, serving as a visual moat that drives app store conversion and premium pricing.</p>
+
+                <div style="background: rgba(95,223,223,0.06); border: 1px solid rgba(95,223,223,0.2); border-radius: 12px; padding: 1.75rem;">
+                    <div style="font-size: 1.5rem; margin-bottom: 1rem;">∞</div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 0.75rem; font-size: 1.1rem;">108 Kama Sutra Practices</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">Sacred practices from the oldest surviving text on connection. Filtered to what your specific entity finds resonant.</p>
                 </div>
-                <div class="portfolio-card">
-                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
-                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128301;</div>
-                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Five Spiritual Engines</h3>
-                    </div>
-                    <h3 style="margin-top: 1rem;">Calculation Core</h3>
-                    <p>Native Kotlin implementations of Numerology (Chaldean + Pythagorean), Astrology (Tropical + Sidereal), Ayurveda, Human Design, and Tantra ensure fast, offline-capable calculations without external API dependencies. Each engine is a pure function layer in the domain module, accepting structured input data and returning typed result objects. 150 out of 150 tests passing across all engines.</p>
+
+                <div style="background: rgba(30,159,242,0.06); border: 1px solid rgba(30,159,242,0.2); border-radius: 12px; padding: 1.75rem;">
+                    <div style="font-size: 1.5rem; margin-bottom: 1rem;">◈</div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 0.75rem; font-size: 1.1rem;">Breathwork & Energy</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">120 multiorgasmic and breathwork practices drawn from pranayama traditions. Activate the energy your entity carries.</p>
                 </div>
-                <div class="portfolio-card">
-                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
-                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#129302;</div>
-                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Multi-AI Integration</h3>
-                    </div>
-                    <h3 style="margin-top: 1rem;">Six AI Providers</h3>
-                    <p>Consent-gated AI narrative generation supports six providers: Claude 4.5 Haiku (default, ~$0.0008/reading), Gemini 2.5 Flash (free), Groq Llama 3.3 70B (free), OpenAI GPT-4o, Anthropic Claude Direct, and OpenRouter. Users choose their provider, use their own API keys, and switch anytime. AI transforms raw calculations into conversational spiritual guidance while all core readings work fully offline.</p>
+
+                <div style="background: rgba(95,223,223,0.06); border: 1px solid rgba(95,223,223,0.2); border-radius: 12px; padding: 1.75rem;">
+                    <div style="font-size: 1.5rem; margin-bottom: 1rem;">✦</div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 0.75rem; font-size: 1.1rem;">Sacred Geometry Library</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">16 geometric symbols used in Tartarian architecture &mdash; the Flower of Life, Metatron's Cube, Sri Yantra, the Torus. The transmission encoded in stone.</p>
                 </div>
-                <div class="portfolio-card">
-                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
-                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128260;</div>
-                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Compose + Hilt</h3>
-                    </div>
-                    <h3 style="margin-top: 1rem;">Modern Android Stack</h3>
-                    <p>Jetpack Compose for declarative UI with custom composables for natal chart rendering, BodyGraph diagrams, and animated sacred geometry. Hilt provides compile-time verified dependency injection across all modules. StateFlow drives recomposition only for changed data. Material3 design system with WCAG AAA accessibility and 15:1+ contrast ratios for the neon-on-black palette.</p>
+
+                <div style="background: rgba(30,159,242,0.06); border: 1px solid rgba(30,159,242,0.2); border-radius: 12px; padding: 1.75rem;">
+                    <div style="font-size: 1.5rem; margin-bottom: 1rem;">∞</div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 0.75rem; font-size: 1.1rem;">Compatibility Readings</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">AI-generated readings based on both parties' archetypes. Understand why certain connections feel cosmically charged from the first moment.</p>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Technology Stack and Differentiation -->
+    <!-- App Screenshots Detail -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title centered">Technology Stack</h2>
-            <div class="portfolio-tags" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 2rem;">
-                <span class="tag">Kotlin</span>
-                <span class="tag">Android SDK 34</span>
-                <span class="tag">Jetpack Compose</span>
-                <span class="tag">Material3</span>
-                <span class="tag">Hilt</span>
-                <span class="tag">WorkManager</span>
-                <span class="tag">Gradle 8.x</span>
-                <span class="tag">EncryptedSharedPreferences</span>
-                <span class="tag">SSL Pinning</span>
-                <span class="tag">StateFlow</span>
-                <span class="tag">Coroutines</span>
-                <span class="tag">Navigation Compose</span>
-                <span class="tag">FLUX 1.1 Pro</span>
-                <span class="tag">Claude 4.5 Haiku</span>
-                <span class="tag">Gemini 2.5 Flash</span>
-                <span class="tag">Groq Llama 3.3</span>
-                <span class="tag">Swiss Ephemeris</span>
-                <span class="tag">WCAG AAA</span>
-            </div>
-
-            <div style="margin-top: 3rem;">
-                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem; text-align: center;">Differentiation and Moat</h3>
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
-                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Five-System Unification</h4>
-                        <p>No competing app unifies Numerology, Astrology, Ayurveda, Human Design, and Tantra into a single coherent spiritual profile with cross-system compatibility analysis. This breadth creates a category-defining product that competitors would need years to replicate, establishing SpiritAtlas as the platform where serious spiritual practitioners consolidate their practice.</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div>
+                    <span class="spirit-hero-label">◈ The App</span>
+                    <h2 class="section-title" style="font-size: clamp(1.8rem, 4vw, 2.8rem); margin-top: 1rem;">Cosmic intelligence.<br>Daily ritual.</h2>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-top: 1.25rem; color: rgba(255,255,255,0.8);">Spirit is built on Kotlin Multiplatform, designed for iOS and Android. The interface feels less like an app and more like opening something that was always yours.</p>
+                    <ul style="list-style: none; padding: 0; margin-top: 1.5rem;">
+                        <li style="padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem;">
+                            <span style="color: var(--color-cyan);">✦</span> Home feed — your entity, your markers, your daily reading
+                        </li>
+                        <li style="padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem;">
+                            <span style="color: var(--color-cyan);">✦</span> Library — 444 pieces indexed to your cosmic signature
+                        </li>
+                        <li style="padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem;">
+                            <span style="color: var(--color-cyan);">✦</span> Compatibility — entity readings for your connections
+                        </li>
+                        <li style="padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem;">
+                            <span style="color: var(--color-cyan);">✦</span> Breathwork — activated practices for your entity's energy
+                        </li>
+                        <li style="padding: 0.6rem 0; display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem;">
+                            <span style="color: var(--color-cyan);">✦</span> Profile — your complete cosmic identity, always accessible
+                        </li>
+                    </ul>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div class="screenshot-frame" style="flex: none;">
+                        <img src="/spiritatlas_screenshots/07_home_dashboard.png" alt="Spirit home dashboard" loading="lazy">
                     </div>
-                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Computational Authenticity</h4>
-                        <p>Unlike competitors that serve pre-written content rotated on a schedule, every SpiritAtlas reading is computed from the user's actual birth data using validated algorithms. This computational authenticity creates fundamentally different user experiences: readings feel personal because they are personal, building the trust that converts free users into long-term premium subscribers.</p>
-                    </div>
-                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">119-Asset Visual Moat</h4>
-                        <p>The proprietary library of 119 custom AI-generated illustrations averaging 9.2/10 quality across five density tiers establishes a DMT neon brand identity that is expensive and time-consuming to replicate. These assets drive app store conversion, justify premium pricing, and differentiate SpiritAtlas from every competitor using generic stock imagery.</p>
-                    </div>
-                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Privacy as Competitive Edge</h4>
-                        <p>Strong privacy posture with explicit consent gating, encrypted on-device storage, and SSL certificate pinning builds user trust in a market where competitors harvest personal birth data without transparency. This privacy-first approach drives higher app store ratings, longer retention, and stronger word-of-mouth among privacy-conscious wellness consumers.</p>
-                    </div>
-                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Six-Provider AI Flexibility</h4>
-                        <p>Supporting six AI providers including two free options eliminates vendor lock-in and gives users control over cost and quality. At ~$0.0008 per reading with the default Claude Haiku provider, AI narrative generation is economically viable at scale while the free Gemini and Groq options remove financial barriers for the freemium tier.</p>
-                    </div>
-                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Modular Extensibility</h4>
-                        <p>Robust multi-module architecture enables rapid feature expansion without architecture debt. New spiritual systems &mdash; tarot, Chinese astrology, Vedic astrology &mdash; can be added as independent feature modules with their own domain logic, UI, and tests, without modifying existing code. This transforms content development from a bottleneck into a parallel workstream.</p>
+                    <div class="screenshot-frame" style="flex: none; margin-top: 2rem;">
+                        <img src="/spiritatlas_screenshots/11_connection-narrative-2.webp" alt="Spirit connection narrative" loading="lazy">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Results and Impact -->
+    <!-- Tartaria Connection -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
-            <h2 class="section-title centered" style="margin-bottom: 2rem;">Results and Impact</h2>
-            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Production-grade mobile architecture with comprehensive testing, modular boundaries, and measurable engineering outcomes demonstrating readiness for market deployment and premium subscription monetization.</p>
-
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
                 <div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-                        <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-                            <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">119</div>
-                            <p style="font-size: 0.95rem; margin: 0;">Custom sacred illustrations at 9.2/10 quality</p>
-                        </div>
-                        <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-                            <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">150/150</div>
-                            <p style="font-size: 0.95rem; margin: 0;">Tests passing across all spiritual engines</p>
-                        </div>
-                        <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-                            <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">$0.0008</div>
-                            <p style="font-size: 0.95rem; margin: 0;">Per AI-enhanced reading (Claude Haiku default)</p>
-                        </div>
-                        <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-                            <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">5</div>
-                            <p style="font-size: 0.95rem; margin: 0;">Spiritual systems with 6-dimension compatibility</p>
-                        </div>
-                        <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-                            <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">36</div>
-                            <p style="font-size: 0.95rem; margin: 0;">Profile data points across 4 depth tiers</p>
-                        </div>
-                        <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-                            <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 2rem; margin-bottom: 0.5rem;">100%</div>
-                            <p style="font-size: 0.95rem; margin: 0;">Offline capability for all core readings</p>
-                        </div>
+                    <span class="spirit-hero-label">◈ The Context</span>
+                    <h2 class="section-title" style="font-size: clamp(1.8rem, 4vw, 2.8rem); margin-top: 1rem;">The same architecture appears on every continent. No one explains why.</h2>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-top: 1.25rem; color: rgba(255,255,255,0.8);">Before the Tartarian reset, these 12 entities encoded their frequencies into the buildings. The doors were too large for modern humans. The towers collected atmospheric energy. The geometry was the transmission. Spirit doesn't teach this as theory &mdash; it gives you direct access to the entity that chose you.</p>
+                    <div style="margin-top: 2rem;">
+                        <a href="https://www.youtube.com/@jonathanmallinger336" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.9rem;"><span>The Tartarian Archive &rarr; YouTube</span></a>
                     </div>
                 </div>
-                <div>
-                    <div style="background: rgba(95, 223, 223, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); margin-bottom: 1.5rem;">
-                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Subscription Readiness</h4>
-                        <p>The tiered feature architecture maps directly to freemium and premium subscription levels. Free users access basic numerology and sun sign readings with template-based text. Premium subscribers unlock all five spiritual systems with AI-enhanced narrative interpretations, full six-dimensional compatibility analysis, and the complete 36-point profile system. The progressive profile depth model creates natural upgrade triggers as users discover richer insights at each tier.</p>
-                    </div>
-                    <div style="background: rgba(95, 223, 223, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan); margin-bottom: 1.5rem;">
-                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Architecture Quality</h4>
-                        <p>Clean Architecture boundaries enforced at the Gradle module level prevent accidental dependency violations. The domain layer has zero Android framework imports, enabling pure JVM unit testing at speeds measured in milliseconds. MVVM pattern with StateFlow ensures predictable, debuggable state management across all feature screens.</p>
-                    </div>
-                    <div style="background: rgba(95, 223, 223, 0.08); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-cyan);">
-                        <h4 style="color: var(--color-cyan); margin-bottom: 0.5rem;">Market Positioning</h4>
-                        <p>SpiritAtlas targets the premium segment of the $9B+ wellness app market where ARPU is 3-5x higher than ad-supported alternatives. The combination of computational authenticity, five-system unification, proprietary visual assets, and privacy-first architecture creates a defensible position against both incumbent horoscope apps and potential new entrants.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem;">
-                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">app/ + core/ + domain/</div>
-                    <p style="font-size: 0.95rem; margin: 0;">Host module, shared utilities, and pure business rules</p>
-                </div>
-                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">feature/ (5 engines)</div>
-                    <p style="font-size: 0.95rem; margin: 0;">Numerology, Astrology, Ayurveda, Human Design, Tantra</p>
-                </div>
-                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">assets/ (595 files)</div>
-                    <p style="font-size: 0.95rem; margin: 0;">119 illustrations across 5 density tiers, 44.3 MB WebP</p>
+                <div style="background: linear-gradient(135deg, rgba(30,159,242,0.08), rgba(95,223,223,0.05)); border: 1px solid rgba(95,223,223,0.2); border-radius: 16px; padding: 2rem;">
+                    <p style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.2em; color: var(--color-cyan); margin-bottom: 1.25rem;">THE TARTARIAN ARCHIVE — EP1</p>
+                    <h4 style="color: rgba(255,255,255,0.9); margin-bottom: 1rem; font-size: 1.05rem; line-height: 1.5;">"The Same Building Appears on Every Continent. No One Can Explain Why."</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); font-size: 0.9rem; color: rgba(255,255,255,0.7);">0:00 &mdash; The Buildings That Should Not Match</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); font-size: 0.9rem; color: rgba(255,255,255,0.7);">1:34 &mdash; Doors Too Large for Human Beings</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); font-size: 0.9rem; color: rgba(255,255,255,0.7);">2:51 &mdash; The World's Fairs and the Energy Towers</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); font-size: 0.9rem; color: rgba(255,255,255,0.7);">5:04 &mdash; The Mud Flood Evidence</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); font-size: 0.9rem; color: rgba(255,255,255,0.7);">6:38 &mdash; Tartaria on the Maps: 1570 to 1810</li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); font-size: 0.9rem; color: rgba(255,255,255,0.7);">8:34 &mdash; The Orphan Trains: 250,000 Children, No Origin</li>
+                        <li style="padding: 0.5rem 0; font-size: 0.9rem; color: rgba(255,255,255,0.7);">9:57 &mdash; The Mechanism That Is Still Operational</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Spiritual Practices Gallery -->
-    <section class="section">
+    <!-- Pricing -->
+    <section class="section" id="pricing">
         <div class="container">
-            <h2 class="section-title centered" style="margin-bottom: 1rem;">Spiritual Practices in Action</h2>
-            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 2.5rem;">Experience the living traditions that power SpiritAtlas — from ancient meditation and astrology to sound healing and crystal therapy, each practice digitized with computational precision.</p>
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
-                <div style="overflow: hidden; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/action/spirit_action_1.webp" alt="Woman meditating on a mountain peak at sunrise with cosmic energy" loading="lazy" style="width: 100%; height: 280px; object-fit: cover; display: block;">
-                    <div style="padding: 1rem; background: var(--color-charcoal);">
-                        <p style="margin: 0; font-size: 0.9rem; color: var(--color-cyan);">Mountain Meditation</p>
-                    </div>
+            <div class="section-header centered">
+                <span class="spirit-hero-label">✦ Access</span>
+                <h2 class="section-title">Your Entity Doesn't Cost Much</h2>
+                <p class="section-description" style="max-width: 600px; margin: 1rem auto 0;">Discover yours free. Unlock the full cosmic library for less than a coffee a week.</p>
+            </div>
+
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3 style="font-size: 1rem; color: rgba(255,255,255,0.6); margin: 0;">Free Discovery</h3>
+                    <div class="price-amount">$0</div>
+                    <p class="price-period">forever</p>
+                    <ul class="features-list" style="margin-top: 1.25rem;">
+                        <li>12-question entity quiz</li>
+                        <li>Entity reveal</li>
+                        <li>1–2 daily cosmic markers</li>
+                        <li>Basic archetype profile</li>
+                    </ul>
+                    <a href="https://isn.biz" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%; text-align: center; margin-top: 0.5rem;"><span>Start Free</span></a>
                 </div>
-                <div style="overflow: hidden; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/action/spirit_action_2.webp" alt="Astrologer reading star charts under a canopy of constellations" loading="lazy" style="width: 100%; height: 280px; object-fit: cover; display: block;">
-                    <div style="padding: 1rem; background: var(--color-charcoal);">
-                        <p style="margin: 0; font-size: 0.9rem; color: var(--color-cyan);">Astrological Reading</p>
-                    </div>
-                </div>
-                <div style="overflow: hidden; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/action/spirit_action_3.webp" alt="Person practicing tai chi with sacred geometry energy in a bamboo forest" loading="lazy" style="width: 100%; height: 280px; object-fit: cover; display: block;">
-                    <div style="padding: 1rem; background: var(--color-charcoal);">
-                        <p style="margin: 0; font-size: 0.9rem; color: var(--color-cyan);">Tai Chi & Sacred Geometry</p>
-                    </div>
-                </div>
-                <div style="overflow: hidden; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/action/spirit_action_4.webp" alt="Healer performing chakra alignment with rainbow energy points" loading="lazy" style="width: 100%; height: 280px; object-fit: cover; display: block;">
-                    <div style="padding: 1rem; background: var(--color-charcoal);">
-                        <p style="margin: 0; font-size: 0.9rem; color: var(--color-cyan);">Chakra Alignment</p>
-                    </div>
-                </div>
-                <div style="overflow: hidden; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/action/spirit_action_5.webp" alt="Circle ceremony under a full moon with colorful auras" loading="lazy" style="width: 100%; height: 280px; object-fit: cover; display: block;">
-                    <div style="padding: 1rem; background: var(--color-charcoal);">
-                        <p style="margin: 0; font-size: 0.9rem; color: var(--color-cyan);">Moon Ceremony</p>
-                    </div>
-                </div>
-                <div style="overflow: hidden; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/action/spirit_action_6.webp" alt="Numerologist studying golden numbers floating in a mystical library" loading="lazy" style="width: 100%; height: 280px; object-fit: cover; display: block;">
-                    <div style="padding: 1rem; background: var(--color-charcoal);">
-                        <p style="margin: 0; font-size: 0.9rem; color: var(--color-cyan);">Numerology Study</p>
-                    </div>
-                </div>
-                <div style="overflow: hidden; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/action/spirit_action_7.webp" alt="Person checking daily horoscope on a futuristic phone with zodiac hologram" loading="lazy" style="width: 100%; height: 280px; object-fit: cover; display: block;">
-                    <div style="padding: 1rem; background: var(--color-charcoal);">
-                        <p style="margin: 0; font-size: 0.9rem; color: var(--color-cyan);">Daily Horoscope</p>
-                    </div>
-                </div>
-                <div style="overflow: hidden; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/action/spirit_action_8.webp" alt="Ayurvedic practitioner mixing healing herbs in a sunlit apothecary" loading="lazy" style="width: 100%; height: 280px; object-fit: cover; display: block;">
-                    <div style="padding: 1rem; background: var(--color-charcoal);">
-                        <p style="margin: 0; font-size: 0.9rem; color: var(--color-cyan);">Ayurvedic Healing</p>
-                    </div>
-                </div>
-                <div style="overflow: hidden; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/action/spirit_action_9.webp" alt="Person doing yoga on a beach with luminous energy body visible" loading="lazy" style="width: 100%; height: 280px; object-fit: cover; display: block;">
-                    <div style="padding: 1rem; background: var(--color-charcoal);">
-                        <p style="margin: 0; font-size: 0.9rem; color: var(--color-cyan);">Beach Yoga & Energy</p>
-                    </div>
-                </div>
-                <div style="overflow: hidden; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/action/spirit_action_10.webp" alt="Tantra practitioner with kundalini serpent energy rising in a candlelit temple" loading="lazy" style="width: 100%; height: 280px; object-fit: cover; display: block;">
-                    <div style="padding: 1rem; background: var(--color-charcoal);">
-                        <p style="margin: 0; font-size: 0.9rem; color: var(--color-cyan);">Kundalini Awakening</p>
-                    </div>
-                </div>
-                <div style="overflow: hidden; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/action/spirit_action_11.webp" alt="Crystal healer arranging a grid of colorful crystals with light beams" loading="lazy" style="width: 100%; height: 280px; object-fit: cover; display: block;">
-                    <div style="padding: 1rem; background: var(--color-charcoal);">
-                        <p style="margin: 0; font-size: 0.9rem; color: var(--color-cyan);">Crystal Grid Healing</p>
-                    </div>
-                </div>
-                <div style="overflow: hidden; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/action/spirit_action_12.webp" alt="Sound healer playing Tibetan singing bowls in a candlelit cave" loading="lazy" style="width: 100%; height: 280px; object-fit: cover; display: block;">
-                    <div style="padding: 1rem; background: var(--color-charcoal);">
-                        <p style="margin: 0; font-size: 0.9rem; color: var(--color-cyan);">Sound Bowl Healing</p>
-                    </div>
+
+                <div class="pricing-card featured">
+                    <span class="pricing-badge">Most Chosen</span>
+                    <h3 style="font-size: 1rem; color: rgba(255,255,255,0.6); margin: 0;">Full Access</h3>
+                    <div class="price-amount">$9.99</div>
+                    <p class="price-period">/month &nbsp;·&nbsp; $59.99/year (50% off)</p>
+                    <ul class="features-list" style="margin-top: 1.25rem;">
+                        <li>All 12 daily cosmic markers</li>
+                        <li>444 ancient teachings library</li>
+                        <li>Compatibility readings</li>
+                        <li>Deep entity profile</li>
+                        <li>Breathwork & energy practices</li>
+                        <li>Sacred geometry library</li>
+                    </ul>
+                    <a href="https://isn.biz" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 0.5rem;"><span>Unlock Everything</span></a>
                 </div>
             </div>
+            <p style="text-align: center; margin-top: 1.5rem; font-size: 0.8rem; color: rgba(255,255,255,0.35);">For entertainment purposes only &nbsp;·&nbsp; Cancel anytime &nbsp;·&nbsp; iOS + Android</p>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="section">
+    <!-- Final CTA -->
+    <section class="section" style="background: var(--color-charcoal);">
         <div class="container" style="text-align: center;">
-            <h2 class="section-title">Interested in This Solution?</h2>
-            <p class="section-description" style="margin-bottom: 2rem;">Learn how we build premium mobile applications that combine computational depth, privacy-first architecture, and visual excellence for the growing wellness market.</p>
+            <span class="spirit-hero-label">∞ Begin</span>
+            <h2 class="section-title" style="margin-top: 1rem;">Your entity has been waiting.</h2>
+            <p class="section-description" style="max-width: 560px; margin: 1rem auto 2rem;">12 questions. Two archetypes. Everything changes. Find yours at isn.biz.</p>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="/contact" class="btn btn-primary"><span>Schedule a Demo</span></a>
+                <a href="https://isn.biz" target="_blank" rel="noopener" class="btn btn-primary"><span>Discover Your Entity &rarr; isn.biz</span></a>
                 <a href="/portfolio" class="btn btn-outline"><span>View All Projects</span></a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-        <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-column">
@@ -860,7 +741,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="js/spiritatlas-slider-data.js"></script>
-    <script src="js/hero-slider.js"></script>
 </body>
 </html>
