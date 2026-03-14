@@ -110,7 +110,7 @@
         const dots = Array.from(dotsContainer.querySelectorAll('.dot'));
         const totalSlides = slides.length;
         const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        const autoPlayDelayMs = 7000;
+        const autoPlayDelayMs = 5000;
 
         let currentIndex = 0;
         let autoPlayTimer = null;
