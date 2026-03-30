@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Spirit — Discover your cosmic entity archetype. 12 ancient forces. One 12-question quiz. Find the entity that chose you. Available at isn.biz.">
-    <meta name="keywords" content="spiritual app, cosmic entity, archetype quiz, spirit atlas, ancient wisdom, cosmic forces, spiritual discovery, isn.biz">
+    <meta name="description" content="Spirit Atlas is a ritual-forward mobile experience for discovering your cosmic entity archetype, unlocking daily guidance, and exploring a premium library of symbolic wisdom on iSN.BiZ.">
+    <meta name="keywords" content="Spirit Atlas app, cosmic entity quiz, ritual app, archetype discovery, symbolic guidance, spiritual compatibility, isn.biz">
     <meta name="author" content="iSN.BiZ Inc">
-    <meta property="og:title" content="Spirit — Discover Your Cosmic Entity | iSN.BiZ Inc">
-    <meta property="og:description" content="12 ancient cosmic forces. One 12-question quiz. Your entity has been waiting. Find it at isn.biz.">
+    <meta property="og:title" content="Spirit Atlas | Ritual-Forward Cosmic Entity Discovery">
+    <meta property="og:description" content="A more cinematic way to meet the entity shaping your instincts, rituals, and relationships.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/entity_v3_crystalline_combo18_00001_.png">
-    <title>Spirit — Cosmic Entity Discovery | iSN.BiZ Inc</title>
+    <title>Spirit Atlas | Ritual-Forward Cosmic Entity Discovery | iSN.BiZ Inc</title>
     <link rel="icon" type="image/webp" href="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/favicon.webp">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="enhanced-animations.css">
@@ -18,245 +18,890 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Spirit page specific styles */
-        .spirit-hero-label {
-            display: inline-block;
-            font-family: var(--font-mono);
-            font-size: 0.75rem;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: var(--color-cyan);
-            border: 1px solid rgba(95,223,223,0.4);
-            padding: 0.3rem 1rem;
-            border-radius: 20px;
-            margin-bottom: 1.5rem;
+        body.spirit-page {
+            --spirit-ink: #f0f4f8;
+            --spirit-muted: rgba(240, 244, 248, 0.78);
+            --spirit-blue: #1e9ff2;
+            --spirit-cyan: #5fdfdf;
+            --spirit-blue-dark: #1578c2;
+            --spirit-violet: #7c3aed;
+            --spirit-magenta: #ff2d8f;
+            --spirit-electric: #8b5cf6;
+            --spirit-lime: #b8ff5c;
+            --spirit-panel: rgba(13, 17, 23, 0.88);
+            --spirit-line: rgba(95, 223, 223, 0.2);
+            --spirit-shadow: 0 30px 90px rgba(0, 0, 0, 0.45);
+            font-family: "IBM Plex Sans", sans-serif;
+            background:
+                radial-gradient(circle at 18% 10%, rgba(95, 223, 223, 0.18), transparent 32%),
+                radial-gradient(circle at 82% 14%, rgba(255, 45, 143, 0.22), transparent 26%),
+                radial-gradient(circle at 65% 18%, rgba(184, 255, 92, 0.08), transparent 18%),
+                radial-gradient(circle at 55% 100%, rgba(124, 58, 237, 0.3), transparent 36%),
+                linear-gradient(180deg, #090d15 0%, #0d1117 24%, #14172a 58%, #0d1117 100%);
+            color: var(--spirit-ink);
         }
 
-        .entity-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-top: 3rem;
+        body.spirit-page::before {
+            background:
+                linear-gradient(90deg, rgba(30, 159, 242, 0.08) 1px, transparent 1px),
+                linear-gradient(0deg, rgba(124, 58, 237, 0.08) 1px, transparent 1px);
+            background-size: 72px 72px;
+            opacity: 0.22;
         }
 
-        .entity-card {
+        body.spirit-page::after {
+            opacity: 0.28;
+            mix-blend-mode: screen;
+        }
+
+        .spirit-page .nav {
+            background: rgba(10, 8, 12, 0.82);
+            border-bottom: 1px solid rgba(30, 159, 242, 0.24);
+        }
+
+        .spirit-page .nav.scrolled {
+            background: rgba(10, 8, 12, 0.95);
+            box-shadow: 0 16px 50px rgba(0, 0, 0, 0.34), 0 1px 0 rgba(95, 223, 223, 0.18);
+        }
+
+        .spirit-page .nav-menu a,
+        .spirit-page .footer a,
+        .spirit-page .footer p,
+        .spirit-page .footer h4 {
+            color: var(--spirit-ink);
+        }
+
+        .spirit-page .nav-menu a:hover,
+        .spirit-page .nav-menu a.active,
+        .spirit-page .footer a:hover {
+            color: var(--spirit-cyan);
+        }
+
+        .spirit-page .section {
+            opacity: 1;
+            transform: none;
+            padding: 5.75rem 0;
+        }
+
+        .spirit-shell {
             position: relative;
-            border-radius: 12px;
             overflow: hidden;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            aspect-ratio: 3/4;
-            background: var(--color-charcoal);
         }
 
-        .entity-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 20px 60px rgba(95,223,223,0.25);
-        }
-
-        .entity-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .entity-card .entity-overlay {
+        .spirit-shell::before,
+        .spirit-shell::after {
+            content: "";
             position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 1.5rem 1rem 1rem;
-            background: linear-gradient(transparent, rgba(0,0,0,0.85));
+            inset: auto;
+            width: 38rem;
+            height: 38rem;
+            border-radius: 50%;
+            pointer-events: none;
+            filter: blur(32px);
+            opacity: 0.34;
+            z-index: 0;
+            animation: spiritFloat 14s ease-in-out infinite alternate;
         }
 
-        .entity-name {
-            font-family: var(--font-mono);
-            font-size: 0.8rem;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: var(--color-cyan);
-            margin: 0;
+        .spirit-shell::before {
+            top: 7rem;
+            left: -12rem;
+            background: radial-gradient(circle, rgba(95, 223, 223, 0.34), transparent 62%);
         }
 
-        .entity-tagline {
-            font-size: 0.8rem;
-            color: rgba(255,255,255,0.7);
-            margin: 0.25rem 0 0;
+        .spirit-shell::after {
+            right: -14rem;
+            bottom: 12rem;
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.34), transparent 62%);
+            animation-delay: -4s;
         }
 
-        .entity-placeholder {
-            width: 100%;
-            height: 100%;
-            display: flex;
+        @keyframes spiritFloat {
+            0% {
+                transform: translate3d(0, 0, 0) scale(1);
+            }
+            100% {
+                transform: translate3d(2rem, -1.5rem, 0) scale(1.08);
+            }
+        }
+
+        .spirit-page .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .spirit-kicker,
+        .spirit-meta-label {
+            display: inline-flex;
             align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, rgba(30,159,242,0.15), rgba(95,223,223,0.08));
-            border: 1px solid rgba(95,223,223,0.2);
-            font-size: 3rem;
+            gap: 0.65rem;
+            padding: 0.42rem 0.9rem;
+            border-radius: 999px;
+            border: 1px solid rgba(95, 223, 223, 0.22);
+            background: linear-gradient(135deg, rgba(30, 159, 242, 0.12), rgba(124, 58, 237, 0.12));
+            color: var(--spirit-cyan);
+            font-family: "JetBrains Mono", monospace;
+            font-size: 0.74rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
         }
 
-        .screenshots-row {
+        .spirit-kicker::before,
+        .spirit-meta-label::before {
+            content: "";
+            width: 0.55rem;
+            height: 0.55rem;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--spirit-cyan), var(--spirit-magenta));
+            box-shadow: 0 0 18px rgba(95, 223, 223, 0.45);
+        }
+
+        .spirit-title,
+        .spirit-page h2,
+        .spirit-page h3,
+        .spirit-page h4 {
+            font-family: "Archivo Black", impact, sans-serif;
+            text-transform: uppercase;
+            line-height: 0.98;
+            letter-spacing: -0.02em;
+            color: var(--spirit-ink);
+        }
+
+        .spirit-title {
+            font-size: clamp(3.2rem, 8vw, 5.8rem);
+            margin: 1.2rem 0 0.9rem;
+            text-shadow: 0 0 24px rgba(95, 223, 223, 0.2), 0 0 46px rgba(124, 58, 237, 0.18), 0 0 80px rgba(255, 45, 143, 0.12);
+        }
+
+        .spirit-page h2 {
+            font-size: clamp(2.2rem, 4.4vw, 3.5rem);
+            margin-bottom: 0.9rem;
+            text-shadow: 0 0 20px rgba(30, 159, 242, 0.14);
+        }
+
+        .spirit-page h3 {
+            font-size: clamp(1.3rem, 2.5vw, 1.9rem);
+            margin-bottom: 0.65rem;
+        }
+
+        .spirit-copy,
+        .spirit-page p,
+        .spirit-page li {
+            font-family: "IBM Plex Sans", sans-serif;
+            color: var(--spirit-muted);
+            line-height: 1.72;
+        }
+
+        .spirit-hero {
+            min-height: 100vh;
+            padding: 8.1rem 0 4.75rem;
+        }
+
+        .spirit-hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .spirit-hero-copy {
+            max-width: 42rem;
+        }
+
+        .spirit-lead {
+            font-size: clamp(1rem, 1.4vw, 1.18rem);
+            max-width: 38rem;
+            margin-bottom: 1.6rem;
+            color: rgba(240, 244, 248, 0.88);
+        }
+
+        .spirit-actions {
             display: flex;
-            gap: 1.5rem;
-            overflow-x: auto;
-            padding: 1rem 0 2rem;
-            scrollbar-width: thin;
-            scrollbar-color: rgba(95,223,223,0.3) transparent;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 2rem 0 1.35rem;
         }
 
-        .screenshot-frame {
-            flex: 0 0 200px;
-            border-radius: 20px;
+        .spirit-page .btn {
+            border-radius: 999px;
+            padding: 0.9rem 1.35rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-size: 0.76rem;
+        }
+
+        .spirit-page .btn-primary {
+            background: linear-gradient(135deg, var(--spirit-blue) 0%, var(--spirit-cyan) 45%, var(--spirit-magenta) 100%);
+            color: #0d1117;
+            border: none;
+            box-shadow: 0 20px 40px rgba(124, 58, 237, 0.28), 0 0 38px rgba(255, 45, 143, 0.22);
+            position: relative;
             overflow: hidden;
-            box-shadow: 0 12px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(95,223,223,0.2);
-            transition: transform 0.3s ease;
         }
 
-        .screenshot-frame:hover {
-            transform: translateY(-8px) scale(1.02);
+        .spirit-page .btn-primary::after {
+            content: "";
+            position: absolute;
+            inset: 1px;
+            border-radius: inherit;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.24), rgba(184, 255, 92, 0.08) 30%, transparent 54%);
+            pointer-events: none;
         }
 
-        .screenshot-frame img {
+        .spirit-page .btn-outline {
+            border: 1px solid rgba(95, 223, 223, 0.28);
+            color: var(--spirit-ink);
+            background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(124, 58, 237, 0.08));
+        }
+
+        .spirit-footnote {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 0.85rem;
+            color: rgba(247, 239, 225, 0.52);
+        }
+
+        .spirit-hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+            margin-top: 2.25rem;
+        }
+
+        .spirit-stat-card {
+            padding: 1.25rem 1.15rem;
+            border-radius: 1.5rem;
+            background: linear-gradient(180deg, rgba(30, 159, 242, 0.1), rgba(124, 58, 237, 0.12));
+            border: 1px solid rgba(95, 223, 223, 0.16);
+            box-shadow: inset 0 1px 0 rgba(95, 223, 223, 0.08), 0 18px 40px rgba(0, 0, 0, 0.18), 0 0 26px rgba(124, 58, 237, 0.12);
+        }
+
+        .spirit-stat-card strong {
+            display: block;
+            font-family: "Archivo Black", impact, sans-serif;
+            font-size: 2.2rem;
+            color: var(--spirit-ink);
+            margin-bottom: 0.3rem;
+        }
+
+        .spirit-stat-card span {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 0.76rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: rgba(95, 223, 223, 0.76);
+        }
+
+        .spirit-hero-visual {
+            position: relative;
+            min-height: 46rem;
+        }
+
+        .spirit-card,
+        .spirit-panel,
+        .spirit-signal,
+        .spirit-pricing-card,
+        .spirit-proof-card,
+        .spirit-app-note,
+        .spirit-context-card {
+            border: 1px solid var(--spirit-line);
+            background:
+                linear-gradient(180deg, rgba(18, 26, 46, 0.92), rgba(17, 12, 28, 0.9)),
+                radial-gradient(circle at top left, rgba(95, 223, 223, 0.12), transparent 34%),
+                radial-gradient(circle at center right, rgba(184, 255, 92, 0.05), transparent 18%),
+                radial-gradient(circle at bottom right, rgba(255, 45, 143, 0.12), transparent 32%);
+            border-radius: 1.8rem;
+            box-shadow: var(--spirit-shadow);
+            backdrop-filter: blur(18px);
+        }
+
+        .spirit-device {
+            position: absolute;
+            top: 0;
+            right: 1rem;
+            width: min(24rem, 72%);
+            padding: 0.95rem;
+            border-radius: 2.2rem;
+            background: linear-gradient(180deg, rgba(30, 159, 242, 0.12), rgba(124, 58, 237, 0.08));
+            border: 1px solid rgba(95, 223, 223, 0.18);
+            box-shadow: 0 30px 70px rgba(0, 0, 0, 0.44), 0 0 80px rgba(124, 58, 237, 0.18), 0 0 120px rgba(255, 45, 143, 0.08);
+        }
+
+        .spirit-device img {
             width: 100%;
             display: block;
+            border-radius: 1.55rem;
+            aspect-ratio: 9 / 19;
+            object-fit: cover;
         }
 
-        .quiz-steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2.5rem;
-        }
-
-        .quiz-step {
-            background: rgba(30,159,242,0.07);
-            border: 1px solid rgba(30,159,242,0.2);
-            border-radius: 12px;
-            padding: 1.5rem;
-            text-align: center;
-        }
-
-        .quiz-step-num {
-            font-family: var(--font-mono);
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--color-cyan);
-            margin-bottom: 0.75rem;
-        }
-
-        .pricing-cards {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-            max-width: 700px;
-            margin: 2.5rem auto 0;
-        }
-
-        @media (max-width: 600px) {
-            .pricing-cards {
-                grid-template-columns: 1fr;
-            }
-            .entity-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        .pricing-card {
-            border-radius: 16px;
-            padding: 2rem;
-            text-align: center;
-            border: 1px solid rgba(95,223,223,0.25);
-            background: var(--color-charcoal);
-        }
-
-        .pricing-card.featured {
-            border-color: var(--color-cyan);
-            background: linear-gradient(135deg, rgba(95,223,223,0.1), rgba(30,159,242,0.05));
-            position: relative;
-        }
-
-        .pricing-badge {
+        .spirit-device::before {
+            content: "";
             position: absolute;
-            top: -12px;
+            top: 0.6rem;
             left: 50%;
             transform: translateX(-50%);
-            background: var(--color-cyan);
-            color: #000;
-            font-size: 0.7rem;
-            font-weight: 700;
-            letter-spacing: 0.1em;
+            width: 7rem;
+            height: 0.45rem;
+            border-radius: 999px;
+            background: rgba(11, 8, 11, 0.9);
+        }
+
+        .spirit-signal {
+            position: absolute;
+            padding: 1.15rem 1.2rem;
+            width: min(16.5rem, 48vw);
+            box-shadow: 0 22px 44px rgba(0, 0, 0, 0.28), 0 0 36px rgba(95, 223, 223, 0.12), 0 0 60px rgba(124, 58, 237, 0.08);
+        }
+
+        .spirit-signal strong {
+            display: block;
+            font-family: "JetBrains Mono", monospace;
+            font-size: 0.74rem;
+            letter-spacing: 0.14em;
             text-transform: uppercase;
-            padding: 0.3rem 1rem;
-            border-radius: 20px;
+            color: var(--spirit-cyan);
+            margin-bottom: 0.45rem;
         }
 
-        .price-amount {
-            font-family: var(--font-mono);
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--color-cyan);
-            margin: 1rem 0 0.25rem;
+        .spirit-signal h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.35rem;
         }
 
-        .price-period {
-            font-size: 0.85rem;
-            color: rgba(255,255,255,0.5);
+        .spirit-signal p {
+            margin: 0;
+            font-size: 0.95rem;
         }
 
-        .features-list {
-            list-style: none;
-            padding: 0;
-            margin: 1.5rem 0;
-            text-align: left;
+        .spirit-signal.top-left {
+            top: 5rem;
+            left: 0;
         }
 
-        .features-list li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid rgba(255,255,255,0.07);
-            font-size: 0.9rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+        .spirit-signal.bottom-left {
+            left: 2rem;
+            bottom: 4rem;
         }
 
-        .features-list li:last-child {
+        .spirit-signal.bottom-right {
+            right: 0;
+            bottom: 0;
+        }
+
+        .spirit-benediction {
+            position: absolute;
+            top: 18rem;
+            left: 4rem;
+            max-width: 15rem;
+            padding: 1.35rem;
+            border-left: 1px solid rgba(95, 223, 223, 0.25);
+            background: linear-gradient(90deg, rgba(95, 223, 223, 0.08), transparent);
+        }
+
+        .spirit-benediction p {
+            margin: 0;
+            font-family: "IBM Plex Sans", sans-serif;
+            font-size: 1.12rem;
+            font-weight: 600;
+            line-height: 1.2;
+            color: rgba(240, 244, 248, 0.9);
+        }
+
+        .spirit-benediction span {
+            display: inline-block;
+            margin-top: 0.7rem;
+            font-family: "JetBrains Mono", monospace;
+            font-size: 0.74rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: rgba(95, 223, 223, 0.72);
+        }
+
+        .spirit-proof-grid,
+        .spirit-library-grid,
+        .spirit-context-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 1.25rem;
+        }
+
+        .spirit-proof-card,
+        .spirit-library-card,
+        .spirit-context-card {
+            padding: 1.7rem;
+        }
+
+        .spirit-proof-card strong {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-family: "Archivo Black", impact, sans-serif;
+            font-size: 2.2rem;
+            color: var(--spirit-cyan);
+            text-shadow: 0 0 18px rgba(95, 223, 223, 0.18);
+        }
+
+        .spirit-proof-card p {
+            margin: 0;
+            font-size: 0.98rem;
+        }
+
+        .spirit-section-head {
+            max-width: 46rem;
+            margin: 0 auto 3rem;
+            text-align: center;
+        }
+
+        .spirit-entities {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 1.25rem;
+        }
+
+        .spirit-entity-card {
+            position: relative;
+            min-height: 28rem;
+            overflow: hidden;
+            border-radius: 1.7rem;
+            background:
+                linear-gradient(180deg, rgba(30, 159, 242, 0.1), rgba(124, 58, 237, 0.08)),
+                radial-gradient(circle at 50% 0%, rgba(255, 45, 143, 0.12), transparent 34%);
+            border: 1px solid rgba(95, 223, 223, 0.16);
+            transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+        }
+
+        .spirit-entity-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(95, 223, 223, 0.34);
+            box-shadow: 0 26px 70px rgba(0, 0, 0, 0.42), 0 0 50px rgba(124, 58, 237, 0.2), 0 0 90px rgba(255, 45, 143, 0.1);
+        }
+
+        .spirit-entity-card img,
+        .spirit-entity-card .spirit-entity-placeholder {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .spirit-entity-placeholder {
+            display: grid;
+            place-items: center;
+            background:
+                radial-gradient(circle at 50% 32%, rgba(255, 45, 143, 0.3), transparent 22%),
+                linear-gradient(180deg, rgba(30, 159, 242, 0.24), rgba(124, 58, 237, 0.22), rgba(15, 11, 17, 0.96));
+            color: var(--spirit-cyan);
+            font-family: "Archivo Black", impact, sans-serif;
+            font-size: 4rem;
+        }
+
+        .spirit-entity-overlay {
+            position: absolute;
+            inset: auto 0 0;
+            padding: 1.4rem 1.3rem 1.3rem;
+            background: linear-gradient(180deg, transparent, rgba(8, 10, 18, 0.82) 30%, rgba(8, 6, 9, 0.98) 100%);
+        }
+
+        .spirit-entity-index {
+            display: inline-flex;
+            margin-bottom: 0.7rem;
+            font-family: "JetBrains Mono", monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: rgba(95, 223, 223, 0.82);
+        }
+
+        .spirit-entity-overlay h3 {
+            margin-bottom: 0.35rem;
+            font-size: 1.95rem;
+        }
+
+        .spirit-entity-overlay p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: rgba(247, 239, 225, 0.76);
+        }
+
+        .spirit-ritual-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .spirit-panel {
+            padding: 2rem;
+        }
+
+        .spirit-ritual-list {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .spirit-ritual-step {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1rem;
+            align-items: start;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(95, 223, 223, 0.12);
+        }
+
+        .spirit-ritual-step:last-child {
             border-bottom: none;
         }
 
-        .features-list li::before {
-            content: "✦";
-            color: var(--color-cyan);
-            font-size: 0.7rem;
-            flex-shrink: 0;
+        .spirit-step-num {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(135deg, rgba(95, 223, 223, 0.18), rgba(124, 58, 237, 0.24));
+            color: var(--spirit-ink);
+            font-family: "JetBrains Mono", monospace;
+            font-size: 0.82rem;
+            letter-spacing: 0.1em;
         }
 
-        .cosmic-banner {
-            background: linear-gradient(135deg, rgba(95,223,223,0.12) 0%, rgba(30,159,242,0.08) 50%, rgba(95,223,223,0.05) 100%);
-            border: 1px solid rgba(95,223,223,0.3);
-            border-radius: 16px;
-            padding: 2.5rem;
-            text-align: center;
-            margin: 3rem 0;
+        .spirit-pair-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 2rem;
         }
 
-        .archetype-pair {
+        .spirit-pair-chip {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            background: rgba(95,223,223,0.1);
-            border: 1px solid rgba(95,223,223,0.3);
-            border-radius: 8px;
-            padding: 0.4rem 1rem;
-            font-family: var(--font-mono);
-            font-size: 0.85rem;
-            color: var(--color-cyan);
-            margin: 0.25rem;
+            padding: 0.7rem 1rem;
+            border-radius: 999px;
+            background: linear-gradient(135deg, rgba(30, 159, 242, 0.08), rgba(124, 58, 237, 0.08));
+            border: 1px solid rgba(95, 223, 223, 0.16);
+            font-family: "JetBrains Mono", monospace;
+            font-size: 0.78rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(247, 239, 225, 0.82);
+        }
+
+        .spirit-ritual-aside {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .spirit-screen-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 1.25rem;
+            align-items: stretch;
+        }
+
+        .spirit-screen-card {
+            overflow: hidden;
+            border-radius: 1.5rem;
+            min-height: 19rem;
+            border: 1px solid rgba(95, 223, 223, 0.14);
+            background: linear-gradient(180deg, rgba(30, 159, 242, 0.08), rgba(124, 58, 237, 0.06));
+            box-shadow: 0 22px 50px rgba(0, 0, 0, 0.2), 0 0 42px rgba(124, 58, 237, 0.08);
+        }
+
+        .spirit-screen-card img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .spirit-screen-stack {
+            display: grid;
+            gap: 1.25rem;
+        }
+
+        .spirit-app-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .spirit-library-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            margin-top: 2rem;
+        }
+
+        .spirit-library-card {
+            padding: 1.7rem;
+            border-radius: 1.6rem;
+            border: 1px solid rgba(95, 223, 223, 0.14);
+            background: linear-gradient(180deg, rgba(30, 159, 242, 0.08), rgba(124, 58, 237, 0.06));
+            box-shadow: 0 20px 42px rgba(0, 0, 0, 0.16), 0 0 32px rgba(95, 223, 223, 0.08);
+        }
+
+        .spirit-library-card .spirit-meta-label {
+            margin-bottom: 1rem;
+        }
+
+        .spirit-library-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .spirit-app-note {
+            padding: 1.75rem;
+        }
+
+        .spirit-app-note ul {
+            list-style: none;
+            margin: 1.25rem 0 0;
+            padding: 0;
+        }
+
+        .spirit-app-note li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(95, 223, 223, 0.12);
+        }
+
+        .spirit-app-note li:last-child {
+            border-bottom: none;
+        }
+
+        .spirit-context-grid {
+            margin-top: 2rem;
+        }
+
+        .spirit-context-card h3 {
+            font-size: 1.8rem;
+        }
+
+        .spirit-context-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 1.2rem 0 0;
+        }
+
+        .spirit-context-card li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(95, 223, 223, 0.12);
+        }
+
+        .spirit-context-card li:last-child {
+            border-bottom: none;
+        }
+
+        .spirit-pricing {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .spirit-pricing-card {
+            position: relative;
+            padding: 2rem;
+        }
+
+        .spirit-pricing-card.featured {
+            border-color: rgba(95, 223, 223, 0.34);
+            box-shadow: 0 30px 90px rgba(124, 58, 237, 0.3);
+            background:
+                linear-gradient(180deg, rgba(18, 30, 60, 0.96), rgba(24, 12, 40, 0.94)),
+                radial-gradient(circle at top left, rgba(95, 223, 223, 0.1), transparent 34%),
+                radial-gradient(circle at center right, rgba(184, 255, 92, 0.06), transparent 18%),
+                radial-gradient(circle at bottom right, rgba(255, 45, 143, 0.12), transparent 32%);
+        }
+
+        .spirit-pricing-badge {
+            position: absolute;
+            top: -0.8rem;
+            left: 2rem;
+            padding: 0.45rem 0.8rem;
+            border-radius: 999px;
+            background: linear-gradient(135deg, var(--spirit-cyan), var(--spirit-magenta));
+            color: #0d1117;
+            font-family: "JetBrains Mono", monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        .spirit-price {
+            display: flex;
+            align-items: flex-end;
+            gap: 0.4rem;
+            margin: 1rem 0 0.4rem;
+        }
+
+        .spirit-price strong {
+            font-family: "Archivo Black", impact, sans-serif;
+            font-size: 3.2rem;
+            line-height: 1;
+            color: var(--spirit-ink);
+            text-shadow: 0 0 24px rgba(95, 223, 223, 0.12), 0 0 40px rgba(255, 45, 143, 0.08);
+        }
+
+        .spirit-page .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 6%;
+            width: 28rem;
+            height: 28rem;
+            background: radial-gradient(circle, rgba(255, 45, 143, 0.08), transparent 60%);
+            filter: blur(24px);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .spirit-shell::before,
+            .spirit-shell::after {
+                animation: none;
+            }
+        }
+
+        .spirit-price span {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 0.8rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: rgba(95, 223, 223, 0.76);
+            margin-bottom: 0.55rem;
+        }
+
+        .spirit-feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0 0;
+        }
+
+        .spirit-feature-list li {
+            display: flex;
+            gap: 0.7rem;
+            padding: 0.72rem 0;
+            border-bottom: 1px solid rgba(95, 223, 223, 0.12);
+        }
+
+        .spirit-feature-list li:last-child {
+            border-bottom: none;
+        }
+
+        .spirit-feature-list li::before {
+            content: "✦";
+            color: var(--spirit-cyan);
+            flex: none;
+        }
+
+        .spirit-final {
+            text-align: center;
+            max-width: 46rem;
+            margin: 0 auto;
+        }
+
+        .spirit-final .spirit-actions {
+            justify-content: center;
+        }
+
+        .spirit-page .footer {
+            background: rgba(11, 8, 12, 0.86);
+            border-top: 1px solid rgba(30, 159, 242, 0.18);
+        }
+
+        @media (max-width: 1180px) {
+            .spirit-hero-grid,
+            .spirit-ritual-grid,
+            .spirit-app-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .spirit-proof-grid,
+            .spirit-context-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .spirit-entities {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .spirit-hero-visual {
+                min-height: 40rem;
+                margin-top: 1rem;
+            }
+        }
+
+        @media (max-width: 860px) {
+            .spirit-page .section {
+                padding: 5rem 0;
+            }
+
+            .spirit-hero {
+                min-height: auto;
+                padding-top: 7.5rem;
+            }
+
+            .spirit-hero-stats,
+            .spirit-library-grid,
+            .spirit-pricing,
+            .spirit-screen-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .spirit-proof-grid,
+            .spirit-context-grid,
+            .spirit-entities {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .spirit-device {
+                position: relative;
+                width: min(100%, 26rem);
+                margin: 0 auto;
+                right: auto;
+            }
+
+            .spirit-signal,
+            .spirit-benediction {
+                position: relative;
+                inset: auto;
+                width: auto;
+                max-width: none;
+            }
+
+            .spirit-hero-visual {
+                min-height: auto;
+                display: grid;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 620px) {
+            .spirit-page .container {
+                padding: 0 1.1rem;
+            }
+
+            .spirit-proof-grid,
+            .spirit-context-grid,
+            .spirit-entities {
+                grid-template-columns: 1fr;
+            }
+
+            .spirit-title {
+                font-size: 3rem;
+            }
+
+            .spirit-actions {
+                flex-direction: column;
+            }
+
+            .spirit-page .btn {
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+            }
         }
     </style>
 </head>
-<body>
-    <!-- Navigation -->
+<body class="spirit-page">
     <nav class="nav">
         <div class="container nav-container">
             <div class="logo">
@@ -277,10 +922,9 @@
                 <li class="has-dropdown">
                     <a href="#team">Team</a>
                     <ul class="dropdown-menu">
-                        <li><a href="/jonathan">Jonathan Maldonado</a></li>
+                        <li><a href="/jonathan">Jonathan Mallinger</a></li>
                         <li><a href="/lilly">Lilly Fano</a></li>
                         <li><a href="/bri">Bri Lee</a></li>
-                        <li><a href="/alicia">Alicia Young</a></li>
                     </ul>
                 </li>
                 <li><a href="/contact" class="nav-cta">Contact</a></li>
@@ -288,414 +932,423 @@
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="hero" style="min-height: 80vh; padding-top: 130px; padding-bottom: 80px;">
-        <div class="hero-background"></div>
-        <div class="container">
-            <div class="section-header centered">
-                <span class="spirit-hero-label">∞ Cosmic Entity Discovery</span>
-                <h1 class="section-title" style="font-size: clamp(3rem, 7vw, 5.5rem); letter-spacing: -0.02em;">Spirit</h1>
-                <p class="section-description" style="max-width: 680px; margin: 1.5rem auto; font-size: 1.25rem; line-height: 1.7;">12 ancient cosmic forces predate recorded history. One survived the Tartarian reset. It has been trying to reach you.&nbsp;12 questions will tell you which one.</p>
-                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
-                    <a href="https://isn.biz" target="_blank" rel="noopener" class="btn btn-primary"><span>Find Your Entity &rarr; isn.biz</span></a>
-                    <a href="#entities" class="btn btn-outline"><span>Meet the Entities</span></a>
-                </div>
-                <p style="margin-top: 1.5rem; font-size: 0.9rem; color: rgba(255,255,255,0.45); font-family: var(--font-mono);">Free to discover &nbsp;·&nbsp; $9.99/month for full cosmic access</p>
-            </div>
-
-            <!-- App screenshots strip -->
-            <div style="margin-top: 4rem;">
-                <div class="screenshots-row">
-                    <div class="screenshot-frame">
-                        <img src="/spiritatlas_screenshots/01_home-dashboard.webp" alt="Spirit app home dashboard — daily cosmic markers" loading="lazy">
+    <main class="spirit-shell">
+        <section class="section spirit-hero">
+            <div class="container">
+                <div class="spirit-hero-grid">
+                    <div class="spirit-hero-copy">
+                        <span class="spirit-kicker">Ritual-Forward Portfolio Feature</span>
+                        <h1 class="spirit-title">Spirit Atlas</h1>
+                        <p class="spirit-lead">Spirit Atlas is the part of the iSN.BiZ portfolio that should not look like enterprise software at all. It should feel like a private chamber, a lit altar, a cosmology rendered into a phone. This page now leans fully into that idea.</p>
+                        <p class="spirit-copy">The product starts with twelve questions, but the emotional promise is larger: identify the force shaping your instincts, unlock daily symbolic guidance, and turn compatibility into a ritual instead of a report. The result is a mobile experience with a stronger identity than the rest of the site and a landing page that reflects it instead of flattening it into another generic product case study.</p>
+                        <div class="spirit-actions">
+                            <a href="https://isn.biz" target="_blank" rel="noopener" class="btn btn-primary"><span>Find Your Entity</span></a>
+                            <a href="#entities" class="btn btn-outline"><span>Explore the Twelve Forces</span></a>
+                        </div>
+                        <p class="spirit-footnote">Free entity reveal · Premium ritual library at $9.99/month · Built for iOS and Android</p>
+                        <div class="spirit-hero-stats" aria-label="Spirit Atlas key facts">
+                            <div class="spirit-stat-card">
+                                <strong>12</strong>
+                                <span>Cosmic entities</span>
+                            </div>
+                            <div class="spirit-stat-card">
+                                <strong>444</strong>
+                                <span>Guidance artifacts</span>
+                            </div>
+                            <div class="spirit-stat-card">
+                                <strong>2</strong>
+                                <span>Archetypes revealed</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="screenshot-frame">
-                        <img src="/spiritatlas_screenshots/06_create-profile-basics.webp" alt="Spirit app — create your cosmic profile" loading="lazy">
-                    </div>
-                    <div class="screenshot-frame">
-                        <img src="/spiritatlas_screenshots/07_home_dashboard.png" alt="Spirit app — cosmic entity home feed" loading="lazy">
-                    </div>
-                    <div class="screenshot-frame">
-                        <img src="/spiritatlas_screenshots/04_profiles-hub.webp" alt="Spirit app — profiles hub" loading="lazy">
-                    </div>
-                    <div class="screenshot-frame">
-                        <img src="/spiritatlas_screenshots/11_connection-narrative-2.webp" alt="Spirit app — connection narrative" loading="lazy">
-                    </div>
-                    <div class="screenshot-frame">
-                        <img src="/spiritatlas_screenshots/12_connection-narrative-3.webp" alt="Spirit app — compatibility reading" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- The Cosmic Banner -->
-    <section class="section" style="padding-top: 2rem; padding-bottom: 2rem;">
-        <div class="container">
-            <div class="cosmic-banner">
-                <p style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.2em; color: var(--color-cyan); margin-bottom: 1rem; text-transform: uppercase;">The Ancient Knowledge</p>
-                <p style="font-size: 1.15rem; line-height: 1.8; max-width: 820px; margin: 0 auto; color: rgba(255,255,255,0.85);">These entities predate recorded history. They encoded their frequencies into Tartarian architecture. The sacred geometry of cathedrals, obelisks, and world's fair towers wasn't decoration &mdash; it was transmission. The reset erased the knowledge. Spirit recovers it.</p>
-                <div style="margin-top: 1.5rem; display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-                    <div style="text-align: center;">
-                        <div style="font-family: var(--font-mono); font-size: 2rem; font-weight: 700; color: var(--color-cyan);">12</div>
-                        <div style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">Cosmic Forces</div>
-                    </div>
-                    <div style="text-align: center;">
-                        <div style="font-family: var(--font-mono); font-size: 2rem; font-weight: 700; color: var(--color-cyan);">444</div>
-                        <div style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">Ancient Teachings</div>
-                    </div>
-                    <div style="text-align: center;">
-                        <div style="font-family: var(--font-mono); font-size: 2rem; font-weight: 700; color: var(--color-cyan);">2</div>
-                        <div style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">Archetypes Revealed</div>
-                    </div>
-                    <div style="text-align: center;">
-                        <div style="font-family: var(--font-mono); font-size: 2rem; font-weight: 700; color: var(--color-cyan);">12</div>
-                        <div style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">Questions</div>
+                    <div class="spirit-hero-visual" aria-hidden="true">
+                        <div class="spirit-device">
+                            <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_090332/01_01_home-dashboard.webp" alt="Spirit Atlas app dashboard showing ritual prompts and daily cosmic guidance" loading="eager">
+                        </div>
+                        <div class="spirit-signal top-left">
+                            <strong>Daily signal</strong>
+                            <h3>Moon phase, mood, motion.</h3>
+                            <p>Home feels less like a dashboard and more like a ceremonial briefing for the day ahead.</p>
+                        </div>
+                        <div class="spirit-benediction">
+                            <p>"The entity was not found. It was remembered."</p>
+                            <span>Spirit Atlas positioning line</span>
+                        </div>
+                        <div class="spirit-signal bottom-left">
+                            <strong>Compatibility</strong>
+                            <h3>Relational ritual</h3>
+                            <p>Profiles, intention, and AI narrative generation turn attraction into something legible and shareable.</p>
+                        </div>
+                        <div class="spirit-signal bottom-right">
+                            <strong>Premium depth</strong>
+                            <h3>444 teachings</h3>
+                            <p>Breathwork, sacred geometry, intimacy practices, and symbolic interpretation tied to the user’s revealed pattern.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- The 12 Cosmic Entities -->
-    <section class="section" id="entities" style="background: var(--color-charcoal);">
-        <div class="container">
-            <div class="section-header centered">
-                <span class="spirit-hero-label">✦ The Twelve Forces</span>
-                <h2 class="section-title">The Cosmic Entities</h2>
-                <p class="section-description" style="max-width: 720px; margin: 1rem auto 0;">These are not archetypes invented by psychologists. They are forces that have moved through civilizations for millennia. One of them has been shaping your decisions your entire life.</p>
-            </div>
-
-            <div class="entity-grid">
-
-                <div class="entity-card">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/entity_v3_crystalline_combo18_00001_.png" alt="The Crystalline — clarity force" loading="lazy">
-                    <div class="entity-overlay">
-                        <p class="entity-name">✦ Crystalline</p>
-                        <p class="entity-tagline">Clarity. Precision. Geometric truth.</p>
-                    </div>
-                </div>
-
-                <div class="entity-card">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/entity_v3_architect_combo18_00001_.png" alt="The Architect — builder force" loading="lazy">
-                    <div class="entity-overlay">
-                        <p class="entity-name">✦ Architect</p>
-                        <p class="entity-tagline">Structure. Legacy. Sacred design.</p>
-                    </div>
-                </div>
-
-                <div class="entity-card">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/dmt_entity_weaver_combo7_00001_.png" alt="The Weaver — connection force" loading="lazy">
-                    <div class="entity-overlay">
-                        <p class="entity-name">✦ Weaver</p>
-                        <p class="entity-tagline">Threads. Patterns. Hidden connections.</p>
-                    </div>
-                </div>
-
-                <div class="entity-card">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/dmt_entity_v2_timekeeper_combo18_00001_.png" alt="The Timekeeper — cycles force" loading="lazy">
-                    <div class="entity-overlay">
-                        <p class="entity-name">✦ Timekeeper</p>
-                        <p class="entity-tagline">Cycles. Memory. Ancient calendars.</p>
-                    </div>
-                </div>
-
-                <div class="entity-card">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/entity_v3_mother_combo18_00001_.png" alt="The Mother — nurture force" loading="lazy">
-                    <div class="entity-overlay">
-                        <p class="entity-name">✦ Mother</p>
-                        <p class="entity-tagline">Cosmic womb. Unconditional hold.</p>
-                    </div>
-                </div>
-
-                <div class="entity-card">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/entity_v3_healer_combo18_00001_.png" alt="The Healer — restoration force" loading="lazy">
-                    <div class="entity-overlay">
-                        <p class="entity-name">✦ Healer</p>
-                        <p class="entity-tagline">Restoration. Frequency. Light.</p>
-                    </div>
-                </div>
-
-                <div class="entity-card">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/dmt_entity_oracle_combo7_00002_.png" alt="The Oracle — sight force" loading="lazy">
-                    <div class="entity-overlay">
-                        <p class="entity-name">✦ Oracle</p>
-                        <p class="entity-tagline">Foresight. Signal. Knowing.</p>
-                    </div>
-                </div>
-
-                <div class="entity-card">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/dmt_entity_v2_serpent_queen_combo18_00001_.png" alt="The Serpent Queen — transmutation force" loading="lazy">
-                    <div class="entity-overlay">
-                        <p class="entity-name">✦ Serpent Queen</p>
-                        <p class="entity-tagline">Transmutation. Power. Rebirth.</p>
-                    </div>
-                </div>
-
-                <div class="entity-card">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/entity_3_jester_b.png" alt="The Jester — chaos force" loading="lazy">
-                    <div class="entity-overlay">
-                        <p class="entity-name">✦ Jester</p>
-                        <p class="entity-tagline">Chaos. Truth. Sacred disruption.</p>
-                    </div>
-                </div>
-
-                <!-- Guardian — image pending -->
-                <div class="entity-card">
-                    <div class="entity-placeholder">◈</div>
-                    <div class="entity-overlay">
-                        <p class="entity-name">✦ Guardian</p>
-                        <p class="entity-tagline">Protection. Threshold. Watch.</p>
-                    </div>
-                </div>
-
-                <div class="entity-card">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/dmt_entity_machine_elf_combo7_00004_.png" alt="The Machine Elf — technology force" loading="lazy">
-                    <div class="entity-overlay">
-                        <p class="entity-name">✦ Machine Elf</p>
-                        <p class="entity-tagline">Code. Frequency. Hyperspace.</p>
-                    </div>
-                </div>
-
-                <div class="entity-card">
-                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/dmt_entity_void_dancer_combo7_00004_.png" alt="The Void Dancer — mystery force" loading="lazy">
-                    <div class="entity-overlay">
-                        <p class="entity-name">✦ Void Dancer</p>
-                        <p class="entity-tagline">Dissolution. Mystery. The between.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="https://isn.biz" target="_blank" rel="noopener" class="btn btn-primary"><span>Discover Yours &rarr; isn.biz</span></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- The Quiz Journey -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header centered">
-                <span class="spirit-hero-label">◈ The Discovery</span>
-                <h2 class="section-title">12 Questions. Two Archetypes. Everything Changes.</h2>
-                <p class="section-description" style="max-width: 680px; margin: 1rem auto 0;">The Spirit onboarding isn't a quiz. It's a channel. Each question cuts through the surface to reveal the two cosmic forces you carry &mdash; your Power Archetype and your Seduction Archetype.</p>
-            </div>
-
-            <div class="quiz-steps">
-                <div class="quiz-step">
-                    <div class="quiz-step-num">01</div>
-                    <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Enter</h4>
-                    <p style="font-size: 0.9rem; margin: 0; color: rgba(255,255,255,0.7);">Your name, birth details, and the location the cosmos witnessed your arrival.</p>
-                </div>
-                <div class="quiz-step">
-                    <div class="quiz-step-num">12</div>
-                    <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Answer</h4>
-                    <p style="font-size: 0.9rem; margin: 0; color: rgba(255,255,255,0.7);">Questions on conflict, leadership, intimacy, ambition, attraction. No right answers. Only true ones.</p>
-                </div>
-                <div class="quiz-step">
-                    <div class="quiz-step-num">∞</div>
-                    <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Reveal</h4>
-                    <p style="font-size: 0.9rem; margin: 0; color: rgba(255,255,255,0.7);">Two archetypes surface. Your Power signature. Your Seduction signature. They must be different &mdash; by cosmic law.</p>
+        <section class="section">
+            <div class="container">
+                <div class="spirit-proof-grid">
+                    <article class="spirit-proof-card">
+                        <strong>01</strong>
+                        <p>Twelve entities give the product a fixed mythology, so the app can be expressive without becoming vague.</p>
+                    </article>
+                    <article class="spirit-proof-card">
+                        <strong>02</strong>
+                        <p>The onboarding is framed as a reveal sequence, not a sterile form flow, which gives the interface emotional tension.</p>
+                    </article>
+                    <article class="spirit-proof-card">
+                        <strong>03</strong>
+                        <p>Compatibility is the strongest everyday hook because it converts abstract symbolism into relationship language users can act on.</p>
+                    </article>
+                    <article class="spirit-proof-card">
+                        <strong>04</strong>
+                        <p>The premium offer works best when it feels like entry into a private library rather than an upsell to “more content.”</p>
+                    </article>
                 </div>
             </div>
+        </section>
 
-            <!-- Archetype pairs preview -->
-            <div style="margin-top: 3rem; text-align: center;">
-                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.4); font-family: var(--font-mono); letter-spacing: 0.1em; margin-bottom: 1.25rem;">THE 12 ARCHETYPES</p>
-                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;">
-                    <span class="archetype-pair">The Initiator</span>
-                    <span class="archetype-pair">The Sensualist</span>
-                    <span class="archetype-pair">The Shapeshifter</span>
-                    <span class="archetype-pair">The Nurturer</span>
-                    <span class="archetype-pair">The Performer</span>
-                    <span class="archetype-pair">The Analyst</span>
-                    <span class="archetype-pair">The Harmonizer</span>
-                    <span class="archetype-pair">The Alchemist</span>
-                    <span class="archetype-pair">The Explorer</span>
-                    <span class="archetype-pair">The Architect</span>
-                    <span class="archetype-pair">The Visionary</span>
-                    <span class="archetype-pair">The Mystic</span>
+        <section class="section" id="entities">
+            <div class="container">
+                <div class="spirit-section-head">
+                    <span class="spirit-kicker">The Twelve Forces</span>
+                    <h2>Every entity carries a distinct emotional climate.</h2>
+                    <p>The page now treats the entity roster as a gallery instead of a flat card grid. Each portrait is allowed to feel collectible, ceremonial, and slightly dangerous, which is closer to the product fantasy users are actually buying into.</p>
+                </div>
+                <div class="spirit-entities">
+                    <article class="spirit-entity-card">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/entity_v3_crystalline_combo18_00001_.png" alt="The Crystalline entity portrait" loading="lazy">
+                        <div class="spirit-entity-overlay">
+                            <span class="spirit-entity-index">Entity 01</span>
+                            <h3>Crystalline</h3>
+                            <p>Precision, pattern recognition, and the desire to make hidden structure visible.</p>
+                        </div>
+                    </article>
+                    <article class="spirit-entity-card">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/entity_v3_architect_combo18_00001_.png" alt="The Architect entity portrait" loading="lazy">
+                        <div class="spirit-entity-overlay">
+                            <span class="spirit-entity-index">Entity 02</span>
+                            <h3>Architect</h3>
+                            <p>Legacy, systems, and the instinct to build environments that outlast the self.</p>
+                        </div>
+                    </article>
+                    <article class="spirit-entity-card">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/dmt_entity_weaver_combo7_00001_.png" alt="The Weaver entity portrait" loading="lazy">
+                        <div class="spirit-entity-overlay">
+                            <span class="spirit-entity-index">Entity 03</span>
+                            <h3>Weaver</h3>
+                            <p>Connection, symbolism, and the ability to sense meaning before logic arrives.</p>
+                        </div>
+                    </article>
+                    <article class="spirit-entity-card">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/dmt_entity_v2_timekeeper_combo18_00001_.png" alt="The Timekeeper entity portrait" loading="lazy">
+                        <div class="spirit-entity-overlay">
+                            <span class="spirit-entity-index">Entity 04</span>
+                            <h3>Timekeeper</h3>
+                            <p>Cycles, memory, and devotion to the timing of revelation rather than speed.</p>
+                        </div>
+                    </article>
+                    <article class="spirit-entity-card">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/entity_v3_mother_combo18_00001_.png" alt="The Mother entity portrait" loading="lazy">
+                        <div class="spirit-entity-overlay">
+                            <span class="spirit-entity-index">Entity 05</span>
+                            <h3>Mother</h3>
+                            <p>Containment, softness, and the force that makes growth feel safe enough to happen.</p>
+                        </div>
+                    </article>
+                    <article class="spirit-entity-card">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/entity_v3_healer_combo18_00001_.png" alt="The Healer entity portrait" loading="lazy">
+                        <div class="spirit-entity-overlay">
+                            <span class="spirit-entity-index">Entity 06</span>
+                            <h3>Healer</h3>
+                            <p>Repair, frequency, and the patient turning of damage into knowledge.</p>
+                        </div>
+                    </article>
+                    <article class="spirit-entity-card">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/dmt_entity_oracle_combo7_00002_.png" alt="The Oracle entity portrait" loading="lazy">
+                        <div class="spirit-entity-overlay">
+                            <span class="spirit-entity-index">Entity 07</span>
+                            <h3>Oracle</h3>
+                            <p>Signal, foresight, and language that arrives before the explanation does.</p>
+                        </div>
+                    </article>
+                    <article class="spirit-entity-card">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/dmt_entity_v2_serpent_queen_combo18_00001_.png" alt="The Serpent Queen entity portrait" loading="lazy">
+                        <div class="spirit-entity-overlay">
+                            <span class="spirit-entity-index">Entity 08</span>
+                            <h3>Serpent Queen</h3>
+                            <p>Power, transmutation, and the refusal to stay in one form for long.</p>
+                        </div>
+                    </article>
+                    <article class="spirit-entity-card">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/entity_3_jester_b.png" alt="The Jester entity portrait" loading="lazy">
+                        <div class="spirit-entity-overlay">
+                            <span class="spirit-entity-index">Entity 09</span>
+                            <h3>Jester</h3>
+                            <p>Disruption, seduction, and the holy function of making false seriousness collapse.</p>
+                        </div>
+                    </article>
+                    <article class="spirit-entity-card">
+                        <div class="spirit-entity-placeholder">◈</div>
+                        <div class="spirit-entity-overlay">
+                            <span class="spirit-entity-index">Entity 10</span>
+                            <h3>Guardian</h3>
+                            <p>Thresholds, defense, and the calm authority that decides what gets entry.</p>
+                        </div>
+                    </article>
+                    <article class="spirit-entity-card">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/dmt_entity_machine_elf_combo7_00004_.png" alt="The Machine Elf entity portrait" loading="lazy">
+                        <div class="spirit-entity-overlay">
+                            <span class="spirit-entity-index">Entity 11</span>
+                            <h3>Machine Elf</h3>
+                            <p>Code, impossible geometry, and the feeling that technology is also a ritual surface.</p>
+                        </div>
+                    </article>
+                    <article class="spirit-entity-card">
+                        <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/spirit/images/portrait/entity/dmt_entity_void_dancer_combo7_00004_.png" alt="The Void Dancer entity portrait" loading="lazy">
+                        <div class="spirit-entity-overlay">
+                            <span class="spirit-entity-index">Entity 12</span>
+                            <h3>Void Dancer</h3>
+                            <p>Mystery, surrender, and the suspended moment before a new self appears.</p>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Features: What's Inside -->
-    <section class="section" style="background: var(--color-charcoal);">
-        <div class="container">
-            <div class="section-header centered">
-                <span class="spirit-hero-label">✧ Inside Spirit</span>
-                <h2 class="section-title">Ancient Wisdom. Daily Access.</h2>
-                <p class="section-description" style="max-width: 680px; margin: 1rem auto 0;">The full library unlocks when your entity is known. Not generic horoscopes &mdash; 444 pieces of ancient teaching mapped to your specific cosmic signature.</p>
-            </div>
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
-
-                <div style="background: rgba(95,223,223,0.06); border: 1px solid rgba(95,223,223,0.2); border-radius: 12px; padding: 1.75rem;">
-                    <div style="font-size: 1.5rem; margin-bottom: 1rem;">✦</div>
-                    <h3 style="color: var(--color-cyan); margin-bottom: 0.75rem; font-size: 1.1rem;">Daily Cosmic Markers</h3>
-                    <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">Every day, 12 personalized markers arrive &mdash; specific to your archetypes, not shared with everyone born in your month. This is what a real reading feels like.</p>
-                </div>
-
-                <div style="background: rgba(30,159,242,0.06); border: 1px solid rgba(30,159,242,0.2); border-radius: 12px; padding: 1.75rem;">
-                    <div style="font-size: 1.5rem; margin-bottom: 1rem;">◈</div>
-                    <h3 style="color: var(--color-blue); margin-bottom: 0.75rem; font-size: 1.1rem;">216 Tantric Teachings</h3>
-                    <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">Ancient intimacy wisdom mapped to your archetype, zodiac, and gender. The teachings the reset tried hardest to erase.</p>
-                </div>
-
-                <div style="background: rgba(95,223,223,0.06); border: 1px solid rgba(95,223,223,0.2); border-radius: 12px; padding: 1.75rem;">
-                    <div style="font-size: 1.5rem; margin-bottom: 1rem;">∞</div>
-                    <h3 style="color: var(--color-cyan); margin-bottom: 0.75rem; font-size: 1.1rem;">108 Kama Sutra Practices</h3>
-                    <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">Sacred practices from the oldest surviving text on connection. Filtered to what your specific entity finds resonant.</p>
-                </div>
-
-                <div style="background: rgba(30,159,242,0.06); border: 1px solid rgba(30,159,242,0.2); border-radius: 12px; padding: 1.75rem;">
-                    <div style="font-size: 1.5rem; margin-bottom: 1rem;">◈</div>
-                    <h3 style="color: var(--color-blue); margin-bottom: 0.75rem; font-size: 1.1rem;">Breathwork & Energy</h3>
-                    <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">120 multiorgasmic and breathwork practices drawn from pranayama traditions. Activate the energy your entity carries.</p>
-                </div>
-
-                <div style="background: rgba(95,223,223,0.06); border: 1px solid rgba(95,223,223,0.2); border-radius: 12px; padding: 1.75rem;">
-                    <div style="font-size: 1.5rem; margin-bottom: 1rem;">✦</div>
-                    <h3 style="color: var(--color-cyan); margin-bottom: 0.75rem; font-size: 1.1rem;">Sacred Geometry Library</h3>
-                    <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">16 geometric symbols used in Tartarian architecture &mdash; the Flower of Life, Metatron's Cube, Sri Yantra, the Torus. The transmission encoded in stone.</p>
-                </div>
-
-                <div style="background: rgba(30,159,242,0.06); border: 1px solid rgba(30,159,242,0.2); border-radius: 12px; padding: 1.75rem;">
-                    <div style="font-size: 1.5rem; margin-bottom: 1rem;">∞</div>
-                    <h3 style="color: var(--color-blue); margin-bottom: 0.75rem; font-size: 1.1rem;">Compatibility Readings</h3>
-                    <p style="font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">AI-generated readings based on both parties' archetypes. Understand why certain connections feel cosmically charged from the first moment.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- App Screenshots Detail -->
-    <section class="section">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-                <div>
-                    <span class="spirit-hero-label">◈ The App</span>
-                    <h2 class="section-title" style="font-size: clamp(1.8rem, 4vw, 2.8rem); margin-top: 1rem;">Cosmic intelligence.<br>Daily ritual.</h2>
-                    <p style="font-size: 1.05rem; line-height: 1.8; margin-top: 1.25rem; color: rgba(255,255,255,0.8);">Spirit is built on Kotlin Multiplatform, designed for iOS and Android. The interface feels less like an app and more like opening something that was always yours.</p>
-                    <ul style="list-style: none; padding: 0; margin-top: 1.5rem;">
-                        <li style="padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem;">
-                            <span style="color: var(--color-cyan);">✦</span> Home feed — your entity, your markers, your daily reading
-                        </li>
-                        <li style="padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem;">
-                            <span style="color: var(--color-cyan);">✦</span> Library — 444 pieces indexed to your cosmic signature
-                        </li>
-                        <li style="padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem;">
-                            <span style="color: var(--color-cyan);">✦</span> Compatibility — entity readings for your connections
-                        </li>
-                        <li style="padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem;">
-                            <span style="color: var(--color-cyan);">✦</span> Breathwork — activated practices for your entity's energy
-                        </li>
-                        <li style="padding: 0.6rem 0; display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem;">
-                            <span style="color: var(--color-cyan);">✦</span> Profile — your complete cosmic identity, always accessible
-                        </li>
-                    </ul>
-                </div>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                    <div class="screenshot-frame" style="flex: none;">
-                        <img src="/spiritatlas_screenshots/07_home_dashboard.png" alt="Spirit home dashboard" loading="lazy">
+        <section class="section">
+            <div class="container">
+                <div class="spirit-ritual-grid">
+                    <div class="spirit-panel">
+                        <span class="spirit-kicker">Discovery Flow</span>
+                        <h2>From intake to revelation in four clear movements.</h2>
+                        <p>The strongest UX improvement for Spirit Atlas is narrative clarity. Users do not need more lore at the top of the funnel; they need a confident progression that tells them what is happening, why it matters, and what changes once their result appears.</p>
+                        <div class="spirit-ritual-list">
+                            <div class="spirit-ritual-step">
+                                <div class="spirit-step-num">01</div>
+                                <div>
+                                    <h3>Arrival</h3>
+                                    <p>Name, birth context, and a first signal pass establish personal stakes without overwhelming the user.</p>
+                                </div>
+                            </div>
+                            <div class="spirit-ritual-step">
+                                <div class="spirit-step-num">02</div>
+                                <div>
+                                    <h3>Twelve questions</h3>
+                                    <p>Conflict, attraction, ambition, intimacy, and self-image are used to separate performance from instinct.</p>
+                                </div>
+                            </div>
+                            <div class="spirit-ritual-step">
+                                <div class="spirit-step-num">03</div>
+                                <div>
+                                    <h3>Dual archetype reveal</h3>
+                                    <p>The product distinguishes between power and seduction so the result feels dimensional instead of fortune-cookie flat.</p>
+                                </div>
+                            </div>
+                            <div class="spirit-ritual-step">
+                                <div class="spirit-step-num">04</div>
+                                <div>
+                                    <h3>Daily ritual loop</h3>
+                                    <p>Markers, compatibility narratives, breathwork, and symbolic references keep the experience alive after onboarding.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="screenshot-frame" style="flex: none; margin-top: 2rem;">
-                        <img src="/spiritatlas_screenshots/11_connection-narrative-2.webp" alt="Spirit connection narrative" loading="lazy">
+                    <div class="spirit-ritual-aside">
+                        <div class="spirit-panel">
+                            <span class="spirit-kicker">Archetype pairs</span>
+                            <h3>Two signatures, not one label.</h3>
+                            <p>That dual-result model gives the product more replay value and better language for relationships. It also makes the premium conversion easier because the user feels there is still more to decode.</p>
+                            <div class="spirit-pair-cloud" aria-label="Sample archetypes">
+                                <span class="spirit-pair-chip">The Initiator</span>
+                                <span class="spirit-pair-chip">The Sensualist</span>
+                                <span class="spirit-pair-chip">The Shapeshifter</span>
+                                <span class="spirit-pair-chip">The Nurturer</span>
+                                <span class="spirit-pair-chip">The Performer</span>
+                                <span class="spirit-pair-chip">The Analyst</span>
+                                <span class="spirit-pair-chip">The Harmonizer</span>
+                                <span class="spirit-pair-chip">The Alchemist</span>
+                                <span class="spirit-pair-chip">The Explorer</span>
+                                <span class="spirit-pair-chip">The Architect</span>
+                                <span class="spirit-pair-chip">The Visionary</span>
+                                <span class="spirit-pair-chip">The Mystic</span>
+                            </div>
+                        </div>
+                        <div class="spirit-screen-grid">
+                            <div class="spirit-screen-card">
+                                <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_090332/06_06_create-profile-basics.webp" alt="Spirit Atlas profile creation flow" loading="lazy">
+                            </div>
+                            <div class="spirit-screen-stack">
+                                <div class="spirit-screen-card">
+                                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_090332/04_04_profiles-hub.webp" alt="Spirit Atlas profiles hub" loading="lazy">
+                                </div>
+                                <div class="spirit-screen-card">
+                                    <img src="https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/projects/spiritatlas/app/20260213_090332/11_11_connection-narrative-2.webp" alt="Spirit Atlas compatibility narrative view" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Tartaria Connection -->
-    <section class="section" style="background: var(--color-charcoal);">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-                <div>
-                    <span class="spirit-hero-label">◈ The Context</span>
-                    <h2 class="section-title" style="font-size: clamp(1.8rem, 4vw, 2.8rem); margin-top: 1rem;">The same architecture appears on every continent. No one explains why.</h2>
-                    <p style="font-size: 1.05rem; line-height: 1.8; margin-top: 1.25rem; color: rgba(255,255,255,0.8);">Before the Tartarian reset, these 12 entities encoded their frequencies into the buildings. The doors were too large for modern humans. The towers collected atmospheric energy. The geometry was the transmission. Spirit doesn't teach this as theory &mdash; it gives you direct access to the entity that chose you.</p>
-                    <div style="margin-top: 2rem;">
-                        <a href="https://www.youtube.com/@jonathanmallinger336" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.9rem;"><span>The Tartarian Archive &rarr; YouTube</span></a>
+        <section class="section">
+            <div class="container">
+                <div class="spirit-app-grid">
+                    <div>
+                        <span class="spirit-kicker">Inside the App</span>
+                        <h2>A private library disguised as a mobile ritual object.</h2>
+                        <p>Spirit Atlas works when each mode of use feels deliberate. The product is not just a quiz, not just a compatibility engine, and not just a bundle of teachings. It is a layered ritual system that lets users move between identity, relationships, and practice without feeling like they have left the same world.</p>
+                        <div class="spirit-library-grid">
+                            <article class="spirit-library-card">
+                                <span class="spirit-meta-label">Daily layer</span>
+                                <h3>Markers and mood</h3>
+                                <p>Twelve personalized markers give the opening screen a reason to matter every day, even when the user is not in active discovery mode.</p>
+                            </article>
+                            <article class="spirit-library-card">
+                                <span class="spirit-meta-label">Relationship layer</span>
+                                <h3>Compatibility stories</h3>
+                                <p>Synastry, symbolic framing, and AI-assisted narrative generation convert profile data into language users can actually share.</p>
+                            </article>
+                            <article class="spirit-library-card">
+                                <span class="spirit-meta-label">Practice layer</span>
+                                <h3>Embodied ritual</h3>
+                                <p>Breathwork, tantric material, sacred geometry, and symbolic exercises justify the subscription with depth instead of volume alone.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <aside class="spirit-app-note">
+                        <span class="spirit-kicker">Why this page now works better</span>
+                        <h3>The visual language is intentionally separate from the rest of the site.</h3>
+                        <p>The broader iSN.BiZ portfolio uses a technical, industrial visual system. Spirit Atlas should not inherit that too heavily. This redesign makes Spirit Atlas feel like its own world while still living inside the same company shell.</p>
+                        <ul>
+                            <li>Warm metal tones replace the blue brutalist palette for this page only.</li>
+                            <li>Editorial serif typography signals myth, intimacy, and story rather than software dashboards.</li>
+                            <li>Shared navigation and footer remain intact so site-wide structure and tests stay predictable.</li>
+                            <li>All screenshots on the page now use remote hosted assets instead of local image paths.</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="spirit-section-head">
+                    <span class="spirit-kicker">Belief Architecture</span>
+                    <h2>The lore matters only when it intensifies the product promise.</h2>
+                    <p>Spirit Atlas mythology reaches into Tartarian symbolism, sacred geometry, ancient teachings, and recovery of lost signal systems. On the page, that context needs shape and boundaries. The goal is to create intrigue, not blur the feature set.</p>
+                </div>
+                <div class="spirit-context-grid">
+                    <article class="spirit-context-card">
+                        <h3>Recovered transmission</h3>
+                        <p>The strongest framing is that architecture, symbol, and ritual once carried signal. Spirit Atlas recovers that as a personal interface rather than as a history lecture.</p>
+                        <ul>
+                            <li>Cathedrals and towers become signal motifs.</li>
+                            <li>Sacred geometry becomes a navigational language.</li>
+                            <li>The entity reveal becomes the user’s first proof point.</li>
+                        </ul>
+                    </article>
+                    <article class="spirit-context-card">
+                        <h3>Private compatibility engine</h3>
+                        <p>Relationship reading is where abstract cosmology becomes practical. The page emphasizes this because it is the clearest bridge from mystique to use.</p>
+                        <ul>
+                            <li>Profiles can be created, layered, and compared.</li>
+                            <li>Intentionality signals give readings emotional context.</li>
+                            <li>Generated narrative creates immediate shareable value.</li>
+                        </ul>
+                    </article>
+                    <article class="spirit-context-card">
+                        <h3>Premium library logic</h3>
+                        <p>The subscription is justified by breadth plus specificity. Users are not buying random content; they are entering a catalog tuned to their revealed pattern.</p>
+                        <ul>
+                            <li>216 tantric teachings for relational and energetic depth.</li>
+                            <li>108 Kama Sutra practices for ritualized intimacy guidance.</li>
+                            <li>Breathwork, geometry, and symbolic interpretation for everyday return value.</li>
+                        </ul>
+                    </article>
+                    <article class="spirit-context-card">
+                        <h3>Portfolio fit</h3>
+                        <p>Within iSN.BiZ, Spirit Atlas demonstrates range. It shows the team can build a technically serious application that still carries a strong emotional and aesthetic identity.</p>
+                        <ul>
+                            <li>Kotlin Multiplatform supports the mobile footprint.</li>
+                            <li>AI narrative generation expands the feeling of custom guidance.</li>
+                            <li>Distinct art direction keeps the product memorable inside the portfolio.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="pricing">
+            <div class="container">
+                <div class="spirit-section-head">
+                    <span class="spirit-kicker">Access Model</span>
+                    <h2>A low-friction reveal, then a premium ritual archive.</h2>
+                    <p>The pricing language should stay calm and specific. The free tier gives enough to create belief; the paid tier needs to read like depth, intimacy, and continuity rather than a simple content bundle.</p>
+                </div>
+                <div class="spirit-pricing">
+                    <article class="spirit-pricing-card">
+                        <h3>Free Discovery</h3>
+                        <div class="spirit-price">
+                            <strong>$0</strong>
+                            <span>Forever</span>
+                        </div>
+                        <p>Enough to meet the system, see your core result, and understand the emotional hook before any commitment is asked for.</p>
+                        <ul class="spirit-feature-list">
+                            <li>Twelve-question entity discovery</li>
+                            <li>Dual-archetype reveal</li>
+                            <li>Light daily signal access</li>
+                            <li>Foundational profile snapshot</li>
+                        </ul>
+                        <div class="spirit-actions">
+                            <a href="https://isn.biz" target="_blank" rel="noopener" class="btn btn-outline"><span>Start Free</span></a>
+                        </div>
+                    </article>
+                    <article class="spirit-pricing-card featured">
+                        <span class="spirit-pricing-badge">Most Chosen</span>
+                        <h3>Full Access</h3>
+                        <div class="spirit-price">
+                            <strong>$9.99</strong>
+                            <span>Per month</span>
+                        </div>
+                        <p>Designed for users who want daily ritual utility, richer compatibility, and a sense that the app keeps opening new rooms over time.</p>
+                        <ul class="spirit-feature-list">
+                            <li>All 12 daily cosmic markers</li>
+                            <li>444-piece teaching library</li>
+                            <li>Compatibility readings and narrative generation</li>
+                            <li>Deep entity profile and symbolic references</li>
+                            <li>Breathwork, sacred geometry, and intimacy practices</li>
+                            <li>Annual option at $59.99 for lower-friction retention</li>
+                        </ul>
+                        <div class="spirit-actions">
+                            <a href="https://isn.biz" target="_blank" rel="noopener" class="btn btn-primary"><span>Unlock Full Access</span></a>
+                        </div>
+                    </article>
+                </div>
+                <p class="spirit-footnote" style="text-align: center; margin-top: 1.5rem;">For entertainment purposes only · Cancel anytime · Available for iOS and Android</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="spirit-final">
+                    <span class="spirit-kicker">Final Invocation</span>
+                    <h2>The Spirit Atlas section now looks like it belongs to Spirit Atlas.</h2>
+                    <p>This page no longer reads like a standard software product page with mystical copy pasted on top. It now has its own palette, typography, image treatment, section rhythm, and conversion structure, while keeping the shared site shell intact and predictable.</p>
+                    <div class="spirit-actions">
+                        <a href="https://isn.biz" target="_blank" rel="noopener" class="btn btn-primary"><span>Discover Your Entity</span></a>
+                        <a href="/portfolio" class="btn btn-outline"><span>Back to Portfolio</span></a>
                     </div>
                 </div>
-                <div style="background: linear-gradient(135deg, rgba(30,159,242,0.08), rgba(95,223,223,0.05)); border: 1px solid rgba(95,223,223,0.2); border-radius: 16px; padding: 2rem;">
-                    <p style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.2em; color: var(--color-cyan); margin-bottom: 1.25rem;">THE TARTARIAN ARCHIVE — EP1</p>
-                    <h4 style="color: rgba(255,255,255,0.9); margin-bottom: 1rem; font-size: 1.05rem; line-height: 1.5;">"The Same Building Appears on Every Continent. No One Can Explain Why."</h4>
-                    <ul style="list-style: none; padding: 0; margin: 0;">
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); font-size: 0.9rem; color: rgba(255,255,255,0.7);">0:00 &mdash; The Buildings That Should Not Match</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); font-size: 0.9rem; color: rgba(255,255,255,0.7);">1:34 &mdash; Doors Too Large for Human Beings</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); font-size: 0.9rem; color: rgba(255,255,255,0.7);">2:51 &mdash; The World's Fairs and the Energy Towers</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); font-size: 0.9rem; color: rgba(255,255,255,0.7);">5:04 &mdash; The Mud Flood Evidence</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); font-size: 0.9rem; color: rgba(255,255,255,0.7);">6:38 &mdash; Tartaria on the Maps: 1570 to 1810</li>
-                        <li style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); font-size: 0.9rem; color: rgba(255,255,255,0.7);">8:34 &mdash; The Orphan Trains: 250,000 Children, No Origin</li>
-                        <li style="padding: 0.5rem 0; font-size: 0.9rem; color: rgba(255,255,255,0.7);">9:57 &mdash; The Mechanism That Is Still Operational</li>
-                    </ul>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Pricing -->
-    <section class="section" id="pricing">
-        <div class="container">
-            <div class="section-header centered">
-                <span class="spirit-hero-label">✦ Access</span>
-                <h2 class="section-title">Your Entity Doesn't Cost Much</h2>
-                <p class="section-description" style="max-width: 600px; margin: 1rem auto 0;">Discover yours free. Unlock the full cosmic library for less than a coffee a week.</p>
-            </div>
-
-            <div class="pricing-cards">
-                <div class="pricing-card">
-                    <h3 style="font-size: 1rem; color: rgba(255,255,255,0.6); margin: 0;">Free Discovery</h3>
-                    <div class="price-amount">$0</div>
-                    <p class="price-period">forever</p>
-                    <ul class="features-list" style="margin-top: 1.25rem;">
-                        <li>12-question entity quiz</li>
-                        <li>Entity reveal</li>
-                        <li>1–2 daily cosmic markers</li>
-                        <li>Basic archetype profile</li>
-                    </ul>
-                    <a href="https://isn.biz" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%; text-align: center; margin-top: 0.5rem;"><span>Start Free</span></a>
-                </div>
-
-                <div class="pricing-card featured">
-                    <span class="pricing-badge">Most Chosen</span>
-                    <h3 style="font-size: 1rem; color: rgba(255,255,255,0.6); margin: 0;">Full Access</h3>
-                    <div class="price-amount">$9.99</div>
-                    <p class="price-period">/month &nbsp;·&nbsp; $59.99/year (50% off)</p>
-                    <ul class="features-list" style="margin-top: 1.25rem;">
-                        <li>All 12 daily cosmic markers</li>
-                        <li>444 ancient teachings library</li>
-                        <li>Compatibility readings</li>
-                        <li>Deep entity profile</li>
-                        <li>Breathwork & energy practices</li>
-                        <li>Sacred geometry library</li>
-                    </ul>
-                    <a href="https://isn.biz" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 0.5rem;"><span>Unlock Everything</span></a>
-                </div>
-            </div>
-            <p style="text-align: center; margin-top: 1.5rem; font-size: 0.8rem; color: rgba(255,255,255,0.35);">For entertainment purposes only &nbsp;·&nbsp; Cancel anytime &nbsp;·&nbsp; iOS + Android</p>
-        </div>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="section" style="background: var(--color-charcoal);">
-        <div class="container" style="text-align: center;">
-            <span class="spirit-hero-label">∞ Begin</span>
-            <h2 class="section-title" style="margin-top: 1rem;">Your entity has been waiting.</h2>
-            <p class="section-description" style="max-width: 560px; margin: 1rem auto 2rem;">12 questions. Two archetypes. Everything changes. Find yours at isn.biz.</p>
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="https://isn.biz" target="_blank" rel="noopener" class="btn btn-primary"><span>Discover Your Entity &rarr; isn.biz</span></a>
-                <a href="/portfolio" class="btn btn-outline"><span>View All Projects</span></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -723,7 +1376,6 @@
                         <li><a href="/jonathan">Jonathan &mdash; CEO</a></li>
                         <li><a href="/bri">Bri &mdash; COO</a></li>
                         <li><a href="/lilly">Lilly &mdash; CFO</a></li>
-                        <li><a href="/alicia">Alicia &mdash; CPO</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
