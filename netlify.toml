@@ -53,11 +53,6 @@
   to = "/bri.html"
   status = 200
 
-[[redirects]]
-  from = "/alicia"
-  to = "/alicia.html"
-  status = 200
-
 # Project / product pages
 [[redirects]]
   from = "/opportunity-bot"
@@ -65,8 +60,8 @@
   status = 200
 
 [[redirects]]
-  from = "/truenas"
-  to = "/truenas.html"
+  from = "/patchworthy"
+  to = "/patchworthy.html"
   status = 200
 
 [[redirects]]
@@ -80,28 +75,28 @@
   status = 200
 
 [[redirects]]
-  from = "/videogen"
-  to = "/videogen.html"
+  from = "/gedfix"
+  to = "/gedfix.html"
   status = 200
 
 [[redirects]]
-  from = "/comfyui"
-  to = "/comfyui.html"
+  from = "/phantom-browser"
+  to = "/phantom-browser.html"
   status = 200
 
 [[redirects]]
-  from = "/gedcom"
-  to = "/gedcom.html"
+  from = "/llm-security-research"
+  to = "/llm-security-research.html"
   status = 200
 
 [[redirects]]
-  from = "/llm-optimization"
-  to = "/llm-optimization.html"
+  from = "/claims"
+  to = "/claims.html"
   status = 200
 
 [[redirects]]
-  from = "/aurallm"
-  to = "/aurallm.html"
+  from = "/hroc-files"
+  to = "/hroc-files.html"
   status = 200
 
 # Notion OAuth callback

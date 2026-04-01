@@ -50,13 +50,6 @@
         <priority>0.7</priority>
     </url>
 
-    <url>
-        <loc>https://isn.biz/alicia.html</loc>
-        <lastmod>2026-02-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
     <!-- Project Pages -->
     <url>
         <loc>https://isn.biz/opportunity-bot.html</loc>
@@ -66,8 +59,8 @@
     </url>
 
     <url>
-        <loc>https://isn.biz/truenas.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <loc>https://isn.biz/patchworthy.html</loc>
+        <lastmod>2026-03-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -87,36 +80,36 @@
     </url>
 
     <url>
-        <loc>https://isn.biz/videogen.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <loc>https://isn.biz/gedfix.html</loc>
+        <lastmod>2026-03-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://isn.biz/comfyui.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <loc>https://isn.biz/phantom-browser.html</loc>
+        <lastmod>2026-03-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://isn.biz/gedcom.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <loc>https://isn.biz/llm-security-research.html</loc>
+        <lastmod>2026-03-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://isn.biz/llm-optimization.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <loc>https://isn.biz/claims.html</loc>
+        <lastmod>2026-03-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://isn.biz/aurallm.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <loc>https://isn.biz/hroc-files.html</loc>
+        <lastmod>2026-03-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>

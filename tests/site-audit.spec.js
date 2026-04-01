@@ -11,27 +11,26 @@ const ALL_PAGES = [
   { path: '/investors', name: 'Investors' },
   { path: '/contact', name: 'Contact' },
   { path: '/opportunity-bot', name: 'Opportunity Bot' },
-  { path: '/truenas', name: 'TrueNAS' },
+  { path: '/patchworthy', name: 'PatchWorthy' },
   { path: '/bin-intelligence', name: 'BIN Intelligence' },
   { path: '/spiritatlas', name: 'SpiritAtlas' },
-  { path: '/videogen', name: 'VideoGen' },
-  { path: '/comfyui', name: 'ComfyUI' },
-  { path: '/gedcom', name: 'GEDCOM' },
-  { path: '/llm-optimization', name: 'LLM Optimization' },
-  { path: '/aurallm', name: 'AuraLLM' },
+  { path: '/gedfix', name: 'GEDFix' },
+  { path: '/phantom-browser', name: 'Phantom Browser' },
+  { path: '/llm-security-research', name: 'LLM Security Research' },
+  { path: '/claims', name: 'Claims' },
+  { path: '/hroc-files', name: 'HROC Files' },
   { path: '/jonathan', name: 'Jonathan' },
   { path: '/bri', name: 'Bri' },
   { path: '/lilly', name: 'Lilly' },
-  { path: '/alicia', name: 'Alicia' },
 ];
 
 const PRODUCT_PAGES = ALL_PAGES.filter(p =>
-  ['/opportunity-bot', '/truenas', '/bin-intelligence', '/spiritatlas',
-   '/videogen', '/comfyui', '/gedcom', '/llm-optimization', '/aurallm'].includes(p.path)
+  ['/opportunity-bot', '/patchworthy', '/bin-intelligence', '/spiritatlas',
+   '/gedfix', '/phantom-browser', '/llm-security-research', '/claims', '/hroc-files'].includes(p.path)
 );
 
 const FOUNDER_PAGES = ALL_PAGES.filter(p =>
-  ['/jonathan', '/bri', '/lilly', '/alicia'].includes(p.path)
+  ['/jonathan', '/bri', '/lilly'].includes(p.path)
 );
 
 // Use domcontentloaded for all goto() calls - we test DOM structure, not image downloads
@@ -105,7 +104,6 @@ test.describe('Footer Uniformity', () => {
       await expect(footer.locator('a[href="/jonathan"]')).toBeAttached();
       await expect(footer.locator('a[href="/bri"]')).toBeAttached();
       await expect(footer.locator('a[href="/lilly"]')).toBeAttached();
-      await expect(footer.locator('a[href="/alicia"]')).toBeAttached();
 
       // Footer bottom
       await expect(footer.locator('.footer-bottom')).toBeAttached();
