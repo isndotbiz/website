@@ -29,6 +29,9 @@
         image.alt = humanizeBase(item.base) + ' visual';
         image.loading = 'lazy';
         image.decoding = 'async';
+        image.onerror = function () {
+            card.style.display = 'none';
+        };
 
         var meta = document.createElement('div');
         meta.className = 'spirit-media-meta';
@@ -51,7 +54,11 @@
         video.loop = true;
         video.playsInline = true;
         video.controls = true;
-        video.preload = 'metadata';
+        video.preload = 'none';
+
+        video.onerror = function () {
+            card.style.display = 'none';
+        };
 
         card.addEventListener('mouseenter', function () {
             video.play().catch(function () {});
@@ -59,6 +66,18 @@
         card.addEventListener('mouseleave', function () {
             video.pause();
         });
+
+        if ('IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        video.preload = 'metadata';
+                        observer.unobserve(video);
+                    }
+                });
+            }, { rootMargin: '200px' });
+            observer.observe(video);
+        }
 
         var meta = document.createElement('div');
         meta.className = 'spirit-media-meta';
