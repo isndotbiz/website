@@ -137,3 +137,12 @@ deploy-both-sites.bat
 # Local MCP config (machine-specific)
 .mcp.json
 compound-engineering.local.md
+
+# Wrangler local state (machine-specific)
+.wrangler/
+
+# Spirit Atlas media symlinks (local dev only, CDN in production)
+spiritatlas-final-images
+spiritatlas-final-videos
+spiritatlas-final-images/
+spiritatlas-final-videos/
