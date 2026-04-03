@@ -9,7 +9,7 @@
     <meta property="og:title" content="Spirit Atlas | Ritual-Forward Cosmic Entity Discovery">
     <meta property="og:description" content="A more cinematic way to meet the entity shaping your instincts, rituals, and relationships.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://cdn.isn.biz/spirit/images/portrait/entity/entity_v3_crystalline_combo18_00001_.png">
+    <meta property="og:image" content="/spiritatlas-final-images/dmt_entities_24/9x16_002_dmt_entity_crystalline.png">
     <title>Spirit Atlas | Ritual-Forward Cosmic Entity Discovery | iSN.BiZ Inc</title>
     <link rel="icon" type="image/webp" href="https://cdn.isn.biz/premium_v3/logos/favicon.webp">
     <link rel="stylesheet" href="styles.css">
@@ -802,6 +802,147 @@
             justify-content: center;
         }
 
+        .spirit-media-shell {
+            margin-top: 2rem;
+            display: grid;
+            gap: 1.3rem;
+        }
+
+        .spirit-media-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.7rem;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            border-radius: 1.25rem;
+            border: 1px solid rgba(95, 223, 223, 0.2);
+            background: linear-gradient(160deg, rgba(16, 28, 54, 0.9), rgba(23, 14, 35, 0.86));
+        }
+
+        .spirit-media-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.55rem;
+        }
+
+        .spirit-media-pill {
+            border: 1px solid rgba(95, 223, 223, 0.22);
+            border-radius: 999px;
+            padding: 0.55rem 0.85rem;
+            font-family: "JetBrains Mono", monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+            color: rgba(240, 244, 248, 0.9);
+            background: rgba(16, 24, 40, 0.7);
+            cursor: pointer;
+        }
+
+        .spirit-media-pill.is-active {
+            color: #0d1117;
+            border-color: transparent;
+            background: linear-gradient(135deg, var(--spirit-cyan), var(--spirit-magenta));
+        }
+
+        .spirit-media-filter {
+            border-radius: 999px;
+            border: 1px solid rgba(95, 223, 223, 0.24);
+            background: rgba(12, 20, 37, 0.84);
+            color: var(--spirit-ink);
+            padding: 0.6rem 0.95rem;
+            font-family: "JetBrains Mono", monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            min-width: 14rem;
+        }
+
+        .spirit-signature-grid,
+        .spirit-media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+            gap: 0.95rem;
+        }
+
+        .spirit-video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .spirit-media-card,
+        .spirit-video-card {
+            margin: 0;
+            overflow: hidden;
+            border-radius: 1.15rem;
+            border: 1px solid rgba(95, 223, 223, 0.14);
+            background: linear-gradient(180deg, rgba(16, 24, 44, 0.94), rgba(18, 13, 31, 0.94));
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28), 0 0 32px rgba(124, 58, 237, 0.08);
+            transition: transform 0.25s ease, border-color 0.25s ease;
+        }
+
+        .spirit-media-card:hover,
+        .spirit-video-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(95, 223, 223, 0.38);
+        }
+
+        .spirit-media-card img,
+        .spirit-video-card video {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            background: #05070d;
+        }
+
+        .spirit-media-landscape img,
+        .spirit-media-landscape video {
+            aspect-ratio: 16 / 9;
+        }
+
+        .spirit-media-portrait img,
+        .spirit-media-portrait video {
+            aspect-ratio: 9 / 16;
+        }
+
+        .spirit-media-square img,
+        .spirit-media-square video {
+            aspect-ratio: 1 / 1;
+        }
+
+        .spirit-media-meta {
+            padding: 0.7rem 0.8rem 0.85rem;
+            display: grid;
+            gap: 0.3rem;
+        }
+
+        .spirit-media-meta span {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 0.64rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: rgba(95, 223, 223, 0.85);
+        }
+
+        .spirit-media-meta strong {
+            font-family: "IBM Plex Sans", sans-serif;
+            font-size: 0.85rem;
+            color: rgba(240, 244, 248, 0.92);
+            line-height: 1.2;
+        }
+
+        .spirit-media-actions {
+            margin-top: 0.35rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .spirit-media-actions .btn {
+            min-width: 16rem;
+        }
+
         .spirit-page .footer {
             background: rgba(11, 8, 12, 0.86);
             border-top: 1px solid rgba(30, 159, 242, 0.18);
@@ -844,6 +985,11 @@
             .spirit-pricing,
             .spirit-screen-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .spirit-media-toolbar {
+                flex-direction: column;
+                align-items: stretch;
             }
 
             .spirit-proof-grid,
@@ -963,7 +1109,7 @@
                     </div>
                     <div class="spirit-hero-visual" aria-hidden="true">
                         <div class="spirit-device">
-                            <img src="https://cdn.isn.biz/assets/projects/spiritatlas/app/20260213_090332/01_01_home-dashboard.webp" alt="Spirit Atlas app dashboard showing ritual prompts and daily cosmic guidance" loading="eager">
+                            <img id="spirit-hero-image" src="/spiritatlas-final-images/backgrounds_24/9x16_002_bg_home.png" alt="Spirit Atlas final app dashboard visual" loading="eager">
                         </div>
                         <div class="spirit-signal top-left">
                             <strong>Daily signal</strong>
@@ -1015,107 +1161,71 @@
         <section class="section" id="entities">
             <div class="container">
                 <div class="spirit-section-head">
-                    <span class="spirit-kicker">The Twelve Forces</span>
-                    <h2>Every entity carries a distinct emotional climate.</h2>
-                    <p>The page now treats the entity roster as a gallery instead of a flat card grid. Each portrait is allowed to feel collectible, ceremonial, and slightly dangerous, which is closer to the product fantasy users are actually buying into.</p>
+                    <span class="spirit-kicker">Final Media Installed</span>
+                    <h2>The page now runs on the final Spirit Atlas asset pool.</h2>
+                    <p>All approved assets are now wired from the Spirit-Atlas repo: <strong data-spirit-image-count>334</strong> images and <strong data-spirit-video-count>71</strong> videos. This section replaces the old static set with a large, filterable media surface and live orientation controls.</p>
                 </div>
-                <div class="spirit-entities">
-                    <article class="spirit-entity-card">
-                        <img src="https://cdn.isn.biz/spirit/images/portrait/entity/entity_v3_crystalline_combo18_00001_.png" alt="The Crystalline entity portrait" loading="lazy">
-                        <div class="spirit-entity-overlay">
-                            <span class="spirit-entity-index">Entity 01</span>
-                            <h3>Crystalline</h3>
-                            <p>Precision, pattern recognition, and the desire to make hidden structure visible.</p>
-                        </div>
+                <div class="spirit-proof-grid" style="margin-bottom: 1.4rem;">
+                    <article class="spirit-proof-card">
+                        <strong data-spirit-image-count>334</strong>
+                        <p>Total final images now available on page load and filter controls.</p>
                     </article>
-                    <article class="spirit-entity-card">
-                        <img src="https://cdn.isn.biz/spirit/images/portrait/entity/entity_v3_architect_combo18_00001_.png" alt="The Architect entity portrait" loading="lazy">
-                        <div class="spirit-entity-overlay">
-                            <span class="spirit-entity-index">Entity 02</span>
-                            <h3>Architect</h3>
-                            <p>Legacy, systems, and the instinct to build environments that outlast the self.</p>
-                        </div>
+                    <article class="spirit-proof-card">
+                        <strong data-spirit-video-count>71</strong>
+                        <p>Final motion loops now integrated instead of static-only showcase blocks.</p>
                     </article>
-                    <article class="spirit-entity-card">
-                        <img src="https://cdn.isn.biz/spirit/images/portrait/entity/dmt_entity_weaver_combo7_00001_.png" alt="The Weaver entity portrait" loading="lazy">
-                        <div class="spirit-entity-overlay">
-                            <span class="spirit-entity-index">Entity 03</span>
-                            <h3>Weaver</h3>
-                            <p>Connection, symbolism, and the ability to sense meaning before logic arrives.</p>
-                        </div>
+                    <article class="spirit-proof-card">
+                        <strong data-spirit-landscape-count>220</strong>
+                        <p>Landscape frames for cinematic web panels and wide hero compositions.</p>
                     </article>
-                    <article class="spirit-entity-card">
-                        <img src="https://cdn.isn.biz/spirit/images/portrait/entity/dmt_entity_v2_timekeeper_combo18_00001_.png" alt="The Timekeeper entity portrait" loading="lazy">
-                        <div class="spirit-entity-overlay">
-                            <span class="spirit-entity-index">Entity 04</span>
-                            <h3>Timekeeper</h3>
-                            <p>Cycles, memory, and devotion to the timing of revelation rather than speed.</p>
-                        </div>
+                    <article class="spirit-proof-card">
+                        <strong data-spirit-portrait-count>102</strong>
+                        <p>Portrait visuals tuned for phone-first compositions and vertical showcases.</p>
                     </article>
-                    <article class="spirit-entity-card">
-                        <img src="https://cdn.isn.biz/spirit/images/portrait/entity/entity_v3_mother_combo18_00001_.png" alt="The Mother entity portrait" loading="lazy">
-                        <div class="spirit-entity-overlay">
-                            <span class="spirit-entity-index">Entity 05</span>
-                            <h3>Mother</h3>
-                            <p>Containment, softness, and the force that makes growth feel safe enough to happen.</p>
+                </div>
+                <div class="spirit-media-shell">
+                    <div class="spirit-panel">
+                        <span class="spirit-kicker">Signature Portrait Set</span>
+                        <h3>Curated portraits from the final render batch.</h3>
+                        <p>This pulls directly from the latest `dmt_entities_24`, `archetypes_24`, and `zodiac_24` pools.</p>
+                        <div class="spirit-signature-grid" id="spirit-signature-grid"></div>
+                    </div>
+                    <div class="spirit-panel">
+                        <span class="spirit-kicker">Image Vault</span>
+                        <h3>Filter and browse the full final image library.</h3>
+                        <div class="spirit-media-toolbar">
+                            <div class="spirit-media-pills" role="tablist" aria-label="Image orientation filter">
+                                <button class="spirit-media-pill is-active" type="button" data-spirit-orientation="all">All</button>
+                                <button class="spirit-media-pill" type="button" data-spirit-orientation="landscape">Landscape</button>
+                                <button class="spirit-media-pill" type="button" data-spirit-orientation="portrait">Portrait</button>
+                                <button class="spirit-media-pill" type="button" data-spirit-orientation="square">Square</button>
+                            </div>
+                            <label>
+                                <span class="sr-only">Filter by category</span>
+                                <select class="spirit-media-filter" id="spirit-image-category"></select>
+                            </label>
                         </div>
-                    </article>
-                    <article class="spirit-entity-card">
-                        <img src="https://cdn.isn.biz/spirit/images/portrait/entity/entity_v3_healer_combo18_00001_.png" alt="The Healer entity portrait" loading="lazy">
-                        <div class="spirit-entity-overlay">
-                            <span class="spirit-entity-index">Entity 06</span>
-                            <h3>Healer</h3>
-                            <p>Repair, frequency, and the patient turning of damage into knowledge.</p>
+                        <div class="spirit-media-grid" id="spirit-image-grid"></div>
+                        <div class="spirit-media-actions">
+                            <button class="btn btn-outline" type="button" id="spirit-images-load-more">Load More Final Images</button>
                         </div>
-                    </article>
-                    <article class="spirit-entity-card">
-                        <img src="https://cdn.isn.biz/spirit/images/portrait/entity/dmt_entity_oracle_combo7_00002_.png" alt="The Oracle entity portrait" loading="lazy">
-                        <div class="spirit-entity-overlay">
-                            <span class="spirit-entity-index">Entity 07</span>
-                            <h3>Oracle</h3>
-                            <p>Signal, foresight, and language that arrives before the explanation does.</p>
-                        </div>
-                    </article>
-                    <article class="spirit-entity-card">
-                        <img src="https://cdn.isn.biz/spirit/images/portrait/entity/dmt_entity_v2_serpent_queen_combo18_00001_.png" alt="The Serpent Queen entity portrait" loading="lazy">
-                        <div class="spirit-entity-overlay">
-                            <span class="spirit-entity-index">Entity 08</span>
-                            <h3>Serpent Queen</h3>
-                            <p>Power, transmutation, and the refusal to stay in one form for long.</p>
-                        </div>
-                    </article>
-                    <article class="spirit-entity-card">
-                        <img src="https://cdn.isn.biz/spirit/images/portrait/entity/entity_3_jester_b.png" alt="The Jester entity portrait" loading="lazy">
-                        <div class="spirit-entity-overlay">
-                            <span class="spirit-entity-index">Entity 09</span>
-                            <h3>Jester</h3>
-                            <p>Disruption, seduction, and the holy function of making false seriousness collapse.</p>
-                        </div>
-                    </article>
-                    <article class="spirit-entity-card">
-                        <div class="spirit-entity-placeholder">◈</div>
-                        <div class="spirit-entity-overlay">
-                            <span class="spirit-entity-index">Entity 10</span>
-                            <h3>Guardian</h3>
-                            <p>Thresholds, defense, and the calm authority that decides what gets entry.</p>
-                        </div>
-                    </article>
-                    <article class="spirit-entity-card">
-                        <img src="https://cdn.isn.biz/spirit/images/portrait/entity/dmt_entity_machine_elf_combo7_00004_.png" alt="The Machine Elf entity portrait" loading="lazy">
-                        <div class="spirit-entity-overlay">
-                            <span class="spirit-entity-index">Entity 11</span>
-                            <h3>Machine Elf</h3>
-                            <p>Code, impossible geometry, and the feeling that technology is also a ritual surface.</p>
-                        </div>
-                    </article>
-                    <article class="spirit-entity-card">
-                        <img src="https://cdn.isn.biz/spirit/images/portrait/entity/dmt_entity_void_dancer_combo7_00004_.png" alt="The Void Dancer entity portrait" loading="lazy">
-                        <div class="spirit-entity-overlay">
-                            <span class="spirit-entity-index">Entity 12</span>
-                            <h3>Void Dancer</h3>
-                            <p>Mystery, surrender, and the suspended moment before a new self appears.</p>
-                        </div>
-                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="spirit-section-head">
+                    <span class="spirit-kicker">Motion Vault</span>
+                    <h2>Final Spirit Atlas video loops are now in the website too.</h2>
+                    <p>These are the latest exported loops from the app pipeline. Hover a card to auto-play preview, or use controls for full playback.</p>
+                </div>
+                <div class="spirit-panel">
+                    <div class="spirit-video-grid" id="spirit-video-grid"></div>
+                    <div class="spirit-media-actions">
+                        <button class="btn btn-outline" type="button" id="spirit-videos-load-more">Load More Final Videos</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1180,14 +1290,14 @@
                         </div>
                         <div class="spirit-screen-grid">
                             <div class="spirit-screen-card">
-                                <img src="https://cdn.isn.biz/assets/projects/spiritatlas/app/20260213_090332/06_06_create-profile-basics.webp" alt="Spirit Atlas profile creation flow" loading="lazy">
+                                <img id="spirit-flow-image-1" src="/spiritatlas-final-images/archetypes_24/9x16_001_onboarding_11_visionary.png" alt="Spirit Atlas profile creation flow visual" loading="lazy">
                             </div>
                             <div class="spirit-screen-stack">
                                 <div class="spirit-screen-card">
-                                    <img src="https://cdn.isn.biz/assets/projects/spiritatlas/app/20260213_090332/04_04_profiles-hub.webp" alt="Spirit Atlas profiles hub" loading="lazy">
+                                    <img id="spirit-flow-image-2" src="/spiritatlas-final-images/dmt_entities_24/9x16_010_dmt_entity_oracle.png" alt="Spirit Atlas entity flow visual" loading="lazy">
                                 </div>
                                 <div class="spirit-screen-card">
-                                    <img src="https://cdn.isn.biz/assets/projects/spiritatlas/app/20260213_090332/11_11_connection-narrative-2.webp" alt="Spirit Atlas compatibility narrative view" loading="lazy">
+                                    <img id="spirit-flow-image-3" src="/spiritatlas-final-images/zodiac_24/01.png" alt="Spirit Atlas compatibility flow visual" loading="lazy">
                                 </div>
                             </div>
                         </div>
@@ -1229,7 +1339,7 @@
                             <li>Warm metal tones replace the blue brutalist palette for this page only.</li>
                             <li>Editorial serif typography signals myth, intimacy, and story rather than software dashboards.</li>
                             <li>Shared navigation and footer remain intact so site-wide structure and tests stay predictable.</li>
-                            <li>All screenshots on the page now use remote hosted assets instead of local image paths.</li>
+                            <li>The page now pulls from local final app assets (`spiritatlas-final-images` and `spiritatlas-final-videos`).</li>
                         </ul>
                     </aside>
                 </div>
@@ -1392,6 +1502,8 @@
         </div>
     </footer>
 
+    <script src="js/spiritatlas-final-media.generated.js"></script>
+    <script src="js/spiritatlas-media-wall.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

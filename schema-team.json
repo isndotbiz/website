@@ -76,30 +76,6 @@
         "Investment Strategy",
         "Financial Planning"
       ]
-    },
-    {
-      "@type": "Person",
-      "@id": "https://isn.biz/alicia.html#person",
-      "name": "Alicia",
-      "jobTitle": "VP and Chief Product Officer",
-      "description": "Product innovator creating user-centered solutions that solve real business problems with cutting-edge technology.",
-      "worksFor": {
-        "@id": "https://isn.biz/#organization"
-      },
-      "url": "https://isn.biz/alicia.html",
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/alicia_headshot.webp",
-        "width": "400",
-        "height": "400"
-      },
-      "knowsAbout": [
-        "Product Management",
-        "User Experience",
-        "Product Strategy",
-        "Innovation",
-        "Technology Development"
-      ]
     }
   ]
 }
