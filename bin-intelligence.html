@@ -9,9 +9,9 @@
     <meta property="og:title" content="BIN Intelligence Platform | iSN.BiZ Inc">
     <meta property="og:description" content="BIN intelligence platform for e-commerce fraud analysis, enrichment, classification, and reporting with dashboard and REST API">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://cdn.isn.biz/assets/generated/truenas_flux/bin-intelligence/hero.png">
+    <meta property="og:image" content="https://f004.backblazeb2.com/file/isnbiz-cdn/assets/generated/truenas_flux/bin-intelligence/hero.webp">
     <title>BIN Intelligence Platform | iSN.BiZ Inc</title>
-    <link rel="icon" type="image/webp" href="https://cdn.isn.biz/premium_v3/logos/favicon.webp">
+    <link rel="icon" type="image/webp" href="https://f004.backblazeb2.com/file/isnbiz-cdn/premium_v3/logos/favicon.webp">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="enhanced-animations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
         <div class="container nav-container">
             <div class="logo">
                 <a href="/">
-                    <img src="https://cdn.isn.biz/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
+                    <img src="https://f004.backblazeb2.com/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
                 </a>
             </div>
             <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation" type="button">
@@ -81,7 +81,7 @@
             </div>
 
             <div style="max-width: 1000px; margin: 3rem auto;">
-                <img src="https://cdn.isn.biz/assets/projects/bin_intelligence.webp" alt="BIN Intelligence platform dashboard showing fraud analytics, card enrichment data, and risk scoring" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                <img src="https://f004.backblazeb2.com/file/isnbiz-cdn/assets/projects/bin_intelligence.webp" alt="BIN Intelligence platform dashboard showing fraud analytics, card enrichment data, and risk scoring" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
             </div>
         </div>
     </section>
@@ -95,7 +95,7 @@
                     <p class="lead">Fraud prevention teams need reliable BIN intelligence to evaluate card risk and 3DS posture. This platform automates BIN ingestion, enrichment, classification, and reporting with a dashboard and API, enabling faster decisions and easier integration into fraud workflows.</p>
                     <p style="margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.8;">E-commerce fraud losses exceeded $48 billion globally in 2023, and the figure continues to climb as card-not-present transactions grow. The first six to eight digits of a payment card number, known as the Bank Identification Number (BIN), encode critical intelligence about the card's issuing bank, country of origin, card type (credit, debit, prepaid), scheme (Visa, Mastercard, Amex), and authentication capabilities. Fraud analysts rely on this data to assess transaction risk: a prepaid card issued by a bank with no 3DS enrollment in a high-risk jurisdiction carries fundamentally different risk than a credit card from a major issuer with full 3D Secure 2.0 support. Yet most fraud teams still perform BIN lookups manually or maintain stale spreadsheets that lack the enrichment depth needed for accurate decisioning.</p>
                     <p style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.8;">Our platform solves this by automating the entire BIN intelligence lifecycle. Raw BIN ranges are ingested from industry sources and card scheme registries, then enriched in bulk through the Neutrino BIN Lookup API which returns issuer name, country, card type, category, and 3DS enrollment status. A parallel fraud feed scraper monitors underground forums and breach notification services to classify BINs by exploit type: fullz availability, virtual card abuse, and known carding targets. The enriched data feeds into a SQLAlchemy-backed data store that powers both the Flask dashboard for human analysts and the REST API for programmatic integration into existing fraud rules engines, transaction screening pipelines, and case management systems.</p>
-            <img src="https://cdn.isn.biz/assets/projects/action/bin_action_1.webp" alt="Cybersecurity analyst studying financial transaction patterns" loading="lazy" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep); margin: 2rem 0;">
+            <img src="https://f004.backblazeb2.com/file/isnbiz-cdn/assets/projects/action/bin_action_1.webp" alt="Cybersecurity analyst studying financial transaction patterns" loading="lazy" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep); margin: 2rem 0;">
                 </div>
                 <div>
                     <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Product Capabilities</h3>
@@ -145,13 +145,13 @@
                     <p style="font-size: 1.05rem; line-height: 1.8;">Every enrichment result is stored with a timestamp, creating a versioned history for each BIN. When a re-enrichment job runs (typically monthly), the system compares the new response against the most recent stored version and flags any changes: issuer name updates (indicating bank acquisitions), 3DS enrollment status changes (indicating security posture improvements), or card type reclassifications. These change events are surfaced in the dashboard as alerts and are available through the API's changelog endpoint, enabling fraud teams to track how the card landscape evolves and adjust their rules accordingly.</p>
                 </div>
                 <div>
-                    <img src="https://cdn.isn.biz/assets/projects/bin_1.webp" alt="BIN enrichment pipeline showing Neutrino API integration, caching layers, and data normalization workflow" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                    <img src="https://f004.backblazeb2.com/file/isnbiz-cdn/assets/projects/bin_1.webp" alt="BIN enrichment pipeline showing Neutrino API integration, caching layers, and data normalization workflow" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
                 </div>
             </div>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-top: 3rem;">
                 <div>
-                    <img src="https://cdn.isn.biz/assets/projects/bin_2.webp" alt="Fraud feed scraper interface showing exploit classification and BIN threat intelligence" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                    <img src="https://f004.backblazeb2.com/file/isnbiz-cdn/assets/projects/bin_2.webp" alt="Fraud feed scraper interface showing exploit classification and BIN threat intelligence" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
                 </div>
                 <div>
                     <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Fraud Feed Scraping and Classification</h3>
@@ -171,7 +171,7 @@
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
                 <div class="portfolio-card">
                     <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
-            <img src="https://cdn.isn.biz/assets/projects/action/bin_action_2.webp" alt="Data scientist analyzing global transaction flows on a holographic globe" loading="lazy" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep); margin: 2rem 0;">
+            <img src="https://f004.backblazeb2.com/file/isnbiz-cdn/assets/projects/action/bin_action_2.webp" alt="Data scientist analyzing global transaction flows on a holographic globe" loading="lazy" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep); margin: 2rem 0;">
                         <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128269;</div>
                         <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">BIN Enricher</h3>
                     </div>
@@ -230,7 +230,7 @@
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
                 <div>
-                    <img src="https://cdn.isn.biz/assets/projects/bin_3.webp" alt="Flask application architecture with SQLAlchemy models, REST endpoints, and enrichment pipeline flow" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                    <img src="https://f004.backblazeb2.com/file/isnbiz-cdn/assets/projects/bin_3.webp" alt="Flask application architecture with SQLAlchemy models, REST endpoints, and enrichment pipeline flow" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
                 </div>
                 <div>
                     <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Flask Application Architecture</h3>
@@ -248,7 +248,7 @@
                     <p style="font-size: 1.05rem; line-height: 1.8;">The Bootstrap-based dashboard provides three primary views. The BIN Explorer offers a search interface with autocomplete that returns enrichment data, fraud history, and a risk summary for any BIN. The Fraud Feed Timeline presents a chronological view of exploit entries with severity-coded badges, filterable by type, country, and date range. The Analytics view renders Chart.js visualizations: a doughnut chart showing card type distribution across indexed BINs, a choropleth-style country grid showing BIN concentration by issuing country, a stacked bar chart tracking exploit types over time, and a line chart plotting 3DS enrollment rates by issuer tier. All views support CSV and JSON export for offline analysis.</p>
                 </div>
                 <div>
-                    <img src="https://cdn.isn.biz/assets/projects/bin_4.webp" alt="BIN Intelligence dashboard showing Chart.js analytics, fraud timeline, and BIN explorer interface" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                    <img src="https://f004.backblazeb2.com/file/isnbiz-cdn/assets/projects/bin_4.webp" alt="BIN Intelligence dashboard showing Chart.js analytics, fraud timeline, and BIN explorer interface" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
                 </div>
             </div>
         </div>
@@ -398,13 +398,13 @@
             <h2 class="section-title centered" style="margin-bottom: 2rem;">In Action</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
                 <div style="overflow: hidden; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                    <img src="https://cdn.isn.biz/assets/projects/action/bin_action_1.webp" alt="Cybersecurity analyst studying financial transaction patterns" loading="lazy" style="width: 100%; height: 300px; object-fit: cover; display: block;">
+                    <img src="https://f004.backblazeb2.com/file/isnbiz-cdn/assets/projects/action/bin_action_1.webp" alt="Cybersecurity analyst studying financial transaction patterns" loading="lazy" style="width: 100%; height: 300px; object-fit: cover; display: block;">
                 </div>
                 <div style="overflow: hidden; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                    <img src="https://cdn.isn.biz/assets/projects/action/bin_action_2.webp" alt="Data scientist analyzing global transaction flows on a holographic globe" loading="lazy" style="width: 100%; height: 300px; object-fit: cover; display: block;">
+                    <img src="https://f004.backblazeb2.com/file/isnbiz-cdn/assets/projects/action/bin_action_2.webp" alt="Data scientist analyzing global transaction flows on a holographic globe" loading="lazy" style="width: 100%; height: 300px; object-fit: cover; display: block;">
                 </div>
                 <div style="overflow: hidden; border-radius: 12px; box-shadow: var(--shadow-deep);">
-                    <img src="https://cdn.isn.biz/assets/projects/action/bin_action_3.webp" alt="Analysts in a war room discussing fraud detection dashboards" loading="lazy" style="width: 100%; height: 300px; object-fit: cover; display: block;">
+                    <img src="https://f004.backblazeb2.com/file/isnbiz-cdn/assets/projects/action/bin_action_3.webp" alt="Analysts in a war room discussing fraud detection dashboards" loading="lazy" style="width: 100%; height: 300px; object-fit: cover; display: block;">
                 </div>
             </div>
         </div>
@@ -414,7 +414,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-column">
-                    <img src="https://cdn.isn.biz/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="footer-logo" style="height: 40px; margin-bottom: 1rem;">
+                    <img src="https://f004.backblazeb2.com/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="footer-logo" style="height: 40px; margin-bottom: 1rem;">
                     <p>Building the future of enterprise software with AI-powered solutions since 2015.</p>
                     <div class="footer-credentials">
                         <p><strong>DUNS:</strong> 080513772</p>
