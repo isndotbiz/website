@@ -1,27 +1,3 @@
-# Clean URL redirects (status 200 = rewrite, 301 = permanent redirect)
+# CF Pages auto-serves .html files without extension (clean URLs built-in)
+# Only explicit redirects needed here
 /team /#team 301
-/about /about.html 200
-/services /services.html 200
-/portfolio /portfolio.html 200
-/investors /investors.html 200
-/contact /contact.html 200
-
-# Founder pages
-/jonathan /jonathan.html 200
-/lilly /lilly.html 200
-/bri /bri.html 200
-
-# Project pages
-/opportunity-bot /opportunity-bot.html 200
-/patchworthy /patchworthy.html 200
-/bin-intelligence /bin-intelligence.html 200
-/spiritatlas /spiritatlas.html 200
-/gedfix /gedfix.html 200
-/phantom-browser /phantom-browser.html 200
-/llm-security-research /llm-security-research.html 200
-/claims /claims.html 200
-/hroc-files /hroc-files.html 200
-
-# Legal pages
-/privacy /privacy.html 200
-/terms /terms.html 200
