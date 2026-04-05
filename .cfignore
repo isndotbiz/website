@@ -1,0 +1,21 @@
+# Large directories not needed for deployment
+hrocincorg/
+node_modules/
+.git/
+.wrangler/
+assets/
+spiritatlas-final-images/
+spiritatlas-final-videos/
+scripts/
+docs/
+Archive/
+backups/
+images/
+playwright-report/
+test-results/
+tests/
+Plans/
+.claude/
+.serena/
+venv/
+__pycache__/
