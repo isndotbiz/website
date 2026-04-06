@@ -1,4 +1,12 @@
 (function () {
+    function normalizeAssetUrl(url) {
+        if (!url) {
+            return '';
+        }
+        // Fix accidental "/https://..." prefixes from bad manifest generation.
+        return String(url).replace(/^\/(https?:\/\/)/i, '$1');
+    }
+
     function humanizeBase(base) {
         return base
             .replace(/^(16x9|9x16|1x1)_/i, '')
@@ -25,7 +33,7 @@
         card.className = 'spirit-media-card spirit-media-' + item.orientation;
 
         var image = document.createElement('img');
-        image.src = item.src;
+        image.src = normalizeAssetUrl(item.src);
         image.alt = humanizeBase(item.base) + ' visual';
         image.loading = 'lazy';
         image.decoding = 'async';
@@ -49,7 +57,7 @@
         card.className = 'spirit-video-card spirit-media-' + item.orientation;
 
         var video = document.createElement('video');
-        video.src = item.src;
+        video.src = normalizeAssetUrl(item.src);
         video.muted = true;
         video.loop = true;
         video.playsInline = true;
@@ -231,7 +239,7 @@
             var heroCandidate = media.images.find(function (item) {
                 return item.rel === 'backgrounds_24/9x16_002_bg_home.png';
             }) || media.images[0];
-            heroImage.src = heroCandidate.src;
+            heroImage.src = normalizeAssetUrl(heroCandidate.src);
             heroImage.alt = 'Spirit Atlas final app visual';
         }
 
@@ -250,7 +258,7 @@
                 return item.rel === target.rel;
             });
             if (match) {
-                node.src = match.src;
+                node.src = normalizeAssetUrl(match.src);
                 node.alt = humanizeBase(match.base) + ' final app visual';
             }
         });

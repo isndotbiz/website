@@ -4,6 +4,8 @@
 
     const imageRoot = '/Users/jonathanmallinger/Workspace/Spirit-Atlas/images';
     const videoRoot = '/Users/jonathanmallinger/Workspace/Spirit-Atlas/videos';
+    const imageCdnPrefix = 'https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/images';
+    const videoCdnPrefix = 'https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos';
 
     const imageExt = new Set(['.png', '.jpg', '.jpeg', '.webp']);
     const videoExt = new Set(['.mp4', '.mov', '.webm', '.m4v']);
@@ -49,17 +51,19 @@
         return categoryOrientationFallback[category] || 'portrait';
     }
 
-    function buildEntries(root, publicPrefix, exts) {
+    function buildEntries(root, publicPrefix, exts, mapRelPath) {
+        const cleanPrefix = String(publicPrefix).replace(/\/+$/, '');
         return walk(root, exts)
             .map((abs) => {
                 const rel = path.relative(root, abs).split(path.sep).join('/');
+                const mappedRel = mapRelPath ? mapRelPath(rel) : rel;
                 const category = rel.split('/')[0] || 'misc';
                 const orientation = orientationFor(rel);
-                const filename = path.basename(rel);
+                const filename = path.basename(mappedRel);
                 const base = filename.replace(path.extname(filename), '');
                 return {
-                    src: `${publicPrefix}/${rel}`,
-                    rel,
+                    src: `${cleanPrefix}/${mappedRel}`,
+                    rel: mappedRel,
                     category,
                     orientation,
                     filename,
@@ -69,8 +73,13 @@
             .sort((a, b) => a.rel.localeCompare(b.rel));
     }
 
-    const images = buildEntries(imageRoot, '/spiritatlas-final-images', imageExt);
-    const videos = buildEntries(videoRoot, '/spiritatlas-final-videos', videoExt);
+    const images = buildEntries(
+        imageRoot,
+        imageCdnPrefix,
+        imageExt,
+        (rel) => rel.replace(/\.(png|jpg|jpeg)$/i, '.webp')
+    );
+    const videos = buildEntries(videoRoot, videoCdnPrefix, videoExt);
 
     const imageOrientationCounts = images.reduce((acc, item) => {
         acc[item.orientation] = (acc[item.orientation] || 0) + 1;
@@ -85,8 +94,10 @@
     const media = {
         generatedAt: new Date().toISOString(),
         source: {
-            images: imageRoot,
-            videos: videoRoot
+            imagesLocalRoot: imageRoot,
+            videosLocalRoot: videoRoot,
+            imagesCdnRoot: imageCdnPrefix,
+            videosCdnRoot: videoCdnPrefix
         },
         imageCount: images.length,
         videoCount: videos.length,
