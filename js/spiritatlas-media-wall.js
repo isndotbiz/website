@@ -237,16 +237,16 @@
         var heroImage = document.getElementById('spirit-hero-image');
         if (heroImage && media.images.length) {
             var heroCandidate = media.images.find(function (item) {
-                return item.rel === 'backgrounds_24/9x16_002_bg_home.png';
+                return item.rel === 'backgrounds_24/9x16_002_bg_home.webp';
             }) || media.images[0];
             heroImage.src = normalizeAssetUrl(heroCandidate.src);
             heroImage.alt = 'Spirit Atlas final app visual';
         }
 
         var sideImages = [
-            { id: 'spirit-flow-image-1', rel: 'archetypes_24/9x16_001_onboarding_11_visionary.png' },
-            { id: 'spirit-flow-image-2', rel: 'dmt_entities_24/9x16_010_dmt_entity_oracle.png' },
-            { id: 'spirit-flow-image-3', rel: 'zodiac_24/01.png' }
+            { id: 'spirit-flow-image-1', rel: 'archetypes_24/9x16_001_onboarding_11_visionary.webp' },
+            { id: 'spirit-flow-image-2', rel: 'dmt_entities_24/9x16_010_dmt_entity_oracle.webp' },
+            { id: 'spirit-flow-image-3', rel: 'zodiac_24/01.webp' }
         ];
 
         sideImages.forEach(function (target) {
