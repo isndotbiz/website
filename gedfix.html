@@ -3,21 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GEDFix is an integrity-first GEDCOM processing system for normalization, deduplication, and relationship-safe exports.">
-    <meta name="keywords" content="GEDFix, GEDCOM, genealogy, data integrity, deduplication, normalization, family history">
+    <meta name="description" content="GedFix is a cross-platform genealogy app for cleaning, visualizing, and researching your family tree with AI-powered tools.">
+    <meta name="keywords" content="GedFix, genealogy, GEDCOM, family tree, AI research, data quality, pedigree chart, source validation">
     <meta name="author" content="iSN.BiZ Inc">
-    <meta property="og:title" content="GEDFix Data Integrity Platform | iSN.BiZ Inc">
-    <meta property="og:description" content="Production-grade pipeline for cleaning, standardizing, and verifying GEDCOM 5.5.1 datasets with zero-data-loss guarantees.">
+    <meta property="og:title" content="GedFix — Genealogy Data Platform | iSN.BiZ Inc">
+    <meta property="og:description" content="Clean, visualize, and research your family tree. AI-powered research, source validation, and multi-platform support.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/gedfix/hero.webp">
-    <title>GEDFix Data Integrity Platform | iSN.BiZ Inc</title>
-    <link rel="icon" type="image/webp" href="https://b2cdn.isn.biz/file/isnbiz-cdn/premium_v3/logos/favicon.webp">
+    <meta property="og:image" content="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/gedfix/hero.webp">
+    <title>GedFix — Genealogy Data Platform | iSN.BiZ Inc</title>
+    <link rel="icon" type="image/png" href="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/gedfix/icon-32.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="enhanced-animations.css">
     <link rel="stylesheet" href="project-spirit-theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        .gedfix-hero-img {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.08);
+            margin: 2rem auto 0;
+            display: block;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .feature-card {
+            background: var(--color-concrete);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+        }
+        .feature-card img {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 1.5rem;
+            border-radius: 12px;
+        }
+        .feature-card h3 {
+            color: var(--color-white);
+            margin-bottom: 0.75rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+        }
+        .feature-card p {
+            color: var(--color-white);
+            opacity: 0.7;
+        }
+        .platform-badges {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .platform-badge {
+            background: var(--color-concrete);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 8px;
+            padding: 0.6rem 1.2rem;
+            color: var(--color-white);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+        .stat-box {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--color-concrete);
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        .stat-box .num {
+            font-family: 'Inter', sans-serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--color-blue);
+        }
+        .stat-box .label {
+            color: var(--color-white);
+            opacity: 0.6;
+            font-size: 0.85rem;
+            margin-top: 0.3rem;
+        }
+        .capability-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+        }
+        .capability-list li {
+            padding: 0.75rem 1rem;
+            background: rgba(59, 130, 246, 0.06);
+            border-radius: 8px;
+            border-left: 3px solid var(--color-blue);
+            color: var(--color-white);
+            font-family: 'Inter', sans-serif;
+        }
+        .cta-section {
+            text-align: center;
+            padding: 4rem 0;
+        }
+        .cta-section .btn {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            padding: 0.9rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0.5rem;
+        }
+        .cta-primary {
+            background: var(--color-blue);
+            color: #fff;
+        }
+        .cta-outline {
+            background: transparent;
+            color: var(--color-blue);
+            border: 1px solid var(--color-blue);
+        }
+        .validation-section {
+            background: var(--color-charcoal);
+            border-radius: 12px;
+            padding: 3rem;
+            border: 1px solid rgba(255,255,255,0.06);
+            margin: 2rem 0;
+        }
+        .validation-bar {
+            height: 8px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 1rem 0 0.5rem;
+        }
+        .validation-bar span {
+            display: block;
+            height: 100%;
+            border-radius: 4px;
+        }
+        @media (max-width: 768px) {
+            .feature-grid, .stats-row, .capability-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body class="spirit-project">
     <nav class="nav">
@@ -35,46 +178,145 @@
         </div>
     </nav>
 
-    <section class="hero" style="min-height: 70vh; padding-top: 130px;">
+    <!-- Hero -->
+    <section class="hero" style="min-height: 80vh; padding-top: 130px;">
         <div class="hero-background"></div>
         <div class="container">
             <div class="section-header centered">
-                <span class="section-label">Data Integrity</span>
-                <h1 class="section-title" style="font-size: clamp(2.4rem, 6vw, 4.4rem);">GEDFix Data Integrity Platform</h1>
-                <p class="section-description" style="max-width: 920px; margin: 0 auto;">GEDFix is a production-grade pipeline for cleaning, standardizing, and verifying GEDCOM 5.5.1 datasets. It preserves relationships while normalizing names, places, and dates, with explicit verification and rollback paths for zero-data-loss processing.</p>
+                <span class="section-label">Genealogy Platform</span>
+                <h1 class="section-title" style="font-size: clamp(2.4rem, 6vw, 4rem); font-family: 'Inter', sans-serif; font-weight: 700; letter-spacing: -0.03em;">GedFix</h1>
+                <p class="section-description" style="max-width: 680px; margin: 0 auto; font-family: 'Inter', sans-serif;">
+                    Clean, visualize, and research your family tree. Import GEDCOM files, validate sources, detect data quality issues, and get AI-powered research suggestions — all from one app.
+                </p>
+                <div class="platform-badges">
+                    <span class="platform-badge">macOS</span>
+                    <span class="platform-badge">Windows</span>
+                    <span class="platform-badge">Linux</span>
+                    <span class="platform-badge">Android</span>
+                    <span class="platform-badge">Web</span>
+                    <span class="platform-badge">Chrome Extension</span>
+                </div>
             </div>
+            <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/gedfix/hero.webp" alt="GedFix app dashboard showing family tree visualization" class="gedfix-hero-img" loading="lazy" width="1920" height="1080">
         </div>
     </section>
 
+    <!-- Stats -->
     <section class="section">
         <div class="container">
-            <div class="about-grid">
-                <div>
-                    <h2 style="color: var(--color-cyan);">Core System</h2>
-                    <p>The platform combines a reusable Python package, CLI interface, and workflow scripts for scan, fix, verification, and controlled export. Every transformation is traceable through report artifacts, making it usable in professional genealogy, archive migration, and compliance-sensitive family-history workloads.</p>
-                    <p>Its operating principle is integrity-first: no destructive normalization without backup, diff visibility, and relationship validation gates.</p>
+            <div class="stats-row">
+                <div class="stat-box">
+                    <div class="num">30+</div>
+                    <div class="label">Views & tools</div>
                 </div>
-                <div>
-                    <h3 style="color: var(--color-blue);">Capabilities</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="padding: .7rem 0; border-bottom: 1px solid rgba(255,255,255,.1);">Issue detection and prioritized diagnostics</li>
-                        <li style="padding: .7rem 0; border-bottom: 1px solid rgba(255,255,255,.1);">Date, place, and identity normalization</li>
-                        <li style="padding: .7rem 0; border-bottom: 1px solid rgba(255,255,255,.1);">Relationship-safe deduplication and merge</li>
-                        <li style="padding: .7rem 0;">Verification scripts with rollback guarantees</li>
-                    </ul>
+                <div class="stat-box">
+                    <div class="num">5</div>
+                    <div class="label">Languages</div>
+                </div>
+                <div class="stat-box">
+                    <div class="num">7</div>
+                    <div class="label">AI Providers</div>
+                </div>
+                <div class="stat-box">
+                    <div class="num">6</div>
+                    <div class="label">Platforms</div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Core Features -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
-            <h2 class="section-title centered">Why It Matters</h2>
-            <p class="section-description centered" style="max-width: 860px; margin: 0 auto;">GEDCOM files accumulate errors across decades of software migrations and manual edits. GEDFix treats genealogical data as a trust asset — every correction is auditable, every merge preserves family structure, and every export meets archival standards without silent data loss.</p>
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-top: 2rem;">
-                <div class="portfolio-card"><h3>Data Integrity</h3><p>Every transformation is diffed, logged, and reversible — no silent overwrites or orphaned records.</p></div>
-                <div class="portfolio-card"><h3>Relationship Safety</h3><p>Deduplication and merge logic validates family linkages before committing any structural change.</p></div>
-                <div class="portfolio-card"><h3>Compliance-Ready</h3><p>Report artifacts and rollback paths satisfy archival and professional genealogy audit requirements.</p></div>
+            <h2 class="section-title centered" style="font-family: 'Inter', sans-serif; font-weight: 600; letter-spacing: -0.02em;">Core Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/gedfix/feature-tree.webp" alt="Family tree visualization" loading="lazy" width="120" height="120">
+                    <h3>Tree Visualization</h3>
+                    <p>Pedigree charts, fan charts, descendant trees, timeline views, and interactive maps with geocoded events.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/gedfix/feature-ai.webp" alt="AI-powered research" loading="lazy" width="120" height="120">
+                    <h3>AI Research</h3>
+                    <p>Automated research proposals from 7 AI providers. Source finding across FamilySearch and Chronicling America. Narrative generation.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/gedfix/feature-quality.webp" alt="Data quality validation" loading="lazy" width="120" height="120">
+                    <h3>Source Validation</h3>
+                    <p>Auto-classify sources as online trees vs. primary records. Flag unvalidated links. GPS checklist tracking per person.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Source Validation -->
+    <section class="section">
+        <div class="container">
+            <div class="validation-section">
+                <h2 style="color: var(--color-white); font-family: 'Inter', sans-serif; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 1rem;">Source Validation Engine</h2>
+                <p style="color: var(--color-white); opacity: 0.7; max-width: 640px; font-family: 'Inter', sans-serif;">
+                    Every link in your tree needs a source other than an online tree to be considered validated. GedFix automatically classifies sources by type and tracks validation progress across your entire tree.
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem;">
+                    <div>
+                        <div style="font-family: 'Inter', sans-serif; font-weight: 600; color: #22C55E;">Validated</div>
+                        <div class="validation-bar"><span style="width: 35%; background: #22C55E;"></span></div>
+                        <div style="color: var(--color-white); opacity: 0.5; font-size: 0.85rem;">Non-tree source records</div>
+                    </div>
+                    <div>
+                        <div style="font-family: 'Inter', sans-serif; font-weight: 600; color: #F59E0B;">Tree Only</div>
+                        <div class="validation-bar"><span style="width: 25%; background: #F59E0B;"></span></div>
+                        <div style="color: var(--color-white); opacity: 0.5; font-size: 0.85rem;">Online tree citations only</div>
+                    </div>
+                    <div>
+                        <div style="font-family: 'Inter', sans-serif; font-weight: 600; color: #EF4444;">Unvalidated</div>
+                        <div class="validation-bar"><span style="width: 40%; background: #EF4444;"></span></div>
+                        <div style="color: var(--color-white); opacity: 0.5; font-size: 0.85rem;">No source citations at all</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered" style="font-family: 'Inter', sans-serif; font-weight: 600; letter-spacing: -0.02em;">Everything You Need</h2>
+            <ul class="capability-list" style="margin-top: 2rem;">
+                <li>GEDCOM 5.5.1 and 7.0 import/export</li>
+                <li>Pedigree, fan chart, and descendant views</li>
+                <li>AI chat with 6 research modes</li>
+                <li>Automated source finding (FamilySearch, newspapers)</li>
+                <li>Source type classification (tree vs. primary records)</li>
+                <li>Data quality analysis with 15+ checks</li>
+                <li>Contradiction detection (dates, geography, relationships)</li>
+                <li>Face detection and media management</li>
+                <li>Relationship path finder between any two people</li>
+                <li>DNA centimorgan calculator</li>
+                <li>Evidence analysis with GPS checklist</li>
+                <li>Batch operations (multi-select, group, export)</li>
+                <li>Full-text search with alternate name matching</li>
+                <li>Interactive map with geocoded events</li>
+                <li>Keyboard shortcuts with chord navigation</li>
+                <li>5 languages (EN, ES, DE, FR, PT)</li>
+                <li>Database backup and restore</li>
+                <li>Undo/redo for all operations</li>
+                <li>Print-optimized views</li>
+                <li>PWA offline support (web)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+        <div class="container">
+            <div class="cta-section">
+                <h2 style="color: var(--color-white); font-family: 'Inter', sans-serif; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 0.5rem;">Try GedFix</h2>
+                <p style="color: var(--color-white); opacity: 0.6; font-family: 'Inter', sans-serif; margin-bottom: 2rem;">
+                    Open the web app or download for your platform.
+                </p>
+                <a href="https://gedfix.isn.biz" class="btn cta-primary">Open Web App</a>
+                <a href="https://github.com/isndotbiz/ged/releases" class="btn cta-outline">Download Desktop</a>
             </div>
         </div>
     </section>
