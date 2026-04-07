@@ -7,16 +7,16 @@ window.SPIRIT_ATLAS_FINAL_MEDIA = {
     "videosCdnRoot": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos"
   },
   "imageCount": 333,
-  "videoCount": 71,
+  "videoCount": 62,
   "imageOrientationCounts": {
     "landscape": 219,
     "portrait": 102,
     "square": 12
   },
   "videoOrientationCounts": {
-    "portrait": 44,
-    "landscape": 26,
-    "square": 1
+    "portrait": 39,
+    "landscape": 23,
+    "square": 0
   },
   "images": [
     {
@@ -3070,84 +3070,12 @@ window.SPIRIT_ATLAS_FINAL_MEDIA = {
       "base": "16x9_012_bg_landscape_void_portal"
     },
     {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/misc/16x9_001_10.mp4",
-      "rel": "misc/16x9_001_10.mp4",
-      "category": "misc",
-      "orientation": "landscape",
-      "filename": "16x9_001_10.mp4",
-      "base": "16x9_001_10"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/misc/1x1_002_6.mp4",
-      "rel": "misc/1x1_002_6.mp4",
-      "category": "misc",
-      "orientation": "square",
-      "filename": "1x1_002_6.mp4",
-      "base": "1x1_002_6"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/misc/9x16_005_7.mp4",
-      "rel": "misc/9x16_005_7.mp4",
-      "category": "misc",
-      "orientation": "portrait",
-      "filename": "9x16_005_7.mp4",
-      "base": "9x16_005_7"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/misc/9x16_006_archetype_icon_12_mystic_combo8_00001.mp4",
-      "rel": "misc/9x16_006_archetype_icon_12_mystic_combo8_00001.mp4",
-      "category": "misc",
-      "orientation": "portrait",
-      "filename": "9x16_006_archetype_icon_12_mystic_combo8_00001.mp4",
-      "base": "9x16_006_archetype_icon_12_mystic_combo8_00001"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/misc/9x16_009_archetype_icon_9_explorer_combo8_00001.mp4",
-      "rel": "misc/9x16_009_archetype_icon_9_explorer_combo8_00001.mp4",
-      "category": "misc",
-      "orientation": "portrait",
-      "filename": "9x16_009_archetype_icon_9_explorer_combo8_00001.mp4",
-      "base": "9x16_009_archetype_icon_9_explorer_combo8_00001"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/misc/9x16_010_entity_3_jester_a.mp4",
-      "rel": "misc/9x16_010_entity_3_jester_a.mp4",
-      "category": "misc",
-      "orientation": "portrait",
-      "filename": "9x16_010_entity_3_jester_a.mp4",
-      "base": "9x16_010_entity_3_jester_a"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/misc/9x16_011_entity_3_jester_b.mp4",
-      "rel": "misc/9x16_011_entity_3_jester_b.mp4",
-      "category": "misc",
-      "orientation": "portrait",
-      "filename": "9x16_011_entity_3_jester_b.mp4",
-      "base": "9x16_011_entity_3_jester_b"
-    },
-    {
       "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/multiorgasmic_24/9x16_001_multiorgasmic_card_4.mp4",
       "rel": "multiorgasmic_24/9x16_001_multiorgasmic_card_4.mp4",
       "category": "multiorgasmic_24",
       "orientation": "portrait",
       "filename": "9x16_001_multiorgasmic_card_4.mp4",
       "base": "9x16_001_multiorgasmic_card_4"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/neon_24/16x9_001_v5_nova_3_inverted_00001.mp4",
-      "rel": "neon_24/16x9_001_v5_nova_3_inverted_00001.mp4",
-      "category": "neon_24",
-      "orientation": "landscape",
-      "filename": "16x9_001_v5_nova_3_inverted_00001.mp4",
-      "base": "16x9_001_v5_nova_3_inverted_00001"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/neon_24/16x9_002_v5_nova_9_forward_00001.mp4",
-      "rel": "neon_24/16x9_002_v5_nova_9_forward_00001.mp4",
-      "category": "neon_24",
-      "orientation": "landscape",
-      "filename": "16x9_002_v5_nova_9_forward_00001.mp4",
-      "base": "16x9_002_v5_nova_9_forward_00001"
     },
     {
       "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/numerology_9/16x9_001_numerology_card_1.mp4",
