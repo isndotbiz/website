@@ -1,9 +1,6 @@
 (function () {
     function normalizeAssetUrl(url) {
-        if (!url) {
-            return '';
-        }
-        // Fix accidental "/https://..." prefixes from bad manifest generation.
+        if (!url) return '';
         return String(url).replace(/^\/(https?:\/\/)/i, '$1');
     }
 
@@ -14,18 +11,12 @@
             .replace(/_/g, ' ')
             .replace(/\s+/g, ' ')
             .trim()
-            .replace(/\b[a-z]/g, function (m) {
-                return m.toUpperCase();
-            })
+            .replace(/\b[a-z]/g, function (m) { return m.toUpperCase(); })
             .slice(0, 64);
     }
 
     function formatCategory(category) {
-        return category
-            .replace(/_/g, ' ')
-            .replace(/\b\w/g, function (m) {
-                return m.toUpperCase();
-            });
+        return category.replace(/_/g, ' ').replace(/\b\w/g, function (m) { return m.toUpperCase(); });
     }
 
     function createImageCard(item) {
@@ -37,9 +28,7 @@
         image.alt = humanizeBase(item.base) + ' visual';
         image.loading = 'lazy';
         image.decoding = 'async';
-        image.onerror = function () {
-            card.style.display = 'none';
-        };
+        image.onerror = function () { card.style.display = 'none'; };
 
         var meta = document.createElement('div');
         meta.className = 'spirit-media-meta';
@@ -63,17 +52,10 @@
         video.playsInline = true;
         video.controls = true;
         video.preload = 'none';
+        video.onerror = function () { card.style.display = 'none'; };
 
-        video.onerror = function () {
-            card.style.display = 'none';
-        };
-
-        card.addEventListener('mouseenter', function () {
-            video.play().catch(function () {});
-        });
-        card.addEventListener('mouseleave', function () {
-            video.pause();
-        });
+        card.addEventListener('mouseenter', function () { video.play().catch(function () {}); });
+        card.addEventListener('mouseleave', function () { video.pause(); });
 
         if ('IntersectionObserver' in window) {
             var observer = new IntersectionObserver(function (entries) {
@@ -104,13 +86,65 @@
         first.value = 'all';
         first.textContent = 'All Categories';
         select.appendChild(first);
-
         categories.forEach(function (category) {
             var option = document.createElement('option');
             option.value = category;
             option.textContent = formatCategory(category);
             select.appendChild(option);
         });
+    }
+
+    // Create a section header label inside a grid container
+    function makeOrientationLabel(text) {
+        var label = document.createElement('p');
+        label.className = 'spirit-orientation-label';
+        label.textContent = text;
+        return label;
+    }
+
+    // Render items grouped strictly by orientation, each group in its own grid
+    function renderGroupedItems(container, items, createCardFn, loadMoreBtn, state) {
+        if (state.reset) {
+            container.innerHTML = '';
+            state.index = 0;
+            state.reset = false;
+        }
+
+        var remaining = items.slice(state.index, state.index + state.pageSize);
+        if (!remaining.length) {
+            loadMoreBtn.disabled = true;
+            loadMoreBtn.textContent = 'All Loaded';
+            return;
+        }
+
+        // Group remaining by orientation
+        var groups = { portrait: [], landscape: [], square: [] };
+        remaining.forEach(function (item) {
+            var o = item.orientation;
+            if (!groups[o]) groups[o] = [];
+            groups[o].push(item);
+        });
+
+        var order = ['portrait', 'landscape', 'square'];
+        order.forEach(function (orient) {
+            var group = groups[orient];
+            if (!group || !group.length) return;
+
+            var label = makeOrientationLabel(
+                orient === 'portrait' ? 'Portrait (9:16)' :
+                orient === 'landscape' ? 'Landscape (16:9)' : 'Square (1:1)'
+            );
+            container.appendChild(label);
+
+            var grid = document.createElement('div');
+            grid.className = 'spirit-subgrid spirit-subgrid-' + orient;
+            group.forEach(function (item) { grid.appendChild(createCardFn(item)); });
+            container.appendChild(grid);
+        });
+
+        state.index += remaining.length;
+        loadMoreBtn.disabled = state.index >= items.length;
+        loadMoreBtn.textContent = state.index >= items.length ? 'All Loaded' : 'Load More';
     }
 
     function setupMediaWall(media) {
@@ -122,118 +156,73 @@
         var orientationButtons = Array.from(document.querySelectorAll('[data-spirit-orientation]'));
         var categorySelect = document.getElementById('spirit-image-category');
 
-        if (!imageGrid || !videoGrid || !signatureGrid || !imageLoadMore || !videoLoadMore || !categorySelect) {
-            return;
-        }
+        if (!imageGrid || !videoGrid || !signatureGrid || !imageLoadMore || !videoLoadMore || !categorySelect) return;
 
-        var imageStats = document.querySelectorAll('[data-spirit-image-count]');
-        var videoStats = document.querySelectorAll('[data-spirit-video-count]');
-        var landscapeStats = document.querySelectorAll('[data-spirit-landscape-count]');
-        var portraitStats = document.querySelectorAll('[data-spirit-portrait-count]');
-        var squareStats = document.querySelectorAll('[data-spirit-square-count]');
-
-        imageStats.forEach(function (el) { el.textContent = String(media.imageCount); });
-        videoStats.forEach(function (el) { el.textContent = String(media.videoCount); });
-        landscapeStats.forEach(function (el) { el.textContent = String(media.imageOrientationCounts.landscape || 0); });
-        portraitStats.forEach(function (el) { el.textContent = String(media.imageOrientationCounts.portrait || 0); });
-        squareStats.forEach(function (el) { el.textContent = String(media.imageOrientationCounts.square || 0); });
+        // Update stat counters
+        document.querySelectorAll('[data-spirit-image-count]').forEach(function (el) { el.textContent = String(media.imageCount); });
+        document.querySelectorAll('[data-spirit-video-count]').forEach(function (el) { el.textContent = String(media.videoCount); });
+        document.querySelectorAll('[data-spirit-landscape-count]').forEach(function (el) { el.textContent = String(media.imageOrientationCounts.landscape || 0); });
+        document.querySelectorAll('[data-spirit-portrait-count]').forEach(function (el) { el.textContent = String(media.imageOrientationCounts.portrait || 0); });
+        document.querySelectorAll('[data-spirit-square-count]').forEach(function (el) { el.textContent = String(media.imageOrientationCounts.square || 0); });
 
         buildCategoryOptions(categorySelect, media.images);
 
+        // Signature grid — portrait only, 4 cards
         var signaturePool = media.images.filter(function (item) {
             return item.orientation === 'portrait' && (
                 item.category === 'dmt_entities_24' ||
                 item.category === 'archetypes_24' ||
                 item.category === 'zodiac_24'
             );
-        }).slice(0, 16);
+        }).slice(0, 4);
+        signaturePool.forEach(function (item) { signatureGrid.appendChild(createImageCard(item)); });
 
-        signaturePool.forEach(function (item) {
-            signatureGrid.appendChild(createImageCard(item));
-        });
-
-        var imageState = {
-            orientation: 'all',
-            category: 'all',
-            index: 0,
-            pageSize: 96
-        };
-
-        var videoState = {
-            index: 0,
-            pageSize: 24
-        };
+        var imageFilter = { orientation: 'all', category: 'all' };
 
         function getFilteredImages() {
             return media.images.filter(function (item) {
-                var orientationOk = imageState.orientation === 'all' || item.orientation === imageState.orientation;
-                var categoryOk = imageState.category === 'all' || item.category === imageState.category;
-                return orientationOk && categoryOk;
+                var oOk = imageFilter.orientation === 'all' || item.orientation === imageFilter.orientation;
+                var cOk = imageFilter.category === 'all' || item.category === imageFilter.category;
+                return oOk && cOk;
             });
         }
 
-        function renderNextImages(reset) {
-            if (reset) {
-                imageState.index = 0;
-                imageGrid.innerHTML = '';
-            }
+        var imageState = { index: 0, pageSize: 96, reset: true };
+        var videoState = { index: 0, pageSize: 24, reset: true };
 
-            var filtered = getFilteredImages();
-            var next = filtered.slice(imageState.index, imageState.index + imageState.pageSize);
-            next.forEach(function (item) {
-                imageGrid.appendChild(createImageCard(item));
-            });
-
-            imageState.index += next.length;
-            imageLoadMore.disabled = imageState.index >= filtered.length;
-            imageLoadMore.textContent = imageState.index >= filtered.length
-                ? 'All Matching Images Loaded'
-                : 'Load More Final Images';
+        function renderImages(reset) {
+            imageState.reset = reset;
+            if (reset) imageGrid.innerHTML = '';
+            renderGroupedItems(imageGrid, getFilteredImages(), createImageCard, imageLoadMore, imageState);
         }
 
-        function renderNextVideos(reset) {
-            if (reset) {
-                videoState.index = 0;
-                videoGrid.innerHTML = '';
-            }
-
-            var next = media.videos.slice(videoState.index, videoState.index + videoState.pageSize);
-            next.forEach(function (item) {
-                videoGrid.appendChild(createVideoCard(item));
-            });
-
-            videoState.index += next.length;
-            videoLoadMore.disabled = videoState.index >= media.videos.length;
-            videoLoadMore.textContent = videoState.index >= media.videos.length
-                ? 'All Final Videos Loaded'
-                : 'Load More Final Videos';
+        function renderVideos(reset) {
+            videoState.reset = reset;
+            if (reset) videoGrid.innerHTML = '';
+            renderGroupedItems(videoGrid, media.videos, createVideoCard, videoLoadMore, videoState);
         }
 
         orientationButtons.forEach(function (button) {
             button.addEventListener('click', function () {
                 orientationButtons.forEach(function (node) { node.classList.remove('is-active'); });
                 button.classList.add('is-active');
-                imageState.orientation = button.getAttribute('data-spirit-orientation') || 'all';
-                renderNextImages(true);
+                imageFilter.orientation = button.getAttribute('data-spirit-orientation') || 'all';
+                renderImages(true);
             });
         });
 
         categorySelect.addEventListener('change', function () {
-            imageState.category = categorySelect.value;
-            renderNextImages(true);
+            imageFilter.category = categorySelect.value;
+            renderImages(true);
         });
 
-        imageLoadMore.addEventListener('click', function () {
-            renderNextImages(false);
-        });
+        imageLoadMore.addEventListener('click', function () { renderImages(false); });
+        videoLoadMore.addEventListener('click', function () { renderVideos(false); });
 
-        videoLoadMore.addEventListener('click', function () {
-            renderNextVideos(false);
-        });
+        renderImages(true);
+        renderVideos(true);
 
-        renderNextImages(true);
-        renderNextVideos(true);
-
+        // Hero image
         var heroImage = document.getElementById('spirit-hero-image');
         if (heroImage && media.images.length) {
             var heroCandidate = media.images.find(function (item) {
@@ -243,20 +232,16 @@
             heroImage.alt = 'Spirit Atlas final app visual';
         }
 
+        // Side flow images
         var sideImages = [
             { id: 'spirit-flow-image-1', rel: 'archetypes_24/9x16_001_onboarding_11_visionary.webp' },
             { id: 'spirit-flow-image-2', rel: 'dmt_entities_24/9x16_010_dmt_entity_oracle.webp' },
             { id: 'spirit-flow-image-3', rel: 'zodiac_24/01.webp' }
         ];
-
         sideImages.forEach(function (target) {
             var node = document.getElementById(target.id);
-            if (!node) {
-                return;
-            }
-            var match = media.images.find(function (item) {
-                return item.rel === target.rel;
-            });
+            if (!node) return;
+            var match = media.images.find(function (item) { return item.rel === target.rel; });
             if (match) {
                 node.src = normalizeAssetUrl(match.src);
                 node.alt = humanizeBase(match.base) + ' final app visual';
@@ -265,9 +250,7 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
-        if (!window.SPIRIT_ATLAS_FINAL_MEDIA) {
-            return;
-        }
+        if (!window.SPIRIT_ATLAS_FINAL_MEDIA) return;
         setupMediaWall(window.SPIRIT_ATLAS_FINAL_MEDIA);
     });
 })();

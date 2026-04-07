@@ -7,16 +7,15 @@ window.SPIRIT_ATLAS_FINAL_MEDIA = {
     "videosCdnRoot": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos"
   },
   "imageCount": 333,
-  "videoCount": 30,
+  "videoCount": 26,
   "imageOrientationCounts": {
     "landscape": 219,
     "portrait": 102,
     "square": 12
   },
   "videoOrientationCounts": {
-    "portrait": 23,
-    "landscape": 7,
-    "square": 0
+    "portrait": 19,
+    "landscape": 7
   },
   "images": [
     {
@@ -2876,38 +2875,6 @@ window.SPIRIT_ATLAS_FINAL_MEDIA = {
       "orientation": "landscape",
       "filename": "16x9_001_zodiac_aquarius.mp4",
       "base": "16x9_001_zodiac_aquarius"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/zodiac_24/9x16_001_onboarding_11_visionary.mp4",
-      "rel": "zodiac_24/9x16_001_onboarding_11_visionary.mp4",
-      "category": "zodiac_24",
-      "orientation": "portrait",
-      "filename": "9x16_001_onboarding_11_visionary.mp4",
-      "base": "9x16_001_onboarding_11_visionary"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/zodiac_24/9x16_002_onboarding_12_mystic.mp4",
-      "rel": "zodiac_24/9x16_002_onboarding_12_mystic.mp4",
-      "category": "zodiac_24",
-      "orientation": "portrait",
-      "filename": "9x16_002_onboarding_12_mystic.mp4",
-      "base": "9x16_002_onboarding_12_mystic"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/zodiac_24/9x16_003_onboarding_1_initiator.mp4",
-      "rel": "zodiac_24/9x16_003_onboarding_1_initiator.mp4",
-      "category": "zodiac_24",
-      "orientation": "portrait",
-      "filename": "9x16_003_onboarding_1_initiator.mp4",
-      "base": "9x16_003_onboarding_1_initiator"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/zodiac_24/9x16_007_onboarding_5_performer.mp4",
-      "rel": "zodiac_24/9x16_007_onboarding_5_performer.mp4",
-      "category": "zodiac_24",
-      "orientation": "portrait",
-      "filename": "9x16_007_onboarding_5_performer.mp4",
-      "base": "9x16_007_onboarding_5_performer"
     },
     {
       "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/zodiac_24/9x16_012_zodiac_cancer.mp4",
