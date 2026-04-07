@@ -858,17 +858,63 @@
             min-width: 14rem;
         }
 
-        .spirit-signature-grid,
-        .spirit-media-grid {
+        /* Signature strip — 4 portrait cards */
+        .spirit-signature-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 0.95rem;
         }
 
+        /* Main containers hold orientation sub-grids stacked vertically */
+        .spirit-media-grid,
         .spirit-video-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .spirit-orientation-label {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: rgba(95, 223, 223, 0.6);
+            margin: 0 0 0.5rem;
+        }
+
+        /* Portrait: 3 across */
+        .spirit-subgrid-portrait {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 1rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.95rem;
+        }
+
+        /* Landscape: 4 across */
+        .spirit-subgrid-landscape {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.95rem;
+        }
+
+        /* Square: 4 across */
+        .spirit-subgrid-square {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.95rem;
+        }
+
+        @media (max-width: 900px) {
+            .spirit-signature-grid,
+            .spirit-subgrid-landscape,
+            .spirit-subgrid-square { grid-template-columns: repeat(2, 1fr); }
+            .spirit-subgrid-portrait { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 540px) {
+            .spirit-signature-grid,
+            .spirit-subgrid-portrait,
+            .spirit-subgrid-landscape,
+            .spirit-subgrid-square { grid-template-columns: repeat(1, 1fr); }
         }
 
         .spirit-media-card,
@@ -888,29 +934,21 @@
             border-color: rgba(95, 223, 223, 0.38);
         }
 
+        /* Enforce exact aspect ratios — never stretch */
         .spirit-media-card img,
         .spirit-video-card video {
             width: 100%;
-            height: 100%;
             display: block;
             object-fit: cover;
             background: #05070d;
         }
 
         .spirit-media-landscape img,
-        .spirit-media-landscape video {
-            aspect-ratio: 16 / 9;
-        }
-
+        .spirit-media-landscape video { aspect-ratio: 16 / 9; }
         .spirit-media-portrait img,
-        .spirit-media-portrait video {
-            aspect-ratio: 9 / 16;
-        }
-
+        .spirit-media-portrait video { aspect-ratio: 9 / 16; }
         .spirit-media-square img,
-        .spirit-media-square video {
-            aspect-ratio: 1 / 1;
-        }
+        .spirit-media-square video { aspect-ratio: 1 / 1; }
 
         .spirit-media-meta {
             padding: 0.7rem 0.8rem 0.85rem;
