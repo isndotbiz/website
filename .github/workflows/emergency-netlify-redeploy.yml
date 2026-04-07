@@ -13,6 +13,17 @@ jobs:
       - name: Install Netlify CLI
         run: npm install -g netlify-cli
 
+      - name: Netlify Diagnostics
+        run: |
+          set -e
+          echo "Checking token validity"
+          netlify api getCurrentUser
+          echo "Checking site by NETLIFY_SITE_ID"
+          netlify api getSite --data '{"site_id":"'"$NETLIFY_SITE_ID"'"}'
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
       - name: Force Production Deploy
         run: |
           netlify deploy \
