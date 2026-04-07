@@ -7,15 +7,15 @@ window.SPIRIT_ATLAS_FINAL_MEDIA = {
     "videosCdnRoot": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos"
   },
   "imageCount": 333,
-  "videoCount": 62,
+  "videoCount": 30,
   "imageOrientationCounts": {
     "landscape": 219,
     "portrait": 102,
     "square": 12
   },
   "videoOrientationCounts": {
-    "portrait": 39,
-    "landscape": 23,
+    "portrait": 23,
+    "landscape": 7,
     "square": 0
   },
   "images": [
@@ -2742,62 +2742,6 @@ window.SPIRIT_ATLAS_FINAL_MEDIA = {
       "base": "9x16_009_archetype_6_analyst"
     },
     {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/backgrounds_24/9x16_004_bg_home.mp4",
-      "rel": "backgrounds_24/9x16_004_bg_home.mp4",
-      "category": "backgrounds_24",
-      "orientation": "portrait",
-      "filename": "9x16_004_bg_home.mp4",
-      "base": "9x16_004_bg_home"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/backgrounds_24/9x16_006_bg_library_archive.mp4",
-      "rel": "backgrounds_24/9x16_006_bg_library_archive.mp4",
-      "category": "backgrounds_24",
-      "orientation": "portrait",
-      "filename": "9x16_006_bg_library_archive.mp4",
-      "base": "9x16_006_bg_library_archive"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/backgrounds_24/9x16_007_bg_loading.mp4",
-      "rel": "backgrounds_24/9x16_007_bg_loading.mp4",
-      "category": "backgrounds_24",
-      "orientation": "portrait",
-      "filename": "9x16_007_bg_loading.mp4",
-      "base": "9x16_007_bg_loading"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/backgrounds_24/9x16_008_bg_meditation_chakra.mp4",
-      "rel": "backgrounds_24/9x16_008_bg_meditation_chakra.mp4",
-      "category": "backgrounds_24",
-      "orientation": "portrait",
-      "filename": "9x16_008_bg_meditation_chakra.mp4",
-      "base": "9x16_008_bg_meditation_chakra"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/backgrounds_24/9x16_009_bg_moon_phase_tracking.mp4",
-      "rel": "backgrounds_24/9x16_009_bg_moon_phase_tracking.mp4",
-      "category": "backgrounds_24",
-      "orientation": "portrait",
-      "filename": "9x16_009_bg_moon_phase_tracking.mp4",
-      "base": "9x16_009_bg_moon_phase_tracking"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/backgrounds_24/9x16_012_bg_settings.mp4",
-      "rel": "backgrounds_24/9x16_012_bg_settings.mp4",
-      "category": "backgrounds_24",
-      "orientation": "portrait",
-      "filename": "9x16_012_bg_settings.mp4",
-      "base": "9x16_012_bg_settings"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/backgrounds_24/9x16_013_bg_splash_onboarding.mp4",
-      "rel": "backgrounds_24/9x16_013_bg_splash_onboarding.mp4",
-      "category": "backgrounds_24",
-      "orientation": "portrait",
-      "filename": "9x16_013_bg_splash_onboarding.mp4",
-      "base": "9x16_013_bg_splash_onboarding"
-    },
-    {
       "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/chakras_24/16x9_002_chakra_card_crown.mp4",
       "rel": "chakras_24/16x9_002_chakra_card_crown.mp4",
       "category": "chakras_24",
@@ -2812,14 +2756,6 @@ window.SPIRIT_ATLAS_FINAL_MEDIA = {
       "orientation": "landscape",
       "filename": "16x9_003_chakra_card_earth_star.mp4",
       "base": "16x9_003_chakra_card_earth_star"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/chakras_24/16x9_004_chakra_card_root.mp4",
-      "rel": "chakras_24/16x9_004_chakra_card_root.mp4",
-      "category": "chakras_24",
-      "orientation": "landscape",
-      "filename": "16x9_004_chakra_card_root.mp4",
-      "base": "16x9_004_chakra_card_root"
     },
     {
       "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/chakras_24/9x16_001_chakra_card_heart.mp4",
@@ -2838,38 +2774,6 @@ window.SPIRIT_ATLAS_FINAL_MEDIA = {
       "base": "9x16_002_chakra_card_soul_star"
     },
     {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/chakras_24/9x16_003_chakra_root.mp4",
-      "rel": "chakras_24/9x16_003_chakra_root.mp4",
-      "category": "chakras_24",
-      "orientation": "portrait",
-      "filename": "9x16_003_chakra_root.mp4",
-      "base": "9x16_003_chakra_root"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/chakras_24/9x16_004_chakra_third_eye.mp4",
-      "rel": "chakras_24/9x16_004_chakra_third_eye.mp4",
-      "category": "chakras_24",
-      "orientation": "portrait",
-      "filename": "9x16_004_chakra_third_eye.mp4",
-      "base": "9x16_004_chakra_third_eye"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/chakras_24/9x16_005_chakra_throat.mp4",
-      "rel": "chakras_24/9x16_005_chakra_throat.mp4",
-      "category": "chakras_24",
-      "orientation": "portrait",
-      "filename": "9x16_005_chakra_throat.mp4",
-      "base": "9x16_005_chakra_throat"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/dmt_entities_24/16x9_007_dmt_entity_wide_oracle.mp4",
-      "rel": "dmt_entities_24/16x9_007_dmt_entity_wide_oracle.mp4",
-      "category": "dmt_entities_24",
-      "orientation": "landscape",
-      "filename": "16x9_007_dmt_entity_wide_oracle.mp4",
-      "base": "16x9_007_dmt_entity_wide_oracle"
-    },
-    {
       "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/dmt_entities_24/9x16_001_dmt_entity_architect.mp4",
       "rel": "dmt_entities_24/9x16_001_dmt_entity_architect.mp4",
       "category": "dmt_entities_24",
@@ -2886,108 +2790,12 @@ window.SPIRIT_ATLAS_FINAL_MEDIA = {
       "base": "9x16_002_dmt_entity_crystalline"
     },
     {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/dmt_entities_24/9x16_003_dmt_entity_guardian.mp4",
-      "rel": "dmt_entities_24/9x16_003_dmt_entity_guardian.mp4",
-      "category": "dmt_entities_24",
-      "orientation": "portrait",
-      "filename": "9x16_003_dmt_entity_guardian.mp4",
-      "base": "9x16_003_dmt_entity_guardian"
-    },
-    {
       "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/dmt_entities_24/9x16_004_dmt_entity_healer.mp4",
       "rel": "dmt_entities_24/9x16_004_dmt_entity_healer.mp4",
       "category": "dmt_entities_24",
       "orientation": "portrait",
       "filename": "9x16_004_dmt_entity_healer.mp4",
       "base": "9x16_004_dmt_entity_healer"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/dmt_entities_24/9x16_005_dmt_entity_jester.mp4",
-      "rel": "dmt_entities_24/9x16_005_dmt_entity_jester.mp4",
-      "category": "dmt_entities_24",
-      "orientation": "portrait",
-      "filename": "9x16_005_dmt_entity_jester.mp4",
-      "base": "9x16_005_dmt_entity_jester"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/dmt_entities_24/9x16_008_dmt_entity_oracle.mp4",
-      "rel": "dmt_entities_24/9x16_008_dmt_entity_oracle.mp4",
-      "category": "dmt_entities_24",
-      "orientation": "portrait",
-      "filename": "9x16_008_dmt_entity_oracle.mp4",
-      "base": "9x16_008_dmt_entity_oracle"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/elements_12/9x16_001_element_earth.mp4",
-      "rel": "elements_12/9x16_001_element_earth.mp4",
-      "category": "elements_12",
-      "orientation": "portrait",
-      "filename": "9x16_001_element_earth.mp4",
-      "base": "9x16_001_element_earth"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/elements_12/9x16_002_element_fire.mp4",
-      "rel": "elements_12/9x16_002_element_fire.mp4",
-      "category": "elements_12",
-      "orientation": "portrait",
-      "filename": "9x16_002_element_fire.mp4",
-      "base": "9x16_002_element_fire"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/elements_12/9x16_003_element_water.mp4",
-      "rel": "elements_12/9x16_003_element_water.mp4",
-      "category": "elements_12",
-      "orientation": "portrait",
-      "filename": "9x16_003_element_water.mp4",
-      "base": "9x16_003_element_water"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/entities_24/16x9_001_entity_card_v2_architect.mp4",
-      "rel": "entities_24/16x9_001_entity_card_v2_architect.mp4",
-      "category": "entities_24",
-      "orientation": "landscape",
-      "filename": "16x9_001_entity_card_v2_architect.mp4",
-      "base": "16x9_001_entity_card_v2_architect"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/entities_24/16x9_002_entity_card_v2_crystalline.mp4",
-      "rel": "entities_24/16x9_002_entity_card_v2_crystalline.mp4",
-      "category": "entities_24",
-      "orientation": "landscape",
-      "filename": "16x9_002_entity_card_v2_crystalline.mp4",
-      "base": "16x9_002_entity_card_v2_crystalline"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/entities_24/16x9_004_entity_card_v2_jester.mp4",
-      "rel": "entities_24/16x9_004_entity_card_v2_jester.mp4",
-      "category": "entities_24",
-      "orientation": "landscape",
-      "filename": "16x9_004_entity_card_v2_jester.mp4",
-      "base": "16x9_004_entity_card_v2_jester"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/entities_24/16x9_007_entity_card_v2_oracle.mp4",
-      "rel": "entities_24/16x9_007_entity_card_v2_oracle.mp4",
-      "category": "entities_24",
-      "orientation": "landscape",
-      "filename": "16x9_007_entity_card_v2_oracle.mp4",
-      "base": "16x9_007_entity_card_v2_oracle"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/entities_24/16x9_009_entity_card_v2_timekeeper.mp4",
-      "rel": "entities_24/16x9_009_entity_card_v2_timekeeper.mp4",
-      "category": "entities_24",
-      "orientation": "landscape",
-      "filename": "16x9_009_entity_card_v2_timekeeper.mp4",
-      "base": "16x9_009_entity_card_v2_timekeeper"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/entities_24/16x9_010_entity_card_v2_void_dancer.mp4",
-      "rel": "entities_24/16x9_010_entity_card_v2_void_dancer.mp4",
-      "category": "entities_24",
-      "orientation": "landscape",
-      "filename": "16x9_010_entity_card_v2_void_dancer.mp4",
-      "base": "16x9_010_entity_card_v2_void_dancer"
     },
     {
       "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/kama_24/16x9_001_kama_card_1.mp4",
@@ -3004,70 +2812,6 @@ window.SPIRIT_ATLAS_FINAL_MEDIA = {
       "orientation": "portrait",
       "filename": "9x16_003_kama_card_7.mp4",
       "base": "9x16_003_kama_card_7"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/landscapes_24/16x9_001_bg_landscape_aurora_mountain.mp4",
-      "rel": "landscapes_24/16x9_001_bg_landscape_aurora_mountain.mp4",
-      "category": "landscapes_24",
-      "orientation": "landscape",
-      "filename": "16x9_001_bg_landscape_aurora_mountain.mp4",
-      "base": "16x9_001_bg_landscape_aurora_mountain"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/landscapes_24/16x9_003_bg_landscape_cosmic_nebula.mp4",
-      "rel": "landscapes_24/16x9_003_bg_landscape_cosmic_nebula.mp4",
-      "category": "landscapes_24",
-      "orientation": "landscape",
-      "filename": "16x9_003_bg_landscape_cosmic_nebula.mp4",
-      "base": "16x9_003_bg_landscape_cosmic_nebula"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/landscapes_24/16x9_004_bg_landscape_cosmic_ocean.mp4",
-      "rel": "landscapes_24/16x9_004_bg_landscape_cosmic_ocean.mp4",
-      "category": "landscapes_24",
-      "orientation": "landscape",
-      "filename": "16x9_004_bg_landscape_cosmic_ocean.mp4",
-      "base": "16x9_004_bg_landscape_cosmic_ocean"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/landscapes_24/16x9_006_bg_landscape_electric_storm.mp4",
-      "rel": "landscapes_24/16x9_006_bg_landscape_electric_storm.mp4",
-      "category": "landscapes_24",
-      "orientation": "landscape",
-      "filename": "16x9_006_bg_landscape_electric_storm.mp4",
-      "base": "16x9_006_bg_landscape_electric_storm"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/landscapes_24/16x9_007_bg_landscape_lotus_realm.mp4",
-      "rel": "landscapes_24/16x9_007_bg_landscape_lotus_realm.mp4",
-      "category": "landscapes_24",
-      "orientation": "landscape",
-      "filename": "16x9_007_bg_landscape_lotus_realm.mp4",
-      "base": "16x9_007_bg_landscape_lotus_realm"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/landscapes_24/16x9_009_bg_landscape_sacred_fire.mp4",
-      "rel": "landscapes_24/16x9_009_bg_landscape_sacred_fire.mp4",
-      "category": "landscapes_24",
-      "orientation": "landscape",
-      "filename": "16x9_009_bg_landscape_sacred_fire.mp4",
-      "base": "16x9_009_bg_landscape_sacred_fire"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/landscapes_24/16x9_011_bg_landscape_sacred_temple.mp4",
-      "rel": "landscapes_24/16x9_011_bg_landscape_sacred_temple.mp4",
-      "category": "landscapes_24",
-      "orientation": "landscape",
-      "filename": "16x9_011_bg_landscape_sacred_temple.mp4",
-      "base": "16x9_011_bg_landscape_sacred_temple"
-    },
-    {
-      "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/landscapes_24/16x9_012_bg_landscape_void_portal.mp4",
-      "rel": "landscapes_24/16x9_012_bg_landscape_void_portal.mp4",
-      "category": "landscapes_24",
-      "orientation": "landscape",
-      "filename": "16x9_012_bg_landscape_void_portal.mp4",
-      "base": "16x9_012_bg_landscape_void_portal"
     },
     {
       "src": "https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos/multiorgasmic_24/9x16_001_multiorgasmic_card_4.mp4",
