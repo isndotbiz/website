@@ -35,38 +35,110 @@
         </div>
     </nav>
 
+    <!-- Project Hero -->
     <section class="hero" style="min-height: 70vh; padding-top: 130px;">
         <div class="hero-background"></div>
         <div class="container">
             <div class="section-header centered">
                 <span class="section-label">Claims Operations</span>
                 <h1 class="section-title" style="font-size: clamp(2.4rem, 6vw, 4.4rem);">Claims Intelligence Workbench</h1>
-                <p class="section-description" style="max-width: 920px; margin: 0 auto;">A structured claim strategy system that unifies evidence inventories, timeline control, legal correspondence, and regulator-ready documentation. It converts fragmented claim artifacts into an actionable decision framework with measurable next-step discipline.</p>
+                <p class="section-description" style="max-width: 920px; margin: 0 auto; font-size: 1.3rem;">A structured claim strategy system that unifies evidence inventories, timeline control, legal correspondence, and regulator-ready documentation. It converts fragmented claim artifacts into an actionable decision framework with measurable next-step discipline.</p>
+            </div>
+
+            <!-- Key Metrics -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 900px; margin: 3rem auto; text-align: center;">
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">4</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Workflow Stages</div>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">100%</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Evidence-Linked Outputs</div>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">Pre-Staged</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Escalation Packets</div>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div style="max-width: 1000px; margin: 3rem auto;">
+                <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/claims/hero.webp" alt="Claims Intelligence Workbench dashboard showing evidence management, timeline tracking, and escalation workflows" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
             </div>
         </div>
     </section>
 
-    <section class="section">
+    <!-- Operational Purpose + Capabilities -->
+    <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <div class="about-grid">
                 <div>
-                    <h2 style="color: var(--color-cyan);">Operational Purpose</h2>
-                    <p>The project was built around real claim pressure: maintain evidence fidelity, preserve chronology, standardize outbound communications, and reduce procedural error risk when claims escalate into dispute or litigation channels.</p>
-                    <p>Artifacts include strategic guides, overcharging analysis, master action plans, and print-ready legal packet workflows.</p>
+                    <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Operational Purpose</h2>
+                    <p class="lead">The project was built around real claim pressure: maintain evidence fidelity, preserve chronology, standardize outbound communications, and reduce procedural error risk when claims escalate into dispute or litigation channels.</p>
+                    <p style="margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.8;">Artifacts include strategic guides, overcharging analysis, master action plans, and print-ready legal packet workflows. Every document produced by the workbench is traceable to its source evidence, ensuring that claim positions are defensible under scrutiny from adjusters, regulators, and opposing counsel.</p>
+                    <p style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.8;">The system eliminates the operational chaos that emerges when claims span months or years. Instead of scattered emails, loose attachments, and manually tracked deadlines, the workbench enforces a single structured process from initial claim intake through final resolution or escalation.</p>
                 </div>
                 <div>
-                    <h3 style="color: var(--color-blue);">System Components</h3>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Platform Capabilities</h3>
                     <ul style="list-style: none; padding: 0;">
-                        <li style="padding: .7rem 0; border-bottom: 1px solid rgba(255,255,255,.1);">Claim strategy and negotiation playbooks</li>
-                        <li style="padding: .7rem 0; border-bottom: 1px solid rgba(255,255,255,.1);">Evidence packet generation and print workflows</li>
-                        <li style="padding: .7rem 0; border-bottom: 1px solid rgba(255,255,255,.1);">Regulatory and attorney referral preparation</li>
-                        <li style="padding: .7rem 0;">Escalation-aware communication templates</li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Claim strategy and negotiation playbooks with stage-gated progression tracking</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Evidence packet generation with print-ready legal document workflows</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Regulatory and attorney referral preparation with pre-staged submission packets</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Escalation-aware communication templates with tone and compliance controls</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Chronological timeline reconstruction from fragmented claim artifacts</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Overcharging analysis with itemized cost breakdowns and dispute documentation</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Master action plans with deadline tracking and next-step accountability</span>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Deep Dive: Workflow Automation and Document Management -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Deep Dive: Workflow Automation and Document Architecture</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">The workbench replaces ad-hoc claim management with a structured pipeline that enforces evidence linkage, deadline discipline, and escalation readiness at every stage of the claims lifecycle.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Stage-Gated Claim Processing</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Claims move through four defined stages: intake and evidence cataloging, strategy formulation, active negotiation, and resolution or escalation. Each stage gate requires specific documentation to be complete before progression. This prevents the common failure mode where claims advance into negotiation or litigation with incomplete evidence packets or inconsistent chronologies that undermine the claim position.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">At intake, every artifact is cataloged with metadata including source, date received, document type, and relevance classification. The system constructs a master timeline from these artifacts, automatically flagging chronological gaps or contradictions that could weaken the claim. Strategy formulation draws from standardized playbooks that encode proven negotiation approaches for common claim categories, while allowing customization for edge cases.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">During active negotiation, outbound communications are generated from escalation-aware templates that maintain consistent tone, reference specific evidence items, and preserve an auditable correspondence trail. If a claim reaches the escalation threshold, the system has already pre-staged the regulatory complaint packet, attorney referral brief, and supporting evidence bundle - eliminating the scramble that typically accompanies dispute escalation.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Document Management Architecture</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">The document layer treats every output as a derivative of source evidence. Strategic guides reference specific evidence inventory items by identifier. Overcharging analyses link each disputed line item to the source billing document and the applicable policy provision or regulatory standard. This bidirectional traceability means that any claim position can be audited back to its supporting evidence in seconds, not hours.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Print-ready workflows handle the physical reality of claims processing. Many regulatory bodies, courts, and insurance companies still require paper submissions with specific formatting, pagination, and exhibit labeling conventions. The workbench generates properly formatted packets that comply with these requirements, including tables of contents, exhibit indexes, and sequential bates numbering where required.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">Master action plans aggregate all pending tasks, deadlines, and accountability assignments across active claims into a single operational view. Deadline tracking accounts for statutory response windows, filing deadlines, and appeal periods, with configurable lead-time alerts that ensure no critical date passes without action. This transforms claims management from a reactive scramble into a proactive, calendar-driven discipline.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why It Matters -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <h2 class="section-title centered">Why It Matters</h2>
@@ -76,6 +148,15 @@
                 <div class="portfolio-card"><h3>Process Discipline</h3><p>Standardized playbooks and templates eliminate procedural errors during high-pressure dispute timelines.</p></div>
                 <div class="portfolio-card"><h3>Escalation Readiness</h3><p>Pre-staged regulator packets and attorney referral workflows reduce response time when claims advance.</p></div>
             </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: linear-gradient(135deg, var(--color-blue-dark) 0%, var(--color-blue) 100%); text-align: center; padding: 4rem 0;">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Interested in This Solution?</h2>
+            <p style="max-width: 600px; margin: 1rem auto 2rem; color: rgba(255,255,255,0.9); font-size: 1.1rem;">Learn how our claims workflow platform can streamline your operations.</p>
+            <a href="/contact" class="btn btn-primary"><span>Get in Touch</span></a>
         </div>
     </section>
 

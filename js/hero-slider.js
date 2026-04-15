@@ -18,61 +18,38 @@
     const buildSlideMarkup = (slidesConfig) => {
         return slidesConfig.map((slide, index) => {
             const companionA = slidesConfig[(index + 1) % slidesConfig.length];
-            const companionB = slidesConfig[(index + 2) % slidesConfig.length];
-            const companionC = slidesConfig[(index + 3) % slidesConfig.length];
+            const companionB = slidesConfig[(index - 1 + slidesConfig.length) % slidesConfig.length];
             const hasImage = typeof slide.src === 'string' && slide.src.trim().length > 0;
-            const loading = slide.loading || (index === 0 ? 'eager' : 'lazy');
+            const rawLoading = slide.loading || (index === 0 ? 'eager' : 'lazy');
+            const loading = ['eager', 'lazy', 'auto'].includes(rawLoading) ? rawLoading : 'lazy';
             const safeTitle = escapeHtml(slide.title || `SpiritAtlas Preview ${index + 1}`);
             const safeCaption = escapeHtml(slide.caption || 'Replace with your latest app screenshot.');
             const safeAlt = escapeHtml(slide.alt || slide.title || `SpiritAtlas slide ${index + 1}`);
             const safePlaceholder = escapeHtml(slide.placeholder || 'linear-gradient(135deg, #122d52 0%, #305dab 55%, #7229ba 100%)');
             const safeSrc = hasImage ? escapeHtml(slide.src) : '';
-            const safeWideSrc = typeof slide.wideSrc === 'string' && slide.wideSrc.trim().length > 0 ? escapeHtml(slide.wideSrc) : '';
             const companionASrc = companionA?.src ? escapeHtml(companionA.src) : '';
             const companionAAlt = escapeHtml(companionA?.alt || companionA?.title || 'SpiritAtlas companion screenshot');
-            const companionATitle = escapeHtml(companionA?.title || 'Next spiritual screen');
             const companionBSrc = companionB?.src ? escapeHtml(companionB.src) : '';
             const companionBAlt = escapeHtml(companionB?.alt || companionB?.title || 'SpiritAtlas companion screenshot');
-            const companionBTitle = escapeHtml(companionB?.title || 'Next spiritual screen');
-            const companionCSrc = companionC?.src ? escapeHtml(companionC.src) : '';
-            const companionCAlt = escapeHtml(companionC?.alt || companionC?.title || 'SpiritAtlas companion screenshot');
-            const companionCTitle = escapeHtml(companionC?.title || 'Next spiritual screen');
 
             return `
                 <div class="slide${index === 0 ? ' active' : ''}" role="option" id="slide-${escapeHtml(slide.id)}" aria-selected="${index === 0}" aria-posinset="${index + 1}" aria-setsize="${slidesConfig.length}" tabindex="${index === 0 ? '0' : '-1'}" data-slide-id="${escapeHtml(slide.id)}">
-                    <figure class="slide-figure${safeWideSrc ? ' has-wide' : ''}">
+                    <figure class="slide-figure">
                         <div class="slide-placeholder" style="background:${safePlaceholder};" aria-hidden="true"></div>
-                        ${safeWideSrc
-                            ? `<img class="slide-wide-img" src="${safeWideSrc}" alt="${safeAlt}" loading="${loading}" decoding="async" width="1920" height="1080">`
-                            : `<div class="slide-layout">
-                                <div class="slide-media">
-                                    <div class="slide-phone-strip">
-                                        <figure class="slide-phone-card is-primary">
-                                            ${hasImage
-                                                ? `<img src="${safeSrc}" alt="${safeAlt}" loading="${loading}" decoding="async" width="1080" height="2400">`
-                                                : `<div class="slide-image-fallback" role="img" aria-label="${safeAlt}">Screenshot placeholder ready for next upload</div>`
-                                            }
-                                            <figcaption>${safeTitle}</figcaption>
-                                        </figure>
-                                        <figure class="slide-phone-card">
-                                            ${companionASrc ? `<img src="${companionASrc}" alt="${companionAAlt}" loading="lazy" decoding="async" width="540" height="1200">` : ''}
-                                            <figcaption>${companionATitle}</figcaption>
-                                        </figure>
-                                        <figure class="slide-phone-card">
-                                            ${companionBSrc ? `<img src="${companionBSrc}" alt="${companionBAlt}" loading="lazy" decoding="async" width="540" height="1200">` : ''}
-                                            <figcaption>${companionBTitle}</figcaption>
-                                        </figure>
-                                    </div>
-                                </div>
-                                <aside class="slide-aside">
-                                    <div class="slide-aside-card">
-                                        <span class="slide-kicker">Ancient Wisdom &bull; AI Clarity</span>
-                                        <h4>${safeTitle}</h4>
-                                        <p>${safeCaption}</p>
-                                    </div>
-                                </aside>
-                            </div>`
-                        }
+                        <div class="slide-phones">
+                            <figure class="slide-phone slide-phone--left">
+                                ${companionBSrc ? `<img src="${companionBSrc}" alt="${companionBAlt}" loading="lazy" decoding="async" width="540" height="1200">` : ''}
+                            </figure>
+                            <figure class="slide-phone slide-phone--center">
+                                ${hasImage
+                                    ? `<img src="${safeSrc}" alt="${safeAlt}" loading="${loading}" decoding="async" width="1080" height="2400">`
+                                    : `<div class="slide-image-fallback" role="img" aria-label="${safeAlt}">Screenshot coming soon</div>`
+                                }
+                            </figure>
+                            <figure class="slide-phone slide-phone--right">
+                                ${companionASrc ? `<img src="${companionASrc}" alt="${companionAAlt}" loading="lazy" decoding="async" width="540" height="1200">` : ''}
+                            </figure>
+                        </div>
                         <figcaption class="slide-caption">
                             <strong>${safeTitle}</strong>
                             <span>${safeCaption}</span>
@@ -168,18 +145,19 @@
         const updateSlider = (index) => {
             const normalizedIndex = ((index % totalSlides) + totalSlides) % totalSlides;
 
-            slides.forEach((slide, slideIndex) => {
-                const isActive = slideIndex === normalizedIndex;
-                slide.classList.toggle('active', isActive);
-                slide.setAttribute('aria-selected', String(isActive));
-                slide.setAttribute('tabindex', isActive ? '0' : '-1');
-            });
+            // Deactivate previous
+            slides[currentIndex].classList.remove('active');
+            slides[currentIndex].setAttribute('aria-selected', 'false');
+            slides[currentIndex].setAttribute('tabindex', '-1');
+            dots[currentIndex].classList.remove('active');
+            dots[currentIndex].setAttribute('aria-current', 'false');
 
-            dots.forEach((dot, dotIndex) => {
-                const isActive = dotIndex === normalizedIndex;
-                dot.classList.toggle('active', isActive);
-                dot.setAttribute('aria-current', String(isActive));
-            });
+            // Activate new
+            slides[normalizedIndex].classList.add('active');
+            slides[normalizedIndex].setAttribute('aria-selected', 'true');
+            slides[normalizedIndex].setAttribute('tabindex', '0');
+            dots[normalizedIndex].classList.add('active');
+            dots[normalizedIndex].setAttribute('aria-current', 'true');
 
             track.style.transform = `translateX(-${normalizedIndex * 100}%)`;
             track.setAttribute('aria-activedescendant', `slide-${slidesConfig[normalizedIndex].id}`);
@@ -220,7 +198,7 @@
 
         toggleBtn?.addEventListener('click', () => {
             isPaused = !isPaused;
-            userInteracted = isPaused;
+            userInteracted = false;
             updatePauseButton();
             setProgress(0);
             restartAutoPlay();
@@ -245,8 +223,14 @@
             restartAutoPlay();
         }, { passive: true });
 
+        let parallaxRaf = null;
         slider.addEventListener('mouseenter', pauseTemporarily);
-        slider.addEventListener('mouseleave', resumeTemporarily);
+        slider.addEventListener('mouseleave', () => {
+            resumeTemporarily();
+            if (parallaxRaf) { cancelAnimationFrame(parallaxRaf); parallaxRaf = null; }
+            slider.style.setProperty('--sa-parallax-x', '0px');
+            slider.style.setProperty('--sa-parallax-y', '0px');
+        });
         slider.addEventListener('focusin', pauseTemporarily);
         slider.addEventListener('focusout', (event) => {
             if (!slider.contains(event.relatedTarget) && !userInteracted) {
@@ -279,17 +263,15 @@
         });
 
         slider.addEventListener('mousemove', (event) => {
-            if (prefersReducedMotion) return;
-            const rect = slider.getBoundingClientRect();
-            const x = ((event.clientX - rect.left) / rect.width) - 0.5;
-            const y = ((event.clientY - rect.top) / rect.height) - 0.5;
-            slider.style.setProperty('--sa-parallax-x', `${(x * 8).toFixed(2)}px`);
-            slider.style.setProperty('--sa-parallax-y', `${(y * 6).toFixed(2)}px`);
-        });
-
-        slider.addEventListener('mouseleave', () => {
-            slider.style.setProperty('--sa-parallax-x', '0px');
-            slider.style.setProperty('--sa-parallax-y', '0px');
+            if (prefersReducedMotion || parallaxRaf) return;
+            parallaxRaf = requestAnimationFrame(() => {
+                const rect = slider.getBoundingClientRect();
+                const x = ((event.clientX - rect.left) / rect.width) - 0.5;
+                const y = ((event.clientY - rect.top) / rect.height) - 0.5;
+                slider.style.setProperty('--sa-parallax-x', `${(x * 8).toFixed(2)}px`);
+                slider.style.setProperty('--sa-parallax-y', `${(y * 6).toFixed(2)}px`);
+                parallaxRaf = null;
+            });
         });
 
         updatePauseButton();

@@ -80,7 +80,7 @@
                         <p class="section-description">Fill out the form below and we'll respond within 24 business hours</p>
                     </div>
 
-                    <form class="contact-form" id="contactForm">
+                    <form class="contact-form" id="contactForm" name="contact" method="POST">
                         <div class="form-group">
                             <label for="name">Full Name *</label>
                             <input type="text" id="name" name="name" required placeholder="John Doe">
@@ -484,21 +484,11 @@
             }
         });
 
-        // Form Submission Handler
+        // Form Submission Handler — placeholder until Cloudflare Worker or Formspree backend is wired
         const contactForm = document.getElementById('contactForm');
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-
-            // Get form data
-            const formData = new FormData(contactForm);
-            const data = Object.fromEntries(formData);
-
-            // In production, this would send to a backend
-            console.log('Form submitted:', data);
-
-            // Show success message
-            alert('Thank you for your interest! We will contact you within 24 business hours.');
-            contactForm.reset();
+            contactForm.innerHTML = '<div style="text-align:center;padding:3rem 1rem;"><h3 style="color:var(--color-cyan);margin-bottom:1rem;">Message Received</h3><p style="color:var(--color-white);opacity:0.9;">Thank you for your interest. We will contact you within 24 business hours.</p></div>';
         });
 
         // Intersection Observer for Animations
