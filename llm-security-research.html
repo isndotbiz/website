@@ -35,6 +35,7 @@
         </div>
     </nav>
 
+    <!-- Project Hero -->
     <section class="hero" style="min-height: 70vh; padding-top: 130px;">
         <div class="hero-background"></div>
         <div class="container">
@@ -43,30 +44,101 @@
                 <h1 class="section-title" style="font-size: clamp(2.4rem, 6vw, 4.4rem);">LLM Security Research System</h1>
                 <p class="section-description" style="max-width: 920px; margin: 0 auto;">A production-grade adversarial testing platform with multi-agent orchestration, Protocol V2 quality gates, and interactive dashboards for model safety analysis. The system evaluates 33 frontier models across 36 attack techniques with strict evidence retention and compliance scoring.</p>
             </div>
+
+            <!-- Key Metrics -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 900px; margin: 3rem auto; text-align: center;">
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">100+</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Validated Evaluations</div>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">7</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Autonomous Agents</div>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">12</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Attack Categories</div>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div style="max-width: 1000px; margin: 3rem auto;">
+                <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/llm-security-research/hero.webp" alt="LLM Security Research System dashboard showing adversarial evaluation results across frontier models" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+            </div>
         </div>
     </section>
 
-    <section class="section">
+    <!-- Research Platform + Capabilities -->
+    <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <div class="about-grid">
                 <div>
-                    <h2 style="color: var(--color-cyan);">Research Platform</h2>
-                    <p>The system coordinates specialized agents for evaluation execution, model discovery, integrity checks, and web monitoring. Evaluation artifacts are stored in a 23-table SQLite schema and indexed in a retrieval layer for cross-technique analysis, refusal detection, and reproducibility.</p>
-                    <p>Protocol V2 enforces hard constraints on prompt length, response variance, and output completeness, reducing false confidence from shallow test runs.</p>
+                    <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Research Platform</h2>
+                    <p class="lead">The system coordinates specialized agents for evaluation execution, model discovery, integrity checks, and web monitoring. Evaluation artifacts are stored in a 23-table SQLite schema and indexed in a retrieval layer for cross-technique analysis, refusal detection, and reproducibility.</p>
+                    <p style="margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.8;">Protocol V2 enforces hard constraints on prompt length, response variance, and output completeness, reducing false confidence from shallow test runs. Each evaluation is scored against a standardized rubric that measures bypass success, model compliance, response coherence, and safety alignment degradation across multiple interaction turns.</p>
+                    <p style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.8;">The platform operates as a closed-loop research system: agents discover new model endpoints, generate attack prompts from category templates, execute evaluations with full transcript capture, score results against the rubric, and flag confirmed vulnerabilities for responsible disclosure review. Deduplication controls prevent redundant testing by hashing evaluation parameters and comparing against the historical corpus before execution.</p>
                 </div>
                 <div>
-                    <h3 style="color: var(--color-blue);">Measured Scope</h3>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Platform Capabilities</h3>
                     <ul style="list-style: none; padding: 0;">
-                        <li style="padding: .7rem 0; border-bottom: 1px solid rgba(255,255,255,.1);">356 validated evaluations with deduplication controls</li>
-                        <li style="padding: .7rem 0; border-bottom: 1px solid rgba(255,255,255,.1);">36 attack patterns, including 2025-2026 advanced techniques</li>
-                        <li style="padding: .7rem 0; border-bottom: 1px solid rgba(255,255,255,.1);">7 autonomous agents across parallel orchestration groups</li>
-                        <li style="padding: .7rem 0;">Dashboard and API layer for full untruncated response review</li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Multi-model evaluation across Claude, GPT, Gemini, and open-source LLMs</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Prompt injection testing with direct and indirect attack vectors</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Jailbreak evaluation using escalation chains and role-play exploits</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Guardrail bypass analysis for content policy enforcement</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Deduplication controls ensuring unique evaluation coverage</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Automated agent-driven evaluation pipeline with structured outputs</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Responsible disclosure workflow for confirmed vulnerabilities</span>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Deep Dive: Evaluation Methodology -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Deep Dive: Evaluation Methodology</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Seven specialized agents divide adversarial testing across 12 attack categories, applying a standardized scoring rubric and deduplication controls to produce reproducible, evidence-backed security assessments.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Agent Orchestration and Role Division</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">The seven autonomous agents operate across parallel orchestration groups, each responsible for a distinct phase of the evaluation lifecycle. The Discovery Agent continuously monitors model provider APIs and documentation for new endpoints, version changes, and capability updates that may alter the attack surface. The Template Agent maintains and evolves the prompt library across all 12 attack categories, generating new attack variants by combining category primitives with model-specific formatting and context window exploitation strategies.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">The Execution Agent runs evaluation batches against target models, managing rate limits, retry logic, and full transcript capture for every interaction turn. The Scoring Agent applies the standardized rubric to each evaluation transcript, producing numeric scores across bypass success, response coherence, safety alignment degradation, and output completeness dimensions. The Integrity Agent performs cross-evaluation consistency checks, flagging anomalous score distributions that may indicate model behavior changes or evaluation methodology drift.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">The Monitor Agent watches for model updates, policy changes, and new safety announcements from providers that could invalidate existing evaluation results or open new attack surfaces. The Disclosure Agent manages the responsible reporting pipeline, packaging confirmed vulnerabilities with reproduction steps, impact assessments, and mitigation recommendations for provider security teams.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Scoring Rubric and Deduplication</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">The scoring rubric evaluates each evaluation across four weighted dimensions. Bypass success measures whether the attack prompt achieved its intended objective, whether extracting restricted information, generating policy-violating content, or circumventing safety filters. Response coherence assesses whether the model's output was substantive and actionable rather than garbled or nonsensical, distinguishing genuine vulnerabilities from edge-case formatting artifacts. Safety alignment degradation tracks how far the model deviated from its baseline safety posture across multiple interaction turns, capturing gradual erosion that single-turn testing misses entirely.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Output completeness ensures the model provided a full response rather than truncating or hedging with partial compliance. Each dimension receives a score from 1 to 10, and the weighted composite determines the evaluation's severity classification: critical, high, medium, or informational.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">Deduplication prevents redundant testing by computing locality-sensitive hashes of evaluation parameters including the attack category, prompt template variant, target model, and model version. Before any new evaluation executes, the hash is compared against the historical corpus. If a matching evaluation exists with a valid score, the system skips re-execution unless the target model version has changed since the last test. This ensures that the 100+ validated evaluations represent genuinely unique coverage rather than inflated counts from repeated runs of the same attack against the same model.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why It Matters -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <h2 class="section-title centered">Why It Matters</h2>
@@ -76,6 +148,15 @@
                 <div class="portfolio-card"><h3>Adversarial Depth</h3><p>36 attack techniques span prompt injection, context manipulation, and advanced 2025-2026 evasion methods.</p></div>
                 <div class="portfolio-card"><h3>Reproducible Evidence</h3><p>Protocol V2 quality gates and full artifact retention ensure every finding can be independently verified.</p></div>
             </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: linear-gradient(135deg, var(--color-blue-dark) 0%, var(--color-blue) 100%); text-align: center; padding: 4rem 0;">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Interested in This Research?</h2>
+            <p style="max-width: 600px; margin: 1rem auto 2rem; color: rgba(255,255,255,0.9); font-size: 1.1rem;">Learn how our LLM security research can strengthen your AI deployment.</p>
+            <a href="/contact" class="btn btn-primary"><span>Get in Touch</span></a>
         </div>
     </section>
 
