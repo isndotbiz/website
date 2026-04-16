@@ -20,6 +20,7 @@
             const companionA = slidesConfig[(index + 1) % slidesConfig.length];
             const companionB = slidesConfig[(index - 1 + slidesConfig.length) % slidesConfig.length];
             const hasImage = typeof slide.src === 'string' && slide.src.trim().length > 0;
+            const hasVideo = typeof slide.video === 'string' && slide.video.trim().length > 0;
             const rawLoading = slide.loading || (index === 0 ? 'eager' : 'lazy');
             const loading = ['eager', 'lazy', 'auto'].includes(rawLoading) ? rawLoading : 'lazy';
             const safeTitle = escapeHtml(slide.title || `SpiritAtlas Preview ${index + 1}`);
@@ -27,10 +28,23 @@
             const safeAlt = escapeHtml(slide.alt || slide.title || `SpiritAtlas slide ${index + 1}`);
             const safePlaceholder = escapeHtml(slide.placeholder || 'linear-gradient(135deg, #122d52 0%, #305dab 55%, #7229ba 100%)');
             const safeSrc = hasImage ? escapeHtml(slide.src) : '';
+            const safeVideo = hasVideo ? escapeHtml(slide.video) : '';
+            const companionAVideo = companionA?.video ? escapeHtml(companionA.video) : '';
+            const companionAAlt = escapeHtml(companionA?.alt || companionA?.title || 'SpiritAtlas companion');
+            const companionBVideo = companionB?.video ? escapeHtml(companionB.video) : '';
+            const companionBAlt = escapeHtml(companionB?.alt || companionB?.title || 'SpiritAtlas companion');
             const companionASrc = companionA?.src ? escapeHtml(companionA.src) : '';
-            const companionAAlt = escapeHtml(companionA?.alt || companionA?.title || 'SpiritAtlas companion screenshot');
             const companionBSrc = companionB?.src ? escapeHtml(companionB.src) : '';
-            const companionBAlt = escapeHtml(companionB?.alt || companionB?.title || 'SpiritAtlas companion screenshot');
+
+            const buildPhoneContent = (videoUrl, imgUrl, alt, isCenter) => {
+                if (videoUrl) {
+                    return `<video ${isCenter ? 'autoplay' : ''} loop muted playsinline preload="${isCenter ? 'auto' : 'none'}" poster="${imgUrl}" width="480" height="832"><source src="${videoUrl}" type="video/mp4"></video>`;
+                }
+                if (imgUrl) {
+                    return `<img src="${imgUrl}" alt="${alt}" loading="lazy" decoding="async" width="480" height="832">`;
+                }
+                return `<div class="slide-image-fallback" role="img" aria-label="${alt}">Preview coming soon</div>`;
+            };
 
             return `
                 <div class="slide${index === 0 ? ' active' : ''}" role="option" id="slide-${escapeHtml(slide.id)}" aria-selected="${index === 0}" aria-posinset="${index + 1}" aria-setsize="${slidesConfig.length}" tabindex="${index === 0 ? '0' : '-1'}" data-slide-id="${escapeHtml(slide.id)}">
@@ -38,16 +52,13 @@
                         <div class="slide-placeholder" style="background:${safePlaceholder};" aria-hidden="true"></div>
                         <div class="slide-phones">
                             <figure class="slide-phone slide-phone--left">
-                                ${companionBSrc ? `<img src="${companionBSrc}" alt="${companionBAlt}" loading="lazy" decoding="async" width="540" height="1200">` : ''}
+                                ${buildPhoneContent(companionBVideo, companionBSrc, companionBAlt, false)}
                             </figure>
                             <figure class="slide-phone slide-phone--center">
-                                ${hasImage
-                                    ? `<img src="${safeSrc}" alt="${safeAlt}" loading="${loading}" decoding="async" width="1080" height="2400">`
-                                    : `<div class="slide-image-fallback" role="img" aria-label="${safeAlt}">Screenshot coming soon</div>`
-                                }
+                                ${buildPhoneContent(safeVideo, safeSrc, safeAlt, true)}
                             </figure>
                             <figure class="slide-phone slide-phone--right">
-                                ${companionASrc ? `<img src="${companionASrc}" alt="${companionAAlt}" loading="lazy" decoding="async" width="540" height="1200">` : ''}
+                                ${buildPhoneContent(companionAVideo, companionASrc, companionAAlt, false)}
                             </figure>
                         </div>
                         <figcaption class="slide-caption">
@@ -145,6 +156,9 @@
         const updateSlider = (index) => {
             const normalizedIndex = ((index % totalSlides) + totalSlides) % totalSlides;
 
+            // Pause videos on previous slide
+            slides[currentIndex].querySelectorAll('video').forEach(v => v.pause());
+
             // Deactivate previous
             slides[currentIndex].classList.remove('active');
             slides[currentIndex].setAttribute('aria-selected', 'false');
@@ -158,6 +172,11 @@
             slides[normalizedIndex].setAttribute('tabindex', '0');
             dots[normalizedIndex].classList.add('active');
             dots[normalizedIndex].setAttribute('aria-current', 'true');
+
+            // Play videos on active slide
+            slides[normalizedIndex].querySelectorAll('video').forEach(v => {
+                v.play().catch(() => {});
+            });
 
             track.style.transform = `translateX(-${normalizedIndex * 100}%)`;
             track.setAttribute('aria-activedescendant', `slide-${slidesConfig[normalizedIndex].id}`);
