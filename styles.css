@@ -2311,7 +2311,8 @@ li a:not(.nav-menu a):not(.footer-links a):not(.btn) {
     flex-shrink: 0;
 }
 
-.slide-phone img {
+.slide-phone img,
+.slide-phone video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -2357,7 +2358,8 @@ li a:not(.nav-menu a):not(.footer-links a):not(.btn) {
         0 0 120px rgba(95, 223, 223, 0.08);
 }
 
-.slide.active .slide-phone--center img {
+.slide.active .slide-phone--center img,
+.slide.active .slide-phone--center video {
     transform: scale(1.02);
     filter: saturate(1.08) contrast(1.04);
 }
@@ -2509,11 +2511,13 @@ li a:not(.nav-menu a):not(.footer-links a):not(.btn) {
     .slide,
     .slide-figure,
     .slide-phone,
-    .slide-phone img {
+    .slide-phone img,
+    .slide-phone video {
         transition: none !important;
     }
     .slide-figure,
-    .slide.active .slide-phone--center img {
+    .slide.active .slide-phone--center img,
+    .slide.active .slide-phone--center video {
         transform: none !important;
         filter: none !important;
     }
