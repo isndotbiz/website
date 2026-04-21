@@ -2279,8 +2279,8 @@ li a:not(.nav-menu a):not(.footer-links a):not(.btn) {
     display: flex;
     align-items: center;
     justify-content: center;
-    aspect-ratio: 16 / 10;
-    max-height: min(680px, 65vw);
+    aspect-ratio: 16 / 9;
+    max-height: min(820px, 58vw);
     overflow: hidden;
     background: #060e1c;
     transform: translate3d(var(--sa-parallax-x), var(--sa-parallax-y), 0);
@@ -2292,23 +2292,25 @@ li a:not(.nav-menu a):not(.footer-links a):not(.btn) {
     position: relative;
     z-index: 1;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    gap: 1.5rem;
-    height: 88%;
-    padding: 0 2rem;
+    gap: 0.75rem;
+    height: 100%;
+    padding: 1rem;
     --phone-perspective: 1200px;
 }
 
 .slide-phone {
     margin: 0;
-    border-radius: 20px;
+    border-radius: 16px;
     overflow: hidden;
     background: rgba(4, 13, 26, 0.95);
     border: 2px solid rgba(95, 223, 223, 0.18);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
     transition: transform 0.65s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 0.65s ease, box-shadow 0.65s ease;
-    flex-shrink: 0;
+    flex: 1 1 0;
+    min-width: 0;
+    height: 100%;
 }
 
 .slide-phone img,
@@ -2323,8 +2325,6 @@ li a:not(.nav-menu a):not(.footer-links a):not(.btn) {
 }
 
 .slide-phone--center {
-    width: 220px;
-    height: 86%;
     z-index: 3;
     border-color: rgba(95, 223, 223, 0.35);
     box-shadow:
@@ -2335,19 +2335,9 @@ li a:not(.nav-menu a):not(.footer-links a):not(.btn) {
 
 .slide-phone--left,
 .slide-phone--right {
-    width: 170px;
-    height: 72%;
     z-index: 2;
-    opacity: 0.7;
-    border-color: rgba(95, 223, 223, 0.12);
-}
-
-.slide-phone--left {
-    transform: perspective(var(--phone-perspective, 1200px)) rotateY(8deg) scale(0.92) translateX(12px);
-}
-
-.slide-phone--right {
-    transform: perspective(var(--phone-perspective, 1200px)) rotateY(-8deg) scale(0.92) translateX(-12px);
+    opacity: 0.92;
+    border-color: rgba(95, 223, 223, 0.18);
 }
 
 .slide.active .slide-phone--center {
@@ -2366,7 +2356,7 @@ li a:not(.nav-menu a):not(.footer-links a):not(.btn) {
 
 .slide.active .slide-phone--left,
 .slide.active .slide-phone--right {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .slide-placeholder {
@@ -2579,34 +2569,61 @@ li a:not(.nav-menu a):not(.footer-links a):not(.btn) {
     }
 
     .slide-phones {
-        gap: 0.6rem;
-        padding: 0 0.5rem;
-    }
-
-    .slide-phone--center {
-        width: 150px;
-    }
-
-    .slide-phone--left,
-    .slide-phone--right {
-        width: 95px;
-        height: 62%;
-    }
-
-    .slide-phone--left {
-        transform: perspective(var(--phone-perspective, 1200px)) rotateY(6deg) scale(0.9) translateX(8px);
-    }
-
-    .slide-phone--right {
-        transform: perspective(var(--phone-perspective, 1200px)) rotateY(-6deg) scale(0.9) translateX(-8px);
+        gap: 0.4rem;
+        padding: 0.4rem;
     }
 
     .slide-figure {
-        aspect-ratio: 3 / 4;
-        max-height: min(480px, 75vw);
+        aspect-ratio: 4 / 5;
+        max-height: min(560px, 95vw);
     }
 
     .slide-phone {
         border-radius: 14px;
+    }
+}
+
+/* Project visual gallery — 3-across key art tiles per project page */
+.visual-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+.visual-gallery-tile {
+    margin: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    background: var(--color-charcoal, #0D1117);
+    border: 1px solid rgba(95, 223, 223, 0.15);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+    transition: transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1), box-shadow 0.45s ease, border-color 0.45s ease;
+}
+
+.visual-gallery-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.65s ease, filter 0.65s ease;
+    filter: saturate(1.02) contrast(1.02);
+}
+
+.visual-gallery-tile:hover {
+    transform: translateY(-4px);
+    border-color: rgba(95, 223, 223, 0.45);
+    box-shadow: 0 24px 72px rgba(0, 0, 0, 0.55), 0 0 48px rgba(30, 159, 242, 0.15);
+}
+
+.visual-gallery-tile:hover img {
+    transform: scale(1.04);
+    filter: saturate(1.08) contrast(1.04);
+}
+
+@media (max-width: 900px) {
+    .visual-gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 }
