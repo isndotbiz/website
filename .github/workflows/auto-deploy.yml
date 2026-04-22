@@ -54,9 +54,31 @@ jobs:
           name: playwright-report
           path: playwright-report/
 
+      - name: Build deploy staging
+        if: github.ref == 'refs/heads/main' && success()
+        # wrangler's .cfignore is unreliable in practice and the repo contains
+        # large sibling dirs (hrocincorg/ is 2.2GB, includes a 396MB zip that
+        # exceeds Cloudflare Pages' 25MiB per-file limit). Copy ONLY the static
+        # site files into a staging dir.
+        run: |
+          mkdir -p /tmp/deploy-stage
+          # Copy top-level static files
+          cp -v *.html *.css _headers _redirects robots.txt sitemap.xml /tmp/deploy-stage/ 2>/dev/null || true
+          cp -v schema-*.json /tmp/deploy-stage/ 2>/dev/null || true
+          # Copy js/ directory recursively (site scripts only)
+          mkdir -p /tmp/deploy-stage/js
+          cp -rv js/*.js /tmp/deploy-stage/js/ 2>/dev/null || true
+          echo "=== staging contents ==="
+          ls /tmp/deploy-stage
+          echo "=== file count + size ==="
+          find /tmp/deploy-stage -type f | wc -l
+          du -sh /tmp/deploy-stage
+          echo "=== largest files ==="
+          find /tmp/deploy-stage -type f -exec du -h {} \; | sort -h | tail -5
+
       - name: Deploy to Cloudflare Pages
         if: github.ref == 'refs/heads/main' && success()
-        run: npx wrangler pages deploy . --project-name isnbiz-website --branch main --commit-dirty=true
+        run: npx wrangler@latest pages deploy /tmp/deploy-stage --project-name isnbiz-website --branch main --commit-dirty=true
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
