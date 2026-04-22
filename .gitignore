@@ -79,7 +79,7 @@ docs/
 *.backup
 
 # Dev/build scripts (not needed in deployment)
-scripts/
+scripts/*
 *.sh
 *.py
 # Exception: CI needs preview-server.js to serve the repo during test runs
