@@ -25,8 +25,27 @@ jobs:
       - name: Install Playwright
         run: npx playwright install --with-deps chromium
 
+      - name: Start preview server
+        run: |
+          node scripts/preview-server.js > /tmp/preview.log 2>&1 &
+          echo $! > /tmp/preview.pid
+          for i in $(seq 1 20); do
+            if curl -sf http://localhost:8080/ > /dev/null; then
+              echo "preview server up after ${i}s"
+              break
+            fi
+            sleep 1
+          done
+          curl -sI http://localhost:8080/ | head -1
+
       - name: Run tests
         run: npx playwright test --reporter=html
+        env:
+          BASE_URL: http://localhost:8080
+
+      - name: Stop preview server
+        if: always()
+        run: kill $(cat /tmp/preview.pid) 2>/dev/null || true
 
       - name: Upload test results
         if: always()

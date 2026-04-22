@@ -7,7 +7,7 @@ module.exports = defineConfig({
   retries: 1,
   reporter: [['html', { open: 'never' }], ['list']],
   use: {
-    baseURL: process.env.BASE_URL || 'https://isn.biz',
+    baseURL: process.env.BASE_URL || 'http://localhost:8080',
     ignoreHTTPSErrors: true,
   },
 });

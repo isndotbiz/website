@@ -82,6 +82,8 @@ docs/
 scripts/
 *.sh
 *.py
+# Exception: CI needs preview-server.js to serve the repo during test runs
+!scripts/preview-server.js
 
 # Reports and session docs (not deployed)
 ANALYSIS_COMPLETE.md
