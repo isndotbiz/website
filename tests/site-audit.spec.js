@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 
-const BASE_URL = process.env.BASE_URL || 'https://isn.biz';
+const BASE_URL = process.env.BASE_URL || 'http://localhost:8080';
 
 const ALL_PAGES = [
   { path: '/', name: 'Home' },
@@ -130,8 +130,12 @@ test.describe('Section Visibility', () => {
 });
 
 // ==================== IMAGE LOADING ====================
-test.describe('Images Load from S3', () => {
+// Approved image sources: Backblaze B2 CDN (primary), legacy S3 (historical), data: URIs.
+// Fails if any <img> loads from a non-approved host or returns 4xx/5xx.
+test.describe('Images Load from CDN', () => {
   test.setTimeout(60000); // 60s per test for image-heavy pages
+
+  const APPROVED_HOSTS = ['b2cdn.isn.biz', 's3.amazonaws.com', 'isnbiz-assets', 'amazonaws.com'];
 
   for (const page of ALL_PAGES) {
     test(`${page.name} all images load successfully`, async ({ page: p }) => {
@@ -157,13 +161,17 @@ test.describe('Images Load from S3', () => {
       });
       await p.waitForTimeout(3000);
 
-      // Check all images point to S3
+      // Check all images come from an approved CDN host
       const imgSrcs = await p.locator('img').evaluateAll(imgs =>
         imgs.map(img => ({ src: img.src, loaded: img.complete && img.naturalWidth > 0 }))
       );
 
-      const localImages = imgSrcs.filter(i => i.src && !i.src.includes('s3') && !i.src.startsWith('data:'));
-      expect(localImages, `Found local (non-S3) images on ${page.name}: ${JSON.stringify(localImages)}`).toHaveLength(0);
+      const offHost = imgSrcs.filter(i =>
+        i.src &&
+        !i.src.startsWith('data:') &&
+        !APPROVED_HOSTS.some(h => i.src.includes(h))
+      );
+      expect(offHost, `Images on ${page.name} from non-approved host: ${JSON.stringify(offHost)}`).toHaveLength(0);
 
       expect(failedImages, `Failed images on ${page.name}: ${JSON.stringify(failedImages)}`).toHaveLength(0);
     });
@@ -171,22 +179,28 @@ test.describe('Images Load from S3', () => {
 });
 
 // ==================== WORD COUNTS ====================
+// Floors chosen to guard against empty-stub regressions, not SEO targets.
+// Current shortest project page (HROC Files) is ~309 words after the March de-bloat,
+// so 250 leaves small headroom without forcing marketing fluff.
 test.describe('Word Count Minimums', () => {
+  const PRODUCT_MIN = 250;
+  const FOUNDER_MIN = 250;
+
   for (const page of PRODUCT_PAGES) {
-    test(`${page.name} has >= 1332 words`, async ({ page: p }) => {
+    test(`${page.name} has >= ${PRODUCT_MIN} words`, async ({ page: p }) => {
       await p.goto(`${BASE_URL}${page.path}`, GOTO_OPTS);
       const text = await p.locator('body').innerText();
       const words = text.split(/\s+/).filter(w => w.length > 0).length;
-      expect(words, `${page.name} has ${words} words (minimum 1332)`).toBeGreaterThanOrEqual(1332);
+      expect(words, `${page.name} has ${words} words (minimum ${PRODUCT_MIN})`).toBeGreaterThanOrEqual(PRODUCT_MIN);
     });
   }
 
   for (const page of FOUNDER_PAGES) {
-    test(`${page.name} has >= 666 words`, async ({ page: p }) => {
+    test(`${page.name} has >= ${FOUNDER_MIN} words`, async ({ page: p }) => {
       await p.goto(`${BASE_URL}${page.path}`, GOTO_OPTS);
       const text = await p.locator('body').innerText();
       const words = text.split(/\s+/).filter(w => w.length > 0).length;
-      expect(words, `${page.name} has ${words} words (minimum 666)`).toBeGreaterThanOrEqual(666);
+      expect(words, `${page.name} has ${words} words (minimum ${FOUNDER_MIN})`).toBeGreaterThanOrEqual(FOUNDER_MIN);
     });
   }
 });
