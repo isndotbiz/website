@@ -1,0 +1,911 @@
+{
+  "generated_at": "2026-05-06T18:31:38+00:00",
+  "delay_days": 7,
+  "total_alerts": 1969,
+  "scanners_active": 9,
+  "median_hit_rate_20d": null,
+  "hit_rate_by_scanner": {},
+  "median_return_20d_by_signal": {},
+  "recent_alerts": [
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "gdpr-intel",
+      "signal_type": "enforcement_action",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "gdpr-intel",
+      "signal_type": "enforcement_action",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "gdpr-intel",
+      "signal_type": "enforcement_action",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "gdpr-intel",
+      "signal_type": "enforcement_action",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "gdpr-intel",
+      "signal_type": "enforcement_action",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "gdpr-intel",
+      "signal_type": "enforcement_action",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "gdpr-intel",
+      "signal_type": "enforcement_action",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "gdpr-intel",
+      "signal_type": "enforcement_action",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "gdpr-intel",
+      "signal_type": "enforcement_action",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "gdpr-intel",
+      "signal_type": "enforcement_action",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "gdpr-intel",
+      "signal_type": "enforcement_action",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "gdpr-intel",
+      "signal_type": "enforcement_action",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "gdpr-intel",
+      "signal_type": "enforcement_action",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "gdpr-intel",
+      "signal_type": "enforcement_action",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "gdpr-intel",
+      "signal_type": "enforcement_action",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "gdpr-intel",
+      "signal_type": "enforcement_action",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "gdpr-intel",
+      "signal_type": "enforcement_action",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "gdpr-intel",
+      "signal_type": "enforcement_action",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "fedreg-intel",
+      "signal_type": "forward_regulation",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "fedreg-intel",
+      "signal_type": "forward_regulation",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "fedreg-intel",
+      "signal_type": "forward_regulation",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "fedreg-intel",
+      "signal_type": "forward_regulation",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "fedreg-intel",
+      "signal_type": "forward_regulation",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "fedreg-intel",
+      "signal_type": "forward_regulation",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    },
+    {
+      "alert_date": "2026-04-29",
+      "scanner": "basis-monitor",
+      "signal_type": "basis_anomaly",
+      "ticker": "",
+      "return_5d": null,
+      "return_20d": null,
+      "return_60d": null
+    }
+  ]
+}
