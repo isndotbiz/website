@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ISN Signals — public forward-returns ledger. Every alert from our 12-scanner intelligence stack, timestamped, with 5/20/60-day stock returns auto-backfilled. Audit-grade evidence of signal quality.">
+    <meta name="keywords" content="financial intelligence, SEC EDGAR, congressional trading, prediction markets, signal quality, forward returns, alpha attribution, ISN">
+    <meta name="author" content="iSN.BiZ Inc">
+    <meta property="og:title" content="ISN Signals — Public Forward-Returns Ledger">
+    <meta property="og:description" content="Every alert from our 12-scanner intelligence stack, with 5/20/60-day stock returns auto-backfilled. Audit it yourself.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://signals.isn.biz">
+    <title>ISN Signals — Public Forward-Returns Ledger</title>
+    <link rel="icon" type="image/webp" href="https://b2cdn.isn.biz/file/isnbiz-cdn/premium_v3/logos/favicon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav">
+            <a href="https://isn.biz" class="logo">iSN.BiZ</a>
+            <span class="nav-divider">/</span>
+            <span class="nav-current">Signals</span>
+        </nav>
+        <div class="hero-content">
+            <h1>The Forward-Returns Ledger</h1>
+            <p class="hero-sub">Every alert from our 12-scanner intelligence stack — timestamped, with 5/20/60-day stock returns auto-backfilled. Public feed runs 7 days behind the live subscriber feed during launch (ratcheting to 30 days as the ledger matures). Audit it yourself.</p>
+            <div class="hero-stats" id="hero-stats">
+                <div class="stat"><span class="stat-num" id="stat-total">—</span><span class="stat-label">Tracked alerts</span></div>
+                <div class="stat"><span class="stat-num" id="stat-scanners">—</span><span class="stat-label">Scanners contributing</span></div>
+                <div class="stat"><span class="stat-num" id="stat-hitrate">—</span><span class="stat-label">Median 20d hit rate</span></div>
+                <div class="stat"><span class="stat-num" id="stat-updated">—</span><span class="stat-label">Last refresh</span></div>
+            </div>
+            <a href="#why" class="cta-secondary">How this works ↓</a>
+        </div>
+    </header>
+
+    <section class="panel" id="by-scanner">
+        <h2>Hit rate by scanner</h2>
+        <p class="panel-sub">Percent of alerts with positive 20-day return, by source. Higher is better — but the mix matters more than any single number.</p>
+        <div class="chart-container">
+            <canvas id="chart-hitrate" aria-label="Hit rate by scanner bar chart"></canvas>
+        </div>
+    </section>
+
+    <section class="panel" id="by-return">
+        <h2>Median 20-day return by signal type</h2>
+        <p class="panel-sub">The middle return outcome, not the average — robust to outliers. This is the number that pays.</p>
+        <div class="chart-container">
+            <canvas id="chart-returns" aria-label="Median 20-day return by signal type bar chart"></canvas>
+        </div>
+    </section>
+
+    <section class="panel" id="recent">
+        <h2>Recent alerts (30-day delay)</h2>
+        <p class="panel-sub">Last 100 alerts, sortable. Subscribers see these in real time. The public feed is a 30-day-delayed audit trail — intentionally — so you can verify the methodology without seeing live edge.</p>
+        <div class="table-wrap">
+            <table id="alerts-table">
+                <thead>
+                    <tr>
+                        <th data-sort="alert_date">Date</th>
+                        <th data-sort="scanner">Scanner</th>
+                        <th data-sort="signal_type">Signal</th>
+                        <th data-sort="ticker">Ticker</th>
+                        <th data-sort="return_5d" class="num">5d %</th>
+                        <th data-sort="return_20d" class="num">20d %</th>
+                        <th data-sort="return_60d" class="num">60d %</th>
+                    </tr>
+                </thead>
+                <tbody id="alerts-tbody">
+                    <tr><td colspan="7" class="loading">Loading delayed ledger…</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="panel" id="why">
+        <h2>How this works</h2>
+        <div class="why-grid">
+            <div class="why-card">
+                <h3>1. Twelve sources</h3>
+                <p>SEC EDGAR (8-K + SC 13D + Form 4), Senate &amp; House STOCK Act PTRs, Polymarket &amp; Kalshi, EU GDPR enforcement, USDA agricultural basis, Federal Register, ClinicalTrials.gov, CISA KEV, USPTO PTAB, EMMA muni bonds, SAM.gov contracts, CNIPA patents.</p>
+            </div>
+            <div class="why-card">
+                <h3>2. Cross-signal fusion</h3>
+                <p>Single-source alerts are commodity. The edge is in the overlaps — congressional trade plus EDGAR filing in the same name, federal rule plus sector-correlated 8-K. Our correlator surfaces those automatically.</p>
+            </div>
+            <div class="why-card">
+                <h3>3. Forward returns auto-backfilled</h3>
+                <p>Every alert writes one row to a JSONL ledger at the moment it fires. A daily backfill job fills in the 5-day, 20-day, and 60-day stock returns once the windows close. We don't get to revise predictions after the fact.</p>
+            </div>
+            <div class="why-card">
+                <h3>4. Public feed delays the edge</h3>
+                <p>The live subscriber feed is real-time. The public ledger is intentionally delayed (7 days at launch, ratcheting to 30 once the dataset matures) so you can audit the methodology without consuming the edge. Source-of-truth timestamps mean every claim is verifiable.</p>
+            </div>
+        </div>
+        <div class="cta-block">
+            <p>Want the live feed?</p>
+            <a href="https://isn.biz/intelligence" class="cta-primary">See the subscription</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Public ledger, 30-day delay. Updated nightly. Last refresh: <span id="footer-updated">—</span>.</p>
+        <p class="footer-fine">© <span id="footer-year"></span> iSN.BiZ Inc. Not investment advice. Past returns do not guarantee future returns. Forward returns shown are total returns including dividends, computed against the alert-date close. Tickers shown only when resolved by the scanner.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="signals.js" defer></script>
+</body>
+</html>
