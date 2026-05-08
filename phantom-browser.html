@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Phantom Browser is an automation framework for anti-detection browser operations with proxy controls, fingerprint management, and account-kit execution.">
-    <meta name="keywords" content="Phantom Browser, browser automation, anti-detection, fingerprint management, proxy routing, Playwright">
+    <meta name="description" content="Phantom Browser — Rust + Tauri stealth browser orchestration platform built around Camoufox, BrowserForge fingerprints, Decodo residential and mobile proxies, and a multi-tier IP reputation gate (IPQS, ProxyCheck, AbuseIPDB) for OSINT, scraping, and adversarial-resistant automation.">
+    <meta name="keywords" content="phantom browser, stealth browser, Camoufox, BrowserForge, Decodo proxy, IPQS, ProxyCheck, AbuseIPDB, CreepJS, fingerprint resistance, OSINT, scraping, anti-detect, Tauri, Rust, Playwright CDP, iSN.BiZ">
     <meta name="author" content="iSN.BiZ Inc">
-    <meta property="og:title" content="Phantom Browser Automation Stack | iSN.BiZ Inc">
-    <meta property="og:description" content="Operational browser layer for large-scale account workflows with hardened fingerprint behavior and proxy routing.">
+    <meta property="og:title" content="Phantom Browser | iSN.BiZ Inc">
+    <meta property="og:description" content="Stealth browser orchestration platform. 24-profile fleet, Camoufox stealth runtime, mobile-carrier proxy gating, CreepJS-aligned detection dashboard, REST control plane on :7890.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/phantom-browser/hero.webp">
-    <title>Phantom Browser Automation Stack | iSN.BiZ Inc</title>
+    <title>Phantom Browser | iSN.BiZ Inc</title>
     <link rel="icon" type="image/webp" href="https://b2cdn.isn.biz/file/isnbiz-cdn/premium_v3/logos/favicon.webp">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="enhanced-animations.css">
@@ -20,115 +20,149 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="spirit-project">
-    <nav class="nav">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+        <nav class="nav">
         <div class="container nav-container">
-            <div class="logo"><a href="/"><img src="https://b2cdn.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img"></a></div>
-            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation" type="button"><span></span><span></span><span></span></button>
+            <div class="logo">
+                <a href="/">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-menu" id="primary-navigation">
-                <li><a href="/about">About</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/portfolio" class="active">Portfolio</a></li>
-                <li><a href="/investors">Investors</a></li>
-                <li class="has-dropdown"><a href="#team">Team</a><ul class="dropdown-menu"><li><a href="/jonathan">Jonathan Mallinger</a></li><li><a href="/lilly">Lilly Fedas</a></li><li><a href="/bri">Brianna Bear</a></li></ul></li>
-                <li><a href="/contact" class="nav-cta">Contact</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/portfolio" class="active">Portfolio</a></li>
+            <li><a href="/investors">Investors</a></li>
+            <li class="has-dropdown">
+                <a href="#team">Team</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/jonathan">Jonathan Mallinger</a></li>
+                    <li><a href="/lilly">Lilly Fedas</a></li>
+                    <li><a href="/bri">Brianna Bear</a></li>
+                </ul>
+            </li>
+            <li><a href="/contact" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <section class="hero" style="min-height: 70vh; padding-top: 130px;">
+    <main id="main-content">
+
+    <!-- Project Hero -->
+    <section class="hero" style="min-height: 70vh; padding-top: 120px;">
         <div class="hero-background"></div>
         <div class="container">
             <div class="section-header centered">
-                <span class="section-label">Automation Infrastructure</span>
-                <h1 class="section-title" style="font-size: clamp(2.4rem, 6vw, 4.4rem);">Phantom Browser Automation Stack</h1>
-                <p class="section-description" style="max-width: 920px; margin: 0 auto;">Phantom Browser provides an operational browser layer for large-scale account workflows. It combines hardened fingerprint behavior, proxy routing, optional IP quality validation, and automation scripts for account creation, login, warmup, and maintenance across multiple targets.</p>
+                <span class="section-label">Stealth Browser Orchestration</span>
+                <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">Phantom Browser</h1>
+                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">A Rust and Tauri desktop control plane wrapped around the Camoufox stealth runtime. Phantom Browser orchestrates a fleet of identity-isolated profiles &mdash; each with a deterministic BrowserForge fingerprint, a Decodo residential or mobile-carrier proxy, a CreepJS-aligned coherence model, and a dedicated Playwright CDP socket &mdash; behind a single REST API on port 7890. Built for OSINT collection, durable scraping, account warming, and any automation workload that has to survive a competent detection stack without leaking the operator.</p>
             </div>
 
             <!-- Key Metrics -->
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 900px; margin: 3rem auto; text-align: center;">
-                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
-                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">5</div>
-                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Evasion Layers</div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 900px; margin: 3rem auto; text-align: center;">
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">24</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">Identity-isolated profiles in the live fleet</div>
                 </div>
-                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
-                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">&lt;200ms</div>
-                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Average Action Latency</div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">:7890</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">REST control plane port</div>
                 </div>
-                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
-                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">24/7</div>
-                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Autonomous Operation</div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">3-tier</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">IP reputation gate (IPQS &rarr; ProxyCheck &rarr; AbuseIPDB)</div>
                 </div>
             </div>
 
             <div style="max-width: 1000px; margin: 3rem auto;">
-                <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/phantom-browser/hero.webp" alt="Phantom Browser automation stack dashboard showing proxy controls and fingerprint management interface" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/phantom-browser/hero.webp" alt="Phantom Browser stealth orchestration interface showing profile fleet, fingerprint coherence, and proxy reputation scoring" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
             </div>
         </div>
     </section>
+
     <!-- BEGIN project-visual-gallery -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <div class="section-header centered" style="margin-bottom: 2.5rem;">
-                <span class="section-label">Visual Intelligence</span>
+                <span class="section-label">Visual System</span>
                 <h2 class="section-title">Signature Key Art</h2>
-                <p class="section-description" style="max-width: 780px; margin: 0 auto;">A cinematic visual system built around the Phantom Browser product intelligence theme — rendered via Flux + custom LoRA stacks on brand palette.</p>
+                <p class="section-description" style="max-width: 780px; margin: 0 auto;">A cinematic visual system built around the Phantom Browser stealth-orchestration theme &mdash; rendered via Flux and custom LoRA stacks on the iSN.BiZ Neo-Technical Brutalism palette.</p>
             </div>
             <div class="visual-gallery">
                 <figure class="visual-gallery-tile">
-                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/phantom-browser/gallery_1.webp" alt="Phantom Browser autonomy key art with parallel stealth session panels — study 1" loading="lazy">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/phantom-browser/gallery_1.webp" alt="Phantom Browser stealth key art with proxy mesh and fingerprint coherence lattice &mdash; study 1" loading="lazy">
                 </figure>
                 <figure class="visual-gallery-tile">
-                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/phantom-browser/gallery_2.webp" alt="Phantom Browser autonomy key art with parallel stealth session panels — study 2" loading="lazy">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/phantom-browser/gallery_2.webp" alt="Phantom Browser stealth key art with proxy mesh and fingerprint coherence lattice &mdash; study 2" loading="lazy">
                 </figure>
                 <figure class="visual-gallery-tile">
-                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/phantom-browser/gallery_3.webp" alt="Phantom Browser autonomy key art with parallel stealth session panels — study 3" loading="lazy">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/phantom-browser/gallery_3.webp" alt="Phantom Browser stealth key art with proxy mesh and fingerprint coherence lattice &mdash; study 3" loading="lazy">
                 </figure>
             </div>
         </div>
     </section>
     <!-- END project-visual-gallery -->
 
-
-    <!-- Technical Direction -->
+    <!-- Architecture Overview -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <div class="about-grid">
                 <div>
-                    <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Technical Direction</h2>
-                    <p class="lead">The stack is implemented around Playwright-core plus rebrowser controls, with modules for proxy bridge, fingerprint shaping, humanization behavior, and external service checks. The architecture was expanded with DNS leak controls, Decodo zip targeting, and verification tooling designed to reduce detection risk while preserving runtime observability.</p>
-                    <p style="margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.8;">Account-kit directories provide project-specific onboarding and operational procedures, making execution reusable across distinct properties. Each kit encapsulates the full lifecycle from account creation through warmup to steady-state maintenance, with target-specific selectors, timing profiles, and verification checkpoints baked into portable configuration files.</p>
-                    <p style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.8;">The proxy bridge layer abstracts provider complexity behind a unified interface that handles geotargeting, rotation policies, and health scoring. Operators select a geographic target and quality threshold; the bridge handles provider negotiation, sticky session management, and automatic failover when a proxy endpoint degrades below acceptable latency or detection thresholds.</p>
+                    <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Architecture Overview</h2>
+                    <p class="lead">Detection is no longer one signal. Modern fingerprinting stacks &mdash; CreepJS, FingerprintJS Pro, Cloudflare Bot Management, PerimeterX, Akamai &mdash; correlate dozens of independent surfaces and reject sessions where any pair disagrees. Phantom Browser is the orchestration layer that keeps every surface coherent for every profile, every launch.</p>
+                    <p style="margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.8;">The desktop application is a Rust and Tauri shell that owns profile state, proxy credentials, cookie jars, and the REST control plane on port 7890. Each profile is a JSON document &mdash; fingerprint, proxy block, identity persona, deterministic noise seeds, and a unique CDP port &mdash; persisted under <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">~/Library/Application Support/com.phantombrowser.app/</code>. When a profile launches, the Rust backend spawns a Python child process (<code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">launcher.py</code>) that drives Camoufox, the Firefox-based stealth fork.</p>
+                    <p style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.8;">Camoufox is patched at the C++ layer to neutralize the leakiest detection surfaces &mdash; canvas, audio, WebGL, navigator, screen, timezone, fonts, mediaDevices, battery, clientRects &mdash; and Phantom Browser supplies the per-profile parameters that make those neutralizations look real. BrowserForge generates statistically realistic Firefox fingerprints scoped to a target operating system. Decodo provides the proxy egress: a residential pool when the profile demands fixed-line geolocation, or a mobile pool routing through true cellular ASNs (T-Mobile 21928, AT&amp;T Mobility 20057, Verizon Wireless 22394, Sprint 10507, Cricket 16814) when the profile demands carrier IP. Every IP is scored before launch through a three-tier reputation gate, and every launch ends with cookies persisted back to the profile so the next session resumes warm.</p>
+                    <p style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.8;">Each profile gets a unique CDP port (the live fleet uses 9222&ndash;9230 and 6001&ndash;7005). That means a single Phantom Browser host can run dozens of fully isolated Camoufox instances in parallel, each automatable through Playwright over the exposed CDP socket, without any browser-level state crossing identity boundaries.</p>
                 </div>
                 <div>
-                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Operational Capabilities</h3>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Technical Capabilities</h3>
                     <ul style="list-style: none; padding: 0;">
                         <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
                             <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
-                            <span>Proxy bridge with geotargeting and DNS leak controls</span>
+                            <span>Camoufox stealth runtime (Firefox fork with C++-level fingerprint patches) driven by per-profile JSON config</span>
                         </li>
                         <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
                             <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
-                            <span>Fingerprint shaping and anti-webdriver hardening</span>
+                            <span>BrowserForge fingerprint generation across Windows, macOS, and Linux with realistic CPU&ndash;memory&ndash;screen pairing</span>
                         </li>
                         <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
                             <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
-                            <span>IP quality scoring for pre-launch validation</span>
+                            <span>Deterministic SHA-256 noise seeds per profile UUID for canvas, audio, WebGL, cursor, font, mediaDevices, battery, clientRects</span>
                         </li>
                         <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
                             <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
-                            <span>Account-kit architecture for portable workflows</span>
+                            <span>Decodo residential and mobile proxy integration with session rotation, country and city targeting, and configurable session duration</span>
                         </li>
                         <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
                             <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
-                            <span>Behavioral humanization for mouse, scroll, timing</span>
+                            <span>Three-tier IP reputation gate &mdash; IPQS, then ProxyCheck.io, then AbuseIPDB &mdash; with quota-exhaustion fallback and an unscored-launch lockout</span>
                         </li>
                         <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
                             <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
-                            <span>Session persistence with cookie and state management</span>
+                            <span>Client-side mobile-carrier classifier with ASN allowlist, ISP-substring veto, and datacenter-ASN hard reject (AWS, GCP, OVH, Hetzner, Cloudflare, etc.)</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Per-profile Playwright CDP socket on a unique remote-debugging port for parallel automation without state collision</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Per-profile cookie persistence (load on launch, save on SIGTERM) for warm-session continuity across restarts</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Built-in CreepJS-aligned detection dashboard loaded as the first tab on every launch &mdash; eleven panels, live status</span>
                         </li>
                         <li style="padding: 0.75rem 0; display: flex; align-items: flex-start; gap: 0.75rem;">
                             <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
-                            <span>Automated health checks and runtime observability</span>
+                            <span>REST control plane on port 7890 for programmatic profile launch, status, and shutdown from the broader iSN.BiZ automation stack</span>
                         </li>
                     </ul>
                 </div>
@@ -136,97 +170,285 @@
         </div>
     </section>
 
-    <!-- Deep Dive: Architecture -->
+    <!-- Deep Dive: Stealth and Fingerprint Resistance -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Deep Dive: Browser Automation Architecture</h2>
-            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Phantom Browser layers evasion engineering on top of Playwright-core through rebrowser controls, a purpose-built proxy bridge, and a multi-stage verification pipeline that validates stealth posture before any operational action executes.</p>
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Deep Dive: Stealth and Fingerprint Resistance</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Modern detection is correlation. A bot is not caught by a single signal &mdash; it is caught by two signals that disagree. Phantom Browser is engineered around that fact.</p>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
                 <div>
-                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Playwright-core and Rebrowser Integration</h3>
-                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">The automation layer is built on Playwright-core rather than full Playwright to avoid bundled browser binaries and retain precise control over the Chromium build used at runtime. Rebrowser patches are applied at launch to neutralize common webdriver detection vectors including navigator.webdriver flags, CDP runtime signatures, and iframe sandboxing artifacts that bot detection services fingerprint.</p>
-                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Each browser context is launched with a synthesized fingerprint profile that covers user agent string, viewport dimensions, WebGL renderer strings, canvas noise injection, AudioContext properties, and timezone-locale consistency. The fingerprint generator draws from a validated distribution of real browser configurations so that each session presents statistically plausible hardware and software characteristics rather than generic defaults that detection systems flag as synthetic.</p>
-                    <p style="font-size: 1.05rem; line-height: 1.8;">Context isolation ensures that each account operates in a fully independent browser state with dedicated cookies, local storage, IndexedDB, and service worker registrations. Session state is serialized to disk after each operation and restored on subsequent launches, maintaining login persistence and warmup continuity across execution cycles without cross-contamination between accounts.</p>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Triangle Coherence: Timezone, Country, Locale</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">CreepJS and similar correlators reject sessions where the JavaScript-reported timezone disagrees with the IP geolocation, or where either disagrees with <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">navigator.language</code>. Phantom Browser enforces a triangle invariant at profile-build time: if the proxy egresses through Los Angeles, the timezone is locked to <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">America/Los_Angeles</code> and the locale is locked to a US English variant. The hermes profile, for example, ships with <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">timezone=America/Los_Angeles</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">city=Los Angeles</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">ZIP=90014</code>, and a Decodo mobile session targeting <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">user-...-country-us-city-los_angeles-sessionduration-60</code>. The three corners of the triangle are derived from one source, not three.</p>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem; margin-top: 1.5rem;">Deterministic Noise Seeds</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">Every profile carries deterministic SHA-256-derived seeds for canvas, audio, WebGL, cursor, font, mediaDevices, battery, and clientRects noise. The seeds are computed as <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">u32(profile_uuid + label)</code> with no separator, matching the seed derivation used elsewhere in the iSN.BiZ automation pipeline so the desktop app and downstream tooling generate the same bits for a given identity. The reason matters: CreepJS 2025 explicitly flags <em>inconsistent</em> per-call noise as bot behaviour. Real browsers produce stable canvas hashes session over session; only naive randomized spoofers re-roll on every render. Phantom Browser produces stable, identity-locked noise that survives re-launch.</p>
                 </div>
                 <div>
-                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Proxy Bridge and Verification Pipeline</h3>
-                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">The proxy bridge abstracts multiple upstream providers behind a unified routing layer. Operators specify geographic targets at the country, state, or city level, and the bridge resolves the request against available provider inventories, selecting endpoints that meet latency and quality thresholds. Decodo zip-level targeting enables precise geographic alignment for location-sensitive account operations where IP geolocation must match the account's registered address.</p>
-                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Before any operational action fires, the verification pipeline runs a multi-point check sequence. DNS leak tests confirm that all DNS resolution routes through the proxy rather than leaking through the host system. IP quality scoring queries external reputation databases to reject endpoints flagged for abuse, datacenter origin, or VPN detection. WebRTC leak checks verify that the browser context does not expose the real IP through STUN requests. Only after all checks pass does the session proceed to execute the account-kit workflow.</p>
-                    <p style="font-size: 1.05rem; line-height: 1.8;">The humanization layer injects realistic behavioral noise into every interaction. Mouse movements follow Bezier curve interpolation with variable velocity profiles. Scroll actions use momentum-based physics with randomized deceleration. Keystroke timing varies per character with realistic inter-key delays that model actual typing cadence. These behavioral overlays make automated sessions statistically indistinguishable from human-driven browser usage in timing analysis.</p>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Font Spoofing by Device Category</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Font enumeration is one of the cheapest and most-trusted fingerprint surfaces. A real Apple M1 MacBook ships a specific set of seventy-odd system fonts; a real Windows 11 desktop ships a different set; a fresh Linux install ships a third. Phantom Browser injects font lists scoped by <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">deviceCategory</code> &mdash; <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">macbook_m1</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">windows_desktop</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">linux_workstation</code> &mdash; so a profile claiming to be an Apple M1 with macOS reports the seventy fonts that machine actually ships, not the host operating system's font list.</p>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem; margin-top: 1.5rem;">Multi-Tier IP Reputation Gate</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Before any profile launches, the chosen Decodo session has to clear a reputation threshold. The launcher's <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">--scan-ip</code> mode rotates Decodo session IDs in parallel, queries each candidate through <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">ip.decodo.com/json</code> for first-hop ISP and ASN data, and then runs the IP through a three-tier reputation chain: IPQualityScore first, then ProxyCheck.io, then AbuseIPDB. Default threshold is fraud_score &le; 30. When IPQS quota is exhausted the gate falls through to ProxyCheck; when ProxyCheck is exhausted, AbuseIPDB takes over. If <em>every</em> provider is simultaneously down the launcher refuses to launch on an unscored session unless <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">IPQS_ALLOW_UNSCORED=1</code> is set explicitly in the environment.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">Aggregated ISP labels are kept across providers because providers disagree: Decodo's first-hop label may say <em>Verizon 5G Home</em> while ProxyCheck says <em>Cellco Partnership</em>. The classifier checks every label against a substring blocklist (<code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">5g home</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">fios</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">fixed wireless</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">hotspot</code>) so a single bad label vetoes the IP even when the others look clean.</p>
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-top: 3rem;">
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Mobile-Carrier Gate &mdash; Why Server-Side ASN Targeting Fails</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Decodo exposes server-side <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">asn-N</code> targeting parameters, but live testing in 2026 confirmed two failure modes: server-side targeting silently falls back to whatever pool is available (three sequential carrier requests came back as the same T-Mobile session), and the mobile pool itself contains misclassified Verizon 5G Home and FiOS residential IPs the carrier filter is supposed to exclude. Phantom Browser therefore classifies every candidate IP <em>client-side</em> after the proxy egresses.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">The classifier runs in two modes. <strong>"any" mode</strong> (default) accepts mobile and residential IPs and rejects only datacenter and hosting (AWS 16509, Google 15169, Cloudflare 13335, OVH 16276, Hetzner 24940, DigitalOcean 14061, Vultr 20473, M247 9009, and a dozen more), with hard-reject ISP substring markers <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">hosting</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">datacenter</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">cloud</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">vps</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">colocation</code>. <strong>"mobile" mode</strong> (set via <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">IPQS_CARRIER_MODE=mobile</code>) restricts to true cellular allowlist ASNs and additionally rejects residential ISP ASNs Comcast 7922, Charter Spectrum 20115, AT&amp;T residential 7018, and Verizon Business 701 / 702.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">CreepJS-Aligned Detection Dashboard</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Every Camoufox launch opens with a built-in detection dashboard as the first tab. Operators see eleven coherence panels &mdash; <strong>IP &amp; Proxy</strong>, <strong>WebRTC Leak Test</strong>, <strong>Navigator</strong>, <strong>Screen &amp; Display</strong>, <strong>WebGL Fingerprint</strong>, <strong>Canvas Fingerprint</strong>, <strong>Timezone &amp; Locale</strong>, <strong>Geolocation</strong>, <strong>Audio Fingerprint</strong>, <strong>Bot Detection</strong>, and <strong>Fonts</strong> &mdash; each with a live pass / fail / warn indicator. Before sending a profile against a real target, the operator confirms every panel says PASS. The dashboard surfaces the actual fields a real fingerprinter sees, not a generic "you are anonymous" claim.</p>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem; margin-top: 1.5rem;">Session Warming and Cookie Persistence</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">A fresh profile with no cookies and no browsing history is itself a signal. Phantom Browser's <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">--warm</code> mode walks the profile through a configurable list of warming URLs (Wikipedia, weather, BBC, Reuters, Stack Overflow, Reddit, Hacker News, Amazon, eBay, IMDb, ESPN, NYT, GitHub trending, and twelve more) before idling for interactive use. Every cookie picked up during warming &mdash; Cloudflare bot-management cookies, ad-network identifiers, regional preference cookies &mdash; is persisted to the profile's cookie jar on SIGTERM and reloaded on the next launch, so the second session starts with the trust signal of a returning visitor.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why It Matters -->
+    <!-- Component Architecture -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
-            <h2 class="section-title centered">Why It Matters</h2>
-            <p class="section-description centered" style="max-width: 860px; margin: 0 auto;">Platform-level browser detection is aggressive and constantly evolving. Phantom Browser treats evasion as an engineering discipline -- systematically layering fingerprint control, network hygiene, and behavioral humanization so automated workflows survive in adversarial runtime environments.</p>
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-top: 2rem;">
-                <div class="portfolio-card"><h3>Detection Resistance</h3><p>Multi-layer fingerprint shaping and anti-webdriver hardening defeat common and advanced bot detection systems.</p></div>
-                <div class="portfolio-card"><h3>Operational Scale</h3><p>Proxy bridge, geotargeting, and IP quality scoring enable reliable execution across regions and accounts.</p></div>
-                <div class="portfolio-card"><h3>Workflow Reuse</h3><p>Account-kit architecture makes onboarding, warmup, and maintenance scripts portable across distinct target properties.</p></div>
+            <h2 class="section-title centered" style="margin-bottom: 3rem;">Component Architecture</h2>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128187;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Tauri Desktop Shell</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Rust Control Plane &amp; Profile Manager</h3>
+                    <p>The Rust and Tauri desktop application owns profile JSON state, cookie jars, and credential resolution. The UI lists the active fleet, surfaces per-profile launch status, and dispatches launch commands as Python child processes. State lives under <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">~/Library/Application Support/com.phantombrowser.app/</code> with profile-scoped subdirectories for cookies and IP-reputation cache.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128679;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Camoufox Launcher</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Python Driver &amp; Fingerprint Injector</h3>
+                    <p>The <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">launcher.py</code> driver accepts a profile JSON document and executes the Camoufox stealth runtime with the right command-line flags. Responsibilities: fingerprint injection, font spoofing per device category, IP scan and reputation gate, cookie load and save, optional warming, and CDP socket exposure on the profile-assigned port.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#127760;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">REST Control Plane</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Programmatic Fleet Orchestration on :7890</h3>
+                    <p>The desktop app exposes a REST API on port 7890 that other iSN.BiZ automation systems use to launch profiles, query status, and shut sessions down. The same control plane lets the broader stack &mdash; PAI, OpenClaw, EDGAR Intel collectors &mdash; treat Phantom Browser as a stealth browser-as-a-service rather than a desktop app a human has to click.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128272;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Decodo Proxy Stack</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Residential &amp; Mobile Egress with Reputation Gating</h3>
+                    <p>Decodo provides residential and true-cellular mobile proxies (T-Mobile, AT&amp;T Mobility, Verizon Wireless, Sprint, Cricket) routed through <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">gate.decodo.com:10000</code> for mobile and <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">:7000</code> for residential. Session-rotation usernames embed country, city, and session-duration targeting. Credentials resolve through a typed env-loader, never hardcoded.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128269;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Detection Dashboard</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">CreepJS-Aligned Coherence Audit</h3>
+                    <p>An eleven-panel HTML dashboard loaded as the first tab on every Camoufox launch. Live pass / fail / warn indicators for IP &amp; Proxy, WebRTC Leak Test, Navigator, Screen &amp; Display, WebGL, Canvas, Timezone &amp; Locale, Geolocation, Audio, Bot Detection, and Fonts. Every panel must read PASS before the operator points the profile at a real target.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128202;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Automation Scripts</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Per-Profile Launch Wrappers</h3>
+                    <p>Profile-specific launch wrappers (for example <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">launch-hermes.py</code>) generate a fresh Decodo session, IPQS-check the egress IP, inject the resolved credentials in-memory (never written to disk), then <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">execv</code> into <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">launcher.py --warm --cdp-port N --cookie-dir &lt;path&gt;</code>. Per-profile wrappers let identity-specific business logic live alongside the identity itself.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Details -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Implementation Details</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">The launcher CLI surface, profile schema, and credential-resolution model that hold the system together.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Launcher CLI Surface</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">The launcher accepts a profile JSON as its single positional argument and a small set of orthogonal flags. <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">--headless</code> and <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">--headed</code> select display mode. <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">--humanize</code> and <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">--no-humanize</code> toggle Camoufox's input humanization (cursor jitter, scroll easing, dwell-time variance). <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">--cookie-dir &lt;path&gt;</code> sets the per-profile cookie directory. <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">--cdp-port &lt;port&gt;</code> exposes the Playwright CDP websocket on a unique port. <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">--warm</code> runs the warming-URL walk before idling. <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">--scan-ip</code> rotates Decodo session IDs in parallel until one passes the reputation gate at fraud_score &le; 30. <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">--preflight</code> runs the detection dashboard checks and exits without idling, useful for CI and headless validation.</p>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Profile JSON Schema</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">Every profile is a single JSON document containing a <strong>fingerprint</strong> block (os, screen WxH, cores, memory in GB, webglVendor, webglRenderer, userAgent, timezone, locale), a <strong>noiseSeeds</strong> block (the eight u32 SHA-256-derived seeds), a <strong>proxy</strong> block (subscription, host, port, username, password placeholder), an <strong>identity</strong> block (persona name, ZIP, city, state, email), and a <strong>cdpPort</strong>. Ports are unique across the fleet &mdash; the live deployment uses 9222&ndash;9230 for one band and 6001&ndash;7005 for a second &mdash; so a single host can multiplex dozens of independent CDP-driven Camoufox processes without collision.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Credential Resolution &amp; Env Loader</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">Profile JSON stores proxy passwords as the literal placeholder <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">SET_IN_ENV_OR_1PASSWORD</code>. The launcher resolves the placeholder at runtime via <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">env_loader.read_env_var()</code>, which reads from a <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">.env</code> alongside the scripts directory. <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">DECODO_PASS</code> resolves the mobile credential, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">DECODO_RESIDENTIAL_PASS</code> the residential one. Selection is driven by <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">profile.proxy.subscription</code> (<code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">mobile</code> or <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">residential</code>). Reputation-provider keys (<code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">IPQS_API_KEY</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">PROXYCHECK_API_KEY</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">ABUSEIPDB_API_KEY</code>) resolve through the same loader.</p>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">IP Cache &amp; Reputation Memoization</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">Reputation calls are cached in <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">~/Library/Application Support/com.phantombrowser.app/ip_cache.json</code> keyed by Decodo session ID with a default TTL of ten minutes. The cache holds at most forty entries (FIFO eviction) and lets <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">--scan-ip</code> rotations skip re-querying recently-seen sessions. Quota-exhaustion flags for IPQS, ProxyCheck, and AbuseIPDB are tracked per-process so a single 429 stops further calls for the rest of the launcher's lifetime, dropping straight to the next provider in the chain.</p>
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem;">
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">launcher.py</div>
+                    <p style="font-size: 0.95rem; margin: 0;">Camoufox driver, fingerprint injection, IP scan, reputation gate, cookie load and save</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">fingerprint_gen.py</div>
+                    <p style="font-size: 0.95rem; margin: 0;">BrowserForge generator with deterministic SHA-256 noise-seed derivation per profile UUID</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">env_loader.py</div>
+                    <p style="font-size: 0.95rem; margin: 0;">Typed credential resolution from .env for Decodo, IPQS, ProxyCheck, AbuseIPDB</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">launch-hermes.py</div>
+                    <p style="font-size: 0.95rem; margin: 0;">Per-profile launch wrapper &mdash; mobile session, in-memory cred injection, exec into launcher</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">dashboard.html</div>
+                    <p style="font-size: 0.95rem; margin: 0;">CreepJS-aligned eleven-panel coherence dashboard, first tab on every launch</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
+                    <div style="font-family: var(--font-mono); color: var(--color-cyan); font-size: 1rem; margin-bottom: 0.5rem;">warming_sites.json</div>
+                    <p style="font-size: 0.95rem; margin: 0;">25-site warming list for cookie acquisition before idle and interactive use</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Technology Stack -->
-    <section class="section">
+    <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <h2 class="section-title centered">Technology Stack</h2>
             <div class="portfolio-tags" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 2rem;">
-                <span class="tag">Playwright-core</span>
-                <span class="tag">Rebrowser</span>
-                <span class="tag">TypeScript</span>
-                <span class="tag">Proxy Bridge</span>
-                <span class="tag">Fingerprint Shaping</span>
-                <span class="tag">DNS Leak Prevention</span>
-                <span class="tag">IP Quality Scoring</span>
-                <span class="tag">Decodo Geotargeting</span>
-                <span class="tag">Account Kits</span>
-                <span class="tag">Behavioral Humanization</span>
+                <span class="tag">Rust</span>
+                <span class="tag">Tauri</span>
+                <span class="tag">Python 3.11</span>
+                <span class="tag">Camoufox</span>
+                <span class="tag">Firefox</span>
+                <span class="tag">BrowserForge</span>
+                <span class="tag">Playwright CDP</span>
+                <span class="tag">Decodo Residential</span>
+                <span class="tag">Decodo Mobile</span>
+                <span class="tag">IPQualityScore</span>
+                <span class="tag">ProxyCheck.io</span>
+                <span class="tag">AbuseIPDB</span>
+                <span class="tag">CreepJS-aligned dashboard</span>
+                <span class="tag">SHA-256 seeded noise</span>
+                <span class="tag">REST :7890</span>
             </div>
 
             <div style="margin-top: 3rem;">
-                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem; text-align: center;">Differentiation and Moat</h3>
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Differentiation and Moat</h3>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
                     <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Layered Evasion Engineering</h4>
-                        <p>Five independent evasion layers -- proxy, fingerprint, DNS, behavior, and verification -- operate in concert so that no single detection vector can compromise an entire session. Each layer is independently testable and upgradeable without disrupting the others.</p>
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Coherence-First, Not Stealth-Theater</h4>
+                        <p>Most "anti-detect" browsers ship a fingerprint randomizer and call it done. Phantom Browser enforces triangle coherence across timezone, country, and locale; deterministic noise per profile UUID; and per-device-category font lists. The detection dashboard exists so the operator can <em>verify</em> coherence before sending the profile at a target, instead of trusting a vendor checkbox.</p>
                     </div>
                     <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Pre-Flight Verification</h4>
-                        <p>The verification pipeline rejects compromised sessions before any operational action executes, preventing wasted cycles and account exposure. DNS leak tests, IP reputation checks, and WebRTC audits run automatically on every session launch.</p>
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Client-Side Carrier Classification</h4>
+                        <p>Decodo's server-side ASN targeting is documented broken in our 2026 testing &mdash; mobile pools include misclassified Verizon 5G Home and FiOS IPs, and three sequential carrier-targeted requests came back identical. Phantom Browser classifies every IP client-side after egress, with multi-source ISP-label aggregation that catches what a single provider would miss.</p>
                     </div>
                     <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
-                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Portable Account Kits</h4>
-                        <p>Account-kit directories encapsulate target-specific workflows, selectors, timing profiles, and verification checkpoints into portable units that can be developed, tested, and deployed independently across different target platforms without modifying core infrastructure.</p>
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Three-Tier Reputation with Hard Lockout</h4>
+                        <p>IPQualityScore, ProxyCheck.io, and AbuseIPDB chained in fallback order with quota-exhaustion tracking. The launcher refuses to launch on an unscored session unless an explicit emergency env var is set &mdash; the default behavior is to fail closed, which is the only safe default for stealth automation.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">REST-First Fleet Orchestration</h4>
+                        <p>Phantom Browser is not a desktop app a human clicks. The control plane on port 7890 lets the broader iSN.BiZ automation stack &mdash; PAI, OpenClaw, EDGAR Intel collectors, and downstream agents &mdash; treat a 24-profile stealth-browser fleet as a programmable resource. Identity, proxy, fingerprint, and CDP socket are all addressable over HTTP.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="section" style="background: linear-gradient(135deg, var(--color-blue-dark) 0%, var(--color-blue) 100%); text-align: center; padding: 4rem 0;">
+    <!-- Use Cases / Why It Matters -->
+    <section class="section">
         <div class="container">
-            <h2 class="section-title" style="color: white;">Interested in This Solution?</h2>
-            <p style="max-width: 600px; margin: 1rem auto 2rem; color: rgba(255,255,255,0.9); font-size: 1.1rem;">Learn how Phantom Browser's automation infrastructure can support your operations.</p>
-            <a href="/contact" class="btn btn-primary"><span>Get in Touch</span></a>
+            <h2 class="section-title centered" style="margin-bottom: 2rem;">Why It Matters</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">A 24-profile stealth fleet wired into the iSN.BiZ automation stack as a programmable, REST-addressable resource, with verifiable coherence on every surface a competent fingerprinter inspects.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                <div style="background: rgba(95, 223, 223, 0.08); padding: 2rem; border-radius: 8px; border-left: 3px solid var(--color-cyan);">
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">OSINT &amp; Investigative Research</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">Open-source intelligence collection &mdash; people search, public-records research, social-media reconnaissance &mdash; routinely runs into geofencing, rate limiting, and bot-detection walls. Phantom Browser gives the analyst an identity-isolated profile per investigation: a Los Angeles mobile-carrier persona for one case, a New York residential persona for the next. Every profile boots with verified IP coherence and a real cookie history, so collection completes without the platform learning the operator.</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.08); padding: 2rem; border-radius: 8px; border-left: 3px solid var(--color-cyan);">
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Durable Scraping &amp; Data Collection</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">Public data behind Cloudflare Bot Management, PerimeterX, or Akamai bot-detection layers. The Playwright CDP socket on each profile lets a scraper drive Camoufox the same way it would drive headless Chrome &mdash; but every request egresses through a reputation-scored residential or mobile IP, every fingerprint surface is coherent, and every session resumes with the cookies it earned last time. Collection that breaks weekly on a generic headless setup runs for months on a Phantom Browser profile.</p>
+                </div>
+                <div style="background: rgba(95, 223, 223, 0.08); padding: 2rem; border-radius: 8px; border-left: 3px solid var(--color-cyan);">
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Account Warming &amp; Adversarial-Resistant Automation</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">Long-lived account work &mdash; trust building, content publishing, controlled testing of detection stacks &mdash; demands the same identity returning from the same coherent fingerprint over weeks, not a fresh randomized profile every session. Phantom Browser treats identity as the durable unit. The hermes profile in the live fleet is the canonical example: ARM macOS fingerprint, LA timezone, T-Mobile mobile egress, persistent cookies, dedicated mailbox &mdash; the same coherent presence on every launch.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <!-- Operator Note -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container" style="text-align: center;">
+            <div style="max-width: 760px; margin: 0 auto; padding: 2rem; background: rgba(30, 159, 242, 0.05); border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.2);">
+                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Operator &amp; Compliance Notice</h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin: 0;">Phantom Browser is operator infrastructure, not a hosted service. The platform enforces credential hygiene by design: no hardcoded passwords, env-loaded reputation API keys, in-memory proxy-credential injection that never writes resolved secrets to disk, and a fail-closed launch gate when reputation providers are unreachable. Phantom Browser is used by iSN.BiZ Inc for OSINT, public-data collection, and adversarial-resistance research; it is not licensed for traffic that violates a target site's terms of service or applicable law. Full architecture and operational documentation are available to qualified investors and security researchers under NDA.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Interested in This Solution?</h2>
+            <p class="section-description" style="margin-bottom: 2rem;">Talk to us about Phantom Browser for OSINT, durable scraping, or adversarial-resistant automation engagements.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="/contact" class="btn btn-primary"><span>Schedule a Demo</span></a>
+                <a href="/portfolio" class="btn btn-outline"><span>View All Projects</span></a>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+        <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-column"><img src="https://b2cdn.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="footer-logo" style="height: 40px; margin-bottom: 1rem;"><p>Building the future of enterprise software with AI-powered solutions since 2015.</p><div class="footer-credentials" style="margin-top: 1rem; font-size: 0.85rem;"><p><strong>DUNS:</strong> 080513772</p><p><strong>UBI:</strong> 603-522-339</p><p><strong>EIN:</strong> 47-4530188</p></div></div>
-                <div class="footer-column"><h4>Company</h4><ul class="footer-links"><li><a href="/about">About Us</a></li><li><a href="/services">Services</a></li><li><a href="/portfolio">Portfolio</a></li><li><a href="/investors">Investors</a></li></ul></div>
-                <div class="footer-column"><h4>Leadership</h4><ul class="footer-links"><li><a href="/jonathan">Jonathan &mdash; CEO</a></li><li><a href="/bri">Bri &mdash; COO</a></li><li><a href="/lilly">Lilly &mdash; CFO</a></li></ul></div>
-                <div class="footer-column"><p>9030 35th Ave SW<br>Suite 100<br>Seattle, WA 98126</p><p>Local: (206) 785-9782<br>Toll-Free: (800) 986-4614</p><h4>Get in Touch</h4><a href="/contact" class="btn btn-primary" style="margin-top: 0.5rem; display: inline-block;">Contact Us</a></div>
+                <div class="footer-column">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="footer-logo" style="height: 40px; margin-bottom: 1rem;">
+                    <p>Building the future of enterprise software with AI-powered solutions since 2015.</p>
+                    <div class="footer-credentials">
+                        <p><strong>DUNS:</strong> 080513772</p>
+                        <p><strong>UBI:</strong> 603-522-339</p>
+                        <p><strong>EIN:</strong> 47-4530188</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/portfolio">Portfolio</a></li>
+                        <li><a href="/investors">Investors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Leadership</h4>
+                    <ul class="footer-links">
+                        <li><a href="/jonathan">Jonathan &mdash; CEO</a></li>
+                        <li><a href="/bri">Bri &mdash; COO</a></li>
+                        <li><a href="/lilly">Lilly &mdash; CFO</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <p>9030 35th Ave SW<br>Suite 100<br>Seattle, WA 98126</p>
+                    <p>Local: (206) 785-9782<br>Toll-Free: (800) 986-4614</p>
+                    <h4>Get in Touch</h4>
+                    <a href="/contact" class="btn btn-primary" style="margin-top: 0.5rem; display: inline-block;">Contact Us</a>
+                </div>
             </div>
-            <div class="footer-bottom"><p>&copy; 2026 iSN.BiZ Inc. All rights reserved.</p></div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved.</p>
+                <p>Founded July 8, 2015 | 9030 35th Ave SW, Suite 100, Seattle, WA 98126</p>
+            </div>
         </div>
     </footer>
 
