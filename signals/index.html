@@ -3,110 +3,449 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ISN Signals — public forward-returns ledger. Every alert from our 12-scanner intelligence stack, timestamped, with 5/20/60-day stock returns auto-backfilled. Audit-grade evidence of signal quality.">
-    <meta name="keywords" content="financial intelligence, SEC EDGAR, congressional trading, prediction markets, signal quality, forward returns, alpha attribution, ISN">
+    <meta name="description" content="Signals — the iSN.BiZ market intelligence program. A live forward-returns ledger surfacing alerts from a multi-source scanner stack covering EDGAR filings, prediction markets, regulatory feeds, agricultural basis, and muni bonds. Every alert is timestamped and audit-eligible.">
+    <meta name="keywords" content="market intelligence, financial signals, EDGAR scanner, prediction market arbitrage, basis monitor, muni intel, forward returns, signal ledger, iSN.BiZ">
     <meta name="author" content="iSN.BiZ Inc">
-    <meta property="og:title" content="ISN Signals — Public Forward-Returns Ledger">
-    <meta property="og:description" content="Every alert from our 12-scanner intelligence stack, with 5/20/60-day stock returns auto-backfilled. Audit it yourself.">
+    <meta property="og:title" content="Signals | iSN.BiZ Inc">
+    <meta property="og:description" content="The public forward-returns ledger for the iSN.BiZ scanner stack. Timestamped alerts across nine active intelligence pipelines, delayed seven days behind the live subscriber feed.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://signals.isn.biz">
-    <title>ISN Signals — Public Forward-Returns Ledger</title>
+    <meta property="og:image" content="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/signals/hero.webp">
+    <title>Signals | iSN.BiZ Inc</title>
     <link rel="icon" type="image/webp" href="https://b2cdn.isn.biz/file/isnbiz-cdn/premium_v3/logos/favicon.webp">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/enhanced-animations.css">
+    <link rel="stylesheet" href="/project-spirit-theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header class="hero">
-        <nav class="nav">
-            <a href="https://isn.biz" class="logo">iSN.BiZ</a>
-            <span class="nav-divider">/</span>
-            <span class="nav-current">Signals</span>
-        </nav>
-        <div class="hero-content">
-            <h1>The Forward-Returns Ledger</h1>
-            <p class="hero-sub">Every alert from our 12-scanner intelligence stack — timestamped, with 5/20/60-day stock returns auto-backfilled. Public feed runs 7 days behind the live subscriber feed during launch (ratcheting to 30 days as the ledger matures). Audit it yourself.</p>
-            <div class="hero-stats" id="hero-stats">
-                <div class="stat"><span class="stat-num" id="stat-total">—</span><span class="stat-label">Tracked alerts</span></div>
-                <div class="stat"><span class="stat-num" id="stat-scanners">—</span><span class="stat-label">Scanners contributing</span></div>
-                <div class="stat"><span class="stat-num" id="stat-hitrate">—</span><span class="stat-label">Median 20d hit rate</span></div>
-                <div class="stat"><span class="stat-num" id="stat-updated">—</span><span class="stat-label">Last refresh</span></div>
-            </div>
-            <a href="#why" class="cta-secondary">How this works ↓</a>
-        </div>
-    </header>
+<body class="spirit-project">
+    <a href="#main" class="skip-link" style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">Skip to main content</a>
 
-    <section class="panel" id="by-scanner">
-        <h2>Hit rate by scanner</h2>
-        <p class="panel-sub">Percent of alerts with positive 20-day return, by source. Higher is better — but the mix matters more than any single number.</p>
-        <div class="chart-container">
-            <canvas id="chart-hitrate" aria-label="Hit rate by scanner bar chart"></canvas>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="primary-navigation">
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/portfolio" class="active">Portfolio</a></li>
+                <li><a href="/investors">Investors</a></li>
+                <li class="has-dropdown">
+                    <a href="#team">Team</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/jonathan">Jonathan Mallinger</a></li>
+                        <li><a href="/lilly">Lilly Fedas</a></li>
+                        <li><a href="/bri">Brianna Bear</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main">
+
+    <!-- Project Hero -->
+    <section class="hero" style="min-height: 70vh; padding-top: 130px;">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Market Intelligence</span>
+                <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">Signals</h1>
+                <p class="section-description" style="max-width: 940px; margin: 0 auto; font-size: 1.3rem;">Signals is the public-facing audit layer for the iSN.BiZ scanner stack. Every alert produced by our intelligence pipelines is written to a forward-returns ledger at the moment it fires and surfaced here on a delayed feed. The page you are reading is itself the product surface: a live, timestamped record of what the scanners caught, when they caught it, and how the underlying instruments moved afterward. This is not a marketing page describing a product roadmap — this is the ledger.</p>
+            </div>
+
+            <!-- Key Metrics — IDs preserved for signals.js dynamic render -->
+            <div id="hero-stats" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; max-width: 980px; margin: 3rem auto; text-align: center;">
+                <div class="stat" style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <span class="stat-num" id="stat-total" style="display: block; font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">&mdash;</span>
+                    <span class="stat-label" style="display: block; font-size: 0.85rem; color: var(--color-white); opacity: 0.8; text-transform: uppercase; letter-spacing: 1.5px; margin-top: 0.5rem;">Tracked Alerts</span>
+                </div>
+                <div class="stat" style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <span class="stat-num" id="stat-scanners" style="display: block; font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">&mdash;</span>
+                    <span class="stat-label" style="display: block; font-size: 0.85rem; color: var(--color-white); opacity: 0.8; text-transform: uppercase; letter-spacing: 1.5px; margin-top: 0.5rem;">Active Scanners</span>
+                </div>
+                <div class="stat" style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <span class="stat-num" id="stat-hitrate" style="display: block; font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">&mdash;</span>
+                    <span class="stat-label" style="display: block; font-size: 0.85rem; color: var(--color-white); opacity: 0.8; text-transform: uppercase; letter-spacing: 1.5px; margin-top: 0.5rem;">Median 20d Hit Rate</span>
+                </div>
+                <div class="stat" style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <span class="stat-num" id="stat-updated" style="display: block; font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">&mdash;</span>
+                    <span class="stat-label" style="display: block; font-size: 0.85rem; color: var(--color-white); opacity: 0.8; text-transform: uppercase; letter-spacing: 1.5px; margin-top: 0.5rem;">Last Refresh</span>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div style="max-width: 1000px; margin: 3rem auto;">
+                <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/signals/hero.webp" alt="Signals forward-returns ledger interface showing scanner alerts, hit-rate distributions, and ticker-level return curves" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+            </div>
         </div>
     </section>
 
-    <section class="panel" id="by-return">
-        <h2>Median 20-day return by signal type</h2>
-        <p class="panel-sub">The middle return outcome, not the average — robust to outliers. This is the number that pays.</p>
-        <div class="chart-container">
-            <canvas id="chart-returns" aria-label="Median 20-day return by signal type bar chart"></canvas>
+    <!-- Visual Gallery -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <div class="section-header centered" style="margin-bottom: 2.5rem;">
+                <span class="section-label">Visual Intelligence</span>
+                <h2 class="section-title">Signature Key Art</h2>
+                <p class="section-description" style="max-width: 780px; margin: 0 auto;">A cinematic visual system rendered for the Signals product surface — pipeline lattices, alert constellations, and forward-return arcs composited on the iSN.BiZ palette of charcoal, blue, and cyan.</p>
+            </div>
+            <div class="visual-gallery">
+                <figure class="visual-gallery-tile">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/signals/gallery_1.webp" alt="Signals visual study one — scanner pipeline lattice with cross-source alert overlays" loading="lazy">
+                </figure>
+                <figure class="visual-gallery-tile">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/signals/gallery_2.webp" alt="Signals visual study two — forward-return ribbon overlay across alert timestamps" loading="lazy">
+                </figure>
+                <figure class="visual-gallery-tile">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/signals/gallery_3.webp" alt="Signals visual study three — ledger-grade evidence trail with delayed-feed audit window" loading="lazy">
+                </figure>
+            </div>
         </div>
     </section>
 
-    <section class="panel" id="recent">
-        <h2>Recent alerts (30-day delay)</h2>
-        <p class="panel-sub">Last 100 alerts, sortable. Subscribers see these in real time. The public feed is a 30-day-delayed audit trail — intentionally — so you can verify the methodology without seeing live edge.</p>
-        <div class="table-wrap">
-            <table id="alerts-table">
-                <thead>
-                    <tr>
-                        <th data-sort="alert_date">Date</th>
-                        <th data-sort="scanner">Scanner</th>
-                        <th data-sort="signal_type">Signal</th>
-                        <th data-sort="ticker">Ticker</th>
-                        <th data-sort="return_5d" class="num">5d %</th>
-                        <th data-sort="return_20d" class="num">20d %</th>
-                        <th data-sort="return_60d" class="num">60d %</th>
-                    </tr>
-                </thead>
-                <tbody id="alerts-tbody">
-                    <tr><td colspan="7" class="loading">Loading delayed ledger…</td></tr>
-                </tbody>
-            </table>
+    <!-- Signal Sources — investor summary + capability checklist -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <div class="about-grid">
+                <div>
+                    <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Signal Sources</h2>
+                    <p class="lead">The Signals ledger draws from a fleet of independent scanners, each connected to a distinct primary-source feed. The current public window holds <strong>1,969 tracked alerts</strong> across <strong>nine active scanners</strong>, with a seven-day delay applied between live subscriber publication and public ledger appearance.</p>
+                    <p style="margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.8;">The intelligence stack is organized around four production pipeline categories that map directly onto the iSN.BiZ revenue thesis. <strong>EDGAR intel</strong> ingests SEC filings — 8-K material events, SC 13D beneficial ownership notices, Form 4 insider transactions, and congressional STOCK Act periodic transaction reports — and produces structured filing-event alerts the moment new documents land in the EDGAR feed. <strong>Market arbitrage</strong> scans prediction-market venues, comparing implied probabilities and event-contract pricing across exchanges to surface mispricings before they decay. <strong>Muni bond intel</strong> processes EMMA and MSRB disclosure feeds across the roughly fifty-thousand-issuer municipal bond universe, extracting material event notices, continuing disclosure failures, and rating-change indicators. <strong>Basis monitoring</strong> watches USDA agricultural basis differentials at fourteen elevators across eight states, flagging anomalous spreads against historical distributions.</p>
+                    <p style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.8;">In the current public window, three of the nine active scanners are publishing alerts. <strong>basis-monitor</strong> is the dominant contributor, having produced seventy-six alerts of <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">basis_anomaly</code> type. <strong>gdpr-intel</strong> has produced eighteen alerts of <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">enforcement_action</code> type, watching European data-protection authorities for fines and rulings. <strong>fedreg-intel</strong> has produced six alerts of <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">forward_regulation</code> type, sourcing from the Federal Register publication queue. The remaining six scanners are armed and instrumented — their forward-return columns will populate as alert windows close and the daily backfill job lands the five-day, twenty-day, and sixty-day return values.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Pipeline Categories</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span><strong>EDGAR intel</strong> — SEC filings (8-K, SC 13D, Form 4) and congressional STOCK Act periodic transaction reports, alerted at the moment of EDGAR publication</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span><strong>Market arbitrage</strong> — prediction-market and event-contract pricing scanners surfacing cross-venue spread anomalies</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span><strong>Muni bond intel</strong> — EMMA and MSRB feeds across the fifty-thousand-issuer municipal universe, surfacing material events and continuing-disclosure failures</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span><strong>Basis monitoring</strong> — agricultural basis differentials at fourteen elevators across eight states, alerting on anomalous spreads</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span><strong>GDPR enforcement intel</strong> — European data-protection authority enforcement actions and fines</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span><strong>Federal Register intel</strong> — forward regulation publication scanner pulling from the Federal Register feed</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Forward-returns auto-backfill at 5d / 20d / 60d windows for every alert with a resolved ticker</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="panel" id="why">
-        <h2>How this works</h2>
-        <div class="why-grid">
-            <div class="why-card">
-                <h3>1. Twelve sources</h3>
-                <p>SEC EDGAR (8-K + SC 13D + Form 4), Senate &amp; House STOCK Act PTRs, Polymarket &amp; Kalshi, EU GDPR enforcement, USDA agricultural basis, Federal Register, ClinicalTrials.gov, CISA KEV, USPTO PTAB, EMMA muni bonds, SAM.gov contracts, CNIPA patents.</p>
+    <!-- Deep Dive: Signal Architecture -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Deep Dive: Signal Architecture</h2>
+            <p class="section-description centered" style="max-width: 820px; margin: 0 auto 3rem;">A four-stage pipeline transforms raw primary-source documents into ranked, timestamped, return-attributed alerts. Every stage is logged. Every alert writes one row. Predictions cannot be revised after the fact.</p>
+
+            <!-- Stage A — Raw sources -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Stage 1 &mdash; Raw Source Ingestion</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Each scanner connects directly to a primary-source feed. The EDGAR scanners poll the SEC filing index. The basis monitor pulls USDA grain-elevator quotes. The fedreg-intel scanner consumes the Federal Register's daily JSON publication. The gdpr-intel scanner reads enforcement-tracker feeds maintained by European data-protection authorities. There is no third-party aggregator in the path — each pipeline owns its source connection, its rate-limit posture, and its retry semantics. When a source feed is unreachable, the scanner records the gap rather than silently failing, so the ledger remains an honest record of what we actually saw versus what we missed.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">Source connections are written in Python with the relevant feed-specific client libraries. The scanner runtime is orchestrated by an internal cron-driven scheduler (the same orchestrator that runs across the rest of the iSN.BiZ automated-pipelines fleet). New sources are added by registering a scanner module, defining the alert-emit schema, and wiring the cron entry — no platform changes required.</p>
+                </div>
+                <div>
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/signals/gallery_1.webp" alt="Raw source ingestion stage — scanner fleet pulling from EDGAR, EMMA, USDA, Federal Register, and GDPR enforcement feeds" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                </div>
             </div>
-            <div class="why-card">
-                <h3>2. Cross-signal fusion</h3>
-                <p>Single-source alerts are commodity. The edge is in the overlaps — congressional trade plus EDGAR filing in the same name, federal rule plus sector-correlated 8-K. Our correlator surfaces those automatically.</p>
+
+            <!-- Stage B — Enrichment + Ticker resolution -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-top: 3rem;">
+                <div>
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/signals/gallery_2.webp" alt="Enrichment and ticker resolution stage — alert payloads matched to instruments and signal types" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                </div>
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Stage 2 &mdash; Enrichment and Ticker Resolution</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Each raw event is enriched with the metadata required to make it actionable. The enrichment stage assigns the event its <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">signal_type</code> classification (<code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">basis_anomaly</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">enforcement_action</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">forward_regulation</code>, and others), tags it with its source scanner, and attempts to resolve the affected security tickers where applicable. Ticker resolution is non-trivial — a Federal Register notice on emissions standards may map cleanly to a basket of automaker tickers, while a basis anomaly at a Kansas grain elevator may require a derivative mapping rather than a direct equity ticker. Where resolution fails or does not apply, the <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">ticker</code> field is left empty rather than fabricated.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">In the current public window, all alerts have an unresolved ticker field. This is expected behavior at this stage of the pipeline rollout: the basis-monitor, gdpr-intel, and fedreg-intel scanners that are currently publishing emit signals against domains where ticker resolution is the next implementation cycle, not a default behavior. The forward-return columns on those rows therefore remain null until ticker resolution lands and the backfill job has a target instrument to query.</p>
+                </div>
             </div>
-            <div class="why-card">
-                <h3>3. Forward returns auto-backfilled</h3>
-                <p>Every alert writes one row to a JSONL ledger at the moment it fires. A daily backfill job fills in the 5-day, 20-day, and 60-day stock returns once the windows close. We don't get to revise predictions after the fact.</p>
+
+            <!-- Stage C — Cross-signal fusion + ranking -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-top: 3rem;">
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Stage 3 &mdash; Cross-Signal Fusion and Ranking</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Single-source alerts are commodity output. The edge in this stack lives in the overlaps. A correlator stage operates across the enriched alert stream and identifies when two or more scanners fire on the same name within a short causal window — a congressional periodic transaction report in a ticker that also has a recent 8-K, a forward-regulation notice in a sector that already has a rising basis anomaly, an EU enforcement action against a parent company that has an SC 13D event in the same week. Cross-signal fusion produces a ranking score and a fusion explanation that gets attached to the alert payload.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">Ranking is intentionally conservative. A single-source alert is published with no boost. A two-source overlap is boosted modestly. A three-source overlap is boosted aggressively and surfaced at the top of the live feed. This conservatism is by design: we would rather under-rank a real signal than over-rank a coincidence, because the ledger is the marketing material — every false promotion costs credibility that compounds.</p>
+                </div>
+                <div>
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/signals/gallery_3.webp" alt="Cross-signal fusion stage — overlap detection across scanners producing fused ranking scores" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                </div>
             </div>
-            <div class="why-card">
-                <h3>4. Public feed delays the edge</h3>
-                <p>The live subscriber feed is real-time. The public ledger is intentionally delayed (7 days at launch, ratcheting to 30 once the dataset matures) so you can audit the methodology without consuming the edge. Source-of-truth timestamps mean every claim is verifiable.</p>
+
+            <!-- Stage D — Publish + forward-returns -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-top: 3rem;">
+                <div>
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/signals/hero.webp" alt="Publish and forward-returns stage — alert ledger row written, backfill job populating 5d 20d 60d return columns" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+                </div>
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Stage 4 &mdash; Publish and Forward-Returns Backfill</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">At publish time, every alert writes exactly one row to the ledger. The row carries the alert date, source scanner, signal type, resolved ticker (or empty), and three forward-return columns initialized to null: <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">return_5d</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">return_20d</code>, and <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">return_60d</code>. A daily backfill job runs at end-of-session, walks the ledger for rows whose return windows have closed, and populates the forward-return values from market close data. We do not get to revise these numbers. We do not get to delete unfavorable rows. The ledger is append-only.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">The public ledger you see on this page sits seven days behind the live subscriber feed. As the dataset matures and the forward-return aggregates become statistically meaningful, that delay will ratchet out toward thirty days — preserving the audit-trail value of the public ledger while protecting the live edge that subscribers pay for.</p>
+                </div>
             </div>
-        </div>
-        <div class="cta-block">
-            <p>Want the live feed?</p>
-            <a href="https://isn.biz/intelligence" class="cta-primary">See the subscription</a>
         </div>
     </section>
 
+    <!-- Signal Categories — driven by what's in data/ -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1rem;">Signal Categories</h2>
+            <p class="section-description centered" style="max-width: 820px; margin: 0 auto 3rem;">Three signal types are currently producing alerts in the public window. Each is emitted by a distinct scanner and represents a distinct edge thesis.</p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#127806;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">basis_anomaly</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Agricultural Basis Anomalies</h3>
+                    <p>Emitted by the <strong>basis-monitor</strong> scanner. Watches the spread between local cash grain prices at fourteen elevators across eight states and the corresponding futures contracts. Anomalous spreads against historical distributions trigger alerts. Currently the highest-volume scanner in the public window with seventy-six alerts.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#9878;&#65039;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">enforcement_action</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">GDPR Enforcement Actions</h3>
+                    <p>Emitted by the <strong>gdpr-intel</strong> scanner. Tracks European data-protection authority enforcement actions, fines, and rulings. Eighteen alerts in the current public window. Targets the asymmetry between regulatory event timing and equity-market awareness for affected listed entities.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128220;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">forward_regulation</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Federal Register Forward Regulation</h3>
+                    <p>Emitted by the <strong>fedreg-intel</strong> scanner. Pulls from the Federal Register publication queue, identifying proposed and final rules whose sector exposure maps to listed equities. Six alerts in the current public window. Targets the regulatory-publication-to-market-pricing latency window.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Ledger Panels — IDs preserved for signals.js -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1rem;">Live Ledger</h2>
+            <p class="section-description centered" style="max-width: 820px; margin: 0 auto 3rem;">The dynamic feed below renders directly from <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">data/signals-30d.json</code>. Charts populate as forward-return aggregates land. The table is sortable on every column.</p>
+
+            <div id="by-scanner" style="background: rgba(30, 159, 242, 0.05); padding: 2rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.2); margin-bottom: 2rem;">
+                <h3 style="color: var(--color-blue); margin-bottom: 0.5rem;">Hit Rate by Scanner</h3>
+                <p style="color: var(--color-light); font-size: 0.95rem; margin-bottom: 1.5rem;">Percent of alerts with positive twenty-day return, by source scanner. Currently empty pending forward-return backfill once tickers resolve.</p>
+                <div class="chart-container" style="background: rgba(13, 17, 23, 0.6); border: 1px solid rgba(30, 159, 242, 0.2); border-radius: 4px; padding: 1.5rem; height: 400px; position: relative;">
+                    <canvas id="chart-hitrate" aria-label="Hit rate by scanner bar chart"></canvas>
+                </div>
+            </div>
+
+            <div id="by-return" style="background: rgba(30, 159, 242, 0.05); padding: 2rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.2); margin-bottom: 2rem;">
+                <h3 style="color: var(--color-blue); margin-bottom: 0.5rem;">Median 20-Day Return by Signal Type</h3>
+                <p style="color: var(--color-light); font-size: 0.95rem; margin-bottom: 1.5rem;">The middle return outcome by <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">signal_type</code> &mdash; robust to outliers. Currently empty pending forward-return backfill.</p>
+                <div class="chart-container" style="background: rgba(13, 17, 23, 0.6); border: 1px solid rgba(30, 159, 242, 0.2); border-radius: 4px; padding: 1.5rem; height: 400px; position: relative;">
+                    <canvas id="chart-returns" aria-label="Median 20-day return by signal type bar chart"></canvas>
+                </div>
+            </div>
+
+            <div id="recent" style="background: rgba(30, 159, 242, 0.05); padding: 2rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.2);">
+                <h3 style="color: var(--color-blue); margin-bottom: 0.5rem;">Recent Alerts &mdash; Public Window</h3>
+                <p style="color: var(--color-light); font-size: 0.95rem; margin-bottom: 1.5rem;">Last hundred alerts, sortable. The public feed currently runs seven days behind the live subscriber feed and will ratchet to thirty days as the ledger matures.</p>
+                <div class="table-wrap" style="background: rgba(13, 17, 23, 0.6); border: 1px solid rgba(30, 159, 242, 0.2); border-radius: 4px; overflow: auto; max-height: 720px;">
+                    <table id="alerts-table" style="width: 100%; border-collapse: collapse; font-family: var(--font-mono); font-size: 0.9rem;">
+                        <thead>
+                            <tr>
+                                <th data-sort="alert_date" style="text-align: left; padding: 0.75rem 1rem; background: rgba(30, 159, 242, 0.15); color: var(--color-cyan); text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem; cursor: pointer; position: sticky; top: 0;">Date</th>
+                                <th data-sort="scanner" style="text-align: left; padding: 0.75rem 1rem; background: rgba(30, 159, 242, 0.15); color: var(--color-cyan); text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem; cursor: pointer; position: sticky; top: 0;">Scanner</th>
+                                <th data-sort="signal_type" style="text-align: left; padding: 0.75rem 1rem; background: rgba(30, 159, 242, 0.15); color: var(--color-cyan); text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem; cursor: pointer; position: sticky; top: 0;">Signal</th>
+                                <th data-sort="ticker" style="text-align: left; padding: 0.75rem 1rem; background: rgba(30, 159, 242, 0.15); color: var(--color-cyan); text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem; cursor: pointer; position: sticky; top: 0;">Ticker</th>
+                                <th data-sort="return_5d" class="num" style="text-align: right; padding: 0.75rem 1rem; background: rgba(30, 159, 242, 0.15); color: var(--color-cyan); text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem; cursor: pointer; position: sticky; top: 0;">5d %</th>
+                                <th data-sort="return_20d" class="num" style="text-align: right; padding: 0.75rem 1rem; background: rgba(30, 159, 242, 0.15); color: var(--color-cyan); text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem; cursor: pointer; position: sticky; top: 0;">20d %</th>
+                                <th data-sort="return_60d" class="num" style="text-align: right; padding: 0.75rem 1rem; background: rgba(30, 159, 242, 0.15); color: var(--color-cyan); text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem; cursor: pointer; position: sticky; top: 0;">60d %</th>
+                            </tr>
+                        </thead>
+                        <tbody id="alerts-tbody">
+                            <tr><td colspan="7" class="loading" style="text-align: center; color: var(--color-light); font-style: italic; padding: 2.5rem !important;">Loading delayed ledger&hellip;</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Details -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Implementation Details</h2>
+            <p class="section-description centered" style="max-width: 820px; margin: 0 auto 3rem;">The Signals page is the front-end of an append-only ledger. The renderer is intentionally thin; the source of truth is the JSON snapshot generated nightly by the backend job.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Append-Only Ledger Schema</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Every alert row carries seven fields: <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">alert_date</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">scanner</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">signal_type</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">ticker</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">return_5d</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">return_20d</code>, and <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">return_60d</code>. Rows are written once at alert time. Forward-return columns are mutable exactly once: when the corresponding window closes and the backfill job lands the closing value. After that, the row is immutable.</p>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem; margin-top: 1.5rem;">Snapshot Aggregates</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">The nightly snapshot writes <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">data/signals-30d.json</code> with a header block (<code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">generated_at</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">delay_days</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">total_alerts</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">scanners_active</code>), pre-computed aggregate maps (<code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">hit_rate_by_scanner</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">median_return_20d_by_signal</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">median_hit_rate_20d</code>), and a <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">recent_alerts</code> array that the renderer slices to the most recent hundred. Aggregates are intentionally pre-computed server-side so the client renderer stays trivial and audit-traceable.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Renderer</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">The page is rendered by <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">signals.js</code>, a small vanilla-JS module that fetches the JSON snapshot, populates the four hero stat tiles, draws two Chart.js bar charts (hit rate by scanner and median twenty-day return by signal type), and renders the sortable alert table. Sorting is column-driven via <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">data-sort</code> attributes; numeric and date fields sort numerically, string fields sort lexicographically. The renderer is deliberately stateless &mdash; reload the page and you get a fresh fetch with no client-side caching.</p>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem; margin-top: 1.5rem;">Delay Window</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">The current snapshot carries <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">delay_days: 7</code>, meaning rows surfaced in the public ledger fire seven days after they hit the live subscriber feed. The snapshot also exposes the <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">generated_at</code> ISO timestamp, surfaced in the hero <em>Last Refresh</em> tile and the footer. Both values are honest; any drift between the displayed window and the actual ledger contents is a bug, not a feature.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered">Technology Stack</h2>
+            <div class="portfolio-tags" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 2rem;">
+                <span class="tag">Python</span>
+                <span class="tag">Vanilla JavaScript</span>
+                <span class="tag">Chart.js 4.4.1</span>
+                <span class="tag">Static HTML</span>
+                <span class="tag">Cloudflare Pages</span>
+                <span class="tag">cron orchestration</span>
+                <span class="tag">JSONL append ledger</span>
+                <span class="tag">SEC EDGAR</span>
+                <span class="tag">EMMA / MSRB</span>
+                <span class="tag">USDA AMS</span>
+                <span class="tag">Federal Register</span>
+                <span class="tag">GDPR Enforcement Tracker</span>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Operational Posture</h3>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Append-Only Ledger</h4>
+                        <p>Every alert writes one row at fire-time. Forward-return columns are populated exactly once by the backfill job and never revised. Predictions cannot be edited after the fact &mdash; the ledger is its own audit trail.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Pre-Computed Aggregates</h4>
+                        <p>Hit-rate and median-return aggregates are pre-computed server-side in the nightly snapshot. The client renderer never re-aggregates &mdash; it only displays. This keeps client-side logic small, deterministic, and trivially auditable from the JSON source.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Honest Empty States</h4>
+                        <p>When ticker resolution fails, the field is empty &mdash; not fabricated. When forward-return windows have not closed, the column is null &mdash; not synthesized. When aggregates are pending, the charts render empty &mdash; not back-filled with fictitious history.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Cron-Driven Pipeline</h4>
+                        <p>Scanners run under the same cron-driven orchestrator that powers the rest of the iSN.BiZ automated-pipelines fleet. Adding a new source is a scanner module plus a cron entry &mdash; no platform-level change. The pipeline scales by addition, not by replacement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why It Matters -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1rem;">Why It Matters</h2>
+            <p class="section-description centered" style="max-width: 820px; margin: 0 auto 3rem;">Signals exists because the iSN.BiZ thesis is to be the infrastructure, not the user. The ledger is the storefront for an automated intelligence stack &mdash; the picks-and-shovels surface of a multi-pipeline data product line.</p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                <div style="background: rgba(30, 159, 242, 0.05); padding: 2rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.2);">
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Audit Replaces Pitch</h3>
+                    <p style="font-size: 1rem; line-height: 1.8;">Most market-intelligence products are sold on a deck. Signals is sold on a ledger. The same evidence that justifies a subscription is the evidence visible on this page &mdash; just shifted seven days later. There is no separate sales narrative because the ledger <em>is</em> the narrative.</p>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.05); padding: 2rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.2);">
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Infrastructure, Not User</h3>
+                    <p style="font-size: 1rem; line-height: 1.8;">Each scanner is a pipeline that produces structured output a customer integrates against, not a finished trading recommendation. The product is the data feed, the ranking, and the audit trail. What the customer does with the output is the customer's domain expertise, not ours.</p>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.05); padding: 2rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.2);">
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Compounding Surface Area</h3>
+                    <p style="font-size: 1rem; line-height: 1.8;">Nine scanners are armed today. Six are awaiting the ticker-resolution implementation cycle. As each scanner lands and starts publishing, the ledger gains another column of evidence and another category of subscribable signal. The product surface compounds with every scanner that ships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Subscribe to the Live Feed</h2>
+            <p class="section-description" style="margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">The page above is the seven-day-delayed audit copy. The live subscriber feed runs in real time. To discuss data licensing, integration, or pipeline-specific subscriptions, contact iSN.BiZ directly.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="/contact" class="btn btn-primary"><span>Contact for Subscription</span></a>
+                <a href="/portfolio" class="btn btn-outline"><span>View All Projects</span></a>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
     <footer class="footer">
-        <p>Public ledger, 30-day delay. Updated nightly. Last refresh: <span id="footer-updated">—</span>.</p>
-        <p class="footer-fine">© <span id="footer-year"></span> iSN.BiZ Inc. Not investment advice. Past returns do not guarantee future returns. Forward returns shown are total returns including dividends, computed against the alert-date close. Tickers shown only when resolved by the scanner.</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="footer-logo" style="height: 40px; margin-bottom: 1rem;">
+                    <p>Building the future of enterprise software with AI-powered solutions since 2015.</p>
+                    <div class="footer-credentials">
+                        <p><strong>DUNS:</strong> 080513772</p>
+                        <p><strong>UBI:</strong> 603-522-339</p>
+                        <p><strong>EIN:</strong> 47-4530188</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/portfolio">Portfolio</a></li>
+                        <li><a href="/investors">Investors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Leadership</h4>
+                    <ul class="footer-links">
+                        <li><a href="/jonathan">Jonathan &mdash; CEO</a></li>
+                        <li><a href="/bri">Bri &mdash; COO</a></li>
+                        <li><a href="/lilly">Lilly &mdash; CFO</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <p>9030 35th Ave SW<br>Suite 100<br>Seattle, WA 98126</p>
+                    <p>Local: (206) 785-9782<br>Toll-Free: (800) 986-4614</p>
+                    <h4>Get in Touch</h4>
+                    <a href="/contact" class="btn btn-primary" style="margin-top: 0.5rem; display: inline-block;">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved.</p>
+                <p>Public ledger, seven-day delay. Updated nightly. Last refresh: <span id="footer-updated">&mdash;</span> &middot; <span id="footer-year"></span></p>
+                <p style="font-size: 0.8rem; opacity: 0.7; max-width: 800px; margin-top: 0.5rem;">Not investment advice. Past returns do not guarantee future returns. Forward returns shown are total returns including dividends, computed against the alert-date close. Tickers shown only when resolved by the scanner.</p>
+            </div>
+        </div>
     </footer>
 
+    <script src="/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <script src="signals.js" defer></script>
 </body>

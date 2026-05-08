@@ -3,166 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GedFix is a cross-platform genealogy app for cleaning, visualizing, and researching your family tree with AI-powered tools.">
-    <meta name="keywords" content="GedFix, genealogy, GEDCOM, family tree, AI research, data quality, pedigree chart, source validation">
+    <meta name="description" content="GedFix — a cross-platform Tauri + SvelteKit genealogy app and Python CLI for cleaning, normalizing, deduplicating, and AI-assisted research over GEDCOM data. Live at gedfix.isn.biz.">
+    <meta name="keywords" content="GedFix, GEDCOM cleaning, genealogy software, Tauri SvelteKit genealogy, Python GEDCOM CLI, AI genealogy research, family tree privacy, Polish Jewish ancestry, Galicia genealogy">
     <meta name="author" content="iSN.BiZ Inc">
-    <meta property="og:title" content="GedFix — Genealogy Data Platform | iSN.BiZ Inc">
-    <meta property="og:description" content="Clean, visualize, and research your family tree. AI-powered research, source validation, and multi-platform support.">
+    <meta property="og:title" content="GedFix — Cross-Platform Genealogy Platform | iSN.BiZ Inc">
+    <meta property="og:description" content="Modern Tauri + SvelteKit desktop app, mobile builds, web at gedfix.isn.biz, and a `gedfix` Python CLI for serious GEDCOM work — scan, check, fix, dedupe, merge, export with living-person privacy filtering.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/gedfix/hero.webp">
-    <title>GedFix — Genealogy Data Platform | iSN.BiZ Inc</title>
-    <link rel="icon" type="image/webp" href="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/gedfix/icon-32.webp">
+    <meta property="og:image" content="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/gedfix/hero.webp">
+    <title>GedFix — Cross-Platform Genealogy Platform | iSN.BiZ Inc</title>
+    <link rel="icon" type="image/webp" href="https://b2cdn.isn.biz/file/isnbiz-cdn/premium_v3/logos/favicon.webp">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="enhanced-animations.css">
     <link rel="stylesheet" href="project-spirit-theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        .gedfix-hero-img {
-            width: 100%;
-            max-width: 900px;
-            border-radius: 12px;
-            border: 1px solid rgba(255,255,255,0.08);
-            margin: 2rem auto 0;
-            display: block;
-        }
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        .feature-card {
-            background: var(--color-concrete);
-            border: 1px solid rgba(255,255,255,0.06);
-            border-radius: 12px;
-            padding: 2rem;
-            text-align: center;
-        }
-        .feature-card img {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 1.5rem;
-            border-radius: 12px;
-        }
-        .feature-card h3 {
-            color: var(--color-white);
-            margin-bottom: 0.75rem;
-            font-family: 'Inter', sans-serif;
-            font-weight: 600;
-        }
-        .feature-card p {
-            color: var(--color-white);
-            opacity: 0.7;
-        }
-        .platform-badges {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-        .platform-badge {
-            background: var(--color-concrete);
-            border: 1px solid rgba(255,255,255,0.08);
-            border-radius: 8px;
-            padding: 0.6rem 1.2rem;
-            color: var(--color-white);
-            font-family: 'Inter', sans-serif;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-        .stats-row {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1.5rem;
-            margin: 3rem 0;
-        }
-        .stat-box {
-            text-align: center;
-            padding: 1.5rem;
-            background: var(--color-concrete);
-            border-radius: 12px;
-            border: 1px solid rgba(255,255,255,0.06);
-        }
-        .stat-box .num {
-            font-family: 'Inter', sans-serif;
-            font-size: 2.4rem;
-            font-weight: 700;
-            color: var(--color-blue);
-        }
-        .stat-box .label {
-            color: var(--color-white);
-            opacity: 0.6;
-            font-size: 0.85rem;
-            margin-top: 0.3rem;
-        }
-        .capability-list {
-            list-style: none;
-            padding: 0;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.75rem;
-        }
-        .capability-list li {
-            padding: 0.75rem 1rem;
-            background: rgba(59, 130, 246, 0.06);
-            border-radius: 8px;
-            border-left: 3px solid var(--color-blue);
-            color: var(--color-white);
-            font-family: 'Inter', sans-serif;
-        }
-        .cta-section {
-            text-align: center;
-            padding: 4rem 0;
-        }
-        .cta-section .btn {
-            font-family: 'Inter', sans-serif;
-            font-size: 1rem;
-            padding: 0.9rem 2rem;
-            border-radius: 8px;
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-block;
-            margin: 0.5rem;
-        }
-        .cta-primary {
-            background: var(--color-blue);
-            color: #fff;
-        }
-        .cta-outline {
-            background: transparent;
-            color: var(--color-blue);
-            border: 1px solid var(--color-blue);
-        }
-        .validation-section {
-            background: var(--color-charcoal);
-            border-radius: 12px;
-            padding: 3rem;
-            border: 1px solid rgba(255,255,255,0.06);
-            margin: 2rem 0;
-        }
-        .validation-bar {
-            height: 8px;
-            background: rgba(255,255,255,0.08);
-            border-radius: 4px;
-            overflow: hidden;
-            margin: 1rem 0 0.5rem;
-        }
-        .validation-bar span {
-            display: block;
-            height: 100%;
-            border-radius: 4px;
-        }
-        @media (max-width: 768px) {
-            .feature-grid, .stats-row, .capability-list {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="spirit-project">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <nav class="nav">
         <div class="container nav-container">
             <div class="logo"><a href="/"><img src="https://b2cdn.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img"></a></div>
@@ -178,171 +36,266 @@
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="hero" style="min-height: 80vh; padding-top: 130px;">
+    <main id="main-content">
+    <!-- Project Hero -->
+    <section class="hero" style="min-height: 70vh; padding-top: 130px;">
         <div class="hero-background"></div>
         <div class="container">
             <div class="section-header centered">
-                <span class="section-label">Genealogy Platform</span>
-                <h1 class="section-title" style="font-size: clamp(2.4rem, 6vw, 4rem); font-family: 'Inter', sans-serif; font-weight: 700; letter-spacing: -0.03em;">GedFix</h1>
-                <p class="section-description" style="max-width: 680px; margin: 0 auto; font-family: 'Inter', sans-serif;">
-                    Clean, visualize, and research your family tree. Import GEDCOM files, validate sources, detect data quality issues, and get AI-powered research suggestions — all from one app.
-                </p>
-                <div class="platform-badges">
-                    <span class="platform-badge">macOS</span>
-                    <span class="platform-badge">Windows</span>
-                    <span class="platform-badge">Linux</span>
-                    <span class="platform-badge">Android</span>
-                    <span class="platform-badge">Web</span>
-                    <span class="platform-badge">Chrome Extension</span>
+                <span class="section-label">Genealogy Platform &middot; Tauri + SvelteKit + Python CLI</span>
+                <h1 class="section-title" style="font-size: clamp(2.4rem, 6vw, 4.4rem);">GedFix</h1>
+                <p class="section-description" style="max-width: 920px; margin: 0 auto; font-size: 1.3rem;">A serious genealogy platform for people who actually own their data. Cross-platform desktop and mobile via Tauri 2 + SvelteKit 5, a live web build at <a href="https://gedfix.isn.biz" style="color: var(--color-cyan);">gedfix.isn.biz</a>, and a Python <code>gedfix</code> CLI that handles the unglamorous data work &mdash; scan, check, fix, dedupe, merge, and export &mdash; without ever uploading a tree to someone else&rsquo;s cloud.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 900px; margin: 3rem auto; text-align: center;">
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">7</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">Build targets &mdash; macOS, Windows, Linux, Android, iOS, Web, Chrome Extension</div>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">9</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">CLI subcommands &mdash; full GEDCOM operations surface</div>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.15), rgba(95, 223, 223, 0.1)); padding: 2rem 1rem; border-radius: 12px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan); font-family: var(--font-mono);">5.5.1</div>
+                    <div style="color: var(--color-light); margin-top: 0.5rem; font-size: 0.9rem;">GEDCOM fidelity target with structured-issue scanner output</div>
                 </div>
             </div>
-            <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/gedfix/hero.webp" alt="GedFix app dashboard showing family tree visualization" class="gedfix-hero-img" loading="lazy" width="1920" height="1080">
+
+            <div style="max-width: 1000px; margin: 3rem auto;">
+                <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/gedfix/hero.webp" alt="GedFix cross-platform genealogy app interface showing tree view, GEDCOM cleanup, and AI-assisted research panel" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+            </div>
         </div>
     </section>
-    <!-- BEGIN project-visual-gallery -->
+
+    <!-- Visual Gallery -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
             <div class="section-header centered" style="margin-bottom: 2.5rem;">
                 <span class="section-label">Visual Intelligence</span>
                 <h2 class="section-title">Signature Key Art</h2>
-                <p class="section-description" style="max-width: 780px; margin: 0 auto;">A cinematic visual system built around the Gedfix product intelligence theme — rendered via Flux + custom LoRA stacks on brand palette.</p>
+                <p class="section-description" style="max-width: 780px; margin: 0 auto;">A cinematic visual system built around the GedFix product theme &mdash; rendered via Flux + custom LoRA stacks on brand palette.</p>
             </div>
             <div class="visual-gallery">
                 <figure class="visual-gallery-tile">
-                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/gedfix/gallery_1.webp" alt="GEDFix genealogy key art showing archival records restoration and lineage trust — study 1" loading="lazy">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/gedfix/gallery_1.webp" alt="GedFix lineage workspace key art &mdash; ancestral records and graph view, study 1" loading="lazy">
                 </figure>
                 <figure class="visual-gallery-tile">
-                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/gedfix/gallery_2.webp" alt="GEDFix genealogy key art showing archival records restoration and lineage trust — study 2" loading="lazy">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/gedfix/gallery_2.webp" alt="GedFix lineage workspace key art &mdash; ancestral records and graph view, study 2" loading="lazy">
                 </figure>
                 <figure class="visual-gallery-tile">
-                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/gedfix/gallery_3.webp" alt="GEDFix genealogy key art showing archival records restoration and lineage trust — study 3" loading="lazy">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/gedfix/gallery_3.webp" alt="GedFix lineage workspace key art &mdash; ancestral records and graph view, study 3" loading="lazy">
                 </figure>
             </div>
         </div>
     </section>
-    <!-- END project-visual-gallery -->
 
-
-    <!-- Stats -->
-    <section class="section">
-        <div class="container">
-            <div class="stats-row">
-                <div class="stat-box">
-                    <div class="num">30+</div>
-                    <div class="label">Views & tools</div>
-                </div>
-                <div class="stat-box">
-                    <div class="num">5</div>
-                    <div class="label">Languages</div>
-                </div>
-                <div class="stat-box">
-                    <div class="num">7</div>
-                    <div class="label">AI Providers</div>
-                </div>
-                <div class="stat-box">
-                    <div class="num">6</div>
-                    <div class="label">Platforms</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Core Features -->
+    <!-- Investor Summary -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
-            <h2 class="section-title centered" style="font-family: 'Inter', sans-serif; font-weight: 600; letter-spacing: -0.02em;">Core Features</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/gedfix/feature-tree.webp" alt="Family tree visualization" loading="lazy" width="120" height="120">
-                    <h3>Tree Visualization</h3>
-                    <p>Pedigree charts, fan charts, descendant trees, timeline views, and interactive maps with geocoded events.</p>
+            <div class="about-grid">
+                <div>
+                    <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Why GedFix Exists</h2>
+                    <p class="lead">The genealogy software market is split between three uncomfortable choices. Subscribe to a cloud (Ancestry, MyHeritage) and accept that your tree is on someone else&rsquo;s server, with their export rules, their pricing model, and no programmatic access. Buy a closed desktop product (Family Tree Maker, MacFamilyTree) and accept proprietary file formats, no scripting, and one-vendor risk. Or use an SQLite-backed power-user tool (RootsMagic) and accept a UI that lags the modern web and a workflow that assumes Windows.</p>
+                    <p style="margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.8;">GedFix takes the fourth path: a single SvelteKit codebase that targets every desktop and mobile OS through Tauri 2, a web build for collaboration, a Chrome extension for in-browser capture, and a Python CLI that treats GEDCOM as a real engineering surface &mdash; structured issue reports, deterministic backups, scriptable batch operations. The data lives on your hardware. The format is canonical GEDCOM 5.5.1. The interface is modern. The automation is real.</p>
+                    <p style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.8;">The platform was built against a specific lineage problem &mdash; multigenerational Polish-Jewish ancestry from Galicia (Kalush) crossing into Vancouver and Pittsburgh &mdash; where commercial tools either dropped diacritics, mishandled BET/AND date ranges, or refused to surface duplicate detection without manual review. The features that work for that case work for any tree where the data is messy because the history is messy.</p>
                 </div>
-                <div class="feature-card">
-                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/gedfix/feature-ai.webp" alt="AI-powered research" loading="lazy" width="120" height="120">
-                    <h3>AI Research</h3>
-                    <p>Automated research proposals from 7 AI providers. Source finding across FamilySearch and Chronicling America. Narrative generation.</p>
-                </div>
-                <div class="feature-card">
-                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/gedfix/feature-quality.webp" alt="Data quality validation" loading="lazy" width="120" height="120">
-                    <h3>Source Validation</h3>
-                    <p>Auto-classify sources as online trees vs. primary records. Flag unvalidated links. GPS checklist tracking per person.</p>
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Platform Capabilities</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Tauri 2 + SvelteKit 5 desktop builds for macOS, Windows, and Linux &mdash; production-complete</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Live web build at gedfix.isn.biz for read-only collaboration and shareable views</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Tauri 2 mobile (Android, iOS) and Chrome MV3 side-panel extension in active development</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Python <code>gedfix</code> CLI &mdash; scan, check, fix, dedupe, review, stats, merge, export, version</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>GEDCOM 5.5.1 export fidelity with structured-issue JSON output for every scan</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Living-person privacy filtering on export &mdash; <code>--filter-living</code> flag for public sharing</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Date normalization handling American order, FROM/TO, BET/AND with month+year support</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Fuzzy-match duplicate detection with relationship-safe merge and rollback</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Public TypeScript shared-schema package <code>@gedfix/core</code> for downstream tooling</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Source Validation -->
+    <!-- Deep Dive: GEDCOM Operations Surface -->
     <section class="section">
         <div class="container">
-            <div class="validation-section">
-                <h2 style="color: var(--color-white); font-family: 'Inter', sans-serif; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 1rem;">Source Validation Engine</h2>
-                <p style="color: var(--color-white); opacity: 0.7; max-width: 640px; font-family: 'Inter', sans-serif;">
-                    Every link in your tree needs a source other than an online tree to be considered validated. GedFix automatically classifies sources by type and tracks validation progress across your entire tree.
-                </p>
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem;">
-                    <div>
-                        <div style="font-family: 'Inter', sans-serif; font-weight: 600; color: #22C55E;">Validated</div>
-                        <div class="validation-bar"><span style="width: 35%; background: #22C55E;"></span></div>
-                        <div style="color: var(--color-white); opacity: 0.5; font-size: 0.85rem;">Non-tree source records</div>
-                    </div>
-                    <div>
-                        <div style="font-family: 'Inter', sans-serif; font-weight: 600; color: #F59E0B;">Tree Only</div>
-                        <div class="validation-bar"><span style="width: 25%; background: #F59E0B;"></span></div>
-                        <div style="color: var(--color-white); opacity: 0.5; font-size: 0.85rem;">Online tree citations only</div>
-                    </div>
-                    <div>
-                        <div style="font-family: 'Inter', sans-serif; font-weight: 600; color: #EF4444;">Unvalidated</div>
-                        <div class="validation-bar"><span style="width: 40%; background: #EF4444;"></span></div>
-                        <div style="color: var(--color-white); opacity: 0.5; font-size: 0.85rem;">No source citations at all</div>
-                    </div>
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Deep Dive: The GEDCOM Operations Surface</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">GedFix treats GEDCOM as data, not folklore. The Python CLI ships nine subcommands that turn the format&rsquo;s ambiguities into structured, scriptable operations &mdash; with deterministic backups before every mutating run.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+                <div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Scan, Check, Fix &mdash; the read-write triad</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;"><code>gedfix scan</code> walks an entire tree and emits a structured JSON report keyed by stable rule IDs. Every issue carries a rule code, a record reference, and a severity classification, so downstream tooling &mdash; the desktop app, a CI job, a custom dashboard &mdash; can render the same data without re-implementing the parser. <code>scan_file()</code> is exposed as a public Python API for programmatic use.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;"><code>gedfix check</code> runs a stricter consistency pass and writes a markdown report suitable for review or commit. Both commands are read-only; nothing mutates state. <code>gedfix fix</code> is the mutating counterpart &mdash; date normalization (American order rewriting, FROM/TO ranges, BET/AND with month+year), name canonicalization, place-string normalization &mdash; and every <code>fix</code> invocation produces an AutoFix annotation log plus a timestamped backup, so any change is reversible.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">A separate in-memory API, <code>fix_gedcom_text()</code>, takes a GEDCOM string and returns the normalized output without touching disk &mdash; the seam used by the Tauri app, the web build, and the Chrome extension to share one parser across every surface.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Dedupe, Merge, Review &mdash; the trust layer</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;"><code>gedfix dedupe</code> runs fuzzy-match duplicate detection across individuals and surfaces candidate pairs with a similarity score. The merge logic is relationship-safe: when a pair is collapsed, child and spouse references on both sides are retained, conflicting facts are preserved as alternates, and the entire operation is captured as a reversible diff against the pre-merge backup.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;"><code>gedfix merge</code> joins two GEDCOM files into one with automatic xref collision handling &mdash; the engineering equivalent of merging two researchers&rsquo; trees without manually renumbering every <code>@I</code> pointer. <code>gedfix review</code> opens an interactive review session over the consistency-check output, letting a researcher walk issues one at a time, accept or annotate each, and produce a clean follow-up scan to confirm closure.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8;"><code>gedfix stats</code> rounds out the surface with tree statistics (individuals, families, surnames, date ranges) for quick orientation when picking up a file you haven&rsquo;t opened in months. <code>gedfix export --filter-living</code> applies living-person privacy rules &mdash; suppressing dates of birth, current locations, and identifying details for individuals presumed living &mdash; before producing a public-shareable file.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Capabilities -->
+    <!-- Platform Components -->
     <section class="section" style="background: var(--color-charcoal);">
         <div class="container">
-            <h2 class="section-title centered" style="font-family: 'Inter', sans-serif; font-weight: 600; letter-spacing: -0.02em;">Everything You Need</h2>
-            <ul class="capability-list" style="margin-top: 2rem;">
-                <li>GEDCOM 5.5.1 and 7.0 import/export</li>
-                <li>Pedigree, fan chart, and descendant views</li>
-                <li>AI chat with 6 research modes</li>
-                <li>Automated source finding (FamilySearch, newspapers)</li>
-                <li>Source type classification (tree vs. primary records)</li>
-                <li>Data quality analysis with 15+ checks</li>
-                <li>Contradiction detection (dates, geography, relationships)</li>
-                <li>Face detection and media management</li>
-                <li>Relationship path finder between any two people</li>
-                <li>DNA centimorgan calculator</li>
-                <li>Evidence analysis with GPS checklist</li>
-                <li>Batch operations (multi-select, group, export)</li>
-                <li>Full-text search with alternate name matching</li>
-                <li>Interactive map with geocoded events</li>
-                <li>Keyboard shortcuts with chord navigation</li>
-                <li>5 languages (EN, ES, DE, FR, PT)</li>
-                <li>Database backup and restore</li>
-                <li>Undo/redo for all operations</li>
-                <li>Print-optimized views</li>
-                <li>PWA offline support (web)</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="section">
-        <div class="container">
-            <div class="cta-section">
-                <h2 style="color: var(--color-white); font-family: 'Inter', sans-serif; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 0.5rem;">Try GedFix</h2>
-                <p style="color: var(--color-white); opacity: 0.6; font-family: 'Inter', sans-serif; margin-bottom: 2rem;">
-                    Open the web app or download for your platform.
-                </p>
-                <a href="https://gedfix.isn.biz" class="btn cta-primary">Open Web App</a>
-                <a href="https://github.com/isndotbiz/ged/releases" class="btn cta-outline">Download Desktop</a>
+            <h2 class="section-title centered" style="margin-bottom: 3rem;">Platform Components</h2>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+                <div class="portfolio-card">
+                    <h3>Tauri 2 + SvelteKit 5 desktop / mobile shell</h3>
+                    <p>One Svelte codebase compiled to native bundles for macOS, Windows, and Linux through Tauri 2&rsquo;s Rust backend, with the same code path producing Android and iOS builds via Tauri 2 mobile (in active development). The native shell handles file-system access, OS keychain integration, and the local data layer; the Svelte frontend handles the entire UI. The build matrix is wired into a single GitHub Actions release workflow triggered by an <code>app-v*</code> tag.</p>
+                </div>
+                <div class="portfolio-card">
+                    <h3>Web build at gedfix.isn.biz</h3>
+                    <p>The same SvelteKit codebase compiled with <code>VITE_WEB=true</code> ships as a static web bundle for read-only collaboration, shareable lineage views, and the kind of tree exploration that doesn&rsquo;t require local file write access. It is the public face of the platform &mdash; the URL you give a relative when you want them to see what you&rsquo;ve assembled without asking them to install anything.</p>
+                </div>
+                <div class="portfolio-card">
+                    <h3>Chrome MV3 side-panel extension</h3>
+                    <p>A Manifest V3 Chrome extension with a side-panel UI that captures records mid-research from FamilySearch, Ancestry, FindAGrave, and other genealogy sites. The extension bridges to the desktop app over local port <code>19876</code>, so captured records land directly in the active tree without an intermediate clipboard or import step. In active development.</p>
+                </div>
+                <div class="portfolio-card">
+                    <h3><code>@gedfix/core</code> shared TypeScript schema</h3>
+                    <p>The contract between the desktop app, the web build, the Chrome extension, and any downstream tooling. Shared types, the canonical record schema, and prepared queries live in one TypeScript package so an AI plugin, a custom report generator, or a third-party visualizer can target the platform without re-implementing the model. A small surface, a hard contract.</p>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- Implementation Details -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Implementation Details</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Concrete engineering specifics &mdash; the contract surface that downstream tooling can rely on without surprise.</p>
+
+            <div style="max-width: 980px; margin: 0 auto;">
+                <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem 2rem; border-radius: 8px; border-left: 3px solid var(--color-blue); margin-bottom: 1rem;">
+                    <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">CLI distribution and install path</h4>
+                    <p>The Python CLI ships as <code>tools/cli</code> in the monorepo and installs editable via <code>pip install -e tools/cli</code>. <code>gedfix --help</code> enumerates all nine subcommands. Tested against Python 3.11 and 3.12 in CI; MIT-licensed.</p>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem 2rem; border-radius: 8px; border-left: 3px solid var(--color-blue); margin-bottom: 1rem;">
+                    <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Public Python APIs</h4>
+                    <p><code>normalize_gedcom_date_safe(text)</code>, <code>fix_gedcom_text(gedcom_str)</code>, and <code>scan_file(path)</code> are stable public APIs as of v1.0.0. Every API returns structured types &mdash; <code>DateResult</code>, normalized strings, or a list of typed issue records &mdash; never raw strings or untyped dicts. Downstream code can rely on the shape.</p>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem 2rem; border-radius: 8px; border-left: 3px solid var(--color-blue); margin-bottom: 1rem;">
+                    <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Date parsing rules</h4>
+                    <p>American date order (e.g. &ldquo;January 15, 1850&rdquo; &rarr; &ldquo;15 JAN 1850&rdquo;), FROM/TO and BET/AND patterns including month+year support, GEDCOM-canonical month abbreviation, and a deterministic <code>DateResult</code> output that records both the normalized form and the original string so reversibility is preserved.</p>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem 2rem; border-radius: 8px; border-left: 3px solid var(--color-blue); margin-bottom: 1rem;">
+                    <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Backup discipline</h4>
+                    <p>Every mutating CLI run &mdash; <code>fix</code>, <code>dedupe</code>, <code>merge</code>, <code>export</code> &mdash; produces a timestamped backup of the input file before touching it. Backups are local, named with the operation that produced them, and never deleted automatically. Rollback is a file copy.</p>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem 2rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                    <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Release pipeline</h4>
+                    <p>Pushing an <code>app-v*</code> tag triggers a single GitHub Actions release workflow that produces macOS, Windows, Linux, Android, iOS, and web builds in parallel. The CI pipeline already validates the Python CLI on 3.11 and 3.12 on every push.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered">Technology Stack</h2>
+            <div class="tech-expertise-grid" style="margin-top: 2.5rem;">
+                <div class="tech-category">
+                    <h3>App Shell</h3>
+                    <div class="tech-list">
+                        <span>Tauri 2 (Rust)</span>
+                        <span>SvelteKit 5</span>
+                        <span>TypeScript</span>
+                        <span>Tauri 2 mobile</span>
+                        <span>MV3 Chrome extension</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Data Engine</h3>
+                    <div class="tech-list">
+                        <span>Python 3.11 / 3.12</span>
+                        <span>GEDCOM 5.5.1</span>
+                        <span>Structured-issue JSON</span>
+                        <span>DateResult type</span>
+                        <span>Fuzzy match</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Shared Contract</h3>
+                    <div class="tech-list">
+                        <span>@gedfix/core</span>
+                        <span>Canonical schema</span>
+                        <span>Prepared queries</span>
+                        <span>Plugin contract</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Distribution</h3>
+                    <div class="tech-list">
+                        <span>GitHub Actions CI</span>
+                        <span>app-v* release tag</span>
+                        <span>VITE_WEB=true web build</span>
+                        <span>pnpm dev / pnpm dev:web</span>
+                        <span>pip install -e tools/cli</span>
+                        <span>MIT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why It Matters -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered">Why It Matters</h2>
+            <p class="section-description centered" style="max-width: 860px; margin: 0 auto;">Genealogy software is one of the most user-hostile categories in consumer computing &mdash; closed formats, cloud lock-in, and dated UIs that assume your tree is small and tidy. GedFix is the reset: open format, local-first, modern stack, real automation surface.</p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-top: 2rem;">
+                <div class="portfolio-card"><h3>Data Sovereignty</h3><p>Your tree is a file on your hardware in canonical GEDCOM 5.5.1, not a row in someone else&rsquo;s database. Every operation is reversible. Living-person filtering on export is a flag, not a feature request.</p></div>
+                <div class="portfolio-card"><h3>Engineering Surface</h3><p>Nine CLI subcommands plus three public Python APIs mean a researcher with scripting skills can automate batch operations across many trees &mdash; the kind of work that closed desktop products simply do not allow.</p></div>
+                <div class="portfolio-card"><h3>Modern UI on Every OS</h3><p>One SvelteKit codebase, seven build targets, one release tag. The desktop app feels native because Tauri 2 ships native; the web build runs on any browser; the Chrome extension captures records mid-research without breaking flow.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: linear-gradient(135deg, var(--color-blue-dark) 0%, var(--color-blue) 100%); text-align: center; padding: 4rem 0;">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Try GedFix</h2>
+            <p style="max-width: 640px; margin: 1rem auto 2rem; color: rgba(255,255,255,0.9); font-size: 1.1rem;">The web build runs at gedfix.isn.biz. For desktop, mobile, the Python CLI, or partnership, talk to us.</p>
+            <a href="https://gedfix.isn.biz" rel="noopener" target="_blank" class="btn btn-primary" style="margin-right: 0.75rem;"><span>Open gedfix.isn.biz &rarr;</span></a>
+            <a href="/contact" class="btn"><span>Get in Touch</span></a>
+        </div>
+    </section>
+    </main>
 
     <footer class="footer">
         <div class="container">

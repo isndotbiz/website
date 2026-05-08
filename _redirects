@@ -1,3 +1,11 @@
 # CF Pages auto-serves .html files without extension (clean URLs built-in)
 # Only explicit redirects needed here
 /team /#team 301
+
+# Retired portfolio entries (May 2026 portfolio consolidation 9 -> 6).
+# Stale URLs forwarded to current portfolio so inbound links / SEO don't 404.
+/opportunity-bot /portfolio 301
+/patchworthy /portfolio 301
+/bin-intelligence /portfolio 301
+/claims /portfolio 301
+/llm-security-research /crucible 301
