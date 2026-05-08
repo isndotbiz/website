@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Install dependencies
         run: npm ci
@@ -62,14 +62,22 @@ jobs:
         # site files into a staging dir.
         run: |
           mkdir -p /tmp/deploy-stage
-          # Copy top-level static files
-          cp -v *.html *.css _headers _redirects robots.txt sitemap.xml /tmp/deploy-stage/ 2>/dev/null || true
+          # Top-level static files (HTML, CSS, top-level JS, redirects, robots, sitemap, 404)
+          cp -v *.html *.css *.js _headers _redirects robots.txt sitemap.xml /tmp/deploy-stage/ 2>/dev/null || true
           cp -v schema-*.json /tmp/deploy-stage/ 2>/dev/null || true
-          # Copy js/ directory recursively (site scripts only)
-          mkdir -p /tmp/deploy-stage/js
-          cp -rv js/*.js /tmp/deploy-stage/js/ 2>/dev/null || true
+          # js/ directory (any additional site scripts)
+          if [ -d js ]; then
+            mkdir -p /tmp/deploy-stage/js
+            cp -rv js/*.js /tmp/deploy-stage/js/ 2>/dev/null || true
+          fi
+          # signals/ subdir is a deployed product page (index.html + signals.js + styles.css + data/)
+          if [ -d signals ]; then
+            cp -rv signals /tmp/deploy-stage/
+          fi
           echo "=== staging contents ==="
           ls /tmp/deploy-stage
+          echo "=== signals/ contents ==="
+          ls /tmp/deploy-stage/signals 2>/dev/null || echo "(no signals dir)"
           echo "=== file count + size ==="
           find /tmp/deploy-stage -type f | wc -l
           du -sh /tmp/deploy-stage
