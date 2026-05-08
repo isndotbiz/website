@@ -9,3 +9,6 @@
 /bin-intelligence /portfolio 301
 /claims /portfolio 301
 /llm-security-research /crucible 301
+
+# GedFix renamed to Provenance (May 2026 rebrand)
+/gedfix /provenance 301
