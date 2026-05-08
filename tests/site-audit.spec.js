@@ -11,7 +11,7 @@ const ALL_PAGES = [
   { path: '/investors', name: 'Investors' },
   { path: '/contact', name: 'Contact' },
   { path: '/spiritatlas', name: 'Spirit Atlas' },
-  { path: '/gedfix', name: 'GedFix' },
+  { path: '/provenance', name: 'Provenance' },
   { path: '/signals/', name: 'Signals' },
   { path: '/phantom-browser', name: 'Phantom Browser' },
   { path: '/crucible', name: 'Crucible' },
@@ -23,7 +23,7 @@ const ALL_PAGES = [
 ];
 
 const PRODUCT_PAGES = ALL_PAGES.filter(p =>
-  ['/spiritatlas', '/gedfix', '/signals/', '/phantom-browser', '/crucible', '/hermes-aingels'].includes(p.path)
+  ['/spiritatlas', '/provenance', '/signals/', '/phantom-browser', '/crucible', '/hermes-aingels'].includes(p.path)
 );
 
 const FOUNDER_PAGES = ALL_PAGES.filter(p =>
