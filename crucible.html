@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crucible - LLM red-team and adversarial evaluation platform. Jailbreak research, eval and judge harness, and agent-transcript scoring across frontier models. Built on a LibreChat fork, hosted at crc.isn.biz.">
+    <meta name="keywords" content="LLM security, red team, jailbreak research, adversarial evaluation, eval harness, judge model, OWASP Top 10 for LLMs, NIST AI RMF, huntr, agent transcripts, sales-page agent eval, iSN.BiZ">
+    <meta name="author" content="iSN.BiZ Inc">
+    <meta property="og:title" content="Crucible | LLM Red-Team and Adversarial Evaluation Stack | iSN.BiZ Inc">
+    <meta property="og:description" content="Defensive LLM security platform: red-team and jailbreak research, eval and judge harness, and agent-transcript scoring across frontier models. Built on a LibreChat fork, hosted at crc.isn.biz.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/crucible/hero.webp">
+    <title>Crucible | LLM Red-Team and Adversarial Evaluation Stack | iSN.BiZ Inc</title>
+    <link rel="icon" type="image/webp" href="https://b2cdn.isn.biz/file/isnbiz-cdn/premium_v3/logos/favicon.webp">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="enhanced-animations.css">
+    <link rel="stylesheet" href="project-spirit-theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Archivo+Black&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="spirit-project">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Navigation -->
+        <nav class="nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="logo-img">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="primary-navigation">
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/portfolio" class="active">Portfolio</a></li>
+            <li><a href="/investors">Investors</a></li>
+            <li class="has-dropdown">
+                <a href="#team">Team</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/jonathan">Jonathan Mallinger</a></li>
+                    <li><a href="/lilly">Lilly Fedas</a></li>
+                    <li><a href="/bri">Brianna Bear</a></li>
+                </ul>
+            </li>
+            <li><a href="/contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content">
+
+    <!-- Project Hero -->
+    <section class="hero" style="min-height: 70vh; padding-top: 120px;">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">LLM Security Research</span>
+                <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">Crucible</h1>
+                <p class="section-description" style="max-width: 900px; margin: 0 auto; font-size: 1.3rem;">LLM Red-Team and Adversarial Evaluation Stack. Crucible is iSN.BiZ's private monorepo for automated jailbreak evaluation across large frontier-model fleets, fused with an agent-transcript judge harness and a sales-page-agent eval. The platform consolidates an evaluation engine, an analytics dashboard, an MCP server, and a LibreChat-based operator interface behind a single hardened deployment at crc.isn.biz, with canonical evaluation data routed to a TrueNAS-backed PostgreSQL instance over Tailscale. Defensive-research framing only - methodology surfaces here are intentionally high-level, payload-free, and aligned with responsible-disclosure norms.</p>
+            </div>
+
+            <!-- Key Metrics -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 900px; margin: 3rem auto; text-align: center;">
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">97+</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">Frontier Models Evaluated</div>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">23K+</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">RAG-Embedded Research Docs</div>
+                </div>
+                <div style="background: rgba(30, 159, 242, 0.1); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.3);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-cyan);">1,100+</div>
+                    <div style="font-size: 0.9rem; color: var(--color-white); opacity: 0.8;">Historical Eval Sessions</div>
+                </div>
+            </div>
+
+            <div style="max-width: 1000px; margin: 3rem auto;">
+                <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/crucible/hero.webp" alt="Crucible LLM red-team and adversarial evaluation stack hero visualization with dark obsidian aesthetic, violet circuit traces, and luminous evaluation pipeline" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-deep);">
+            </div>
+        </div>
+    </section>
+
+    <!-- BEGIN project-visual-gallery -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <div class="section-header centered" style="margin-bottom: 2.5rem;">
+                <span class="section-label">Visual Intelligence</span>
+                <h2 class="section-title">Signature Key Art</h2>
+                <p class="section-description" style="max-width: 780px; margin: 0 auto;">A cinematic visual system rendered around the Crucible adversarial-evaluation theme - dark obsidian figures with violet circuit traces and volumetric energy, generated via Flux Dev with a stacked LoRA pipeline on the TrueNAS GPU host.</p>
+            </div>
+            <div class="visual-gallery">
+                <figure class="visual-gallery-tile">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/crucible/gallery_1.webp" alt="Crucible adversarial evaluation key art with violet circuit traces and luminous data streams - study 1" loading="lazy">
+                </figure>
+                <figure class="visual-gallery-tile">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/crucible/gallery_2.webp" alt="Crucible adversarial evaluation key art with violet circuit traces and luminous data streams - study 2" loading="lazy">
+                </figure>
+                <figure class="visual-gallery-tile">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/crucible/gallery_3.webp" alt="Crucible adversarial evaluation key art with violet circuit traces and luminous data streams - study 3" loading="lazy">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- END project-visual-gallery -->
+
+    <!-- Threat Model & Mission -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <div class="about-grid">
+                <div>
+                    <h2 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Threat Model and Mission</h2>
+                    <p class="lead">Crucible exists to measure how frontier language models actually fail under adversarial pressure - and to do that measurement under controlled, repeatable, defensively-framed conditions, not on production traffic.</p>
+                    <p style="margin-top: 1.5rem; font-size: 1.1rem; line-height: 1.8;">Most published LLM-safety claims rest on benchmarks that were never adversarially probed at scale, on test sets that were partially memorized during training, or on judge-model evaluations whose own biases were never characterized. The result is a security posture that looks acceptable in spec sheets and collapses on contact with a determined operator. Crucible's threat model assumes the operator: a researcher, integrator, or red-team contractor who needs to know - in concrete numerical terms - the success rates of structured attack families against a specific model and a specific system prompt, before that pairing is shipped to customers.</p>
+                    <p style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.8;">The platform serves three operational purposes that share infrastructure but address distinct stakeholder questions. First, it runs structured red-team and jailbreak research against frontier models using a curated prompt corpus and a closed-loop adaptive arsenal. Second, it executes an eval and judge harness against arbitrary agent transcripts so that conversational and tool-using systems can be scored on the same axes as single-turn chat. Third, it hosts an evaluation pipeline for the Vac sales-page agent and any future iSN.BiZ agent product, ensuring that customer-facing conversational surfaces are stress-tested against the same adversarial corpus as the underlying models. All three flows write into the same canonical PostgreSQL store, so coverage analysis, model-rank movement, and technique-effectiveness shifts become first-class queries rather than ad hoc dashboards.</p>
+                    <p style="margin-top: 1rem; font-size: 1.1rem; line-height: 1.8;">The defensive purpose is explicit. Crucible publishes no exploit payloads, no weaponized PoCs, and no harm-class attack content. Its outputs are aggregate technique-effectiveness ratings, model-vulnerability rankings, and methodology notes useful to defenders building safer system prompts, alignment evals, and AI-RMF-aligned governance. The corpus folds in the lab's standing LLM-security research line, including the huntr operator-guide corpus, OWASP Top 10 for LLMs context, and NIST AI RMF mapping notes - and any novel finding follows responsible-disclosure to the affected model provider before any aggregated metric is shared externally.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Platform Capabilities</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Structured red-team campaigns with an immutable evaluation protocol that bounds prompt sizes, response lengths, and refusal handling</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>RAG-assisted research mode over 23,500+ embedded security documents in a pgvector knowledge base on TrueNAS</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Agent transcript capture, deduplication, and judge scoring across multi-turn conversations and tool-call chains</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Cross-model coverage matrix spanning OpenAI, Anthropic, Google, Meta, Mistral, DeepSeek, Qwen, GLM, MiniMax, and Kimi families</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Sales-page-agent eval pipeline for stress-testing the Vac agent and downstream iSN.BiZ conversational products</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Model-family aware delivery shaping that respects empirically-observed system-turn versus user-turn safety-training asymmetries</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>LibreChat-fork operator interface with structured tools, custom OpenRouter endpoint, and full ElevenLabs and Whisper voice integration</span>
+                        </li>
+                        <li style="padding: 0.75rem 0; display: flex; align-items: flex-start; gap: 0.75rem;">
+                            <span style="color: var(--color-cyan); font-size: 1.2rem;">&#10003;</span>
+                            <span>Responsible-disclosure-first reporting workflow with private findings, pre-publication embargo, and aggregate-only public output</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep Dive: Jailbreak Research Methodology -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Deep Dive: Jailbreak Research Methodology</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Crucible's research methodology is a closed-loop, RAG-informed, adversarial-evaluation pipeline. The framing is defensive: methodology is described in operational terms so defenders can reproduce the measurement, never as exploit recipes.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Cosmology Framework: Structured Adversarial Roles</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Internally, Crucible organizes its red-team agent fleet using a deliberately stylized hierarchy that separates white-hat defensive research roles from black-hat offensive research roles. The white-hat tier covers pattern recognition, ethical-boundary defense, hidden-wisdom inspection, and structural-design review. The black-hat tier covers linguistic mutation, narrative deception, system-prompt probing, and chained-attack reasoning, each scoped strictly to red-team evaluation against systems we are explicitly authorized to test. The framework is product-mechanic, not theological - it gives operators a memorable taxonomy for routing requests to the right specialist agent and for composing multi-agent <em>summoning circles</em> that exercise full-spectrum attack chains under controlled conditions.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">Each agent carries a stable identity stack: a rank, a domain (language, deception, systems, chains, or their defensive duals), a curated knowledge base from primary research literature, and a system prompt assembled deterministically from rank and role. This is what makes evaluation runs reproducible across months: the same agent, with the same loadout, against the same target model, produces the same scoring envelope - or the delta is itself a finding.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">RAG-Powered Research Mode</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">The research mode pairs the agent fleet with a RAG knowledge base of 23,500+ vector-embedded security research documents, 1,100+ historical evaluation sessions with success and failure data, and 244+ structured attack blueprints organized by model family and technique category. Queries flow through a defined research protocol: <strong>knowledge retrieval</strong> across the embedded corpus and the technique-effectiveness API, <strong>pattern analysis</strong> to identify which technique categories have empirically succeeded against the target model family, <strong>attack construction</strong> using only empirically-validated component combinations, and <strong>learning</strong> after each attempt to update technique selection.</p>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">RAG endpoints expose semantic search across all documents, technique effectiveness data, model vulnerability scores, filtered evaluation wins by category, attack blueprints by model family, and tier-based technique and model rankings. All of this is internal-only operator surface - the public website does not expose payloads, scoring keys, or per-prompt data.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Empirical Finding: System-Turn vs. User-Turn Safety Training</h3>
+                <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">A concrete published finding from Crucible's research line, cross-checked against multiple 2026 red-team papers and confirmed in our own LibreChat testing, illustrates how the platform produces actionable defensive intelligence. The finding: across the Chinese-model family - DeepSeek V3 and R1, Qwen, GLM, MiniMax, and Kimi - safety training is weighted more heavily on the system-turn channel than on the user-turn channel. The practical consequence is that adversarial content delivered via the system prompt (the <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">instructions</code> field of an agent definition) triggers higher refusal rates than the same content delivered as a first user-turn message.</p>
+                <p style="font-size: 1.05rem; line-height: 1.8;">For defenders this is load-bearing intelligence: any security review that probes a Chinese-family model only through system-turn injection will <em>under</em>-estimate that model's susceptibility to the same content delivered via a user turn. Crucible's mitigation pattern - splitting structural instructions into a short, neutral system prompt and a configurable conversation-starter on the user channel - is the defensive analog of the same finding. The finding is reported in aggregate, never with payloads, and the responsible-disclosure surface is the affected provider, not the public site.</p>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Immutable Evaluation Protocol</h3>
+                <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">All evaluation runs operate under a protocol that is treated as immutable: system prompts bounded between 3,333 and 12,000 characters, base prompts between 200 and 800 characters, enhanced prompts between 400 and 1,500 characters, and Phase-B and Phase-C target responses between 1,332 and 9,999 or 12,999 characters depending on phase. No mock data, no summaries, refusals are recorded as failures, and duplicated responses with fewer than 333 characters of meaningful difference are treated as failures and trigger an escalation: temperature is raised, then technique is rotated, then tier is rotated, and finally the model-technique pairing is marked incompatible. This protocol is what makes cross-model comparisons honest.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eval Harness Components -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 3rem;">Eval Harness Components</h2>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#9878;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Judge Stack</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Multi-Tier Adversarial Scoring</h3>
+                    <p>Tier-4 and tier-5 parallel evaluators run against every candidate response, combining deterministic code-based graders for bounded checks with model-based rubric judges for nuanced compliance assessment. The master unified orchestrator routes each transcript through the appropriate judge configuration based on technique class and target model family, and persists scoring envelopes alongside raw responses so that every claim is auditable. Judge bias and disagreement are themselves tracked as first-class signals.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128221;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Transcript Capture</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Agent and Conversation Recording</h3>
+                    <p>Full transcript capture runs across the LibreChat operator interface and the FastAPI eval engine, recording every prompt, every model response, every tool call, and every retrieval. Responses are deduplicated by hash so identical refusals across attempts collapse into a single entry with an occurrence count. Long responses remain collapsible in the data browser, and authentication gates raw jailbreak content so that only authorized operators ever see ungated content.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128268;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Scenario Simulator</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Multi-Turn Adversarial Scenarios</h3>
+                    <p>The scenario simulator drives synthetic-user multi-turn conversations against a target agent using parameterized adversarial scripts. Scenarios cover gradual context shift, persona injection, narrative framing, role exploitation, and reasoning-trap families, each scored against pass-at-k and pass-power-k metrics so that capability and regression evaluations share a consistent statistical frame. Adaptive arsenal logic chooses the next escalation only from empirically-validated technique branches.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128172;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">Sales-Page Agent Eval</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Vac Pipeline and Customer-Facing Surface</h3>
+                    <p>A dedicated eval pipeline targets the Vac sales-page agent - the next conversational product on the iSN.BiZ roadmap - and the broader class of customer-facing agents that follow it. The harness exercises sales-conversation flows under adversarial pressure: prompt-injection attempts hidden in user messages, system-prompt-extraction probes, off-topic steering, and refusal-bypass framing. Findings feed directly back into the agent's system-prompt design, hardening the surface before it ever speaks with a paying customer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Details -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Implementation Details</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Crucible runs as a hardened private monorepo: an evaluation engine, an analytics dashboard, an MCP server, and a LibreChat operator interface, deployed across a defined Tailscale-connected machine boundary.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">LibreChat-Fork Operator Interface</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">The operator surface is a hardened LibreChat fork tracked as a git submodule. Custom providers are configured through <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">librechat.yaml</code> with curated model lists and explicit fetch behavior, including a custom OpenRouter endpoint that exposes a vetted slate of evaluation targets. Crucible's red-team and analytics tools - <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">hydra_evaluate</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">hydra_ip_score</code>, <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">hydra_techniques</code>, and <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">hydra_status</code> - are wired as structured LibreChat tools, not ad hoc prompt snippets, so tool-call traces become structured rows in the same evaluation database that holds prompt and response data.</p>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Evaluation Engine and Dashboard</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">The evaluation engine is a FastAPI server exposing 45+ endpoints for sessions, models, techniques, blueprints, RAG search, and tier-ranked vulnerability and technique data. The analytics dashboard is a separate FastAPI application serving session, model, technique, and leaderboard views with deduplicated response display, a coverage heatmap, and a blueprint browser. Both services connect to the same canonical PostgreSQL instance, and both honor the same authentication boundary - raw jailbreak content is gated behind operator authentication and never rendered in unauthenticated views.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Deployment Topology</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">Production hosting lives on a Hetzner-class VPS that fronts <code style="color: var(--color-cyan); background: rgba(30, 159, 242, 0.1); padding: 0.1rem 0.4rem; border-radius: 4px;">crc.isn.biz</code>. Caddy terminates TLS, routes API traffic to the eval engine, dashboard traffic to the analytics service, and chat traffic to the LibreChat container. A separate TrueNAS host runs the canonical PostgreSQL plus pgvector, the Ollama fallback inference, the local image-generation pipeline, and a Telegram operator bot. A burst Xeon host is reserved for heavy parallel evaluation runs and is never used as a permanent service host. All four machines connect over Tailscale, and the eval engine reaches PostgreSQL by Tailscale IP rather than by exposing the database to the public internet.</p>
+                    <h3 style="color: var(--color-blue); margin-bottom: 1rem;">Secrets, Auth, and Data Handling</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.8;">All credentials route through a 1Password Connect instance. Required secrets - OpenRouter API key, PostgreSQL password, JWT signing keys, credential encryption keys, and a per-agent LibreChat API key - are injected at deploy time, never committed. Operator probes prefer the LibreChat per-agent OpenAI-compatible API key, falling back to admin JWT login if unset. Sensitive corpora and unredacted findings route to a TrueNAS-resident research database, separated from operational chat state and from the local development PostgreSQL that exists only for disposable iteration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container">
+            <h2 class="section-title centered">Technology Stack</h2>
+            <div class="portfolio-tags" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 2rem;">
+                <span class="tag">Python 3.11</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">PydanticAI</span>
+                <span class="tag">asyncpg</span>
+                <span class="tag">PostgreSQL 17</span>
+                <span class="tag">pgvector</span>
+                <span class="tag">Redis</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">LibreChat (Fork)</span>
+                <span class="tag">Docker Compose</span>
+                <span class="tag">Caddy</span>
+                <span class="tag">Nginx</span>
+                <span class="tag">OpenRouter</span>
+                <span class="tag">Ollama</span>
+                <span class="tag">MCP Server</span>
+                <span class="tag">Tailscale</span>
+                <span class="tag">1Password Connect</span>
+                <span class="tag">ElevenLabs TTS</span>
+                <span class="tag">Whisper STT</span>
+                <span class="tag">Voyage Embeddings</span>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <h3 style="color: var(--color-cyan); margin-bottom: 1.5rem;">Differentiation and Defensive Posture</h3>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Eval Harness and Operator Chat in One Stack</h4>
+                        <p>Most LLM-eval frameworks ship as a CLI plus a notebook, leaving operators to assemble their own chat interface. Crucible fuses a structured evaluation engine, an analytics dashboard, a transcript-capturing chat UI, and an MCP server into a single deployable monorepo, so the same surface that runs an evaluation can also drive an interactive red-team session against the same target.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">RAG-Informed Adaptive Arsenal</h4>
+                        <p>The platform does not pick attack techniques from a fixed list. The adaptive arsenal queries an internal RAG corpus and a technique-effectiveness database to choose the empirically best-performing technique class against the specific target model family, then escalates along validated branches. Defensive uplift comes for free: any technique that consistently fails to break a model is itself a defensive datapoint.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Model-Family Aware Delivery</h4>
+                        <p>The published Chinese-model finding is operationalized in the platform: per-family delivery shaping respects empirically-observed asymmetries between system-turn and user-turn safety training. Defenders evaluating a Chinese-family model through Crucible see the model's full susceptibility surface, not just the half that surfaces on the system channel.</p>
+                    </div>
+                    <div style="background: rgba(30, 159, 242, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--color-blue);">
+                        <h4 style="color: var(--color-blue); margin-bottom: 0.5rem;">Responsible-Disclosure-First Workflow</h4>
+                        <p>Every novel finding is private by default. Aggregated metrics - technique effectiveness, model rankings, judge agreement - are publishable only after the affected provider has been notified through their disclosure surface and given a reasonable embargo window. No exploit payloads, no weaponized PoCs, and no harm-class content are ever published from this platform.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why It Matters / Industry Context -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title centered" style="margin-bottom: 1.5rem;">Why It Matters: Industry Context</h2>
+            <p class="section-description centered" style="max-width: 800px; margin: 0 auto 3rem;">Crucible exists inside a maturing ecosystem of AI-security frameworks, bug-bounty programs, and government-aligned risk-management standards. The platform reads, contributes to, and is governed by these reference frames.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128737;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">OWASP Top 10 for LLMs</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Application-Layer Risk Mapping</h3>
+                    <p>The OWASP Top 10 for Large Language Model Applications is the de facto application-layer taxonomy for LLM risk - prompt injection, insecure output handling, training-data poisoning, model denial of service, supply-chain vulnerabilities, sensitive-information disclosure, insecure plugin design, excessive agency, overreliance, and model theft. Crucible's technique families map onto this taxonomy explicitly, so every evaluation run produces a row that can be reported against the same axes a customer's AppSec team is already using.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#128202;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">NIST AI RMF</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">Governance and Measurement</h3>
+                    <p>The NIST AI Risk Management Framework defines a four-function lifecycle - Govern, Map, Measure, Manage - for AI systems, and is increasingly the language enterprise procurement and federal acquisition use to talk about AI risk. Crucible's evaluation outputs are designed to slot into the Measure function: concrete numerical artifacts (technique effectiveness rates, refusal rates, judge-agreement scores) that an organization can attach to its AI RMF profile and re-run on a quarterly cadence to track drift.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div style="background: linear-gradient(135deg, rgba(30, 159, 242, 0.2), rgba(95, 223, 223, 0.1)); padding: 2rem; border-radius: 8px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(30, 159, 242, 0.3);">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">&#129516;</div>
+                        <h3 style="color: var(--color-cyan); margin: 0; text-align: center; font-size: 1.1rem;">huntr Disclosure Ecosystem</h3>
+                    </div>
+                    <h3 style="margin-top: 1rem;">AI/ML Bug-Bounty Surface</h3>
+                    <p>huntr.com is the world's first AI/ML-only bug-bounty platform - originally launched in 2020, acquired by Protect AI in 2023, and folded into Palo Alto Networks' Prisma AIRS through the 2025 Protect AI acquisition. It runs two distinct programs: open-source AI/ML repository disclosures with CVE issuance and a 90-day default embargo, and model-file-vulnerability disclosures targeting load-time and inference-time exploits in formats like .safetensors, .gguf, .keras, and .joblib. Crucible's research line maintains a curated huntr operator-guide corpus, RAG-embedded for tradecraft retrieval, so any novel finding produced by the platform can be routed to the appropriate disclosure surface - huntr, the affected upstream maintainer, or the model provider's security contact - through a defined responsible-disclosure workflow.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem; background: rgba(30, 159, 242, 0.05); padding: 2rem; border-radius: 8px; border: 1px solid rgba(30, 159, 242, 0.2);">
+                <h3 style="color: var(--color-cyan); margin-bottom: 1rem;">Responsible-Disclosure Statement</h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin: 0;">Crucible publishes no exploit payloads, no weaponized proof-of-concept code, and no harm-class adversarial content. All research output described on this page is aggregate-level: technique-effectiveness percentages, model-vulnerability rankings, judge-agreement statistics, and methodology notes. Novel vulnerabilities are reported privately to the affected model provider or upstream maintainer through their published disclosure channel before any aggregated metric is shared externally. Operator access to ungated transcript content is gated by authentication, all sensitive corpora live behind a private network boundary on Tailscale, and the public surface at crc.isn.biz exposes only the operator interface, not raw jailbreak data. Detailed disclosure procedures and the full data-handling architecture are available to qualified investors, enterprise customers, and security partners under NDA.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: var(--color-charcoal);">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Interested in This Solution?</h2>
+            <p class="section-description" style="margin-bottom: 2rem;">Talk to us about adversarial evaluation, agent-transcript scoring, or pre-launch red-team review for your conversational AI surface. All engagements operate under written authorization, scoped rules of engagement, and a responsible-disclosure agreement.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="/contact" class="btn btn-primary"><span>Schedule a Briefing</span></a>
+                <a href="/portfolio" class="btn btn-outline"><span>View All Projects</span></a>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+        <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="https://b2cdn.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp" alt="iSN.BiZ Inc Logo" class="footer-logo" style="height: 40px; margin-bottom: 1rem;">
+                    <p>Building the future of enterprise software with AI-powered solutions since 2015.</p>
+                    <div class="footer-credentials">
+                        <p><strong>DUNS:</strong> 080513772</p>
+                        <p><strong>UBI:</strong> 603-522-339</p>
+                        <p><strong>EIN:</strong> 47-4530188</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/portfolio">Portfolio</a></li>
+                        <li><a href="/investors">Investors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Leadership</h4>
+                    <ul class="footer-links">
+                        <li><a href="/jonathan">Jonathan &mdash; CEO</a></li>
+                        <li><a href="/bri">Bri &mdash; COO</a></li>
+                        <li><a href="/lilly">Lilly &mdash; CFO</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <p>9030 35th Ave SW<br>Suite 100<br>Seattle, WA 98126</p>
+                    <p>Local: (206) 785-9782<br>Toll-Free: (800) 986-4614</p>
+                    <h4>Get in Touch</h4>
+                    <a href="/contact" class="btn btn-primary" style="margin-top: 0.5rem; display: inline-block;">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 iSN.BiZ Inc. All rights reserved.</p>
+                <p>Founded July 8, 2015 | 9030 35th Ave SW, Suite 100, Seattle, WA 98126</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

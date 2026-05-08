@@ -10,23 +10,20 @@ const ALL_PAGES = [
   { path: '/portfolio', name: 'Portfolio' },
   { path: '/investors', name: 'Investors' },
   { path: '/contact', name: 'Contact' },
-  { path: '/opportunity-bot', name: 'Opportunity Bot' },
-  { path: '/patchworthy', name: 'PatchWorthy' },
-  { path: '/bin-intelligence', name: 'BIN Intelligence' },
-  { path: '/spiritatlas', name: 'SpiritAtlas' },
-  { path: '/gedfix', name: 'GEDFix' },
+  { path: '/spiritatlas', name: 'Spirit Atlas' },
+  { path: '/gedfix', name: 'GedFix' },
+  { path: '/signals/', name: 'Signals' },
   { path: '/phantom-browser', name: 'Phantom Browser' },
-  { path: '/llm-security-research', name: 'LLM Security Research' },
-  { path: '/claims', name: 'Claims' },
-  { path: '/hroc-files', name: 'HROC Files' },
+  { path: '/crucible', name: 'Crucible' },
+  { path: '/hermes-aingels', name: 'HERMES + AiNGELS' },
+  { path: '/hroc-files', name: 'HROC Beneficiary' },
   { path: '/jonathan', name: 'Jonathan' },
   { path: '/bri', name: 'Bri' },
   { path: '/lilly', name: 'Lilly' },
 ];
 
 const PRODUCT_PAGES = ALL_PAGES.filter(p =>
-  ['/opportunity-bot', '/patchworthy', '/bin-intelligence', '/spiritatlas',
-   '/gedfix', '/phantom-browser', '/llm-security-research', '/claims', '/hroc-files'].includes(p.path)
+  ['/spiritatlas', '/gedfix', '/signals/', '/phantom-browser', '/crucible', '/hermes-aingels'].includes(p.path)
 );
 
 const FOUNDER_PAGES = ALL_PAGES.filter(p =>
