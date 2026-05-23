@@ -36,7 +36,7 @@ ISN.BIZ is currently deployed on **Cloudflare Pages** (project `isnbiz-website`,
 ### Step 1: Create B2 Public Bucket
 - Create bucket `isnbiz-cdn` with `allPublic` visibility
 - B2 public URL pattern: `https://f004.backblazeb2.com/file/isnbiz-cdn/...`
-- Set up Cloudflare CDN: CNAME `b2cdn.isn.biz` → B2 friendly URL for clean paths
+- Set up Cloudflare CDN: CNAME `b2c.isn.biz` → B2 friendly URL for clean paths
 
 ### Step 2: Convert All PNG Assets to WebP Locally
 - Convert 9 hero PNGs → WebP using `cwebp` (quality 85, available at `/opt/local/bin/cwebp`)
@@ -93,7 +93,7 @@ ISN.BIZ is currently deployed on **Cloudflare Pages** (project `isnbiz-website`,
 ## B2 CDN URL Strategy
 
 **Option A**: Direct B2 URL — `https://f004.backblazeb2.com/file/isnbiz-cdn/path/to/file.webp`
-**Option B**: Cloudflare CNAME — `https://b2cdn.isn.biz/path/to/file.webp` (CNAME → B2 friendly URL)
+**Option B**: Cloudflare CNAME — `https://b2c.isn.biz/path/to/file.webp` (CNAME → B2 friendly URL)
 
 **Recommend Option B** — cleaner URLs, Cloudflare cache in front, consistent with existing `cdn.isn.biz` pattern.
 
@@ -101,7 +101,7 @@ ISN.BIZ is currently deployed on **Cloudflare Pages** (project `isnbiz-website`,
 
 1. `grep -rn 'og:image' *.html` — all point to B2 CDN WebP
 2. `grep -c 'cdn.isn.biz' *.html js/*.js` — should be 0 (migrated to B2)
-3. `curl -I https://b2cdn.isn.biz/assets/generated/truenas_flux/opportunity-bot/hero.webp` — 200
+3. `curl -I https://b2c.isn.biz/assets/generated/truenas_flux/opportunity-bot/hero.webp` — 200
 4. Spot-check Spirit Atlas media wall — 10 random images return 200
 5. `curl -I https://isn.biz/about` — 200, correct headers
 6. `wrangler pages deployment list --project-name isnbiz-website` — fresh deployment visible
