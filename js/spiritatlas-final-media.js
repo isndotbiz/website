@@ -4,8 +4,8 @@
 
     const imageRoot = '/Users/jonathanmallinger/Workspace/Spirit-Atlas/images';
     const videoRoot = '/Users/jonathanmallinger/Workspace/Spirit-Atlas/videos';
-    const imageCdnPrefix = 'https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/images';
-    const videoCdnPrefix = 'https://b2cdn.isn.biz/file/isnbiz-cdn/spiritatlas/videos';
+    const imageCdnPrefix = 'https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images';
+    const videoCdnPrefix = 'https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos';
 
     const imageExt = new Set(['.png', '.jpg', '.jpeg', '.webp']);
     const videoExt = new Set(['.mp4', '.mov', '.webm', '.m4v']);

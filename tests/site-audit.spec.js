@@ -132,7 +132,7 @@ test.describe('Section Visibility', () => {
 test.describe('Images Load from CDN', () => {
   test.setTimeout(60000); // 60s per test for image-heavy pages
 
-  const APPROVED_HOSTS = ['b2cdn.isn.biz', 's3.amazonaws.com', 'isnbiz-assets', 'amazonaws.com'];
+  const APPROVED_HOSTS = ['b2c.isn.biz', 's3.amazonaws.com', 'isnbiz-assets', 'amazonaws.com'];
 
   for (const page of ALL_PAGES) {
     test(`${page.name} all images load successfully`, async ({ page: p }) => {

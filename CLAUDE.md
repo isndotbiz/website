@@ -6,7 +6,7 @@ Live investor-ready website for ISN.BIZ Inc. LIVE at https://isn.biz.
 - 20 static HTML pages + CSS/JS — no framework
 - Hosting: Cloudflare Pages
 - CDN/proxy: Cloudflare (SSL: Full)
-- Images: Backblaze B2 via `b2cdn.isn.biz` + AWS S3 bucket `isnbiz-assets-1769962280` (legacy)
+- Images: Backblaze B2 via `b2c.isn.biz` + AWS S3 bucket `isnbiz-assets-1769962280` (legacy)
 - CI/CD: GitHub Actions → Playwright tests → deploy on push to main
 
 ## Key Files
@@ -32,7 +32,7 @@ git push origin main   # triggers CI: tests → deploy
 
 ## Image Upload (Backblaze B2)
 ```bash
-# URL pattern: https://b2cdn.isn.biz/file/isnbiz-cdn/assets/image.webp
+# URL pattern: https://b2c.isn.biz/file/isnbiz-cdn/assets/image.webp
 ```
 
 ## Conventions
