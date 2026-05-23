@@ -1083,7 +1083,18 @@
                 text-align: center;
             }
         }
-    </style>
+    
+        .spirit-vid-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; margin-top: 1.5rem; }
+        @media (max-width: 1024px) { .spirit-vid-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+        @media (max-width: 640px)  { .spirit-vid-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+        .spirit-vid { position: relative; margin: 0; overflow: hidden; border-radius: 12px; border: 1px solid var(--spirit-line); background: var(--spirit-panel); }
+        .spirit-vid video { display: block; width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; }
+        .spirit-vid figcaption { position: absolute; bottom: 6px; left: 8px; right: 8px; font-size: 11px; color: var(--spirit-muted); text-transform: lowercase; letter-spacing: 0.04em; text-shadow: 0 1px 4px rgba(0,0,0,0.85); pointer-events: none; }
+        .spirit-hero-vid video { aspect-ratio: 16/9; width: 100%; height: auto; border-radius: 16px; box-shadow: var(--spirit-shadow); }
+        .spirit-hero-vid figcaption { position: static; margin-top: 0.5rem; font-size: 12px; }
+        .spirit-section-head { margin-bottom: 0.5rem; }
+        .spirit-section-head h2 { margin: 0.25rem 0 0.5rem; }
+        </style>
 </head>
 <body class="spirit-page">
     <nav class="nav">
@@ -1123,375 +1134,320 @@
                     <div class="spirit-hero-copy">
                         <span class="spirit-kicker">Ritual-Forward Portfolio Feature</span>
                         <h1 class="spirit-title">Spirit Atlas</h1>
-                        <p class="spirit-lead">Spirit Atlas is the part of the iSN.BiZ portfolio that should not look like enterprise software at all. It should feel like a private chamber, a lit altar, a cosmology rendered into a phone. This page now leans fully into that idea.</p>
-                        <p class="spirit-copy">The product starts with twelve questions, but the emotional promise is larger: identify the force shaping your instincts, unlock daily symbolic guidance, and turn compatibility into a ritual instead of a report. The result is a mobile experience with a stronger identity than the rest of the site and a landing page that reflects it instead of flattening it into another generic product case study.</p>
+                        <p class="spirit-lead">A private chamber rendered into a phone. The final media pool — 179 looping cards across eleven cosmologies — now lives on this page.</p>
+                        <p class="spirit-copy">Spirit Atlas starts with twelve questions and resolves into a daily ritual object. Below: every card in the shipped library, presented as it appears in the app — silent loops, fixed cameras, breathing color. Hover or scroll; everything moves on its own.</p>
                         <div class="spirit-actions">
-                            <a href="https://isn.biz" target="_blank" rel="noopener" class="btn btn-primary"><span>Find Your Entity</span></a>
-                            <a href="#entities" class="btn btn-outline"><span>Explore the Twelve Forces</span></a>
+                            <a class="btn btn-primary" href="#zodiac">Browse the library</a>
+                            <a class="btn btn-secondary" href="/contact">Get notified at launch</a>
                         </div>
                         <p class="spirit-footnote">Free entity reveal · Premium ritual library at $9.99/month · Built for iOS and Android</p>
-                        <div class="spirit-hero-stats" aria-label="Spirit Atlas key facts">
-                            <div class="spirit-stat-card">
-                                <strong>12</strong>
-                                <span>Cosmic entities</span>
-                            </div>
-                            <div class="spirit-stat-card">
-                                <strong>444</strong>
-                                <span>Guidance artifacts</span>
-                            </div>
-                            <div class="spirit-stat-card">
-                                <strong>2</strong>
-                                <span>Archetypes revealed</span>
-                            </div>
-                        </div>
                     </div>
                     <div class="spirit-hero-visual" aria-hidden="true">
-                        <div class="spirit-device">
-                            <img id="spirit-hero-image" src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_002_bg_home.webp" alt="Spirit Atlas final app dashboard visual" loading="eager">
-                        </div>
-                        <div class="spirit-signal top-left">
-                            <strong>Daily signal</strong>
-                            <h3>Moon phase, mood, motion.</h3>
-                            <p>Home feels less like a dashboard and more like a ceremonial briefing for the day ahead.</p>
-                        </div>
-                        <div class="spirit-benediction">
-                            <p>"The entity was not found. It was remembered."</p>
-                            <span>Spirit Atlas positioning line</span>
-                        </div>
-                        <div class="spirit-signal bottom-left">
-                            <strong>Compatibility</strong>
-                            <h3>Relational ritual</h3>
-                            <p>Profiles, intention, and AI narrative generation turn attraction into something legible and shareable.</p>
-                        </div>
-                        <div class="spirit-signal bottom-right">
-                            <strong>Premium depth</strong>
-                            <h3>444 teachings</h3>
-                            <p>Breathwork, sacred geometry, intimacy practices, and symbolic interpretation tied to the user’s revealed pattern.</p>
-                        </div>
+                        <figure class="spirit-vid spirit-hero-vid">
+                            <video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_11_zodiac_scorpio.mp4" autoplay muted loop playsinline preload="auto" aria-label="Scorpio — featured loop"></video>
+                            <figcaption>Scorpio — newly generated 2026-05-23</figcaption>
+                        </figure>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="section">
-            <div class="container">
-                <div class="spirit-proof-grid">
-                    <article class="spirit-proof-card">
-                        <strong>01</strong>
-                        <p>Twelve entities give the product a fixed mythology, so the app can be expressive without becoming vague.</p>
-                    </article>
-                    <article class="spirit-proof-card">
-                        <strong>02</strong>
-                        <p>The onboarding is framed as a reveal sequence, not a sterile form flow, which gives the interface emotional tension.</p>
-                    </article>
-                    <article class="spirit-proof-card">
-                        <strong>03</strong>
-                        <p>Compatibility is the strongest everyday hook because it converts abstract symbolism into relationship language users can act on.</p>
-                    </article>
-                    <article class="spirit-proof-card">
-                        <strong>04</strong>
-                        <p>The premium offer works best when it feels like entry into a private library rather than an upsell to “more content.”</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="entities">
+        <section class="section" id="zodiac">
             <div class="container">
                 <div class="spirit-section-head">
-                    <span class="spirit-kicker">Final Media Installed</span>
-                    <h2>The page now runs on the final Spirit Atlas asset pool.</h2>
-                    <p>All approved assets are now wired from the Spirit-Atlas repo: <strong data-spirit-image-count>334</strong> images and <strong data-spirit-video-count>71</strong> videos. This section replaces the old static set with a large, filterable media surface and live orientation controls.</p>
+                    <span class="spirit-kicker">12 loops</span>
+                    <h2>Twelve Zodiac</h2>
+                    <p>The classical 12. One signature loop per sign — Aries through Pisces — each rendered as a living card with the glyph hovering over the elemental backdrop.</p>
                 </div>
-                <div class="spirit-proof-grid" style="margin-bottom: 1.4rem;">
-                    <article class="spirit-proof-card">
-                        <strong data-spirit-image-count>334</strong>
-                        <p>Total final images now available on page load and filter controls.</p>
-                    </article>
-                    <article class="spirit-proof-card">
-                        <strong data-spirit-video-count>71</strong>
-                        <p>Final motion loops now integrated instead of static-only showcase blocks.</p>
-                    </article>
-                    <article class="spirit-proof-card">
-                        <strong data-spirit-landscape-count>220</strong>
-                        <p>Landscape frames for cinematic web panels and wide hero compositions.</p>
-                    </article>
-                    <article class="spirit-proof-card">
-                        <strong data-spirit-portrait-count>102</strong>
-                        <p>Portrait visuals tuned for phone-first compositions and vertical showcases.</p>
-                    </article>
-                </div>
-                <div class="spirit-media-shell">
-                    <div class="spirit-panel">
-                        <span class="spirit-kicker">Signature Portrait Set</span>
-                        <h3>Curated portraits from the final render batch.</h3>
-                        <p>This pulls directly from the latest `dmt_entities_24`, `archetypes_24`, and `zodiac_24` pools.</p>
-                        <div class="spirit-signature-grid" id="spirit-signature-grid"></div>
-                    </div>
-                    <div class="spirit-panel">
-                        <span class="spirit-kicker">Image Vault</span>
-                        <h3>Filter and browse the full final image library.</h3>
-                        <div class="spirit-media-toolbar">
-                            <div class="spirit-media-pills" role="tablist" aria-label="Image orientation filter">
-                                <button class="spirit-media-pill is-active" type="button" data-spirit-orientation="all">All</button>
-                                <button class="spirit-media-pill" type="button" data-spirit-orientation="landscape">Landscape</button>
-                                <button class="spirit-media-pill" type="button" data-spirit-orientation="portrait">Portrait</button>
-                                <button class="spirit-media-pill" type="button" data-spirit-orientation="square">Square</button>
-                            </div>
-                            <label>
-                                <span class="sr-only">Filter by category</span>
-                                <select class="spirit-media-filter" id="spirit-image-category"></select>
-                            </label>
-                        </div>
-                        <div class="spirit-media-grid" id="spirit-image-grid"></div>
-                        <div class="spirit-media-actions">
-                            <button class="btn btn-outline" type="button" id="spirit-images-load-more">Load More Final Images</button>
-                        </div>
-                    </div>
+                <div class="spirit-vid-grid">
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_01_zodiac_capricorn.mp4" autoplay muted loop playsinline preload="metadata" aria-label="capricorn"></video><figcaption>capricorn</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_02_zodiac_aquarius.mp4" autoplay muted loop playsinline preload="metadata" aria-label="aquarius"></video><figcaption>aquarius</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_03_zodiac_pisces.mp4" autoplay muted loop playsinline preload="metadata" aria-label="pisces"></video><figcaption>pisces</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_04_zodiac_aries.mp4" autoplay muted loop playsinline preload="metadata" aria-label="aries"></video><figcaption>aries</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_05_zodiac_taurus.mp4" autoplay muted loop playsinline preload="metadata" aria-label="taurus"></video><figcaption>taurus</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_06_zodiac_gemini.mp4" autoplay muted loop playsinline preload="metadata" aria-label="gemini"></video><figcaption>gemini</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_07_zodiac_cancer.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cancer"></video><figcaption>cancer</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_08_zodiac_leo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="leo"></video><figcaption>leo</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_09_zodiac_virgo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="virgo"></video><figcaption>virgo</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_10_zodiac_libra.mp4" autoplay muted loop playsinline preload="metadata" aria-label="libra"></video><figcaption>libra</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_11_zodiac_scorpio.mp4" autoplay muted loop playsinline preload="metadata" aria-label="scorpio"></video><figcaption>scorpio</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_12_zodiac_sagittarius.mp4" autoplay muted loop playsinline preload="metadata" aria-label="sagittarius"></video><figcaption>sagittarius</figcaption></figure>
                 </div>
             </div>
         </section>
-
-        <section class="section">
+        <section class="section" id="aingels">
             <div class="container">
                 <div class="spirit-section-head">
-                    <span class="spirit-kicker">Motion Vault</span>
-                    <h2>Final Spirit Atlas video loops are now in the website too.</h2>
-                    <p>These are the latest exported loops from the app pipeline. Hover a card to auto-play preview, or use controls for full playback.</p>
+                    <span class="spirit-kicker">12 loops</span>
+                    <h2>Aingels</h2>
+                    <p>The luminous messenger band — figures formed from light, color, and air. Twelve loops, one per chromatic register.</p>
                 </div>
-                <div class="spirit-panel">
-                    <div class="spirit-video-grid" id="spirit-video-grid"></div>
-                    <div class="spirit-media-actions">
-                        <button class="btn btn-outline" type="button" id="spirit-videos-load-more">Load More Final Videos</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <div class="spirit-ritual-grid">
-                    <div class="spirit-panel">
-                        <span class="spirit-kicker">Discovery Flow</span>
-                        <h2>From intake to revelation in four clear movements.</h2>
-                        <p>The strongest UX improvement for Spirit Atlas is narrative clarity. Users do not need more lore at the top of the funnel; they need a confident progression that tells them what is happening, why it matters, and what changes once their result appears.</p>
-                        <div class="spirit-ritual-list">
-                            <div class="spirit-ritual-step">
-                                <div class="spirit-step-num">01</div>
-                                <div>
-                                    <h3>Arrival</h3>
-                                    <p>Name, birth context, and a first signal pass establish personal stakes without overwhelming the user.</p>
-                                </div>
-                            </div>
-                            <div class="spirit-ritual-step">
-                                <div class="spirit-step-num">02</div>
-                                <div>
-                                    <h3>Twelve questions</h3>
-                                    <p>Conflict, attraction, ambition, intimacy, and self-image are used to separate performance from instinct.</p>
-                                </div>
-                            </div>
-                            <div class="spirit-ritual-step">
-                                <div class="spirit-step-num">03</div>
-                                <div>
-                                    <h3>Dual archetype reveal</h3>
-                                    <p>The product distinguishes between power and seduction so the result feels dimensional instead of fortune-cookie flat.</p>
-                                </div>
-                            </div>
-                            <div class="spirit-ritual-step">
-                                <div class="spirit-step-num">04</div>
-                                <div>
-                                    <h3>Daily ritual loop</h3>
-                                    <p>Markers, compatibility narratives, breathwork, and symbolic references keep the experience alive after onboarding.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="spirit-ritual-aside">
-                        <div class="spirit-panel">
-                            <span class="spirit-kicker">Archetype pairs</span>
-                            <h3>Two signatures, not one label.</h3>
-                            <p>That dual-result model gives the product more replay value and better language for relationships. It also makes the premium conversion easier because the user feels there is still more to decode.</p>
-                            <div class="spirit-pair-cloud" aria-label="Sample archetypes">
-                                <span class="spirit-pair-chip">The Initiator</span>
-                                <span class="spirit-pair-chip">The Sensualist</span>
-                                <span class="spirit-pair-chip">The Shapeshifter</span>
-                                <span class="spirit-pair-chip">The Nurturer</span>
-                                <span class="spirit-pair-chip">The Performer</span>
-                                <span class="spirit-pair-chip">The Analyst</span>
-                                <span class="spirit-pair-chip">The Harmonizer</span>
-                                <span class="spirit-pair-chip">The Alchemist</span>
-                                <span class="spirit-pair-chip">The Explorer</span>
-                                <span class="spirit-pair-chip">The Architect</span>
-                                <span class="spirit-pair-chip">The Visionary</span>
-                                <span class="spirit-pair-chip">The Mystic</span>
-                            </div>
-                        </div>
-                        <div class="spirit-screen-grid">
-                            <div class="spirit-screen-card">
-                                <img id="spirit-flow-image-1" src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/archetypes_24/9x16_001_onboarding_11_visionary.webp" alt="Spirit Atlas profile creation flow visual" loading="lazy">
-                            </div>
-                            <div class="spirit-screen-stack">
-                                <div class="spirit-screen-card">
-                                    <img id="spirit-flow-image-2" src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/dmt_entities_24/9x16_010_dmt_entity_oracle.webp" alt="Spirit Atlas entity flow visual" loading="lazy">
-                                </div>
-                                <div class="spirit-screen-card">
-                                    <img id="spirit-flow-image-3" src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/zodiac_24/01.webp" alt="Spirit Atlas compatibility flow visual" loading="lazy">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="spirit-vid-grid">
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_01_aingels_red.mp4" autoplay muted loop playsinline preload="metadata" aria-label="red"></video><figcaption>red</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_02_aingels_red.mp4" autoplay muted loop playsinline preload="metadata" aria-label="red"></video><figcaption>red</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_03_aingels_red.mp4" autoplay muted loop playsinline preload="metadata" aria-label="red"></video><figcaption>red</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_04_aingels_orange.mp4" autoplay muted loop playsinline preload="metadata" aria-label="orange"></video><figcaption>orange</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_05_aingels_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_06_aingels_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_07_aingels_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_08_aingels_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_09_aingels_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_10_aingels_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_11_aingels_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_12_aingels_indigo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="indigo"></video><figcaption>indigo</figcaption></figure>
                 </div>
             </div>
         </section>
-
-        <section class="section">
-            <div class="container">
-                <div class="spirit-app-grid">
-                    <div>
-                        <span class="spirit-kicker">Inside the App</span>
-                        <h2>A private library disguised as a mobile ritual object.</h2>
-                        <p>Spirit Atlas works when each mode of use feels deliberate. The product is not just a quiz, not just a compatibility engine, and not just a bundle of teachings. It is a layered ritual system that lets users move between identity, relationships, and practice without feeling like they have left the same world.</p>
-                        <div class="spirit-library-grid">
-                            <article class="spirit-library-card">
-                                <span class="spirit-meta-label">Daily layer</span>
-                                <h3>Markers and mood</h3>
-                                <p>Twelve personalized markers give the opening screen a reason to matter every day, even when the user is not in active discovery mode.</p>
-                            </article>
-                            <article class="spirit-library-card">
-                                <span class="spirit-meta-label">Relationship layer</span>
-                                <h3>Compatibility stories</h3>
-                                <p>Synastry, symbolic framing, and AI-assisted narrative generation convert profile data into language users can actually share.</p>
-                            </article>
-                            <article class="spirit-library-card">
-                                <span class="spirit-meta-label">Practice layer</span>
-                                <h3>Embodied ritual</h3>
-                                <p>Breathwork, tantric material, sacred geometry, and symbolic exercises justify the subscription with depth instead of volume alone.</p>
-                            </article>
-                        </div>
-                    </div>
-                    <aside class="spirit-app-note">
-                        <span class="spirit-kicker">Why this page now works better</span>
-                        <h3>The visual language is intentionally separate from the rest of the site.</h3>
-                        <p>The broader iSN.BiZ portfolio uses a technical, industrial visual system. Spirit Atlas should not inherit that too heavily. This redesign makes Spirit Atlas feel like its own world while still living inside the same company shell.</p>
-                        <ul>
-                            <li>Warm metal tones replace the blue brutalist palette for this page only.</li>
-                            <li>Editorial serif typography signals myth, intimacy, and story rather than software dashboards.</li>
-                            <li>Shared navigation and footer remain intact so site-wide structure and tests stay predictable.</li>
-                            <li>The page now pulls from deploy-safe CDN-hosted Spirit Atlas media assets.</li>
-                        </ul>
-                    </aside>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
+        <section class="section" id="demons">
             <div class="container">
                 <div class="spirit-section-head">
-                    <span class="spirit-kicker">Belief Architecture</span>
-                    <h2>The lore matters only when it intensifies the product promise.</h2>
-                    <p>Spirit Atlas mythology reaches into Tartarian symbolism, sacred geometry, ancient teachings, and recovery of lost signal systems. On the page, that context needs shape and boundaries. The goal is to create intrigue, not blur the feature set.</p>
+                    <span class="spirit-kicker">24 loops</span>
+                    <h2>Demons</h2>
+                    <p>Twenty-four loops mapping the shadow archetypes — wrath, longing, hunger, fear — rendered with a soft cinematic distance, not horror.</p>
                 </div>
-                <div class="spirit-context-grid">
-                    <article class="spirit-context-card">
-                        <h3>Recovered transmission</h3>
-                        <p>The strongest framing is that architecture, symbol, and ritual once carried signal. Spirit Atlas recovers that as a personal interface rather than as a history lecture.</p>
-                        <ul>
-                            <li>Cathedrals and towers become signal motifs.</li>
-                            <li>Sacred geometry becomes a navigational language.</li>
-                            <li>The entity reveal becomes the user’s first proof point.</li>
-                        </ul>
-                    </article>
-                    <article class="spirit-context-card">
-                        <h3>Private compatibility engine</h3>
-                        <p>Relationship reading is where abstract cosmology becomes practical. The page emphasizes this because it is the clearest bridge from mystique to use.</p>
-                        <ul>
-                            <li>Profiles can be created, layered, and compared.</li>
-                            <li>Intentionality signals give readings emotional context.</li>
-                            <li>Generated narrative creates immediate shareable value.</li>
-                        </ul>
-                    </article>
-                    <article class="spirit-context-card">
-                        <h3>Premium library logic</h3>
-                        <p>The subscription is justified by breadth plus specificity. Users are not buying random content; they are entering a catalog tuned to their revealed pattern.</p>
-                        <ul>
-                            <li>216 tantric teachings for relational and energetic depth.</li>
-                            <li>108 Kama Sutra practices for ritualized intimacy guidance.</li>
-                            <li>Breathwork, geometry, and symbolic interpretation for everyday return value.</li>
-                        </ul>
-                    </article>
-                    <article class="spirit-context-card">
-                        <h3>Portfolio fit</h3>
-                        <p>Within iSN.BiZ, Spirit Atlas demonstrates range. It shows the team can build a technically serious application that still carries a strong emotional and aesthetic identity.</p>
-                        <ul>
-                            <li>Kotlin Multiplatform supports the mobile footprint.</li>
-                            <li>AI narrative generation expands the feeling of custom guidance.</li>
-                            <li>Distinct art direction keeps the product memorable inside the portfolio.</li>
-                        </ul>
-                    </article>
+                <div class="spirit-vid-grid">
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_01_demons_red.mp4" autoplay muted loop playsinline preload="metadata" aria-label="red"></video><figcaption>red</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_02_demons_red.mp4" autoplay muted loop playsinline preload="metadata" aria-label="red"></video><figcaption>red</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_03_demons_orange.mp4" autoplay muted loop playsinline preload="metadata" aria-label="orange"></video><figcaption>orange</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_04_demons_orange.mp4" autoplay muted loop playsinline preload="metadata" aria-label="orange"></video><figcaption>orange</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_05_demons_orange.mp4" autoplay muted loop playsinline preload="metadata" aria-label="orange"></video><figcaption>orange</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_06_demons_orange.mp4" autoplay muted loop playsinline preload="metadata" aria-label="orange"></video><figcaption>orange</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_07_demons_green.mp4" autoplay muted loop playsinline preload="metadata" aria-label="green"></video><figcaption>green</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_08_demons_green.mp4" autoplay muted loop playsinline preload="metadata" aria-label="green"></video><figcaption>green</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_09_demons_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_10_demons_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_11_demons_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_12_demons_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_13_demons_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_14_demons_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_15_demons_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_16_demons_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_17_demons_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_18_demons_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_19_demons_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_20_demons_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_21_demons_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_22_demons_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_23_demons_pink.mp4" autoplay muted loop playsinline preload="metadata" aria-label="pink"></video><figcaption>pink</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_24_demons_pink.mp4" autoplay muted loop playsinline preload="metadata" aria-label="pink"></video><figcaption>pink</figcaption></figure>
                 </div>
             </div>
         </section>
-
-        <section class="section" id="pricing">
+        <section class="section" id="chakras">
             <div class="container">
                 <div class="spirit-section-head">
-                    <span class="spirit-kicker">Access Model</span>
-                    <h2>A low-friction reveal, then a premium ritual archive.</h2>
-                    <p>The pricing language should stay calm and specific. The free tier gives enough to create belief; the paid tier needs to read like depth, intimacy, and continuity rather than a simple content bundle.</p>
+                    <span class="spirit-kicker">7 loops</span>
+                    <h2>Seven Chakras</h2>
+                    <p>Root, sacral, solar plexus, heart, throat, third eye, crown — each as a slow-pulsing field of color and motion.</p>
                 </div>
-                <div class="spirit-pricing">
-                    <article class="spirit-pricing-card">
-                        <h3>Free Discovery</h3>
-                        <div class="spirit-price">
-                            <strong>$0</strong>
-                            <span>Forever</span>
-                        </div>
-                        <p>Enough to meet the system, see your core result, and understand the emotional hook before any commitment is asked for.</p>
-                        <ul class="spirit-feature-list">
-                            <li>Twelve-question entity discovery</li>
-                            <li>Dual-archetype reveal</li>
-                            <li>Light daily signal access</li>
-                            <li>Foundational profile snapshot</li>
-                        </ul>
-                        <div class="spirit-actions">
-                            <a href="https://isn.biz" target="_blank" rel="noopener" class="btn btn-outline"><span>Start Free</span></a>
-                        </div>
-                    </article>
-                    <article class="spirit-pricing-card featured">
-                        <span class="spirit-pricing-badge">Most Chosen</span>
-                        <h3>Full Access</h3>
-                        <div class="spirit-price">
-                            <strong>$9.99</strong>
-                            <span>Per month</span>
-                        </div>
-                        <p>Designed for users who want daily ritual utility, richer compatibility, and a sense that the app keeps opening new rooms over time.</p>
-                        <ul class="spirit-feature-list">
-                            <li>All 12 daily cosmic markers</li>
-                            <li>444-piece teaching library</li>
-                            <li>Compatibility readings and narrative generation</li>
-                            <li>Deep entity profile and symbolic references</li>
-                            <li>Breathwork, sacred geometry, and intimacy practices</li>
-                            <li>Annual option at $59.99 for lower-friction retention</li>
-                        </ul>
-                        <div class="spirit-actions">
-                            <a href="https://isn.biz" target="_blank" rel="noopener" class="btn btn-primary"><span>Unlock Full Access</span></a>
-                        </div>
-                    </article>
+                <div class="spirit-vid-grid">
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_01_chakras_root.mp4" autoplay muted loop playsinline preload="metadata" aria-label="root"></video><figcaption>root</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_02_chakras_sacral.mp4" autoplay muted loop playsinline preload="metadata" aria-label="sacral"></video><figcaption>sacral</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_03_chakras_solar_plexus.mp4" autoplay muted loop playsinline preload="metadata" aria-label="solar plexus"></video><figcaption>solar plexus</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_04_chakras_heart.mp4" autoplay muted loop playsinline preload="metadata" aria-label="heart"></video><figcaption>heart</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_05_chakras_throat.mp4" autoplay muted loop playsinline preload="metadata" aria-label="throat"></video><figcaption>throat</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_06_chakras_third_eye.mp4" autoplay muted loop playsinline preload="metadata" aria-label="third eye"></video><figcaption>third eye</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_07_chakras_crown.mp4" autoplay muted loop playsinline preload="metadata" aria-label="crown"></video><figcaption>crown</figcaption></figure>
                 </div>
-                <p class="spirit-footnote" style="text-align: center; margin-top: 1.5rem;">For entertainment purposes only · Cancel anytime · Available for iOS and Android</p>
             </div>
         </section>
-
-        <section class="section">
+        <section class="section" id="elements">
             <div class="container">
-                <div class="spirit-final">
-                    <span class="spirit-kicker">Final Invocation</span>
-                    <h2>The Spirit Atlas section now looks like it belongs to Spirit Atlas.</h2>
-                    <p>This page no longer reads like a standard software product page with mystical copy pasted on top. It now has its own palette, typography, image treatment, section rhythm, and conversion structure, while keeping the shared site shell intact and predictable.</p>
-                    <div class="spirit-actions">
-                        <a href="https://isn.biz" target="_blank" rel="noopener" class="btn btn-primary"><span>Discover Your Entity</span></a>
-                        <a href="/portfolio" class="btn btn-outline"><span>Back to Portfolio</span></a>
-                    </div>
+                <div class="spirit-section-head">
+                    <span class="spirit-kicker">10 loops</span>
+                    <h2>Five Elements</h2>
+                    <p>Wood, fire, earth, metal, water — Eastern five-phase cosmology rendered as breathing landscapes.</p>
+                </div>
+                <div class="spirit-vid-grid">
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_01_elements_wood_a.mp4" autoplay muted loop playsinline preload="metadata" aria-label="wood a"></video><figcaption>wood a</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_01_elements_wood_b.mp4" autoplay muted loop playsinline preload="metadata" aria-label="wood b"></video><figcaption>wood b</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_02_elements_fire_a.mp4" autoplay muted loop playsinline preload="metadata" aria-label="fire a"></video><figcaption>fire a</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_02_elements_fire_b.mp4" autoplay muted loop playsinline preload="metadata" aria-label="fire b"></video><figcaption>fire b</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_03_elements_earth_a.mp4" autoplay muted loop playsinline preload="metadata" aria-label="earth a"></video><figcaption>earth a</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_03_elements_earth_b.mp4" autoplay muted loop playsinline preload="metadata" aria-label="earth b"></video><figcaption>earth b</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_04_elements_metal_a.mp4" autoplay muted loop playsinline preload="metadata" aria-label="metal a"></video><figcaption>metal a</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_04_elements_metal_b.mp4" autoplay muted loop playsinline preload="metadata" aria-label="metal b"></video><figcaption>metal b</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_05_elements_water_a.mp4" autoplay muted loop playsinline preload="metadata" aria-label="water a"></video><figcaption>water a</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_05_elements_water_b.mp4" autoplay muted loop playsinline preload="metadata" aria-label="water b"></video><figcaption>water b</figcaption></figure>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="numerology">
+            <div class="container">
+                <div class="spirit-section-head">
+                    <span class="spirit-kicker">18 loops</span>
+                    <h2>Nine Numerology Paths</h2>
+                    <p>Eighteen loops across the 1–9 life-path numbers, each in two variants for daily rotation.</p>
+                </div>
+                <div class="spirit-vid-grid">
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_01_a_numerology.mp4" autoplay muted loop playsinline preload="metadata" aria-label="a"></video><figcaption>a</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_01_b_numerology.mp4" autoplay muted loop playsinline preload="metadata" aria-label="b"></video><figcaption>b</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_02_a_numerology.mp4" autoplay muted loop playsinline preload="metadata" aria-label="a"></video><figcaption>a</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_02_b_numerology.mp4" autoplay muted loop playsinline preload="metadata" aria-label="b"></video><figcaption>b</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_03_a_numerology.mp4" autoplay muted loop playsinline preload="metadata" aria-label="a"></video><figcaption>a</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_03_b_numerology.mp4" autoplay muted loop playsinline preload="metadata" aria-label="b"></video><figcaption>b</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_04_a_numerology.mp4" autoplay muted loop playsinline preload="metadata" aria-label="a"></video><figcaption>a</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_04_b_numerology.mp4" autoplay muted loop playsinline preload="metadata" aria-label="b"></video><figcaption>b</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_05_a_numerology.mp4" autoplay muted loop playsinline preload="metadata" aria-label="a"></video><figcaption>a</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_05_b_numerology.mp4" autoplay muted loop playsinline preload="metadata" aria-label="b"></video><figcaption>b</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_06_a_numerology.mp4" autoplay muted loop playsinline preload="metadata" aria-label="a"></video><figcaption>a</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_06_b_numerology.mp4" autoplay muted loop playsinline preload="metadata" aria-label="b"></video><figcaption>b</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_07_a_numerology.mp4" autoplay muted loop playsinline preload="metadata" aria-label="a"></video><figcaption>a</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_07_b_numerology.mp4" autoplay muted loop playsinline preload="metadata" aria-label="b"></video><figcaption>b</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_08_a_numerology.mp4" autoplay muted loop playsinline preload="metadata" aria-label="a"></video><figcaption>a</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_08_b_numerology.mp4" autoplay muted loop playsinline preload="metadata" aria-label="b"></video><figcaption>b</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_09_a_numerology.mp4" autoplay muted loop playsinline preload="metadata" aria-label="a"></video><figcaption>a</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_09_b_numerology.mp4" autoplay muted loop playsinline preload="metadata" aria-label="b"></video><figcaption>b</figcaption></figure>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="tantra">
+            <div class="container">
+                <div class="spirit-section-head">
+                    <span class="spirit-kicker">24 loops</span>
+                    <h2>Tantra</h2>
+                    <p>Twenty-four loops of embodied union, devotion, and energy — the line between ritual and editorial.</p>
+                </div>
+                <div class="spirit-vid-grid">
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_01_tantra_red.mp4" autoplay muted loop playsinline preload="metadata" aria-label="red"></video><figcaption>red</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_02_tantra_red.mp4" autoplay muted loop playsinline preload="metadata" aria-label="red"></video><figcaption>red</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_03_tantra_orange.mp4" autoplay muted loop playsinline preload="metadata" aria-label="orange"></video><figcaption>orange</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_04_tantra_orange.mp4" autoplay muted loop playsinline preload="metadata" aria-label="orange"></video><figcaption>orange</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_05_tantra_orange.mp4" autoplay muted loop playsinline preload="metadata" aria-label="orange"></video><figcaption>orange</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_06_tantra_orange.mp4" autoplay muted loop playsinline preload="metadata" aria-label="orange"></video><figcaption>orange</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_07_tantra_orange.mp4" autoplay muted loop playsinline preload="metadata" aria-label="orange"></video><figcaption>orange</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_08_tantra_orange.mp4" autoplay muted loop playsinline preload="metadata" aria-label="orange"></video><figcaption>orange</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_09_tantra_orange.mp4" autoplay muted loop playsinline preload="metadata" aria-label="orange"></video><figcaption>orange</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_10_tantra_green.mp4" autoplay muted loop playsinline preload="metadata" aria-label="green"></video><figcaption>green</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_11_tantra_green.mp4" autoplay muted loop playsinline preload="metadata" aria-label="green"></video><figcaption>green</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_12_tantra_green.mp4" autoplay muted loop playsinline preload="metadata" aria-label="green"></video><figcaption>green</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_13_tantra_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_14_tantra_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_15_tantra_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_16_tantra_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_17_tantra_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_18_tantra_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_19_tantra_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_20_tantra_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_21_tantra_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_22_tantra_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_23_tantra_indigo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="indigo"></video><figcaption>indigo</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_24_tantra_pink.mp4" autoplay muted loop playsinline preload="metadata" aria-label="pink"></video><figcaption>pink</figcaption></figure>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="center">
+            <div class="container">
+                <div class="spirit-section-head">
+                    <span class="spirit-kicker">24 loops</span>
+                    <h2>Center</h2>
+                    <p>The grounding band — twenty-four loops anchored on stillness, symmetry, and inward gaze.</p>
+                </div>
+                <div class="spirit-vid-grid">
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_01_center_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_02_center_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_03_center_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_04_center_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_05_center_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_06_center_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_07_center_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_08_center_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_09_center_indigo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="indigo"></video><figcaption>indigo</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_10_center_indigo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="indigo"></video><figcaption>indigo</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_11_center_indigo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="indigo"></video><figcaption>indigo</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_12_center_indigo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="indigo"></video><figcaption>indigo</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_13_center_indigo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="indigo"></video><figcaption>indigo</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_14_center_indigo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="indigo"></video><figcaption>indigo</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_15_center_indigo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="indigo"></video><figcaption>indigo</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_16_center_indigo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="indigo"></video><figcaption>indigo</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_17_center_indigo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="indigo"></video><figcaption>indigo</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_18_center_violet.mp4" autoplay muted loop playsinline preload="metadata" aria-label="violet"></video><figcaption>violet</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_19_center_violet.mp4" autoplay muted loop playsinline preload="metadata" aria-label="violet"></video><figcaption>violet</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_20_center_violet.mp4" autoplay muted loop playsinline preload="metadata" aria-label="violet"></video><figcaption>violet</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_21_center_violet.mp4" autoplay muted loop playsinline preload="metadata" aria-label="violet"></video><figcaption>violet</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_22_center_pink.mp4" autoplay muted loop playsinline preload="metadata" aria-label="pink"></video><figcaption>pink</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_23_center_pink.mp4" autoplay muted loop playsinline preload="metadata" aria-label="pink"></video><figcaption>pink</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_24_center_pink.mp4" autoplay muted loop playsinline preload="metadata" aria-label="pink"></video><figcaption>pink</figcaption></figure>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="background">
+            <div class="container">
+                <div class="spirit-section-head">
+                    <span class="spirit-kicker">12 loops</span>
+                    <h2>Backgrounds</h2>
+                    <p>Twelve atmospheric loops with no figure — pure mood, used as ambient layers across the app.</p>
+                </div>
+                <div class="spirit-vid-grid">
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_01_background_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_02_background_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_03_background_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_04_background_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_05_background_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_06_background_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_07_background_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_08_background_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_09_background_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_10_background_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_11_background_indigo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="indigo"></video><figcaption>indigo</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_12_background_violet.mp4" autoplay muted loop playsinline preload="metadata" aria-label="violet"></video><figcaption>violet</figcaption></figure>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="black">
+            <div class="container">
+                <div class="spirit-section-head">
+                    <span class="spirit-kicker">24 loops</span>
+                    <h2>Black Series</h2>
+                    <p>Twenty-four loops in deep low-key palette — the night side of the system.</p>
+                </div>
+                <div class="spirit-vid-grid">
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_01_black_red.mp4" autoplay muted loop playsinline preload="metadata" aria-label="red"></video><figcaption>red</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_02_black_red.mp4" autoplay muted loop playsinline preload="metadata" aria-label="red"></video><figcaption>red</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_03_black_orange.mp4" autoplay muted loop playsinline preload="metadata" aria-label="orange"></video><figcaption>orange</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_04_black_orange.mp4" autoplay muted loop playsinline preload="metadata" aria-label="orange"></video><figcaption>orange</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_05_black_yellow.mp4" autoplay muted loop playsinline preload="metadata" aria-label="yellow"></video><figcaption>yellow</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_06_black_green.mp4" autoplay muted loop playsinline preload="metadata" aria-label="green"></video><figcaption>green</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_07_black_green.mp4" autoplay muted loop playsinline preload="metadata" aria-label="green"></video><figcaption>green</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_08_black_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_09_black_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_10_black_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_11_black_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_12_black_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_13_black_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_14_black_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_15_black_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_16_black_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_17_black_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_18_black_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_19_black_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_20_black_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_21_black_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_22_black_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_23_black_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_24_black_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="blue">
+            <div class="container">
+                <div class="spirit-section-head">
+                    <span class="spirit-kicker">12 loops</span>
+                    <h2>Blue Drift</h2>
+                    <p>Twelve loops in a single dominant register — the coolest, calmest band in the library.</p>
+                </div>
+                <div class="spirit-vid-grid">
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_01_blue_cyan.mp4" autoplay muted loop playsinline preload="metadata" aria-label="cyan"></video><figcaption>cyan</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_02_blue_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_03_blue_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_04_blue_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_05_blue_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_06_blue_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_07_blue_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_08_blue_blue.mp4" autoplay muted loop playsinline preload="metadata" aria-label="blue"></video><figcaption>blue</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_09_blue_indigo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="indigo"></video><figcaption>indigo</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_10_blue_indigo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="indigo"></video><figcaption>indigo</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_11_blue_indigo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="indigo"></video><figcaption>indigo</figcaption></figure>
+                    <figure class="spirit-vid"><video src="https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/videos/wd/wd_12_blue_violet.mp4" autoplay muted loop playsinline preload="metadata" aria-label="violet"></video><figcaption>violet</figcaption></figure>
                 </div>
             </div>
         </section>
