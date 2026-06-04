@@ -9,7 +9,7 @@
         "@id": "https://isn.biz/#organization"
       },
       "name": "AI-Powered Application Development",
-      "description": "Custom AI and machine learning solutions including natural language processing, predictive analytics, and intelligent automation for enterprise clients.",
+      "description": "iSN.BiZ delivers custom AI and machine learning solutions including natural language processing, predictive analytics, and intelligent automation for enterprise clients.",
       "areaServed": {
         "@type": "Country",
         "name": "United States"

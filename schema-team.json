@@ -3,23 +3,19 @@
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://isn.biz/jonathan.html#person",
-      "name": "Jonathan",
-      "jobTitle": "Chairman and CEO",
-      "description": "Visionary leader with 11+ years driving AI-powered innovation and scalable cloud solutions for enterprise clients.",
+      "@id": "https://isn.biz/jonathan#person",
+      "name": "Jonathan Mallinger",
+      "jobTitle": "Chairman & CEO",
+      "description": "Founder and principal engineer with 11 years driving AI-powered innovation and scalable cloud solutions for enterprise clients.",
       "worksFor": {
         "@id": "https://isn.biz/#organization"
       },
-      "url": "https://isn.biz/jonathan.html",
+      "url": "https://isn.biz/jonathan",
       "image": {
         "@type": "ImageObject",
         "url": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/jonathan_headshot.webp",
         "width": "400",
         "height": "400"
-      },
-      "alumniOf": {
-        "@type": "Organization",
-        "name": "Enterprise Software Industry"
       },
       "knowsAbout": [
         "Artificial Intelligence",
@@ -31,14 +27,14 @@
     },
     {
       "@type": "Person",
-      "@id": "https://isn.biz/bri.html#person",
-      "name": "Bri",
-      "jobTitle": "Secretary and COO",
+      "@id": "https://isn.biz/bri#person",
+      "name": "Brianna Bear",
+      "jobTitle": "Secretary & COO",
       "description": "Operational excellence leader ensuring strategic execution and sustainable growth across all business functions.",
       "worksFor": {
         "@id": "https://isn.biz/#organization"
       },
-      "url": "https://isn.biz/bri.html",
+      "url": "https://isn.biz/bri",
       "image": {
         "@type": "ImageObject",
         "url": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/bri_headshot.webp",
@@ -55,14 +51,14 @@
     },
     {
       "@type": "Person",
-      "@id": "https://isn.biz/lilly.html#person",
-      "name": "Lilly",
-      "jobTitle": "Treasurer and CFO",
+      "@id": "https://isn.biz/lilly#person",
+      "name": "Lilly Fedas",
+      "jobTitle": "Treasurer & CFO",
       "description": "Financial strategist managing capital allocation and driving sustainable growth through disciplined execution.",
       "worksFor": {
         "@id": "https://isn.biz/#organization"
       },
-      "url": "https://isn.biz/lilly.html",
+      "url": "https://isn.biz/lilly",
       "image": {
         "@type": "ImageObject",
         "url": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/assets/founders/headshots_with_bg/lilly_headshot.webp",
