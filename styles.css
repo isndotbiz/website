@@ -81,6 +81,10 @@
     /* Gradient aliases */
     --gradient-primary: linear-gradient(135deg, #1E9FF2, #5FDFDF);
     --gradient-dark: linear-gradient(135deg, #0D1117, #1C1F26);
+
+    /* DEFECT FIX: --color-black was referenced (.portfolio-card-image) but never
+       defined, resolving to transparent and breaking the image-load placeholder. */
+    --color-black: #060A10;
 }
 
 /* ================================
@@ -137,6 +141,21 @@ body::after {
     z-index: 1;
     mix-blend-mode: overlay;
     opacity: 0.3;
+}
+
+/* MOBILE OVERFLOW GUARD: media and pre-formatted/tabular content must never
+   exceed their container — cheapest defense against horizontal scroll at 375px.
+   Additive, scoped to replaced-element types; does not touch layout selectors. */
+img,
+svg,
+video,
+canvas {
+    max-width: 100%;
+}
+
+pre {
+    max-width: 100%;
+    overflow-x: auto;
 }
 
 /* ================================
@@ -671,6 +690,21 @@ p {
 }
 
 .btn-secondary:hover {
+    background: var(--color-blue);
+    color: var(--color-charcoal);
+}
+
+/* DEFECT FIX: .btn-outline is used in markup (and project-spirit-theme.css)
+   but was never defined in the base stylesheet — outline buttons rendered as
+   bare unstyled .btn. Mirror the .btn-secondary outline treatment. */
+.btn-outline {
+    background: transparent;
+    color: var(--color-blue);
+    border: 3px solid var(--color-blue);
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 10% 100%);
+}
+
+.btn-outline:hover {
     background: var(--color-blue);
     color: var(--color-charcoal);
 }
@@ -1351,12 +1385,9 @@ p {
     margin-right: auto;
 }
 
-/* Tablet: 2 columns */
-@media (max-width: 992px) {
-    .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+/* DEFECT FIX: removed a redundant @media(max-width:992px) .team-grid rule that
+   re-declared the identical default `repeat(2,1fr)` (dead no-op). The real 2→1
+   collapse happens at the 768px breakpoint below. */
 
 /* Mobile: 1 column */
 @media (max-width: 768px) {
@@ -2124,6 +2155,31 @@ li a:not(.nav-menu a):not(.footer-links a):not(.btn) {
 *:focus-visible {
     outline: 3px solid var(--color-blue);
     outline-offset: 3px;
+}
+
+/* ACCESSIBILITY: Explicit, consistent keyboard-focus affordances for the
+   interactive elements that carry custom styling/clip-paths. Additive only —
+   does not change any selector. The clip-path on .btn/.nav-cta would clip a
+   plain outline, so these use a high-contrast box-shadow ring instead. */
+.btn:focus-visible,
+.nav-cta:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--color-charcoal), 0 0 0 6px var(--color-cyan);
+}
+
+.nav-menu a:focus-visible,
+.dropdown-menu a:focus-visible,
+.footer-links a:focus-visible,
+.portfolio-card:focus-visible,
+.team-member:focus-visible {
+    outline: 3px solid var(--color-cyan);
+    outline-offset: 3px;
+}
+
+/* Drive the existing nav underline on keyboard focus too (mirrors hover),
+   layering on the enhanced-animations.css :focus rule for parity. */
+.nav-menu a:focus-visible::after {
+    width: 100%;
 }
 
 /* WCAG FIX: Ensure skip-link support for keyboard users */

@@ -2,36 +2,39 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": "https://isn.biz/#organization",
-  "name": "ISN.BIZ Inc",
+  "name": "iSN.BiZ Inc",
   "legalName": "iSN.BiZ Inc",
-  "alternateName": ["ISN.BIZ", "iSN.BiZ"],
+  "alternateName": ["ISNBIZ INCORPORATED", "iSN.BiZ"],
   "url": "https://isn.biz",
   "logo": {
     "@type": "ImageObject",
     "@id": "https://isn.biz/#logo",
-    "url": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/logos/navbar_logo.webp",
+    "url": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
     "width": "500",
     "height": "100",
-    "caption": "ISN.BIZ Inc Logo"
+    "caption": "iSN.BiZ Inc Logo"
   },
   "image": {
     "@type": "ImageObject",
-    "url": "https://isnbiz-assets-1769962280.s3.us-east-1.amazonaws.com/premium_v3/og/og_default.webp",
+    "url": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/og/og_default.webp",
     "width": "1200",
     "height": "630"
   },
-  "description": "ISN.BIZ delivers enterprise AI software development, custom cloud infrastructure, and business automation solutions. 11+ years of proven results with 100% client retention.",
+  "description": "iSN.BiZ Inc delivers enterprise AI software development, custom cloud infrastructure, and business automation solutions. Building the future of enterprise software with AI-powered solutions since 2015.",
   "foundingDate": "2015-07-08",
   "founder": {
     "@type": "Person",
-    "name": "Jonathan",
-    "jobTitle": "Chairman and CEO",
-    "url": "https://isn.biz/jonathan.html"
+    "@id": "https://isn.biz/jonathan#person",
+    "name": "Jonathan Mallinger",
+    "jobTitle": "Chairman & CEO",
+    "url": "https://isn.biz/jonathan"
   },
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "9030 35th Ave SW, Suite 100",
     "addressLocality": "Seattle",
     "addressRegion": "WA",
+    "postalCode": "98126",
     "addressCountry": "US"
   },
   "geo": {
@@ -39,13 +42,14 @@
     "latitude": "47.6062",
     "longitude": "-122.3321"
   },
+  "telephone": "+1-206-785-9782",
   "email": "info@isn.biz",
   "sameAs": [
     "https://www.linkedin.com/company/isn-biz",
     "https://twitter.com/isnbiz",
     "https://github.com/isn-biz"
   ],
-  "vatID": "47-4530188",
+  "taxID": "47-4530188",
   "duns": "080513772",
   "naics": "541511",
   "knowsAbout": [
@@ -92,25 +96,46 @@
   "owns": [
     {
       "@type": "SoftwareApplication",
-      "name": "AI Market Intelligence Engine",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Linux",
-      "description": "Proprietary AI pipeline for autonomous opportunity discovery and scoring"
+      "name": "Spirit Atlas",
+      "applicationCategory": "LifestyleApplication",
+      "url": "https://isn.biz/spiritatlas",
+      "description": "Ritual-forward cosmic entity discovery app at spiritapp.isn.biz"
     },
     {
       "@type": "SoftwareApplication",
-      "name": "Enterprise AI/ML Infrastructure Platform",
+      "name": "Provenance",
+      "applicationCategory": "UtilitiesApplication",
+      "url": "https://isn.biz/provenance",
+      "description": "Cross-platform genealogy app (Tauri + SvelteKit + Python CLI) at ged.isn.biz"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Phantom Browser",
       "applicationCategory": "DeveloperApplication",
-      "operatingSystem": "Linux",
-      "description": "Production-grade on-premise computing platform for AI inference"
+      "url": "https://isn.biz/phantom-browser",
+      "description": "Rust + Tauri stealth browser orchestration"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Crucible",
+      "applicationCategory": "DeveloperApplication",
+      "url": "https://isn.biz/crucible",
+      "description": "LLM red-team and adversarial evaluation stack"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "HERMES + AiNGELS",
+      "applicationCategory": "FinanceApplication",
+      "url": "https://isn.biz/hermes-aingels",
+      "description": "NFT-as-Agent on Base L2, ERC-6551 token-bound"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Signals",
+      "applicationCategory": "BusinessApplication",
+      "url": "https://isn.biz/signals/",
+      "description": "Market-intelligence program with live forward-returns leaderboard"
     }
   ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "bestRating": "5",
-    "ratingCount": "1",
-    "reviewCount": "1"
-  },
   "slogan": "Building the Future of Enterprise Software"
 }

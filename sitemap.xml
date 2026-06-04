@@ -4,122 +4,136 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-    <!-- Homepage - Highest Priority -->
+    <!-- Homepage -->
     <url>
         <loc>https://isn.biz/</loc>
-        <lastmod>2026-02-02</lastmod>
+        <lastmod>2026-06-04</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
-    <!-- Portfolio Page -->
+    <!-- Core section pages -->
     <url>
-        <loc>https://isn.biz/portfolio.html</loc>
-        <lastmod>2026-02-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <!-- Team Member Pages -->
-    <url>
-        <loc>https://isn.biz/jonathan.html</loc>
-        <lastmod>2026-02-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://isn.biz/bri.html</loc>
-        <lastmod>2026-02-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://isn.biz/lilly.html</loc>
-        <lastmod>2026-02-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- Product Pages (6 production systems) -->
-    <url>
-        <loc>https://isn.biz/spiritatlas.html</loc>
-        <lastmod>2026-05-08</lastmod>
+        <loc>https://isn.biz/about</loc>
+        <lastmod>2026-06-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://isn.biz/provenance.html</loc>
-        <lastmod>2026-05-08</lastmod>
+        <loc>https://isn.biz/services</loc>
+        <lastmod>2026-06-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://isn.biz/portfolio</loc>
+        <lastmod>2026-06-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://isn.biz/investors</loc>
+        <lastmod>2026-06-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://isn.biz/contact</loc>
+        <lastmod>2026-06-04</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Product pages (6 active) -->
+    <url>
+        <loc>https://isn.biz/spiritatlas</loc>
+        <lastmod>2026-06-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://isn.biz/provenance</loc>
+        <lastmod>2026-06-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://isn.biz/phantom-browser</loc>
+        <lastmod>2026-06-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://isn.biz/crucible</loc>
+        <lastmod>2026-06-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://isn.biz/hermes-aingels</loc>
+        <lastmod>2026-06-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://isn.biz/signals/</loc>
-        <lastmod>2026-05-08</lastmod>
+        <lastmod>2026-06-04</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
+    <!-- Beneficiary page -->
     <url>
-        <loc>https://isn.biz/phantom-browser.html</loc>
-        <lastmod>2026-05-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://isn.biz/crucible.html</loc>
-        <lastmod>2026-05-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://isn.biz/hermes-aingels.html</loc>
-        <lastmod>2026-05-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Beneficiary Page -->
-    <url>
-        <loc>https://isn.biz/hroc-files.html</loc>
-        <lastmod>2026-05-08</lastmod>
+        <loc>https://isn.biz/hroc-files</loc>
+        <lastmod>2026-06-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
-    <!-- Core Pages -->
+    <!-- Founder pages -->
     <url>
-        <loc>https://isn.biz/about.html</loc>
-        <lastmod>2026-02-02</lastmod>
+        <loc>https://isn.biz/jonathan</loc>
+        <lastmod>2026-06-04</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://isn.biz/services.html</loc>
-        <lastmod>2026-02-02</lastmod>
+        <loc>https://isn.biz/bri</loc>
+        <lastmod>2026-06-04</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://isn.biz/investors.html</loc>
-        <lastmod>2026-02-02</lastmod>
+        <loc>https://isn.biz/lilly</loc>
+        <lastmod>2026-06-04</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
 
+    <!-- Legal pages -->
     <url>
-        <loc>https://isn.biz/contact.html</loc>
-        <lastmod>2026-02-02</lastmod>
+        <loc>https://isn.biz/privacy</loc>
+        <lastmod>2026-06-04</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.4</priority>
+    </url>
+
+    <url>
+        <loc>https://isn.biz/terms</loc>
+        <lastmod>2026-06-04</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.4</priority>
     </url>
 
 </urlset>

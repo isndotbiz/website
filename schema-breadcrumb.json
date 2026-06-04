@@ -12,37 +12,31 @@
       "@type": "ListItem",
       "position": 2,
       "name": "About",
-      "item": "https://isn.biz/#about"
+      "item": "https://isn.biz/about"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Solutions",
-      "item": "https://isn.biz/#solutions"
+      "name": "Services",
+      "item": "https://isn.biz/services"
     },
     {
       "@type": "ListItem",
       "position": 4,
       "name": "Portfolio",
-      "item": "https://isn.biz/portfolio.html"
+      "item": "https://isn.biz/portfolio"
     },
     {
       "@type": "ListItem",
       "position": 5,
-      "name": "Team",
-      "item": "https://isn.biz/#team"
+      "name": "Investors",
+      "item": "https://isn.biz/investors"
     },
     {
       "@type": "ListItem",
       "position": 6,
-      "name": "Investors",
-      "item": "https://isn.biz/#investors"
-    },
-    {
-      "@type": "ListItem",
-      "position": 7,
       "name": "Contact",
-      "item": "https://isn.biz/#contact"
+      "item": "https://isn.biz/contact"
     }
   ]
 }

@@ -3,18 +3,10 @@
   "@type": "WebSite",
   "@id": "https://isn.biz/#website",
   "url": "https://isn.biz",
-  "name": "ISN.BIZ Inc - AI Software Development & Enterprise Cloud Solutions",
-  "description": "ISN.BIZ delivers enterprise AI software development, custom cloud infrastructure, and business automation solutions.",
+  "name": "iSN.BiZ Inc - AI Software Development & Enterprise Cloud Solutions",
+  "description": "iSN.BiZ Inc delivers enterprise AI software development, custom cloud infrastructure, and business automation solutions.",
   "publisher": {
     "@id": "https://isn.biz/#organization"
-  },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "https://isn.biz/search?q={search_term_string}"
-    },
-    "query-input": "required name=search_term_string"
   },
   "inLanguage": "en-US"
 }
