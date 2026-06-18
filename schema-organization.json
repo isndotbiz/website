@@ -44,6 +44,22 @@
   },
   "telephone": "+1-206-785-9782",
   "email": "info@isn.biz",
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+1-206-785-9782",
+      "contactType": "customer service",
+      "areaServed": "US",
+      "availableLanguage": "English"
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-986-4614",
+      "contactType": "sales",
+      "areaServed": "US",
+      "availableLanguage": "English"
+    }
+  ],
   "sameAs": [
     "https://www.linkedin.com/company/isn-biz",
     "https://twitter.com/isnbiz",

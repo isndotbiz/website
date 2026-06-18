@@ -74,6 +74,10 @@ jobs:
           if [ -d signals ]; then
             cp -rv signals /tmp/deploy-stage/
           fi
+          # functions/ holds Cloudflare Pages Functions (e.g. /api/contact backend) — must deploy
+          if [ -d functions ]; then
+            cp -rv functions /tmp/deploy-stage/
+          fi
           echo "=== staging contents ==="
           ls /tmp/deploy-stage
           echo "=== signals/ contents ==="
