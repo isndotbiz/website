@@ -347,14 +347,12 @@
    ================================ */
 
 .solution-card,
-.portfolio-item,
 .credential-card {
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     position: relative;
 }
 
-.solution-card::before,
-.portfolio-item::before {
+.solution-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -367,13 +365,11 @@
     pointer-events: none;
 }
 
-.solution-card:hover::before,
-.portfolio-item:hover::before {
+.solution-card:hover::before {
     opacity: 1;
 }
 
-.solution-card:hover,
-.portfolio-item:hover {
+.solution-card:hover {
     transform: translateY(-12px);
     box-shadow:
         0 20px 60px rgba(0, 0, 0, 0.6),
@@ -724,8 +720,7 @@
 
 .hero-logo-img,
 .btn,
-.solution-card,
-.portfolio-item {
+.solution-card {
     will-change: transform;
 }
 
