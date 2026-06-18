@@ -1681,13 +1681,6 @@ li a:not(.nav-menu a):not(.footer-links a):not(.btn) {
     filter: drop-shadow(0 0 10px rgba(30, 159, 242, 0.3));
 }
 
-.footer-description {
-    font-size: 1rem;
-    /* WCAG FIX: opacity removed (was 0.8) to maintain contrast */
-    color: var(--color-white);
-    margin-bottom: var(--space-sm);
-}
-
 .footer-credentials {
     font-family: var(--font-mono);
     /* WCAG FIX: font-size raised from 0.875rem to 1rem for min 16px */
