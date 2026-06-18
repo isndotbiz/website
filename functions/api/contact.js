@@ -66,7 +66,7 @@ export async function onRequestPost(context) {
   if (!apiKey) {
     return json(
       { ok: false, error: 'Contact backend is not yet configured. Please email info@isn.biz directly.' },
-      503,
+      200,
     );
   }
 
@@ -105,11 +105,11 @@ export async function onRequestPost(context) {
 
     if (!resp.ok) {
       const detail = await resp.text().catch(() => '');
-      return json({ ok: false, error: 'Email delivery failed. Please email info@isn.biz directly.', detail: detail.slice(0, 300) }, 502);
+      return json({ ok: false, error: 'Email delivery failed. Please email info@isn.biz directly.', detail: detail.slice(0, 300) }, 200);
     }
     return json({ ok: true });
   } catch (e) {
-    return json({ ok: false, error: 'Network error sending message. Please email info@isn.biz directly.' }, 502);
+    return json({ ok: false, error: 'Network error sending message. Please email info@isn.biz directly.' }, 200);
   }
 }
 
