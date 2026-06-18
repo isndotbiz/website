@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XTNRN7YP16"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XTNRN7YP16');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact iSN.BiZ Inc - Get in touch for business inquiries, investor relations, or schedule a consultation about our software solutions.">
@@ -101,7 +109,9 @@
                         <p class="section-description">Fill out the form below and we'll respond within 24 business hours</p>
                     </div>
 
-                    <form class="contact-form" id="contactForm" name="contact" method="POST">
+                    <form class="contact-form" id="contactForm" name="contact" method="POST" action="/api/contact">
+                        <!-- Honeypot: hidden from humans, bots fill it -->
+                        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
                         <div class="form-group">
                             <label for="name">Full Name *</label>
                             <input type="text" id="name" name="name" required placeholder="John Doe">
@@ -505,11 +515,40 @@
             }
         });
 
-        // Form Submission Handler — placeholder until Cloudflare Worker or Formspree backend is wired
+        // Form Submission Handler — posts to the Cloudflare Pages Function at /api/contact
         const contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener('submit', (e) => {
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            contactForm.innerHTML = '<div style="text-align:center;padding:3rem 1rem;"><h3 style="color:var(--color-cyan);margin-bottom:1rem;">Message Received</h3><p style="color:var(--color-white);opacity:0.9;">Thank you for your interest. We will contact you within 24 business hours.</p></div>';
+            const original = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span>Sending…</span>';
+            try {
+                const resp = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Accept': 'application/json' },
+                    body: new FormData(contactForm)
+                });
+                let data = {};
+                try { data = await resp.json(); } catch { /* non-JSON (e.g. local preview) */ }
+                if (resp.ok && data.ok) {
+                    contactForm.innerHTML = '<div style="text-align:center;padding:3rem 1rem;"><h3 style="color:var(--color-cyan);margin-bottom:1rem;">Message Received</h3><p style="color:var(--color-white);opacity:0.9;">Thank you for your interest. We will contact you within 24 business hours.</p></div>';
+                } else {
+                    throw new Error((data && data.error) || 'Something went wrong.');
+                }
+            } catch (err) {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = original;
+                let note = contactForm.querySelector('.form-error');
+                if (!note) {
+                    note = document.createElement('p');
+                    note.className = 'form-error';
+                    note.setAttribute('role', 'alert');
+                    note.style.cssText = 'color:#ff6b6b;margin-top:1rem;text-align:center;';
+                    submitBtn.insertAdjacentElement('afterend', note);
+                }
+                note.textContent = err.message + ' You can also email info@isn.biz directly.';
+            }
         });
 
         // Intersection Observer for Animations
