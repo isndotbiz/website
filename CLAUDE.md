@@ -1,5 +1,7 @@
 # ISN.BIZ Website
 
+> Canonical global rules: `~/.claude/CLAUDE.md`. This file = website-specific stack + deploy + conventions.
+
 Live investor-ready website for ISN.BIZ Inc. LIVE at https://isn.biz.
 
 ## Stack / Architecture
@@ -45,3 +47,16 @@ git push origin main   # triggers CI: tests → deploy
 ## Open Tasks
 - [ ] Contact form backend (wire up Cloudflare Worker or Formspree)
 - [ ] Google Analytics 4 on all 20 pages
+
+## Knowledge Substrate — RAG + Graphify (search before you research)
+
+> Canonical wiring: `~/Workspace/Research/RAG-GRAPHIFY-WIRING.md`. Endpoints/collections drift — verify against `rag-system/CLAUDE.md` + `mcp__rag__list_collections`; never hardcode.
+
+**RAG (knowledge-first).** Before any web research, search RAG first; ≥3 relevant hits = enough.
+- PAI/Claude Code: `mcp__rag__search_knowledge_base` / `mcp__rag__query_knowledge_base` / `mcp__rag__list_collections` / `mcp__rag__ingest_document`.
+- Sandboxed (codex/opencode/Hermes): `POST /v1/search`, health `GET /v1/health`, auth `X-API-Key`. `https://rag.isn.biz` / `http://100.83.75.4:8400`. Key: 1Password `RAG-API-Key-Current`. Never trust Xeon `100.65.249.20`.
+- Ingest every research artifact into the most-specific collection before session end (`POST /v1/ingest`).
+
+**Graphify (graph-first for structure).** Treat codebase/architecture/file-relationship questions as Graphify queries first.
+- Canonical workspace `~/Workspace/Research/graphify/`; artifacts `graphify/ingested/<category>/<source>--<name>/graph.json`; merged `graphify/merged/agent-system-merged-graph.json`.
+- Always pass explicit graph paths: `graphify query "<q>" --graph <path>`. Never scatter `graphify-out/`; move into `graphify/ingested/...` and refresh manifests. No symlinks.
