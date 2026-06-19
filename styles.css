@@ -56,7 +56,8 @@
     --color-light: #F0F4F8;          /* Alias for --color-white (light bg) */
     --color-dark: #0D1117;           /* Alias for --color-charcoal (dark text) */
     --color-darker: #0A0E14;         /* Deeper than charcoal for code blocks */
-    --color-muted: #6B7280;          /* Muted text - WCAG 4.6:1 on white */
+    --color-muted: #868F9C;          /* Muted text - WCAG 5.8:1 on charcoal #0D1117 (was #6B7280 = 3.9:1, failed AA) */
+    --color-text-light: #939DAB;     /* Light secondary text - WCAG 6.9:1 on charcoal */
 
     /* Spacing aliases for slider-styles.css */
     --spacing-xs: 0.5rem;
