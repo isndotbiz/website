@@ -115,3 +115,12 @@ WEBSITE_UPDATE_COMPLETE.md
 
 # Local Netlify folder
 .netlify
+
+# internal-docs-scrub
+.serena/
+_audit/
+CLAUDE.md
+STATE.md
+DEPLOYMENT_GAPS.md
+ISA.md
+docs/state/
