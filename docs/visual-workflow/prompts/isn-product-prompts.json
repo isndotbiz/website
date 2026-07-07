@@ -1,0 +1,1974 @@
+[
+  {
+    "site": "isn",
+    "productSlug": "spiritatlas",
+    "productTitle": "Spirit Atlas",
+    "pagePath": "spiritatlas.html",
+    "slot": "hero",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/spiritatlas/hero.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, ethereal dark grounding, ethereal fantasy atmosphere, glowing particles and ambient dust. Hero artwork for Spirit Atlas on iSN.BiZ: a ritual-forward mobile cosmic entity discovery experience, luminous archetype cards suspended around a premium phone-like artifact, zodiac geometry, chakra color traces, numerology marks, and a dark celestial field with precise cyan and magenta energy accents. Editorial product-marketing key art, cinematic light sculpting, atmospheric depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no readable symbols that imply real astrology claims.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "ethereal_dark.safetensors",
+        "trigger": "ethereal dark grounding",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/glowing_particles.safetensors",
+        "trigger": "glowing particles and ambient dust",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Spirit Atlas hero visual - Ritual-forward cosmic entity discovery, premium mystical mobile experience, archetype reveal.",
+    "references": [
+      "legacy:spiritatlas"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "spiritatlas",
+    "productTitle": "Spirit Atlas",
+    "pagePath": "spiritatlas.html",
+    "slot": "og",
+    "aspectRatio": "1200x630",
+    "targetFilename": "assets/generated/product-visuals/spiritatlas/og.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, ethereal dark grounding, ethereal fantasy atmosphere, glowing particles and ambient dust. Hero artwork for Spirit Atlas on iSN.BiZ: a ritual-forward mobile cosmic entity discovery experience, luminous archetype cards suspended around a premium phone-like artifact, zodiac geometry, chakra color traces, numerology marks, and a dark celestial field with precise cyan and magenta energy accents. Editorial product-marketing key art, cinematic light sculpting, atmospheric depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no readable symbols that imply real astrology claims. Compose for a clean 1200x630 social preview crop.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "ethereal_dark.safetensors",
+        "trigger": "ethereal dark grounding",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/glowing_particles.safetensors",
+        "trigger": "glowing particles and ambient dust",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Spirit Atlas og visual - Ritual-forward cosmic entity discovery, premium mystical mobile experience, archetype reveal.",
+    "references": [
+      "legacy:spiritatlas"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "spiritatlas",
+    "productTitle": "Spirit Atlas",
+    "pagePath": "spiritatlas.html",
+    "slot": "card",
+    "aspectRatio": "4:3",
+    "targetFilename": "assets/generated/product-visuals/spiritatlas/card.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, ethereal dark grounding, ethereal fantasy atmosphere, glowing particles and ambient dust. Hero artwork for Spirit Atlas on iSN.BiZ: a ritual-forward mobile cosmic entity discovery experience, luminous archetype cards suspended around a premium phone-like artifact, zodiac geometry, chakra color traces, numerology marks, and a dark celestial field with precise cyan and magenta energy accents. Editorial product-marketing key art, cinematic light sculpting, atmospheric depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no readable symbols that imply real astrology claims. Compose as a compact product card crop with the subject readable at small size.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "ethereal_dark.safetensors",
+        "trigger": "ethereal dark grounding",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/glowing_particles.safetensors",
+        "trigger": "glowing particles and ambient dust",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Spirit Atlas card visual - Ritual-forward cosmic entity discovery, premium mystical mobile experience, archetype reveal.",
+    "references": [
+      "legacy:spiritatlas"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "spiritatlas",
+    "productTitle": "Spirit Atlas",
+    "pagePath": "spiritatlas.html",
+    "slot": "study-01",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/spiritatlas/study-01.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, ethereal dark grounding, ethereal fantasy atmosphere, glowing particles and ambient dust. Hero artwork for Spirit Atlas on iSN.BiZ: a ritual-forward mobile cosmic entity discovery experience, luminous archetype cards suspended around a premium phone-like artifact, zodiac geometry, chakra color traces, numerology marks, and a dark celestial field with precise cyan and magenta energy accents. Editorial product-marketing key art, cinematic light sculpting, atmospheric depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no readable symbols that imply real astrology claims. Focus this study on study 01 as a supporting visual, not the main hero.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "ethereal_dark.safetensors",
+        "trigger": "ethereal dark grounding",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/glowing_particles.safetensors",
+        "trigger": "glowing particles and ambient dust",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Spirit Atlas study-01 visual - Ritual-forward cosmic entity discovery, premium mystical mobile experience, archetype reveal.",
+    "references": [
+      "legacy:spiritatlas"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "spiritatlas",
+    "productTitle": "Spirit Atlas",
+    "pagePath": "spiritatlas.html",
+    "slot": "study-02",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/spiritatlas/study-02.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, ethereal dark grounding, ethereal fantasy atmosphere, glowing particles and ambient dust. Hero artwork for Spirit Atlas on iSN.BiZ: a ritual-forward mobile cosmic entity discovery experience, luminous archetype cards suspended around a premium phone-like artifact, zodiac geometry, chakra color traces, numerology marks, and a dark celestial field with precise cyan and magenta energy accents. Editorial product-marketing key art, cinematic light sculpting, atmospheric depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no readable symbols that imply real astrology claims. Focus this study on study 02 as a supporting visual, not the main hero.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "ethereal_dark.safetensors",
+        "trigger": "ethereal dark grounding",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/glowing_particles.safetensors",
+        "trigger": "glowing particles and ambient dust",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Spirit Atlas study-02 visual - Ritual-forward cosmic entity discovery, premium mystical mobile experience, archetype reveal.",
+    "references": [
+      "legacy:spiritatlas"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "spiritatlas",
+    "productTitle": "Spirit Atlas",
+    "pagePath": "spiritatlas.html",
+    "slot": "study-03",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/spiritatlas/study-03.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, ethereal dark grounding, ethereal fantasy atmosphere, glowing particles and ambient dust. Hero artwork for Spirit Atlas on iSN.BiZ: a ritual-forward mobile cosmic entity discovery experience, luminous archetype cards suspended around a premium phone-like artifact, zodiac geometry, chakra color traces, numerology marks, and a dark celestial field with precise cyan and magenta energy accents. Editorial product-marketing key art, cinematic light sculpting, atmospheric depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no readable symbols that imply real astrology claims. Focus this study on study 03 as a supporting visual, not the main hero.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "ethereal_dark.safetensors",
+        "trigger": "ethereal dark grounding",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/glowing_particles.safetensors",
+        "trigger": "glowing particles and ambient dust",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Spirit Atlas study-03 visual - Ritual-forward cosmic entity discovery, premium mystical mobile experience, archetype reveal.",
+    "references": [
+      "legacy:spiritatlas"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "provenance",
+    "productTitle": "Provenance",
+    "pagePath": "provenance.html",
+    "slot": "hero",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/provenance/hero.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Provenance on iSN.BiZ: cross-platform genealogy data integrity platform, archival family records transforming into a verified lineage graph, GEDCOM validation nodes, duplicate-merge evidence trails, trust badges rendered as abstract seals, and a calm technical workspace with cyan-blue audit paths. Editorial product-marketing key art, cinematic light sculpting, archival texture, high-end web banner composition, no text overlays, no logos, no UI chrome, no fake names, no readable private records.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Provenance hero visual - Genealogy data integrity, GEDCOM repair, lineage verification, archival trust surface.",
+    "references": [
+      "legacy:gedfix"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "provenance",
+    "productTitle": "Provenance",
+    "pagePath": "provenance.html",
+    "slot": "og",
+    "aspectRatio": "1200x630",
+    "targetFilename": "assets/generated/product-visuals/provenance/og.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Provenance on iSN.BiZ: cross-platform genealogy data integrity platform, archival family records transforming into a verified lineage graph, GEDCOM validation nodes, duplicate-merge evidence trails, trust badges rendered as abstract seals, and a calm technical workspace with cyan-blue audit paths. Editorial product-marketing key art, cinematic light sculpting, archival texture, high-end web banner composition, no text overlays, no logos, no UI chrome, no fake names, no readable private records. Compose for a clean 1200x630 social preview crop.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Provenance og visual - Genealogy data integrity, GEDCOM repair, lineage verification, archival trust surface.",
+    "references": [
+      "legacy:gedfix"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "provenance",
+    "productTitle": "Provenance",
+    "pagePath": "provenance.html",
+    "slot": "card",
+    "aspectRatio": "4:3",
+    "targetFilename": "assets/generated/product-visuals/provenance/card.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Provenance on iSN.BiZ: cross-platform genealogy data integrity platform, archival family records transforming into a verified lineage graph, GEDCOM validation nodes, duplicate-merge evidence trails, trust badges rendered as abstract seals, and a calm technical workspace with cyan-blue audit paths. Editorial product-marketing key art, cinematic light sculpting, archival texture, high-end web banner composition, no text overlays, no logos, no UI chrome, no fake names, no readable private records. Compose as a compact product card crop with the subject readable at small size.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Provenance card visual - Genealogy data integrity, GEDCOM repair, lineage verification, archival trust surface.",
+    "references": [
+      "legacy:gedfix"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "provenance",
+    "productTitle": "Provenance",
+    "pagePath": "provenance.html",
+    "slot": "study-01",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/provenance/study-01.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Provenance on iSN.BiZ: cross-platform genealogy data integrity platform, archival family records transforming into a verified lineage graph, GEDCOM validation nodes, duplicate-merge evidence trails, trust badges rendered as abstract seals, and a calm technical workspace with cyan-blue audit paths. Editorial product-marketing key art, cinematic light sculpting, archival texture, high-end web banner composition, no text overlays, no logos, no UI chrome, no fake names, no readable private records. Focus this study on study 01 as a supporting visual, not the main hero.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Provenance study-01 visual - Genealogy data integrity, GEDCOM repair, lineage verification, archival trust surface.",
+    "references": [
+      "legacy:gedfix"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "provenance",
+    "productTitle": "Provenance",
+    "pagePath": "provenance.html",
+    "slot": "study-02",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/provenance/study-02.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Provenance on iSN.BiZ: cross-platform genealogy data integrity platform, archival family records transforming into a verified lineage graph, GEDCOM validation nodes, duplicate-merge evidence trails, trust badges rendered as abstract seals, and a calm technical workspace with cyan-blue audit paths. Editorial product-marketing key art, cinematic light sculpting, archival texture, high-end web banner composition, no text overlays, no logos, no UI chrome, no fake names, no readable private records. Focus this study on study 02 as a supporting visual, not the main hero.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Provenance study-02 visual - Genealogy data integrity, GEDCOM repair, lineage verification, archival trust surface.",
+    "references": [
+      "legacy:gedfix"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "provenance",
+    "productTitle": "Provenance",
+    "pagePath": "provenance.html",
+    "slot": "study-03",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/provenance/study-03.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Provenance on iSN.BiZ: cross-platform genealogy data integrity platform, archival family records transforming into a verified lineage graph, GEDCOM validation nodes, duplicate-merge evidence trails, trust badges rendered as abstract seals, and a calm technical workspace with cyan-blue audit paths. Editorial product-marketing key art, cinematic light sculpting, archival texture, high-end web banner composition, no text overlays, no logos, no UI chrome, no fake names, no readable private records. Focus this study on study 03 as a supporting visual, not the main hero.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Provenance study-03 visual - Genealogy data integrity, GEDCOM repair, lineage verification, archival trust surface.",
+    "references": [
+      "legacy:gedfix"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "signals",
+    "productTitle": "Signals",
+    "pagePath": "signals/index.html",
+    "slot": "hero",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/signals/hero.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Signals on iSN.BiZ: market intelligence signal pipeline with EDGAR, EMMA, USDA, Federal Register, and enforcement-feed scanner streams converging into a live forward-returns ledger, ranked alerts, ticker resolution, delayed-feed audit window, and evidence trails. Dense investor-grade technical command surface, cinematic cyan grid light, subtle magenta anomaly highlights, high-end web banner composition, no text overlays, no logos, no UI chrome, no real tickers, no financial advice language.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Signals hero visual - Market-intelligence pipeline, scanner fusion, forward-returns ledger, delayed-feed auditability.",
+    "references": [],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "signals",
+    "productTitle": "Signals",
+    "pagePath": "signals/index.html",
+    "slot": "og",
+    "aspectRatio": "1200x630",
+    "targetFilename": "assets/generated/product-visuals/signals/og.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Signals on iSN.BiZ: market intelligence signal pipeline with EDGAR, EMMA, USDA, Federal Register, and enforcement-feed scanner streams converging into a live forward-returns ledger, ranked alerts, ticker resolution, delayed-feed audit window, and evidence trails. Dense investor-grade technical command surface, cinematic cyan grid light, subtle magenta anomaly highlights, high-end web banner composition, no text overlays, no logos, no UI chrome, no real tickers, no financial advice language. Compose for a clean 1200x630 social preview crop.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Signals og visual - Market-intelligence pipeline, scanner fusion, forward-returns ledger, delayed-feed auditability.",
+    "references": [],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "signals",
+    "productTitle": "Signals",
+    "pagePath": "signals/index.html",
+    "slot": "card",
+    "aspectRatio": "4:3",
+    "targetFilename": "assets/generated/product-visuals/signals/card.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Signals on iSN.BiZ: market intelligence signal pipeline with EDGAR, EMMA, USDA, Federal Register, and enforcement-feed scanner streams converging into a live forward-returns ledger, ranked alerts, ticker resolution, delayed-feed audit window, and evidence trails. Dense investor-grade technical command surface, cinematic cyan grid light, subtle magenta anomaly highlights, high-end web banner composition, no text overlays, no logos, no UI chrome, no real tickers, no financial advice language. Compose as a compact product card crop with the subject readable at small size.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Signals card visual - Market-intelligence pipeline, scanner fusion, forward-returns ledger, delayed-feed auditability.",
+    "references": [],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "signals",
+    "productTitle": "Signals",
+    "pagePath": "signals/index.html",
+    "slot": "study-01",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/signals/study-01.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Signals on iSN.BiZ: market intelligence signal pipeline with EDGAR, EMMA, USDA, Federal Register, and enforcement-feed scanner streams converging into a live forward-returns ledger, ranked alerts, ticker resolution, delayed-feed audit window, and evidence trails. Dense investor-grade technical command surface, cinematic cyan grid light, subtle magenta anomaly highlights, high-end web banner composition, no text overlays, no logos, no UI chrome, no real tickers, no financial advice language. Focus this study on study 01 as a supporting visual, not the main hero.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Signals study-01 visual - Market-intelligence pipeline, scanner fusion, forward-returns ledger, delayed-feed auditability.",
+    "references": [],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "signals",
+    "productTitle": "Signals",
+    "pagePath": "signals/index.html",
+    "slot": "study-02",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/signals/study-02.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Signals on iSN.BiZ: market intelligence signal pipeline with EDGAR, EMMA, USDA, Federal Register, and enforcement-feed scanner streams converging into a live forward-returns ledger, ranked alerts, ticker resolution, delayed-feed audit window, and evidence trails. Dense investor-grade technical command surface, cinematic cyan grid light, subtle magenta anomaly highlights, high-end web banner composition, no text overlays, no logos, no UI chrome, no real tickers, no financial advice language. Focus this study on study 02 as a supporting visual, not the main hero.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Signals study-02 visual - Market-intelligence pipeline, scanner fusion, forward-returns ledger, delayed-feed auditability.",
+    "references": [],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "signals",
+    "productTitle": "Signals",
+    "pagePath": "signals/index.html",
+    "slot": "study-03",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/signals/study-03.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Signals on iSN.BiZ: market intelligence signal pipeline with EDGAR, EMMA, USDA, Federal Register, and enforcement-feed scanner streams converging into a live forward-returns ledger, ranked alerts, ticker resolution, delayed-feed audit window, and evidence trails. Dense investor-grade technical command surface, cinematic cyan grid light, subtle magenta anomaly highlights, high-end web banner composition, no text overlays, no logos, no UI chrome, no real tickers, no financial advice language. Focus this study on study 03 as a supporting visual, not the main hero.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Signals study-03 visual - Market-intelligence pipeline, scanner fusion, forward-returns ledger, delayed-feed auditability.",
+    "references": [],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "signals",
+    "productTitle": "Signals",
+    "pagePath": "signals/index.html",
+    "slot": "diagram",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/signals/diagram.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Signals on iSN.BiZ: market intelligence signal pipeline with EDGAR, EMMA, USDA, Federal Register, and enforcement-feed scanner streams converging into a live forward-returns ledger, ranked alerts, ticker resolution, delayed-feed audit window, and evidence trails. Dense investor-grade technical command surface, cinematic cyan grid light, subtle magenta anomaly highlights, high-end web banner composition, no text overlays, no logos, no UI chrome, no real tickers, no financial advice language. Emphasize abstract data-flow diagram composition without text labels.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Signals diagram visual - Market-intelligence pipeline, scanner fusion, forward-returns ledger, delayed-feed auditability.",
+    "references": [],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "phantom-browser",
+    "productTitle": "Phantom Browser",
+    "pagePath": "phantom-browser.html",
+    "slot": "hero",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/phantom-browser/hero.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Phantom Browser on iSN.BiZ: Rust and Tauri stealth browser orchestration system, profile fleet nodes, coherent browser fingerprints, residential and mobile proxy mesh, IP reputation scoring gates, and a CreepJS-style diagnostic environment rendered as abstract instrumentation. Dark technical operations room, cyan grid precision, magenta risk signals, cinematic light sculpting, high-end web banner composition, no text overlays, no logos, no UI chrome, no illegal activity depiction.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Phantom Browser hero visual - Stealth browser orchestration, fingerprint coherence, proxy reputation, resilient automation.",
+    "references": [
+      "legacy:phantom-browser"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "phantom-browser",
+    "productTitle": "Phantom Browser",
+    "pagePath": "phantom-browser.html",
+    "slot": "og",
+    "aspectRatio": "1200x630",
+    "targetFilename": "assets/generated/product-visuals/phantom-browser/og.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Phantom Browser on iSN.BiZ: Rust and Tauri stealth browser orchestration system, profile fleet nodes, coherent browser fingerprints, residential and mobile proxy mesh, IP reputation scoring gates, and a CreepJS-style diagnostic environment rendered as abstract instrumentation. Dark technical operations room, cyan grid precision, magenta risk signals, cinematic light sculpting, high-end web banner composition, no text overlays, no logos, no UI chrome, no illegal activity depiction. Compose for a clean 1200x630 social preview crop.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Phantom Browser og visual - Stealth browser orchestration, fingerprint coherence, proxy reputation, resilient automation.",
+    "references": [
+      "legacy:phantom-browser"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "phantom-browser",
+    "productTitle": "Phantom Browser",
+    "pagePath": "phantom-browser.html",
+    "slot": "card",
+    "aspectRatio": "4:3",
+    "targetFilename": "assets/generated/product-visuals/phantom-browser/card.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Phantom Browser on iSN.BiZ: Rust and Tauri stealth browser orchestration system, profile fleet nodes, coherent browser fingerprints, residential and mobile proxy mesh, IP reputation scoring gates, and a CreepJS-style diagnostic environment rendered as abstract instrumentation. Dark technical operations room, cyan grid precision, magenta risk signals, cinematic light sculpting, high-end web banner composition, no text overlays, no logos, no UI chrome, no illegal activity depiction. Compose as a compact product card crop with the subject readable at small size.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Phantom Browser card visual - Stealth browser orchestration, fingerprint coherence, proxy reputation, resilient automation.",
+    "references": [
+      "legacy:phantom-browser"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "phantom-browser",
+    "productTitle": "Phantom Browser",
+    "pagePath": "phantom-browser.html",
+    "slot": "study-01",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/phantom-browser/study-01.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Phantom Browser on iSN.BiZ: Rust and Tauri stealth browser orchestration system, profile fleet nodes, coherent browser fingerprints, residential and mobile proxy mesh, IP reputation scoring gates, and a CreepJS-style diagnostic environment rendered as abstract instrumentation. Dark technical operations room, cyan grid precision, magenta risk signals, cinematic light sculpting, high-end web banner composition, no text overlays, no logos, no UI chrome, no illegal activity depiction. Focus this study on study 01 as a supporting visual, not the main hero.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Phantom Browser study-01 visual - Stealth browser orchestration, fingerprint coherence, proxy reputation, resilient automation.",
+    "references": [
+      "legacy:phantom-browser"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "phantom-browser",
+    "productTitle": "Phantom Browser",
+    "pagePath": "phantom-browser.html",
+    "slot": "study-02",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/phantom-browser/study-02.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Phantom Browser on iSN.BiZ: Rust and Tauri stealth browser orchestration system, profile fleet nodes, coherent browser fingerprints, residential and mobile proxy mesh, IP reputation scoring gates, and a CreepJS-style diagnostic environment rendered as abstract instrumentation. Dark technical operations room, cyan grid precision, magenta risk signals, cinematic light sculpting, high-end web banner composition, no text overlays, no logos, no UI chrome, no illegal activity depiction. Focus this study on study 02 as a supporting visual, not the main hero.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Phantom Browser study-02 visual - Stealth browser orchestration, fingerprint coherence, proxy reputation, resilient automation.",
+    "references": [
+      "legacy:phantom-browser"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "phantom-browser",
+    "productTitle": "Phantom Browser",
+    "pagePath": "phantom-browser.html",
+    "slot": "study-03",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/phantom-browser/study-03.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Phantom Browser on iSN.BiZ: Rust and Tauri stealth browser orchestration system, profile fleet nodes, coherent browser fingerprints, residential and mobile proxy mesh, IP reputation scoring gates, and a CreepJS-style diagnostic environment rendered as abstract instrumentation. Dark technical operations room, cyan grid precision, magenta risk signals, cinematic light sculpting, high-end web banner composition, no text overlays, no logos, no UI chrome, no illegal activity depiction. Focus this study on study 03 as a supporting visual, not the main hero.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Phantom Browser study-03 visual - Stealth browser orchestration, fingerprint coherence, proxy reputation, resilient automation.",
+    "references": [
+      "legacy:phantom-browser"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "crucible",
+    "productTitle": "Crucible",
+    "pagePath": "crucible.html",
+    "slot": "hero",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/crucible/hero.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Crucible on iSN.BiZ: LLM red-team laboratory and adversarial evaluation harness, model transcript streams entering a judge stack, jailbreak scenario simulator, scored eval matrix, RAG research mode, and safety boundary instrumentation. Dark high-trust AI security lab, precise cyan evaluation grids, warning-magenta adversarial traces, cinematic atmosphere, high-end web banner composition, no text overlays, no logos, no UI chrome, no depiction of real harmful instructions.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Crucible hero visual - LLM red-team and adversarial evaluation stack, jailbreak research, judge harness, transcript scoring.",
+    "references": [
+      "legacy:llm-security-research"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "crucible",
+    "productTitle": "Crucible",
+    "pagePath": "crucible.html",
+    "slot": "og",
+    "aspectRatio": "1200x630",
+    "targetFilename": "assets/generated/product-visuals/crucible/og.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Crucible on iSN.BiZ: LLM red-team laboratory and adversarial evaluation harness, model transcript streams entering a judge stack, jailbreak scenario simulator, scored eval matrix, RAG research mode, and safety boundary instrumentation. Dark high-trust AI security lab, precise cyan evaluation grids, warning-magenta adversarial traces, cinematic atmosphere, high-end web banner composition, no text overlays, no logos, no UI chrome, no depiction of real harmful instructions. Compose for a clean 1200x630 social preview crop.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Crucible og visual - LLM red-team and adversarial evaluation stack, jailbreak research, judge harness, transcript scoring.",
+    "references": [
+      "legacy:llm-security-research"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "crucible",
+    "productTitle": "Crucible",
+    "pagePath": "crucible.html",
+    "slot": "card",
+    "aspectRatio": "4:3",
+    "targetFilename": "assets/generated/product-visuals/crucible/card.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Crucible on iSN.BiZ: LLM red-team laboratory and adversarial evaluation harness, model transcript streams entering a judge stack, jailbreak scenario simulator, scored eval matrix, RAG research mode, and safety boundary instrumentation. Dark high-trust AI security lab, precise cyan evaluation grids, warning-magenta adversarial traces, cinematic atmosphere, high-end web banner composition, no text overlays, no logos, no UI chrome, no depiction of real harmful instructions. Compose as a compact product card crop with the subject readable at small size.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Crucible card visual - LLM red-team and adversarial evaluation stack, jailbreak research, judge harness, transcript scoring.",
+    "references": [
+      "legacy:llm-security-research"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "crucible",
+    "productTitle": "Crucible",
+    "pagePath": "crucible.html",
+    "slot": "study-01",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/crucible/study-01.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Crucible on iSN.BiZ: LLM red-team laboratory and adversarial evaluation harness, model transcript streams entering a judge stack, jailbreak scenario simulator, scored eval matrix, RAG research mode, and safety boundary instrumentation. Dark high-trust AI security lab, precise cyan evaluation grids, warning-magenta adversarial traces, cinematic atmosphere, high-end web banner composition, no text overlays, no logos, no UI chrome, no depiction of real harmful instructions. Focus this study on study 01 as a supporting visual, not the main hero.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Crucible study-01 visual - LLM red-team and adversarial evaluation stack, jailbreak research, judge harness, transcript scoring.",
+    "references": [
+      "legacy:llm-security-research"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "crucible",
+    "productTitle": "Crucible",
+    "pagePath": "crucible.html",
+    "slot": "study-02",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/crucible/study-02.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Crucible on iSN.BiZ: LLM red-team laboratory and adversarial evaluation harness, model transcript streams entering a judge stack, jailbreak scenario simulator, scored eval matrix, RAG research mode, and safety boundary instrumentation. Dark high-trust AI security lab, precise cyan evaluation grids, warning-magenta adversarial traces, cinematic atmosphere, high-end web banner composition, no text overlays, no logos, no UI chrome, no depiction of real harmful instructions. Focus this study on study 02 as a supporting visual, not the main hero.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Crucible study-02 visual - LLM red-team and adversarial evaluation stack, jailbreak research, judge harness, transcript scoring.",
+    "references": [
+      "legacy:llm-security-research"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "crucible",
+    "productTitle": "Crucible",
+    "pagePath": "crucible.html",
+    "slot": "study-03",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/crucible/study-03.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Crucible on iSN.BiZ: LLM red-team laboratory and adversarial evaluation harness, model transcript streams entering a judge stack, jailbreak scenario simulator, scored eval matrix, RAG research mode, and safety boundary instrumentation. Dark high-trust AI security lab, precise cyan evaluation grids, warning-magenta adversarial traces, cinematic atmosphere, high-end web banner composition, no text overlays, no logos, no UI chrome, no depiction of real harmful instructions. Focus this study on study 03 as a supporting visual, not the main hero.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Crucible study-03 visual - LLM red-team and adversarial evaluation stack, jailbreak research, judge harness, transcript scoring.",
+    "references": [
+      "legacy:llm-security-research"
+    ],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "hermes-aingels",
+    "productTitle": "HERMES + AiNGELS",
+    "pagePath": "hermes-aingels.html",
+    "slot": "hero",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/hermes-aingels/hero.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for HERMES + AiNGELS on iSN.BiZ: NFT-as-Agent architecture on Base L2, ERC-6551 token-bound accounts as luminous identity vessels, cryptographic anchor set, voice and visual identity artifacts, 12-sister lineage tree, and genesis covenant agent represented as a precise celestial network. Premium mythic-technical key art, cyan blockchain lattice, magenta reveal energy, cinematic depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no celebrity likenesses.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "HERMES + AiNGELS hero visual - NFT-as-Agent architecture, Base L2, ERC-6551 token-bound accounts, cryptographic identity lattice.",
+    "references": [],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "hermes-aingels",
+    "productTitle": "HERMES + AiNGELS",
+    "pagePath": "hermes-aingels.html",
+    "slot": "og",
+    "aspectRatio": "1200x630",
+    "targetFilename": "assets/generated/product-visuals/hermes-aingels/og.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for HERMES + AiNGELS on iSN.BiZ: NFT-as-Agent architecture on Base L2, ERC-6551 token-bound accounts as luminous identity vessels, cryptographic anchor set, voice and visual identity artifacts, 12-sister lineage tree, and genesis covenant agent represented as a precise celestial network. Premium mythic-technical key art, cyan blockchain lattice, magenta reveal energy, cinematic depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no celebrity likenesses. Compose for a clean 1200x630 social preview crop.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "HERMES + AiNGELS og visual - NFT-as-Agent architecture, Base L2, ERC-6551 token-bound accounts, cryptographic identity lattice.",
+    "references": [],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "hermes-aingels",
+    "productTitle": "HERMES + AiNGELS",
+    "pagePath": "hermes-aingels.html",
+    "slot": "card",
+    "aspectRatio": "4:3",
+    "targetFilename": "assets/generated/product-visuals/hermes-aingels/card.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for HERMES + AiNGELS on iSN.BiZ: NFT-as-Agent architecture on Base L2, ERC-6551 token-bound accounts as luminous identity vessels, cryptographic anchor set, voice and visual identity artifacts, 12-sister lineage tree, and genesis covenant agent represented as a precise celestial network. Premium mythic-technical key art, cyan blockchain lattice, magenta reveal energy, cinematic depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no celebrity likenesses. Compose as a compact product card crop with the subject readable at small size.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "HERMES + AiNGELS card visual - NFT-as-Agent architecture, Base L2, ERC-6551 token-bound accounts, cryptographic identity lattice.",
+    "references": [],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "hermes-aingels",
+    "productTitle": "HERMES + AiNGELS",
+    "pagePath": "hermes-aingels.html",
+    "slot": "study-01",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/hermes-aingels/study-01.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for HERMES + AiNGELS on iSN.BiZ: NFT-as-Agent architecture on Base L2, ERC-6551 token-bound accounts as luminous identity vessels, cryptographic anchor set, voice and visual identity artifacts, 12-sister lineage tree, and genesis covenant agent represented as a precise celestial network. Premium mythic-technical key art, cyan blockchain lattice, magenta reveal energy, cinematic depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no celebrity likenesses. Focus this study on study 01 as a supporting visual, not the main hero.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "HERMES + AiNGELS study-01 visual - NFT-as-Agent architecture, Base L2, ERC-6551 token-bound accounts, cryptographic identity lattice.",
+    "references": [],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "hermes-aingels",
+    "productTitle": "HERMES + AiNGELS",
+    "pagePath": "hermes-aingels.html",
+    "slot": "study-02",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/hermes-aingels/study-02.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for HERMES + AiNGELS on iSN.BiZ: NFT-as-Agent architecture on Base L2, ERC-6551 token-bound accounts as luminous identity vessels, cryptographic anchor set, voice and visual identity artifacts, 12-sister lineage tree, and genesis covenant agent represented as a precise celestial network. Premium mythic-technical key art, cyan blockchain lattice, magenta reveal energy, cinematic depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no celebrity likenesses. Focus this study on study 02 as a supporting visual, not the main hero.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "HERMES + AiNGELS study-02 visual - NFT-as-Agent architecture, Base L2, ERC-6551 token-bound accounts, cryptographic identity lattice.",
+    "references": [],
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "hermes-aingels",
+    "productTitle": "HERMES + AiNGELS",
+    "pagePath": "hermes-aingels.html",
+    "slot": "study-03",
+    "aspectRatio": "16:9",
+    "targetFilename": "assets/generated/product-visuals/hermes-aingels/study-03.webp",
+    "prompt": "EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for HERMES + AiNGELS on iSN.BiZ: NFT-as-Agent architecture on Base L2, ERC-6551 token-bound accounts as luminous identity vessels, cryptographic anchor set, voice and visual identity artifacts, 12-sister lineage tree, and genesis covenant agent represented as a precise celestial network. Premium mythic-technical key art, cyan blockchain lattice, magenta reveal energy, cinematic depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no celebrity likenesses. Focus this study on study 03 as a supporting visual, not the main hero.",
+    "negativePrompt": "text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "HERMES + AiNGELS study-03 visual - NFT-as-Agent architecture, Base L2, ERC-6551 token-bound accounts, cryptographic identity lattice.",
+    "references": [],
+    "status": "planned"
+  }
+]

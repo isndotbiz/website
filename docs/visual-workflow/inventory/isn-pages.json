@@ -1,0 +1,1363 @@
+[
+  {
+    "site": "isn",
+    "path": "/",
+    "title": "AI Software Development & Enterprise Cloud Solutions | iSN.BiZ Inc",
+    "description": "iSN.BiZ delivers enterprise AI software development, custom cloud infrastructure, and business automation solutions. 11+ years of proven results with 100% client retention. Seattle-based software development company specializing in machine learning, data analytics, and scalable enterprise applications.",
+    "role": "home",
+    "headings": {
+      "h1": [
+        "Building the Future of Enterprise Software"
+      ],
+      "h2": [
+        "Transforming Ideas Into Powerful Software Solutions",
+        "Comprehensive Software Solutions for Modern Enterprises",
+        "Delivering Excellence Across Industries",
+        "Join Us in Building the Future of Enterprise Software",
+        "Our Leadership Team",
+        "Let's Start a Conversation"
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 206
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/hero_logo.webp",
+        "alt": "iSN.BiZ Inc - Innovation Solutions Systems",
+        "context": "img",
+        "line": 238
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/spiritatlas/hero.webp",
+        "alt": "Spirit Atlas ritual-forward mobile platform",
+        "context": "img",
+        "line": 454
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_002_bg_home.webp",
+        "alt": "Provenance genealogy data integrity platform",
+        "context": "img",
+        "line": 469
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp",
+        "alt": "Signals market intelligence pipeline",
+        "context": "img",
+        "line": 482
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_007_bg_settings.webp",
+        "alt": "Phantom Browser stealth automation stack",
+        "context": "img",
+        "line": 497
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_005_bg_meditation_chakra.webp",
+        "alt": "Crucible LLM red-team and evaluation stack",
+        "context": "img",
+        "line": 510
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_004_bg_lotus_realm_00001.webp",
+        "alt": "HERMES + AiNGELS NFT-as-Agent architecture on Base",
+        "context": "img",
+        "line": 523
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/portraits/jonathan_portrait_1.webp",
+        "alt": "Jonathan Mallinger - Chairman and CEO of iSN.BiZ Inc",
+        "context": "img",
+        "line": 624
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/portraits/bri_portrait_1.webp",
+        "alt": "Brianna Bear - Secretary and COO of iSN.BiZ Inc",
+        "context": "img",
+        "line": 643
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/founders/lilly.webp",
+        "alt": "Lilly Fedas - Treasurer and CFO of iSN.BiZ Inc",
+        "context": "img",
+        "line": 662
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 786
+      }
+    ],
+    "ogImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/og/og_default.webp",
+      "alt": "iSN.BiZ Inc - Enterprise AI Software Development Platform",
+      "context": "og:image",
+      "line": 27
+    },
+    "twitterImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/og/og_default.webp",
+      "alt": "iSN.BiZ Inc - Enterprise AI Software Development",
+      "context": "twitter:image",
+      "line": 39
+    },
+    "flags": []
+  },
+  {
+    "site": "isn",
+    "path": "/about",
+    "title": "About Us - iSN.BiZ Inc | 11 Years of Innovation Excellence",
+    "description": "About iSN.BiZ Inc - 11 years of proven AI & enterprise software excellence. Founded 2015, delivering transformational technology solutions with measurable ROI.",
+    "role": "core",
+    "headings": {
+      "h1": [
+        "Building Tomorrow's Enterprise Infrastructure Today"
+      ],
+      "h2": [
+        "Where Innovation Meets Execution",
+        "Leadership Built for Execution",
+        "Results That Define Us",
+        "A Decade of Innovation Milestones",
+        "The Principles Behind Our Success",
+        "Why Strategic Investors Partner With Us",
+        "Why Enterprises Trust iSN.BiZ",
+        "What Makes Our Engineering Different",
+        "Partner With Proven Excellence"
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 507
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/hero_logo.webp",
+        "alt": "iSN.BiZ Inc - Innovation Solutions Systems",
+        "context": "img",
+        "line": 539
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/founders/bri.webp",
+        "alt": "Portrait of Bri, Secretary and COO",
+        "context": "img",
+        "line": 620
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/founders/lilly.webp",
+        "alt": "Portrait of Lilly, Treasurer and CFO",
+        "context": "img",
+        "line": 629
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/founders/jonathan.webp",
+        "alt": "Portrait of Jonathan, Chairman and CEO",
+        "context": "img",
+        "line": 638
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 1070
+      }
+    ],
+    "ogImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/og/og_default.webp",
+      "alt": "iSN.BiZ Inc - Enterprise AI Software Development",
+      "context": "og:image",
+      "line": 16
+    },
+    "twitterImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/og/og_default.webp",
+      "alt": "iSN.BiZ Inc - Enterprise AI Software Development",
+      "context": "twitter:image",
+      "line": 26
+    },
+    "flags": []
+  },
+  {
+    "site": "isn",
+    "path": "/services",
+    "title": "Our Services - iSN.BiZ Inc",
+    "description": "iSN.BiZ Inc Services - Custom software development, AI & machine learning, cloud architecture, mobile development, and enterprise solutions.",
+    "role": "core",
+    "headings": {
+      "h1": [
+        "Enterprise Software Solutions"
+      ],
+      "h2": [
+        "Comprehensive Software Solutions for Modern Enterprises",
+        "Enterprise-Grade Design & Execution",
+        "Custom Software Development",
+        "AI & Machine Learning Integration",
+        "Cloud Architecture & DevOps",
+        "Mobile Development",
+        "Data Engineering & Analytics",
+        "Security & Compliance",
+        "Ready to Start Your Project?"
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 46
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/hero_logo.webp",
+        "alt": "iSN.BiZ Inc - Innovation Solutions Systems",
+        "context": "img",
+        "line": 78
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/opportunity-bot/hero.webp",
+        "alt": "AI-powered opportunity intelligence dashboard with real-time insights",
+        "context": "img",
+        "line": 121
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/spiritatlas/hero.webp",
+        "alt": "Professional mobile application with modern architecture",
+        "context": "img",
+        "line": 125
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/phantom-browser/hero.webp",
+        "alt": "Enterprise cloud infrastructure and automation platform",
+        "context": "img",
+        "line": 129
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 848
+      }
+    ],
+    "ogImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/og/og_default.webp",
+      "alt": "iSN.BiZ Inc - Enterprise Software Services",
+      "context": "og:image",
+      "line": 16
+    },
+    "twitterImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/og/og_default.webp",
+      "alt": "iSN.BiZ Inc - Enterprise Software Services",
+      "context": "twitter:image",
+      "line": 26
+    },
+    "flags": []
+  },
+  {
+    "site": "isn",
+    "path": "/portfolio",
+    "title": "Portfolio - iSN.BiZ Inc | Enterprise AI & Production Systems",
+    "description": "iSN.BiZ Inc Portfolio - 6 production-grade AI and enterprise systems targeting $56B+ in combined addressable markets. Investor-ready IP with proven scalability.",
+    "role": "core",
+    "headings": {
+      "h1": [
+        "Proven Engineering, Enterprise-Scale Execution"
+      ],
+      "h2": [
+        "Enterprise-Grade Technical Capabilities",
+        "Enterprise-Grade Development Process",
+        "Measurable Impact at Scale",
+        "Ready to Deploy Enterprise-Scale AI?"
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 46
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/spiritatlas/hero.webp",
+        "alt": "Spirit Atlas ritual-forward mobile platform",
+        "context": "img",
+        "line": 105
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_002_bg_home.webp",
+        "alt": "Provenance genealogy data integrity platform",
+        "context": "img",
+        "line": 118
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp",
+        "alt": "Signals market intelligence pipeline",
+        "context": "img",
+        "line": 130
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_007_bg_settings.webp",
+        "alt": "Phantom Browser stealth automation stack",
+        "context": "img",
+        "line": 143
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_005_bg_meditation_chakra.webp",
+        "alt": "Crucible LLM red-team and evaluation stack",
+        "context": "img",
+        "line": 155
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_004_bg_lotus_realm_00001.webp",
+        "alt": "HERMES + AiNGELS NFT-as-Agent architecture",
+        "context": "img",
+        "line": 167
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 395
+      }
+    ],
+    "ogImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/og/og_default.webp",
+      "alt": "iSN.BiZ Inc Portfolio",
+      "context": "og:image",
+      "line": 16
+    },
+    "twitterImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/og/og_default.webp",
+      "alt": "iSN.BiZ Inc Portfolio",
+      "context": "twitter:image",
+      "line": 26
+    },
+    "flags": []
+  },
+  {
+    "site": "isn",
+    "path": "/investors",
+    "title": "Investor Relations - iSN.BiZ Inc",
+    "description": "iSN.BiZ Inc Investor Relations - Investment opportunity in AI-powered enterprise software. Join us in building the future of enterprise technology.",
+    "role": "core",
+    "headings": {
+      "h1": [
+        "Investment Opportunity"
+      ],
+      "h2": [
+        "A Unique Opportunity in Enterprise AI",
+        "A Massive and Growing Market",
+        "Strong Business Fundamentals",
+        "Strategic Use of Capital",
+        "Experienced Leadership with Proven Expertise",
+        "Partnership Opportunity",
+        "Ready to Learn More?"
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 46
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/hero_logo.webp",
+        "alt": "iSN.BiZ Inc - Innovation Solutions Systems",
+        "context": "img",
+        "line": 78
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 502
+      }
+    ],
+    "ogImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/og/og_default.webp",
+      "alt": "iSN.BiZ Inc Investor Relations",
+      "context": "og:image",
+      "line": 16
+    },
+    "twitterImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/og/og_default.webp",
+      "alt": "iSN.BiZ Inc Investor Relations",
+      "context": "twitter:image",
+      "line": 26
+    },
+    "flags": []
+  },
+  {
+    "site": "isn",
+    "path": "/contact",
+    "title": "Contact Us - iSN.BiZ Inc",
+    "description": "Contact iSN.BiZ Inc - Get in touch for business inquiries, investor relations, or schedule a consultation about our software solutions.",
+    "role": "core",
+    "headings": {
+      "h1": [
+        "Let's Start a Conversation"
+      ],
+      "h2": [
+        "Send Us a Message",
+        "How We Can Help You",
+        "Common Questions",
+        "Ready to Get Started?"
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 53
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/hero_logo.webp",
+        "alt": "iSN.BiZ Inc - Innovation Solutions Systems",
+        "context": "img",
+        "line": 85
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 425
+      }
+    ],
+    "ogImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/og/og_default.webp",
+      "alt": "iSN.BiZ Inc Contact",
+      "context": "og:image",
+      "line": 16
+    },
+    "twitterImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/og/og_default.webp",
+      "alt": "iSN.BiZ Inc Contact",
+      "context": "twitter:image",
+      "line": 26
+    },
+    "flags": []
+  },
+  {
+    "site": "isn",
+    "path": "/spiritatlas",
+    "title": "Spirit Atlas | Ritual-Forward Cosmic Entity Discovery | iSN.BiZ Inc",
+    "description": "Spirit Atlas is a ritual-forward mobile experience for discovering your cosmic entity archetype, unlocking daily guidance, and exploring a premium library of symbolic wisdom on iSN.BiZ.",
+    "role": "product",
+    "productSlug": "spiritatlas",
+    "headings": {
+      "h1": [
+        "Spirit Atlas"
+      ],
+      "h2": [
+        "Twelve Zodiac",
+        "Aingels",
+        "Demons",
+        "Seven Chakras",
+        "Five Elements",
+        "Nine Numerology Paths",
+        "Tantra",
+        "Center",
+        "Backgrounds",
+        "Black Series",
+        "Blue Drift",
+        "Meet Your Cosmic Entity"
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 1121
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 1489
+      }
+    ],
+    "ogImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/spiritatlas/hero.webp",
+      "alt": "Spirit Atlas cosmic entity discovery app — ritual-forward archetype reveal",
+      "context": "og:image",
+      "line": 16
+    },
+    "twitterImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/spiritatlas/hero.webp",
+      "alt": "Spirit Atlas cosmic entity discovery app — ritual-forward archetype reveal",
+      "context": "twitter:image",
+      "line": 26
+    },
+    "flags": []
+  },
+  {
+    "site": "isn",
+    "path": "/provenance",
+    "title": "Provenance — Cross-Platform Genealogy Platform | iSN.BiZ Inc",
+    "description": "Provenance — a cross-platform Tauri + SvelteKit genealogy app and Python CLI for cleaning, normalizing, deduplicating, and AI-assisted research over GEDCOM data. Local-first, audit-grade.",
+    "role": "product",
+    "productSlug": "provenance",
+    "headings": {
+      "h1": [
+        "Provenance"
+      ],
+      "h2": [
+        "Signature Key Art",
+        "Why Provenance Exists",
+        "Deep Dive: The GEDCOM Operations Surface",
+        "Platform Components",
+        "Implementation Details",
+        "Technology Stack",
+        "Why It Matters",
+        "Try Provenance"
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 43
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_002_bg_home.webp",
+        "alt": "Provenance cross-platform genealogy app interface showing tree view, GEDCOM cleanup, and AI-assisted research panel",
+        "context": "img",
+        "line": 83
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_003_bg_loading.webp",
+        "alt": "Provenance lineage workspace key art &mdash; ancestral records and graph view, study 1",
+        "context": "img",
+        "line": 98
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp",
+        "alt": "Provenance lineage workspace key art &mdash; ancestral records and graph view, study 2",
+        "context": "img",
+        "line": 101
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_044_12_026_mixed_new.webp",
+        "alt": "Provenance lineage workspace key art &mdash; ancestral records and graph view, study 3",
+        "context": "img",
+        "line": 104
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 321
+      }
+    ],
+    "ogImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_002_bg_home.webp",
+      "alt": "Provenance cross-platform genealogy app — tree view, GEDCOM cleanup, and AI-assisted research",
+      "context": "og:image",
+      "line": 16
+    },
+    "twitterImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_002_bg_home.webp",
+      "alt": "Provenance cross-platform genealogy app — tree view, GEDCOM cleanup, and AI-assisted research",
+      "context": "twitter:image",
+      "line": 26
+    },
+    "flags": [
+      "portrait-og:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_002_bg_home.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_002_bg_home.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_003_bg_loading.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_044_12_026_mixed_new.webp",
+      "reused-spiritatlas-background:og:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_002_bg_home.webp",
+      "reused-spiritatlas-background:twitter:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_002_bg_home.webp"
+    ]
+  },
+  {
+    "site": "isn",
+    "path": "/signals/",
+    "title": "Signals | iSN.BiZ Inc",
+    "description": "Signals — the iSN.BiZ market intelligence program. A live forward-returns ledger surfacing alerts from a multi-source scanner stack covering EDGAR filings, prediction markets, regulatory feeds, agricultural basis, and muni bonds. Every alert is timestamped and audit-eligible.",
+    "role": "product",
+    "productSlug": "signals",
+    "headings": {
+      "h1": [
+        "Signals"
+      ],
+      "h2": [
+        "Signature Key Art",
+        "Signal Sources",
+        "Deep Dive: Signal Architecture",
+        "Signal Categories",
+        "Live Ledger",
+        "Implementation Details",
+        "Technology Stack",
+        "Why It Matters",
+        "Subscribe to the Live Feed"
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 47
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp",
+        "alt": "Signals forward-returns ledger interface showing scanner alerts, hit-rate distributions, and ticker-level return curves",
+        "context": "img",
+        "line": 107
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_002_bg_home.webp",
+        "alt": "Signals visual study one — scanner pipeline lattice with cross-source alert overlays",
+        "context": "img",
+        "line": 122
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_045_12_027_mixed_new.webp",
+        "alt": "Signals visual study two — forward-return ribbon overlay across alert timestamps",
+        "context": "img",
+        "line": 125
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_044_12_026_mixed_new.webp",
+        "alt": "Signals visual study three — ledger-grade evidence trail with delayed-feed audit window",
+        "context": "img",
+        "line": 128
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_002_bg_home.webp",
+        "alt": "Raw source ingestion stage — scanner fleet pulling from EDGAR, EMMA, USDA, Federal Register, and GDPR enforcement feeds",
+        "context": "img",
+        "line": 195
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_045_12_027_mixed_new.webp",
+        "alt": "Enrichment and ticker resolution stage — alert payloads matched to instruments and signal types",
+        "context": "img",
+        "line": 202
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_044_12_026_mixed_new.webp",
+        "alt": "Cross-signal fusion stage — overlap detection across scanners producing fused ranking scores",
+        "context": "img",
+        "line": 219
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp",
+        "alt": "Publish and forward-returns stage — alert ledger row written, backfill job populating 5d 20d 60d return columns",
+        "context": "img",
+        "line": 226
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 425
+      }
+    ],
+    "ogImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp",
+      "alt": "Signals forward-returns ledger interface showing scanner alerts, hit-rate distributions, and ticker-level return curves",
+      "context": "og:image",
+      "line": 16
+    },
+    "twitterImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp",
+      "alt": "Signals forward-returns ledger interface showing scanner alerts, hit-rate distributions, and ticker-level return curves",
+      "context": "twitter:image",
+      "line": 26
+    },
+    "flags": [
+      "portrait-og:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_002_bg_home.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_045_12_027_mixed_new.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_044_12_026_mixed_new.webp",
+      "reused-spiritatlas-background:og:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp",
+      "reused-spiritatlas-background:twitter:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp"
+    ]
+  },
+  {
+    "site": "isn",
+    "path": "/phantom-browser",
+    "title": "Phantom Browser | iSN.BiZ Inc",
+    "description": "Phantom Browser — Rust + Tauri stealth browser orchestration platform built around Camoufox, BrowserForge fingerprints, Decodo residential and mobile proxies, and a multi-tier IP reputation gate (IPQS, ProxyCheck, AbuseIPDB) for OSINT, scraping, and adversarial-resistant automation.",
+    "role": "product",
+    "productSlug": "phantom-browser",
+    "headings": {
+      "h1": [
+        "Phantom Browser"
+      ],
+      "h2": [
+        "Signature Key Art",
+        "Architecture Overview",
+        "Deep Dive: Stealth and Fingerprint Resistance",
+        "Component Architecture",
+        "Implementation Details",
+        "Technology Stack",
+        "Why It Matters",
+        "Interested in This Solution?"
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 47
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_007_bg_settings.webp",
+        "alt": "Phantom Browser stealth orchestration interface showing profile fleet, fingerprint coherence, and proxy reputation scoring",
+        "context": "img",
+        "line": 102
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_003_bg_loading.webp",
+        "alt": "Phantom Browser stealth key art with proxy mesh and fingerprint coherence lattice &mdash; study 1",
+        "context": "img",
+        "line": 117
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_044_12_026_mixed_new.webp",
+        "alt": "Phantom Browser stealth key art with proxy mesh and fingerprint coherence lattice &mdash; study 2",
+        "context": "img",
+        "line": 120
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_008_bg_splash_onboarding.webp",
+        "alt": "Phantom Browser stealth key art with proxy mesh and fingerprint coherence lattice &mdash; study 3",
+        "context": "img",
+        "line": 123
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 434
+      }
+    ],
+    "ogImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_007_bg_settings.webp",
+      "alt": "Phantom Browser stealth orchestration — profile fleet, fingerprint coherence, and proxy reputation scoring",
+      "context": "og:image",
+      "line": 16
+    },
+    "twitterImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_007_bg_settings.webp",
+      "alt": "Phantom Browser stealth orchestration — profile fleet, fingerprint coherence, and proxy reputation scoring",
+      "context": "twitter:image",
+      "line": 26
+    },
+    "flags": [
+      "portrait-og:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_007_bg_settings.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_007_bg_settings.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_003_bg_loading.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_044_12_026_mixed_new.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_008_bg_splash_onboarding.webp",
+      "reused-spiritatlas-background:og:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_007_bg_settings.webp",
+      "reused-spiritatlas-background:twitter:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_007_bg_settings.webp"
+    ]
+  },
+  {
+    "site": "isn",
+    "path": "/crucible",
+    "title": "Crucible | LLM Red-Team and Adversarial Evaluation Stack | iSN.BiZ Inc",
+    "description": "Crucible - LLM red-team and adversarial evaluation platform. Jailbreak research, eval and judge harness, and agent-transcript scoring across frontier models. Built on a LibreChat fork, hosted at crc.isn.biz.",
+    "role": "product",
+    "productSlug": "crucible",
+    "headings": {
+      "h1": [
+        "Crucible"
+      ],
+      "h2": [
+        "Signature Key Art",
+        "Threat Model and Mission",
+        "Deep Dive: Jailbreak Research Methodology",
+        "Eval Harness Components",
+        "Implementation Details",
+        "Technology Stack",
+        "Why It Matters: Industry Context",
+        "Interested in This Solution?"
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 47
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_005_bg_meditation_chakra.webp",
+        "alt": "Crucible LLM red-team and adversarial evaluation stack hero visualization with dark obsidian aesthetic, violet circuit traces, and luminous evaluation pipeline",
+        "context": "img",
+        "line": 102
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_004_bg_lotus_realm_00001.webp",
+        "alt": "Crucible adversarial evaluation key art with violet circuit traces and luminous data streams - study 1",
+        "context": "img",
+        "line": 117
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_007_bg_settings.webp",
+        "alt": "Crucible adversarial evaluation key art with violet circuit traces and luminous data streams - study 2",
+        "context": "img",
+        "line": 120
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_045_12_027_mixed_new.webp",
+        "alt": "Crucible adversarial evaluation key art with violet circuit traces and luminous data streams - study 3",
+        "context": "img",
+        "line": 123
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 388
+      }
+    ],
+    "ogImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_005_bg_meditation_chakra.webp",
+      "alt": "Crucible LLM red-team and adversarial evaluation stack key art with dark obsidian aesthetic and violet circuit traces",
+      "context": "og:image",
+      "line": 16
+    },
+    "twitterImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_005_bg_meditation_chakra.webp",
+      "alt": "Crucible LLM red-team and adversarial evaluation stack key art with dark obsidian aesthetic and violet circuit traces",
+      "context": "twitter:image",
+      "line": 26
+    },
+    "flags": [
+      "portrait-og:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_005_bg_meditation_chakra.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_005_bg_meditation_chakra.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_004_bg_lotus_realm_00001.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_007_bg_settings.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_045_12_027_mixed_new.webp",
+      "reused-spiritatlas-background:og:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_005_bg_meditation_chakra.webp",
+      "reused-spiritatlas-background:twitter:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_005_bg_meditation_chakra.webp"
+    ]
+  },
+  {
+    "site": "isn",
+    "path": "/hermes-aingels",
+    "title": "HERMES + AiNGELS - NFT-as-Agent | iSN.BiZ Inc",
+    "description": "HERMES + AiNGELS - NFT-as-Agent architecture on Base L2. ERC-6551 token-bound accounts holding embodied AI identities with cryptographically anchored voice, visual, and personality artifacts. Genesis covenant agent and 12-sister lineage tree.",
+    "role": "product",
+    "productSlug": "hermes-aingels",
+    "headings": {
+      "h1": [
+        "HERMES + AiNGELS"
+      ],
+      "h2": [
+        "Signature Key Art",
+        "The NFT-as-Agent Thesis",
+        "Deep Dive: Architecture",
+        "Genesis & Lineage",
+        "The Agent Birth Pipeline",
+        "Technology Stack",
+        "Security Posture",
+        "Cryptographic Anchor Set (per Agent)",
+        "Interested in NFT-as-Agent Architecture?"
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 47
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_004_bg_lotus_realm_00001.webp",
+        "alt": "HERMES + AiNGELS NFT-as-Agent architecture key art - cryptographic identity lattice on Base L2",
+        "context": "img",
+        "line": 102
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_008_bg_splash_onboarding.webp",
+        "alt": "HERMES + AiNGELS NFT-as-Agent visual study - identity lattice 1",
+        "context": "img",
+        "line": 117
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp",
+        "alt": "HERMES + AiNGELS NFT-as-Agent visual study - identity lattice 2",
+        "context": "img",
+        "line": 120
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_045_12_027_mixed_new.webp",
+        "alt": "HERMES + AiNGELS NFT-as-Agent visual study - identity lattice 3",
+        "context": "img",
+        "line": 123
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 485
+      }
+    ],
+    "ogImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_004_bg_lotus_realm_00001.webp",
+      "alt": "HERMES + AiNGELS NFT-as-Agent architecture key art - cryptographic identity lattice on Base L2",
+      "context": "og:image",
+      "line": 16
+    },
+    "twitterImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_004_bg_lotus_realm_00001.webp",
+      "alt": "HERMES + AiNGELS NFT-as-Agent architecture key art - cryptographic identity lattice on Base L2",
+      "context": "twitter:image",
+      "line": 26
+    },
+    "flags": [
+      "portrait-og:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_004_bg_lotus_realm_00001.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_004_bg_lotus_realm_00001.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_008_bg_splash_onboarding.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp",
+      "reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_045_12_027_mixed_new.webp",
+      "reused-spiritatlas-background:og:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_004_bg_lotus_realm_00001.webp",
+      "reused-spiritatlas-background:twitter:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_004_bg_lotus_realm_00001.webp"
+    ]
+  },
+  {
+    "site": "isn",
+    "path": "/hroc-files",
+    "title": "HROC — Our 501(c)(3) Beneficiary | iSN.BiZ Inc",
+    "description": "HROC Inc is the 501(c)(3) cause partner of iSN.BiZ Inc. Proceeds from automation revenue products fund harm-reduction operations and outreach for vulnerable communities. Form 1023 filed with the IRS; mission-driven, transparency-first.",
+    "role": "cause-partner",
+    "headings": {
+      "h1": [
+        "HROC — The Cause iSN.BiZ Was Built to Fund"
+      ],
+      "h2": [
+        "Why HROC Sits Beside iSN.BiZ",
+        "What HROC Actually Does",
+        "How the Giving Structure Works",
+        "Governance and Current Status",
+        "Visit HROC Inc Directly"
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 43
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_008_bg_splash_onboarding.webp",
+        "alt": "HROC harm-reduction outreach &mdash; the cause that iSN.BiZ Inc was structured to fund",
+        "context": "img",
+        "line": 85
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 216
+      }
+    ],
+    "ogImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_008_bg_splash_onboarding.webp",
+      "alt": "HROC harm-reduction outreach — the 501(c)(3) cause partner that iSN.BiZ Inc was structured to fund",
+      "context": "og:image",
+      "line": 16
+    },
+    "twitterImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_008_bg_splash_onboarding.webp",
+      "alt": "HROC harm-reduction outreach — the 501(c)(3) cause partner that iSN.BiZ Inc was structured to fund",
+      "context": "twitter:image",
+      "line": 26
+    },
+    "flags": [
+      "portrait-og:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_008_bg_splash_onboarding.webp"
+    ]
+  },
+  {
+    "site": "isn",
+    "path": "/jonathan",
+    "title": "Jonathan - Chairman & CEO | iSN.BiZ Inc",
+    "description": "Jonathan - Chairman & CEO of iSN.BiZ Inc. A visionary technology leader with 11+ years of experience building enterprise software solutions that transform businesses through AI, cloud computing, and strategic innovation.",
+    "role": "leadership",
+    "headings": {
+      "h1": [
+        "Jonathan Mallinger"
+      ],
+      "h2": [
+        "Areas of Excellence",
+        "Leading Through Innovation",
+        "Ready to Build Something Extraordinary?"
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 434
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/portraits/jonathan_portrait_1.webp",
+        "alt": "Jonathan - Chairman and CEO of iSN.BiZ Inc",
+        "context": "img",
+        "line": 467
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/founders/corporate_photos/jonathan_collaborating.webp",
+        "alt": "Jonathan presenting company vision and strategic roadmap",
+        "context": "img",
+        "line": 562
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/founders/corporate_photos/jonathan_working.webp",
+        "alt": "Jonathan architecting enterprise software solutions",
+        "context": "img",
+        "line": 576
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 615
+      }
+    ],
+    "ogImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/portraits/jonathan_portrait_1.webp",
+      "alt": "",
+      "context": "og:image",
+      "line": 14
+    },
+    "twitterImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/portraits/jonathan_portrait_1.webp",
+      "alt": "",
+      "context": "twitter:image",
+      "line": 22
+    },
+    "flags": [
+      "portrait-og:https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/portraits/jonathan_portrait_1.webp"
+    ]
+  },
+  {
+    "site": "isn",
+    "path": "/bri",
+    "title": "Bri - Secretary & COO | iSN.BiZ Inc",
+    "description": "Bri - Secretary & COO of iSN.BiZ Inc. The operational mastermind transforming complex processes into streamlined systems that drive efficiency, enable scale, and deliver excellence.",
+    "role": "leadership",
+    "headings": {
+      "h1": [
+        "Brianna Bear"
+      ],
+      "h2": [
+        "Areas of Excellence",
+        "Engineering Operational Excellence",
+        "Experience Operational Excellence"
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 422
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/portraits/bri_portrait_1.webp",
+        "alt": "Bri - Secretary and Chief Operating Officer of iSN.BiZ Inc",
+        "context": "img",
+        "line": 455
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/founders/corporate_photos/bri_analyzing.webp",
+        "alt": "Bri designing operational systems and workflows",
+        "context": "img",
+        "line": 550
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/founders/corporate_photos/bri_presenting.webp",
+        "alt": "Bri presenting operational strategy to stakeholders",
+        "context": "img",
+        "line": 564
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/founders/candid_20260213/brianna_casual_planning.webp",
+        "alt": "Brianna Bear planning operations in a candid work setting",
+        "context": "img",
+        "line": 589
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/founders/candid_20260213/jonathan_brianna_team_building.webp",
+        "alt": "Brianna Bear and Jonathan Mallinger collaborating during team building",
+        "context": "img",
+        "line": 598
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 629
+      }
+    ],
+    "ogImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/portraits/bri_portrait_1.webp",
+      "alt": "",
+      "context": "og:image",
+      "line": 14
+    },
+    "twitterImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/portraits/bri_portrait_1.webp",
+      "alt": "",
+      "context": "twitter:image",
+      "line": 22
+    },
+    "flags": [
+      "portrait-og:https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/portraits/bri_portrait_1.webp"
+    ]
+  },
+  {
+    "site": "isn",
+    "path": "/lilly",
+    "title": "Lilly - Treasurer & CFO | iSN.BiZ Inc",
+    "description": "Lilly - Treasurer & CFO of iSN.BiZ Inc. A strategic financial leader driving sustainable growth through data-driven decision making, resource optimization, and fiscal excellence.",
+    "role": "leadership",
+    "headings": {
+      "h1": [
+        "Lilly Fedas"
+      ],
+      "h2": [
+        "Areas of Excellence",
+        "Strategic Financial Leadership",
+        "Partner with Financial Excellence"
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 422
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/founders/lilly.webp",
+        "alt": "Lilly - Treasurer and Chief Financial Officer of iSN.BiZ Inc",
+        "context": "img",
+        "line": 455
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/founders/corporate_photos/lilly_collaborating.webp",
+        "alt": "Lilly managing financial operations and strategic planning",
+        "context": "img",
+        "line": 550
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/founders/corporate_photos/lilly_presenting.webp",
+        "alt": "Lilly presenting financial strategy to stakeholders",
+        "context": "img",
+        "line": 564
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/founders/candid_20260213/lilly_casual_finance_review.webp",
+        "alt": "Lilly Fedas reviewing financial strategy in a candid setting",
+        "context": "img",
+        "line": 589
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/founders/candid_20260213/lilly_casual_finance_review.webp",
+        "alt": "Lilly Fedas collaborating with leadership on financial and delivery planning",
+        "context": "img",
+        "line": 598
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 630
+      }
+    ],
+    "ogImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/founders/lilly.webp",
+      "alt": "",
+      "context": "og:image",
+      "line": 14
+    },
+    "twitterImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/founders/lilly.webp",
+      "alt": "",
+      "context": "twitter:image",
+      "line": 22
+    },
+    "flags": [
+      "portrait-og:https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/founders/lilly.webp"
+    ]
+  },
+  {
+    "site": "isn",
+    "path": "/privacy",
+    "title": "Privacy Policy - iSN.BiZ Inc",
+    "description": "iSN.BiZ Inc Privacy Policy — how we collect, use, and protect your information.",
+    "role": "legal",
+    "headings": {
+      "h1": [
+        "Privacy Policy"
+      ],
+      "h2": [
+        "1. Who We Are",
+        "2. Information We Collect",
+        "3. How We Use Your Information",
+        "4. Cookies and Analytics",
+        "5. Third-Party Services",
+        "6. Data Sharing and Sale",
+        "7. Data Retention",
+        "8. Your Rights",
+        "9. California Residents (CCPA)",
+        "10. Security",
+        "11. Children's Privacy",
+        "12. Changes to This Policy",
+        "13. Contact"
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 97
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/hero_logo.webp",
+        "alt": "iSN.BiZ Inc",
+        "context": "img",
+        "line": 129
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 293
+      }
+    ],
+    "ogImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/og/og_default.webp",
+      "alt": "iSN.BiZ Inc",
+      "context": "og:image",
+      "line": 19
+    },
+    "twitterImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/og/og_default.webp",
+      "alt": "iSN.BiZ Inc",
+      "context": "twitter:image",
+      "line": 29
+    },
+    "flags": []
+  },
+  {
+    "site": "isn",
+    "path": "/terms",
+    "title": "Terms of Use - iSN.BiZ Inc",
+    "description": "iSN.BiZ Inc Terms of Use — the rules and conditions governing your use of our website.",
+    "role": "legal",
+    "headings": {
+      "h1": [
+        "Terms of Use"
+      ],
+      "h2": [
+        "1. Acceptance of Terms",
+        "2. Use of the Site",
+        "3. Intellectual Property",
+        "4. Disclaimer of Warranties",
+        "5. Limitation of Liability",
+        "6. Investment Information",
+        "7. Third-Party Links",
+        "8. Privacy",
+        "9. Modifications",
+        "10. Governing Law",
+        "11. Contact"
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 97
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/hero_logo.webp",
+        "alt": "iSN.BiZ Inc",
+        "context": "img",
+        "line": 129
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 286
+      }
+    ],
+    "ogImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/og/og_default.webp",
+      "alt": "iSN.BiZ Inc",
+      "context": "og:image",
+      "line": 19
+    },
+    "twitterImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/og/og_default.webp",
+      "alt": "iSN.BiZ Inc",
+      "context": "twitter:image",
+      "line": 29
+    },
+    "flags": []
+  },
+  {
+    "site": "isn",
+    "path": "/404",
+    "title": "404 - Page Not Found | iSN.BiZ Inc",
+    "description": "The page you",
+    "role": "system",
+    "headings": {
+      "h1": [
+        "404"
+      ],
+      "h2": [
+        "Page Not Found"
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 40
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/logos/navbar_logo.webp",
+        "alt": "iSN.BiZ Inc Logo",
+        "context": "img",
+        "line": 126
+      }
+    ],
+    "ogImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/og/og_default.webp",
+      "alt": "iSN.BiZ Inc",
+      "context": "og:image",
+      "line": 14
+    },
+    "twitterImage": {
+      "src": "https://b2c.isn.biz/file/isnbiz-cdn/premium_v3/og/og_default.webp",
+      "alt": "iSN.BiZ Inc",
+      "context": "twitter:image",
+      "line": 23
+    },
+    "flags": []
+  }
+]

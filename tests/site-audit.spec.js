@@ -2,6 +2,7 @@
 const { test, expect } = require('@playwright/test');
 
 const BASE_URL = process.env.BASE_URL || 'http://localhost:8080';
+const APPROVED_IMAGE_HOSTS = ['b2c.isn.biz', 's3.amazonaws.com', 'isnbiz-assets', 'amazonaws.com'];
 
 const ALL_PAGES = [
   { path: '/', name: 'Home' },
@@ -132,8 +133,6 @@ test.describe('Section Visibility', () => {
 test.describe('Images Load from CDN', () => {
   test.setTimeout(60000); // 60s per test for image-heavy pages
 
-  const APPROVED_HOSTS = ['b2c.isn.biz', 's3.amazonaws.com', 'isnbiz-assets', 'amazonaws.com'];
-
   for (const page of ALL_PAGES) {
     test(`${page.name} all images load successfully`, async ({ page: p }) => {
       const failedImages = [];
@@ -166,7 +165,7 @@ test.describe('Images Load from CDN', () => {
       const offHost = imgSrcs.filter(i =>
         i.src &&
         !i.src.startsWith('data:') &&
-        !APPROVED_HOSTS.some(h => i.src.includes(h))
+        !APPROVED_IMAGE_HOSTS.some(h => i.src.includes(h))
       );
       expect(offHost, `Images on ${page.name} from non-approved host: ${JSON.stringify(offHost)}`).toHaveLength(0);
 
@@ -214,6 +213,20 @@ test.describe('SEO Basics', () => {
       const metaDesc = await p.locator('meta[name="description"]').getAttribute('content');
       expect(metaDesc, `${page.name} missing meta description`).toBeTruthy();
       expect(metaDesc.length, `${page.name} meta description too short`).toBeGreaterThan(20);
+    });
+
+    test(`${page.name} social image metadata uses approved CDN hosts`, async ({ page: p }) => {
+      await p.goto(`${BASE_URL}${page.path}`, GOTO_OPTS);
+
+      const socialImages = await p
+        .locator('meta[property="og:image"], meta[property="og:image:secure_url"], meta[name="twitter:image"]')
+        .evaluateAll(metas => metas.map(meta => meta.getAttribute('content')).filter(Boolean));
+
+      const offHost = socialImages.filter(src =>
+        !src.startsWith('data:') &&
+        !APPROVED_IMAGE_HOSTS.some(host => src.includes(host))
+      );
+      expect(offHost, `${page.name} social images from non-approved hosts: ${JSON.stringify(offHost)}`).toHaveLength(0);
     });
   }
 });

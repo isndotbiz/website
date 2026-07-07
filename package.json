@@ -7,7 +7,13 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx playwright test",
+    "visual:inventory": "bun tools/visual-workflow/inventory.ts",
+    "visual:prompts": "bun tools/visual-workflow/prompts.ts",
+    "visual:probe": "bun tools/visual-workflow/generate.ts --probe",
+    "visual:gpt-image-2": "bun tools/visual-workflow/gpt-image-2.ts",
+    "visual:hroc-map": "bun tools/visual-workflow/hroc-map.ts",
+    "visual:validate": "bun tools/visual-workflow/validate.ts"
   },
   "repository": {
     "type": "git",

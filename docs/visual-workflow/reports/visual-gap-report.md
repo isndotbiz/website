@@ -1,0 +1,94 @@
+# Visual Gap Report
+
+## iSN Product Flags
+
+- /provenance: portrait-og:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_002_bg_home.webp
+- /provenance: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_002_bg_home.webp
+- /provenance: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_003_bg_loading.webp
+- /provenance: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp
+- /provenance: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_044_12_026_mixed_new.webp
+- /provenance: reused-spiritatlas-background:og:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_002_bg_home.webp
+- /provenance: reused-spiritatlas-background:twitter:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_002_bg_home.webp
+- /signals/: portrait-og:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp
+- /signals/: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp
+- /signals/: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_002_bg_home.webp
+- /signals/: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_045_12_027_mixed_new.webp
+- /signals/: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_044_12_026_mixed_new.webp
+- /signals/: reused-spiritatlas-background:og:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp
+- /signals/: reused-spiritatlas-background:twitter:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp
+- /phantom-browser: portrait-og:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_007_bg_settings.webp
+- /phantom-browser: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_007_bg_settings.webp
+- /phantom-browser: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_003_bg_loading.webp
+- /phantom-browser: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_044_12_026_mixed_new.webp
+- /phantom-browser: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_008_bg_splash_onboarding.webp
+- /phantom-browser: reused-spiritatlas-background:og:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_007_bg_settings.webp
+- /phantom-browser: reused-spiritatlas-background:twitter:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_007_bg_settings.webp
+- /crucible: portrait-og:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_005_bg_meditation_chakra.webp
+- /crucible: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_005_bg_meditation_chakra.webp
+- /crucible: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_004_bg_lotus_realm_00001.webp
+- /crucible: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_007_bg_settings.webp
+- /crucible: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_045_12_027_mixed_new.webp
+- /crucible: reused-spiritatlas-background:og:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_005_bg_meditation_chakra.webp
+- /crucible: reused-spiritatlas-background:twitter:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_005_bg_meditation_chakra.webp
+- /hermes-aingels: portrait-og:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_004_bg_lotus_realm_00001.webp
+- /hermes-aingels: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_004_bg_lotus_realm_00001.webp
+- /hermes-aingels: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_008_bg_splash_onboarding.webp
+- /hermes-aingels: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_006_bg_moon_phase_tracking.webp
+- /hermes-aingels: reused-spiritatlas-background:img:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_045_12_027_mixed_new.webp
+- /hermes-aingels: reused-spiritatlas-background:og:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_004_bg_lotus_realm_00001.webp
+- /hermes-aingels: reused-spiritatlas-background:twitter:image:https://b2c.isn.biz/file/isnbiz-cdn/spiritatlas/images/backgrounds_24/9x16_004_bg_lotus_realm_00001.webp
+
+## HROC Manifest Usage
+
+- unused: hero_banners/hero_01_mobile_outreach_vehicle.webp (Homepage hero banner)
+- unused: hero_banners/hero_02_community_engagement.webp (About page hero)
+- unused: hero_banners/hero_03_peer_support.webp (Services page hero)
+- unused: hero_banners/hero_04_naloxone_training.webp (Training page hero)
+- unused: hero_banners/hero_05_hands_holding.webp (Donate page hero)
+- unused: hero_banners/hero_06_pacific_northwest_landscape.webp (Contact page hero)
+- unused: hero_banners/hero_07_community_circle.webp (Programs page hero)
+- unused: service_icons/icon_01_naloxone_kit.webp (Services grid icon)
+- unused: service_icons/icon_02_syringe_exchange.webp (Services grid icon)
+- unused: service_icons/icon_03_peer_support.webp (Services grid icon)
+- unused: service_icons/icon_04_healthcare_navigation.webp (Services grid icon)
+- unused: service_icons/icon_05_mobile_outreach.webp (Services grid icon)
+- unused: service_icons/icon_06_education_training.webp (Services grid icon)
+- unused: service_icons/icon_07_harm_reduction_supplies.webp (Services grid icon)
+- unused: service_icons/icon_08_crisis_support.webp (Services grid icon)
+- unused: service_icons/icon_09_cultural_competency.webp (Services grid icon)
+- unused: service_icons/icon_10_community_resources.webp (Services grid icon)
+- unused: service_icons/icon_11_safe_space.webp (Services grid icon)
+- unused: service_icons/icon_12_wellness_check.webp (Services grid icon)
+- unused: background_patterns/bg_pattern_01_flowing_waves.webp (Section backgrounds)
+- unused: background_patterns/bg_pattern_02_geometric_shapes.webp (Section backgrounds)
+- unused: background_patterns/bg_pattern_03_gradient_mesh.webp (Hero section overlay)
+- unused: background_patterns/bg_pattern_04_organic_curves.webp (Content section backgrounds)
+- unused: background_patterns/bg_pattern_05_dot_matrix.webp (Statistics section background)
+- unused: background_patterns/bg_pattern_06_watercolor_wash.webp (Testimonial section background)
+- unused: background_patterns/bg_pattern_07_line_art.webp (About section background)
+- unused: background_patterns/bg_pattern_08_radial_burst.webp (CTA section background)
+- unused: background_patterns/bg_pattern_09_tribal_modern.webp (Cultural programs section)
+- unused: background_patterns/bg_pattern_10_light_texture.webp (Universal background overlay)
+- unused: community_photos/community_01_diverse_group_smiling.webp (Community impact section)
+- unused: community_photos/community_02_peer_counselor_listening.webp (Peer support section)
+- unused: community_photos/community_04_volunteers_organizing.webp (Get involved section)
+- unused: community_photos/community_05_person_receiving_naloxone.webp (Naloxone program section)
+- unused: community_photos/community_06_group_training_session.webp (Education programs section)
+- unused: community_photos/community_08_safe_space_interior.webp (Facilities section)
+- unused: community_photos/community_09_person_hope_expression.webp (Testimonial section)
+- unused: community_photos/community_12_people_walking_together.webp (Peer support programs)
+- unused: community_photos/community_13_celebration_gathering.webp (Events and news section)
+- unused: community_photos/community_14_person_receiving_care.webp (Healthcare services section)
+- unused: community_photos/community_15_youth_empowerment.webp (Youth programs section)
+- unused: informational_graphics/info_01_service_area_map.webp (Service area section)
+- unused: informational_graphics/info_02_naloxone_saves_lives_stat.webp (Impact statistics section)
+- unused: informational_graphics/info_03_harm_reduction_principles.webp (Education resources section)
+- unused: informational_graphics/info_04_services_flowchart.webp (How it works section)
+- unused: informational_graphics/info_05_impact_numbers.webp (Annual impact section)
+- unused: informational_graphics/info_06_overdose_response_steps.webp (Emergency response section)
+- unused: informational_graphics/info_07_resource_directory.webp (Resources page)
+- unused: informational_graphics/info_08_timeline_organization_history.webp (About history section)
+- unused: informational_graphics/info_09_supplies_checklist.webp (Supplies information section)
+- unused: informational_graphics/info_10_volunteer_opportunities.webp (Get involved page)
+- unused: informational_graphics/info_11_donation_impact.webp (Donate page)
+- unused: informational_graphics/info_12_monthly_outreach_calendar.webp (Schedule section)

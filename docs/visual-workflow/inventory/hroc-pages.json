@@ -1,0 +1,410 @@
+[
+  {
+    "site": "hroc",
+    "path": "/",
+    "title": "Healing Roots Outreach Collective | Mobile Harm Reduction Field Guide",
+    "description": "Healing Roots Outreach Collective delivers Indigenous-led, peer-based mobile harm reduction across King and Pierce Counties with naloxone, wound care, safer use supplies, and community-grounded support.",
+    "role": "home",
+    "headings": {
+      "h1": [
+        "Care that shows up where the system usually doesn’t."
+      ],
+      "h2": [
+        "Life-saving support, carried into the field.",
+        "Built for trust, not bureaucracy.",
+        "The people setting the tone for the work.",
+        "Fund what actually reaches people."
+      ]
+    },
+    "images": [
+      {
+        "src": "https://hroc-website-20251230043930.s3.us-east-1.amazonaws.com/generated_images/community_photos/community_11_team_photo_staff.webp",
+        "alt": "",
+        "context": "img",
+        "line": 148
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/bri/bri_headshot_6dd6cc.webp",
+        "alt": "",
+        "context": "img",
+        "line": 151
+      },
+      {
+        "src": "https://hroc-website-20251230043930.s3.us-east-1.amazonaws.com/generated_images/community_photos/community_10_hands_distributing_supplies.webp",
+        "alt": "",
+        "context": "img",
+        "line": 154
+      },
+      {
+        "src": "https://hroc-website-20251230043930.s3.us-east-1.amazonaws.com/generated_images/community_photos/community_07_mobile_unit_service.webp",
+        "alt": "Mobile outreach van serving community members",
+        "context": "img",
+        "line": 246
+      },
+      {
+        "src": "https://hroc-website-20251230043930.s3.us-east-1.amazonaws.com/generated_images/community_photos/community_03_elder_and_youth.webp",
+        "alt": "Elder and youth in intergenerational community connection",
+        "context": "img",
+        "line": 249
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/bri/bri_headshot_6dd6cc.webp",
+        "alt": "Portrait of Bri",
+        "context": "img",
+        "line": 288
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/lilly/qwen_lilly_06_outdoor_professional.webp",
+        "alt": "Portrait of Lilly",
+        "context": "img",
+        "line": 303
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/jonathan/jonathan_headshot.png",
+        "alt": "Portrait of Jonathan",
+        "context": "img",
+        "line": 318
+      }
+    ],
+    "ogImage": {
+      "src": "https://hroc-website-20251230043930.s3.us-east-1.amazonaws.com/generated_images/community_photos/community_11_team_photo_staff.webp",
+      "alt": "Healing Roots Outreach Collective team in the field",
+      "context": "og:image",
+      "line": 15
+    },
+    "twitterImage": {
+      "src": "https://hroc-website-20251230043930.s3.us-east-1.amazonaws.com/generated_images/community_photos/community_11_team_photo_staff.webp",
+      "alt": "",
+      "context": "twitter:image",
+      "line": 24
+    },
+    "flags": [
+      "missing-alt:https://hroc-website-20251230043930.s3.us-east-1.amazonaws.com/generated_images/community_photos/community_11_team_photo_staff.webp",
+      "missing-alt:https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/bri/bri_headshot_6dd6cc.webp",
+      "missing-alt:https://hroc-website-20251230043930.s3.us-east-1.amazonaws.com/generated_images/community_photos/community_10_hands_distributing_supplies.webp"
+    ]
+  },
+  {
+    "site": "hroc",
+    "path": "/donate",
+    "title": "Donate | Healing Roots Outreach Collective",
+    "description": "Donate to Healing Roots Outreach Collective — a Washington 501(c)(3) nonprofit delivering Indigenous-led, peer-based mobile harm reduction across King and Pierce Counties. Tax-deductible. EIN 39-3295288.",
+    "role": "core",
+    "headings": {
+      "h1": [
+        "Every dollar becomes a kit, a route, a moment that did not become a death."
+      ],
+      "h2": [
+        "Donate through Every.org",
+        "Send a check",
+        "Major gifts, grants, and partnerships",
+        "Concrete impact at every level",
+        "Governance and accountability"
+      ]
+    },
+    "images": [],
+    "ogImage": {
+      "src": "https://hroc-website-20251230043930.s3.us-east-1.amazonaws.com/generated_images/community_photos/community_11_team_photo_staff.webp",
+      "alt": "",
+      "context": "og:image",
+      "line": 17
+    },
+    "twitterImage": {
+      "src": "https://hroc-website-20251230043930.s3.us-east-1.amazonaws.com/generated_images/community_photos/community_11_team_photo_staff.webp",
+      "alt": "",
+      "context": "twitter:image",
+      "line": 21
+    },
+    "flags": []
+  },
+  {
+    "site": "hroc",
+    "path": "/documents",
+    "title": "HROC Document Library",
+    "description": "Browse Healing Roots Outreach Collective governance records, policies, IRS materials, registrations, financial plans, and operational documents.",
+    "role": "core",
+    "headings": {
+      "h1": [
+        "Governance, policies, filings, and planning records in one place."
+      ],
+      "h2": [
+        "Governance",
+        "IRS + federal materials",
+        "Policies",
+        "Registrations + licenses",
+        "Financial plans",
+        "Operations + reference guides",
+        "SPV materials"
+      ]
+    },
+    "images": [],
+    "flags": []
+  },
+  {
+    "site": "hroc",
+    "path": "/bri",
+    "title": "Bri | Healing Roots Outreach Collective",
+    "description": "Meet Bri, HROC Secretary and Chief Operations Officer, shaping field operations, peer-led outreach, and care rooted in lived experience.",
+    "role": "leadership",
+    "headings": {
+      "h1": [
+        "Bri keeps the work accountable to the people it serves."
+      ],
+      "h2": [
+        "Operational care with moral clarity.",
+        "Meet the rest of the leadership team."
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/bri/bri_headshot_6dd6cc.webp",
+        "alt": "Bri, Secretary and Chief Operations Officer of HROC",
+        "context": "img",
+        "line": 69
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/bri/bri_varied_03.webp",
+        "alt": "Bri outdoors in community",
+        "context": "img",
+        "line": 101
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/bri/qwen_bri_02_business_casual_outdoor_662419.webp",
+        "alt": "Bri working with community members",
+        "context": "img",
+        "line": 106
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/bri/qwen_bri_01_professional_office_laptop.webp",
+        "alt": "Bri planning operations",
+        "context": "img",
+        "line": 111
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/bri/bri_professional_08_2.webp",
+        "alt": "Portrait of Bri in a professional setting",
+        "context": "img",
+        "line": 116
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/lilly/qwen_lilly_06_outdoor_professional.webp",
+        "alt": "Lilly",
+        "context": "img",
+        "line": 131
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/jonathan/jonathan_headshot.png",
+        "alt": "Jonathan",
+        "context": "img",
+        "line": 132
+      },
+      {
+        "src": "https://hroc-website-20251230043930.s3.us-east-1.amazonaws.com/generated_images/community_photos/community_11_team_photo_staff.webp",
+        "alt": "HROC team",
+        "context": "img",
+        "line": 133
+      }
+    ],
+    "flags": []
+  },
+  {
+    "site": "hroc",
+    "path": "/jonathan",
+    "title": "Jonathan | Healing Roots Outreach Collective",
+    "description": "Meet Jonathan, HROC Chairman and Chief Executive Officer, shaping strategy, infrastructure, and systems that stay accountable to community needs.",
+    "role": "leadership",
+    "headings": {
+      "h1": [
+        "Jonathan builds the systems that let care scale without losing its center."
+      ],
+      "h2": [
+        "Strategy that stays human.",
+        "Continue through the leadership team."
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/jonathan/jonathan_headshot.png",
+        "alt": "Jonathan, Chairman and Chief Executive Officer of HROC",
+        "context": "img",
+        "line": 69
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/jonathan/jonathan_varied_01.webp",
+        "alt": "Jonathan in a leadership setting",
+        "context": "img",
+        "line": 101
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/jonathan/jonathan_professional_09_2.webp",
+        "alt": "Jonathan working on strategy",
+        "context": "img",
+        "line": 106
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/jonathan/jonathan_varied_05.webp",
+        "alt": "Jonathan with analytics and planning tools",
+        "context": "img",
+        "line": 111
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/jonathan/jonathan_varied_07.webp",
+        "alt": "Jonathan in a strategic portrait",
+        "context": "img",
+        "line": 116
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/bri/bri_headshot_6dd6cc.webp",
+        "alt": "Bri",
+        "context": "img",
+        "line": 131
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/lilly/qwen_lilly_06_outdoor_professional.webp",
+        "alt": "Lilly",
+        "context": "img",
+        "line": 132
+      },
+      {
+        "src": "https://hroc-website-20251230043930.s3.us-east-1.amazonaws.com/generated_images/community_photos/community_07_mobile_unit_service.webp",
+        "alt": "HROC mobile outreach",
+        "context": "img",
+        "line": 133
+      }
+    ],
+    "flags": []
+  },
+  {
+    "site": "hroc",
+    "path": "/lilly",
+    "title": "Lilly | Healing Roots Outreach Collective",
+    "description": "Meet Lilly, HROC Treasurer and Chief Financial Officer, guiding stewardship, cultural grounding, and sustainable community-centered growth.",
+    "role": "leadership",
+    "headings": {
+      "h1": [
+        "Lilly keeps stewardship tied to healing, not abstraction."
+      ],
+      "h2": [
+        "Stewardship that stays close to community.",
+        "Continue through the leadership team."
+      ]
+    },
+    "images": [
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/lilly/qwen_lilly_06_outdoor_professional.webp",
+        "alt": "Lilly, Treasurer and Chief Financial Officer of HROC",
+        "context": "img",
+        "line": 69
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/lilly/lilly_varied_02.webp",
+        "alt": "Lilly in a reflective leadership moment",
+        "context": "img",
+        "line": 101
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/lilly/qwen_lilly_06_outdoor_professional.webp",
+        "alt": "Lilly speaking in a planning setting",
+        "context": "img",
+        "line": 106
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/lilly/lilly_varied_02.webp",
+        "alt": "Lilly in a wellness setting",
+        "context": "img",
+        "line": 111
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/lilly/qwen_lilly_06_outdoor_professional.webp",
+        "alt": "Lilly in an office setting",
+        "context": "img",
+        "line": 116
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/bri/bri_headshot_6dd6cc.webp",
+        "alt": "Bri",
+        "context": "img",
+        "line": 131
+      },
+      {
+        "src": "https://b2c.isn.biz/file/isnbiz-cdn/hroc/images/founders/jonathan/jonathan_headshot.png",
+        "alt": "Jonathan",
+        "context": "img",
+        "line": 132
+      },
+      {
+        "src": "https://hroc-website-20251230043930.s3.us-east-1.amazonaws.com/generated_images/community_photos/community_03_elder_and_youth.webp",
+        "alt": "Community image",
+        "context": "img",
+        "line": 133
+      }
+    ],
+    "flags": []
+  },
+  {
+    "site": "hroc",
+    "path": "/privacy",
+    "title": "Privacy Policy | Healing Roots Outreach Collective",
+    "description": "Healing Roots Outreach Collective privacy policy: what data we collect, how we use it, your rights, and how to reach us with privacy questions.",
+    "role": "legal",
+    "headings": {
+      "h1": [
+        "How HROC handles your information."
+      ],
+      "h2": [
+        "What we collect",
+        "What we do not collect",
+        "Cookies and analytics",
+        "Third-party services we rely on",
+        "Your rights",
+        "Data security",
+        "Children",
+        "Updates to this policy",
+        "Contact us"
+      ]
+    },
+    "images": [],
+    "flags": []
+  },
+  {
+    "site": "hroc",
+    "path": "/terms",
+    "title": "Terms of Use | Healing Roots Outreach Collective",
+    "description": "Terms of use for hrocinc.org — the website of Healing Roots Outreach Collective, a Washington 501(c)(3) nonprofit.",
+    "role": "legal",
+    "headings": {
+      "h1": [
+        "Terms governing your use of this site."
+      ],
+      "h2": [
+        "Informational purpose",
+        "No warranty",
+        "Acceptable use",
+        "Links to third-party sites",
+        "Donations",
+        "Intellectual property",
+        "Limitation of liability",
+        "Governing law",
+        "Changes to these terms",
+        "Contact"
+      ]
+    },
+    "images": [],
+    "flags": []
+  },
+  {
+    "site": "hroc",
+    "path": "/404",
+    "title": "Page not found | Healing Roots Outreach Collective",
+    "description": "",
+    "role": "system",
+    "headings": {
+      "h1": [
+        "That page is not here."
+      ],
+      "h2": []
+    },
+    "images": [],
+    "flags": []
+  }
+]

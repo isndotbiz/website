@@ -1,0 +1,462 @@
+[
+  {
+    "filename": "hero_01_mobile_outreach_vehicle.webp",
+    "category": "hero_banners",
+    "placement": "Homepage hero banner",
+    "status": "unused",
+    "pages": [],
+    "altText": "HROC mobile outreach vehicle providing community services"
+  },
+  {
+    "filename": "hero_02_community_engagement.webp",
+    "category": "hero_banners",
+    "placement": "About page hero",
+    "status": "unused",
+    "pages": [],
+    "altText": "Community members engaging with HROC healthcare services"
+  },
+  {
+    "filename": "hero_03_peer_support.webp",
+    "category": "hero_banners",
+    "placement": "Services page hero",
+    "status": "unused",
+    "pages": [],
+    "altText": "Peer counselor providing compassionate support"
+  },
+  {
+    "filename": "hero_04_naloxone_training.webp",
+    "category": "hero_banners",
+    "placement": "Training page hero",
+    "status": "unused",
+    "pages": [],
+    "altText": "Community naloxone training and education session"
+  },
+  {
+    "filename": "hero_05_hands_holding.webp",
+    "category": "hero_banners",
+    "placement": "Donate page hero",
+    "status": "unused",
+    "pages": [],
+    "altText": "Hands joined in solidarity and support"
+  },
+  {
+    "filename": "hero_06_pacific_northwest_landscape.webp",
+    "category": "hero_banners",
+    "placement": "Contact page hero",
+    "status": "unused",
+    "pages": [],
+    "altText": "Pacific Northwest landscape representing HROC service area"
+  },
+  {
+    "filename": "hero_07_community_circle.webp",
+    "category": "hero_banners",
+    "placement": "Programs page hero",
+    "status": "unused",
+    "pages": [],
+    "altText": "Community gathering in traditional talking circle formation"
+  },
+  {
+    "filename": "icon_01_naloxone_kit.webp",
+    "category": "service_icons",
+    "placement": "Services grid icon",
+    "status": "unused",
+    "pages": [],
+    "altText": "Naloxone distribution service icon"
+  },
+  {
+    "filename": "icon_02_syringe_exchange.webp",
+    "category": "service_icons",
+    "placement": "Services grid icon",
+    "status": "unused",
+    "pages": [],
+    "altText": "Syringe exchange program icon"
+  },
+  {
+    "filename": "icon_03_peer_support.webp",
+    "category": "service_icons",
+    "placement": "Services grid icon",
+    "status": "unused",
+    "pages": [],
+    "altText": "Peer support services icon"
+  },
+  {
+    "filename": "icon_04_healthcare_navigation.webp",
+    "category": "service_icons",
+    "placement": "Services grid icon",
+    "status": "unused",
+    "pages": [],
+    "altText": "Healthcare navigation services icon"
+  },
+  {
+    "filename": "icon_05_mobile_outreach.webp",
+    "category": "service_icons",
+    "placement": "Services grid icon",
+    "status": "unused",
+    "pages": [],
+    "altText": "Mobile outreach services icon"
+  },
+  {
+    "filename": "icon_06_education_training.webp",
+    "category": "service_icons",
+    "placement": "Services grid icon",
+    "status": "unused",
+    "pages": [],
+    "altText": "Education and training programs icon"
+  },
+  {
+    "filename": "icon_07_harm_reduction_supplies.webp",
+    "category": "service_icons",
+    "placement": "Services grid icon",
+    "status": "unused",
+    "pages": [],
+    "altText": "Harm reduction supplies icon"
+  },
+  {
+    "filename": "icon_08_crisis_support.webp",
+    "category": "service_icons",
+    "placement": "Services grid icon",
+    "status": "unused",
+    "pages": [],
+    "altText": "Crisis support and hotline icon"
+  },
+  {
+    "filename": "icon_09_cultural_competency.webp",
+    "category": "service_icons",
+    "placement": "Services grid icon",
+    "status": "unused",
+    "pages": [],
+    "altText": "Culturally competent care icon"
+  },
+  {
+    "filename": "icon_10_community_resources.webp",
+    "category": "service_icons",
+    "placement": "Services grid icon",
+    "status": "unused",
+    "pages": [],
+    "altText": "Community resources and connections icon"
+  },
+  {
+    "filename": "icon_11_safe_space.webp",
+    "category": "service_icons",
+    "placement": "Services grid icon",
+    "status": "unused",
+    "pages": [],
+    "altText": "Safe and welcoming space icon"
+  },
+  {
+    "filename": "icon_12_wellness_check.webp",
+    "category": "service_icons",
+    "placement": "Services grid icon",
+    "status": "unused",
+    "pages": [],
+    "altText": "Wellness checks and health monitoring icon"
+  },
+  {
+    "filename": "bg_pattern_01_flowing_waves.webp",
+    "category": "background_patterns",
+    "placement": "Section backgrounds",
+    "status": "unused",
+    "pages": [],
+    "altText": "Flowing wave background pattern in brand colors"
+  },
+  {
+    "filename": "bg_pattern_02_geometric_shapes.webp",
+    "category": "background_patterns",
+    "placement": "Section backgrounds",
+    "status": "unused",
+    "pages": [],
+    "altText": "Geometric shapes background pattern"
+  },
+  {
+    "filename": "bg_pattern_03_gradient_mesh.webp",
+    "category": "background_patterns",
+    "placement": "Hero section overlay",
+    "status": "unused",
+    "pages": [],
+    "altText": "Gradient mesh background in brand colors"
+  },
+  {
+    "filename": "bg_pattern_04_organic_curves.webp",
+    "category": "background_patterns",
+    "placement": "Content section backgrounds",
+    "status": "unused",
+    "pages": [],
+    "altText": "Organic curves background pattern"
+  },
+  {
+    "filename": "bg_pattern_05_dot_matrix.webp",
+    "category": "background_patterns",
+    "placement": "Statistics section background",
+    "status": "unused",
+    "pages": [],
+    "altText": "Dot matrix background pattern"
+  },
+  {
+    "filename": "bg_pattern_06_watercolor_wash.webp",
+    "category": "background_patterns",
+    "placement": "Testimonial section background",
+    "status": "unused",
+    "pages": [],
+    "altText": "Watercolor wash background"
+  },
+  {
+    "filename": "bg_pattern_07_line_art.webp",
+    "category": "background_patterns",
+    "placement": "About section background",
+    "status": "unused",
+    "pages": [],
+    "altText": "Line art connection pattern background"
+  },
+  {
+    "filename": "bg_pattern_08_radial_burst.webp",
+    "category": "background_patterns",
+    "placement": "CTA section background",
+    "status": "unused",
+    "pages": [],
+    "altText": "Radial burst background pattern"
+  },
+  {
+    "filename": "bg_pattern_09_tribal_modern.webp",
+    "category": "background_patterns",
+    "placement": "Cultural programs section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Contemporary Indigenous-inspired pattern background"
+  },
+  {
+    "filename": "bg_pattern_10_light_texture.webp",
+    "category": "background_patterns",
+    "placement": "Universal background overlay",
+    "status": "unused",
+    "pages": [],
+    "altText": "Light texture overlay background"
+  },
+  {
+    "filename": "community_01_diverse_group_smiling.webp",
+    "category": "community_photos",
+    "placement": "Community impact section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Diverse community members smiling together"
+  },
+  {
+    "filename": "community_02_peer_counselor_listening.webp",
+    "category": "community_photos",
+    "placement": "Peer support section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Peer counselor providing compassionate listening support"
+  },
+  {
+    "filename": "community_03_elder_and_youth.webp",
+    "category": "community_photos",
+    "placement": "Cultural programs section",
+    "status": "repeated",
+    "pages": [
+      "hrocincorg/HROC_Website_New/index.html",
+      "hrocincorg/HROC_Website_New/lilly.html"
+    ],
+    "altText": "Elder sharing wisdom with younger community member"
+  },
+  {
+    "filename": "community_04_volunteers_organizing.webp",
+    "category": "community_photos",
+    "placement": "Get involved section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Volunteers preparing harm reduction supply kits"
+  },
+  {
+    "filename": "community_05_person_receiving_naloxone.webp",
+    "category": "community_photos",
+    "placement": "Naloxone program section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Community member receiving life-saving naloxone kit"
+  },
+  {
+    "filename": "community_06_group_training_session.webp",
+    "category": "community_photos",
+    "placement": "Education programs section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Community training session on harm reduction practices"
+  },
+  {
+    "filename": "community_07_mobile_unit_service.webp",
+    "category": "community_photos",
+    "placement": "Mobile services section",
+    "status": "repeated",
+    "pages": [
+      "hrocincorg/HROC_Website_New/index.html",
+      "hrocincorg/HROC_Website_New/jonathan.html"
+    ],
+    "altText": "Mobile outreach team serving community members"
+  },
+  {
+    "filename": "community_08_safe_space_interior.webp",
+    "category": "community_photos",
+    "placement": "Facilities section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Welcoming interior of HROC safe space facility"
+  },
+  {
+    "filename": "community_09_person_hope_expression.webp",
+    "category": "community_photos",
+    "placement": "Testimonial section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Community member portrait showing hope and resilience"
+  },
+  {
+    "filename": "community_10_hands_distributing_supplies.webp",
+    "category": "community_photos",
+    "placement": "Services overview section",
+    "status": "used",
+    "pages": [
+      "hrocincorg/HROC_Website_New/index.html"
+    ],
+    "altText": "Hands exchanging harm reduction supplies with care"
+  },
+  {
+    "filename": "community_11_team_photo_staff.webp",
+    "category": "community_photos",
+    "placement": "About team section",
+    "status": "repeated",
+    "pages": [
+      "hrocincorg/HROC_Website_New/index.html",
+      "hrocincorg/HROC_Website_New/donate.html",
+      "hrocincorg/HROC_Website_New/bri.html"
+    ],
+    "altText": "HROC staff and volunteer team photo"
+  },
+  {
+    "filename": "community_12_people_walking_together.webp",
+    "category": "community_photos",
+    "placement": "Peer support programs",
+    "status": "unused",
+    "pages": [],
+    "altText": "Peers walking together in supportive companionship"
+  },
+  {
+    "filename": "community_13_celebration_gathering.webp",
+    "category": "community_photos",
+    "placement": "Events and news section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Community celebration and gathering event"
+  },
+  {
+    "filename": "community_14_person_receiving_care.webp",
+    "category": "community_photos",
+    "placement": "Healthcare services section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Community member receiving compassionate healthcare"
+  },
+  {
+    "filename": "community_15_youth_empowerment.webp",
+    "category": "community_photos",
+    "placement": "Youth programs section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Youth participating in empowerment program"
+  },
+  {
+    "filename": "info_01_service_area_map.webp",
+    "category": "informational_graphics",
+    "placement": "Service area section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Map showing HROC service area in King and Pierce Counties"
+  },
+  {
+    "filename": "info_02_naloxone_saves_lives_stat.webp",
+    "category": "informational_graphics",
+    "placement": "Impact statistics section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Statistics showing lives saved through naloxone distribution"
+  },
+  {
+    "filename": "info_03_harm_reduction_principles.webp",
+    "category": "informational_graphics",
+    "placement": "Education resources section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Key principles of harm reduction approach"
+  },
+  {
+    "filename": "info_04_services_flowchart.webp",
+    "category": "informational_graphics",
+    "placement": "How it works section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Flowchart showing how to access HROC services"
+  },
+  {
+    "filename": "info_05_impact_numbers.webp",
+    "category": "informational_graphics",
+    "placement": "Annual impact section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Dashboard showing HROC program impact metrics"
+  },
+  {
+    "filename": "info_06_overdose_response_steps.webp",
+    "category": "informational_graphics",
+    "placement": "Emergency response section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Step-by-step guide for overdose response"
+  },
+  {
+    "filename": "info_07_resource_directory.webp",
+    "category": "informational_graphics",
+    "placement": "Resources page",
+    "status": "unused",
+    "pages": [],
+    "altText": "Directory of community resources and partner organizations"
+  },
+  {
+    "filename": "info_08_timeline_organization_history.webp",
+    "category": "informational_graphics",
+    "placement": "About history section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Timeline of HROC organization history and milestones"
+  },
+  {
+    "filename": "info_09_supplies_checklist.webp",
+    "category": "informational_graphics",
+    "placement": "Supplies information section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Checklist of harm reduction supplies and resources"
+  },
+  {
+    "filename": "info_10_volunteer_opportunities.webp",
+    "category": "informational_graphics",
+    "placement": "Get involved page",
+    "status": "unused",
+    "pages": [],
+    "altText": "Volunteer opportunities and roles at HROC"
+  },
+  {
+    "filename": "info_11_donation_impact.webp",
+    "category": "informational_graphics",
+    "placement": "Donate page",
+    "status": "unused",
+    "pages": [],
+    "altText": "Visual breakdown of donation impact and uses"
+  },
+  {
+    "filename": "info_12_monthly_outreach_calendar.webp",
+    "category": "informational_graphics",
+    "placement": "Schedule section",
+    "status": "unused",
+    "pages": [],
+    "altText": "Monthly calendar of mobile outreach locations and times"
+  }
+]

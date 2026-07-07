@@ -1,0 +1,98 @@
+[
+  {
+    "site": "hroc",
+    "pagePath": "Homepage hero banner",
+    "slot": "supporting",
+    "altText": "HROC mobile outreach vehicle providing community services",
+    "status": "planned",
+    "notes": "Candidate from existing manifest: hero_01_mobile_outreach_vehicle.webp"
+  },
+  {
+    "site": "hroc",
+    "pagePath": "About page hero",
+    "slot": "supporting",
+    "altText": "Community members engaging with HROC healthcare services",
+    "status": "planned",
+    "notes": "Candidate from existing manifest: hero_02_community_engagement.webp"
+  },
+  {
+    "site": "hroc",
+    "pagePath": "Services page hero",
+    "slot": "supporting",
+    "altText": "Peer counselor providing compassionate support",
+    "status": "planned",
+    "notes": "Candidate from existing manifest: hero_03_peer_support.webp"
+  },
+  {
+    "site": "hroc",
+    "pagePath": "Training page hero",
+    "slot": "supporting",
+    "altText": "Community naloxone training and education session",
+    "status": "planned",
+    "notes": "Candidate from existing manifest: hero_04_naloxone_training.webp"
+  },
+  {
+    "site": "hroc",
+    "pagePath": "Donate page hero",
+    "slot": "supporting",
+    "altText": "Hands joined in solidarity and support",
+    "status": "planned",
+    "notes": "Candidate from existing manifest: hero_05_hands_holding.webp"
+  },
+  {
+    "site": "hroc",
+    "pagePath": "Contact page hero",
+    "slot": "supporting",
+    "altText": "Pacific Northwest landscape representing HROC service area",
+    "status": "planned",
+    "notes": "Candidate from existing manifest: hero_06_pacific_northwest_landscape.webp"
+  },
+  {
+    "site": "hroc",
+    "pagePath": "Programs page hero",
+    "slot": "supporting",
+    "altText": "Community gathering in traditional talking circle formation",
+    "status": "planned",
+    "notes": "Candidate from existing manifest: hero_07_community_circle.webp"
+  },
+  {
+    "site": "hroc",
+    "pagePath": "Hero section overlay",
+    "slot": "supporting",
+    "altText": "Gradient mesh background in brand colors",
+    "status": "planned",
+    "notes": "Candidate from existing manifest: bg_pattern_03_gradient_mesh.webp"
+  },
+  {
+    "site": "hroc",
+    "pagePath": "Community impact section",
+    "slot": "supporting",
+    "altText": "Diverse community members smiling together",
+    "status": "planned",
+    "notes": "Candidate from existing manifest: community_01_diverse_group_smiling.webp"
+  },
+  {
+    "site": "hroc",
+    "pagePath": "Impact statistics section",
+    "slot": "supporting",
+    "altText": "Statistics showing lives saved through naloxone distribution",
+    "status": "planned",
+    "notes": "Candidate from existing manifest: info_02_naloxone_saves_lives_stat.webp"
+  },
+  {
+    "site": "hroc",
+    "pagePath": "Annual impact section",
+    "slot": "supporting",
+    "altText": "Dashboard showing HROC program impact metrics",
+    "status": "planned",
+    "notes": "Candidate from existing manifest: info_05_impact_numbers.webp"
+  },
+  {
+    "site": "hroc",
+    "pagePath": "Donate page",
+    "slot": "supporting",
+    "altText": "Visual breakdown of donation impact and uses",
+    "status": "planned",
+    "notes": "Candidate from existing manifest: info_11_donation_impact.webp"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "backends": [
+    {
+      "backend": "manual-import",
+      "available": true,
+      "reason": "Manual import always available for externally generated images."
+    },
+    {
+      "backend": "runpod",
+      "available": false,
+      "reason": "RUNPOD_API_KEY and RUNPOD_ENDPOINT_ID are required."
+    },
+    {
+      "backend": "fal-ai:gpt-image-2",
+      "available": false,
+      "reason": "FAL_KEY is required."
+    },
+    {
+      "backend": "truenas-comfyui",
+      "available": false,
+      "reason": "COMFYUI_URL is required."
+    }
+  ]
+}

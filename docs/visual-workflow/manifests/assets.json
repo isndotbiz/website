@@ -1,0 +1,1741 @@
+[
+  {
+    "site": "isn",
+    "productSlug": "spiritatlas",
+    "pagePath": "spiritatlas.html",
+    "slot": "hero",
+    "sourcePromptId": "spiritatlas:hero",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "ethereal_dark.safetensors",
+        "trigger": "ethereal dark grounding",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/glowing_particles.safetensors",
+        "trigger": "glowing particles and ambient dust",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Spirit Atlas hero visual - Ritual-forward cosmic entity discovery, premium mystical mobile experience, archetype reveal.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "spiritatlas",
+    "pagePath": "spiritatlas.html",
+    "slot": "og",
+    "sourcePromptId": "spiritatlas:og",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "ethereal_dark.safetensors",
+        "trigger": "ethereal dark grounding",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/glowing_particles.safetensors",
+        "trigger": "glowing particles and ambient dust",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Spirit Atlas og visual - Ritual-forward cosmic entity discovery, premium mystical mobile experience, archetype reveal.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "spiritatlas",
+    "pagePath": "spiritatlas.html",
+    "slot": "card",
+    "sourcePromptId": "spiritatlas:card",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "ethereal_dark.safetensors",
+        "trigger": "ethereal dark grounding",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/glowing_particles.safetensors",
+        "trigger": "glowing particles and ambient dust",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Spirit Atlas card visual - Ritual-forward cosmic entity discovery, premium mystical mobile experience, archetype reveal.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "spiritatlas",
+    "pagePath": "spiritatlas.html",
+    "slot": "study-01",
+    "sourcePromptId": "spiritatlas:study-01",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "ethereal_dark.safetensors",
+        "trigger": "ethereal dark grounding",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/glowing_particles.safetensors",
+        "trigger": "glowing particles and ambient dust",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Spirit Atlas study-01 visual - Ritual-forward cosmic entity discovery, premium mystical mobile experience, archetype reveal.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "spiritatlas",
+    "pagePath": "spiritatlas.html",
+    "slot": "study-02",
+    "sourcePromptId": "spiritatlas:study-02",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "ethereal_dark.safetensors",
+        "trigger": "ethereal dark grounding",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/glowing_particles.safetensors",
+        "trigger": "glowing particles and ambient dust",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Spirit Atlas study-02 visual - Ritual-forward cosmic entity discovery, premium mystical mobile experience, archetype reveal.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "spiritatlas",
+    "pagePath": "spiritatlas.html",
+    "slot": "study-03",
+    "sourcePromptId": "spiritatlas:study-03",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "ethereal_dark.safetensors",
+        "trigger": "ethereal dark grounding",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/glowing_particles.safetensors",
+        "trigger": "glowing particles and ambient dust",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Spirit Atlas study-03 visual - Ritual-forward cosmic entity discovery, premium mystical mobile experience, archetype reveal.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "provenance",
+    "pagePath": "provenance.html",
+    "slot": "hero",
+    "sourcePromptId": "provenance:hero",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Provenance hero visual - Genealogy data integrity, GEDCOM repair, lineage verification, archival trust surface.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "provenance",
+    "pagePath": "provenance.html",
+    "slot": "og",
+    "sourcePromptId": "provenance:og",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Provenance og visual - Genealogy data integrity, GEDCOM repair, lineage verification, archival trust surface.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "provenance",
+    "pagePath": "provenance.html",
+    "slot": "card",
+    "sourcePromptId": "provenance:card",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Provenance card visual - Genealogy data integrity, GEDCOM repair, lineage verification, archival trust surface.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "provenance",
+    "pagePath": "provenance.html",
+    "slot": "study-01",
+    "sourcePromptId": "provenance:study-01",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Provenance study-01 visual - Genealogy data integrity, GEDCOM repair, lineage verification, archival trust surface.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "provenance",
+    "pagePath": "provenance.html",
+    "slot": "study-02",
+    "sourcePromptId": "provenance:study-02",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Provenance study-02 visual - Genealogy data integrity, GEDCOM repair, lineage verification, archival trust surface.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "provenance",
+    "pagePath": "provenance.html",
+    "slot": "study-03",
+    "sourcePromptId": "provenance:study-03",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Provenance study-03 visual - Genealogy data integrity, GEDCOM repair, lineage verification, archival trust surface.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "signals",
+    "pagePath": "signals/index.html",
+    "slot": "hero",
+    "sourcePromptId": "signals:hero",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Signals hero visual - Market-intelligence pipeline, scanner fusion, forward-returns ledger, delayed-feed auditability.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "signals",
+    "pagePath": "signals/index.html",
+    "slot": "og",
+    "sourcePromptId": "signals:og",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Signals og visual - Market-intelligence pipeline, scanner fusion, forward-returns ledger, delayed-feed auditability.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "signals",
+    "pagePath": "signals/index.html",
+    "slot": "card",
+    "sourcePromptId": "signals:card",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Signals card visual - Market-intelligence pipeline, scanner fusion, forward-returns ledger, delayed-feed auditability.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "signals",
+    "pagePath": "signals/index.html",
+    "slot": "study-01",
+    "sourcePromptId": "signals:study-01",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Signals study-01 visual - Market-intelligence pipeline, scanner fusion, forward-returns ledger, delayed-feed auditability.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "signals",
+    "pagePath": "signals/index.html",
+    "slot": "study-02",
+    "sourcePromptId": "signals:study-02",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Signals study-02 visual - Market-intelligence pipeline, scanner fusion, forward-returns ledger, delayed-feed auditability.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "signals",
+    "pagePath": "signals/index.html",
+    "slot": "study-03",
+    "sourcePromptId": "signals:study-03",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Signals study-03 visual - Market-intelligence pipeline, scanner fusion, forward-returns ledger, delayed-feed auditability.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "signals",
+    "pagePath": "signals/index.html",
+    "slot": "diagram",
+    "sourcePromptId": "signals:diagram",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Signals diagram visual - Market-intelligence pipeline, scanner fusion, forward-returns ledger, delayed-feed auditability.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "phantom-browser",
+    "pagePath": "phantom-browser.html",
+    "slot": "hero",
+    "sourcePromptId": "phantom-browser:hero",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Phantom Browser hero visual - Stealth browser orchestration, fingerprint coherence, proxy reputation, resilient automation.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "phantom-browser",
+    "pagePath": "phantom-browser.html",
+    "slot": "og",
+    "sourcePromptId": "phantom-browser:og",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Phantom Browser og visual - Stealth browser orchestration, fingerprint coherence, proxy reputation, resilient automation.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "phantom-browser",
+    "pagePath": "phantom-browser.html",
+    "slot": "card",
+    "sourcePromptId": "phantom-browser:card",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Phantom Browser card visual - Stealth browser orchestration, fingerprint coherence, proxy reputation, resilient automation.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "phantom-browser",
+    "pagePath": "phantom-browser.html",
+    "slot": "study-01",
+    "sourcePromptId": "phantom-browser:study-01",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Phantom Browser study-01 visual - Stealth browser orchestration, fingerprint coherence, proxy reputation, resilient automation.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "phantom-browser",
+    "pagePath": "phantom-browser.html",
+    "slot": "study-02",
+    "sourcePromptId": "phantom-browser:study-02",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Phantom Browser study-02 visual - Stealth browser orchestration, fingerprint coherence, proxy reputation, resilient automation.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "phantom-browser",
+    "pagePath": "phantom-browser.html",
+    "slot": "study-03",
+    "sourcePromptId": "phantom-browser:study-03",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/psychedelic_surrealism.safetensors",
+        "trigger": "psychedelic surreal geometry",
+        "strengthModel": 0.12,
+        "strengthClip": 0.1
+      }
+    ],
+    "altText": "Phantom Browser study-03 visual - Stealth browser orchestration, fingerprint coherence, proxy reputation, resilient automation.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "crucible",
+    "pagePath": "crucible.html",
+    "slot": "hero",
+    "sourcePromptId": "crucible:hero",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Crucible hero visual - LLM red-team and adversarial evaluation stack, jailbreak research, judge harness, transcript scoring.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "crucible",
+    "pagePath": "crucible.html",
+    "slot": "og",
+    "sourcePromptId": "crucible:og",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Crucible og visual - LLM red-team and adversarial evaluation stack, jailbreak research, judge harness, transcript scoring.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "crucible",
+    "pagePath": "crucible.html",
+    "slot": "card",
+    "sourcePromptId": "crucible:card",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Crucible card visual - LLM red-team and adversarial evaluation stack, jailbreak research, judge harness, transcript scoring.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "crucible",
+    "pagePath": "crucible.html",
+    "slot": "study-01",
+    "sourcePromptId": "crucible:study-01",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Crucible study-01 visual - LLM red-team and adversarial evaluation stack, jailbreak research, judge harness, transcript scoring.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "crucible",
+    "pagePath": "crucible.html",
+    "slot": "study-02",
+    "sourcePromptId": "crucible:study-02",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Crucible study-02 visual - LLM red-team and adversarial evaluation stack, jailbreak research, judge harness, transcript scoring.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "crucible",
+    "pagePath": "crucible.html",
+    "slot": "study-03",
+    "sourcePromptId": "crucible:study-03",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "Crucible study-03 visual - LLM red-team and adversarial evaluation stack, jailbreak research, judge harness, transcript scoring.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "hermes-aingels",
+    "pagePath": "hermes-aingels.html",
+    "slot": "hero",
+    "sourcePromptId": "hermes-aingels:hero",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "HERMES + AiNGELS hero visual - NFT-as-Agent architecture, Base L2, ERC-6551 token-bound accounts, cryptographic identity lattice.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "hermes-aingels",
+    "pagePath": "hermes-aingels.html",
+    "slot": "og",
+    "sourcePromptId": "hermes-aingels:og",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "HERMES + AiNGELS og visual - NFT-as-Agent architecture, Base L2, ERC-6551 token-bound accounts, cryptographic identity lattice.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "hermes-aingels",
+    "pagePath": "hermes-aingels.html",
+    "slot": "card",
+    "sourcePromptId": "hermes-aingels:card",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "HERMES + AiNGELS card visual - NFT-as-Agent architecture, Base L2, ERC-6551 token-bound accounts, cryptographic identity lattice.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "hermes-aingels",
+    "pagePath": "hermes-aingels.html",
+    "slot": "study-01",
+    "sourcePromptId": "hermes-aingels:study-01",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "HERMES + AiNGELS study-01 visual - NFT-as-Agent architecture, Base L2, ERC-6551 token-bound accounts, cryptographic identity lattice.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "hermes-aingels",
+    "pagePath": "hermes-aingels.html",
+    "slot": "study-02",
+    "sourcePromptId": "hermes-aingels:study-02",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "HERMES + AiNGELS study-02 visual - NFT-as-Agent architecture, Base L2, ERC-6551 token-bound accounts, cryptographic identity lattice.",
+    "status": "planned"
+  },
+  {
+    "site": "isn",
+    "productSlug": "hermes-aingels",
+    "pagePath": "hermes-aingels.html",
+    "slot": "study-03",
+    "sourcePromptId": "hermes-aingels:study-03",
+    "loras": [
+      {
+        "file": "ethereal_glow_v2.safetensors",
+        "trigger": "EtherealGlow, luminous gradients",
+        "strengthModel": 0.3,
+        "strengthClip": 0.26
+      },
+      {
+        "file": "hyperrealism_flux_cinematic.safetensors",
+        "trigger": "HyperRealism, premium cinematic detail",
+        "strengthModel": 0.25,
+        "strengthClip": 0.21
+      },
+      {
+        "file": "portrait_engine_flux.safetensors",
+        "trigger": "fluxtrait polished rendering",
+        "strengthModel": 0.16,
+        "strengthClip": 0.13
+      },
+      {
+        "file": "dark_fantasy_cosmic_flux.safetensors",
+        "trigger": "cc_dark fantasy dramatic contrast",
+        "strengthModel": 0.18,
+        "strengthClip": 0.15
+      },
+      {
+        "file": "ethereal_fantasy_flux.safetensors",
+        "trigger": "ethereal fantasy atmosphere",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      },
+      {
+        "file": "SpiritAtlas/sacred_geometry.safetensors",
+        "trigger": "sacred geometry motifs",
+        "strengthModel": 0.14,
+        "strengthClip": 0.12
+      }
+    ],
+    "altText": "HERMES + AiNGELS study-03 visual - NFT-as-Agent architecture, Base L2, ERC-6551 token-bound accounts, cryptographic identity lattice.",
+    "status": "planned"
+  }
+]

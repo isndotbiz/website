@@ -8,44 +8,36 @@ node_modules/
 .env.local
 .env.*.local
 .env.production
-
 # Templates are safe to commit
 !.env.tpl
 !.env.example
 !.env.template
-
 # OS Files
 .DS_Store
 Thumbs.db
 desktop.ini
-
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-
 # Logs
 logs/
 *.log
 npm-debug.log*
-
 # Build outputs
 dist/
 build/
 .cache/
-
 # Temporary
 tmp/
 temp/
 *.tmp
-
 # Sensitive
 *.key
 *.pem
 secrets/
-
 # Python
 venv/
 venv_fal/
@@ -54,11 +46,9 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
-
 # Temporary generated files
 b64data.txt
 1/
-
 # All images hosted on S3 (isnbiz-assets-1769962280)
 generated_founders/
 publish/
@@ -69,22 +59,18 @@ screenshots/
 logo.png
 logo-pallete.zip
 logo-pallete/
-
 # Archive (backed up to baby_nas)
 Archive/
 backups/
-
 # Documentation (non-deployed)
 docs/
 *.backup
-
 # Dev/build scripts (not needed in deployment)
 scripts/*
 *.sh
 *.py
 # Exception: CI needs preview-server.js to serve the repo during test runs
 !scripts/preview-server.js
-
 # Reports and session docs (not deployed)
 ANALYSIS_COMPLETE.md
 BUSINESS_VISUALS_*.md
@@ -114,35 +100,25 @@ TONIGHT_FINAL_STATUS.md
 VISUAL_WORK_PROGRESS.md
 WAKE_UP_INSTRUCTIONS.md
 WEBSITE_UPDATE_COMPLETE.md
-
 # Local Netlify folder
 .netlify
-
 # Playwright test artifacts
 playwright-report/
 test-results/
 *.tar.gz
-
-.env
-
 # Local 1Password import payloads (contains secrets)
 1password_import/
-
 # Local utility scripts with credentials
 fix-ssl.ps1
 deploy-both-sites.bat
-
 # Serena (session-local)
 .serena/cache/
 .serena/memories/
-
 # Local MCP config (machine-specific)
 .mcp.json
 compound-engineering.local.md
-
 # Wrangler local state (machine-specific)
 .wrangler/
-
 # Spirit Atlas media symlinks (local dev only, CDN in production)
 spiritatlas-final-images
 spiritatlas-final-videos
@@ -158,3 +134,30 @@ STATE.md
 DEPLOYMENT_GAPS.md
 ISA.md
 docs/state/
+# Documentation (non-deployed)
+docs/*
+!docs/brainstorms/
+!docs/brainstorms/**
+!docs/plans/
+!docs/plans/**
+!docs/visual-workflow/
+!docs/visual-workflow/**
+*.backup
+# Local MCP config (machine-specific)
+.mcp.json
+compound-engineering.local.md
+.compound-engineering/*.local.yaml
+# Wrangler local state (machine-specific)
+.wrangler/
+# orphaned generated art — not referenced (site uses b2c.isn.biz), archived to TrueNAS /mnt/tank/archive/isnbiz-website-media/2026-07-07
+images/
+
+# internal-docs-scrub
+_audit/
+ISA.md
+STATE.md
+CLAUDE.md
+DEPLOYMENT_GAPS.md
+docs/state/
+.serena/
+_private-notes/

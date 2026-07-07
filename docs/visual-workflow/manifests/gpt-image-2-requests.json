@@ -1,0 +1,887 @@
+[
+  {
+    "id": "spiritatlas:hero",
+    "productSlug": "spiritatlas",
+    "productTitle": "Spirit Atlas",
+    "pagePath": "spiritatlas.html",
+    "slot": "hero",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2/edit",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/spiritatlas/hero.webp",
+    "sourceReferences": [
+      "legacy:spiritatlas",
+      "image:https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/spiritatlas/hero.webp"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Spirit Atlas. Slot: hero. Intent: first-viewport product hero, wide crop, strong subject separation, no readable text.\n\nPage title: Spirit Atlas | Ritual-Forward Cosmic Entity Discovery | iSN.BiZ Inc\nPage description: Spirit Atlas is a ritual-forward mobile experience for discovering your cosmic entity archetype, unlocking daily guidance, and exploring a premium library of symbolic wisdom on iSN.BiZ.\nPrimary headings: Spirit Atlas\nSection themes: Twelve Zodiac; Aingels; Demons; Seven Chakras; Five Elements\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); ethereal dark grounding (ethereal_dark.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); glowing particles and ambient dust (SpiritAtlas/glowing_particles.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, ethereal dark grounding, ethereal fantasy atmosphere, glowing particles and ambient dust. Hero artwork for Spirit Atlas on iSN.BiZ: a ritual-forward mobile cosmic entity discovery experience, luminous archetype cards suspended around a premium phone-like artifact, zodiac geometry, chakra color traces, numerology marks, and a dark celestial field with precise cyan and magenta energy accents. Editorial product-marketing key art, cinematic light sculpting, atmospheric depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no readable symbols that imply real astrology claims.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp",
+      "image_urls": [
+        "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/spiritatlas/hero.webp"
+      ]
+    }
+  },
+  {
+    "id": "spiritatlas:og",
+    "productSlug": "spiritatlas",
+    "productTitle": "Spirit Atlas",
+    "pagePath": "spiritatlas.html",
+    "slot": "og",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2/edit",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": {
+      "width": 1200,
+      "height": 640
+    },
+    "targetFilename": "assets/generated/product-visuals/spiritatlas/og.webp",
+    "sourceReferences": [
+      "legacy:spiritatlas",
+      "image:https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/spiritatlas/hero.webp"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Spirit Atlas. Slot: og. Intent: social preview image, center-safe composition, readable at small share-card size, no text.\n\nPage title: Spirit Atlas | Ritual-Forward Cosmic Entity Discovery | iSN.BiZ Inc\nPage description: Spirit Atlas is a ritual-forward mobile experience for discovering your cosmic entity archetype, unlocking daily guidance, and exploring a premium library of symbolic wisdom on iSN.BiZ.\nPrimary headings: Spirit Atlas\nSection themes: Twelve Zodiac; Aingels; Demons; Seven Chakras; Five Elements\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); ethereal dark grounding (ethereal_dark.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); glowing particles and ambient dust (SpiritAtlas/glowing_particles.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, ethereal dark grounding, ethereal fantasy atmosphere, glowing particles and ambient dust. Hero artwork for Spirit Atlas on iSN.BiZ: a ritual-forward mobile cosmic entity discovery experience, luminous archetype cards suspended around a premium phone-like artifact, zodiac geometry, chakra color traces, numerology marks, and a dark celestial field with precise cyan and magenta energy accents. Editorial product-marketing key art, cinematic light sculpting, atmospheric depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no readable symbols that imply real astrology claims. Compose for a clean 1200x630 social preview crop.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": {
+        "width": 1200,
+        "height": 640
+      },
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp",
+      "image_urls": [
+        "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/spiritatlas/hero.webp"
+      ]
+    }
+  },
+  {
+    "id": "spiritatlas:card",
+    "productSlug": "spiritatlas",
+    "productTitle": "Spirit Atlas",
+    "pagePath": "spiritatlas.html",
+    "slot": "card",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2/edit",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_4_3",
+    "targetFilename": "assets/generated/product-visuals/spiritatlas/card.webp",
+    "sourceReferences": [
+      "legacy:spiritatlas",
+      "image:https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/spiritatlas/hero.webp"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Spirit Atlas. Slot: card. Intent: portfolio/product card image, compact crop, immediate product identity, no text.\n\nPage title: Spirit Atlas | Ritual-Forward Cosmic Entity Discovery | iSN.BiZ Inc\nPage description: Spirit Atlas is a ritual-forward mobile experience for discovering your cosmic entity archetype, unlocking daily guidance, and exploring a premium library of symbolic wisdom on iSN.BiZ.\nPrimary headings: Spirit Atlas\nSection themes: Twelve Zodiac; Aingels; Demons; Seven Chakras; Five Elements\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); ethereal dark grounding (ethereal_dark.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); glowing particles and ambient dust (SpiritAtlas/glowing_particles.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, ethereal dark grounding, ethereal fantasy atmosphere, glowing particles and ambient dust. Hero artwork for Spirit Atlas on iSN.BiZ: a ritual-forward mobile cosmic entity discovery experience, luminous archetype cards suspended around a premium phone-like artifact, zodiac geometry, chakra color traces, numerology marks, and a dark celestial field with precise cyan and magenta energy accents. Editorial product-marketing key art, cinematic light sculpting, atmospheric depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no readable symbols that imply real astrology claims. Compose as a compact product card crop with the subject readable at small size.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_4_3",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp",
+      "image_urls": [
+        "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/spiritatlas/hero.webp"
+      ]
+    }
+  },
+  {
+    "id": "spiritatlas:study-01",
+    "productSlug": "spiritatlas",
+    "productTitle": "Spirit Atlas",
+    "pagePath": "spiritatlas.html",
+    "slot": "study-01",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2/edit",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/spiritatlas/study-01.webp",
+    "sourceReferences": [
+      "legacy:spiritatlas",
+      "image:https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/spiritatlas/hero.webp"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Spirit Atlas. Slot: study-01. Intent: supporting product study image, distinct from the main hero, suitable for content sections.\n\nPage title: Spirit Atlas | Ritual-Forward Cosmic Entity Discovery | iSN.BiZ Inc\nPage description: Spirit Atlas is a ritual-forward mobile experience for discovering your cosmic entity archetype, unlocking daily guidance, and exploring a premium library of symbolic wisdom on iSN.BiZ.\nPrimary headings: Spirit Atlas\nSection themes: Twelve Zodiac; Aingels; Demons; Seven Chakras; Five Elements\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); ethereal dark grounding (ethereal_dark.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); glowing particles and ambient dust (SpiritAtlas/glowing_particles.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, ethereal dark grounding, ethereal fantasy atmosphere, glowing particles and ambient dust. Hero artwork for Spirit Atlas on iSN.BiZ: a ritual-forward mobile cosmic entity discovery experience, luminous archetype cards suspended around a premium phone-like artifact, zodiac geometry, chakra color traces, numerology marks, and a dark celestial field with precise cyan and magenta energy accents. Editorial product-marketing key art, cinematic light sculpting, atmospheric depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no readable symbols that imply real astrology claims. Focus this study on study 01 as a supporting visual, not the main hero.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp",
+      "image_urls": [
+        "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/spiritatlas/hero.webp"
+      ]
+    }
+  },
+  {
+    "id": "spiritatlas:study-02",
+    "productSlug": "spiritatlas",
+    "productTitle": "Spirit Atlas",
+    "pagePath": "spiritatlas.html",
+    "slot": "study-02",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2/edit",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/spiritatlas/study-02.webp",
+    "sourceReferences": [
+      "legacy:spiritatlas",
+      "image:https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/spiritatlas/hero.webp"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Spirit Atlas. Slot: study-02. Intent: supporting product study image, distinct from the main hero, suitable for content sections.\n\nPage title: Spirit Atlas | Ritual-Forward Cosmic Entity Discovery | iSN.BiZ Inc\nPage description: Spirit Atlas is a ritual-forward mobile experience for discovering your cosmic entity archetype, unlocking daily guidance, and exploring a premium library of symbolic wisdom on iSN.BiZ.\nPrimary headings: Spirit Atlas\nSection themes: Twelve Zodiac; Aingels; Demons; Seven Chakras; Five Elements\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); ethereal dark grounding (ethereal_dark.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); glowing particles and ambient dust (SpiritAtlas/glowing_particles.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, ethereal dark grounding, ethereal fantasy atmosphere, glowing particles and ambient dust. Hero artwork for Spirit Atlas on iSN.BiZ: a ritual-forward mobile cosmic entity discovery experience, luminous archetype cards suspended around a premium phone-like artifact, zodiac geometry, chakra color traces, numerology marks, and a dark celestial field with precise cyan and magenta energy accents. Editorial product-marketing key art, cinematic light sculpting, atmospheric depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no readable symbols that imply real astrology claims. Focus this study on study 02 as a supporting visual, not the main hero.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp",
+      "image_urls": [
+        "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/spiritatlas/hero.webp"
+      ]
+    }
+  },
+  {
+    "id": "spiritatlas:study-03",
+    "productSlug": "spiritatlas",
+    "productTitle": "Spirit Atlas",
+    "pagePath": "spiritatlas.html",
+    "slot": "study-03",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2/edit",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/spiritatlas/study-03.webp",
+    "sourceReferences": [
+      "legacy:spiritatlas",
+      "image:https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/spiritatlas/hero.webp"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Spirit Atlas. Slot: study-03. Intent: supporting product study image, distinct from the main hero, suitable for content sections.\n\nPage title: Spirit Atlas | Ritual-Forward Cosmic Entity Discovery | iSN.BiZ Inc\nPage description: Spirit Atlas is a ritual-forward mobile experience for discovering your cosmic entity archetype, unlocking daily guidance, and exploring a premium library of symbolic wisdom on iSN.BiZ.\nPrimary headings: Spirit Atlas\nSection themes: Twelve Zodiac; Aingels; Demons; Seven Chakras; Five Elements\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); ethereal dark grounding (ethereal_dark.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); glowing particles and ambient dust (SpiritAtlas/glowing_particles.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, ethereal dark grounding, ethereal fantasy atmosphere, glowing particles and ambient dust. Hero artwork for Spirit Atlas on iSN.BiZ: a ritual-forward mobile cosmic entity discovery experience, luminous archetype cards suspended around a premium phone-like artifact, zodiac geometry, chakra color traces, numerology marks, and a dark celestial field with precise cyan and magenta energy accents. Editorial product-marketing key art, cinematic light sculpting, atmospheric depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no readable symbols that imply real astrology claims. Focus this study on study 03 as a supporting visual, not the main hero.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp",
+      "image_urls": [
+        "https://b2c.isn.biz/file/isnbiz-cdn/assets/generated/truenas_flux/spiritatlas/hero.webp"
+      ]
+    }
+  },
+  {
+    "id": "provenance:hero",
+    "productSlug": "provenance",
+    "productTitle": "Provenance",
+    "pagePath": "provenance.html",
+    "slot": "hero",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/provenance/hero.webp",
+    "sourceReferences": [
+      "legacy:gedfix"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Provenance. Slot: hero. Intent: first-viewport product hero, wide crop, strong subject separation, no readable text.\n\nPage title: Provenance — Cross-Platform Genealogy Platform | iSN.BiZ Inc\nPage description: Provenance — a cross-platform Tauri + SvelteKit genealogy app and Python CLI for cleaning, normalizing, deduplicating, and AI-assisted research over GEDCOM data. Local-first, audit-grade.\nPrimary headings: Provenance\nSection themes: Signature Key Art; Why Provenance Exists; Deep Dive: The GEDCOM Operations Surface; Platform Components; Implementation Details\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); sacred geometry motifs (SpiritAtlas/sacred_geometry.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Provenance on iSN.BiZ: cross-platform genealogy data integrity platform, archival family records transforming into a verified lineage graph, GEDCOM validation nodes, duplicate-merge evidence trails, trust badges rendered as abstract seals, and a calm technical workspace with cyan-blue audit paths. Editorial product-marketing key art, cinematic light sculpting, archival texture, high-end web banner composition, no text overlays, no logos, no UI chrome, no fake names, no readable private records.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "provenance:og",
+    "productSlug": "provenance",
+    "productTitle": "Provenance",
+    "pagePath": "provenance.html",
+    "slot": "og",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": {
+      "width": 1200,
+      "height": 640
+    },
+    "targetFilename": "assets/generated/product-visuals/provenance/og.webp",
+    "sourceReferences": [
+      "legacy:gedfix"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Provenance. Slot: og. Intent: social preview image, center-safe composition, readable at small share-card size, no text.\n\nPage title: Provenance — Cross-Platform Genealogy Platform | iSN.BiZ Inc\nPage description: Provenance — a cross-platform Tauri + SvelteKit genealogy app and Python CLI for cleaning, normalizing, deduplicating, and AI-assisted research over GEDCOM data. Local-first, audit-grade.\nPrimary headings: Provenance\nSection themes: Signature Key Art; Why Provenance Exists; Deep Dive: The GEDCOM Operations Surface; Platform Components; Implementation Details\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); sacred geometry motifs (SpiritAtlas/sacred_geometry.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Provenance on iSN.BiZ: cross-platform genealogy data integrity platform, archival family records transforming into a verified lineage graph, GEDCOM validation nodes, duplicate-merge evidence trails, trust badges rendered as abstract seals, and a calm technical workspace with cyan-blue audit paths. Editorial product-marketing key art, cinematic light sculpting, archival texture, high-end web banner composition, no text overlays, no logos, no UI chrome, no fake names, no readable private records. Compose for a clean 1200x630 social preview crop.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": {
+        "width": 1200,
+        "height": 640
+      },
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "provenance:card",
+    "productSlug": "provenance",
+    "productTitle": "Provenance",
+    "pagePath": "provenance.html",
+    "slot": "card",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_4_3",
+    "targetFilename": "assets/generated/product-visuals/provenance/card.webp",
+    "sourceReferences": [
+      "legacy:gedfix"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Provenance. Slot: card. Intent: portfolio/product card image, compact crop, immediate product identity, no text.\n\nPage title: Provenance — Cross-Platform Genealogy Platform | iSN.BiZ Inc\nPage description: Provenance — a cross-platform Tauri + SvelteKit genealogy app and Python CLI for cleaning, normalizing, deduplicating, and AI-assisted research over GEDCOM data. Local-first, audit-grade.\nPrimary headings: Provenance\nSection themes: Signature Key Art; Why Provenance Exists; Deep Dive: The GEDCOM Operations Surface; Platform Components; Implementation Details\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); sacred geometry motifs (SpiritAtlas/sacred_geometry.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Provenance on iSN.BiZ: cross-platform genealogy data integrity platform, archival family records transforming into a verified lineage graph, GEDCOM validation nodes, duplicate-merge evidence trails, trust badges rendered as abstract seals, and a calm technical workspace with cyan-blue audit paths. Editorial product-marketing key art, cinematic light sculpting, archival texture, high-end web banner composition, no text overlays, no logos, no UI chrome, no fake names, no readable private records. Compose as a compact product card crop with the subject readable at small size.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_4_3",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "provenance:study-01",
+    "productSlug": "provenance",
+    "productTitle": "Provenance",
+    "pagePath": "provenance.html",
+    "slot": "study-01",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/provenance/study-01.webp",
+    "sourceReferences": [
+      "legacy:gedfix"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Provenance. Slot: study-01. Intent: supporting product study image, distinct from the main hero, suitable for content sections.\n\nPage title: Provenance — Cross-Platform Genealogy Platform | iSN.BiZ Inc\nPage description: Provenance — a cross-platform Tauri + SvelteKit genealogy app and Python CLI for cleaning, normalizing, deduplicating, and AI-assisted research over GEDCOM data. Local-first, audit-grade.\nPrimary headings: Provenance\nSection themes: Signature Key Art; Why Provenance Exists; Deep Dive: The GEDCOM Operations Surface; Platform Components; Implementation Details\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); sacred geometry motifs (SpiritAtlas/sacred_geometry.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Provenance on iSN.BiZ: cross-platform genealogy data integrity platform, archival family records transforming into a verified lineage graph, GEDCOM validation nodes, duplicate-merge evidence trails, trust badges rendered as abstract seals, and a calm technical workspace with cyan-blue audit paths. Editorial product-marketing key art, cinematic light sculpting, archival texture, high-end web banner composition, no text overlays, no logos, no UI chrome, no fake names, no readable private records. Focus this study on study 01 as a supporting visual, not the main hero.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "provenance:study-02",
+    "productSlug": "provenance",
+    "productTitle": "Provenance",
+    "pagePath": "provenance.html",
+    "slot": "study-02",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/provenance/study-02.webp",
+    "sourceReferences": [
+      "legacy:gedfix"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Provenance. Slot: study-02. Intent: supporting product study image, distinct from the main hero, suitable for content sections.\n\nPage title: Provenance — Cross-Platform Genealogy Platform | iSN.BiZ Inc\nPage description: Provenance — a cross-platform Tauri + SvelteKit genealogy app and Python CLI for cleaning, normalizing, deduplicating, and AI-assisted research over GEDCOM data. Local-first, audit-grade.\nPrimary headings: Provenance\nSection themes: Signature Key Art; Why Provenance Exists; Deep Dive: The GEDCOM Operations Surface; Platform Components; Implementation Details\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); sacred geometry motifs (SpiritAtlas/sacred_geometry.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Provenance on iSN.BiZ: cross-platform genealogy data integrity platform, archival family records transforming into a verified lineage graph, GEDCOM validation nodes, duplicate-merge evidence trails, trust badges rendered as abstract seals, and a calm technical workspace with cyan-blue audit paths. Editorial product-marketing key art, cinematic light sculpting, archival texture, high-end web banner composition, no text overlays, no logos, no UI chrome, no fake names, no readable private records. Focus this study on study 02 as a supporting visual, not the main hero.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "provenance:study-03",
+    "productSlug": "provenance",
+    "productTitle": "Provenance",
+    "pagePath": "provenance.html",
+    "slot": "study-03",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/provenance/study-03.webp",
+    "sourceReferences": [
+      "legacy:gedfix"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Provenance. Slot: study-03. Intent: supporting product study image, distinct from the main hero, suitable for content sections.\n\nPage title: Provenance — Cross-Platform Genealogy Platform | iSN.BiZ Inc\nPage description: Provenance — a cross-platform Tauri + SvelteKit genealogy app and Python CLI for cleaning, normalizing, deduplicating, and AI-assisted research over GEDCOM data. Local-first, audit-grade.\nPrimary headings: Provenance\nSection themes: Signature Key Art; Why Provenance Exists; Deep Dive: The GEDCOM Operations Surface; Platform Components; Implementation Details\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); sacred geometry motifs (SpiritAtlas/sacred_geometry.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Provenance on iSN.BiZ: cross-platform genealogy data integrity platform, archival family records transforming into a verified lineage graph, GEDCOM validation nodes, duplicate-merge evidence trails, trust badges rendered as abstract seals, and a calm technical workspace with cyan-blue audit paths. Editorial product-marketing key art, cinematic light sculpting, archival texture, high-end web banner composition, no text overlays, no logos, no UI chrome, no fake names, no readable private records. Focus this study on study 03 as a supporting visual, not the main hero.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "signals:hero",
+    "productSlug": "signals",
+    "productTitle": "Signals",
+    "pagePath": "signals/index.html",
+    "slot": "hero",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/signals/hero.webp",
+    "sourceReferences": [],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Signals. Slot: hero. Intent: first-viewport product hero, wide crop, strong subject separation, no readable text.\n\nPage title: Signals | iSN.BiZ Inc\nPage description: Signals — the iSN.BiZ market intelligence program. A live forward-returns ledger surfacing alerts from a multi-source scanner stack covering EDGAR filings, prediction markets, regulatory feeds, agricultural basis, and muni bonds. Every alert is timestamped and audit-eligible.\nPrimary headings: Signals\nSection themes: Signature Key Art; Signal Sources; Deep Dive: Signal Architecture; Signal Categories; Live Ledger\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); psychedelic surreal geometry (SpiritAtlas/psychedelic_surrealism.safetensors, model 0.12, clip 0.1).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Signals on iSN.BiZ: market intelligence signal pipeline with EDGAR, EMMA, USDA, Federal Register, and enforcement-feed scanner streams converging into a live forward-returns ledger, ranked alerts, ticker resolution, delayed-feed audit window, and evidence trails. Dense investor-grade technical command surface, cinematic cyan grid light, subtle magenta anomaly highlights, high-end web banner composition, no text overlays, no logos, no UI chrome, no real tickers, no financial advice language.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "signals:og",
+    "productSlug": "signals",
+    "productTitle": "Signals",
+    "pagePath": "signals/index.html",
+    "slot": "og",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": {
+      "width": 1200,
+      "height": 640
+    },
+    "targetFilename": "assets/generated/product-visuals/signals/og.webp",
+    "sourceReferences": [],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Signals. Slot: og. Intent: social preview image, center-safe composition, readable at small share-card size, no text.\n\nPage title: Signals | iSN.BiZ Inc\nPage description: Signals — the iSN.BiZ market intelligence program. A live forward-returns ledger surfacing alerts from a multi-source scanner stack covering EDGAR filings, prediction markets, regulatory feeds, agricultural basis, and muni bonds. Every alert is timestamped and audit-eligible.\nPrimary headings: Signals\nSection themes: Signature Key Art; Signal Sources; Deep Dive: Signal Architecture; Signal Categories; Live Ledger\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); psychedelic surreal geometry (SpiritAtlas/psychedelic_surrealism.safetensors, model 0.12, clip 0.1).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Signals on iSN.BiZ: market intelligence signal pipeline with EDGAR, EMMA, USDA, Federal Register, and enforcement-feed scanner streams converging into a live forward-returns ledger, ranked alerts, ticker resolution, delayed-feed audit window, and evidence trails. Dense investor-grade technical command surface, cinematic cyan grid light, subtle magenta anomaly highlights, high-end web banner composition, no text overlays, no logos, no UI chrome, no real tickers, no financial advice language. Compose for a clean 1200x630 social preview crop.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": {
+        "width": 1200,
+        "height": 640
+      },
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "signals:card",
+    "productSlug": "signals",
+    "productTitle": "Signals",
+    "pagePath": "signals/index.html",
+    "slot": "card",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_4_3",
+    "targetFilename": "assets/generated/product-visuals/signals/card.webp",
+    "sourceReferences": [],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Signals. Slot: card. Intent: portfolio/product card image, compact crop, immediate product identity, no text.\n\nPage title: Signals | iSN.BiZ Inc\nPage description: Signals — the iSN.BiZ market intelligence program. A live forward-returns ledger surfacing alerts from a multi-source scanner stack covering EDGAR filings, prediction markets, regulatory feeds, agricultural basis, and muni bonds. Every alert is timestamped and audit-eligible.\nPrimary headings: Signals\nSection themes: Signature Key Art; Signal Sources; Deep Dive: Signal Architecture; Signal Categories; Live Ledger\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); psychedelic surreal geometry (SpiritAtlas/psychedelic_surrealism.safetensors, model 0.12, clip 0.1).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Signals on iSN.BiZ: market intelligence signal pipeline with EDGAR, EMMA, USDA, Federal Register, and enforcement-feed scanner streams converging into a live forward-returns ledger, ranked alerts, ticker resolution, delayed-feed audit window, and evidence trails. Dense investor-grade technical command surface, cinematic cyan grid light, subtle magenta anomaly highlights, high-end web banner composition, no text overlays, no logos, no UI chrome, no real tickers, no financial advice language. Compose as a compact product card crop with the subject readable at small size.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_4_3",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "signals:study-01",
+    "productSlug": "signals",
+    "productTitle": "Signals",
+    "pagePath": "signals/index.html",
+    "slot": "study-01",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/signals/study-01.webp",
+    "sourceReferences": [],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Signals. Slot: study-01. Intent: supporting product study image, distinct from the main hero, suitable for content sections.\n\nPage title: Signals | iSN.BiZ Inc\nPage description: Signals — the iSN.BiZ market intelligence program. A live forward-returns ledger surfacing alerts from a multi-source scanner stack covering EDGAR filings, prediction markets, regulatory feeds, agricultural basis, and muni bonds. Every alert is timestamped and audit-eligible.\nPrimary headings: Signals\nSection themes: Signature Key Art; Signal Sources; Deep Dive: Signal Architecture; Signal Categories; Live Ledger\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); psychedelic surreal geometry (SpiritAtlas/psychedelic_surrealism.safetensors, model 0.12, clip 0.1).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Signals on iSN.BiZ: market intelligence signal pipeline with EDGAR, EMMA, USDA, Federal Register, and enforcement-feed scanner streams converging into a live forward-returns ledger, ranked alerts, ticker resolution, delayed-feed audit window, and evidence trails. Dense investor-grade technical command surface, cinematic cyan grid light, subtle magenta anomaly highlights, high-end web banner composition, no text overlays, no logos, no UI chrome, no real tickers, no financial advice language. Focus this study on study 01 as a supporting visual, not the main hero.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "signals:study-02",
+    "productSlug": "signals",
+    "productTitle": "Signals",
+    "pagePath": "signals/index.html",
+    "slot": "study-02",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/signals/study-02.webp",
+    "sourceReferences": [],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Signals. Slot: study-02. Intent: supporting product study image, distinct from the main hero, suitable for content sections.\n\nPage title: Signals | iSN.BiZ Inc\nPage description: Signals — the iSN.BiZ market intelligence program. A live forward-returns ledger surfacing alerts from a multi-source scanner stack covering EDGAR filings, prediction markets, regulatory feeds, agricultural basis, and muni bonds. Every alert is timestamped and audit-eligible.\nPrimary headings: Signals\nSection themes: Signature Key Art; Signal Sources; Deep Dive: Signal Architecture; Signal Categories; Live Ledger\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); psychedelic surreal geometry (SpiritAtlas/psychedelic_surrealism.safetensors, model 0.12, clip 0.1).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Signals on iSN.BiZ: market intelligence signal pipeline with EDGAR, EMMA, USDA, Federal Register, and enforcement-feed scanner streams converging into a live forward-returns ledger, ranked alerts, ticker resolution, delayed-feed audit window, and evidence trails. Dense investor-grade technical command surface, cinematic cyan grid light, subtle magenta anomaly highlights, high-end web banner composition, no text overlays, no logos, no UI chrome, no real tickers, no financial advice language. Focus this study on study 02 as a supporting visual, not the main hero.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "signals:study-03",
+    "productSlug": "signals",
+    "productTitle": "Signals",
+    "pagePath": "signals/index.html",
+    "slot": "study-03",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/signals/study-03.webp",
+    "sourceReferences": [],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Signals. Slot: study-03. Intent: supporting product study image, distinct from the main hero, suitable for content sections.\n\nPage title: Signals | iSN.BiZ Inc\nPage description: Signals — the iSN.BiZ market intelligence program. A live forward-returns ledger surfacing alerts from a multi-source scanner stack covering EDGAR filings, prediction markets, regulatory feeds, agricultural basis, and muni bonds. Every alert is timestamped and audit-eligible.\nPrimary headings: Signals\nSection themes: Signature Key Art; Signal Sources; Deep Dive: Signal Architecture; Signal Categories; Live Ledger\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); psychedelic surreal geometry (SpiritAtlas/psychedelic_surrealism.safetensors, model 0.12, clip 0.1).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Signals on iSN.BiZ: market intelligence signal pipeline with EDGAR, EMMA, USDA, Federal Register, and enforcement-feed scanner streams converging into a live forward-returns ledger, ranked alerts, ticker resolution, delayed-feed audit window, and evidence trails. Dense investor-grade technical command surface, cinematic cyan grid light, subtle magenta anomaly highlights, high-end web banner composition, no text overlays, no logos, no UI chrome, no real tickers, no financial advice language. Focus this study on study 03 as a supporting visual, not the main hero.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "signals:diagram",
+    "productSlug": "signals",
+    "productTitle": "Signals",
+    "pagePath": "signals/index.html",
+    "slot": "diagram",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/signals/diagram.webp",
+    "sourceReferences": [],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Signals. Slot: diagram. Intent: abstract systems diagram as art, visual flow without labels or readable UI.\n\nPage title: Signals | iSN.BiZ Inc\nPage description: Signals — the iSN.BiZ market intelligence program. A live forward-returns ledger surfacing alerts from a multi-source scanner stack covering EDGAR filings, prediction markets, regulatory feeds, agricultural basis, and muni bonds. Every alert is timestamped and audit-eligible.\nPrimary headings: Signals\nSection themes: Signature Key Art; Signal Sources; Deep Dive: Signal Architecture; Signal Categories; Live Ledger\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); psychedelic surreal geometry (SpiritAtlas/psychedelic_surrealism.safetensors, model 0.12, clip 0.1).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Signals on iSN.BiZ: market intelligence signal pipeline with EDGAR, EMMA, USDA, Federal Register, and enforcement-feed scanner streams converging into a live forward-returns ledger, ranked alerts, ticker resolution, delayed-feed audit window, and evidence trails. Dense investor-grade technical command surface, cinematic cyan grid light, subtle magenta anomaly highlights, high-end web banner composition, no text overlays, no logos, no UI chrome, no real tickers, no financial advice language. Emphasize abstract data-flow diagram composition without text labels.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "phantom-browser:hero",
+    "productSlug": "phantom-browser",
+    "productTitle": "Phantom Browser",
+    "pagePath": "phantom-browser.html",
+    "slot": "hero",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/phantom-browser/hero.webp",
+    "sourceReferences": [
+      "legacy:phantom-browser"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Phantom Browser. Slot: hero. Intent: first-viewport product hero, wide crop, strong subject separation, no readable text.\n\nPage title: Phantom Browser | iSN.BiZ Inc\nPage description: Phantom Browser — Rust + Tauri stealth browser orchestration platform built around Camoufox, BrowserForge fingerprints, Decodo residential and mobile proxies, and a multi-tier IP reputation gate (IPQS, ProxyCheck, AbuseIPDB) for OSINT, scraping, and adversarial-resistant automation.\nPrimary headings: Phantom Browser\nSection themes: Signature Key Art; Architecture Overview; Deep Dive: Stealth and Fingerprint Resistance; Component Architecture; Implementation Details\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); psychedelic surreal geometry (SpiritAtlas/psychedelic_surrealism.safetensors, model 0.12, clip 0.1).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Phantom Browser on iSN.BiZ: Rust and Tauri stealth browser orchestration system, profile fleet nodes, coherent browser fingerprints, residential and mobile proxy mesh, IP reputation scoring gates, and a CreepJS-style diagnostic environment rendered as abstract instrumentation. Dark technical operations room, cyan grid precision, magenta risk signals, cinematic light sculpting, high-end web banner composition, no text overlays, no logos, no UI chrome, no illegal activity depiction.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "phantom-browser:og",
+    "productSlug": "phantom-browser",
+    "productTitle": "Phantom Browser",
+    "pagePath": "phantom-browser.html",
+    "slot": "og",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": {
+      "width": 1200,
+      "height": 640
+    },
+    "targetFilename": "assets/generated/product-visuals/phantom-browser/og.webp",
+    "sourceReferences": [
+      "legacy:phantom-browser"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Phantom Browser. Slot: og. Intent: social preview image, center-safe composition, readable at small share-card size, no text.\n\nPage title: Phantom Browser | iSN.BiZ Inc\nPage description: Phantom Browser — Rust + Tauri stealth browser orchestration platform built around Camoufox, BrowserForge fingerprints, Decodo residential and mobile proxies, and a multi-tier IP reputation gate (IPQS, ProxyCheck, AbuseIPDB) for OSINT, scraping, and adversarial-resistant automation.\nPrimary headings: Phantom Browser\nSection themes: Signature Key Art; Architecture Overview; Deep Dive: Stealth and Fingerprint Resistance; Component Architecture; Implementation Details\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); psychedelic surreal geometry (SpiritAtlas/psychedelic_surrealism.safetensors, model 0.12, clip 0.1).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Phantom Browser on iSN.BiZ: Rust and Tauri stealth browser orchestration system, profile fleet nodes, coherent browser fingerprints, residential and mobile proxy mesh, IP reputation scoring gates, and a CreepJS-style diagnostic environment rendered as abstract instrumentation. Dark technical operations room, cyan grid precision, magenta risk signals, cinematic light sculpting, high-end web banner composition, no text overlays, no logos, no UI chrome, no illegal activity depiction. Compose for a clean 1200x630 social preview crop.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": {
+        "width": 1200,
+        "height": 640
+      },
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "phantom-browser:card",
+    "productSlug": "phantom-browser",
+    "productTitle": "Phantom Browser",
+    "pagePath": "phantom-browser.html",
+    "slot": "card",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_4_3",
+    "targetFilename": "assets/generated/product-visuals/phantom-browser/card.webp",
+    "sourceReferences": [
+      "legacy:phantom-browser"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Phantom Browser. Slot: card. Intent: portfolio/product card image, compact crop, immediate product identity, no text.\n\nPage title: Phantom Browser | iSN.BiZ Inc\nPage description: Phantom Browser — Rust + Tauri stealth browser orchestration platform built around Camoufox, BrowserForge fingerprints, Decodo residential and mobile proxies, and a multi-tier IP reputation gate (IPQS, ProxyCheck, AbuseIPDB) for OSINT, scraping, and adversarial-resistant automation.\nPrimary headings: Phantom Browser\nSection themes: Signature Key Art; Architecture Overview; Deep Dive: Stealth and Fingerprint Resistance; Component Architecture; Implementation Details\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); psychedelic surreal geometry (SpiritAtlas/psychedelic_surrealism.safetensors, model 0.12, clip 0.1).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Phantom Browser on iSN.BiZ: Rust and Tauri stealth browser orchestration system, profile fleet nodes, coherent browser fingerprints, residential and mobile proxy mesh, IP reputation scoring gates, and a CreepJS-style diagnostic environment rendered as abstract instrumentation. Dark technical operations room, cyan grid precision, magenta risk signals, cinematic light sculpting, high-end web banner composition, no text overlays, no logos, no UI chrome, no illegal activity depiction. Compose as a compact product card crop with the subject readable at small size.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_4_3",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "phantom-browser:study-01",
+    "productSlug": "phantom-browser",
+    "productTitle": "Phantom Browser",
+    "pagePath": "phantom-browser.html",
+    "slot": "study-01",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/phantom-browser/study-01.webp",
+    "sourceReferences": [
+      "legacy:phantom-browser"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Phantom Browser. Slot: study-01. Intent: supporting product study image, distinct from the main hero, suitable for content sections.\n\nPage title: Phantom Browser | iSN.BiZ Inc\nPage description: Phantom Browser — Rust + Tauri stealth browser orchestration platform built around Camoufox, BrowserForge fingerprints, Decodo residential and mobile proxies, and a multi-tier IP reputation gate (IPQS, ProxyCheck, AbuseIPDB) for OSINT, scraping, and adversarial-resistant automation.\nPrimary headings: Phantom Browser\nSection themes: Signature Key Art; Architecture Overview; Deep Dive: Stealth and Fingerprint Resistance; Component Architecture; Implementation Details\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); psychedelic surreal geometry (SpiritAtlas/psychedelic_surrealism.safetensors, model 0.12, clip 0.1).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Phantom Browser on iSN.BiZ: Rust and Tauri stealth browser orchestration system, profile fleet nodes, coherent browser fingerprints, residential and mobile proxy mesh, IP reputation scoring gates, and a CreepJS-style diagnostic environment rendered as abstract instrumentation. Dark technical operations room, cyan grid precision, magenta risk signals, cinematic light sculpting, high-end web banner composition, no text overlays, no logos, no UI chrome, no illegal activity depiction. Focus this study on study 01 as a supporting visual, not the main hero.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "phantom-browser:study-02",
+    "productSlug": "phantom-browser",
+    "productTitle": "Phantom Browser",
+    "pagePath": "phantom-browser.html",
+    "slot": "study-02",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/phantom-browser/study-02.webp",
+    "sourceReferences": [
+      "legacy:phantom-browser"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Phantom Browser. Slot: study-02. Intent: supporting product study image, distinct from the main hero, suitable for content sections.\n\nPage title: Phantom Browser | iSN.BiZ Inc\nPage description: Phantom Browser — Rust + Tauri stealth browser orchestration platform built around Camoufox, BrowserForge fingerprints, Decodo residential and mobile proxies, and a multi-tier IP reputation gate (IPQS, ProxyCheck, AbuseIPDB) for OSINT, scraping, and adversarial-resistant automation.\nPrimary headings: Phantom Browser\nSection themes: Signature Key Art; Architecture Overview; Deep Dive: Stealth and Fingerprint Resistance; Component Architecture; Implementation Details\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); psychedelic surreal geometry (SpiritAtlas/psychedelic_surrealism.safetensors, model 0.12, clip 0.1).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Phantom Browser on iSN.BiZ: Rust and Tauri stealth browser orchestration system, profile fleet nodes, coherent browser fingerprints, residential and mobile proxy mesh, IP reputation scoring gates, and a CreepJS-style diagnostic environment rendered as abstract instrumentation. Dark technical operations room, cyan grid precision, magenta risk signals, cinematic light sculpting, high-end web banner composition, no text overlays, no logos, no UI chrome, no illegal activity depiction. Focus this study on study 02 as a supporting visual, not the main hero.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "phantom-browser:study-03",
+    "productSlug": "phantom-browser",
+    "productTitle": "Phantom Browser",
+    "pagePath": "phantom-browser.html",
+    "slot": "study-03",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/phantom-browser/study-03.webp",
+    "sourceReferences": [
+      "legacy:phantom-browser"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Phantom Browser. Slot: study-03. Intent: supporting product study image, distinct from the main hero, suitable for content sections.\n\nPage title: Phantom Browser | iSN.BiZ Inc\nPage description: Phantom Browser — Rust + Tauri stealth browser orchestration platform built around Camoufox, BrowserForge fingerprints, Decodo residential and mobile proxies, and a multi-tier IP reputation gate (IPQS, ProxyCheck, AbuseIPDB) for OSINT, scraping, and adversarial-resistant automation.\nPrimary headings: Phantom Browser\nSection themes: Signature Key Art; Architecture Overview; Deep Dive: Stealth and Fingerprint Resistance; Component Architecture; Implementation Details\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); psychedelic surreal geometry (SpiritAtlas/psychedelic_surrealism.safetensors, model 0.12, clip 0.1).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, psychedelic surreal geometry. Hero artwork for Phantom Browser on iSN.BiZ: Rust and Tauri stealth browser orchestration system, profile fleet nodes, coherent browser fingerprints, residential and mobile proxy mesh, IP reputation scoring gates, and a CreepJS-style diagnostic environment rendered as abstract instrumentation. Dark technical operations room, cyan grid precision, magenta risk signals, cinematic light sculpting, high-end web banner composition, no text overlays, no logos, no UI chrome, no illegal activity depiction. Focus this study on study 03 as a supporting visual, not the main hero.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "crucible:hero",
+    "productSlug": "crucible",
+    "productTitle": "Crucible",
+    "pagePath": "crucible.html",
+    "slot": "hero",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/crucible/hero.webp",
+    "sourceReferences": [
+      "legacy:llm-security-research"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Crucible. Slot: hero. Intent: first-viewport product hero, wide crop, strong subject separation, no readable text.\n\nPage title: Crucible | LLM Red-Team and Adversarial Evaluation Stack | iSN.BiZ Inc\nPage description: Crucible - LLM red-team and adversarial evaluation platform. Jailbreak research, eval and judge harness, and agent-transcript scoring across frontier models. Built on a LibreChat fork, hosted at crc.isn.biz.\nPrimary headings: Crucible\nSection themes: Signature Key Art; Threat Model and Mission; Deep Dive: Jailbreak Research Methodology; Eval Harness Components; Implementation Details\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); sacred geometry motifs (SpiritAtlas/sacred_geometry.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Crucible on iSN.BiZ: LLM red-team laboratory and adversarial evaluation harness, model transcript streams entering a judge stack, jailbreak scenario simulator, scored eval matrix, RAG research mode, and safety boundary instrumentation. Dark high-trust AI security lab, precise cyan evaluation grids, warning-magenta adversarial traces, cinematic atmosphere, high-end web banner composition, no text overlays, no logos, no UI chrome, no depiction of real harmful instructions.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "crucible:og",
+    "productSlug": "crucible",
+    "productTitle": "Crucible",
+    "pagePath": "crucible.html",
+    "slot": "og",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": {
+      "width": 1200,
+      "height": 640
+    },
+    "targetFilename": "assets/generated/product-visuals/crucible/og.webp",
+    "sourceReferences": [
+      "legacy:llm-security-research"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Crucible. Slot: og. Intent: social preview image, center-safe composition, readable at small share-card size, no text.\n\nPage title: Crucible | LLM Red-Team and Adversarial Evaluation Stack | iSN.BiZ Inc\nPage description: Crucible - LLM red-team and adversarial evaluation platform. Jailbreak research, eval and judge harness, and agent-transcript scoring across frontier models. Built on a LibreChat fork, hosted at crc.isn.biz.\nPrimary headings: Crucible\nSection themes: Signature Key Art; Threat Model and Mission; Deep Dive: Jailbreak Research Methodology; Eval Harness Components; Implementation Details\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); sacred geometry motifs (SpiritAtlas/sacred_geometry.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Crucible on iSN.BiZ: LLM red-team laboratory and adversarial evaluation harness, model transcript streams entering a judge stack, jailbreak scenario simulator, scored eval matrix, RAG research mode, and safety boundary instrumentation. Dark high-trust AI security lab, precise cyan evaluation grids, warning-magenta adversarial traces, cinematic atmosphere, high-end web banner composition, no text overlays, no logos, no UI chrome, no depiction of real harmful instructions. Compose for a clean 1200x630 social preview crop.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": {
+        "width": 1200,
+        "height": 640
+      },
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "crucible:card",
+    "productSlug": "crucible",
+    "productTitle": "Crucible",
+    "pagePath": "crucible.html",
+    "slot": "card",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_4_3",
+    "targetFilename": "assets/generated/product-visuals/crucible/card.webp",
+    "sourceReferences": [
+      "legacy:llm-security-research"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Crucible. Slot: card. Intent: portfolio/product card image, compact crop, immediate product identity, no text.\n\nPage title: Crucible | LLM Red-Team and Adversarial Evaluation Stack | iSN.BiZ Inc\nPage description: Crucible - LLM red-team and adversarial evaluation platform. Jailbreak research, eval and judge harness, and agent-transcript scoring across frontier models. Built on a LibreChat fork, hosted at crc.isn.biz.\nPrimary headings: Crucible\nSection themes: Signature Key Art; Threat Model and Mission; Deep Dive: Jailbreak Research Methodology; Eval Harness Components; Implementation Details\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); sacred geometry motifs (SpiritAtlas/sacred_geometry.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Crucible on iSN.BiZ: LLM red-team laboratory and adversarial evaluation harness, model transcript streams entering a judge stack, jailbreak scenario simulator, scored eval matrix, RAG research mode, and safety boundary instrumentation. Dark high-trust AI security lab, precise cyan evaluation grids, warning-magenta adversarial traces, cinematic atmosphere, high-end web banner composition, no text overlays, no logos, no UI chrome, no depiction of real harmful instructions. Compose as a compact product card crop with the subject readable at small size.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_4_3",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "crucible:study-01",
+    "productSlug": "crucible",
+    "productTitle": "Crucible",
+    "pagePath": "crucible.html",
+    "slot": "study-01",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/crucible/study-01.webp",
+    "sourceReferences": [
+      "legacy:llm-security-research"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Crucible. Slot: study-01. Intent: supporting product study image, distinct from the main hero, suitable for content sections.\n\nPage title: Crucible | LLM Red-Team and Adversarial Evaluation Stack | iSN.BiZ Inc\nPage description: Crucible - LLM red-team and adversarial evaluation platform. Jailbreak research, eval and judge harness, and agent-transcript scoring across frontier models. Built on a LibreChat fork, hosted at crc.isn.biz.\nPrimary headings: Crucible\nSection themes: Signature Key Art; Threat Model and Mission; Deep Dive: Jailbreak Research Methodology; Eval Harness Components; Implementation Details\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); sacred geometry motifs (SpiritAtlas/sacred_geometry.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Crucible on iSN.BiZ: LLM red-team laboratory and adversarial evaluation harness, model transcript streams entering a judge stack, jailbreak scenario simulator, scored eval matrix, RAG research mode, and safety boundary instrumentation. Dark high-trust AI security lab, precise cyan evaluation grids, warning-magenta adversarial traces, cinematic atmosphere, high-end web banner composition, no text overlays, no logos, no UI chrome, no depiction of real harmful instructions. Focus this study on study 01 as a supporting visual, not the main hero.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "crucible:study-02",
+    "productSlug": "crucible",
+    "productTitle": "Crucible",
+    "pagePath": "crucible.html",
+    "slot": "study-02",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/crucible/study-02.webp",
+    "sourceReferences": [
+      "legacy:llm-security-research"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Crucible. Slot: study-02. Intent: supporting product study image, distinct from the main hero, suitable for content sections.\n\nPage title: Crucible | LLM Red-Team and Adversarial Evaluation Stack | iSN.BiZ Inc\nPage description: Crucible - LLM red-team and adversarial evaluation platform. Jailbreak research, eval and judge harness, and agent-transcript scoring across frontier models. Built on a LibreChat fork, hosted at crc.isn.biz.\nPrimary headings: Crucible\nSection themes: Signature Key Art; Threat Model and Mission; Deep Dive: Jailbreak Research Methodology; Eval Harness Components; Implementation Details\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); sacred geometry motifs (SpiritAtlas/sacred_geometry.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Crucible on iSN.BiZ: LLM red-team laboratory and adversarial evaluation harness, model transcript streams entering a judge stack, jailbreak scenario simulator, scored eval matrix, RAG research mode, and safety boundary instrumentation. Dark high-trust AI security lab, precise cyan evaluation grids, warning-magenta adversarial traces, cinematic atmosphere, high-end web banner composition, no text overlays, no logos, no UI chrome, no depiction of real harmful instructions. Focus this study on study 02 as a supporting visual, not the main hero.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "crucible:study-03",
+    "productSlug": "crucible",
+    "productTitle": "Crucible",
+    "pagePath": "crucible.html",
+    "slot": "study-03",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/crucible/study-03.webp",
+    "sourceReferences": [
+      "legacy:llm-security-research"
+    ],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: Crucible. Slot: study-03. Intent: supporting product study image, distinct from the main hero, suitable for content sections.\n\nPage title: Crucible | LLM Red-Team and Adversarial Evaluation Stack | iSN.BiZ Inc\nPage description: Crucible - LLM red-team and adversarial evaluation platform. Jailbreak research, eval and judge harness, and agent-transcript scoring across frontier models. Built on a LibreChat fork, hosted at crc.isn.biz.\nPrimary headings: Crucible\nSection themes: Signature Key Art; Threat Model and Mission; Deep Dive: Jailbreak Research Methodology; Eval Harness Components; Implementation Details\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); sacred geometry motifs (SpiritAtlas/sacred_geometry.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for Crucible on iSN.BiZ: LLM red-team laboratory and adversarial evaluation harness, model transcript streams entering a judge stack, jailbreak scenario simulator, scored eval matrix, RAG research mode, and safety boundary instrumentation. Dark high-trust AI security lab, precise cyan evaluation grids, warning-magenta adversarial traces, cinematic atmosphere, high-end web banner composition, no text overlays, no logos, no UI chrome, no depiction of real harmful instructions. Focus this study on study 03 as a supporting visual, not the main hero.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "hermes-aingels:hero",
+    "productSlug": "hermes-aingels",
+    "productTitle": "HERMES + AiNGELS",
+    "pagePath": "hermes-aingels.html",
+    "slot": "hero",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/hermes-aingels/hero.webp",
+    "sourceReferences": [],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: HERMES + AiNGELS. Slot: hero. Intent: first-viewport product hero, wide crop, strong subject separation, no readable text.\n\nPage title: HERMES + AiNGELS - NFT-as-Agent | iSN.BiZ Inc\nPage description: HERMES + AiNGELS - NFT-as-Agent architecture on Base L2. ERC-6551 token-bound accounts holding embodied AI identities with cryptographically anchored voice, visual, and personality artifacts. Genesis covenant agent and 12-sister lineage tree.\nPrimary headings: HERMES + AiNGELS\nSection themes: Signature Key Art; The NFT-as-Agent Thesis; Deep Dive: Architecture; Genesis & Lineage; The Agent Birth Pipeline\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); sacred geometry motifs (SpiritAtlas/sacred_geometry.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for HERMES + AiNGELS on iSN.BiZ: NFT-as-Agent architecture on Base L2, ERC-6551 token-bound accounts as luminous identity vessels, cryptographic anchor set, voice and visual identity artifacts, 12-sister lineage tree, and genesis covenant agent represented as a precise celestial network. Premium mythic-technical key art, cyan blockchain lattice, magenta reveal energy, cinematic depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no celebrity likenesses.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "hermes-aingels:og",
+    "productSlug": "hermes-aingels",
+    "productTitle": "HERMES + AiNGELS",
+    "pagePath": "hermes-aingels.html",
+    "slot": "og",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": {
+      "width": 1200,
+      "height": 640
+    },
+    "targetFilename": "assets/generated/product-visuals/hermes-aingels/og.webp",
+    "sourceReferences": [],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: HERMES + AiNGELS. Slot: og. Intent: social preview image, center-safe composition, readable at small share-card size, no text.\n\nPage title: HERMES + AiNGELS - NFT-as-Agent | iSN.BiZ Inc\nPage description: HERMES + AiNGELS - NFT-as-Agent architecture on Base L2. ERC-6551 token-bound accounts holding embodied AI identities with cryptographically anchored voice, visual, and personality artifacts. Genesis covenant agent and 12-sister lineage tree.\nPrimary headings: HERMES + AiNGELS\nSection themes: Signature Key Art; The NFT-as-Agent Thesis; Deep Dive: Architecture; Genesis & Lineage; The Agent Birth Pipeline\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); sacred geometry motifs (SpiritAtlas/sacred_geometry.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for HERMES + AiNGELS on iSN.BiZ: NFT-as-Agent architecture on Base L2, ERC-6551 token-bound accounts as luminous identity vessels, cryptographic anchor set, voice and visual identity artifacts, 12-sister lineage tree, and genesis covenant agent represented as a precise celestial network. Premium mythic-technical key art, cyan blockchain lattice, magenta reveal energy, cinematic depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no celebrity likenesses. Compose for a clean 1200x630 social preview crop.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": {
+        "width": 1200,
+        "height": 640
+      },
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "hermes-aingels:card",
+    "productSlug": "hermes-aingels",
+    "productTitle": "HERMES + AiNGELS",
+    "pagePath": "hermes-aingels.html",
+    "slot": "card",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_4_3",
+    "targetFilename": "assets/generated/product-visuals/hermes-aingels/card.webp",
+    "sourceReferences": [],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: HERMES + AiNGELS. Slot: card. Intent: portfolio/product card image, compact crop, immediate product identity, no text.\n\nPage title: HERMES + AiNGELS - NFT-as-Agent | iSN.BiZ Inc\nPage description: HERMES + AiNGELS - NFT-as-Agent architecture on Base L2. ERC-6551 token-bound accounts holding embodied AI identities with cryptographically anchored voice, visual, and personality artifacts. Genesis covenant agent and 12-sister lineage tree.\nPrimary headings: HERMES + AiNGELS\nSection themes: Signature Key Art; The NFT-as-Agent Thesis; Deep Dive: Architecture; Genesis & Lineage; The Agent Birth Pipeline\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); sacred geometry motifs (SpiritAtlas/sacred_geometry.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for HERMES + AiNGELS on iSN.BiZ: NFT-as-Agent architecture on Base L2, ERC-6551 token-bound accounts as luminous identity vessels, cryptographic anchor set, voice and visual identity artifacts, 12-sister lineage tree, and genesis covenant agent represented as a precise celestial network. Premium mythic-technical key art, cyan blockchain lattice, magenta reveal energy, cinematic depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no celebrity likenesses. Compose as a compact product card crop with the subject readable at small size.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_4_3",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "hermes-aingels:study-01",
+    "productSlug": "hermes-aingels",
+    "productTitle": "HERMES + AiNGELS",
+    "pagePath": "hermes-aingels.html",
+    "slot": "study-01",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/hermes-aingels/study-01.webp",
+    "sourceReferences": [],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: HERMES + AiNGELS. Slot: study-01. Intent: supporting product study image, distinct from the main hero, suitable for content sections.\n\nPage title: HERMES + AiNGELS - NFT-as-Agent | iSN.BiZ Inc\nPage description: HERMES + AiNGELS - NFT-as-Agent architecture on Base L2. ERC-6551 token-bound accounts holding embodied AI identities with cryptographically anchored voice, visual, and personality artifacts. Genesis covenant agent and 12-sister lineage tree.\nPrimary headings: HERMES + AiNGELS\nSection themes: Signature Key Art; The NFT-as-Agent Thesis; Deep Dive: Architecture; Genesis & Lineage; The Agent Birth Pipeline\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); sacred geometry motifs (SpiritAtlas/sacred_geometry.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for HERMES + AiNGELS on iSN.BiZ: NFT-as-Agent architecture on Base L2, ERC-6551 token-bound accounts as luminous identity vessels, cryptographic anchor set, voice and visual identity artifacts, 12-sister lineage tree, and genesis covenant agent represented as a precise celestial network. Premium mythic-technical key art, cyan blockchain lattice, magenta reveal energy, cinematic depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no celebrity likenesses. Focus this study on study 01 as a supporting visual, not the main hero.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "hermes-aingels:study-02",
+    "productSlug": "hermes-aingels",
+    "productTitle": "HERMES + AiNGELS",
+    "pagePath": "hermes-aingels.html",
+    "slot": "study-02",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/hermes-aingels/study-02.webp",
+    "sourceReferences": [],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: HERMES + AiNGELS. Slot: study-02. Intent: supporting product study image, distinct from the main hero, suitable for content sections.\n\nPage title: HERMES + AiNGELS - NFT-as-Agent | iSN.BiZ Inc\nPage description: HERMES + AiNGELS - NFT-as-Agent architecture on Base L2. ERC-6551 token-bound accounts holding embodied AI identities with cryptographically anchored voice, visual, and personality artifacts. Genesis covenant agent and 12-sister lineage tree.\nPrimary headings: HERMES + AiNGELS\nSection themes: Signature Key Art; The NFT-as-Agent Thesis; Deep Dive: Architecture; Genesis & Lineage; The Agent Birth Pipeline\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); sacred geometry motifs (SpiritAtlas/sacred_geometry.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for HERMES + AiNGELS on iSN.BiZ: NFT-as-Agent architecture on Base L2, ERC-6551 token-bound accounts as luminous identity vessels, cryptographic anchor set, voice and visual identity artifacts, 12-sister lineage tree, and genesis covenant agent represented as a precise celestial network. Premium mythic-technical key art, cyan blockchain lattice, magenta reveal energy, cinematic depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no celebrity likenesses. Focus this study on study 02 as a supporting visual, not the main hero.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  },
+  {
+    "id": "hermes-aingels:study-03",
+    "productSlug": "hermes-aingels",
+    "productTitle": "HERMES + AiNGELS",
+    "pagePath": "hermes-aingels.html",
+    "slot": "study-03",
+    "model": "openai/gpt-image-2",
+    "endpoint": "openai/gpt-image-2",
+    "quality": "low",
+    "outputFormat": "webp",
+    "imageSize": "landscape_16_9",
+    "targetFilename": "assets/generated/product-visuals/hermes-aingels/study-03.webp",
+    "sourceReferences": [],
+    "input": {
+      "prompt": "Create production web artwork for iSN.BiZ using openai/gpt-image-2.\n\nProduct: HERMES + AiNGELS. Slot: study-03. Intent: supporting product study image, distinct from the main hero, suitable for content sections.\n\nPage title: HERMES + AiNGELS - NFT-as-Agent | iSN.BiZ Inc\nPage description: HERMES + AiNGELS - NFT-as-Agent architecture on Base L2. ERC-6551 token-bound accounts holding embodied AI identities with cryptographically anchored voice, visual, and personality artifacts. Genesis covenant agent and 12-sister lineage tree.\nPrimary headings: HERMES + AiNGELS\nSection themes: Signature Key Art; The NFT-as-Agent Thesis; Deep Dive: Architecture; Genesis & Lineage; The Agent Birth Pipeline\n\nRAG context: prior iSN/SpiritAtlas fal.ai image work favored detailed production prompts, explicit LoRA-style visual cues, cinematic lighting, and clear asset-slot targets. Treat LoRA entries as style references only; this GPT Image 2 endpoint does not receive LoRA files directly.\n\nStyle reference stack: EtherealGlow, luminous gradients (ethereal_glow_v2.safetensors, model 0.3, clip 0.26); HyperRealism, premium cinematic detail (hyperrealism_flux_cinematic.safetensors, model 0.25, clip 0.21); fluxtrait polished rendering (portrait_engine_flux.safetensors, model 0.16, clip 0.13); cc_dark fantasy dramatic contrast (dark_fantasy_cosmic_flux.safetensors, model 0.18, clip 0.15); ethereal fantasy atmosphere (ethereal_fantasy_flux.safetensors, model 0.14, clip 0.12); sacred geometry motifs (SpiritAtlas/sacred_geometry.safetensors, model 0.14, clip 0.12).\n\nBase creative direction: EtherealGlow, luminous gradients, HyperRealism, premium cinematic detail, fluxtrait polished rendering, cc_dark fantasy dramatic contrast, ethereal fantasy atmosphere, sacred geometry motifs. Hero artwork for HERMES + AiNGELS on iSN.BiZ: NFT-as-Agent architecture on Base L2, ERC-6551 token-bound accounts as luminous identity vessels, cryptographic anchor set, voice and visual identity artifacts, 12-sister lineage tree, and genesis covenant agent represented as a precise celestial network. Premium mythic-technical key art, cyan blockchain lattice, magenta reveal energy, cinematic depth, high-end web banner composition, no text overlays, no logos, no UI chrome, no celebrity likenesses. Focus this study on study 03 as a supporting visual, not the main hero.\n\nHard constraints: output a polished image only; no readable words, no logos, no watermarks, no UI chrome, no private records, no celebrity likenesses, no distorted hands or faces. Optimize the prompt for low quality by using a simple readable composition, large primary forms, crisp contrast, clean negative space, and high signal-to-noise detail.\n\nNegative prompt concepts to avoid: text, logo, watermark, letters, signature, readable private records, UI chrome, low quality, distorted anatomy.",
+      "image_size": "landscape_16_9",
+      "quality": "low",
+      "num_images": 1,
+      "output_format": "webp"
+    }
+  }
+]
