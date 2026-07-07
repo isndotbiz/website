@@ -149,3 +149,12 @@ spiritatlas-final-videos
 spiritatlas-final-images/
 spiritatlas-final-videos/
 .claude/worktrees/
+
+# internal-docs-scrub
+.serena/
+_audit/
+CLAUDE.md
+STATE.md
+DEPLOYMENT_GAPS.md
+ISA.md
+docs/state/
