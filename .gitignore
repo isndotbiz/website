@@ -119,3 +119,12 @@ WEBSITE_UPDATE_COMPLETE.md
 # Playwright test artifacts
 playwright-report/
 test-results/
+
+# internal-docs-scrub
+.serena/
+_audit/
+CLAUDE.md
+STATE.md
+DEPLOYMENT_GAPS.md
+ISA.md
+docs/state/
