@@ -47,7 +47,11 @@ jobs:
           curl -sI http://localhost:8080/ | head -1
 
       - name: Run tests
-        run: npx playwright test --reporter=html
+        # Exclude the "Visual workflow tools" dev-tooling suite: it shells out to
+        # bun and requires the 2.2GB hrocincorg submodule (not checked out in CI),
+        # so it can't gate the site deploy. It runs locally where the submodule
+        # exists. Site + SEO + a11y tests still run and gate the deploy.
+        run: npx playwright test --reporter=html --grep-invert "Visual workflow"
         env:
           BASE_URL: http://localhost:8080
 
