@@ -19,6 +19,14 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Setup Bun
+        # tests/visual-workflow.spec.js shells out to `bun`; the runner otherwise
+        # only has Node, causing `spawnSync bun ENOENT`. Install via curl (no new
+        # third-party action, keeping the SHA-pinned-actions discipline).
+        run: |
+          curl -fsSL https://bun.sh/install | bash
+          echo "$HOME/.bun/bin" >> "$GITHUB_PATH"
+
       - name: Install dependencies
         run: npm ci
 
